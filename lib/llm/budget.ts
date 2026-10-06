@@ -18,7 +18,9 @@ function roll() {
 }
 
 export function capUsd(): number {
-  return Number(process.env.LLM_DAILY_USD_CAP ?? "1");
+  const cap = Number(process.env.LLM_DAILY_USD_CAP);
+  return cap > 0 ? cap : 1; // an empty or broken value must not switch the live agent off
+
 }
 
 export function canSpend(): boolean {

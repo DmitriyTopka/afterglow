@@ -52,7 +52,7 @@ Afterglow is a demo culture store with 384 real titles (vinyl, books, films, gam
 
 **The owner's agent.** Reads the unmet demand, checks who loves each candidate with Qloo demographics, and proposes three titles with the coverage they'd reach (18.4% to 20.0% on the demo demand). Next to each pick the app shows which shopper tastes asked for it, its map section and its audience, straight from the tool data.
 
-**Qloo, visible.** The shopper sees how Qloo reads the taste ("Post-punk, New wave, Indie" for Joy Division), the recipient's age and gender go to Qloo as demographic signals when the message gives them ("my dad, 62"), and a panel lists every Qloo call the agent made, grouped by endpoint and parameters.
+**Qloo, visible.** The shopper sees how Qloo reads the taste ("Post-punk, New wave, Magical Realism" for Joy Division and Murakami), the recipient's age and gender go to Qloo as demographic signals when the message gives them ("my dad, 62"), and a panel lists every Qloo call the agent made, grouped by endpoint and parameters.
 
 **Check your own shop.** Paste up to 30 things you stock. Qloo resolves each line and the same shopper demand is measured against your shelf: how many shoppers would find something their taste loves, and what to stock next.
 
