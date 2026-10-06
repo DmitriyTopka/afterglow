@@ -64,6 +64,11 @@ export default function Page() {
           <button className="go" disabled={busy || !text.trim()}>{busy ? "Digging…" : "Find picks"}</button>
         </form>
         {error && <p className="error">{error}</p>}
+        <Link href="/live" className="door live-door">
+          <span className="eyebrow">See it work</span>
+          <b>Watch the shopper and the owner side by side</b>
+          <span>The agent's steps arrive live; the owner sees the unmet demand a moment later.</span>
+        </Link>
         <Link href="/owner" className="door">
           <span className="eyebrow">Run a shop?</span>
           <b>See your shelves through your shoppers&apos; taste</b>

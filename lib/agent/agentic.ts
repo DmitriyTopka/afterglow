@@ -51,20 +51,21 @@ const TOOLS: Anthropic.Tool[] = [
 
 export interface AgenticResult extends AgentResult { question?: string; note?: string; audience?: string | null; turns: number }
 
-export async function runAgentic(request: string): Promise<AgenticResult> {
+export async function runAgentic(request: string, onStep?: (s: Step) => void): Promise<AgenticResult> {
   if (!process.env.ANTHROPIC_API_KEY || !canSpend()) return { ...(await runAgent(request)), turns: 0 };
   try {
-    return await loop(request);
+    return await loop(request, onStep);
   } catch (err) {
     console.error("agent loop failed, using the fixed pipeline", err);
     return { ...(await runAgent(request)), turns: 0 };
   }
 }
 
-async function loop(request: string): Promise<AgenticResult> {
+async function loop(request: string, onStep?: (s: Step) => void): Promise<AgenticResult> {
   const client = new Anthropic();
   const calls: QlooCall[] = [];
   const steps: Step[] = [];
+  const emit = (s: Step) => { steps.push(s); onStep?.(s); }; // every step is also streamed to the live screen
   const named: Array<{ name: string; id: string; type: string }> = [];
   let ranked: Ranked[] | null = null;
   let candidates: Ranked[] = [];
@@ -85,7 +86,7 @@ async function loop(request: string): Promise<AgenticResult> {
       // The model answered in plain text: if it is asking something, treat it as a question to the shopper.
       const text = res.content.filter((b): b is Anthropic.TextBlock => b.type === "text").map((b) => b.text).join(" ").trim();
       if (text && !named.length) {
-        steps.push({ kind: "read", label: `Asked you: ${text.slice(0, 200)}`, status: "warn" });
+        emit({ kind: "read", label: `Asked you: ${text.slice(0, 200)}`, status: "warn" });
         return { request, extraction: { recipient: "", budget_usd: null, signals: [] } as never, steps, picks: [], calls, modes: { qloo: QLOO_MODE, llm: "agent" }, usd, gap, audience: aud, turns: turn, question: text.slice(0, 300) };
       }
       break;
@@ -98,7 +99,7 @@ async function loop(request: string): Promise<AgenticResult> {
       if (u.name === "recommend" || u.name === "ask_shopper") {
         const base = { request, extraction: { recipient: "", budget_usd: budget, signals: named.map((n) => ({ name: n.name, kind: n.type })) }, steps, calls, modes: { qloo: QLOO_MODE, llm: "agent" }, usd, gap, audience: aud, turns: turn } as unknown as AgenticResult;
         if (u.name === "ask_shopper") {
-          steps.push({ kind: "read", label: `Asked you: ${String(input.question)}`, status: "warn" });
+          emit({ kind: "read", label: `Asked you: ${String(input.question)}`, status: "warn" });
           return { ...base, picks: [], question: String(input.question) };
         }
         // The store check feeds the owner's demand view, so it always runs before an answer, even if the model skipped it.
@@ -106,7 +107,7 @@ async function loop(request: string): Promise<AgenticResult> {
           // Formats of the named tastes (a person is most often a director or an author: try films).
           const fmts = [...new Set(named.map((n) => (n.type === "urn:entity:person" ? "urn:entity:movie" : n.type)))];
           gap = await demandGap(named.map((n) => n.id), fmts, calls);
-          if (gap) steps.push({ kind: "score", label: `Store check: we carry ${gap.wanted.filter((w) => w.owned).length} of the ${gap.wanted.length} titles this taste loves most`, detail: `Missing ones go to the owner: ${gap.wanted.filter((w) => !w.owned).slice(0, 3).map((w) => w.name).join(", ")}`, status: "ok" });
+          if (gap) emit({ kind: "score", label: `Store check: we carry ${gap.wanted.filter((w) => w.owned).length} of the ${gap.wanted.length} titles this taste loves most`, detail: `Missing ones go to the owner: ${gap.wanted.filter((w) => !w.owned).slice(0, 3).map((w) => w.name).join(", ")}`, status: "ok" });
           base.gap = gap;
         }
         const byId = new Map(candidates.map((r) => [r.item.id, r]));
@@ -116,7 +117,7 @@ async function loop(request: string): Promise<AgenticResult> {
           if (!r || picks.some((x) => x.item.id === p.id)) continue; // only real catalog candidates, no duplicates
           picks.push({ item: r.item, affinity: r.affinity, lift: r.lift, chain: (scores?.get(r.item.id)?.chain ?? []).map((c) => ({ signal: named.find((n) => n.id === c.entity_id)?.name ?? c.entity_id, contribution: c.score })), why: String(p.reason).replace(/\s*[\u2014\u2013]\s*/g, ", ").slice(0, 200), direct: r.direct });
         }
-        steps.push({ kind: "rank", label: `Chose ${picks.length} pick(s) from ${candidates.length} candidates`, detail: typeof input.note === "string" ? input.note : undefined, status: picks.length ? "ok" : "warn" });
+        emit({ kind: "rank", label: `Chose ${picks.length} pick(s) from ${candidates.length} candidates`, detail: typeof input.note === "string" ? input.note : undefined, status: picks.length ? "ok" : "warn" });
         return { ...base, picks: picks.slice(0, 5), note: typeof input.note === "string" ? input.note : undefined };
       }
 
@@ -129,7 +130,7 @@ async function loop(request: string): Promise<AgenticResult> {
           if (hit) { named.push({ name: t.name, id: hit.entity_id, type: KIND[t.kind] ?? "" }); found.push({ name: t.name, qloo_name: hit.name, entity_id: hit.entity_id, exact: hit.exact }); }
           else found.push({ name: t.name, not_found: true });
         }
-        steps.push({ kind: "lookup", label: `Looked up ${found.length} taste(s) in Qloo`, detail: named.map((n) => n.name).join(", ") || "none found", status: named.length ? "ok" : "dropped" });
+        emit({ kind: "lookup", label: `Looked up ${found.length} taste(s) in Qloo`, detail: named.map((n) => n.name).join(", ") || "none found", status: named.length ? "ok" : "dropped" });
         reply(found);
       } else if (u.name === "score_catalog") {
         if (!ranked) {
@@ -141,20 +142,20 @@ async function loop(request: string): Promise<AgenticResult> {
           scores = scored.scores;
           ranked = rank({ arm: "qloo", items: CATALOG, signalNames: named.map((n) => n.name), scores, baseline, taste: "pct+fmt", formats, exclude: new Set(ids) });
           candidates = shortlist(ranked, budget, 12, 3);
-          steps.push({ kind: "score", label: `Scored all ${CATALOG.length} titles with Qloo affinity`, detail: `${candidates.length} candidates within budget${budget ? ` ($${budget})` : ""}`, status: "ok" });
+          emit({ kind: "score", label: `Scored all ${CATALOG.length} titles with Qloo affinity`, detail: `${candidates.length} candidates within budget${budget ? ` ($${budget})` : ""}`, status: "ok" });
         }
         reply(candidates.map((r) => ({ id: r.item.id, title: r.item.title, format: r.item.category, price_usd: r.item.price_usd, by_named_taste: r.direct, qloo_lead_taste: named.find((n) => n.id === scores?.get(r.item.id)?.chain?.sort((a, b) => b.score - a.score)[0]?.entity_id)?.name ?? null })));
       } else if (u.name === "check_store") {
         if (!gap) {
           const formats = ((input.formats as string[]) ?? []).map((f) => FORMAT[f]).filter(Boolean);
           gap = await demandGap(((input.entity_ids as string[]) ?? []).filter(Boolean), formats, calls);
-          if (gap) steps.push({ kind: "score", label: `Store check: we carry ${gap.wanted.filter((w) => w.owned).length} of the ${gap.wanted.length} titles this taste loves most`, detail: `Missing ones go to the owner: ${gap.wanted.filter((w) => !w.owned).slice(0, 3).map((w) => w.name).join(", ")}`, status: "ok" });
+          if (gap) emit({ kind: "score", label: `Store check: we carry ${gap.wanted.filter((w) => w.owned).length} of the ${gap.wanted.length} titles this taste loves most`, detail: `Missing ones go to the owner: ${gap.wanted.filter((w) => !w.owned).slice(0, 3).map((w) => w.name).join(", ")}`, status: "ok" });
         }
         reply(gap ? { carried: gap.wanted.filter((w) => w.owned).map((w) => w.name), missing: gap.wanted.filter((w) => !w.owned).map((w) => w.name) } : { error: "no data" }, !gap);
       } else if (u.name === "audience") {
         const a = await audience(((input.entity_ids as string[]) ?? []).filter(Boolean), calls);
         aud = a?.summary ?? null;
-        if (a) steps.push({ kind: "lookup", label: `Who these fans are: ${a.summary}`, status: "ok" });
+        if (a) emit({ kind: "lookup", label: `Who these fans are: ${a.summary}`, status: "ok" });
         reply(a ?? { error: "no demographic data" }, !a);
       } else {
         reply({ error: `unknown tool ${u.name}` }, true);
@@ -164,6 +165,6 @@ async function loop(request: string): Promise<AgenticResult> {
   }
   // Out of turns without a final answer: fall back to the deterministic shortlist we already have.
   const picks: Pick[] = candidates.slice(0, 5).map((r) => ({ item: r.item, affinity: r.affinity, lift: r.lift, chain: [], why: r.direct.length ? `By ${r.direct.join(" and ")}.` : "Strong Qloo match for these tastes.", direct: r.direct }));
-  steps.push({ kind: "rank", label: "Agent ran out of steps; showing the top scored titles", status: "warn" });
+  emit({ kind: "rank", label: "Agent ran out of steps; showing the top scored titles", status: "warn" });
   return { request, extraction: { recipient: "", budget_usd: budget, signals: named.map((n) => ({ name: n.name, kind: n.type })) } as never, steps, picks, calls, modes: { qloo: QLOO_MODE, llm: "agent" }, usd, gap, audience: aud, turns: MAX_TURNS };
 }
