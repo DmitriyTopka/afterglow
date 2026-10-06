@@ -8,10 +8,11 @@ import { canSpend, record } from "@/lib/llm/budget";
 import { QLOO_MODE, QlooUnavailable, type QlooCall } from "@/lib/qloo/client";
 import type { QlooEntityType } from "@/lib/qloo/types";
 import { audience } from "./audience";
+import { tasteTags } from "./tasteTags";
 import { demandGap, type Gap } from "./gap";
 import { rank, shortlist, tasteLight, type Baseline, type Ranked } from "./rank";
 import { runAgent, type AgentResult, type Pick, type Step } from "./run";
-import { CATALOG, mapCatalog, resolveSignal, scoreCatalog } from "./score";
+import { CATALOG, mapCatalog, resolveSignal, scoreCatalog, type Demo } from "./score";
 
 const MODEL = process.env.LLM_MODEL ?? "claude-haiku-4-5";
 const MAX_TURNS = 6;
@@ -36,9 +37,9 @@ const SYSTEM = `You are the shop assistant agent of Afterglow, an independent st
 Your goal: five titles from our shelves the recipient will love, within any budget, each with a plain reason,
 and a record of what this taste loves that we do not carry (the owner restocks from it).
 You decide which tools to use and in what order. What each tool is for:
-- find_tastes turns what the shopper named into Qloo entities. If they describe a genre, scene or mood instead of titles,
+- find_tastes turns what the shopper named into Qloo entities and returns how Qloo reads that taste as tags. If they describe a genre, scene or mood instead of titles,
   name two or three well-known works or artists that stand for it. Look up every name in one call when you can.
-- score_catalog scores all 384 titles against those tastes. It is expensive: once per request, with formats and budget if given.
+- score_catalog scores all 384 titles against those tastes. It is expensive: once per request, with formats, budget, and the recipient's age band and gender if the message gives them.
 - check_store asks Qloo what this taste loves most anywhere and which of those we stock.
 - audience tells you how fans of these tastes skew by age and gender; use it when the recipient sounds unlike the typical fan.
 - ask_shopper asks one short question only when find_tastes found nothing you can use.
@@ -50,7 +51,7 @@ const TOOLS: Anthropic.Tool[] = [
   { name: "find_tastes", description: "Resolve the cultural tastes the shopper named (artists, films, books, games, shows, people, brands) to Qloo entities.",
     input_schema: { type: "object", properties: { tastes: { type: "array", items: { type: "object", properties: { name: { type: "string" }, kind: { type: "string", enum: Object.keys(KIND) } }, required: ["name", "kind"] } } }, required: ["tastes"] } },
   { name: "score_catalog", description: "Score all 384 store titles against the found tastes with Qloo affinity and return the best candidates within budget. Expensive: call once.",
-    input_schema: { type: "object", properties: { entity_ids: { type: "array", items: { type: "string" } }, formats: { type: "array", items: { type: "string", enum: Object.keys(FORMAT) } }, budget_usd: { type: ["number", "null"] } }, required: ["entity_ids"] } },
+    input_schema: { type: "object", properties: { entity_ids: { type: "array", items: { type: "string" } }, formats: { type: "array", items: { type: "string", enum: Object.keys(FORMAT) } }, budget_usd: { type: ["number", "null"] }, recipient_age: { type: "string", enum: ["35_and_younger", "36_to_55", "55_and_older"], description: "Only if the message says or clearly implies the recipient's age (e.g. 'my dad, 60')." }, recipient_gender: { type: "string", enum: ["male", "female"], description: "Only if the message makes it clear." } }, required: ["entity_ids"] } },
   { name: "check_store", description: "Ask Qloo which 10 titles this taste loves most (any store) and see which ones Afterglow carries. Missing titles are reported to the shop owner.",
     input_schema: { type: "object", properties: { entity_ids: { type: "array", items: { type: "string" } }, formats: { type: "array", items: { type: "string", enum: Object.keys(FORMAT) } } }, required: ["entity_ids"] } },
   { name: "audience", description: "Qloo demographics: how fans of these tastes skew by age band and gender.",
@@ -90,6 +91,8 @@ async function loop(request: string, onStep?: (s: Step) => void): Promise<Agenti
   const messages: Anthropic.MessageParam[] = [{ role: "user", content: request }];
   const over = () => calls.filter((c) => c.cache === "miss").length >= MAX_QLOO_CALLS;
   const route: string[] = []; // the tools the model chose, in order (eval and the live screen)
+  let tags: string[] = []; // Qloo taste analysis (urn:tag) for the named tastes
+  let demo: Demo = {}; // recipient age band and gender as Qloo demographic signals, when the message gives them
   let light: Record<string, number> = {};
   // The named taste that contributes most to a title's Qloo score (explainability), or null.
   const lead = (id: string) => named.find((n) => n.id === [...(scores?.get(id)?.chain ?? [])].sort((a, b) => b.score - a.score)[0]?.entity_id)?.name ?? null;
@@ -117,6 +120,11 @@ async function loop(request: string, onStep?: (s: Step) => void): Promise<Agenti
     if (!uses.length) {
       // The model answered in plain text: if it is asking something, treat it as a question to the shopper.
       const text = res.content.filter((b): b is Anthropic.TextBlock => b.type === "text").map((b) => b.text).join(" ").trim();
+      if (named.length && turn < MAX_TURNS) {
+        // It stopped mid-task with tastes in hand: nudge it to finish with the tools instead of losing the answer.
+        messages.push({ role: "user", content: candidates.length ? "Call recommend now with 5 of the scored candidates." : "Call score_catalog with the tastes you found, then recommend." });
+        continue;
+      }
       if (text && !named.length) {
         emit({ kind: "read", label: `Asked you: ${text.slice(0, 200)}`, status: "warn" });
         return { request, extraction: { recipient: "", budget_usd: null, signals: [] } as never, steps, picks: [], calls, modes: { qloo: QLOO_MODE, llm: "agent" }, usd, gap, audience: aud, turns: turn, question: text.slice(0, 300) };
@@ -145,7 +153,7 @@ async function loop(request: string, onStep?: (s: Step) => void): Promise<Agenti
         if (u.name === "recommend" && !gap && named.length && !over()) {
           // Formats of the named tastes (a person is most often a director or an author: try films).
           const fmts = [...new Set(named.map((n) => (n.type === "urn:entity:person" ? "urn:entity:movie" : n.type)))];
-          gap = await demandGap(named.map((n) => n.id), fmts, calls);
+          gap = await demandGap(named.map((n) => n.id), fmts, calls, demo);
           if (gap) emit({ kind: "score", label: `Store check: we carry ${gap.wanted.filter((w) => w.owned).length} of the ${gap.wanted.length} titles this taste loves most`, detail: `Missing ones go to the owner: ${gap.wanted.filter((w) => !w.owned).slice(0, 3).map((w) => w.name).join(", ")}`, status: "ok" });
           base.gap = gap;
         }
@@ -179,25 +187,31 @@ async function loop(request: string, onStep?: (s: Step) => void): Promise<Agenti
           else found.push({ name: t.name, not_found: true });
         }
         if (found.length) emit({ kind: "lookup", label: before ? `Looked up ${found.length} more taste(s) in Qloo` : `Looked up ${found.length} taste(s) in Qloo`, detail: named.slice(before).map((n) => n.name).join(", ") || "none found", status: named.length ? "ok" : "dropped" });
-        reply(found);
+        // Taste analysis: how Qloo reads these tastes as tags. Once, after the first successful lookup.
+        if (!tags.length && named.length && !over()) {
+          tags = await tasteTags(named.map((n) => n.id), calls);
+          if (tags.length) emit({ kind: "lookup", label: "Qloo reads this taste as", detail: tags.join(", "), status: "ok", tags });
+        }
+        reply({ found, qloo_taste_tags: tags });
       } else if (u.name === "score_catalog") {
         if (!ranked) {
           const ids = ((input.entity_ids as string[]) ?? []).filter(Boolean);
           budget = typeof input.budget_usd === "number" ? input.budget_usd : null;
           const formats = ((input.formats as string[]) ?? []).map((f) => FORMAT[f]).filter(Boolean);
           const itemIds = await mapCatalog(calls);
-          const scored = await scoreCatalog(ids, itemIds, calls);
+          demo = { ...(typeof input.recipient_age === "string" ? { age: input.recipient_age as Demo["age"] } : {}), ...(typeof input.recipient_gender === "string" ? { gender: input.recipient_gender as Demo["gender"] } : {}) };
+          const scored = await scoreCatalog(ids, itemIds, calls, CATALOG, demo);
           scores = scored.scores;
           ranked = rank({ arm: "qloo", items: CATALOG, signalNames: named.map((n) => n.name), scores, baseline, taste: "pct+fmt", formats, exclude: new Set(ids) });
           candidates = shortlist(ranked, budget, 12, 3);
           light = tasteLight(CATALOG, scores);
-          emit({ kind: "score", label: `Scored all ${CATALOG.length} titles with Qloo affinity`, detail: `${candidates.length} candidates within budget${budget ? ` ($${budget})` : ""}`, status: "ok", light });
+          emit({ kind: "score", label: `Scored all ${CATALOG.length} titles with Qloo affinity`, detail: `${candidates.length} candidates within budget${budget ? ` ($${budget})` : ""}${demo.age || demo.gender ? `, weighted for a recipient ${[demo.gender, demo.age?.replace(/_/g, " ")].filter(Boolean).join(", ")} (Qloo demographics)` : ""}`, status: "ok", light });
         }
         reply(candidates.map((r) => ({ id: r.item.id, title: r.item.title, format: r.item.category, year: r.item.year ?? null, creators: r.item.creators.slice(0, 3), qloo_tags: (r.item.tags ?? []).slice(0, 6), price_usd: r.item.price_usd, by_named_taste: r.direct, qloo_lead_taste: lead(r.item.id) })));
       } else if (u.name === "check_store") {
         if (!gap) {
           const formats = ((input.formats as string[]) ?? []).map((f) => FORMAT[f]).filter(Boolean);
-          gap = await demandGap(((input.entity_ids as string[]) ?? []).filter(Boolean), formats, calls);
+          gap = await demandGap(((input.entity_ids as string[]) ?? []).filter(Boolean), formats, calls, demo);
           if (gap) emit({ kind: "score", label: `Store check: we carry ${gap.wanted.filter((w) => w.owned).length} of the ${gap.wanted.length} titles this taste loves most`, detail: `Missing ones go to the owner: ${gap.wanted.filter((w) => !w.owned).slice(0, 3).map((w) => w.name).join(", ")}`, status: "ok" });
         }
         reply(gap ? { carried: gap.wanted.filter((w) => w.owned).map((w) => w.name), missing: gap.wanted.filter((w) => !w.owned).map((w) => w.name) } : { error: "no data" }, !gap);
@@ -212,8 +226,18 @@ async function loop(request: string, onStep?: (s: Step) => void): Promise<Agenti
     }
     messages.push({ role: "user", content: results });
   }
+  // The model stopped early (or ran out of turns) without recommending. If tastes were found but the catalog was
+  // never scored, score it now so the shopper still gets an answer.
+  if (!ranked && named.length && !over()) {
+    const scored = await scoreCatalog(named.map((n) => n.id), await mapCatalog(calls), calls, CATALOG, demo);
+    scores = scored.scores;
+    ranked = rank({ arm: "qloo", items: CATALOG, signalNames: named.map((n) => n.name), scores, baseline, taste: "pct+fmt", formats: [], exclude: new Set(named.map((n) => n.id)) });
+    candidates = shortlist(ranked, budget, 12, 3);
+    light = tasteLight(CATALOG, scores);
+    emit({ kind: "score", label: `Scored all ${CATALOG.length} titles with Qloo affinity`, detail: `${candidates.length} candidates`, status: "ok", light });
+  }
   // Out of turns without a final answer: fall back to the deterministic shortlist we already have.
-  const picks: Pick[] = candidates.slice(0, 5).map((r) => ({ item: r.item, affinity: r.affinity, lift: r.lift, chain: [], why: r.direct.length ? `By ${r.direct.join(" and ")}.` : "Strong Qloo match for these tastes.", direct: r.direct }));
+  const picks: Pick[] = candidates.slice(0, 5).map((r) => ({ item: r.item, affinity: r.affinity, lift: r.lift, chain: [], why: groundedWhy("", r), direct: r.direct, basis: basis(r) }));
   emit({ kind: "rank", label: "Agent ran out of steps; showing the top scored titles", status: "warn" });
   return { request, extraction: { recipient: "", budget_usd: budget, signals: named.map((n) => ({ name: n.name, kind: n.type })) } as never, steps, picks, calls, modes: { qloo: QLOO_MODE, llm: "agent" }, usd, gap, audience: aud, turns: MAX_TURNS, route };
 }

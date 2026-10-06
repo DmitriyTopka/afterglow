@@ -64,12 +64,20 @@ export async function mapCatalog(calls: QlooCall[], items: Item[] = CATALOG): Pr
 
 const CHUNK = 50; // entities per insights call
 
+/** Who the gift is for, as Qloo demographic signals (shifts affinity toward what people like them love). */
+export interface Demo { age?: "35_and_younger" | "36_to_55" | "55_and_older"; gender?: "male" | "female" }
+export const demoParams = (d: Demo): Record<string, string> => ({
+  ...(d.age ? { "signal.demographics.age": d.age } : {}),
+  ...(d.gender ? { "signal.demographics.gender": d.gender } : {}),
+});
+
 /** Insights calls per entity type (chunks of 50). Returns catalog item id -> score; items Qloo leaves out are absent. */
 export async function scoreCatalog(
   signalIds: string[],
   itemIds: Map<string, string>,
   calls: QlooCall[],
   items: Item[] = CATALOG,
+  demo: Demo = {},
 ): Promise<{ scores: Map<string, ItemScore>; byType: Array<{ type: string; scored: number }> }> {
   const byType = new Map<string, Item[]>();
   for (const it of items) if (itemIds.has(it.id)) byType.set(it.qloo.type, [...(byType.get(it.qloo.type) ?? []), it]);
@@ -88,6 +96,7 @@ export async function scoreCatalog(
             "signal.interests.entities": signalIds.join(","),
             "filter.results.entities": chunk.join(","),
             "feature.explainability": "true",
+            ...demoParams(demo),
             take: String(chunk.length),
           },
           calls,

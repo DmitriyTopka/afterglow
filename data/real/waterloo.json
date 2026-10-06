@@ -1,0 +1,1644 @@
+{
+ "source": "Waterloo Records, Austin TX: public Shopify catalog feed, collection 'waterloo-best-sellers', first 500 items, fetched 2026-10-07. No affiliation.",
+ "items": 500,
+ "records": 452,
+ "artists": 218,
+ "recognised": 192,
+ "median_price": 27.99,
+ "shelf": [
+  {
+   "artist": "Olivia Dean",
+   "items": 4,
+   "entity_id": "E648AC0B-CBF6-49BE-84F9-2E33EBD59C43",
+   "qloo_name": "Olivia Dean"
+  },
+  {
+   "artist": "Bad Bunny",
+   "items": 1,
+   "entity_id": "BDA1B73F-10E7-4D09-AC51-B796CCEC5FF3",
+   "qloo_name": "Bad Bunny"
+  },
+  {
+   "artist": "Taylor Swift",
+   "items": 4,
+   "entity_id": "4BBEF799-A0C4-4110-AB01-39216993C312",
+   "qloo_name": "Taylor Swift"
+  },
+  {
+   "artist": "Geese",
+   "items": 3,
+   "entity_id": "5C0B120A-37A0-4E5B-9350-BA0BB8746EC6",
+   "qloo_name": "Geese"
+  },
+  {
+   "artist": "Jeff Buckley",
+   "items": 3,
+   "entity_id": "E00E6460-45CD-4E52-B367-A569293AC63A",
+   "qloo_name": "Jeff Buckley"
+  },
+  {
+   "artist": "Kacey Musgraves",
+   "items": 4,
+   "entity_id": "9AAE0224-F8E2-447A-BD05-26D2A9E72573",
+   "qloo_name": "Kacey Musgraves"
+  },
+  {
+   "artist": "Olivia Rodrigo",
+   "items": 4,
+   "entity_id": "087EF30C-3367-49B8-AC58-8B8C01D69DB6",
+   "qloo_name": "Olivia Rodrigo"
+  },
+  {
+   "artist": "Tame Impala",
+   "items": 7,
+   "entity_id": "D1AE8792-9129-46E0-AEE7-2C3A81E91385",
+   "qloo_name": "Tame Impala"
+  },
+  {
+   "artist": "Radiohead",
+   "items": 6,
+   "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+   "qloo_name": "Radiohead"
+  },
+  {
+   "artist": "Johnny Blue Skies",
+   "items": 3,
+   "entity_id": "D913D3FD-78CC-415C-9979-BBC949D2543A",
+   "qloo_name": "Johnny Blue Skies"
+  },
+  {
+   "artist": "The Marias",
+   "items": 5,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "Harry Styles",
+   "items": 2,
+   "entity_id": "5D28EDAC-F84F-42EB-8DB3-28EC65330287",
+   "qloo_name": "Harry Styles"
+  },
+  {
+   "artist": "Hayley Williams",
+   "items": 2,
+   "entity_id": "AAD9FFE2-E72E-48B9-8E0E-B3BA77BC8AF8",
+   "qloo_name": "Hayley Williams"
+  },
+  {
+   "artist": "Sade",
+   "items": 4,
+   "entity_id": "65726539-EA36-4283-914C-6EC71001F1F1",
+   "qloo_name": "Sade"
+  },
+  {
+   "artist": "Michael Jackson",
+   "items": 5,
+   "entity_id": "F543075C-57C4-4AB9-B3B7-04A3D6C7C30A",
+   "qloo_name": "Michael Jackson"
+  },
+  {
+   "artist": "Lauryn Hill",
+   "items": 1,
+   "entity_id": "8B860B51-64BE-44FA-8B31-F2918B103736",
+   "qloo_name": "Lauryn Hill"
+  },
+  {
+   "artist": "Ella Langley",
+   "items": 2,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "Pink Floyd",
+   "items": 6,
+   "entity_id": "62947437-2EC8-4C46-BE25-677E266DEB78",
+   "qloo_name": "Pink Floyd"
+  },
+  {
+   "artist": "Rosalia",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "Charley Crockett",
+   "items": 2,
+   "entity_id": "9866F5AE-FEB0-43EF-85BC-0B159B74CF40",
+   "qloo_name": "Charley Crockett"
+  },
+  {
+   "artist": "Tyler The Creator",
+   "items": 2,
+   "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+   "qloo_name": "Tyler, the Creator"
+  },
+  {
+   "artist": "Phoebe Bridgers",
+   "items": 5,
+   "entity_id": "AFBC71A7-9439-4AB0-AB68-D14B11AAF836",
+   "qloo_name": "Phoebe Bridgers"
+  },
+  {
+   "artist": "DJO",
+   "items": 4,
+   "entity_id": "1539AC2F-F7BD-4146-B539-6D6B1B54A7A2",
+   "qloo_name": "Djo"
+  },
+  {
+   "artist": "Cameron Winter",
+   "items": 2,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "Gorillaz",
+   "items": 7,
+   "entity_id": "80CB1FC4-9741-427A-A0DA-AB2293D2FED6",
+   "qloo_name": "Gorillaz"
+  },
+  {
+   "artist": "Daft Punk",
+   "items": 3,
+   "entity_id": "012EF80C-B187-4ECB-9C3D-9CA5228B503C",
+   "qloo_name": "Daft Punk"
+  },
+  {
+   "artist": "Miles Davis",
+   "items": 2,
+   "entity_id": "578CFC26-B696-449A-9655-3FB270DDA725",
+   "qloo_name": "Miles Davis"
+  },
+  {
+   "artist": "Tyler Childers",
+   "items": 2,
+   "entity_id": "9B5028F6-5808-4BF4-A623-24C6C148D24B",
+   "qloo_name": "Tyler Childers"
+  },
+  {
+   "artist": "SLAYYYTER",
+   "items": 2,
+   "entity_id": "1EF9B363-B6C1-4689-B506-0EC9AF211B43",
+   "qloo_name": "slayyyter"
+  },
+  {
+   "artist": "The Strokes",
+   "items": 8,
+   "entity_id": "1A44C04F-7251-4809-809B-6C885FFD68EB",
+   "qloo_name": "The Strokes"
+  },
+  {
+   "artist": "The Smiths",
+   "items": 2,
+   "entity_id": "9FCB92D1-9B48-4ADF-A6DC-350DAA7E91AF",
+   "qloo_name": "The Smiths"
+  },
+  {
+   "artist": "Angine de Poitrine",
+   "items": 2,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "Frank Ocean",
+   "items": 1,
+   "entity_id": "2B134C93-39EB-4A08-A72D-5F8F1167FDAA",
+   "qloo_name": "Frank Ocean"
+  },
+  {
+   "artist": "Bob Dylan",
+   "items": 1,
+   "entity_id": "54652BC1-43E5-4A00-AA7F-57F79D369CA3",
+   "qloo_name": "Bob Dylan"
+  },
+  {
+   "artist": "Khruangbin/Bridges",
+   "items": 2,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "Sabrina Carpenter",
+   "items": 4,
+   "entity_id": "F5453A45-593C-41EC-BD5A-453D1AEC565C",
+   "qloo_name": "Sabrina Carpenter"
+  },
+  {
+   "artist": "Mac Demarco",
+   "items": 3,
+   "entity_id": "B58E846A-D1F1-4C6A-AFA7-9230F74CAEE0",
+   "qloo_name": "Mac DeMarco"
+  },
+  {
+   "artist": "Panic At The Disco",
+   "items": 2,
+   "entity_id": "60B9C171-750C-4B3C-9497-55A345764A36",
+   "qloo_name": "Panic! at the Disco"
+  },
+  {
+   "artist": "Pierce The Veil",
+   "items": 6,
+   "entity_id": "653BD725-93BF-4488-88F5-26881AFBE1BA",
+   "qloo_name": "Pierce The Veil"
+  },
+  {
+   "artist": "Steely Dan",
+   "items": 2,
+   "entity_id": "ADD1B2E4-0551-400F-8D58-BC7F147DF6CA",
+   "qloo_name": "Steely Dan"
+  },
+  {
+   "artist": "Adrian Quesada",
+   "items": 1,
+   "entity_id": "380D5EC7-5DBE-435A-81AF-8CB52914C6DA",
+   "qloo_name": "Adrian Quesada"
+  },
+  {
+   "artist": "Arctic Monkeys",
+   "items": 2,
+   "entity_id": "E3CF515E-C3EA-46DF-92DD-64A0DC360C90",
+   "qloo_name": "Arctic Monkeys"
+  },
+  {
+   "artist": "Laufey",
+   "items": 6,
+   "entity_id": "6C2BE7A7-4154-4F0B-BE10-E751AC9061CF",
+   "qloo_name": "Laufey"
+  },
+  {
+   "artist": "Noah Kahan",
+   "items": 5,
+   "entity_id": "0A8052C7-2F56-43B5-B133-F59F8F2917E0",
+   "qloo_name": "Noah Kahan"
+  },
+  {
+   "artist": "Sombr",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "The Beatles",
+   "items": 5,
+   "entity_id": "996272B0-CB79-48D3-8B83-8ED34F2DE9AF",
+   "qloo_name": "The Beatles"
+  },
+  {
+   "artist": "Roan Chappell",
+   "items": 2,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "Ethel Cain",
+   "items": 1,
+   "entity_id": "DD692BAE-4DA3-4E42-8331-EBB59A5634E5",
+   "qloo_name": "Ethel Cain"
+  },
+  {
+   "artist": "Nirvana",
+   "items": 3,
+   "entity_id": "6700295B-3DBB-4F55-A5B0-80C155EA1186",
+   "qloo_name": "Nirvana"
+  },
+  {
+   "artist": "Malcolm Todd",
+   "items": 4,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "Pearl Jam",
+   "items": 2,
+   "entity_id": "6DE25E22-8933-4BC0-B0C3-89D060C034AF",
+   "qloo_name": "Pearl Jam"
+  },
+  {
+   "artist": "Cocteau Twins",
+   "items": 1,
+   "entity_id": "973FE25D-D742-405B-9878-C4648CD96125",
+   "qloo_name": "Cocteau Twins"
+  },
+  {
+   "artist": "Coldplay",
+   "items": 2,
+   "entity_id": "B6FA456F-B729-4700-B01F-E82AD3AC8ADA",
+   "qloo_name": "Coldplay"
+  },
+  {
+   "artist": "SZA",
+   "items": 3,
+   "entity_id": "E2E58680-EE3F-4D1D-88B6-B79F87205B2C",
+   "qloo_name": "SZA"
+  },
+  {
+   "artist": "System of a Down",
+   "items": 2,
+   "entity_id": "3EB55690-FE10-4644-BE6E-FEDCF29238A5",
+   "qloo_name": "System of a Down"
+  },
+  {
+   "artist": "Red Hot Chili Pepper",
+   "items": 2,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "Chappell Roan",
+   "items": 1,
+   "entity_id": "1C8D8828-5739-4304-9506-BA01B3D63516",
+   "qloo_name": "Chappell Roan"
+  },
+  {
+   "artist": "Boards of Canada",
+   "items": 2,
+   "entity_id": "6B50D8AA-6A47-4DF3-87D8-3984A4A28952",
+   "qloo_name": "Boards of Canada"
+  },
+  {
+   "artist": "Queen",
+   "items": 1,
+   "entity_id": "1BBCDDBC-EC0D-440F-A5E9-7AE289585178",
+   "qloo_name": "Queen"
+  },
+  {
+   "artist": "Paramore",
+   "items": 6,
+   "entity_id": "E7D47221-D574-401A-B0A6-9286FA74EB17",
+   "qloo_name": "Paramore"
+  },
+  {
+   "artist": "Khruangbin",
+   "items": 2,
+   "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+   "qloo_name": "Khruangbin"
+  },
+  {
+   "artist": "Clairo",
+   "items": 2,
+   "entity_id": "9B2140E4-8DEB-452C-BB75-C3B7B6AD198E",
+   "qloo_name": "Clairo"
+  },
+  {
+   "artist": "My Chemical Romance",
+   "items": 5,
+   "entity_id": "97C28558-47C8-4D19-88EC-CD5F8EA82B3B",
+   "qloo_name": "My Chemical Romance"
+  },
+  {
+   "artist": "Billie Eilish",
+   "items": 3,
+   "entity_id": "D7BCE4CD-5135-4608-8A7D-78E08FFD52F3",
+   "qloo_name": "Billie Eilish"
+  },
+  {
+   "artist": "Alice in Chains",
+   "items": 4,
+   "entity_id": "F2FEDF72-F8A9-4FED-8CDD-E406B46D862D",
+   "qloo_name": "Alice in Chains"
+  },
+  {
+   "artist": "Abba",
+   "items": 1,
+   "entity_id": "6EFDAE6B-574F-4EAA-930A-09C61C80E453",
+   "qloo_name": "ABBA"
+  },
+  {
+   "artist": "Kanye West",
+   "items": 10,
+   "entity_id": "542B2183-3831-4A9A-BF23-C873814A844D",
+   "qloo_name": "Kanye West"
+  },
+  {
+   "artist": "Mac Miller",
+   "items": 3,
+   "entity_id": "13C6A087-4614-473E-846A-FF156A41D028",
+   "qloo_name": "Mac Miller"
+  },
+  {
+   "artist": "Lorde",
+   "items": 3,
+   "entity_id": "A37B17AE-15C7-48A3-AADD-6CE50BE3FF74",
+   "qloo_name": "Lorde"
+  },
+  {
+   "artist": "Kendrick Lamar",
+   "items": 4,
+   "entity_id": "C915A918-39C5-47A3-A101-D9FA1DECBD9C",
+   "qloo_name": "Kendrick Lamar"
+  },
+  {
+   "artist": "Nick Drake",
+   "items": 1,
+   "entity_id": "9FDC44C4-D40D-484C-AAAC-88E1C2B13998",
+   "qloo_name": "Nick Drake"
+  },
+  {
+   "artist": "Title Fight",
+   "items": 4,
+   "entity_id": "4928DE2D-2312-4D83-A5B7-B00F98F11208",
+   "qloo_name": "Title Fight"
+  },
+  {
+   "artist": "The Cure",
+   "items": 2,
+   "entity_id": "CB36C13A-CC81-4081-98B6-D1EEA8DACC55",
+   "qloo_name": "The Cure"
+  },
+  {
+   "artist": "Amy Winehouse",
+   "items": 1,
+   "entity_id": "10AE6E44-D058-4C1D-818F-FF4B37D069CB",
+   "qloo_name": "Amy Winehouse"
+  },
+  {
+   "artist": "Role Model",
+   "items": 1,
+   "entity_id": "57561E57-C20F-4F07-8BE8-4775966F9EF6",
+   "qloo_name": "Role Model"
+  },
+  {
+   "artist": "MK Gee",
+   "items": 1,
+   "entity_id": "BF4A9D39-D3B6-4276-A3C0-DB005063443C",
+   "qloo_name": "Mk.gee"
+  },
+  {
+   "artist": "Lana Del Rey",
+   "items": 2,
+   "entity_id": "63BBE4D8-D721-466F-907C-D0007E9B6665",
+   "qloo_name": "Lana Del Rey"
+  },
+  {
+   "artist": "Vince Guaraldi",
+   "items": 2,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "Flatland Cavalry",
+   "items": 1,
+   "entity_id": "B1A40E1B-A1E7-4614-8D75-4FFB0AF757DE",
+   "qloo_name": "Flatland Cavalry"
+  },
+  {
+   "artist": "Depeche Mode",
+   "items": 1,
+   "entity_id": "83DA77D5-4364-4E55-93D3-A8420CDD354A",
+   "qloo_name": "Depeche Mode"
+  },
+  {
+   "artist": "Norah Jones",
+   "items": 1,
+   "entity_id": "CFB97CDA-1B2D-4F1A-B707-415E76AFC016",
+   "qloo_name": "Norah Jones"
+  },
+  {
+   "artist": "Cage the Elephant",
+   "items": 1,
+   "entity_id": "F6BBDF90-222E-43F4-A1F8-1F20CD7A2742",
+   "qloo_name": "Cage the Elephant"
+  },
+  {
+   "artist": "Weezer",
+   "items": 3,
+   "entity_id": "FC4F7908-E4F0-41DD-8D5E-92928AE42457",
+   "qloo_name": "Weezer"
+  },
+  {
+   "artist": "Beach House",
+   "items": 1,
+   "entity_id": "3460E83E-DCD5-4D1B-B3BF-1B6C1D6D2BB8",
+   "qloo_name": "Beach House"
+  },
+  {
+   "artist": "Waterparks",
+   "items": 2,
+   "entity_id": "00A28E97-A9F2-4C08-9AC8-D6CF94CFC7FF",
+   "qloo_name": "Waterparks"
+  },
+  {
+   "artist": "Jungle",
+   "items": 2,
+   "entity_id": "061CE350-5D95-49F0-8C09-3D13B2E2D056",
+   "qloo_name": "Jungle"
+  },
+  {
+   "artist": "Chevelle",
+   "items": 2,
+   "entity_id": "318D56E0-D0C4-4EBB-AF85-65308602AF51",
+   "qloo_name": "Chevelle"
+  },
+  {
+   "artist": "Not For Radio",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "Mitski",
+   "items": 2,
+   "entity_id": "E3BD2650-8E5C-43FB-B5A7-C1C7753A6293",
+   "qloo_name": "Mitski"
+  },
+  {
+   "artist": "Talking Heads",
+   "items": 1,
+   "entity_id": "1A758B66-ED5E-4DB7-A8FF-FE4EFA06001B",
+   "qloo_name": "Talking Heads"
+  },
+  {
+   "artist": "Oasis",
+   "items": 1,
+   "entity_id": "892D4014-60ED-4E06-8417-468F0F620D64",
+   "qloo_name": "Oasis"
+  },
+  {
+   "artist": "Raye",
+   "items": 1,
+   "entity_id": "2EAF943A-AFB9-4C87-AA3F-9C08989B470A",
+   "qloo_name": "Raye"
+  },
+  {
+   "artist": "Slowdive",
+   "items": 1,
+   "entity_id": "203A956D-A333-4B2F-B909-8CD76A0E6806",
+   "qloo_name": "Slowdive"
+  },
+  {
+   "artist": "Mazzy Star",
+   "items": 2,
+   "entity_id": "447527CA-F22A-490B-A72F-8A2B0E2C6510",
+   "qloo_name": "Mazzy Star"
+  },
+  {
+   "artist": "The Cranberries",
+   "items": 1,
+   "entity_id": "4DA68D24-5AEB-4D70-BCE4-894CD107CB46",
+   "qloo_name": "The Cranberries"
+  },
+  {
+   "artist": "Leon Bridges",
+   "items": 1,
+   "entity_id": "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162",
+   "qloo_name": "Leon Bridges"
+  },
+  {
+   "artist": "Hozier",
+   "items": 1,
+   "entity_id": "7D903E2F-70AB-44CB-AA88-82501E6D04DD",
+   "qloo_name": "Hozier"
+  },
+  {
+   "artist": "Sublime",
+   "items": 1,
+   "entity_id": "32191B31-A084-445A-A67C-463CD380484C",
+   "qloo_name": "Sublime"
+  },
+  {
+   "artist": "ASAP Rocky",
+   "items": 1,
+   "entity_id": "CCC2599B-E148-4B98-9A82-04710A5C707C",
+   "qloo_name": "ASAP Rocky"
+  },
+  {
+   "artist": "Zach Top",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "John Mayer",
+   "items": 1,
+   "entity_id": "5812BB0B-A8F3-4CCF-A960-5AF89A3FB3EC",
+   "qloo_name": "John Mayer"
+  },
+  {
+   "artist": "The Internet",
+   "items": 1,
+   "entity_id": "84499FCE-927E-4300-AD46-BAF19B94D3BB",
+   "qloo_name": "The Internet"
+  },
+  {
+   "artist": "Hum",
+   "items": 1,
+   "entity_id": "65D57ED3-C41E-4C51-84A0-D41C6081413E",
+   "qloo_name": "Hum"
+  },
+  {
+   "artist": "Bruno Mars",
+   "items": 1,
+   "entity_id": "A8A71B45-1FF5-475F-8559-581CECF97563",
+   "qloo_name": "Bruno Mars"
+  },
+  {
+   "artist": "The Sundays",
+   "items": 2,
+   "entity_id": "A6931FA3-38D2-491D-A12E-49F7DF92875F",
+   "qloo_name": "The Sundays"
+  },
+  {
+   "artist": "Selena",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "Linkin Park",
+   "items": 4,
+   "entity_id": "ABB725B5-B689-431B-A90F-A06FF9313F0F",
+   "qloo_name": "Linkin Park"
+  },
+  {
+   "artist": "Drake",
+   "items": 2,
+   "entity_id": "FAA55DC8-6030-4CC8-9BA6-4668295C3FA7",
+   "qloo_name": "Drake"
+  },
+  {
+   "artist": "Billy Joel",
+   "items": 1,
+   "entity_id": "0DC6AE64-E9C1-486D-B239-5E77458C0B2E",
+   "qloo_name": "Billy Joel"
+  },
+  {
+   "artist": "Fleshwater",
+   "items": 2,
+   "entity_id": "7022072D-17D2-4438-800A-3AE464EF861D",
+   "qloo_name": "fleshwater"
+  },
+  {
+   "artist": "Stevie Wonder",
+   "items": 1,
+   "entity_id": "DFA0C571-5ADC-45CA-BA33-1AF68C698CA2",
+   "qloo_name": "Stevie Wonder"
+  },
+  {
+   "artist": "MJ Lenderman",
+   "items": 1,
+   "entity_id": "E006A0A4-D498-4849-899D-F16F455BE631",
+   "qloo_name": "MJ Lenderman"
+  },
+  {
+   "artist": "Clipse",
+   "items": 1,
+   "entity_id": "7B928E14-F7E4-4151-8251-CF0B62A62B43",
+   "qloo_name": "Clipse"
+  },
+  {
+   "artist": "Prince & The Revolut",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "The Killers",
+   "items": 1,
+   "entity_id": "9F1FC72B-9B11-4D17-8848-FBCC57442B0B",
+   "qloo_name": "The Killers"
+  },
+  {
+   "artist": "Massive Attack",
+   "items": 1,
+   "entity_id": "E57B2F09-8078-4EDE-BEC0-4B02794A8D9E",
+   "qloo_name": "Massive Attack"
+  },
+  {
+   "artist": "Ca7riel/Paco Amoroso",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "Turnstile",
+   "items": 2,
+   "entity_id": "EE3F789A-3717-4B75-94F1-8DC5F220D4A2",
+   "qloo_name": "Turnstile"
+  },
+  {
+   "artist": "Queens Of The Stone",
+   "items": 2,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "Zach Bryan",
+   "items": 2,
+   "entity_id": "3221FBAC-2C10-4BAA-ADE0-AB40D02D5670",
+   "qloo_name": "Zach Bryan"
+  },
+  {
+   "artist": "Beyoncé",
+   "items": 1,
+   "entity_id": "F6754C46-B3E7-457F-8B7E-06C613597320",
+   "qloo_name": "Beyoncé"
+  },
+  {
+   "artist": "The Beach Boys",
+   "items": 2,
+   "entity_id": "36C11E0C-71A7-4D58-89C2-837179B12ED7",
+   "qloo_name": "The Beach Boys"
+  },
+  {
+   "artist": "Charli Xcx",
+   "items": 1,
+   "entity_id": "B4A3F0F0-354D-4CAD-9F96-11A20709CB9C",
+   "qloo_name": "Charli XCX"
+  },
+  {
+   "artist": "Addison Rae",
+   "items": 2,
+   "entity_id": "52278DD3-3506-4C92-84BC-BD2B4A30F143",
+   "qloo_name": "Addison Rae"
+  },
+  {
+   "artist": "Faye Webster",
+   "items": 1,
+   "entity_id": "F562D40B-46B6-493A-9B33-2E8B3B2D4635",
+   "qloo_name": "Faye Webster"
+  },
+  {
+   "artist": "The Smashing Pumpkins",
+   "items": 4,
+   "entity_id": "4E2076A6-D484-45D5-A700-65F57E83A626",
+   "qloo_name": "The Smashing Pumpkins"
+  },
+  {
+   "artist": "MF DOOM",
+   "items": 3,
+   "entity_id": "2526A0E0-BCB7-4DE5-AE85-5FBAB14CC246",
+   "qloo_name": "MF DOOM"
+  },
+  {
+   "artist": "Fontaines DC",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "Erykah Badu",
+   "items": 1,
+   "entity_id": "D912BC1A-1A32-4D08-8442-BF2422824E80",
+   "qloo_name": "Erykah Badu"
+  },
+  {
+   "artist": "A$AP Rocky",
+   "items": 1,
+   "entity_id": "E39030CC-3348-409F-B89F-66B4EA92BFD8",
+   "qloo_name": "A$AP Rocky"
+  },
+  {
+   "artist": "Justin Bieber",
+   "items": 1,
+   "entity_id": "89C2B9FB-4C5E-4676-8DDB-9FEB7E0FCDE6",
+   "qloo_name": "Justin Bieber"
+  },
+  {
+   "artist": "Blood Orange",
+   "items": 2,
+   "entity_id": "903722DD-1F43-443A-B449-517866708D54",
+   "qloo_name": "Blood Orange"
+  },
+  {
+   "artist": "Dijon",
+   "items": 1,
+   "entity_id": "9D8711DD-F096-4DDB-AB73-A5BAF8756C22",
+   "qloo_name": "DIJON"
+  },
+  {
+   "artist": "Boston",
+   "items": 1,
+   "entity_id": "95FE9525-5053-4EFA-BD9E-12A1A6DEAECB",
+   "qloo_name": "Boston"
+  },
+  {
+   "artist": "Melanie Martinez",
+   "items": 2,
+   "entity_id": "72A40D3E-829E-40AE-97AA-CD061EAF146A",
+   "qloo_name": "Melanie Martinez"
+  },
+  {
+   "artist": "Tv Girl",
+   "items": 2,
+   "entity_id": "FD8B128B-6F17-45FE-AD7E-CB16806F7E37",
+   "qloo_name": "TV Girl"
+  },
+  {
+   "artist": "Frank Sinatra",
+   "items": 1,
+   "entity_id": "FC0F8D26-BA80-4D83-8BBF-FC011DC8D241",
+   "qloo_name": "Frank Sinatra"
+  },
+  {
+   "artist": "Bob Marley",
+   "items": 3,
+   "entity_id": "A921B4A4-466B-4868-8DD2-D0B168EAA306",
+   "qloo_name": "Bob Marley"
+  },
+  {
+   "artist": "Evanescence",
+   "items": 1,
+   "entity_id": "6C4B2346-1AFC-4C49-BC6F-8A7B58399D43",
+   "qloo_name": "Evanescence"
+  },
+  {
+   "artist": "Pinkpantheress",
+   "items": 3,
+   "entity_id": "7C9617C7-1FA1-4F83-8FDE-2EC2148339C3",
+   "qloo_name": "pinkpantheress"
+  },
+  {
+   "artist": "Cigarettes After Sex",
+   "items": 1,
+   "entity_id": "84039213-80AF-4E36-8CAB-5B0CB653EA6A",
+   "qloo_name": "Cigarettes After Sex"
+  },
+  {
+   "artist": "Turnpike Troubadours",
+   "items": 1,
+   "entity_id": "75D2F791-F5BA-4E13-96F2-C12768096A95",
+   "qloo_name": "Turnpike Troubadours"
+  },
+  {
+   "artist": "Madvillain",
+   "items": 1,
+   "entity_id": "D786CD08-9A7A-4EE4-A57C-B4D196331F39",
+   "qloo_name": "Madvillain"
+  },
+  {
+   "artist": "Cole J",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "Adele",
+   "items": 2,
+   "entity_id": "24012F7D-C125-4EB7-A661-6AF65523E43C",
+   "qloo_name": "Adele"
+  },
+  {
+   "artist": "Shakey Graves",
+   "items": 1,
+   "entity_id": "461D94F8-77B3-4544-9796-D888A899048E",
+   "qloo_name": "Shakey Graves"
+  },
+  {
+   "artist": "Adrianne Lenker",
+   "items": 1,
+   "entity_id": "F919E809-3234-4251-B031-5327E609AD82",
+   "qloo_name": "AdriAnne Lenker"
+  },
+  {
+   "artist": "Maroon 5",
+   "items": 1,
+   "entity_id": "676A76B8-926C-4BA1-A6EF-0F32A5EA4225",
+   "qloo_name": "Maroon 5"
+  },
+  {
+   "artist": "Steve Lacy",
+   "items": 2,
+   "entity_id": "FC2E3A2F-A99A-4287-91E7-7FD8F7DE0A40",
+   "qloo_name": "Steve Lacy"
+  },
+  {
+   "artist": "Marvin Gaye",
+   "items": 2,
+   "entity_id": "7C7B2D3A-FE7E-4507-8D00-183671B5177D",
+   "qloo_name": "Marvin Gaye"
+  },
+  {
+   "artist": "Charli XCX",
+   "items": 2,
+   "entity_id": "B4A3F0F0-354D-4CAD-9F96-11A20709CB9C",
+   "qloo_name": "Charli XCX"
+  },
+  {
+   "artist": "Natalia Lafourcade",
+   "items": 1,
+   "entity_id": "7FDE68C0-E3AE-418B-8527-DBFA9F972971",
+   "qloo_name": "Natalia Lafourcade"
+  },
+  {
+   "artist": "Beabadoobee",
+   "items": 1,
+   "entity_id": "21E391CC-71CD-480F-B8BA-049BD36C6DA5",
+   "qloo_name": "beabadoobee"
+  },
+  {
+   "artist": "Chris Stapleton",
+   "items": 1,
+   "entity_id": "50D63FB3-3D36-46FD-B047-EC073A3D35BD",
+   "qloo_name": "Chris Stapleton"
+  },
+  {
+   "artist": "Geordie Greep",
+   "items": 1,
+   "entity_id": "DF680A66-4BF9-42A3-A4E6-29B7A04BA435",
+   "qloo_name": "geordie greep"
+  },
+  {
+   "artist": "Sleep Token",
+   "items": 1,
+   "entity_id": "1F94C0EC-E867-4439-9666-FD0B738B3EC2",
+   "qloo_name": "Sleep Token"
+  },
+  {
+   "artist": "Gustavo Cerati",
+   "items": 1,
+   "entity_id": "1DD211C4-A935-4BFC-861B-D82D01308703",
+   "qloo_name": "Gustavo Cerati"
+  },
+  {
+   "artist": "Twenty One Pilots",
+   "items": 1,
+   "entity_id": "0C9D24CF-61C6-4C91-B6E6-91827467A166",
+   "qloo_name": "Twenty One Pilots"
+  },
+  {
+   "artist": "Lucinda Williams",
+   "items": 2,
+   "entity_id": "71C4A5C5-0C9B-4383-B06D-EC20C02BCD5B",
+   "qloo_name": "Lucinda Williams"
+  },
+  {
+   "artist": "Lizzy McAlpine",
+   "items": 1,
+   "entity_id": "3662851D-81E9-4D42-941F-486B87B101CA",
+   "qloo_name": "Lizzy McAlpine"
+  },
+  {
+   "artist": "Portishead",
+   "items": 1,
+   "entity_id": "045707A1-C8EF-443F-A882-1B97AC69DC9A",
+   "qloo_name": "Portishead"
+  },
+  {
+   "artist": "Dangelo",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "Blink 182",
+   "items": 1,
+   "entity_id": "D1AA6C1F-F7E4-4A9F-96A3-6A088BA2587A",
+   "qloo_name": "blink-182"
+  },
+  {
+   "artist": "Jack White",
+   "items": 1,
+   "entity_id": "5FBB0A46-74FB-429C-ABB4-6FBF5FE92F05",
+   "qloo_name": "Jack White"
+  },
+  {
+   "artist": "Chance the Rapper",
+   "items": 1,
+   "entity_id": "AA0A1AAB-488D-45C2-B7FC-B73D6C0C877F",
+   "qloo_name": "Chance the Rapper"
+  },
+  {
+   "artist": "Colter Wall",
+   "items": 1,
+   "entity_id": "2D3A5E81-92E2-48C4-99F7-9AB7AC02C48D",
+   "qloo_name": "Colter Wall"
+  },
+  {
+   "artist": "Ariana Grande",
+   "items": 2,
+   "entity_id": "EEE15A04-1AB1-43EA-945E-B93EA6DD920A",
+   "qloo_name": "Ariana Grande"
+  },
+  {
+   "artist": "Doechii",
+   "items": 1,
+   "entity_id": "D9CB18A2-B843-4177-A918-B51D7EF7B4D6",
+   "qloo_name": "Doechii"
+  },
+  {
+   "artist": "Maggie Rogers",
+   "items": 1,
+   "entity_id": "D0DFD941-A7DB-4310-9B39-1D51BD7F085F",
+   "qloo_name": "Maggie Rogers"
+  },
+  {
+   "artist": "Audioslave",
+   "items": 1,
+   "entity_id": "3985DDEC-C45D-4D3E-A42E-F81D55C8FA34",
+   "qloo_name": "Audioslave"
+  },
+  {
+   "artist": "Fiona Apple",
+   "items": 1,
+   "entity_id": "AD268CE4-7B73-44E9-BA97-535F5D422EB3",
+   "qloo_name": "Fiona Apple"
+  },
+  {
+   "artist": "The Backseat Lovers",
+   "items": 1,
+   "entity_id": "1B4D9A48-6422-4F14-8DB0-1870161CC693",
+   "qloo_name": "The Backseat Lovers"
+  },
+  {
+   "artist": "Nine Inch Nails",
+   "items": 1,
+   "entity_id": "2E28F9EF-0008-4731-94C3-C195449BA5C2",
+   "qloo_name": "Nine Inch Nails"
+  },
+  {
+   "artist": "Black Eyed Peas",
+   "items": 1,
+   "entity_id": "947BBDC7-1353-4C20-9A5B-AAD7B829E238",
+   "qloo_name": "Black Eyed Peas"
+  },
+  {
+   "artist": "The Weeknd",
+   "items": 1,
+   "entity_id": "A9C3CE3F-9A0C-47B3-8AF8-E75B252F86D8",
+   "qloo_name": "The Weeknd"
+  },
+  {
+   "artist": "Acid Bath",
+   "items": 1,
+   "entity_id": "D1FCAB0C-A558-491E-9376-44140A3F4B7D",
+   "qloo_name": "Acid Bath"
+  },
+  {
+   "artist": "Giveon",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "George Strait",
+   "items": 1,
+   "entity_id": "A8A7AEF3-CA81-40DF-B7D3-B3A06652A9F7",
+   "qloo_name": "George Strait"
+  },
+  {
+   "artist": "Journey",
+   "items": 1,
+   "entity_id": "AE1A744A-5B67-4B89-B829-67F831074EAB",
+   "qloo_name": "Journey"
+  },
+  {
+   "artist": "Hole",
+   "items": 1,
+   "entity_id": "78D681BA-2733-4984-A717-F123592B7839",
+   "qloo_name": "Hole"
+  },
+  {
+   "artist": "Childish Gambino",
+   "items": 2,
+   "entity_id": "C040E149-2449-4BBE-98BF-2FAF1584D19F",
+   "qloo_name": "Childish Gambino"
+  },
+  {
+   "artist": "Don Toliver",
+   "items": 1,
+   "entity_id": "C3A3AF26-9F87-4668-9ECA-3F0947DC6965",
+   "qloo_name": "Don Toliver"
+  },
+  {
+   "artist": "Aphex Twin",
+   "items": 1,
+   "entity_id": "4278382F-4991-4D63-B207-942D86A26ACB",
+   "qloo_name": "Aphex Twin"
+  },
+  {
+   "artist": "Alabama Shakes",
+   "items": 1,
+   "entity_id": "557E7D10-7B05-4B2F-9907-958A9CC9FD17",
+   "qloo_name": "Alabama Shakes"
+  },
+  {
+   "artist": "Brandi Carlile",
+   "items": 1,
+   "entity_id": "B06773DF-96FD-4689-B972-02B425BB5810",
+   "qloo_name": "Brandi Carlile"
+  },
+  {
+   "artist": "Tv Girl/Jordana",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "The Red Clay Strays",
+   "items": 2,
+   "entity_id": "2BC870CA-EFA2-46A4-AE40-6B53D8141C20",
+   "qloo_name": "The Red Clay Strays"
+  },
+  {
+   "artist": "Lord Huron",
+   "items": 1,
+   "entity_id": "5C8FCE87-124F-44DE-A195-112F36A7CAB6",
+   "qloo_name": "Lord Huron"
+  },
+  {
+   "artist": "Lady Gaga",
+   "items": 2,
+   "entity_id": "3C630514-7D7C-451F-91B2-309FB1B54742",
+   "qloo_name": "Lady Gaga"
+  },
+  {
+   "artist": "Rage Against The Machine",
+   "items": 1,
+   "entity_id": "4070A9DA-CD52-4E86-84EA-CA7F9EF78E37",
+   "qloo_name": "Rage Against the Machine"
+  },
+  {
+   "artist": "Sienna Spiro",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "Butthole Surfers",
+   "items": 1,
+   "entity_id": "E99C8381-C107-45B6-8C25-249E7985B236",
+   "qloo_name": "Butthole Surfers"
+  },
+  {
+   "artist": "Sierra Ferrell",
+   "items": 1,
+   "entity_id": "5895FE37-BA6C-4308-A079-A89FD96A08D3",
+   "qloo_name": "Sierra Ferrell"
+  },
+  {
+   "artist": "The Format",
+   "items": 1,
+   "entity_id": "EB8F1D47-CB2E-417C-8888-5B7054EB1BF0",
+   "qloo_name": "The Format"
+  },
+  {
+   "artist": "The Neighbourhood",
+   "items": 1,
+   "entity_id": "EB24591A-F905-4328-8186-50B2001120F6",
+   "qloo_name": "The Neighbourhood"
+  },
+  {
+   "artist": "Sturgill Simpson",
+   "items": 1,
+   "entity_id": "7A02EDC3-E954-4E25-B62A-B76744700CB6",
+   "qloo_name": "Sturgill Simpson"
+  },
+  {
+   "artist": "Joji",
+   "items": 1,
+   "entity_id": "4E5B2798-C063-4CC9-8746-F913DB1973BA",
+   "qloo_name": "Joji"
+  },
+  {
+   "artist": "Wet Leg",
+   "items": 1,
+   "entity_id": "E2C8357C-1928-4CC8-A24D-874862A1583E",
+   "qloo_name": "WET LEG"
+  },
+  {
+   "artist": "Jack Johnson",
+   "items": 1,
+   "entity_id": "DDAC730A-830D-477A-A702-567C6D857284",
+   "qloo_name": "Jack Johnson"
+  },
+  {
+   "artist": "Japanese Breakfast",
+   "items": 1,
+   "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+   "qloo_name": "Japanese Breakfast"
+  },
+  {
+   "artist": "Fontaines D.C.",
+   "items": 1,
+   "entity_id": "B11A0C7D-59E5-4911-8273-4879B4A3EA77",
+   "qloo_name": "Fontaines D.C."
+  },
+  {
+   "artist": "Tribe Called Quest",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "Rush",
+   "items": 1,
+   "entity_id": "1496176E-B280-490B-B8F6-8E5AA72F2FED",
+   "qloo_name": "Rush"
+  },
+  {
+   "artist": "Tom Petty",
+   "items": 1,
+   "entity_id": "1986B319-47D7-4A13-BC03-D48341FBDAB2",
+   "qloo_name": "Tom Petty"
+  },
+  {
+   "artist": "Kings Of Leon",
+   "items": 1,
+   "entity_id": "2F509ED0-1E91-4B0B-B8D4-254F3F3AAF9E",
+   "qloo_name": "Kings of Leon"
+  },
+  {
+   "artist": "Foster the People",
+   "items": 1,
+   "entity_id": "13532075-D9AB-4F22-A269-B5F2AADB44E9",
+   "qloo_name": "Foster the People"
+  },
+  {
+   "artist": "Dominic Fike",
+   "items": 1,
+   "entity_id": "8F56080A-0645-4AEE-B62D-D630B6CB608E",
+   "qloo_name": "Dominic Fike"
+  },
+  {
+   "artist": "Day To Remember",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "artist": "Beastie Boys",
+   "items": 1,
+   "entity_id": "214E2197-B070-4715-91ED-C2CA816178C9",
+   "qloo_name": "Beastie Boys"
+  },
+  {
+   "artist": "Paul Cauthen",
+   "items": 1,
+   "entity_id": "A749721F-94FC-4351-953C-64ACAD56001D",
+   "qloo_name": "Paul Cauthen"
+  },
+  {
+   "artist": "Deltron 3030",
+   "items": 1,
+   "entity_id": "D416101F-7D21-49EF-B890-A000AA0FEEE4",
+   "qloo_name": "Deltron 3030"
+  },
+  {
+   "artist": "Fleetwood Mac",
+   "items": 1,
+   "entity_id": "B1414851-6A23-4C52-B647-2A0249B664F9",
+   "qloo_name": "Fleetwood Mac"
+  },
+  {
+   "artist": "Tool",
+   "items": 1,
+   "entity_id": "851EC557-2F8B-4DB7-A4A9-2A2BB606E450",
+   "qloo_name": "Tool"
+  },
+  {
+   "artist": "Kid Cudi",
+   "items": 1,
+   "entity_id": "55B2687E-01AC-4878-8BE9-1DD73E46220C",
+   "qloo_name": "Kid Cudi"
+  },
+  {
+   "artist": "Joy Division",
+   "items": 1,
+   "entity_id": "B8FE4F27-5AC7-46C8-81BC-28313D225FDA",
+   "qloo_name": "Joy Division"
+  },
+  {
+   "artist": "Bon Iver",
+   "items": 1,
+   "entity_id": "E51DB8F2-7A93-4746-A283-E55B5216FDE1",
+   "qloo_name": "Bon Iver"
+  },
+  {
+   "artist": "Death Cab for Cutie",
+   "items": 1,
+   "entity_id": "354C8BBA-A058-4B4E-B0CA-6619A3F348CD",
+   "qloo_name": "Death Cab for Cutie"
+  },
+  {
+   "artist": "Lily Allen",
+   "items": 1,
+   "entity_id": "AB22C5C4-2ACE-4D9C-A542-B56E919C5993",
+   "qloo_name": "Lily Allen"
+  }
+ ],
+ "austin": {
+  "query": "Austin, TX",
+  "top": [
+   {
+    "entity_id": "9AAE0224-F8E2-447A-BD05-26D2A9E72573",
+    "name": "Kacey Musgraves",
+    "on_shelf": true
+   },
+   {
+    "entity_id": "2D1676A1-EC6D-482C-A778-4B2BAAD2D92E",
+    "name": "Lizzo",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "BDC47A46-9797-4090-92DC-D70CB7B306B4",
+    "name": "Gary Clark Jr.",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "461D94F8-77B3-4544-9796-D888A899048E",
+    "name": "Shakey Graves",
+    "on_shelf": true
+   },
+   {
+    "entity_id": "E6B31F1D-C5F8-46FC-A692-A95819FA65F8",
+    "name": "Willie Nelson",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162",
+    "name": "Leon Bridges",
+    "on_shelf": true
+   },
+   {
+    "entity_id": "47FA29CA-A1E6-4EA6-8219-D75190AA6BD1",
+    "name": "Dolly Parton",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "8F72AF8E-ABB4-45C7-8D97-99044D45B6B8",
+    "name": "Mobley",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "C748F9EE-F504-46B5-8B58-2026A473CE95",
+    "name": "Jackie Venson",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "37E7653C-A9DB-4313-892B-FEAC54A46F59",
+    "name": "Black Pumas",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "514620A8-AFB3-4DBF-8C07-4C9DDCBCF446",
+    "name": "Sweet Spirit",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "5299E7EC-F53D-477E-80EF-896EC324380E",
+    "name": "Lukas Nelson",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "3B097FE5-67E0-4A32-A746-96F18D581EE0",
+    "name": "Lukas Nelson & Promise of the Real",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "DE760AA8-B642-4CC4-9D9D-691C2BFF3461",
+    "name": "St. Vincent",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "5812BB0B-A8F3-4CCF-A960-5AF89A3FB3EC",
+    "name": "John Mayer",
+    "on_shelf": true
+   },
+   {
+    "entity_id": "A568789C-B0CB-4B11-A9E9-977677409A37",
+    "name": "David Ramirez",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "F3B3F3AB-5E0F-42AA-B3A3-B47B380BF87B",
+    "name": "Walker Lukens",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "10070F31-C90E-41FE-8E95-ABFE4C5E8392",
+    "name": "Wild Child",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "D0DFD941-A7DB-4310-9B39-1D51BD7F085F",
+    "name": "Maggie Rogers",
+    "on_shelf": true
+   },
+   {
+    "entity_id": "18E52C04-505C-4E6E-BF85-BDE8A38E19B0",
+    "name": "Nikki Lane",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "BE4808CD-63D2-4468-B8BE-B05CDE5C04B6",
+    "name": "A Giant Dog",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "E2F50648-018D-4494-8C7F-86225E132A32",
+    "name": "Margo Price",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "F1BC5716-E46D-4E66-9CCB-7502DEA34016",
+    "name": "Robert Ellis",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "892A67A7-2861-46A1-A5D3-61CEB91A8668",
+    "name": "Jenny Lewis",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "0C67E5BE-164A-42A3-BDB1-DFE50CAB7963",
+    "name": "Sir Woman",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "08879395-5D66-4462-8997-5884E9FDEEDA",
+    "name": "Orville Peck",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "3F3D63EF-460B-4AF0-95F0-E56A5C86E245",
+    "name": "Dale Watson",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "284CF776-6B45-4F43-B08F-78738DA8DD92",
+    "name": "Elon “EDM” Musk",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "D4290799-6DD4-44E6-A112-79326E05732E",
+    "name": "Bob Schneider",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "A2D30260-4299-4BB5-AF74-97F9AAC9B9D8",
+    "name": "Magna Carda",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "CD722E22-BDE3-4199-91CF-2A0FCDB31DF1",
+    "name": "Melat",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "AFBC71A7-9439-4AB0-AB68-D14B11AAF836",
+    "name": "Phoebe Bridgers",
+    "on_shelf": true
+   },
+   {
+    "entity_id": "9BC770A7-3369-4BB8-A79E-E3440D308489",
+    "name": "Solange",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "296A9BFF-AE21-4FC0-9F9D-81EBCFB5BBE6",
+    "name": "HAIM",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "EE63A5A9-294A-4687-8801-A98FE7308A86",
+    "name": "Nicole Richie",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "A03CE489-4EAD-45FC-96CF-B8BA237E2A0A",
+    "name": "Dana Falconberry",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "92B27B26-851F-45B7-82ED-59A371BFD02E",
+    "name": "The Black Angels",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "B06773DF-96FD-4689-B972-02B425BB5810",
+    "name": "Brandi Carlile",
+    "on_shelf": true
+   },
+   {
+    "entity_id": "A749721F-94FC-4351-953C-64ACAD56001D",
+    "name": "Paul Cauthen",
+    "on_shelf": true
+   },
+   {
+    "entity_id": "1B7CAA6B-9C70-4896-8979-2F952419AC6A",
+    "name": "Sonny Side Up",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "A2D10D78-AC85-40E7-9EA4-64B3D19A9E42",
+    "name": "Carson McHone",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "EF169287-837F-4053-B5C7-C35DE1A017DA",
+    "name": "The Bright Light Social Hour",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "7FF9A9FB-0232-4B71-B21E-3026CA9619AD",
+    "name": "Molly Burch",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "55005371-77BE-465F-8DFD-01FBF065540B",
+    "name": "Hayes Carll",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "5032D31E-1B79-4A40-901D-DCDDFA0F4493",
+    "name": "Janelle Monáe",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "F8C15F57-39B6-454A-87F3-2D227B6B42B1",
+    "name": "Britney Spears",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "08491FF1-DFDD-4958-89EE-0A12EE82D0DF",
+    "name": "Ben Kweller",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "66BB5911-388D-41C8-9A37-F503802D2F17",
+    "name": "Ryan Adams",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "61D714E5-8B06-466B-9AF9-69545E24ECC7",
+    "name": "Bayonne",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "D1AE8792-9129-46E0-AEE7-2C3A81E91385",
+    "name": "Tame Impala",
+    "on_shelf": true
+   }
+  ],
+  "on_shelf": 9
+ },
+ "shoppers": {
+  "rows": 20,
+  "wanted": 181,
+  "carried": 36,
+  "served": 13,
+  "missing": [
+   {
+    "name": "Interpol",
+    "askedBy": 2
+   },
+   {
+    "name": "Pixies",
+    "askedBy": 2
+   },
+   {
+    "name": "Rod Stewart",
+    "askedBy": 2
+   },
+   {
+    "name": "Neil Diamond",
+    "askedBy": 2
+   },
+   {
+    "name": "10cc",
+    "askedBy": 2
+   },
+   {
+    "name": "Franz Ferdinand",
+    "askedBy": 2
+   },
+   {
+    "name": "Blur",
+    "askedBy": 2
+   },
+   {
+    "name": "The Libertines",
+    "askedBy": 2
+   },
+   {
+    "name": "Sonic Youth",
+    "askedBy": 2
+   },
+   {
+    "name": "Ozzy Osbourne",
+    "askedBy": 2
+   },
+   {
+    "name": "Iron Maiden",
+    "askedBy": 2
+   },
+   {
+    "name": "Motörhead",
+    "askedBy": 2
+   },
+   {
+    "name": "Black Label Society",
+    "askedBy": 2
+   },
+   {
+    "name": "Thom Yorke",
+    "askedBy": 1
+   },
+   {
+    "name": "Beck",
+    "askedBy": 1
+   }
+  ]
+ },
+ "qloo_calls": 219,
+ "live_calls": 197
+}

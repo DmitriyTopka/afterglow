@@ -1,10 +1,22 @@
 # Afterglow: your shop sees what sold. Afterglow sees what walked out.
 
-Tagline (Devpost, max 200 chars): A culture shop run by two Claude agents on Qloo. One finds gifts on your shelves; the other turns every title it couldn't find into a restock plan.
+Tagline (Devpost, max 200 chars): For independent record and book shops: Claude agents on Qloo find gifts on your shelves and turn every title a shopper couldn't find into your next order.
 
 Live demo: https://taste-layer-alpha.vercel.app (start with "Watch both sides at once")
 Video (70 s): https://youtu.be/XmTtlFA_A6Y
 Code: https://github.com/DmitriyTopka/afterglow (MIT)
+
+## Who it's for, and what it costs them
+
+Independent record shops and bookstores. US vinyl sales reached $1.04B in 2025, up 9.3% (RIAA), and retail as a whole loses about $1.73 trillion a year to items that are out of stock or overstocked (IHL Group, 2025). A chain sees every click. A small shop sees what sold and never learns what someone came in for and left without.
+
+## A real shop, run through Afterglow
+
+We took the 500 best-selling items from the public catalog of Waterloo Records, an independent record store in Austin, Texas (no affiliation), and asked Qloo two questions. Page: https://taste-layer-alpha.vercel.app/real
+
+- **Does the shelf know its city?** Qloo's location signal returns the 50 artists Austin over-indexes on. 9 of them are in this best-seller list.
+- **Does it fit the shoppers?** For our 20 demo shoppers with music tastes, 36 of the 181 records their tastes love most are on this shelf; 7 of 20 would find nothing. At this list's median price of $27.99, that's about $196 walking out per 20 such requests.
+- Qloo recognised 192 of the 218 artists on the shelf (88%), against about 30% for random Amazon listings. Culture shops are where taste data lands.
 
 ## What Claude alone can't do here
 
@@ -26,11 +38,17 @@ Afterglow is a demo culture store with 384 real titles (vinyl, books, films, gam
 
 **The owner's agent.** Reads the unmet demand, checks who loves each candidate with Qloo demographics, and proposes three titles with the coverage they'd reach (18.4% to 20.0% this week). Next to each pick the app shows which shopper tastes asked for it, its map section and its audience, straight from the tool data.
 
+**Qloo, visible.** The shopper sees how Qloo reads the taste ("Post-punk, New wave, Shoegaze"), the recipient's age and gender go to Qloo as demographic signals when the message gives them ("my dad, 62"), and a panel lists every Qloo call the agent made, grouped by endpoint and parameters.
+
 **Check your own shop.** Paste up to 30 things you stock. Qloo resolves each line and the same shopper demand is measured against your shelf: how many shoppers would find something their taste loves, and what to stock next.
 
 **The live screen.** Shopper on the left, the agent's steps streaming in. Owner on the right, the new demand landing a moment later. Below, the whole store lights up: every cover glows by how much this taste loves it.
 
 **The full path.** Product pages, a bag with "complete the gift", and a demo checkout that asks "Who is it for?" and shows what the order taught the store.
+
+## Trust
+
+No personal data: Qloo describes groups of people with similar tastes, never one person, and the demo keeps a shopper's requests in their own browser. Every pick carries a Qloo fact; a reason that claims a genre the title's own data doesn't support is rewritten from data. Live Qloo calls pause before the monthly quota runs out, and the examples keep working from recorded Qloo data.
 
 ## How we built it
 
@@ -41,7 +59,10 @@ Next.js on Vercel, Claude Haiku 4.5 with tool use, and these Qloo calls:
 | Find what the shopper named | `GET /search` (exact name match first, typed search second) |
 | Score all 384 titles for a taste, and which taste drove each match | `GET /v2/insights` with `filter.results.entities` and `feature.explainability` |
 | Store check: what this taste loves most anywhere | `GET /v2/insights` without a catalog filter, per format |
+| How Qloo reads the taste | `GET /v2/insights` with `filter.type=urn:tag` (taste analysis) |
+| Who the gift is for | `signal.demographics.age` and `signal.demographics.gender` on scoring and the store check |
 | Who loves it | `GET /v2/insights` with `filter.type=urn:demographics` |
+| What a city loves | `GET /v2/insights` with `signal.location.query` (the real-shelf page) |
 | Taste map and cold start | `GET /v2/insights` against 36 reference tastes |
 | Check your own shop | `GET /search` per pasted line |
 
@@ -55,7 +76,7 @@ Against Claude reading the whole catalog as text (same model, no Qloo), on the 2
 
 | | labels P@3 | pooled P@3 | wins / losses |
 |---|---|---|---|
-| Afterglow agent | 0.48 | 0.63 | 10 / 3 |
+| Afterglow agent | 0.52 | 0.63 | 11 / 4 |
 | Claude alone | 0.37 | 0.55 | |
 
 Claude alone also put 12 over-budget titles in its top three across the 40 requests; the agent put none. Our first version only tied Claude on that half; grounding the reasons in Qloo data and letting the agent choose its own route is what moved it. An earlier test on a small hand-tagged catalog went the other way (hand tags beat Qloo), and that result is in the repo too.

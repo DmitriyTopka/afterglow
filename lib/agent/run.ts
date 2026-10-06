@@ -14,6 +14,7 @@ export interface Step {
   label: string;
   detail?: string;
   light?: Record<string, number>; // catalog id -> taste percentile within its format, sent with the catalog-scoring step
+  tags?: string[]; // Qloo taste analysis for the named tastes
   status: "ok" | "dropped" | "warn";
 }
 

@@ -10,12 +10,25 @@ import { Cover } from "@/app/components/Cover";
 import { EXAMPLES } from "@/data/examples";
 import { addTitle, addedTitles, coverage, fmtPct, myDemand, recordDemand, seedDemand, type Added, type DemandRow, type WantedTitle } from "@/lib/cycle";
 
-type Step = { kind?: string; label: string; detail?: string; status: string; light?: Record<string, number> };
+type Step = { kind?: string; label: string; detail?: string; status: string; light?: Record<string, number>; tags?: string[] };
 // One plain word per kind of step, shown on the step's badge.
 const STEP_WORD: Record<string, string> = { lookup: "Find", score: "Score", rank: "Pick", read: "Read", filter: "Filter" };
-type Result = { picks: Array<{ item: { id: string; title: string; category: string; price_usd: number }; why: string; basis?: string }>; gap?: { wanted: WantedTitle[] } | null; question?: string; extraction?: { signals: Array<{ name: string }> } };
+type Result = { calls?: Array<{ endpoint: string; params?: Record<string, string>; cache?: string }>; picks: Array<{ item: { id: string; title: string; category: string; price_usd: number }; why: string; basis?: string }>; gap?: { wanted: WantedTitle[] } | null; question?: string; extraction?: { signals: Array<{ name: string }> } };
 const KIND: Record<string, string> = { "urn:entity:artist": "Vinyl", "urn:entity:movie": "Film", "urn:entity:book": "Book", "urn:entity:videogame": "Game", "urn:entity:tv_show": "TV" };
 const pct = fmtPct;
+
+// Group the run's Qloo calls by endpoint and what they asked for, for the "what the agent asked Qloo" panel.
+function traceRows(calls: Array<{ endpoint: string; params?: Record<string, string> }>) {
+  const m = new Map<string, { key: string; endpoint: string; what: string; n: number }>();
+  for (const c of calls) {
+    const p = c.params ?? {};
+    const what = [p["filter.type"] && `filter.type=${p["filter.type"].replace("urn:entity:", "").replace("urn:tag", "tag (taste analysis)")}`, p["filter.results.entities"] && "filter.results.entities (our catalog)", p["feature.explainability"] && "explainability", p["signal.location.query"] && `location=${p["signal.location.query"]}`, c.endpoint === "/search" && p.query && `query`].filter(Boolean).join(" · ");
+    const key = c.endpoint + what;
+    const row = m.get(key) ?? { key, endpoint: c.endpoint, what, n: 0 };
+    row.n++; m.set(key, row);
+  }
+  return [...m.values()];
+}
 
 export default function Live() {
   const [text, setText] = useState(EXAMPLES[0].text);
@@ -102,7 +115,8 @@ export default function Live() {
     }
   }
 
-  const owned = result?.gap?.wanted.filter((w) => w.owned || addedIds.has(w.entity_id)).length ?? 0; // stocked titles count as carried
+  const owned = result?.gap?.wanted.filter((w) => w.owned).length ?? 0; // same number as the shopper-side store check
+  const stockedNow = result?.gap?.wanted.filter((w) => !w.owned && addedIds.has(w.entity_id)).length ?? 0;
   const wantedN = result?.gap?.wanted.length ?? 0;
   return (
     <main className="shop live-b">
@@ -128,7 +142,7 @@ export default function Live() {
             {steps.map((s, i) => (
               <li key={i} className={s.status}>
                 <em>{STEP_WORD[s.kind ?? ""] ?? "Step"}</em>
-                <div><b>{s.label}</b>{s.detail && <span>{s.detail}</span>}</div>
+                <div><b>{s.label}</b>{s.tags ? <span className="tag-chips">{s.tags.map((t) => <i key={t}>{t}</i>)}</span> : s.detail && <span>{s.detail}</span>}</div>
               </li>
             ))}
             {running && <li className="pending"><em>…</em><div><b>The agent is working through Qloo</b></div></li>}
@@ -136,6 +150,12 @@ export default function Live() {
           </ol>
           {replay && !running && <p className="lb-note">Played back from a real agent run{savedAt ? ` on ${new Date(savedAt).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}` : ""}: same Qloo calls, same picks. <button type="button" className="linklike" onClick={() => run(text, true)}>Run it live now</button></p>}
           {result?.question && <p className="ask-back"><b>The assistant asks:</b> {result.question}</p>}
+          {result?.calls && result.calls.length > 0 && (
+            <details className="qloo-trace">
+              <summary>What the agent asked Qloo ({result.calls.length} calls)</summary>
+              <ul>{traceRows(result.calls).map((r) => <li key={r.key}><code>{r.endpoint}</code>{r.what && <span>{r.what}</span>}<b>×{r.n}</b></li>)}</ul>
+            </details>
+          )}
         </section>
 
         <section className="lb-owner">
@@ -147,7 +167,7 @@ export default function Live() {
           </div>
           {result?.gap ? (
             <div className="lb-demand">
-              <p className="lb-big"><b>{owned} of {wantedN}</b> titles this taste loves most are in stock. The rest just became demand:</p>
+              <p className="lb-big"><b>{owned} of {wantedN}</b> titles this taste loves most are in stock{stockedNow ? <> (+{stockedNow} you just stocked)</> : null}. The rest just became demand:</p>
               <div className="ghosts">
                 {missing.slice(0, 6).map((w, i) => (
                   <button key={w.entity_id} type="button" className="ghost-cover" style={{ animationDelay: `${i * 120}ms` }} disabled={placing} onClick={() => restock(w)} title={`Stock ${w.name}`}>

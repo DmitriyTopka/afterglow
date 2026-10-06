@@ -84,8 +84,16 @@ export default function Page() {
         </div>
         <p className="band-links">
           <Link href="/owner" className="pill">Open the owner&apos;s restock plan →</Link>
+          <Link href="/real" className="pill light">See it on a real shop →</Link>
           <Link href="/live" className="band-link">Watch both sides at once →</Link>
         </p>
+      </section>
+
+      <section className="proof-strip" aria-label="Why it matters">
+        <div><b>$1.04B</b><span>US vinyl sales in 2025, up 9.3% (RIAA)</span></div>
+        <div><b>$1.73T</b><span>a year retail loses to out-of-stock and overstock (IHL Group, 2025)</span></div>
+        <div><b>0.52 vs 0.37</b><span>our agent vs Claude alone, on 20 untuned blind requests (P@3)</span></div>
+        <div><b>192 of 218</b><span>artists of a real Austin record shop&apos;s best-sellers Qloo knows. <Link href="/real">See the shelf →</Link></span></div>
       </section>
 
       {result && (

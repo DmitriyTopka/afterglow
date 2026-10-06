@@ -4,6 +4,7 @@
 
 Video (70 s): https://youtu.be/XmTtlFA_A6Y
 Live demo: https://taste-layer-alpha.vercel.app (shopper), [/live](https://taste-layer-alpha.vercel.app/live) (both sides at once) and [/owner](https://taste-layer-alpha.vercel.app/owner) (owner).
+Real shop: [/real](https://taste-layer-alpha.vercel.app/real) runs the public best-seller catalog of Waterloo Records (Austin, TX; no affiliation) through Qloo (`scripts/real_shelf.mts`, `data/real/waterloo.json`).
 Project write-up: [docs/DEVPOST.md](docs/DEVPOST.md).
 Built for the [Qloo Agentic Hackathon](https://qloo.devpost.com/). Work in progress, started 4 October 2026.
 
@@ -35,7 +36,7 @@ A second agent (Claude Haiku) plans the restock. Its tools: `coverage_report` (u
 ## How well it works (measured, not tuned on the test)
 
 - 40 shopper requests written and labelled by a blind agent that only saw the catalog (`eval/v2_scenarios.json`). Ranking changes were chosen on the odd-numbered requests; the even ones were never used for tuning.
-- Against Claude alone reading the whole catalog as text (same model, no Qloo), on the 20 untuned requests: labels P@3 0.48 vs 0.37, pooled 0.63 vs 0.55, 10 wins and 3 losses (`eval/REPORT_v4_2026-10-07.md`). The first agent version only tied on that half (`eval/REPORT_v3_2026-10-06.md`).
+- Against Claude alone reading the whole catalog as text (same model, no Qloo), on the 20 untuned requests: labels P@3 0.52 vs 0.37, pooled 0.63 vs 0.55, 11 wins and 4 losses on labels (`eval/REPORT_v5_2026-10-07.md`). The first agent version only tied on that half (`eval/REPORT_v3_2026-10-06.md`).
 - Claude alone put 12 over-budget titles in its top three across the 40 requests; the agent none.
 - Qloo recognises about 30% of 300 random Amazon listings, and about 2 in 3 for music and film. That is why the demo store sells culture goods.
 - An earlier test on a hand-tagged toy catalog went the other way (hand tags beat Qloo). Details in `eval/REPORT_2026-10-06.md` and `eval/REPORT_v2_2026-10-06.md`.

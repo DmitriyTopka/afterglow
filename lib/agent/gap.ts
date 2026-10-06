@@ -3,7 +3,7 @@
 // Missing titles become demand the owner sees (the loop: unmet taste -> stock suggestion -> cold start).
 import { insights, type QlooCall } from "@/lib/qloo/client";
 import type { QlooEntityType } from "@/lib/qloo/types";
-import { CATALOG } from "./score";
+import { CATALOG, demoParams, type Demo } from "./score";
 
 export const SELLABLE: QlooEntityType[] = ["urn:entity:artist", "urn:entity:book", "urn:entity:movie", "urn:entity:videogame", "urn:entity:tv_show"];
 const OWNED = new Set(CATALOG.map((i) => i.qloo.entity_id).filter(Boolean) as string[]);
@@ -14,13 +14,13 @@ const OWNED_ACTS = new Set(CATALOG.filter((i) => i.qloo.type === "urn:entity:art
 export interface Wanted { entity_id: string; name: string; type: string; image: string | null; affinity: number | null; owned: boolean }
 export interface Gap { formats: string[]; wanted: Wanted[]; coverage: number }
 
-export async function demandGap(signalIds: string[], formats: string[], calls: QlooCall[]): Promise<Gap | null> {
+export async function demandGap(signalIds: string[], formats: string[], calls: QlooCall[], demo: Demo = {}): Promise<Gap | null> {
   const types = (formats.filter((t) => SELLABLE.includes(t as QlooEntityType)) as QlooEntityType[]);
   const ask = types.length ? [...new Set(types)] : (["urn:entity:artist", "urn:entity:movie"] as QlooEntityType[]);
   let top: Wanted[] = [];
   for (const t of ask) {
     try {
-      const res = await insights({ "filter.type": t, "signal.interests.entities": signalIds.join(","), take: "10" }, calls);
+      const res = await insights({ "filter.type": t, "signal.interests.entities": signalIds.join(","), take: "10", ...demoParams(demo) } as never, calls);
       for (const e of res.results.entities ?? []) {
         if (signalIds.includes(e.entity_id)) continue;
         const url = (e.properties as { image?: { url?: string } } | undefined)?.image?.url ?? "";

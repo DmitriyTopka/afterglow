@@ -13,7 +13,8 @@ export type QlooEntityType =
   | "urn:entity:podcast"
   | "urn:entity:tv_show"
   | "urn:entity:videogame"
-  | "urn:demographics";
+  | "urn:demographics"
+  | "urn:tag";
 
 export interface QlooTag {
   id: string;
