@@ -3,7 +3,7 @@ import baselineFile from "@/data/baseline.json";
 import { extract, type Extraction } from "@/lib/llm/extract";
 import { QLOO_MODE, type QlooCall } from "@/lib/qloo/client";
 import type { QlooEntityType } from "@/lib/qloo/types";
-import { rank, shortlist, type Baseline } from "./rank";
+import { rank, shortlist, tasteLight, type Baseline } from "./rank";
 import { CATALOG, mapCatalog, resolveSignal, scoreCatalog, type Item } from "./score";
 import { demandGap, type Gap } from "./gap";
 
@@ -13,6 +13,7 @@ export interface Step {
   kind: "read" | "lookup" | "score" | "filter" | "rank";
   label: string;
   detail?: string;
+  light?: Record<string, number>; // catalog id -> taste percentile within its format, sent with the catalog-scoring step
   status: "ok" | "dropped" | "warn";
 }
 
@@ -106,9 +107,9 @@ export async function runAgent(request: string): Promise<AgentResult> {
 
   // 4. Ask Qloo to score our catalog against the signals, one call per entity type
   const { scores, byType } = await scoreCatalog(resolved.map((r) => r.id), itemIds, calls);
-  for (const t of byType) {
-    steps.push({ kind: "score", label: `Qloo scored ${t.scored} ${TYPE_LABEL[t.type] ?? t.type} from the catalog`, status: t.scored ? "ok" : "warn" });
-  }
+  byType.forEach((t, k) => {
+    steps.push({ kind: "score", label: `Qloo scored ${t.scored} ${TYPE_LABEL[t.type] ?? t.type} from the catalog`, status: t.scored ? "ok" : "warn", ...(k === byType.length - 1 ? { light: tasteLight(CATALOG, scores) } : {}) });
+  });
 
   // 5. Rank: direct matches from shop metadata first, then Qloo lift over the item's usual audience
   const signalNames = extraction.signals.map((s) => s.name);

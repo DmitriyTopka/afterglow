@@ -1,4 +1,5 @@
 import { runOwnerAgent } from "@/lib/agent/ownerAgent";
+import { QlooUnavailable } from "@/lib/qloo/client";
 import type { DemandRow } from "@/lib/cycle";
 import { allow } from "@/lib/limits";
 
@@ -14,6 +15,7 @@ export async function POST(req: Request) {
   try {
     return Response.json(await runOwnerAgent(mine, added));
   } catch (err) {
+    if (err instanceof QlooUnavailable) return Response.json({ error: err.message, offline: true }, { status: 503 });
     console.error(err);
     return Response.json({ error: "The restock agent could not run right now." }, { status: 502 });
   }

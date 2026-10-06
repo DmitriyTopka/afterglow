@@ -1,4 +1,5 @@
 import saved from "@/data/saved_answers.json";
+import { QlooUnavailable } from "@/lib/qloo/client";
 import { runAgentic } from "@/lib/agent/agentic";
 import { allow } from "@/lib/limits";
 
@@ -17,6 +18,7 @@ export async function POST(req: Request) {
   try {
     return Response.json(await runAgentic(message));
   } catch (err) {
+    if (err instanceof QlooUnavailable) return Response.json({ error: err.message, offline: true }, { status: 503 });
     console.error(err);
     return Response.json({ error: "The agent failed on this request. Try one of the examples." }, { status: 502 });
   }

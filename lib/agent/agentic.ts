@@ -5,11 +5,11 @@
 import Anthropic from "@anthropic-ai/sdk";
 import baselineFile from "@/data/baseline.json";
 import { canSpend, record } from "@/lib/llm/budget";
-import { QLOO_MODE, type QlooCall } from "@/lib/qloo/client";
+import { QLOO_MODE, QlooUnavailable, type QlooCall } from "@/lib/qloo/client";
 import type { QlooEntityType } from "@/lib/qloo/types";
 import { audience } from "./audience";
 import { demandGap, type Gap } from "./gap";
-import { rank, shortlist, type Baseline, type Ranked } from "./rank";
+import { rank, shortlist, tasteLight, type Baseline, type Ranked } from "./rank";
 import { runAgent, type AgentResult, type Pick, type Step } from "./run";
 import { CATALOG, mapCatalog, resolveSignal, scoreCatalog } from "./score";
 
@@ -56,6 +56,7 @@ export async function runAgentic(request: string, onStep?: (s: Step) => void): P
   try {
     return await loop(request, onStep);
   } catch (err) {
+    if (err instanceof QlooUnavailable) throw err;
     console.error("agent loop failed, using the fixed pipeline", err);
     return { ...(await runAgent(request)), turns: 0 };
   }
@@ -142,7 +143,7 @@ async function loop(request: string, onStep?: (s: Step) => void): Promise<Agenti
           scores = scored.scores;
           ranked = rank({ arm: "qloo", items: CATALOG, signalNames: named.map((n) => n.name), scores, baseline, taste: "pct+fmt", formats, exclude: new Set(ids) });
           candidates = shortlist(ranked, budget, 12, 3);
-          emit({ kind: "score", label: `Scored all ${CATALOG.length} titles with Qloo affinity`, detail: `${candidates.length} candidates within budget${budget ? ` ($${budget})` : ""}`, status: "ok" });
+          emit({ kind: "score", label: `Scored all ${CATALOG.length} titles with Qloo affinity`, detail: `${candidates.length} candidates within budget${budget ? ` ($${budget})` : ""}`, status: "ok", light: tasteLight(CATALOG, scores) });
         }
         reply(candidates.map((r) => ({ id: r.item.id, title: r.item.title, format: r.item.category, price_usd: r.item.price_usd, by_named_taste: r.direct, qloo_lead_taste: named.find((n) => n.id === scores?.get(r.item.id)?.chain?.sort((a, b) => b.score - a.score)[0]?.entity_id)?.name ?? null })));
       } else if (u.name === "check_store") {

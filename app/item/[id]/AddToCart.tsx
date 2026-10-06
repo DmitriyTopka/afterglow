@@ -11,7 +11,7 @@ export function AddToCart({ id }: { id: string }) {
   return (
     <div className="buy">
       <label className="wrap"><input type="checkbox" checked={wrap} onChange={(e) => setWrap(e.target.checked)} /> Gift wrap it</label>
-      <button type="button" className="go" onClick={() => { addToCart(id, wrap); setInCart(true); }}>Add to bag</button>
+      <button type="button" className="btn-big" onClick={() => { addToCart(id, wrap); setInCart(true); }}>Add to bag</button>
     </div>
   );
 }

@@ -5,7 +5,7 @@ import Anthropic from "@anthropic-ai/sdk";
 import cycle from "@/data/cycle.json";
 import owner from "@/data/owner.json";
 import { canSpend, record } from "@/lib/llm/budget";
-import { coverage, seedDemand, suggestions, type DemandRow } from "@/lib/cycle";
+import { coverage, fmtPct, seedDemand, suggestions, type DemandRow } from "@/lib/cycle";
 import type { QlooCall } from "@/lib/qloo/client";
 import type { QlooEntityType } from "@/lib/qloo/types";
 import { audience } from "./audience";
@@ -70,11 +70,11 @@ export async function runOwnerAgent(mine: DemandRow[], addedIds: string[]): Prom
           picks.push({ entity_id: s.entity_id, name: s.name, type: s.type, image: s.image, askedBy: s.askedBy, reason: String(p.reason).replace(/\s*[—–]\s*/g, ", "), placement: placements.get(s.entity_id) ?? PRE[s.entity_id] ?? null });
         }
         const after = coverage(rows, new Set([...added, ...picks.map((p) => p.entity_id)]));
-        steps.push({ kind: "rank", label: `Proposed ${picks.length} titles: coverage ${Math.round(before * 100)}% -> ${Math.round(after * 100)}%`, status: "ok" });
+        steps.push({ kind: "rank", label: `Proposed ${picks.length} titles: coverage ${fmtPct(before)} -> ${fmtPct(after)}`, status: "ok" });
         return { steps, picks: picks.slice(0, 3), summary: String((u.input as { summary?: string }).summary ?? "").replace(/\s*[—–]\s*/g, ", "), before, after, usd, qlooCalls: calls.length, turns: turn };
       }
       if (u.name === "coverage_report") {
-        steps.push({ kind: "read", label: `Read the demand: ${rows.length} requests, coverage ${Math.round(before * 100)}%, ${sugg.length} top missing titles`, status: "ok" });
+        steps.push({ kind: "read", label: `Read the demand: ${rows.length} requests, coverage ${fmtPct(before)}, ${sugg.length} top missing titles`, status: "ok" });
         reply({ coverage_pct: Math.round(before * 1000) / 10, requests: rows.length, missing: sugg.map((s) => ({ entity_id: s.entity_id, name: s.name, format: KIND[s.type] ?? s.type, wanted_by_shoppers: s.askedBy, coverage_gain_pts: Math.round(s.gain * 1000) / 10 })) });
       } else if (u.name === "sections") {
         steps.push({ kind: "read", label: "Looked at the map sections and who shops them", status: "ok" });

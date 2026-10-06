@@ -1,6 +1,6 @@
 // Cold start at run time: score one new title against the 36 reference tastes and place it on the map.
 import probes from "@/data/probes.json";
-import { insights, type QlooCall } from "@/lib/qloo/client";
+import { insights, QlooUnavailable, type QlooCall } from "@/lib/qloo/client";
 import type { QlooEntityType } from "@/lib/qloo/types";
 import { place, type Placement } from "./place";
 
@@ -11,7 +11,8 @@ export async function coldStart(entityId: string, type: QlooEntityType, calls: Q
     try {
       const res = await insights({ "filter.type": type, "signal.interests.entities": p.entity_id, "filter.results.entities": entityId, take: "1" }, calls);
       aff.push(res.results.entities?.[0]?.query?.affinity ?? null);
-    } catch {
+    } catch (err) {
+      if (err instanceof QlooUnavailable) throw err; // no point asking 35 more times
       aff.push(null);
     }
   }

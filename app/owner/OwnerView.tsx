@@ -5,12 +5,13 @@ import { useEffect, useMemo, useState } from "react";
 import catalog from "@/data/catalog.json";
 import owner from "@/data/owner.json";
 import { CrateList, TasteMap, type Pin } from "@/app/components/TasteMap";
-import { addTitle, addedTitles, coverage, myDemand, resetLoop, seedDemand, suggestions, type Added, type DemandRow } from "@/lib/cycle";
+import { Cover } from "@/app/components/Cover";
+import { addTitle, addedTitles, coverage, myDemand, fmtPct, resetLoop, seedDemand, suggestions, type Added, type DemandRow } from "@/lib/cycle";
 
 type Section = (typeof owner.sections)[number];
 const TITLE = new Map((catalog.items as Array<{ id: string; title: string }>).map((i) => [i.id, i.title]));
 const KIND: Record<string, string> = { "urn:entity:artist": "Vinyl", "urn:entity:movie": "Film", "urn:entity:book": "Book", "urn:entity:videogame": "Game", "urn:entity:tv_show": "TV" };
-const pct = (x: number) => `${Math.round(x * 100)}%`;
+const pct = fmtPct;
 
 export function OwnerView() {
   const [mine, setMine] = useState<DemandRow[]>([]);
@@ -75,64 +76,71 @@ export function OwnerView() {
 
   return (
     <>
-      <section className="loop">
+      <section className="blk blk-cream owner-top">
+      <div className="loop">
         <div className="gauge">
           <p className="eyebrow">Taste coverage of your shelves</p>
           <p className="big">{pct(cov)}</p>
           <p className="gauge-note">
-            of the titles your shoppers&apos; tastes love most are on your shelves, across {rows.length} requests
-            ({seedDemand.length} demo shoppers{mine.length ? `, ${mine.length} from you` : ""}).
+            Every shopper request tells you the ten titles that taste loves most. This is the share of them you already carry,
+            across {rows.length} requests ({seedDemand.length} demo shoppers{mine.length ? `, ${mine.length} from you` : ""}).
             {added.length > 0 && <> Up from <b>{pct(base)}</b> after stocking {added.length} title{added.length > 1 ? "s" : ""}.</>}
           </p>
-          {(mine.length > 0 || added.length > 0) && <button type="button" className="ghost" onClick={() => { resetLoop(); setMine([]); setAdded([]); setLog(null); }}>Reset demo</button>}
+          <p className="gauge-why"><b>{fmtPct(1 - cov)}</b> of what your shoppers&apos; tastes love walks out the door. Stock the gaps on the right to win it back.</p>
+          {(mine.length > 0 || added.length > 0) && <button type="button" className="ghost" onClick={() => { resetLoop(); setMine([]); setAdded([]); setLog(null); setPlan(null); }}>Reset demo</button>}
         </div>
-        <div className="suggest">
-          <p className="eyebrow">The agent suggests stocking</p>
-          <ol>
-            {sugg.map((s) => (
-              <li key={s.entity_id}>
-                {s.image ? <img src={s.image} alt="" loading="lazy" /> : <span className="noimg">{KIND[s.type]}</span>}
-                <div className="sg-text">
-                  <strong>{s.name}</strong>
-                  <span>{KIND[s.type]} · wanted by {s.askedBy} shopper{s.askedBy > 1 ? "s" : ""}{s.yours ? " (incl. you)" : ""} · coverage +{(s.gain * 100).toFixed(1)} pts</span>
-                </div>
-                <button type="button" disabled={busy !== null} onClick={() => stock(s)}>{busy === s.entity_id ? "Placing…" : "Add to shelf"}</button>
-              </li>
-            ))}
-          </ol>
+
+        <div className="owner-right">
+        <div className="agent-plan">
+          <div className="ap-head">
+            <div>
+              <p className="eyebrow">Restock agent</p>
+              <p className="ap-lede">The agent reads what your shoppers asked for and could not find, checks who loves each candidate with Qloo, and picks three titles to stock.</p>
+            </div>
+            <button type="button" className="go" disabled={planning} onClick={askAgent}>{planning ? "Thinking it through…" : "Plan this week's restock"}</button>
+          </div>
+          {plan && (
+            <div className="ap-body">
+              <ol className="ap-steps">{plan.steps.map((s, i) => <li key={i}>{s.label}</li>)}</ol>
+              <div className="ap-picks">
+                {plan.picks.map((p) => {
+                  const s = allSugg.find((x) => x.entity_id === p.entity_id);
+                  const done = addedIds.has(p.entity_id);
+                  return (
+                    <div key={p.entity_id} className="ap-pick">
+                      <Cover src={p.image} name={p.name} type={p.type} className="noimg" />
+                      <div><strong>{p.name}</strong><span>{KIND[p.type]} · wanted by {p.askedBy}</span><p>{p.reason}</p></div>
+                      <button type="button" className="stock-btn" disabled={done || busy !== null || !s} onClick={() => s && stock(s)}>{done ? "On the shelf" : busy === p.entity_id ? "Placing…" : "Add to shelf"}</button>
+                    </div>
+                  );
+                })}
+              </div>
+              <p className="ap-sum">Stocking all three takes coverage from <b>{pct(plan.before)}</b> to <b>{pct(plan.after)}</b>. {plan.summary}</p>
+            </div>
+          )}
           {error && <p className="error">{error}</p>}
         </div>
-      </section>
-
-      <section className="agent-plan">
-        <div className="ap-head">
-          <div>
-            <p className="eyebrow">Restock agent</p>
-            <p className="ap-lede">Let the agent read your unmet demand, check who loves each candidate with Qloo, and pick three titles to stock.</p>
-          </div>
-          <button type="button" className="go" disabled={planning} onClick={askAgent}>{planning ? "Thinking it through…" : "Ask the agent for a plan"}</button>
+      <details className="gaps" open>
+        <summary>What your shoppers could not find, ranked by coverage gain ({sugg.length})</summary>
+        <ol>
+          {sugg.map((s) => (
+            <li key={s.entity_id}>
+              <Cover src={s.image} name={s.name} type={s.type} className="noimg" lazy />
+              <div className="sg-text">
+                <strong>{s.name}</strong>
+                <span>{KIND[s.type]} · wanted by {s.askedBy} shopper{s.askedBy > 1 ? "s" : ""}{s.yours ? " (incl. you)" : ""} · +{(s.gain * 100).toFixed(1)} pts</span>
+              </div>
+              <button type="button" className="stock-btn" disabled={busy !== null} onClick={() => stock(s)}>{busy === s.entity_id ? "Placing…" : "Add to shelf"}</button>
+            </li>
+          ))}
+        </ol>
+      </details>
         </div>
-        {plan && (
-          <div className="ap-body">
-            <ol className="ap-steps">{plan.steps.map((s, i) => <li key={i}>{s.label}</li>)}</ol>
-            <div className="ap-picks">
-              {plan.picks.map((p) => {
-                const s = sugg.find((x) => x.entity_id === p.entity_id) ?? allSugg.find((x) => x.entity_id === p.entity_id);
-                const done = addedIds.has(p.entity_id);
-                return (
-                  <div key={p.entity_id} className="ap-pick">
-                    {p.image ? <img src={p.image} alt="" /> : <span className="noimg">{KIND[p.type]}</span>}
-                    <div><strong>{p.name}</strong><span>{KIND[p.type]} · wanted by {p.askedBy}</span><p>{p.reason}</p></div>
-                    <button type="button" disabled={done || busy !== null || !s} onClick={() => s && stock(s)}>{done ? "On the shelf" : busy === p.entity_id ? "Placing…" : "Add to shelf"}</button>
-                  </div>
-                );
-              })}
-            </div>
-            <p className="ap-sum">Stocking all three takes coverage from <b>{pct(plan.before)}</b> to <b>{pct(plan.after)}</b>. {plan.summary}</p>
-          </div>
-        )}
+      </div>
       </section>
 
+      <section className="blk blk-ink owner-map">
+      <div className="blk-head"><h2>Your shelves, by who loves them</h2><p>Pick a section to see who shops it and what its audience loves that you don&apos;t carry.</p></div>
       {last && (
         <p className="landed">
           <b>{last.name}</b> lands in <b>{last.placement.clusterName}</b>, next to {last.placement.neighbours.map((x) => TITLE.get(x.id)).join(", ")}.
@@ -149,6 +157,7 @@ export function OwnerView() {
           {!section && <p className="muted">Pick a section on the map to see who shops it and what its audience loves that you don&apos;t carry.</p>}
           {section && (
             <>
+              <img className="sec-banner" src={`/brand/section-${section.id}.jpg`} alt="" />
               <p className="eyebrow">Section</p>
               <h2>{section.name}</h2>
               <p className="muted">{section.line}</p>
@@ -160,7 +169,7 @@ export function OwnerView() {
               <div className="stock">
                 {section.stock.slice(0, 5).map((s) => (
                   <div key={s.entity_id} className="stock-item">
-                    <img src={s.image} alt="" loading="lazy" />
+                    <Cover src={s.image} name={s.name} type={s.type} lazy />
                     <div><strong>{s.name}</strong><span>{KIND[s.type] ?? ""}</span></div>
                   </div>
                 ))}
@@ -169,6 +178,7 @@ export function OwnerView() {
           )}
         </aside>
       </div>
+      </section>
     </>
   );
 }

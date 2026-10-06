@@ -4,6 +4,7 @@
 import { useState } from "react";
 import catalog from "@/data/catalog.json";
 import map from "@/data/taste_map.json";
+import { Cover } from "./Cover";
 
 const POS = map.items as Record<string, { x: number; y: number; cluster: number }>;
 const ITEMS = catalog.items as Array<{ id: string; title: string; category: string; price_usd: number }>;
@@ -44,7 +45,7 @@ export function TasteMap({ active, onSection, pins = [], highlight }: {
         })}
         {pins.map((p) => (
           <figure key={p.id} className="sleeve pin" style={{ left: `${X(p.x)}%`, top: `${Y(p.y)}%` }}>
-            {p.image ? <img src={p.image} alt={p.label} /> : <span className="pin-blank" aria-label={p.label} />}
+            <Cover src={p.image} name={p.label} alt={p.label} />
             <figcaption className="sticker"><b>{p.label}</b><span>New arrival</span></figcaption>
           </figure>
         ))}

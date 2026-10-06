@@ -4,6 +4,12 @@ import { mockInsights, mockSearch } from "./mock";
 import type { InsightsParams, QlooInsightsResponse, QlooSearchResponse } from "./types";
 
 export const QLOO_MODE = process.env.QLOO_MODE === "live" ? "live" : "mock";
+
+/** Live Qloo access is gone (key revoked or expired, or switched off with QLOO_OFFLINE=1). Recorded answers still work. */
+export class QlooUnavailable extends Error {}
+export const QLOO_OFFLINE = process.env.QLOO_OFFLINE === "1";
+export const OFFLINE_MESSAGE =
+  "Live Qloo access is paused right now (the hackathon API key may have expired). The four examples, the live screen replays, product pages and the owner view still work from recorded Qloo data.";
 const BASE = process.env.QLOO_BASE_URL ?? "https://hackathon.api.qloo.com";
 
 export interface QlooCall {
@@ -43,6 +49,7 @@ async function slot<T>(fn: () => Promise<T>): Promise<T> {
 
 async function get<T>(endpoint: string, params: Record<string, string>): Promise<T> {
   const key = process.env.QLOO_API_KEY;
+  if (QLOO_OFFLINE) throw new QlooUnavailable(OFFLINE_MESSAGE);
   if (!key) throw new Error("QLOO_MODE=live but QLOO_API_KEY is not set");
   const url = `${BASE}${endpoint}?${new URLSearchParams(params)}`;
   for (let attempt = 1; ; attempt++) {
@@ -52,6 +59,8 @@ async function get<T>(endpoint: string, params: Record<string, string>): Promise
       await sleep(retryAfter > 0 ? retryAfter * 1000 : 500 * 2 ** (attempt - 1));
       continue;
     }
+    if (res.status === 401 || res.status === 403) throw new QlooUnavailable(OFFLINE_MESSAGE);
+    if (res.status === 429) throw new QlooUnavailable("Qloo's rate limit for this demo is reached for now. The examples still work; try again later.");
     if (!res.ok) throw new Error(`Qloo ${endpoint} ${res.status}: ${(await res.text()).slice(0, 300)}`);
     return (await res.json()) as T;
   }

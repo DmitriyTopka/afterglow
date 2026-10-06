@@ -1,4 +1,5 @@
 import cycle from "@/data/cycle.json";
+import { QlooUnavailable } from "@/lib/qloo/client";
 import { coldStart } from "@/lib/agent/coldstart";
 import type { QlooCall } from "@/lib/qloo/client";
 import type { QlooEntityType } from "@/lib/qloo/types";
@@ -32,6 +33,7 @@ export async function POST(req: Request) {
     if (!placement) return Response.json({ error: "Qloo has too little taste data on this title to place it." }, { status: 422 });
     return Response.json({ placement, calls: calls.length, precomputed: false });
   } catch (err) {
+    if (err instanceof QlooUnavailable) return Response.json({ error: err.message, offline: true }, { status: 503 });
     console.error(err);
     return Response.json({ error: "Placing this title failed. Try again in a minute." }, { status: 502 });
   }

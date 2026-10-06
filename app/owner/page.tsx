@@ -8,9 +8,11 @@ export default function OwnerPage() {
   return (
     <main className="shop">
       <Header side="owner" />
-      <section className="hero compact">
+      <section className="band has-photo">
+        <img className="band-photo" src="/brand/hero-c.jpg" alt="" />
+        <p className="lb-kicker">For the shop owner</p>
         <h1>Your store, mapped by taste.</h1>
-        <p className="lede">384 titles grouped by who loves them, from Qloo data. No hand tagging, no customer data. Pick a section to see who shops it and what to stock next.</p>
+        <p className="lb-lede">See what your shoppers came in for and could not find, let the restock agent plan the next order, and place a brand-new title on your shelves before anyone has bought it.</p>
       </section>
       <OwnerView />
       <HowItWorks />

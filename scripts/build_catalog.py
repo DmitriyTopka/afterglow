@@ -12,7 +12,7 @@ PRICE = {"artist": (24, 42), "book": (12, 28), "movie": (15, 30), "videogame": (
 CAT = {"artist": "Vinyl", "book": "Books", "movie": "Film", "videogame": "Games", "tv_show": "TV box sets"}
 
 def get(url):
-    req = urllib.request.Request(url, headers={"User-Agent": "taste-layer-hackathon/0.1 (sirenamc2 on devpost)"})
+    req = urllib.request.Request(url, headers={"User-Agent": "afterglow-demo/0.1 (Qloo hackathon entry)"})
     for i in range(4):
         try:
             return json.load(urllib.request.urlopen(req, timeout=30))

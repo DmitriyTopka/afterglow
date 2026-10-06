@@ -25,6 +25,9 @@ export function addTitle(a: Added) { write(KA, [...addedTitles().filter((x) => x
 export function resetLoop() { write(KD, []); write(KA, []); }
 
 /** Share of each request's top-10 wanted titles that are on the shelf, averaged over requests. */
+/** One format for coverage on every screen: one decimal, so a single stocked title visibly moves it. */
+export const fmtPct = (x: number) => `${(x * 100).toFixed(1)}%`;
+
 export function coverage(rows: DemandRow[], added: Set<string>): number {
   if (!rows.length) return 0;
   return rows.reduce((s, r) => s + r.wanted.filter((w) => w.owned || added.has(w.entity_id)).length / r.wanted.length, 0) / rows.length;

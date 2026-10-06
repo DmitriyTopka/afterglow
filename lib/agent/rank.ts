@@ -107,3 +107,14 @@ export function shortlist(ranked: Ranked[], budget: number | null, n = 5, perCat
   }
   return out;
 }
+
+/** For the live map: each title's Qloo affinity percentile among titles of its own format (0..1, two decimals).
+ * The same number the ranking uses, so the brightest covers are the ones the agent could pick. */
+export function tasteLight(items: Item[], scores: Map<string, { affinity: number }>): Record<string, number> {
+  const out: Record<string, number> = {};
+  for (const t of new Set(items.map((i) => i.qloo.type))) {
+    const xs = items.filter((i) => i.qloo.type === t && scores.has(i.id)).sort((a, b) => scores.get(a.id)!.affinity - scores.get(b.id)!.affinity);
+    xs.forEach((i, k) => { out[i.id] = Math.round(((k + 1) / xs.length) * 100) / 100; });
+  }
+  return out;
+}

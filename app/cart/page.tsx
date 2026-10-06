@@ -51,8 +51,14 @@ export default function CartPage() {
   return (
     <main className="shop">
       <Header side="shopper" />
-      <section className="hero compact"><h1>Your bag</h1></section>
-      {items.length === 0 && !done && <p className="empty">Your bag is empty. <Link href="/">Find something in the store</Link></p>}
+      <section className="band has-photo band-short">
+        <img className="band-photo" src="/brand/hero-b.jpg" alt="" />
+        <p className="lb-kicker">Checkout · demo, nothing is charged</p>
+        <h1>Your bag</h1>
+        <p className="lb-lede">{items.length ? `${items.length} title${items.length > 1 ? "s" : ""}, gift wrap included where you asked for it.` : "Nothing here yet."}</p>
+      </section>
+      <section className="blk blk-cream cart-blk">
+      {items.length === 0 && !done && <p className="sub">Your bag is empty. <Link href="/" className="pill">Find something in the store</Link></p>}
       {items.length > 0 && (
         <div className="checkout">
           <section>
@@ -90,11 +96,12 @@ export default function CartPage() {
               <option value="express">Express, next day (+$9)</option>
             </select>
             <p className="total">Total <b>${total}</b></p>
-            <button type="button" className="go" disabled={busy} onClick={placeOrder}>{busy ? "Placing…" : "Place demo order"}</button>
+            <button type="button" className="btn-big" disabled={busy} onClick={placeOrder}>{busy ? "Placing…" : "Place demo order"}</button>
             <p className="fine">Demo store: no payment details, nothing is charged.</p>
           </aside>
         </div>
       )}
+      </section>
       {done && (
         <div className="modal-veil" role="dialog" aria-modal="true" aria-labelledby="done-title">
           <div className="modal">
@@ -108,7 +115,7 @@ export default function CartPage() {
               </p>
             )}
             {done.error && <p className="fine">The note could not be read this time ({done.error}).</p>}
-            <div className="modal-actions"><Link href="/owner" className="go">See what the owner sees</Link><Link href="/">Back to the store</Link></div>
+            <div className="modal-actions"><Link href="/owner" className="btn-big">See what the owner sees</Link><Link href="/">Back to the store</Link></div>
           </div>
         </div>
       )}

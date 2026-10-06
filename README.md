@@ -2,7 +2,8 @@
 
 **A culture store that learns from what its shoppers could not find.** A shopper describes someone's taste in their own words. A Claude agent, working through Qloo, picks across the whole store (vinyl, books, films, games, TV) and checks what that taste loves most that the store does not carry. That unmet demand lands on the owner's side, where the agent ranks what to stock next and places any new title on the store's taste map from Qloo data alone.
 
-Live demo: https://taste-layer-alpha.vercel.app (shopper) and https://taste-layer-alpha.vercel.app/owner (owner).
+Live demo: https://taste-layer-alpha.vercel.app (shopper), [/live](https://taste-layer-alpha.vercel.app/live) (both sides at once) and [/owner](https://taste-layer-alpha.vercel.app/owner) (owner).
+Project write-up: [docs/DEVPOST.md](docs/DEVPOST.md).
 Built for the [Qloo Agentic Hackathon](https://qloo.devpost.com/). Work in progress, started 4 October 2026.
 
 ## What the agent does
@@ -22,8 +23,10 @@ Caps per request: 6 model turns and 25 live Qloo calls. Without an Anthropic key
 
 ## The owner side
 
+A second agent (Claude Haiku) plans the restock. Its tools: `coverage_report` (unmet demand and coverage gain per missing title), `sections` (map sections and who shops them), `audience` (Qloo demographics for a candidate), `place_on_map` (cold start, at most one live per plan) and `plan` (3 titles with reasons and the coverage they reach).
+
 - **Taste map.** Every title is scored against 36 reference tastes (Qloo insights). Titles loved by the same people form sections across formats, for example arthouse films next to late-night jazz.
-- **Taste coverage.** Share of the titles shoppers' tastes love most that are on the shelves. Starts at 18% for the 38 demo shoppers.
+- **Taste coverage.** Share of the titles shoppers' tastes love most that are on the shelves. Starts at 18.4% for the 38 demo shoppers.
 - **Stock suggestions.** Missing titles ranked by how much coverage they add.
 - **Add to shelf (cold start).** A new title with no sales and no tags is scored against the 36 reference tastes and lands next to its closest titles on the map, for example Judas Priest next to Iron Maiden and Megadeth.
 
@@ -34,20 +37,22 @@ Caps per request: 6 model turns and 25 live Qloo calls. Without an Anthropic key
 - Qloo recognises about 30% of 300 random Amazon listings, and about 2 in 3 for music and film. That is why the demo store sells culture goods.
 - An earlier test on a hand-tagged toy catalog went the other way (hand tags beat Qloo). Details in `eval/REPORT_2026-10-06.md` and `eval/REPORT_v2_2026-10-06.md`.
 
-Not measured yet: the tool-using agent itself against the same set, and a comparison with Claude alone without Qloo.
+- The tool-using agent against Claude alone reading the whole catalog as text (`eval/REPORT_v3_2026-10-06.md`): over all 40 requests the agent wins 21 and loses 10 (pooled P@3 0.56 vs 0.43); on the 20 requests never used for tuning it is a tie (0.50 vs 0.55). Claude alone put 12 over-budget titles in its top three, the agent none.
 
 ## Honest limits
 
+- If the Qloo hackathon key stops working (or `QLOO_OFFLINE=1`), the site says so; examples, the live-screen replays, product pages and the owner view keep working from recorded Qloo data.
+- Artwork in `public/brand/` was generated with Higgsfield for this project.
+
 - The store, its prices and the demo shoppers are made up. Demo demand comes from the 40 test shoppers; your own requests are added in your browser (localStorage).
-- Cover art is not in this repo. `scripts/make_thumbs.py` downloads thumbnails from the image URLs in `data/catalog.json` (iTunes and Qloo entity data).
+- Cover art for the 384 demo titles is included as small thumbnails (`public/covers`, 240px; `public/covers-lg`, up to 640px WebP; `public/brand/atlas.webp`, one sheet for the store map) so the demo runs as is. The images come from the iTunes Search API and Qloo entity data and belong to their rights holders; they are here only to illustrate the demo store. `scripts/make_thumbs.py` and `scripts/make_large_covers.py` rebuild them from `data/catalog.json`.
 
 ## Run locally
 
 ```sh
 npm install
 cp .env.example .env.local   # add a Qloo hackathon key and an Anthropic key, or leave mock mode
-python3 scripts/make_thumbs.py
-npm run dev
+npm run dev                  # open http://localhost:3000
 ```
 
 Data pipeline (all cached under `.cache/`): `scripts/discover_candidates.mts` -> `build_catalog.py` -> `build_baseline.mts` -> `taste_probes.mts` -> `build_map.py` -> `name_clusters.mts` -> `build_owner.mts` -> `build_probes.mts` -> `build_cycle.mts`.

@@ -12,6 +12,3 @@ eval/results/*.json
 !eval/results/.gitkeep
 .DS_Store
 data/coverage/
-public/covers/
-HANDOFF_ranking.md
-_diag.mts

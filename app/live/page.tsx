@@ -4,14 +4,18 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { Header } from "@/app/components/Header";
-import { TasteMap, type Pin } from "@/app/components/TasteMap";
+import type { Pin } from "@/app/components/TasteMap";
+import { LightMap } from "@/app/components/LightMap";
+import { Cover } from "@/app/components/Cover";
 import { EXAMPLES } from "@/data/examples";
-import { addTitle, addedTitles, coverage, myDemand, recordDemand, seedDemand, type Added, type DemandRow, type WantedTitle } from "@/lib/cycle";
+import { addTitle, addedTitles, coverage, fmtPct, myDemand, recordDemand, seedDemand, type Added, type DemandRow, type WantedTitle } from "@/lib/cycle";
 
-type Step = { label: string; detail?: string; status: string };
+type Step = { kind?: string; label: string; detail?: string; status: string; light?: Record<string, number> };
+// One plain word per kind of step, shown on the step's badge.
+const STEP_WORD: Record<string, string> = { lookup: "Find", score: "Score", rank: "Pick", read: "Read", filter: "Filter" };
 type Result = { picks: Array<{ item: { id: string; title: string; category: string; price_usd: number }; why: string }>; gap?: { wanted: WantedTitle[] } | null; question?: string; extraction?: { signals: Array<{ name: string }> } };
 const KIND: Record<string, string> = { "urn:entity:artist": "Vinyl", "urn:entity:movie": "Film", "urn:entity:book": "Book", "urn:entity:videogame": "Game", "urn:entity:tv_show": "TV" };
-const pct = (x: number) => `${(x * 100).toFixed(1)}%`; // one decimal: a single stocked title moves it visibly
+const pct = fmtPct;
 
 export default function Live() {
   const [text, setText] = useState(EXAMPLES[0].text);
@@ -19,14 +23,24 @@ export default function Live() {
   const [result, setResult] = useState<Result | null>(null);
   const [running, setRunning] = useState(false);
   const [replay, setReplay] = useState<boolean | null>(null);
+  const [savedAt, setSavedAt] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [mine, setMine] = useState<DemandRow[]>([]);
   const [added, setAdded] = useState<Added[]>([]);
   const [placing, setPlacing] = useState(false);
   const [landed, setLanded] = useState<string | null>(null);
   const [delta, setDelta] = useState<number | null>(null);
+  const [light, setLight] = useState<Record<string, number> | null>(null);
   const feed = useRef<HTMLOListElement>(null);
-  useEffect(() => { setMine(myDemand()); setAdded(addedTitles()); }, []);
+  const autoRan = useRef(false); // effects run twice in development; start the example once
+  useEffect(() => {
+    setMine(myDemand()); setAdded(addedTitles());
+    // Arriving from a home-page example (?ex=N): start that shopper's run straight away.
+    const raw = new URLSearchParams(window.location.search).get("ex");
+    const ex = Number(raw);
+    if (raw !== null && !autoRan.current && Number.isInteger(ex) && EXAMPLES[ex]) { autoRan.current = true; run(EXAMPLES[ex].text); }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   useEffect(() => { feed.current?.lastElementChild?.scrollIntoView({ block: "nearest", behavior: "smooth" }); }, [steps]);
 
   const rows = [...seedDemand, ...mine];
@@ -35,10 +49,10 @@ export default function Live() {
   const missing = result?.gap?.wanted.filter((w) => !w.owned && !addedIds.has(w.entity_id)) ?? [];
   const pins: Pin[] = added.map((a) => ({ id: a.entity_id, x: a.placement.x, y: a.placement.y, image: a.image ?? "", label: a.name }));
 
-  async function run(message: string) {
-    setText(message); setSteps([]); setResult(null); setError(null); setLanded(null); setRunning(true); setReplay(null);
+  async function run(message: string, live = false) {
+    setText(message); setSteps([]); setResult(null); setLight(null); setError(null); setLanded(null); setRunning(true); setReplay(null);
     try {
-      const res = await fetch("/api/live", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ message }) });
+      const res = await fetch("/api/live", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ message, live }) });
       if (!res.ok || !res.body) { const d = await res.json().catch(() => ({})); throw new Error(d.error ?? "Request failed"); }
       const reader = res.body.getReader();
       const dec = new TextDecoder();
@@ -52,8 +66,8 @@ export default function Live() {
           const line = buf.slice(0, nl); buf = buf.slice(nl + 1);
           if (!line.trim()) continue;
           const ev = JSON.parse(line);
-          if (ev.type === "mode") setReplay(ev.replay);
-          if (ev.type === "step") setSteps((s) => [...s, ev.step]);
+          if (ev.type === "mode") { setReplay(ev.replay); setSavedAt(ev.savedAt ?? null); }
+          if (ev.type === "step") { const { light: l, ...step } = ev.step as Step; if (l) setLight(l); setSteps((s) => [...s, step]); }
           if (ev.type === "error") setError(ev.error);
           if (ev.type === "result") {
             const r = ev.result as Result;
@@ -88,57 +102,95 @@ export default function Live() {
     }
   }
 
+  const owned = result?.gap?.wanted.filter((w) => w.owned).length ?? 0;
+  const wantedN = result?.gap?.wanted.length ?? 0;
   return (
-    <main className="shop">
+    <main className="shop live-b">
       <Header side="shopper" />
-      <section className="hero compact">
+      <section className="lb-hero">
+        <p className="lb-kicker">Live demo · two Claude agents on Qloo</p>
         <h1>Watch both sides at once.</h1>
-        <p className="lede">Left: a shopper asks, and the agent works through Qloo step by step. Right: what the shop owner sees a moment later.</p>
+        <p className="lb-lede">A shopper asks for a gift. The assistant works through Qloo on the left; the owner sees what the shop was missing on the right.</p>
+        <div className="lb-tabs scroll-x">
+          <span>Try a shopper:</span>
+          {EXAMPLES.map((ex) => <button key={ex.label} className={`lb-tab${text === ex.text ? " on" : ""}`} disabled={running} onClick={() => run(ex.text)}>{ex.label}</button>)}
+        </div>
       </section>
-      <div className="split">
-        <section className="side shopper-side">
-          <p className="side-label">Shopper</p>
-          <div className="tabs">{EXAMPLES.map((ex) => <button key={ex.label} className="tab" disabled={running} onClick={() => run(ex.text)}>{ex.label}</button>)}</div>
-          <form className="ask" onSubmit={(e) => { e.preventDefault(); if (text.trim()) run(text); }}>
-            <textarea value={text} onChange={(e) => setText(e.target.value)} aria-label="What are they into?" />
-            <button className="go" disabled={running || !text.trim()}>{running ? "Working…" : "Ask"}</button>
+
+      <div className="lb-split">
+        <section className="lb-shopper">
+          <p className="lb-label"><span>1</span> The shopper</p>
+          <form className="lb-ask" onSubmit={(e) => { e.preventDefault(); if (text.trim()) run(text); }}>
+            <textarea value={text} onChange={(e) => setText(e.target.value)} aria-label="What are they into?" placeholder="Who is it for, and what are they into?" />
+            <button className="lb-go" disabled={running || !text.trim()}>{running ? "Working…" : "Ask the assistant"}</button>
           </form>
-          <ol className="feed" ref={feed} aria-live="polite">
-            {steps.map((s, i) => <li key={i} className={s.status}><b>{s.label}</b>{s.detail && <span>{s.detail}</span>}</li>)}
-            {running && <li className="pending">thinking…</li>}
+          <ol className="lb-steps" ref={feed} aria-live="polite">
+            {steps.map((s, i) => (
+              <li key={i} className={s.status}>
+                <em>{STEP_WORD[s.kind ?? ""] ?? "Step"}</em>
+                <div><b>{s.label}</b>{s.detail && <span>{s.detail}</span>}</div>
+              </li>
+            ))}
+            {running && <li className="pending"><em>…</em><div><b>The agent is working through Qloo</b></div></li>}
+            {!steps.length && !running && <li className="idle"><em>Start</em><div><b>Pick a shopper above, or write your own request.</b><span>Every step the agent takes shows up here as it happens.</span></div></li>}
           </ol>
-          {replay && <p className="fine">Example: a recorded run of the live agent, replayed at reading speed. Type your own request to watch it live.</p>}
+          {replay && !running && <p className="lb-note">Played back from a real agent run{savedAt ? ` on ${new Date(savedAt).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}` : ""}: same Qloo calls, same picks. <button type="button" className="linklike" onClick={() => run(text, true)}>Run it live now</button></p>}
           {result?.question && <p className="ask-back"><b>The assistant asks:</b> {result.question}</p>}
-          {result && result.picks.length > 0 && (
-            <div className="mini-shelf">
-              {result.picks.map((p) => (
-                <Link key={p.item.id} href={`/item/${p.item.id}`} title={p.why}><img src={`/covers/${p.item.id}.jpg`} alt={p.item.title} /><span>{p.item.title}</span></Link>
-              ))}
-            </div>
-          )}
         </section>
-        <section className="side owner-side">
-          <p className="side-label">Shop owner</p>
-          <div className="mini-gauge"><span>Taste coverage</span><b>{pct(cov)}</b><small>{rows.length} requests</small>{delta !== null && delta > 0 && <em key={added.length} className="delta">+{(delta * 100).toFixed(1)} pts</em>}</div>
-          {result?.gap && (
-            <div className="new-demand">
-              <p><b>New unmet demand</b> from this request: we carry {result.gap.wanted.filter((w) => w.owned).length} of the {result.gap.wanted.length} titles this taste loves most.</p>
+
+        <section className="lb-owner">
+          <p className="lb-label"><span>2</span> The shop owner</p>
+          <div className="lb-gauge">
+            <b>{pct(cov)}</b>
+            <div><strong>taste coverage</strong><small>Share of what shoppers&apos; tastes love most that is on the shelves. {rows.length} requests so far.</small></div>
+            {delta !== null && delta > 0 && <em key={added.length} className="delta">+{(delta * 100).toFixed(1)} pts</em>}
+          </div>
+          {result?.gap ? (
+            <div className="lb-demand">
+              <p className="lb-big"><b>{owned} of {wantedN}</b> titles this taste loves most are in stock. The rest just became demand:</p>
               <div className="ghosts">
                 {missing.slice(0, 6).map((w, i) => (
                   <button key={w.entity_id} type="button" className="ghost-cover" style={{ animationDelay: `${i * 120}ms` }} disabled={placing} onClick={() => restock(w)} title={`Stock ${w.name}`}>
-                    {w.image ? <img src={w.image} alt="" /> : <span>{KIND[w.type]}</span>}
+                    <Cover src={w.image} name={w.name} type={w.type} />
                     <small>{w.name}</small>
                   </button>
                 ))}
               </div>
-              {missing.length > 0 && <p className="fine">Click a title to stock it: Qloo places it on the taste map and coverage updates.</p>}
+              {missing.length > 0 && <p className="lb-note">Tap one to stock it: Qloo places it on the store map and coverage goes up.</p>}
             </div>
+          ) : (
+            <p className="lb-wait">Waiting for a request. When the assistant checks the shelves, the titles we don&apos;t carry land here.</p>
           )}
           {landed && <p className="landed"><b>{landed}</b></p>}
-          <div className="mini-map"><TasteMap pins={pins} /></div>
-          <Link href="/owner" className="fine">Open the full owner view</Link>
+          <Link href="/owner" className="lb-link">Open the full owner view →</Link>
         </section>
       </div>
+
+      {result && result.picks.length > 0 && (
+        <section className="lb-picks">
+          <h2>Pulled for this shopper</h2>
+          <div className="lb-pick-row">
+            {result.picks.map((p) => (
+              <Link key={p.item.id} href={`/item/${p.item.id}`} className="lb-pick">
+                <div className="lb-pick-art"><img src={`/covers/${p.item.id}.jpg`} alt="" /><span className="price-tag">${p.item.price_usd}</span></div>
+                <small>{p.item.category}</small>
+                <h3>{p.item.title}</h3>
+                {p.why && <p>{p.why}</p>}
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <section className="lb-store">
+        <div className="lb-store-head">
+          <h2>The store, lit by this taste</h2>
+          <p>{light
+            ? "Every cover in the shop. The ones this taste loves most (Qloo affinity, against titles of the same kind) step forward and glow; the five picks are framed."
+            : "All 384 titles, placed by who loves them. Ask, and the titles this taste loves step forward and glow."}</p>
+        </div>
+        <LightMap light={light} picks={result?.picks.map((p) => p.item.id) ?? []} pins={pins} />
+      </section>
       {error && <p className="error">{error}</p>}
     </main>
   );

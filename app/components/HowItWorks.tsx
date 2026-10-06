@@ -8,7 +8,7 @@ const PARTS = [
 
 export function HowItWorks() {
   return (
-    <section className="how" aria-labelledby="how-title">
+    <section className="blk blk-ink how" aria-labelledby="how-title">
       <h2 id="how-title">How it works</h2>
       <div className="how-grid">
         {PARTS.map((p) => (
