@@ -2,7 +2,7 @@ import { Header } from "@/app/components/Header";
 import { OwnerView } from "./OwnerView";
 import { HowItWorks } from "@/app/components/HowItWorks";
 
-export const metadata = { title: "Owner view · Taste Layer" };
+export const metadata = { title: "Owner view · Afterglow" };
 
 export default function OwnerPage() {
   return (

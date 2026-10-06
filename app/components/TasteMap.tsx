@@ -37,7 +37,7 @@ export function TasteMap({ active, onSection, pins = [], highlight }: {
           const lit = highlight?.has(it.id);
           return (
             <figure key={it.id} className={`sleeve${dim ? " dim" : ""}${lit ? " lit" : ""}`} style={{ left: `${X(p.x)}%`, top: `${Y(p.y)}%` }}>
-              <img src={`/covers/${it.id}.jpg`} alt={it.title} loading="lazy" />
+              <a href={`/item/${it.id}`} aria-label={it.title}><img src={`/covers/${it.id}.jpg`} alt={it.title} loading="lazy" /></a>
               <figcaption className="sticker"><b>{it.title}</b><span>{it.category} · ${it.price_usd}</span></figcaption>
             </figure>
           );
@@ -70,7 +70,7 @@ export function CrateList({ onSection }: { onSection?: (id: number) => void }) {
           <button type="button" className="divider static" onClick={() => onSection?.(c.id)}>{c.name}<small>{c.size}</small></button>
           <div className="crate-row">
             {ITEMS.filter((it) => POS[it.id]?.cluster === c.id).slice(0, 14).map((it) => (
-              <img key={it.id} src={`/covers/${it.id}.jpg`} alt={it.title} title={it.title} loading="lazy" />
+              <a key={it.id} href={`/item/${it.id}`}><img src={`/covers/${it.id}.jpg`} alt={it.title} title={it.title} loading="lazy" /></a>
             ))}
           </div>
         </section>

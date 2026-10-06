@@ -1,7 +1,7 @@
 import { Header } from "@/app/components/Header";
 import { CrateList, TasteMap } from "@/app/components/TasteMap";
 
-export const metadata = { title: "Taste map · Taste Layer" };
+export const metadata = { title: "Taste map · Afterglow" };
 
 export default function TasteMapPage() {
   return (

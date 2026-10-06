@@ -7,7 +7,7 @@ const body = IBM_Plex_Sans({ subsets: ["latin"], weight: ["400", "500"], variabl
 const mono = IBM_Plex_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--f-mono" });
 
 export const metadata: Metadata = {
-  title: "Taste Layer",
+  title: "Afterglow",
   description: "A taste map of a culture store, built from Qloo data: a shopping agent for customers and a stock advisor for the owner.",
 };
 

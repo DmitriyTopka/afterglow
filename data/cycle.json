@@ -408,7 +408,7 @@
      "entity_id": "06FC1877-4512-4237-B527-428C47429F0F",
      "name": "Demon's Souls",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/06FC1877-4512-4237-B527-428C47429F0F-420x-auto.jpg",
      "affinity": 0.862252320763628,
      "owned": false
     },
@@ -424,7 +424,7 @@
      "entity_id": "E35EE1C7-D1A2-41B1-A17A-83583ECB8D36",
      "name": "Mortal Shell",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/E35EE1C7-D1A2-41B1-A17A-83583ECB8D36-420x-auto.jpg",
      "affinity": 0.8563494181831082,
      "owned": false
     },
@@ -432,7 +432,7 @@
      "entity_id": "CC75C37E-7CD0-47E0-8707-ABEFF5CE9891",
      "name": "Dark Souls III",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/CC75C37E-7CD0-47E0-8707-ABEFF5CE9891-420x-auto.jpg",
      "affinity": 0.8539825242861812,
      "owned": false
     },
@@ -440,7 +440,7 @@
      "entity_id": "98B00129-B85F-4D98-96A0-653AC8B47FAA",
      "name": "Tails of Iron",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/98B00129-B85F-4D98-96A0-653AC8B47FAA-420x-auto.jpg",
      "affinity": 0.8474909391132428,
      "owned": false
     },
@@ -448,7 +448,7 @@
      "entity_id": "E1A28630-F29C-4EA6-8482-F8B0D007D20D",
      "name": "Kena: Bridge of Spirits",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/E1A28630-F29C-4EA6-8482-F8B0D007D20D-420x-auto.jpg",
      "affinity": 0.8334413798922702,
      "owned": false
     }
@@ -1116,7 +1116,7 @@
      "entity_id": "9D491BD0-92A2-4D9C-B0AE-F68410599224",
      "name": "Uncharted 2: Among Thieves",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/9D491BD0-92A2-4D9C-B0AE-F68410599224-420x-auto.jpg",
      "affinity": 0.8914007344997157,
      "owned": false
     },
@@ -1124,7 +1124,7 @@
      "entity_id": "7727E12E-6696-43BF-8503-8817A9FC06CA",
      "name": "Uncharted 3: Drake's Deception",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/7727E12E-6696-43BF-8503-8817A9FC06CA-420x-auto.jpg",
      "affinity": 0.8907558696760145,
      "owned": false
     },
@@ -1132,7 +1132,7 @@
      "entity_id": "9E288B89-9DA7-48A1-AC89-E51F6B08672F",
      "name": "Uncharted 4: A Thief's End",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/9E288B89-9DA7-48A1-AC89-E51F6B08672F-420x-auto.jpg",
      "affinity": 0.8890731621032097,
      "owned": false
     },
@@ -1140,7 +1140,7 @@
      "entity_id": "376553E0-3474-4137-AA8A-F77EFF52DAF3",
      "name": "Uncharted: The Lost Legacy",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/376553E0-3474-4137-AA8A-F77EFF52DAF3-420x-auto.jpg",
      "affinity": 0.8674281105067372,
      "owned": false
     },
@@ -1164,7 +1164,7 @@
      "entity_id": "97AE8DF6-DD46-43FD-A248-85CD0D072CFC",
      "name": "Beyond: Two Souls",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/97AE8DF6-DD46-43FD-A248-85CD0D072CFC-420x-auto.jpg",
      "affinity": 0.8104019734228951,
      "owned": false
     },
@@ -1172,7 +1172,7 @@
      "entity_id": "8BEACB2E-248E-40E8-99AA-F62F14DB372C",
      "name": "Heavy Rain",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/8BEACB2E-248E-40E8-99AA-F62F14DB372C-420x-auto.jpg",
      "affinity": 0.809320272261415,
      "owned": false
     }
@@ -1743,7 +1743,7 @@
      "entity_id": "007E699A-5489-470B-BE1D-D5276FA94302",
      "name": "The Messenger",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/007E699A-5489-470B-BE1D-D5276FA94302-420x-auto.jpg",
      "affinity": 0.8968031077503236,
      "owned": false
     },
@@ -1751,7 +1751,7 @@
      "entity_id": "CF0BD4F2-DDFB-4D84-9E32-8FD4731F20C8",
      "name": "Carrion",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/CF0BD4F2-DDFB-4D84-9E32-8FD4731F20C8-420x-auto.jpg",
      "affinity": 0.8813075531473487,
      "owned": false
     },
@@ -1759,7 +1759,7 @@
      "entity_id": "81A38BCC-EC90-4496-95B6-190989947C04",
      "name": "Blasphemous",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/81A38BCC-EC90-4496-95B6-190989947C04-420x-auto.jpg",
      "affinity": 0.8719321884761213,
      "owned": false
     },
@@ -1767,7 +1767,7 @@
      "entity_id": "83209B8D-2285-4A33-AB88-D798EDC7BD2E",
      "name": "Hollow Knight: Voidheart Edition",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/83209B8D-2285-4A33-AB88-D798EDC7BD2E-420x-auto.jpg",
      "affinity": 0.8669864743948843,
      "owned": false
     },
@@ -1775,7 +1775,7 @@
      "entity_id": "BBF4CA8A-A996-44FD-AF8B-AB05B6A45A48",
      "name": "SteamWorld Dig 2",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/BBF4CA8A-A996-44FD-AF8B-AB05B6A45A48-420x-auto.jpg",
      "affinity": 0.8604880066984132,
      "owned": false
     },
@@ -1783,7 +1783,7 @@
      "entity_id": "6776D720-9FED-461A-BFC6-EC413E95EDFC",
      "name": "Wonder Boy: The Dragon's Trap",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/6776D720-9FED-461A-BFC6-EC413E95EDFC-420x-auto.jpg",
      "affinity": 0.8597155384889568,
      "owned": false
     },
@@ -1791,7 +1791,7 @@
      "entity_id": "E7275B8F-3FAF-47F0-A388-E38FC8C8319F",
      "name": "Katana ZERO",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/E7275B8F-3FAF-47F0-A388-E38FC8C8319F-420x-auto.jpg",
      "affinity": 0.8573128963523724,
      "owned": false
     },
@@ -1799,7 +1799,7 @@
      "entity_id": "24A8FA99-00D1-4A48-9837-A03D7C9232DB",
      "name": "Owlboy",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/24A8FA99-00D1-4A48-9837-A03D7C9232DB-420x-auto.jpg",
      "affinity": 0.8536567416796592,
      "owned": false
     },
@@ -1807,7 +1807,7 @@
      "entity_id": "20D88089-0057-4B1B-BE87-BAEA3ADE8C82",
      "name": "Axiom Verge",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/20D88089-0057-4B1B-BE87-BAEA3ADE8C82-420x-auto.jpg",
      "affinity": 0.8525240220715259,
      "owned": false
     }
@@ -2096,7 +2096,7 @@
      "entity_id": "0FAA0C22-CDA5-4481-8520-2C0CA35408D7",
      "name": "Tomodachi Life",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/0FAA0C22-CDA5-4481-8520-2C0CA35408D7-420x-auto.jpg",
      "affinity": 0.8780515535416599,
      "owned": false
     },
@@ -2112,7 +2112,7 @@
      "entity_id": "3699DAFA-BCC8-4A37-98C8-0B9BE5AFD40D",
      "name": "Animal Crossing: New Leaf",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/3699DAFA-BCC8-4A37-98C8-0B9BE5AFD40D-420x-auto.jpg",
      "affinity": 0.8712008438888279,
      "owned": false
     },
@@ -2128,7 +2128,7 @@
      "entity_id": "766D99BD-60A0-4F50-AE4C-A1619A6E42B7",
      "name": "Candy Crush Saga",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/766D99BD-60A0-4F50-AE4C-A1619A6E42B7-420x-auto.jpg",
      "affinity": 0.8613445786590865,
      "owned": false
     },
@@ -2136,7 +2136,7 @@
      "entity_id": "A25089FB-2AEF-4004-8EF1-F4B9A42FB82A",
      "name": "Miitopia",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/A25089FB-2AEF-4004-8EF1-F4B9A42FB82A-420x-auto.jpg",
      "affinity": 0.8588090402124884,
      "owned": false
     },
@@ -2152,7 +2152,7 @@
      "entity_id": "9E184634-7021-46A9-9DB1-3AE2D223811D",
      "name": "The Sims Medieval",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/9E184634-7021-46A9-9DB1-3AE2D223811D-420x-auto.jpg",
      "affinity": 0.8522136012278195,
      "owned": false
     },
@@ -2160,7 +2160,7 @@
      "entity_id": "EE8A33D9-A25F-46F5-9D1F-9DABEB062981",
      "name": "Wii Play",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/EE8A33D9-A25F-46F5-9D1F-9DABEB062981-420x-auto.jpg",
      "affinity": 0.8484953818280367,
      "owned": false
     },
@@ -2168,7 +2168,7 @@
      "entity_id": "0CB15734-6772-42E4-90E1-9BEE2529A592",
      "name": "The Sims 3",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/0CB15734-6772-42E4-90E1-9BEE2529A592-420x-auto.jpg",
      "affinity": 0.847857824423212,
      "owned": false
     }
@@ -2219,7 +2219,7 @@
      "entity_id": "FB7BB117-7E04-47D4-B579-D884F17DF00A",
      "name": "Jhené Aiko",
      "type": "urn:entity:artist",
-     "image": null,
+     "image": "https://images.qloo.com/i/FB7BB117-7E04-47D4-B579-D884F17DF00A-420x-auto.jpg",
      "affinity": 0.9581667369995427,
      "owned": false
     },
@@ -2515,7 +2515,7 @@
      "entity_id": "8838ACFA-EF66-44F0-9436-3AE7DE69E28B",
      "name": "José González",
      "type": "urn:entity:artist",
-     "image": null,
+     "image": "https://images.qloo.com/i/8838ACFA-EF66-44F0-9436-3AE7DE69E28B-420x-auto.jpg",
      "affinity": 0.9538788615150434,
      "owned": false
     },
@@ -2867,7 +2867,7 @@
      "entity_id": "D67CBE07-ECFF-4FC6-B31E-EB4A8341A204",
      "name": "Motörhead",
      "type": "urn:entity:artist",
-     "image": null,
+     "image": "https://images.qloo.com/i/D67CBE07-ECFF-4FC6-B31E-EB4A8341A204-420x-auto.jpg",
      "affinity": 0.954506471904179,
      "owned": false
     },
@@ -2875,7 +2875,7 @@
      "entity_id": "C0CC10B0-77E7-426C-8664-78D6A502878C",
      "name": "Grand Theft Auto III",
      "type": "urn:entity:videogame",
-     "image": null,
+     "image": "https://images.qloo.com/i/C0CC10B0-77E7-426C-8664-78D6A502878C-420x-auto.jpg",
      "affinity": 0.9533347583371685,
      "owned": false
     },
@@ -3211,7 +3211,7 @@
      "entity_id": "D67CBE07-ECFF-4FC6-B31E-EB4A8341A204",
      "name": "Motörhead",
      "type": "urn:entity:artist",
-     "image": null,
+     "image": "https://images.qloo.com/i/D67CBE07-ECFF-4FC6-B31E-EB4A8341A204-420x-auto.jpg",
      "affinity": 0.9670458155466564,
      "owned": false
     },

@@ -1,4 +1,884 @@
 {
+ "He's into Joy Division and rereads Murakami every winter.": {
+  "request": "He's into Joy Division and rereads Murakami every winter.",
+  "extraction": {
+   "recipient": "",
+   "budget_usd": null,
+   "signals": [
+    {
+     "name": "Joy Division",
+     "kind": "urn:entity:artist"
+    },
+    {
+     "name": "Haruki Murakami",
+     "kind": "urn:entity:person"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "kind": "lookup",
+    "label": "Looked up 2 taste(s) in Qloo",
+    "detail": "Joy Division, Haruki Murakami",
+    "status": "ok"
+   },
+   {
+    "kind": "score",
+    "label": "Scored all 384 titles with Qloo affinity",
+    "detail": "12 candidates within budget",
+    "status": "ok"
+   },
+   {
+    "kind": "score",
+    "label": "Store check: we carry 3 of the 10 titles this taste loves most",
+    "detail": "Missing ones go to the owner: The Smiths, Gang of Four, Echo & the Bunnymen",
+    "status": "ok"
+   },
+   {
+    "kind": "rank",
+    "label": "Chose 5 pick(s) from 12 candidates",
+    "status": "ok"
+   }
+  ],
+  "calls": [
+   {
+    "endpoint": "/search",
+    "cache": "hit",
+    "ms": 1
+   },
+   {
+    "endpoint": "/search",
+    "cache": "hit",
+    "ms": 0
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 3
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 6
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 10
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 12
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 12
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 26
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 17
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 2
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 25
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "miss",
+    "ms": 3568
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "miss",
+    "ms": 1653
+   }
+  ],
+  "modes": {
+   "qloo": "live",
+   "llm": "agent"
+  },
+  "usd": 0.007716,
+  "gap": {
+   "formats": [
+    "urn:entity:artist",
+    "urn:entity:movie"
+   ],
+   "wanted": [
+    {
+     "entity_id": "9FCB92D1-9B48-4ADF-A6DC-350DAA7E91AF",
+     "name": "The Smiths",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/1f6b747994bdbbd09eda60f30f6b52ee.jpg",
+     "affinity": 0.9667405271586368,
+     "owned": false
+    },
+    {
+     "entity_id": "CB36C13A-CC81-4081-98B6-D1EEA8DACC55",
+     "name": "The Cure",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/a126a88f45e54abfca14d6150f6d694c.jpg",
+     "affinity": 0.9620811347337891,
+     "owned": true
+    },
+    {
+     "entity_id": "B078BEF5-3988-4CC2-BEFF-598263AA96D0",
+     "name": "Gang of Four",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/6a07024e4b0b4a45b41ef6f598a17565.jpg",
+     "affinity": 0.9579920375296401,
+     "owned": false
+    },
+    {
+     "entity_id": "0DB74BEB-8191-4E7D-A519-42941EDACA9A",
+     "name": "Echo & the Bunnymen",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/492b4c158362463fa6599106e0905a83.jpg",
+     "affinity": 0.9549827690790201,
+     "owned": false
+    },
+    {
+     "entity_id": "8683C096-88DF-4C65-AF64-D580BC36C7E9",
+     "name": "New Order",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/2a96cbd8b46e442.jpg",
+     "affinity": 0.951686641870649,
+     "owned": false
+    },
+    {
+     "entity_id": "2E2D2E5A-8CE2-4F10-A388-320349CEEEA9",
+     "name": "The Jesus and Mary Chain",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/7a12c6fde06543e6adaa6fdb60ca95a3.jpg",
+     "affinity": 0.9505548203882126,
+     "owned": false
+    },
+    {
+     "entity_id": "62823CD4-EBF3-42B6-B7AF-D9B61F70D7DD",
+     "name": "Siouxsie and the Banshees",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/5f81190c1f9343c786c29802bb1aa13d.jpg",
+     "affinity": 0.9494528888466182,
+     "owned": false
+    },
+    {
+     "entity_id": "603C7E42-C952-45CB-8B6F-3B803FEFB2F7",
+     "name": "Lost in Translation",
+     "type": "urn:entity:movie",
+     "image": "https://m.media-amazon.com/images/M/MV5BMTUxMzk0NDg1MV5BMl5BanBnXkFtZTgwNDg0NjkxMDI@._V1_.jpg",
+     "affinity": 0.9490122914464038,
+     "owned": true
+    },
+    {
+     "entity_id": "CE859B17-DDB5-41B4-AEDC-B8DDA2F7CC1B",
+     "name": "Sonic Youth",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/7fc9b9e14a314de79f30d6a71abbfb5e.jpg",
+     "affinity": 0.9416252170877681,
+     "owned": false
+    },
+    {
+     "entity_id": "086E2298-1734-4043-A1C9-0E18121B384C",
+     "name": "Eternal Sunshine of the Spotless Mind",
+     "type": "urn:entity:movie",
+     "image": "https://m.media-amazon.com/images/M/MV5BMTY4NzcwODg3Nl5BMl5BanBnXkFtZTcwNTEwOTMyMw@@._V1_.jpg",
+     "affinity": 0.9411011696423581,
+     "owned": true
+    }
+   ],
+   "coverage": 0.3
+  },
+  "audience": null,
+  "turns": 3,
+  "picks": [
+   {
+    "item": {
+     "id": "c368",
+     "category": "Books",
+     "price_usd": 27,
+     "qloo": {
+      "type": "urn:entity:book",
+      "name": "Kafka on the Shore",
+      "entity_id": "0E1B9145-31B2-458D-B01F-4A35ED5E8ED4"
+     },
+     "tags": [
+      "Literary Fiction",
+      "Novels",
+      "Japanese Literature",
+      "Magical Realism",
+      "Fantasy",
+      "Fiction",
+      "Literature",
+      "Audiobook"
+     ],
+     "popularity": 0.9990479946687701,
+     "image": "https://images.qloo.com/i/0E1B9145-31B2-458D-B01F-4A35ED5E8ED4-420x-auto.jpg",
+     "image_source": "qloo",
+     "title": "Haruki Murakami: Kafka on the Shore",
+     "creators": [
+      "Haruki Murakami"
+     ],
+     "works": [
+      "Kafka on the Shore"
+     ],
+     "year": "2002",
+     "blurb": "A teenage boy and an elderly man embark on surreal journeys to escape fate and uncover their destinies."
+    },
+    "affinity": 0.7586777413055036,
+    "lift": 3.8371025233125646,
+    "chain": [
+     {
+      "signal": "Joy Division",
+      "contribution": 1
+     }
+    ],
+    "why": "Direct match: Murakami's masterpiece about memory and loss.",
+    "direct": [
+     "Haruki Murakami"
+    ]
+   },
+   {
+    "item": {
+     "id": "c055",
+     "category": "Vinyl",
+     "price_usd": 41,
+     "qloo": {
+      "type": "urn:entity:artist",
+      "name": "The Cure",
+      "entity_id": "CB36C13A-CC81-4081-98B6-D1EEA8DACC55"
+     },
+     "tags": [
+      "Alternative Rock",
+      "New Wave",
+      "Psychedelic Rock",
+      "Depression",
+      "Keyboards",
+      "Loyal",
+      "The Velvet Underground",
+      "Existentialism"
+     ],
+     "popularity": 0.9999115270432338,
+     "image": "https://is1-ssl.mzstatic.com/image/thumb/Music/93/3c/2c/mzi.ujtdsknz.jpg/600x600bb.jpg",
+     "image_source": "itunes",
+     "title": "The Cure: Disintegration (2010 Remaster), LP",
+     "creators": [
+      "The Cure"
+     ],
+     "works": [
+      "Disintegration (2010 Remaster)"
+     ],
+     "year": "1989",
+     "blurb": "The Cure are an English rock band formed in Crawley, West Sussex in 1976, led by singer-guitarist Robert Smith. They evolved from terse post-punk beginnings into a band known for atmospheric, melancho"
+    },
+    "affinity": 0.9620811347337891,
+    "lift": 4.112728284845013,
+    "chain": [
+     {
+      "signal": "Joy Division",
+      "contribution": 1
+     }
+    ],
+    "why": "The Cure shares Joy Division's post-punk melancholy sensibility.",
+    "direct": []
+   },
+   {
+    "item": {
+     "id": "c196",
+     "category": "Film",
+     "price_usd": 27,
+     "qloo": {
+      "type": "urn:entity:movie",
+      "name": "Eternal Sunshine of the Spotless Mind",
+      "entity_id": "086E2298-1734-4043-A1C9-0E18121B384C"
+     },
+     "tags": [
+      "Chinese carry out",
+      "Gift wrapped present",
+      "Forgiveness",
+      "Philosophy",
+      "Reflective",
+      "Wagon",
+      "Valentines day",
+      "Tearjerker romance"
+     ],
+     "popularity": 0.9996976176591287,
+     "image": "https://m.media-amazon.com/images/M/MV5BMTY4NzcwODg3Nl5BMl5BanBnXkFtZTcwNTEwOTMyMw@@._V1_.jpg",
+     "image_source": "qloo",
+     "title": "Eternal Sunshine of the Spotless Mind (Blu-ray)",
+     "creators": [
+      "Michel Gondry",
+      "Charlie Kaufman",
+      "Jim Carrey",
+      "Kate Winslet",
+      "Tom Wilkinson",
+      "Mark Ruffalo"
+     ],
+     "works": [
+      "Eternal Sunshine of the Spotless Mind"
+     ],
+     "year": "2004",
+     "blurb": "Eternal Sunshine of the Spotless Mind (2004), directed by Michel Gondry and written by Charlie Kaufman, is a drama-romance with speculative science fiction elements starring Jim Carrey and Kate Winsle"
+    },
+    "affinity": 0.9411011696423581,
+    "lift": 3.1273473546950017,
+    "chain": [
+     {
+      "signal": "Joy Division",
+      "contribution": 1
+     }
+    ],
+    "why": "Eternal Sunshine echoes Murakami's meditative exploration of memory.",
+    "direct": []
+   },
+   {
+    "item": {
+     "id": "c286",
+     "category": "Games",
+     "price_usd": 49,
+     "qloo": {
+      "type": "urn:entity:videogame",
+      "name": "Shadow of the Colossus",
+      "entity_id": "4EC28234-4589-4673-89B1-B61A27A2DC6C"
+     },
+     "tags": [
+      "3D",
+      "Realistic",
+      "Cinematic",
+      "story-rich",
+      "minimalist",
+      "cult classic",
+      "emotional",
+      "arthouse"
+     ],
+     "popularity": 0.9958138730323474,
+     "image": "https://www.metacritic.com/a/img/catalog/provider/6/12/6-1-661093-52.jpg?auto=webp&fit=crop&height=675&width=1200",
+     "image_source": "qloo",
+     "title": "Shadow of the Colossus (PlayStation 4)",
+     "creators": [
+      "Bluepoint Games",
+      "Sony Interactive Entertainment"
+     ],
+     "works": [
+      "Shadow of the Colossus"
+     ],
+     "year": "",
+     "blurb": "(Also known as \"Wanda and the Colossus\" or \"Wanda to Kyozou\" in Japan)  In Shadow of the Colossus, players take the role of a young man seeking the truth of an ancient tale of power hidden in a mystic"
+    },
+    "affinity": 0.829033199805894,
+    "lift": 2.8239199977164,
+    "chain": [
+     {
+      "signal": "Joy Division",
+      "contribution": 1
+     }
+    ],
+    "why": "Shadow of the Colossus offers haunting, atmospheric storytelling like both tastes.",
+    "direct": []
+   },
+   {
+    "item": {
+     "id": "c348",
+     "category": "TV box sets",
+     "price_usd": 43,
+     "qloo": {
+      "type": "urn:entity:tv_show",
+      "name": "Black Mirror",
+      "entity_id": "B36C968C-63BF-49C2-A031-3974337D9ABB"
+     },
+     "tags": [
+      "Mystery",
+      "Uk non horror host",
+      "Election",
+      "Dehumanization",
+      "Dystopian sci fi",
+      "The future",
+      "Morally ambiguous",
+      "Speculative fiction"
+     ],
+     "popularity": 0.9994681204707134,
+     "image": "https://m.media-amazon.com/images/M/MV5BODcxMWI2NDMtYTc3NC00OTZjLWFmNmUtM2NmY2I1ODkxYzczXkEyXkFqcGc@._V1_.jpg",
+     "image_source": "qloo",
+     "title": "Black Mirror (complete series box set)",
+     "creators": [
+      "Charlie Brooker",
+      "Anjana Vasan",
+      "Cristin Milioti",
+      "Jimmi Simpson",
+      "Bryce Dallas Howard",
+      "Alice Eve"
+     ],
+     "works": [
+      "Black Mirror"
+     ],
+     "year": "2011",
+     "blurb": "Black Mirror, created by Charlie Brooker and first released in 2011, is a British anthology television series that presents standalone near-future dramas exploring the societal and personal costs of t"
+    },
+    "affinity": 0.976029253185755,
+    "lift": 6.34146265928775,
+    "chain": [
+     {
+      "signal": "Joy Division",
+      "contribution": 1
+     }
+    ],
+    "why": "Black Mirror's dark psychological themes resonate with his introspective nature.",
+    "direct": []
+   }
+  ],
+  "savedAt": "2026-10-06T12:26:13.192Z"
+ },
+ "My sister loves Studio Ghibli and Lana Del Rey. Something under $45.": {
+  "request": "My sister loves Studio Ghibli and Lana Del Rey. Something under $45.",
+  "extraction": {
+   "recipient": "",
+   "budget_usd": 45,
+   "signals": [
+    {
+     "name": "Studio Ghibli",
+     "kind": "urn:entity:artist"
+    },
+    {
+     "name": "Lana Del Rey",
+     "kind": "urn:entity:artist"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "kind": "lookup",
+    "label": "Looked up 2 taste(s) in Qloo",
+    "detail": "Studio Ghibli, Lana Del Rey",
+    "status": "ok"
+   },
+   {
+    "kind": "score",
+    "label": "Scored all 384 titles with Qloo affinity",
+    "detail": "12 candidates within budget ($45)",
+    "status": "ok"
+   },
+   {
+    "kind": "score",
+    "label": "Store check: we carry 1 of the 10 titles this taste loves most",
+    "detail": "Missing ones go to the owner: Lorde, The Neighbourhood, Marina & the Diamonds",
+    "status": "ok"
+   },
+   {
+    "kind": "rank",
+    "label": "Chose 5 pick(s) from 12 candidates",
+    "status": "ok"
+   }
+  ],
+  "calls": [
+   {
+    "endpoint": "/search",
+    "cache": "hit",
+    "ms": 4
+   },
+   {
+    "endpoint": "/search",
+    "cache": "hit",
+    "ms": 1
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 5
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 9
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 14
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 17
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 16
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 36
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 26
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 2
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 19
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "miss",
+    "ms": 3658
+   }
+  ],
+  "modes": {
+   "qloo": "live",
+   "llm": "agent"
+  },
+  "usd": 0.008171,
+  "gap": {
+   "formats": [
+    "urn:entity:artist"
+   ],
+   "wanted": [
+    {
+     "entity_id": "A37B17AE-15C7-48A3-AADD-6CE50BE3FF74",
+     "name": "Lorde",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/2a96cbd8b46e442.jpg",
+     "affinity": 0.9666912379020188,
+     "owned": false
+    },
+    {
+     "entity_id": "EB24591A-F905-4328-8186-50B2001120F6",
+     "name": "The Neighbourhood",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/2a96cbd8b46e442.jpg",
+     "affinity": 0.9447288244121541,
+     "owned": false
+    },
+    {
+     "entity_id": "84A3362F-350F-41DC-9F62-B1C462359D43",
+     "name": "Marina & the Diamonds",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/582f1b9fc4c6f310c20b0413b63ec7f3.jpg",
+     "affinity": 0.9442496320464229,
+     "owned": false
+    },
+    {
+     "entity_id": "296A9BFF-AE21-4FC0-9F9D-81EBCFB5BBE6",
+     "name": "HAIM",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/3427564e34b1fd62cae0eee75d7978cb.jpg",
+     "affinity": 0.9409340598402804,
+     "owned": false
+    },
+    {
+     "entity_id": "02750106-6B44-44CA-911D-B32C846B49A1",
+     "name": "Tove Lo",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/2cc4f35c4cd7d5fff308d1be93d9fdad.jpg",
+     "affinity": 0.9400482393902144,
+     "owned": false
+    },
+    {
+     "entity_id": "233F9195-E25B-4B33-B25C-A211C21EF583",
+     "name": "Florence + the Machine",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/b7af830e50bccbf1088e08efd350bb77.jpg",
+     "affinity": 0.939745226504217,
+     "owned": true
+    },
+    {
+     "entity_id": "13532075-D9AB-4F22-A269-B5F2AADB44E9",
+     "name": "Foster the People",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/dfa04f1c9611155f8d8cdcc8f96bec58.jpg",
+     "affinity": 0.9382826443846254,
+     "owned": false
+    },
+    {
+     "entity_id": "69F55E60-00DF-42C4-85E1-EAE3069D7ACF",
+     "name": "Zella Day",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/3f6a8873af466a3678e1895349a47012.jpg",
+     "affinity": 0.9376740103867331,
+     "owned": false
+    },
+    {
+     "entity_id": "C977220F-11A7-4F93-8714-AEDC57674191",
+     "name": "The 1975",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/0c599711d88bac53e10d258784ab7397.jpg",
+     "affinity": 0.9370571927363393,
+     "owned": false
+    },
+    {
+     "entity_id": "134329CB-BB11-4F69-A55F-ADA4B9F10A1D",
+     "name": "Banks",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/5b4bce88c617910485e774bd8e99e6f0.jpg",
+     "affinity": 0.9359136519685685,
+     "owned": false
+    }
+   ],
+   "coverage": 0.1
+  },
+  "audience": null,
+  "turns": 3,
+  "picks": [
+   {
+    "item": {
+     "id": "c373",
+     "category": "Film",
+     "price_usd": 27,
+     "qloo": {
+      "type": "urn:entity:movie",
+      "name": "Spirited Away",
+      "entity_id": "9B33A620-68CA-49B3-BFCF-F09CCF8AD595"
+     },
+     "tags": [
+      "Tenacious",
+      "Identical twins",
+      "Painterly",
+      "Contract",
+      "Human becoming an animal",
+      "Emotionally engaged",
+      "Fantasy",
+      "Nostalgic"
+     ],
+     "popularity": 0.9996328214432277,
+     "image": "https://images.qloo.com/i/9B33A620-68CA-49B3-BFCF-F09CCF8AD595-420x-auto.jpg",
+     "image_source": "qloo",
+     "title": "Spirited Away (Blu-ray)",
+     "creators": [
+      "Hayao Miyazaki",
+      "Studio Ghibli",
+      "Joe Hisaishi"
+     ],
+     "works": [
+      "Spirited Away"
+     ],
+     "year": "2001",
+     "blurb": "Spirited Away (2001), directed by Hayao Miyazaki and produced by Studio Ghibli, is an animated fantasy adventure featuring voices including Daveigh Chase, Miyu Irino and Suzanne Pleshette in its Engli"
+    },
+    "affinity": 0.8700139130241121,
+    "lift": 2.891048592943531,
+    "chain": [
+     {
+      "signal": "Studio Ghibli",
+      "contribution": 0.5414236503333063
+     },
+     {
+      "signal": "Lana Del Rey",
+      "contribution": 0.4585763496666938
+     }
+    ],
+    "why": "Spirited Away Blu-ray: direct Studio Ghibli masterpiece, magical and visually stunning.",
+    "direct": [
+     "Studio Ghibli"
+    ]
+   },
+   {
+    "item": {
+     "id": "c026",
+     "category": "Vinyl",
+     "price_usd": 38,
+     "qloo": {
+      "type": "urn:entity:artist",
+      "name": "Florence + the Machine",
+      "entity_id": "233F9195-E25B-4B33-B25C-A211C21EF583"
+     },
+     "tags": [
+      "Indie Rock",
+      "Bjork",
+      "Folk Rock",
+      "Poetic",
+      "Spirituality",
+      "Dynamic",
+      "Artistic",
+      "Drums"
+     ],
+     "popularity": 0.999695259815583,
+     "image": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/9f/a6/0c/9fa60c63-a582-9ce9-0401-fefb48648c99/00602547252395.rgb.jpg/600x600bb.jpg",
+     "image_source": "itunes",
+     "title": "Florence + the Machine: How Big, How Blue, How Beautiful (Deluxe), LP",
+     "creators": [
+      "Florence + the Machine"
+     ],
+     "works": [
+      "How Big, How Blue, How Beautiful (Deluxe)"
+     ],
+     "year": "2015",
+     "blurb": "Florence + The Machine are an English indie-rock/art-pop band fronted by singer Florence Welch. Formed in London in the late 2000s, the group is known for lush, harp- and piano-inflected arrangements,"
+    },
+    "affinity": 0.939745226504217,
+    "lift": 1.9796580556188743,
+    "chain": [
+     {
+      "signal": "Lana Del Rey",
+      "contribution": 1
+     }
+    ],
+    "why": "Florence + the Machine deluxe vinyl: ethereal indie pop echoing Lana Del Rey's aesthetic.",
+    "direct": []
+   },
+   {
+    "item": {
+     "id": "c386",
+     "category": "Games",
+     "price_usd": 35,
+     "qloo": {
+      "type": "urn:entity:videogame",
+      "name": "Stardew Valley",
+      "entity_id": "875DB771-9C4C-4DD0-9249-D2ABD95711F1"
+     },
+     "tags": [
+      "2D",
+      "Pixel Art",
+      "Retro",
+      "cozy",
+      "addictive",
+      "deep progression",
+      "community-driven",
+      "mod-friendly"
+     ],
+     "popularity": 0.9471134842075023,
+     "image": "https://images.qloo.com/i/875DB771-9C4C-4DD0-9249-D2ABD95711F1-420x-auto.jpg",
+     "image_source": "qloo",
+     "title": "Stardew Valley (Nintendo Switch)",
+     "creators": [
+      "ConcernedApe",
+      "Chucklefish"
+     ],
+     "works": [
+      "Stardew Valley"
+     ],
+     "year": "2016",
+     "blurb": "You inherit a run-down farm and rebuild it while forming relationships, exploring caves, farming, and shaping your life in a small town."
+    },
+    "affinity": 0.8307408083586995,
+    "lift": 1.7805361782210702,
+    "chain": [
+     {
+      "signal": "Studio Ghibli",
+      "contribution": 0.5999412646177072
+     },
+     {
+      "signal": "Lana Del Rey",
+      "contribution": 0.40005873538229264
+     }
+    ],
+    "why": "Stardew Valley: cozy farming game with Studio Ghibli's gentle charm and whimsy.",
+    "direct": []
+   },
+   {
+    "item": {
+     "id": "c081",
+     "category": "Vinyl",
+     "price_usd": 27,
+     "qloo": {
+      "type": "urn:entity:artist",
+      "name": "Ellie Goulding",
+      "entity_id": "D0FB2FA3-01FF-4F46-A501-F53EE746CD66"
+     },
+     "tags": [
+      "Energetic",
+      "Distinctive",
+      "Diverse",
+      "Folk Pop",
+      "Clarinet",
+      "Piano",
+      "The Knife",
+      "2"
+     ],
+     "popularity": 0.9995150371258741,
+     "image": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/a8/34/c5/a834c58b-d313-34c0-9e16-f27131dc96aa/20UMGIM23589.rgb.jpg/600x600bb.jpg",
+     "image_source": "itunes",
+     "title": "Ellie Goulding: Brightest Blue, LP",
+     "creators": [
+      "Ellie Goulding"
+     ],
+     "works": [
+      "Brightest Blue"
+     ],
+     "year": "2020",
+     "blurb": "Ellie Goulding is an English singer-songwriter who rose to prominence in the early 2010s with a signature breathy soprano, blending folky songwriting with synth-driven electronic pop. Her debut album "
+    },
+    "affinity": 0.9319533794133303,
+    "lift": 1.528981890405495,
+    "chain": [
+     {
+      "signal": "Lana Del Rey",
+      "contribution": 1
+     }
+    ],
+    "why": "Ellie Goulding LP: atmospheric pop aligned with Lana Del Rey's dreamy sonic palette.",
+    "direct": []
+   },
+   {
+    "item": {
+     "id": "c147",
+     "category": "Books",
+     "price_usd": 16,
+     "qloo": {
+      "type": "urn:entity:book",
+      "name": "Chain of Gold (The Last Hours, #1)",
+      "entity_id": "57140B9D-6BD6-43E3-8A6A-5B76E0BD8EB6"
+     },
+     "tags": [
+      "Urban Fantasy",
+      "Paranormal",
+      "Audiobook",
+      "Fantasy",
+      "Young Adult Fantasy",
+      "Historical Fiction",
+      "Young Adult",
+      "Historical"
+     ],
+     "popularity": 0.9964095798936474,
+     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1571379245i/17699853.jpg",
+     "image_source": "qloo",
+     "title": "Cassandra Clare: Chain of Gold",
+     "creators": [
+      "Cassandra Clare"
+     ],
+     "works": [
+      "Chain of Gold"
+     ],
+     "year": "2020",
+     "blurb": "Cordelia Carstairs, a Shadowhunter, navigates love and supernatural threats in 1903 London."
+    },
+    "affinity": 0.7795569736057192,
+    "lift": 2.488288663993025,
+    "chain": [
+     {
+      "signal": "Lana Del Rey",
+      "contribution": 0.6435301446562878
+     },
+     {
+      "signal": "Studio Ghibli",
+      "contribution": 0.3564698553437121
+     }
+    ],
+    "why": "Cassandra Clare's Chain of Gold: romantic fantasy with melancholic beauty Lana fans love.",
+    "direct": []
+   }
+  ],
+  "savedAt": "2026-10-06T12:26:22.694Z"
+ },
  "I love Wes Anderson and Sofia Coppola films, and I put on Miles Davis late at night.": {
   "request": "I love Wes Anderson and Sofia Coppola films, and I put on Miles Davis late at night.",
   "extraction": {
@@ -41,7 +921,6 @@
    {
     "kind": "rank",
     "label": "Chose 5 pick(s) from 12 candidates",
-    "detail": "A mix of your favourite filmmakers, jazz greats, and unexpected picks that share the same aesthetic sensibility.",
     "status": "ok"
    }
   ],
@@ -63,65 +942,65 @@
    },
    {
     "endpoint": "/v2/insights",
-    "cache": "miss",
-    "ms": 969
+    "cache": "hit",
+    "ms": 9
    },
    {
     "endpoint": "/v2/insights",
-    "cache": "miss",
-    "ms": 1058
+    "cache": "hit",
+    "ms": 12
    },
    {
     "endpoint": "/v2/insights",
-    "cache": "miss",
-    "ms": 1538
+    "cache": "hit",
+    "ms": 21
    },
    {
     "endpoint": "/v2/insights",
-    "cache": "miss",
-    "ms": 1635
+    "cache": "hit",
+    "ms": 31
    },
    {
     "endpoint": "/v2/insights",
-    "cache": "miss",
-    "ms": 673
+    "cache": "hit",
+    "ms": 39
    },
    {
     "endpoint": "/v2/insights",
-    "cache": "miss",
-    "ms": 1835
+    "cache": "hit",
+    "ms": 70
    },
    {
     "endpoint": "/v2/insights",
-    "cache": "miss",
-    "ms": 466
+    "cache": "hit",
+    "ms": 69
    },
    {
     "endpoint": "/v2/insights",
-    "cache": "miss",
-    "ms": 1518
+    "cache": "hit",
+    "ms": 2
    },
    {
     "endpoint": "/v2/insights",
-    "cache": "miss",
-    "ms": 220
+    "cache": "hit",
+    "ms": 30
    },
    {
     "endpoint": "/v2/insights",
-    "cache": "miss",
-    "ms": 1380
+    "cache": "hit",
+    "ms": 4
    },
    {
     "endpoint": "/v2/insights",
-    "cache": "miss",
-    "ms": 3069
+    "cache": "hit",
+    "ms": 2
    }
   ],
   "modes": {
    "qloo": "live",
    "llm": "agent"
   },
-  "usd": 0.008413,
+  "usd": 0.00824,
   "gap": {
    "formats": [
     "urn:entity:movie",
@@ -216,63 +1095,62 @@
   "picks": [
    {
     "item": {
-     "id": "c216",
+     "id": "c219",
      "category": "Film",
-     "price_usd": 21,
+     "price_usd": 20,
      "qloo": {
       "type": "urn:entity:movie",
-      "name": "The Grand Budapest Hotel",
-      "entity_id": "DF788007-B5EA-4F29-872B-96BCB8EEC42F"
+      "name": "Moonrise Kingdom",
+      "entity_id": "79A98408-6B84-4416-99B4-A4B3563BEAFB"
      },
      "tags": [
-      "Lantern",
-      "Friend",
-      "84 year old",
-      "Violence",
-      "Cigarette smoking",
-      "Watching a movie",
-      "Drama",
-      "Sommelier"
+      "Boat",
+      "Adultery",
+      "Candy cinema",
+      "Letter",
+      "Woods",
+      "Postmodern",
+      "Lightning",
+      "First love"
      ],
-     "popularity": 0.9995140283807425,
-     "image": "https://m.media-amazon.com/images/M/MV5BMzM5NjUxOTEyMl5BMl5BanBnXkFtZTgwNjEyMDM0MDE@._V1_.jpg",
+     "popularity": 0.996533402449297,
+     "image": "https://m.media-amazon.com/images/M/MV5BMTEwMTc3NDkzOTJeQTJeQWpwZ15BbWU3MDI4NTAwNzc@._V1_.jpg",
      "image_source": "qloo",
-     "title": "The Grand Budapest Hotel (4K UHD Blu-ray)",
+     "title": "Moonrise Kingdom (4K UHD Blu-ray)",
      "creators": [
       "Wes Anderson",
-      "Ralph Fiennes",
-      "F. Murray Abraham",
-      "Mathieu Amalric",
-      "Tony Revolori",
-      "Jude Law",
-      "Tom Wilkinson",
+      "Jared Gilman",
+      "Kara Hayward",
+      "Bruce Willis",
       "Bill Murray",
-      "Owen Wilson",
-      "Alexandre Desplat"
+      "Frances McDormand",
+      "Edward Norton",
+      "Tilda Swinton",
+      "Jason Schwartzman"
      ],
      "works": [
-      "The Grand Budapest Hotel"
+      "Moonrise Kingdom"
      ],
-     "year": "2014",
-     "blurb": "The Grand Budapest Hotel (2014), directed by Wes Anderson and featuring Ralph Fiennes, F. Murray Abraham, and Mathieu Amalric, is a comedy-drama adventure set across multiple eras of a once-grand Euro"
+     "year": "2012",
+     "blurb": "Moonrise Kingdom (2012), directed by Wes Anderson and starring Jared Gilman, Kara Hayward and Bruce Willis, is an offbeat coming-of-age romantic adventure set on a New England island in the 1960s. The"
     },
-    "affinity": 0.8687337771461058,
-    "lift": 2.27778668968084,
+    "affinity": 0.8565525928605905,
+    "lift": 2.0155867067749638,
     "chain": [
      {
-      "signal": "Miles Davis",
-      "contribution": 0.4159832309889277
+      "signal": "Wes Anderson",
+      "contribution": 0.3924643230622667
      },
      {
-      "signal": "Wes Anderson",
-      "contribution": 0.3683067531843622
+      "signal": "Miles Davis",
+      "contribution": 0.37604019961389956
      },
      {
       "signal": "Sofia Coppola",
-      "contribution": 0.21571001582671026
+      "contribution": 0.23149547732383358
      }
     ],
-    "why": "Essential Wes Anderson visual spectacle in 4K",
+    "why": "Moonrise Kingdom captures the whimsy and precision that defines Wes Anderson's vision",
     "direct": [
      "Wes Anderson"
     ]
@@ -329,109 +1207,61 @@
       "contribution": 0.2431192714100843
      }
     ],
-    "why": "Sofia Coppola's melancholic masterpiece about isolation and connection",
+    "why": "Lost in Translation is Sofia Coppola's meditative masterpiece about solitude and connection",
     "direct": [
      "Sofia Coppola"
     ]
    },
    {
     "item": {
-     "id": "c015",
+     "id": "c084",
      "category": "Vinyl",
-     "price_usd": 41,
+     "price_usd": 28,
      "qloo": {
       "type": "urn:entity:artist",
-      "name": "John Coltrane",
-      "entity_id": "02CD4C7F-C5A3-4AD2-B005-D0CBC07E1609"
+      "name": "Thelonious Monk",
+      "entity_id": "33FC2EB5-9DC4-4EE4-8A10-178832994016"
      },
      "tags": [
-      "Saxophone",
-      "Avant Garde",
-      "Innovative",
-      "Post-Bop",
-      "Hard Bop",
+      "Jazz",
+      "Piano",
+      "Post Bop",
+      "Post Bop",
       "Free Jazz",
-      "Jazz Fusion",
-      "Lester Young"
+      "Modern Jazz",
+      "Duke Ellington",
+      "Bebop"
      ],
-     "popularity": 0.99789630969467,
-     "image": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/4e/2f/8b/4e2f8b1f-7e14-1ce4-1c76-4683b1b9173d/603497847549.jpg/600x600bb.jpg",
+     "popularity": 0.9956386109090433,
+     "image": "https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/69/f0/8c/69f08c37-6f6a-970f-f53f-ef3f99642fca/dj.wvzxyszi.jpg/600x600bb.jpg",
      "image_source": "itunes",
-     "title": "John Coltrane: Giant Steps (2020 Remaster), LP",
+     "title": "Thelonious Monk: Straight, No Chaser, LP",
      "creators": [
-      "John Coltrane"
+      "Thelonious Monk"
      ],
      "works": [
-      "Giant Steps (2020 Remaster)"
+      "Straight, No Chaser"
      ],
-     "year": "1960",
-     "blurb": "John Coltrane (1926–1967) was a groundbreaking American jazz saxophonist and composer whose work reshaped modern jazz. Beginning in bebop and hard bop, he helped pioneer modal jazz and later pushed in"
+     "year": "1967",
+     "blurb": "Thelonious Monk was a pioneering American jazz pianist and composer, renowned for his distinctive improvisational style and contributions to the bebop genre. His music is characterized by dissonant ha"
     },
-    "affinity": 0.9105919718685291,
-    "lift": 8.094598593426456,
+    "affinity": 0.9144106420042494,
+    "lift": 9.080532100212467,
     "chain": [
      {
       "signal": "Miles Davis",
-      "contribution": 0.43209309344851177
+      "contribution": 0.42054533481784634
      },
      {
       "signal": "Sofia Coppola",
-      "contribution": 0.2929449281784599
+      "contribution": 0.289908485906989
      },
      {
       "signal": "Wes Anderson",
-      "contribution": 0.2749619783730282
+      "contribution": 0.28954617927516474
      }
     ],
-    "why": "John Coltrane's genius to spin late at night alongside Miles Davis",
-    "direct": []
-   },
-   {
-    "item": {
-     "id": "c122",
-     "category": "Books",
-     "price_usd": 17,
-     "qloo": {
-      "type": "urn:entity:book",
-      "name": "The Bell Jar",
-      "entity_id": "61BF2BD8-CD90-418D-B155-0971B00C6702"
-     },
-     "tags": [
-      "Mental Illness",
-      "Literary Fiction",
-      "Fiction",
-      "Audiobook",
-      "Classics",
-      "Psychology",
-      "Mental Health",
-      "Feminism"
-     ],
-     "popularity": 0.9994695970297434,
-     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1668645154i/56616095.jpg",
-     "image_source": "qloo",
-     "title": "Sylvia Plath: The Bell Jar",
-     "creators": [
-      "Sylvia Plath"
-     ],
-     "works": [
-      "The Bell Jar"
-     ],
-     "year": "1963",
-     "blurb": "A young woman's mental health deteriorates during a summer internship, leading to a suicide attempt and hospitalization."
-    },
-    "affinity": 0.9624271331617331,
-    "lift": 4.6707909972738335,
-    "chain": [
-     {
-      "signal": "Wes Anderson",
-      "contribution": 0.5034216659686196
-     },
-     {
-      "signal": "Miles Davis",
-      "contribution": 0.49657833403138035
-     }
-    ],
-    "why": "Sylvia Plath's literary darkness matches your contemplative taste",
+    "why": "Thelonious Monk echoes the contemplative late-night mood of Miles Davis records",
     "direct": []
    },
    {
@@ -484,481 +1314,59 @@
       "contribution": 0.28542610608166197
      }
     ],
-    "why": "Outer Wilds echoes Anderson's wonder and emotional precision",
-    "direct": []
-   }
-  ],
-  "note": "A mix of your favourite filmmakers, jazz greats, and unexpected picks that share the same aesthetic sensibility.",
-  "savedAt": "2026-10-06T11:25:41.196Z"
- },
- "My cousin quotes Quentin Tarantino nonstop and plays The Last of Us on repeat. Something under $60.": {
-  "request": "My cousin quotes Quentin Tarantino nonstop and plays The Last of Us on repeat. Something under $60.",
-  "extraction": {
-   "recipient": "",
-   "budget_usd": 60,
-   "signals": [
-    {
-     "name": "Quentin Tarantino",
-     "kind": "urn:entity:person"
-    },
-    {
-     "name": "The Last of Us",
-     "kind": "urn:entity:videogame"
-    }
-   ]
-  },
-  "steps": [
-   {
-    "kind": "lookup",
-    "label": "Looked up 2 taste(s) in Qloo",
-    "detail": "Quentin Tarantino, The Last of Us",
-    "status": "ok"
-   },
-   {
-    "kind": "score",
-    "label": "Scored all 384 titles with Qloo affinity",
-    "detail": "12 candidates within budget ($60)",
-    "status": "ok"
-   },
-   {
-    "kind": "score",
-    "label": "Store check: we carry 1 of the 10 titles this taste loves most",
-    "detail": "Missing ones go to the owner: The Last of Us: Left Behind, Uncharted 4: A Thief's End, Days Gone",
-    "status": "ok"
-   },
-   {
-    "kind": "rank",
-    "label": "Chose 5 pick(s) from 12 candidates",
-    "detail": "All picks stay well under budget. Mix of direct hits and crossover surprises across formats.",
-    "status": "ok"
-   }
-  ],
-  "calls": [
-   {
-    "endpoint": "/search",
-    "cache": "hit",
-    "ms": 2
-   },
-   {
-    "endpoint": "/search",
-    "cache": "hit",
-    "ms": 1
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 12
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 15
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 22
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 26
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 19
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 40
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 23
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 2
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 16
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 4
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 11
-   }
-  ],
-  "modes": {
-   "qloo": "live",
-   "llm": "agent"
-  },
-  "usd": 0.008324,
-  "gap": {
-   "formats": [
-    "urn:entity:movie",
-    "urn:entity:videogame"
-   ],
-   "wanted": [
-    {
-     "entity_id": "24C32B22-D975-49E3-9A0B-071771D7A659",
-     "name": "The Last of Us: Left Behind",
-     "type": "urn:entity:videogame",
-     "image": "https://www.metacritic.com/a/img/catalog/provider/6/12/6-1-556672-52.jpg?auto=webp&fit=crop&height=675&width=1200",
-     "affinity": 0.9224015035628395,
-     "owned": false
-    },
-    {
-     "entity_id": "F0116890-2AB6-4CF0-ABD7-AE42C9C886E5",
-     "name": "The Last of Us Part II",
-     "type": "urn:entity:videogame",
-     "image": "https://www.metacritic.com/a/img/catalog/provider/6/12/6-1-754849-52.jpg?auto=webp&fit=crop&height=675&width=1200",
-     "affinity": 0.9041183012206113,
-     "owned": true
-    },
-    {
-     "entity_id": "9E288B89-9DA7-48A1-AC89-E51F6B08672F",
-     "name": "Uncharted 4: A Thief's End",
-     "type": "urn:entity:videogame",
-     "image": null,
-     "affinity": 0.9032769194010772,
-     "owned": false
-    },
-    {
-     "entity_id": "5466C6BB-1D84-4D44-BDC7-F87677A24B94",
-     "name": "Days Gone",
-     "type": "urn:entity:videogame",
-     "image": null,
-     "affinity": 0.9000027800317857,
-     "owned": false
-    },
-    {
-     "entity_id": "376553E0-3474-4137-AA8A-F77EFF52DAF3",
-     "name": "Uncharted: The Lost Legacy",
-     "type": "urn:entity:videogame",
-     "image": null,
-     "affinity": 0.8979131590672292,
-     "owned": false
-    },
-    {
-     "entity_id": "CC6BCE44-9256-4379-AAF4-E4A3FD19808E",
-     "name": "Hunger",
-     "type": "urn:entity:movie",
-     "image": "https://m.media-amazon.com/images/M/MV5BMDMwMWZmZjMtZmZkMS00MzNmLTlmNTUtY2MyYTdkYzRiZDg0XkEyXkFqcGc@._V1_.jpg",
-     "affinity": 0.8894277397120738,
-     "owned": false
-    },
-    {
-     "entity_id": "7FCFC743-1CE5-4D70-8B85-9D1D6B79A721",
-     "name": "The Master",
-     "type": "urn:entity:movie",
-     "image": "https://m.media-amazon.com/images/M/MV5BMTQ2NjQ5MzMwMF5BMl5BanBnXkFtZTcwMjczNTAzOA@@._V1_.jpg",
-     "affinity": 0.8862737186076357,
-     "owned": false
-    },
-    {
-     "entity_id": "F65E77EB-FE85-473F-9C86-75D6A4337F6B",
-     "name": "Brothers",
-     "type": "urn:entity:movie",
-     "image": "https://m.media-amazon.com/images/M/MV5BMTkyMTY5MTcxOV5BMl5BanBnXkFtZTcwMTI3MDE3Mg@@._V1_.jpg",
-     "affinity": 0.8822512482409626,
-     "owned": false
-    },
-    {
-     "entity_id": "E2E67E68-DD05-4607-926F-F8CB8DB9653F",
-     "name": "Victoria",
-     "type": "urn:entity:movie",
-     "image": "https://m.media-amazon.com/images/M/MV5BMTc5NzQzNjk2NF5BMl5BanBnXkFtZTgwODU0MjI5NjE@._V1_.jpg",
-     "affinity": 0.8808011603938765,
-     "owned": false
-    },
-    {
-     "entity_id": "0CC7E687-8BED-46D1-BEFB-2D128722AD7F",
-     "name": "Margin Call",
-     "type": "urn:entity:movie",
-     "image": "https://m.media-amazon.com/images/M/MV5BMjE5NzkyNDI2Nl5BMl5BanBnXkFtZTcwMTYzNDc2Ng@@._V1_.jpg",
-     "affinity": 0.8800517860350746,
-     "owned": false
-    }
-   ],
-   "coverage": 0.1
-  },
-  "audience": null,
-  "turns": 3,
-  "picks": [
-   {
-    "item": {
-     "id": "c240",
-     "category": "Film",
-     "price_usd": 24,
-     "qloo": {
-      "type": "urn:entity:movie",
-      "name": "Pulp Fiction",
-      "entity_id": "B6DD7D76-1F1B-4171-AF2F-03FB0C66F6CB"
-     },
-     "tags": [
-      "Vulgarity",
-      "Twist the dance",
-      "No music score",
-      "Unpredictable",
-      "Ensemble cast",
-      "Storytelling",
-      "Double cross",
-      "Actor director"
-     ],
-     "popularity": 0.9999460031534159,
-     "image": "https://m.media-amazon.com/images/M/MV5BYTViYTE3ZGQtNDBlMC00ZTAyLTkyODMtZGRiZDg0MjA2YThkXkEyXkFqcGc@._V1_.jpg",
-     "image_source": "qloo",
-     "title": "Pulp Fiction (Blu-ray)",
-     "creators": [
-      "Quentin Tarantino",
-      "John Travolta",
-      "Uma Thurman",
-      "Samuel L. Jackson",
-      "Ving Rhames",
-      "Bruce Willis",
-      "Harvey Keitel",
-      "Tim Roth",
-      "Amanda Plummer"
-     ],
-     "works": [
-      "Pulp Fiction"
-     ],
-     "year": "1994",
-     "blurb": "Pulp Fiction (1994), directed by Quentin Tarantino and starring John Travolta, Uma Thurman, and Samuel L. Jackson, is a landmark crime drama that interlaces several nonlinear episodes involving hitmen"
-    },
-    "affinity": 0.7886331559192937,
-    "lift": 0.8896256870954152,
-    "chain": [
-     {
-      "signal": "The Last of Us",
-      "contribution": 0.5829885268947972
-     },
-     {
-      "signal": "Quentin Tarantino",
-      "contribution": 0.41701147310520287
-     }
-    ],
-    "why": "Pulp Fiction is peak Tarantino, direct match to what your cousin loves.",
-    "direct": [
-     "Quentin Tarantino"
-    ]
-   },
-   {
-    "item": {
-     "id": "c281",
-     "category": "Games",
-     "price_usd": 32,
-     "qloo": {
-      "type": "urn:entity:videogame",
-      "name": "The Last of Us Part II",
-      "entity_id": "F0116890-2AB6-4CF0-ABD7-AE42C9C886E5"
-     },
-     "tags": [
-      "3D",
-      "Photorealistic",
-      "emotional depth",
-      "polarizing narrative",
-      "cinematic presentation",
-      "mature themes",
-      "high production values",
-      "melancholic"
-     ],
-     "popularity": 1,
-     "image": "https://www.metacritic.com/a/img/catalog/provider/6/12/6-1-754849-52.jpg?auto=webp&fit=crop&height=675&width=1200",
-     "image_source": "qloo",
-     "title": "The Last of Us Part II (PlayStation 4)",
-     "creators": [
-      "Naughty Dog",
-      "Sony Interactive Entertainment"
-     ],
-     "works": [
-      "The Last of Us Part II"
-     ],
-     "year": "",
-     "blurb": "Five years after their dangerous journey across the post-pandemic United States, Ellie and Joel have settled in a survivor community in Jackson, Wyoming. When a violent event shatters that peace, Elli"
-    },
-    "affinity": 0.9041183012206113,
-    "lift": 3.612818707439316,
-    "chain": [
-     {
-      "signal": "Quentin Tarantino",
-      "contribution": 0.5579150417777211
-     },
-     {
-      "signal": "The Last of Us",
-      "contribution": 0.4420849582222789
-     }
-    ],
-    "why": "The Last of Us Part II continues the game they play on repeat.",
+    "why": "Outer Wilds offers Wes Anderson-like precision in an explorer's dreamlike universe",
     "direct": []
    },
    {
     "item": {
-     "id": "c248",
-     "category": "Film",
-     "price_usd": 18,
-     "qloo": {
-      "type": "urn:entity:movie",
-      "name": "Moonlight",
-      "entity_id": "2955F3C4-36AB-49F3-A818-3597F35EF46C"
-     },
-     "tags": [
-      "Reconciliation",
-      "Triadic color palette",
-      "Slow burn intensity",
-      "In the closet",
-      "Smoking a blunt",
-      "U s car",
-      "Film criticism",
-      "Social realism"
-     ],
-     "popularity": 0.9974837469491782,
-     "image": "https://m.media-amazon.com/images/M/MV5BNzQxNTIyODAxMV5BMl5BanBnXkFtZTgwNzQyMDA3OTE@._V1_.jpg",
-     "image_source": "qloo",
-     "title": "Moonlight (4K UHD Blu-ray)",
-     "creators": [
-      "Barry Jenkins",
-      "Mahershala Ali",
-      "Naomie Harris",
-      "Trevante Rhodes",
-      "Alex Hibbert",
-      "Ashton Sanders",
-      "Janelle Monáe",
-      "James Laxton",
-      "Nicholas Britell"
-     ],
-     "works": [
-      "Moonlight"
-     ],
-     "year": "2016",
-     "blurb": "Moonlight (2016), directed by Barry Jenkins and featuring Mahershala Ali, Naomie Harris, and Trevante Rhodes, is a three-part coming-of-age drama about a young Black man growing up in Miami. The film "
-    },
-    "affinity": 0.8627257112444396,
-    "lift": 0.9420442566776622,
-    "chain": [
-     {
-      "signal": "Quentin Tarantino",
-      "contribution": 0.5389275817358575
-     },
-     {
-      "signal": "The Last of Us",
-      "contribution": 0.46107241826414247
-     }
-    ],
-    "why": "Moonlight shares Tarantino fans' taste for intimate, character-driven intensity.",
-    "direct": []
-   },
-   {
-    "item": {
-     "id": "c101",
+     "id": "c141",
      "category": "Books",
-     "price_usd": 16,
+     "price_usd": 21,
      "qloo": {
       "type": "urn:entity:book",
-      "name": "1984",
-      "entity_id": "B776A6C0-4BD5-4773-A5FC-266FF59932FB"
+      "name": "The Catcher in the Rye",
+      "entity_id": "A2DEF825-7285-40C8-A39F-1E9BC86E6F6E"
      },
      "tags": [
-      "Science Fiction",
-      "Politics",
-      "Dystopia",
+      "Classics",
+      "Young Adult",
+      "Banned Books",
+      "High School",
       "School",
-      "Audiobook",
-      "Literature",
       "Novels",
-      "Fiction"
+      "Fiction",
+      "Coming Of Age"
      ],
-     "popularity": 0.999904799466877,
-     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1657781256i/61439040.jpg",
+     "popularity": 0.9997517986100722,
+     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1398034300i/5107.jpg",
      "image_source": "qloo",
-     "title": "George Orwell: 1984",
+     "title": "J.D. Salinger: The Catcher in the Rye",
      "creators": [
-      "George Orwell"
+      "J.D. Salinger"
      ],
      "works": [
-      "1984"
+      "The Catcher in the Rye"
      ],
-     "year": "1949",
-     "blurb": "In a dystopian future, Winston Smith rebels against a totalitarian regime but is ultimately broken by its power."
+     "year": "1951",
+     "blurb": "Holden Caulfield, expelled from school, wanders New York City, grappling with alienation and a desire to protect innocence."
     },
-    "affinity": 0.8514365010582491,
-    "lift": 4.101433392439422,
+    "affinity": 0.9256192502253453,
+    "lift": 3.8246728747377157,
     "chain": [
      {
-      "signal": "The Last of Us",
-      "contribution": 0.6199202458013142
+      "signal": "Miles Davis",
+      "contribution": 0.5103751214187499
      },
      {
-      "signal": "Quentin Tarantino",
-      "contribution": 0.38007975419868584
+      "signal": "Wes Anderson",
+      "contribution": 0.48962487858125026
      }
     ],
-    "why": "1984 appeals to The Last of Us fans' love of dystopian, morally complex worlds.",
-    "direct": []
-   },
-   {
-    "item": {
-     "id": "c062",
-     "category": "Vinyl",
-     "price_usd": 29,
-     "qloo": {
-      "type": "urn:entity:artist",
-      "name": "Pearl Jam",
-      "entity_id": "6DE25E22-8933-4BC0-B0C3-89D060C034AF"
-     },
-     "tags": [
-      "Engaging",
-      "Personal Struggles",
-      "Drums",
-      "Loyal",
-      "Rebellious",
-      "Alternative Rock",
-      "2",
-      "Love"
-     ],
-     "popularity": 0.9998099469817615,
-     "image": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b3/7d/35/b37d358d-f0f1-de4b-be52-f3d8ecbc2597/dj.yapbhzfv.jpg/600x600bb.jpg",
-     "image_source": "itunes",
-     "title": "Pearl Jam: Pearl Jam, LP",
-     "creators": [
-      "Pearl Jam"
-     ],
-     "works": [
-      "Pearl Jam"
-     ],
-     "year": "2006",
-     "blurb": "Pearl Jam is an American rock band formed in Seattle in 1990. Emerging from the ashes of Mother Love Bone, founding members Jeff Ament and Stone Gossard recruited Mike McCready and — after a demo tape"
-    },
-    "affinity": 0.921822793791713,
-    "lift": 1.5523525114409384,
-    "chain": [
-     {
-      "signal": "The Last of Us",
-      "contribution": 0.5795620323021038
-     },
-     {
-      "signal": "Quentin Tarantino",
-      "contribution": 0.42043796769789626
-     }
-    ],
-    "why": "Pearl Jam LP resonates with Last of Us soundtrack lovers and 90s cult obsessives.",
+    "why": "Catcher in the Rye resonates with the introspective sensibility Miles Davis fans cherish",
     "direct": []
    }
   ],
-  "note": "All picks stay well under budget. Mix of direct hits and crossover surprises across formats.",
-  "savedAt": "2026-10-06T11:25:47.375Z"
+  "savedAt": "2026-10-06T12:26:28.258Z"
  },
  "I'm all Taylor Swift and cozy fantasy books like The House in the Cerulean Sea.": {
   "request": "I'm all Taylor Swift and cozy fantasy books like The House in the Cerulean Sea.",
@@ -998,7 +1406,7 @@
    {
     "kind": "rank",
     "label": "Chose 5 pick(s) from 12 candidates",
-    "detail": "All five titles match your taste signature. We're currently missing Demi Lovato, One Direction, Selena Gomez and others we can report to the shop owner.",
+    "detail": "We carry several titles Taylor Swift fans adore. For more cozy fantasy reads like House in the Cerulean Sea, ask us about special orders.",
     "status": "ok"
    }
   ],
@@ -1006,7 +1414,7 @@
    {
     "endpoint": "/search",
     "cache": "hit",
-    "ms": 2
+    "ms": 1
    },
    {
     "endpoint": "/search",
@@ -1021,64 +1429,64 @@
    {
     "endpoint": "/v2/insights",
     "cache": "hit",
+    "ms": 10
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 13
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 30
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 39
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 33
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 56
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 32
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 16
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 27
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
+    "ms": 3
+   },
+   {
+    "endpoint": "/v2/insights",
+    "cache": "hit",
     "ms": 4
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 6
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 12
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 17
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 15
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 28
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 19
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 2
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 12
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 2
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "miss",
-    "ms": 1981
    }
   ],
   "modes": {
    "qloo": "live",
    "llm": "agent"
   },
-  "usd": 0.011593,
+  "usd": 0.01165,
   "gap": {
    "formats": [
     "urn:entity:artist",
@@ -1173,50 +1581,6 @@
   "picks": [
    {
     "item": {
-     "id": "c058",
-     "category": "Vinyl",
-     "price_usd": 42,
-     "qloo": {
-      "type": "urn:entity:artist",
-      "name": "Carly Rae Jepsen",
-      "entity_id": "A3A7CEAC-FE66-49E4-AC58-D619BC48C840"
-     },
-     "tags": [
-      "Catchy",
-      "Bubblegum Pop",
-      "Synth-Pop",
-      "Loyal",
-      "Piano",
-      "Melodic",
-      "Love",
-      "Youth"
-     ],
-     "popularity": 0.9982764157311471,
-     "image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8e/b9/9b/8eb99b2a-f730-0df5-3c2c-4175d57cd84d/15UMGIM31527.rgb.jpg/600x600bb.jpg",
-     "image_source": "itunes",
-     "title": "Carly Rae Jepsen: E•MO•TION, LP",
-     "creators": [
-      "Carly Rae Jepsen"
-     ],
-     "works": [
-      "E•MO•TION"
-     ],
-     "year": "2015",
-     "blurb": "Carly Rae Jepsen is a Canadian singer-songwriter who rose to fame after placing on Canadian Idol and then achieving international success with the 2011 viral hit \"Call Me Maybe.\" Her catalog spans bri"
-    },
-    "affinity": 0.9666379041407961,
-    "lift": 1.7358249879663317,
-    "chain": [
-     {
-      "signal": "Taylor Swift",
-      "contribution": 1
-     }
-    ],
-    "why": "Carly Rae Jepsen matches Taylor's pop sensibility with infectious melodies and emotional depth.",
-    "direct": []
-   },
-   {
-    "item": {
      "id": "c025",
      "category": "Vinyl",
      "price_usd": 30,
@@ -1256,7 +1620,7 @@
       "contribution": 1
      }
     ],
-    "why": "Katy Perry's PRISM shares Taylor's storytelling and era-defining pop moments on vinyl.",
+    "why": "Katy Perry's Deluxe PRISM vinyl pairs Taylor Swift energy with pop perfection you'll love.",
     "direct": []
    },
    {
@@ -1303,7 +1667,101 @@
       "contribution": 1
      }
     ],
-    "why": "The Fault in Our Stars film has the same cozy, intimate emotional stakes as Cerulean Sea.",
+    "why": "The Fault in Our Stars has the emotional depth and cozy intimacy of The House in the Cerulean Sea.",
+    "direct": []
+   },
+   {
+    "item": {
+     "id": "c326",
+     "category": "TV box sets",
+     "price_usd": 79,
+     "qloo": {
+      "type": "urn:entity:tv_show",
+      "name": "Nashville",
+      "entity_id": "04E89A27-F0C6-417A-A449-FE6F3B2090BC"
+     },
+     "tags": [
+      "Music venues",
+      "Music",
+      "Mature",
+      "Gay",
+      "Vulnerable",
+      "Romantic relationships",
+      "Cinematic",
+      "Backstage intimacy"
+     ],
+     "popularity": 0.9324512997805997,
+     "image": "https://m.media-amazon.com/images/M/MV5BMTEzNDE2Mjg0MTdeQTJeQWpwZ15BbWU4MDUxNTczNzAy._V1_.jpg",
+     "image_source": "qloo",
+     "title": "Nashville (complete series box set)",
+     "creators": [
+      "Hayden Panettiere",
+      "Clare Bowen",
+      "Charles Esten",
+      "Connie Britton",
+      "Powers Boothe",
+      "Oliver Hudson",
+      "Callie Khouri"
+     ],
+     "works": [
+      "Nashville"
+     ],
+     "year": "2012",
+     "blurb": "Nashville (2012) is an American musical drama television series that follows the intertwined lives of country music artists in Nashville, Tennessee. Created by Callie Khouri, the series blends seriali"
+    },
+    "affinity": 0.9768441360997838,
+    "lift": 2.508734418776239,
+    "chain": [
+     {
+      "signal": "Taylor Swift",
+      "contribution": 1
+     }
+    ],
+    "why": "Nashville series blends music and character-driven storytelling perfect for both your tastes.",
+    "direct": []
+   },
+   {
+    "item": {
+     "id": "c007",
+     "category": "Vinyl",
+     "price_usd": 25,
+     "qloo": {
+      "type": "urn:entity:artist",
+      "name": "Beyoncé",
+      "entity_id": "F6754C46-B3E7-457F-8B7E-06C613597320"
+     },
+     "tags": [
+      "Energetic",
+      "Funk",
+      "Pop",
+      "Pop Soul",
+      "Polished",
+      "Hip Hop Soul",
+      "Emotional",
+      "Michael Jackson"
+     ],
+     "popularity": 0.999882036057645,
+     "image": "https://is1-ssl.mzstatic.com/image/thumb/Music/03/c5/d4/mzi.ldvrmhxt.jpg/600x600bb.jpg",
+     "image_source": "itunes",
+     "title": "Beyoncé: Dangerously in Love, LP",
+     "creators": [
+      "Beyoncé"
+     ],
+     "works": [
+      "Dangerously in Love"
+     ],
+     "year": "2003",
+     "blurb": "Beyoncé Giselle Knowles-Carter is an American singer, songwriter, actress and businesswoman who rose to fame as lead singer of Destiny's Child before establishing a massively successful solo career no"
+    },
+    "affinity": 0.9479962308205723,
+    "lift": 1.394533202572255,
+    "chain": [
+     {
+      "signal": "Taylor Swift",
+      "contribution": 1
+     }
+    ],
+    "why": "Beyoncé's Dangerously in Love vinyl: classic pop excellence aligned with Taylor Swift's era.",
     "direct": []
    },
    {
@@ -1353,484 +1811,11 @@
       "contribution": 1
      }
     ],
-    "why": "Beauty and the Beast appeals to fantasy lovers and features enchantment like your favorite books.",
-    "direct": []
-   },
-   {
-    "item": {
-     "id": "c007",
-     "category": "Vinyl",
-     "price_usd": 25,
-     "qloo": {
-      "type": "urn:entity:artist",
-      "name": "Beyoncé",
-      "entity_id": "F6754C46-B3E7-457F-8B7E-06C613597320"
-     },
-     "tags": [
-      "Energetic",
-      "Funk",
-      "Pop",
-      "Pop Soul",
-      "Polished",
-      "Hip Hop Soul",
-      "Emotional",
-      "Michael Jackson"
-     ],
-     "popularity": 0.999882036057645,
-     "image": "https://is1-ssl.mzstatic.com/image/thumb/Music/03/c5/d4/mzi.ldvrmhxt.jpg/600x600bb.jpg",
-     "image_source": "itunes",
-     "title": "Beyoncé: Dangerously in Love, LP",
-     "creators": [
-      "Beyoncé"
-     ],
-     "works": [
-      "Dangerously in Love"
-     ],
-     "year": "2003",
-     "blurb": "Beyoncé Giselle Knowles-Carter is an American singer, songwriter, actress and businesswoman who rose to fame as lead singer of Destiny's Child before establishing a massively successful solo career no"
-    },
-    "affinity": 0.9479962308205723,
-    "lift": 1.394533202572255,
-    "chain": [
-     {
-      "signal": "Taylor Swift",
-      "contribution": 1
-     }
-    ],
-    "why": "Beyoncé's debut captures the earnest vulnerability that bridges Taylor Swift and cozy fantasy.",
+    "why": "Beauty and the Beast film delivers the magical, comforting fantasy vibes you crave.",
     "direct": []
    }
   ],
-  "note": "All five titles match your taste signature. We're currently missing Demi Lovato, One Direction, Selena Gomez and others we can report to the shop owner.",
-  "savedAt": "2026-10-06T11:26:00.096Z"
- },
- "He plays Led Zeppelin on vinyl every weekend and reads anything about World War II. Up to $40.": {
-  "request": "He plays Led Zeppelin on vinyl every weekend and reads anything about World War II. Up to $40.",
-  "extraction": {
-   "recipient": "",
-   "budget_usd": 40,
-   "signals": [
-    {
-     "name": "Led Zeppelin",
-     "kind": "urn:entity:artist"
-    },
-    {
-     "name": "World War II",
-     "kind": "urn:entity:book"
-    }
-   ]
-  },
-  "steps": [
-   {
-    "kind": "lookup",
-    "label": "Looked up 2 taste(s) in Qloo",
-    "detail": "Led Zeppelin, World War II",
-    "status": "ok"
-   },
-   {
-    "kind": "score",
-    "label": "Scored all 384 titles with Qloo affinity",
-    "detail": "12 candidates within budget ($40)",
-    "status": "ok"
-   },
-   {
-    "kind": "score",
-    "label": "Store check: we carry 4 of the 10 titles this taste loves most",
-    "detail": "Missing ones go to the owner: The Who, Lynyrd Skynyrd, Aerosmith",
-    "status": "ok"
-   },
-   {
-    "kind": "rank",
-    "label": "Chose 5 pick(s) from 12 candidates",
-    "detail": "The store's World War II catalog appears limited at this price point. These picks honor his vinyl habit with the best rock records we carry, plus two music biographies that blend his passions.",
-    "status": "ok"
-   }
-  ],
-  "calls": [
-   {
-    "endpoint": "/search",
-    "cache": "hit",
-    "ms": 3
-   },
-   {
-    "endpoint": "/search",
-    "cache": "hit",
-    "ms": 3
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 9
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 10
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 20
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 23
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 37
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 32
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 25
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 3
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "hit",
-    "ms": 17
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "miss",
-    "ms": 3651
-   },
-   {
-    "endpoint": "/v2/insights",
-    "cache": "miss",
-    "ms": 629
-   }
-  ],
-  "modes": {
-   "qloo": "live",
-   "llm": "agent"
-  },
-  "usd": 0.012354,
-  "gap": {
-   "formats": [
-    "urn:entity:artist",
-    "urn:entity:book"
-   ],
-   "wanted": [
-    {
-     "entity_id": "0DF0411F-A029-4706-A90A-F563AF4BB325",
-     "name": "The Who",
-     "type": "urn:entity:artist",
-     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/feacfffd16104f59b34a95cb376db315.jpg",
-     "affinity": 0.9693800760806194,
-     "owned": false
-    },
-    {
-     "entity_id": "9E997B13-E911-48FB-BC97-AAED66250674",
-     "name": "The Doors",
-     "type": "urn:entity:artist",
-     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/6c7d5dc5a9ea4fe8982c42e28bb7911d.jpg",
-     "affinity": 0.964628488445124,
-     "owned": true
-    },
-    {
-     "entity_id": "3A78E120-14F8-4DA2-93EE-1ED35F5FFEC7",
-     "name": "The Rolling Stones",
-     "type": "urn:entity:artist",
-     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/9610f06ac42c01f46ceb43c5db04e82e.jpg",
-     "affinity": 0.9644810184797772,
-     "owned": true
-    },
-    {
-     "entity_id": "62947437-2EC8-4C46-BE25-677E266DEB78",
-     "name": "Pink Floyd",
-     "type": "urn:entity:artist",
-     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/2a96cbd8b46e442.jpg",
-     "affinity": 0.9642122462889665,
-     "owned": true
-    },
-    {
-     "entity_id": "96322775-86D0-4778-AD77-0EA0971969CF",
-     "name": "Deep Purple",
-     "type": "urn:entity:artist",
-     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/a0dc0410107a4df586c34d34191fabdb.jpg",
-     "affinity": 0.9624863256313171,
-     "owned": true
-    },
-    {
-     "entity_id": "9ADBB639-5947-495E-8782-CF07F3C6EE9D",
-     "name": "Lynyrd Skynyrd",
-     "type": "urn:entity:artist",
-     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/dbf9a07eb62075e5967d55a48ce31dd3.jpg",
-     "affinity": 0.9606911277331875,
-     "owned": false
-    },
-    {
-     "entity_id": "8607C318-EF09-4D7A-B48E-3D4BBE45A968",
-     "name": "Aerosmith",
-     "type": "urn:entity:artist",
-     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/3e15a836d9b646a593caf9b1d61f369a.jpg",
-     "affinity": 0.9594428446966369,
-     "owned": false
-    },
-    {
-     "entity_id": "EB2E5C21-0F12-4C8A-989A-375990AEAA83",
-     "name": "The Jimi Hendrix Experience",
-     "type": "urn:entity:artist",
-     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/6a223f4fb8134d368f9d37ece4f15985.jpg",
-     "affinity": 0.958354372191874,
-     "owned": false
-    },
-    {
-     "entity_id": "9D2CE149-B32E-4CD4-9DF3-9F44E0545E02",
-     "name": "Cream",
-     "type": "urn:entity:artist",
-     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/a6c5aab216244b0e8e17e3aa8f6b8033.jpg",
-     "affinity": 0.9577338122643364,
-     "owned": false
-    },
-    {
-     "entity_id": "4DD07560-DACD-44F5-B6F3-BBBEB588001D",
-     "name": "Kansas",
-     "type": "urn:entity:artist",
-     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/ba357970b9ef42adbc2f5f4af2417ee5.jpg",
-     "affinity": 0.9540992726706018,
-     "owned": false
-    }
-   ],
-   "coverage": 0.4
-  },
-  "audience": null,
-  "turns": 4,
-  "picks": [
-   {
-    "item": {
-     "id": "c073",
-     "category": "Vinyl",
-     "price_usd": 34,
-     "qloo": {
-      "type": "urn:entity:artist",
-      "name": "Black Sabbath",
-      "entity_id": "38B32060-BDF8-4C82-AD69-05CF19E497B3"
-     },
-     "tags": [
-      "Psychedelic-Infused",
-      "Classic Rock",
-      "Energetic",
-      "Vocals",
-      "Occult",
-      "Proto-Metal",
-      "Blues Rock",
-      "Sludge Metal"
-     ],
-     "popularity": 0.9997181972488187,
-     "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/be/27/91/be279120-2285-16c6-c7ba-9d6643d4a948/075992732727.jpg/600x600bb.jpg",
-     "image_source": "itunes",
-     "title": "Black Sabbath: Paranoid, LP",
-     "creators": [
-      "Black Sabbath"
-     ],
-     "works": [
-      "Paranoid"
-     ],
-     "year": "1970",
-     "blurb": "Formed in Birmingham in 1968, Black Sabbath built a new, heavier guitar-driven sound centered on Tony Iommi's down-tuned riffs, Geezer Butler's brooding bass and Ozzy Osbourne's distinctive vocal deli"
-    },
-    "affinity": 0.9519447745004143,
-    "lift": 1.6014227423080303,
-    "chain": [
-     {
-      "signal": "Led Zeppelin",
-      "contribution": 1
-     }
-    ],
-    "why": "Black Sabbath Paranoid LP: Heavy rock classic matching Led Zeppelin energy on vinyl",
-    "direct": []
-   },
-   {
-    "item": {
-     "id": "c012",
-     "category": "Vinyl",
-     "price_usd": 34,
-     "qloo": {
-      "type": "urn:entity:artist",
-      "name": "Pink Floyd",
-      "entity_id": "62947437-2EC8-4C46-BE25-677E266DEB78"
-     },
-     "tags": [
-      "Classic Rock",
-      "Progressive Rock",
-      "2",
-      "Psychedelic Progressive",
-      "Atmospheric",
-      "Electric Guitar",
-      "Theatrical",
-      "Innovative"
-     ],
-     "popularity": 0.9999705090144113,
-     "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3e/17/ec/3e17ec6d-f980-c64f-19e0-a6fd8bbf0c10/886445635850.jpg/600x600bb.jpg",
-     "image_source": "itunes",
-     "title": "Pink Floyd: The Wall, LP",
-     "creators": [
-      "Pink Floyd"
-     ],
-     "works": [
-      "The Wall"
-     ],
-     "year": "1979",
-     "blurb": "Pink Floyd are an English rock band formed in London in 1965, celebrated for pioneering progressive and psychedelic rock through expansive concept albums, innovative studio production and immersive li"
-    },
-    "affinity": 0.9642122462889665,
-    "lift": 2.4616132395560997,
-    "chain": [
-     {
-      "signal": "Led Zeppelin",
-      "contribution": 1
-     }
-    ],
-    "why": "Pink Floyd The Wall LP: Progressive rock masterpiece, perfect weekend listening companion",
-    "direct": []
-   },
-   {
-    "item": {
-     "id": "c019",
-     "category": "Vinyl",
-     "price_usd": 30,
-     "qloo": {
-      "type": "urn:entity:artist",
-      "name": "The Rolling Stones",
-      "entity_id": "3A78E120-14F8-4DA2-93EE-1ED35F5FFEC7"
-     },
-     "tags": [
-      "Hard Rock",
-      "Freedom",
-      "Blues",
-      "Rebellion",
-      "Energetic",
-      "Muddy Waters",
-      "Rebellious",
-      "60s"
-     ],
-     "popularity": 0.9999180805955868,
-     "image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f1/d2/09/f1d2095a-6f69-644c-121d-acf24db7e6b0/06PNDIM00787.rgb.jpg/600x600bb.jpg",
-     "image_source": "itunes",
-     "title": "The Rolling Stones: 12 X 5, LP",
-     "creators": [
-      "The Rolling Stones"
-     ],
-     "works": [
-      "12 X 5"
-     ],
-     "year": "1964",
-     "blurb": "The Rolling Stones are an English rock band formed in London in 1962 whose core early lineup coalesced around Mick Jagger and Keith Richards. Drawing heavily on American blues, R&B and rock and roll, "
-    },
-    "affinity": 0.9644810184797772,
-    "lift": 2.7014751779542503,
-    "chain": [
-     {
-      "signal": "Led Zeppelin",
-      "contribution": 1
-     }
-    ],
-    "why": "Rolling Stones 12 X 5 LP: British rock legend with similar vintage appeal to Zeppelin",
-    "direct": []
-   },
-   {
-    "item": {
-     "id": "c104",
-     "category": "Books",
-     "price_usd": 27,
-     "qloo": {
-      "type": "urn:entity:book",
-      "name": "Paul McCartney: The Life",
-      "entity_id": "D3436CAD-ACE1-4C5A-B0B8-50B6E1B62ACE"
-     },
-     "tags": [
-      "Biography",
-      "Art",
-      "Nonfiction",
-      "Biography Memoir",
-      "History",
-      "Pop Culture",
-      "Audiobook",
-      "Music"
-     ],
-     "popularity": 0.8623536291803234,
-     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1462164413i/26245065.jpg",
-     "image_source": "qloo",
-     "title": "Peter Ames Carlin: Paul McCartney: The Life",
-     "creators": [
-      "Peter Ames Carlin"
-     ],
-     "works": [
-      "Paul McCartney: The Life"
-     ],
-     "year": "2016",
-     "blurb": "A comprehensive biography of Paul McCartney, exploring his life, career, and personal relationships."
-    },
-    "affinity": 0.8458288363124234,
-    "lift": 1.460432253404879,
-    "chain": [
-     {
-      "signal": "Led Zeppelin",
-      "contribution": 0.6183194918407767
-     },
-     {
-      "signal": "World War II",
-      "contribution": 0.38168050815922333
-     }
-    ],
-    "why": "Peter Ames Carlin Paul McCartney biography: Rock history book with Led Zeppelin fan appeal",
-    "direct": []
-   },
-   {
-    "item": {
-     "id": "c105",
-     "category": "Books",
-     "price_usd": 16,
-     "qloo": {
-      "type": "urn:entity:book",
-      "name": "Conversations with McCartney",
-      "entity_id": "C600F8B6-4242-4DF0-A33D-4CDBC3BB854A"
-     },
-     "tags": [],
-     "popularity": 0.5774932339621102,
-     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1444664077i/26709477.jpg",
-     "image_source": "qloo",
-     "title": "Paul Du Noyer: Conversations with McCartney",
-     "creators": [
-      "Paul Du Noyer"
-     ],
-     "works": [
-      "Conversations with McCartney"
-     ],
-     "year": "2015",
-     "blurb": "In June 1989, Paul Du Noyer was contacted by Paul McCartney's office in London and asked to interview the star as they had met once before and enjoyed a good raport. In the years that followed, Paul D"
-    },
-    "affinity": 0.8369228082358342,
-    "lift": 1.447865593043556,
-    "chain": [
-     {
-      "signal": "Led Zeppelin",
-      "contribution": 0.6033050630033393
-     },
-     {
-      "signal": "World War II",
-      "contribution": 0.39669493699666075
-     }
-    ],
-    "why": "Paul Du Noyer Conversations with McCartney: Intimate music history perfect for rock enthusiasts",
-    "direct": []
-   }
-  ],
-  "note": "The store's World War II catalog appears limited at this price point. These picks honor his vinyl habit with the best rock records we carry, plus two music biographies that blend his passions.",
-  "savedAt": "2026-10-06T11:26:15.493Z"
+  "note": "We carry several titles Taylor Swift fans adore. For more cozy fantasy reads like House in the Cerulean Sea, ask us about special orders.",
+  "savedAt": "2026-10-06T12:26:37.938Z"
  }
 }

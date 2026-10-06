@@ -104,7 +104,22 @@
      "affinity": 0.9079476212311534,
      "blurb": null
     }
-   ]
+   ],
+   "audience": {
+    "age": {
+     "24_and_younger": 0.037866666666666667,
+     "25_to_29": -0.001066666666666681,
+     "30_to_34": 0.023333333333333327,
+     "35_to_44": -0.003533333333333326,
+     "45_to_54": -0.22926666666666665,
+     "55_and_older": -0.2656
+    },
+    "gender": {
+     "male": -0.0556,
+     "female": 0.0556
+    },
+    "summary": "Fans skew under 25, evenly split by gender"
+   }
   },
   {
    "id": 1,
@@ -212,7 +227,22 @@
      "affinity": 0.8734010215908999,
      "blurb": null
     }
-   ]
+   ],
+   "audience": {
+    "age": {
+     "24_and_younger": 0.052500000000000005,
+     "25_to_29": -0.015000000000000001,
+     "30_to_34": -0.51,
+     "35_to_44": -0.5725,
+     "45_to_54": 0.2425,
+     "55_and_older": 0.2675
+    },
+    "gender": {
+     "male": 0.42,
+     "female": -0.42
+    },
+    "summary": "Fans skew 55+, somewhat more male"
+   }
   },
   {
    "id": 2,
@@ -319,7 +349,22 @@
      "affinity": 0.8604577350967049,
      "blurb": "Johnny Cash recounts his life from Arkansas to Nashville, sharing his music career, personal struggles, and spiritual reflections."
     }
-   ]
+   ],
+   "audience": {
+    "age": {
+     "24_and_younger": -0.118,
+     "25_to_29": -0.14600000000000002,
+     "30_to_34": -0.7160000000000001,
+     "35_to_44": -0.43599999999999994,
+     "45_to_54": 0.4,
+     "55_and_older": 0.43
+    },
+    "gender": {
+     "male": 0.046,
+     "female": -0.046
+    },
+    "summary": "Fans skew 55+, evenly split by gender"
+   }
   },
   {
    "id": 3,
@@ -425,7 +470,22 @@
      "affinity": 0.8914323471928078,
      "blurb": null
     }
-   ]
+   ],
+   "audience": {
+    "age": {
+     "24_and_younger": -0.0146,
+     "25_to_29": -0.1753,
+     "30_to_34": -0.3981,
+     "35_to_44": -0.3729,
+     "45_to_54": 0.15500000000000003,
+     "55_and_older": -0.08889999999999998
+    },
+    "gender": {
+     "male": 0.4076,
+     "female": -0.4076
+    },
+    "summary": "Fans skew 45-54, somewhat more male"
+   }
   },
   {
    "id": 4,
@@ -532,7 +592,22 @@
      "affinity": 0.9062460704247003,
      "blurb": "A transgender boy accidentally summons a ghost and must help him resolve unfinished business."
     }
-   ]
+   ],
+   "audience": {
+    "age": {
+     "24_and_younger": 0.12100000000000001,
+     "25_to_29": -0.16875,
+     "30_to_34": 0.29359999999999997,
+     "35_to_44": -0.21364999999999998,
+     "45_to_54": -0.018949999999999995,
+     "55_and_older": -0.4364
+    },
+    "gender": {
+     "male": -0.4567,
+     "female": 0.4567
+    },
+    "summary": "Fans skew 30-34, somewhat more female"
+   }
   },
   {
    "id": 5,
@@ -640,7 +715,22 @@
      "affinity": 0.9298717676583378,
      "blurb": null
     }
-   ]
+   ],
+   "audience": {
+    "age": {
+     "24_and_younger": -0.0606,
+     "25_to_29": -0.06820000000000001,
+     "30_to_34": -0.1544,
+     "35_to_44": -0.1752,
+     "45_to_54": 0.2234,
+     "55_and_older": -0.22180000000000002
+    },
+    "gender": {
+     "male": 0.057200000000000015,
+     "female": -0.057200000000000015
+    },
+    "summary": "Fans skew 45-54, evenly split by gender"
+   }
   },
   {
    "id": 6,
@@ -748,7 +838,22 @@
      "affinity": 0.8375005326556444,
      "blurb": "Angel Summer's perfect life is threatened by her husband's past."
     }
-   ]
+   ],
+   "audience": {
+    "age": {
+     "24_and_younger": 0.07400000000000001,
+     "25_to_29": 0.398,
+     "30_to_34": 0.22399999999999998,
+     "35_to_44": -0.176,
+     "45_to_54": -0.46399999999999997,
+     "55_and_older": -0.41600000000000004
+    },
+    "gender": {
+     "male": -0.43800000000000006,
+     "female": 0.43800000000000006
+    },
+    "summary": "Fans skew 25-29, somewhat more female"
+   }
   },
   {
    "id": 7,
@@ -856,7 +961,22 @@
      "affinity": 0.8377191180021982,
      "blurb": null
     }
-   ]
+   ],
+   "audience": {
+    "age": {
+     "24_and_younger": 0.344,
+     "25_to_29": 0.508,
+     "30_to_34": 0.402,
+     "35_to_44": -0.7020000000000001,
+     "45_to_54": -0.4159999999999999,
+     "55_and_older": -0.428
+    },
+    "gender": {
+     "male": -0.44399999999999995,
+     "female": 0.44399999999999995
+    },
+    "summary": "Fans skew 25-29, somewhat more female"
+   }
   },
   {
    "id": 8,
@@ -962,7 +1082,22 @@
      "affinity": 0.8665291431106826,
      "blurb": null
     }
-   ]
+   ],
+   "audience": {
+    "age": {
+     "24_and_younger": 0.126,
+     "25_to_29": 0.21600000000000003,
+     "30_to_34": -0.48600000000000004,
+     "35_to_44": -0.534,
+     "45_to_54": 0.01200000000000001,
+     "55_and_older": -0.518
+    },
+    "gender": {
+     "male": 0.22399999999999998,
+     "female": -0.22399999999999998
+    },
+    "summary": "Fans skew 25-29, somewhat more male"
+   }
   }
  ],
  "coldStart": [

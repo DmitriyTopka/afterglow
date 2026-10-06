@@ -19,6 +19,22 @@ export function OwnerView() {
   const [busy, setBusy] = useState<string | null>(null);
   const [log, setLog] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [plan, setPlan] = useState<null | { steps: Array<{ label: string }>; picks: Array<{ entity_id: string; name: string; type: string; image: string | null; askedBy: number; reason: string }>; summary: string; before: number; after: number }>(null);
+  const [planning, setPlanning] = useState(false);
+
+  async function askAgent() {
+    setPlanning(true); setError(null); setPlan(null);
+    try {
+      const res = await fetch("/api/owner-agent", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ mine, added: added.map((a) => a.entity_id) }) });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error ?? "The agent could not run");
+      setPlan(data);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : String(e));
+    } finally {
+      setPlanning(false);
+    }
+  }
   useEffect(() => { setMine(myDemand()); setAdded(addedTitles()); }, []);
 
   const rows = useMemo(() => [...seedDemand, ...mine], [mine]);
@@ -28,7 +44,13 @@ export function OwnerView() {
   // Up to three titles from this viewer's own requests first (so a judge sees their demand), then the biggest gains.
   const allSugg = suggestions(rows, addedIds);
   const yours = allSugg.filter((s) => s.yours).slice(0, 3);
-  const sugg = [...yours, ...allSugg.filter((s) => !s.yours).sort((a, b) => b.gain - a.gain)].slice(0, 8);
+  // Then the biggest gains, taken round-robin across formats so the owner sees films, books and games too.
+  const rest = allSugg.filter((s) => !s.yours).sort((a, b) => b.gain - a.gain);
+  const byFormat = new Map<string, typeof rest>();
+  for (const s of rest) byFormat.set(s.type, [...(byFormat.get(s.type) ?? []), s]);
+  const mixed: typeof rest = [];
+  while (mixed.length < 8 && [...byFormat.values()].some((l) => l.length)) for (const l of byFormat.values()) { const x = l.shift(); if (x && mixed.length < 8) mixed.push(x); }
+  const sugg = [...yours, ...mixed].slice(0, 8);
   const last = added[added.length - 1];
   const section: Section | undefined = owner.sections.find((s) => s.id === active);
   const pins: Pin[] = added.map((a) => ({ id: a.entity_id, x: a.placement.x, y: a.placement.y, image: a.image ?? "", label: a.name }));
@@ -42,8 +64,8 @@ export function OwnerView() {
       const a: Added = { entity_id: s.entity_id, name: s.name, type: s.type, image: s.image, placement: data.placement };
       addTitle(a); setAdded(addedTitles()); setActive(a.placement.cluster);
       setLog(data.precomputed
-        ? `Placed from 36 Qloo insights calls made earlier for the demo (cached).`
-        : `Placed live: ${data.calls} Qloo insights calls, one per reference taste, then matched to the nearest section.`);
+        ? `Qloo insights scored this title against the map's 36 reference tastes; it joins the section of its 5 nearest titles.`
+        : `Qloo insights scored this title live against the map's 36 reference tastes (${data.calls} calls); it joins the section of its 5 nearest titles.`);
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
     } finally {
@@ -55,7 +77,7 @@ export function OwnerView() {
     <>
       <section className="loop">
         <div className="gauge">
-          <p className="eyebrow">Taste coverage</p>
+          <p className="eyebrow">Taste coverage of your shelves</p>
           <p className="big">{pct(cov)}</p>
           <p className="gauge-note">
             of the titles your shoppers&apos; tastes love most are on your shelves, across {rows.length} requests
@@ -69,10 +91,10 @@ export function OwnerView() {
           <ol>
             {sugg.map((s) => (
               <li key={s.entity_id}>
-                {s.image ? <img src={s.image} alt="" loading="lazy" /> : <span className="noimg" />}
+                {s.image ? <img src={s.image} alt="" loading="lazy" /> : <span className="noimg">{KIND[s.type]}</span>}
                 <div className="sg-text">
                   <strong>{s.name}</strong>
-                  <span>{KIND[s.type]} · wanted by {s.askedBy} shopper{s.askedBy > 1 ? "s" : ""}{s.yours ? " (incl. you)" : ""} · +{(s.gain * 100).toFixed(1)} pts</span>
+                  <span>{KIND[s.type]} · wanted by {s.askedBy} shopper{s.askedBy > 1 ? "s" : ""}{s.yours ? " (incl. you)" : ""} · coverage +{(s.gain * 100).toFixed(1)} pts</span>
                 </div>
                 <button type="button" disabled={busy !== null} onClick={() => stock(s)}>{busy === s.entity_id ? "Placing…" : "Add to shelf"}</button>
               </li>
@@ -80,6 +102,35 @@ export function OwnerView() {
           </ol>
           {error && <p className="error">{error}</p>}
         </div>
+      </section>
+
+      <section className="agent-plan">
+        <div className="ap-head">
+          <div>
+            <p className="eyebrow">Restock agent</p>
+            <p className="ap-lede">Let the agent read your unmet demand, check who loves each candidate with Qloo, and pick three titles to stock.</p>
+          </div>
+          <button type="button" className="go" disabled={planning} onClick={askAgent}>{planning ? "Thinking it through…" : "Ask the agent for a plan"}</button>
+        </div>
+        {plan && (
+          <div className="ap-body">
+            <ol className="ap-steps">{plan.steps.map((s, i) => <li key={i}>{s.label}</li>)}</ol>
+            <div className="ap-picks">
+              {plan.picks.map((p) => {
+                const s = sugg.find((x) => x.entity_id === p.entity_id) ?? allSugg.find((x) => x.entity_id === p.entity_id);
+                const done = addedIds.has(p.entity_id);
+                return (
+                  <div key={p.entity_id} className="ap-pick">
+                    {p.image ? <img src={p.image} alt="" /> : <span className="noimg">{KIND[p.type]}</span>}
+                    <div><strong>{p.name}</strong><span>{KIND[p.type]} · wanted by {p.askedBy}</span><p>{p.reason}</p></div>
+                    <button type="button" disabled={done || busy !== null || !s} onClick={() => s && stock(s)}>{done ? "On the shelf" : busy === p.entity_id ? "Placing…" : "Add to shelf"}</button>
+                  </div>
+                );
+              })}
+            </div>
+            <p className="ap-sum">Stocking all three takes coverage from <b>{pct(plan.before)}</b> to <b>{pct(plan.after)}</b>. {plan.summary}</p>
+          </div>
+        )}
       </section>
 
       {last && (
@@ -103,9 +154,8 @@ export function OwnerView() {
               <p className="muted">{section.line}</p>
               <p className="mix">{Object.entries(section.categories).map(([k, v]) => `${v} ${k}`).join(" · ")}</p>
               <h3>Who shops here</h3>
-              <ul className="who">
-                {section.who.slice(0, 4).map((w) => <li key={w.taste}><span>Fans of {w.taste}</span><b>{w.weight.toFixed(2)}</b></li>)}
-              </ul>
+              {"audience" in section && section.audience && <p className="aud">{(section.audience as { summary: string }).summary} <span>(Qloo demographics)</span></p>}
+              <p className="fine">Tastes that lean into this section: {section.who.slice(0, 3).map((w) => w.taste).join(", ")}.</p>
               <h3>Its audience also loves</h3>
               <div className="stock">
                 {section.stock.slice(0, 5).map((s) => (

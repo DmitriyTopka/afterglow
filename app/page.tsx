@@ -64,6 +64,11 @@ export default function Page() {
           <button className="go" disabled={busy || !text.trim()}>{busy ? "Digging…" : "Find picks"}</button>
         </form>
         {error && <p className="error">{error}</p>}
+        <Link href="/owner" className="door">
+          <span className="eyebrow">Run a shop?</span>
+          <b>See your shelves through your shoppers&apos; taste</b>
+          <span>Coverage, what to stock next, and new titles that find their own place. Built on Qloo.</span>
+        </Link>
       </section>
 
       {result && (
@@ -81,15 +86,15 @@ export default function Page() {
             )}
             <div className="shelf-row">
               {result.picks.map((p) => (
-                <article key={p.item.id} className="pick">
+                <Link key={p.item.id} href={`/item/${p.item.id}`} className="pick">
                   <div className="pick-art">
                     <img src={`/covers/${p.item.id}.jpg`} alt="" />
                     <span className="price-tag">${p.item.price_usd}</span>
                   </div>
                   <h3>{p.item.title}</h3>
                   <p className="pick-cat">{p.item.category}</p>
-                  <p className="pick-why">{reason(p)}</p>
-                </article>
+                  <p className="pick-why">{p.why || reason(p)}</p>
+                </Link>
               ))}
             </div>
           </div>

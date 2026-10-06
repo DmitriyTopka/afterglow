@@ -12,7 +12,6 @@ eval/results/*.json
 !eval/results/.gitkeep
 .DS_Store
 data/coverage/
-.vercel
 public/covers/
 HANDOFF_ranking.md
 _diag.mts
