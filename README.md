@@ -2,7 +2,7 @@
 
 **Your shop sees what sold. Afterglow sees what walked out.** A shopper describes someone's taste in their own words. A Claude agent, working through Qloo, picks across the whole store (vinyl, books, films, games, TV) and checks what that taste loves most that the store does not carry. That unmet demand lands on the owner's side, where the agent ranks what to stock next and places any new title on the store's taste map from Qloo data alone.
 
-Video (70 s): https://youtu.be/XmTtlFA_A6Y
+Video (65 s): https://youtu.be/tgxQNG9GPx4
 Live demo: https://taste-layer-alpha.vercel.app (shopper), [/live](https://taste-layer-alpha.vercel.app/live) (both sides at once) and [/owner](https://taste-layer-alpha.vercel.app/owner) (owner).
 Real shop: [/real](https://taste-layer-alpha.vercel.app/real) runs the public best-seller catalog of Waterloo Records (Austin, TX; no affiliation) through Qloo (`scripts/real_shelf.mts`, `data/real/waterloo.json`).
 Project write-up: [docs/DEVPOST.md](docs/DEVPOST.md).
