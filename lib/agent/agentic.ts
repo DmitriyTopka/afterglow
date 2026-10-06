@@ -30,6 +30,14 @@ const supported = (reason: string, it: { title: string; category: string; tags?:
   const shopper = asked.toLowerCase(); // a genre the shopper named may be quoted back ("for a fan of westerns")
   return GENRES.every((g) => !new RegExp(`\\b${g}\\b`, "i").test(reason) || own.includes(g.replace(/s$/, "")) || (shopper.includes(g) && new RegExp(`fans? of[^.,;]*\\b${g}`, "i").test(reason)));
 };
+const AGES = ["35_and_younger", "36_to_55", "55_and_older"] as const;
+const GENDERS = ["male", "female"] as const;
+// A budget in the shopper's own words ("under $30", "up to 40 dollars"), for when the model never passed one.
+const budgetFrom = (text: string): number | null => {
+  const m = text.match(/(?:under|below|less than|up to|max(?:imum)?|around|about|no more than|within)?\s*\$\s?(\d{1,4})|(\d{1,4})\s*(?:\$|dollars|usd)\b/i);
+  const n = m ? Number(m[1] ?? m[2]) : NaN;
+  return Number.isFinite(n) && n > 0 ? n : null;
+};
 const KIND_WORD: Record<string, string> = { "urn:entity:artist": "records", "urn:entity:movie": "films", "urn:entity:book": "books", "urn:entity:videogame": "games", "urn:entity:tv_show": "TV shows" };
 const FORMAT: Record<string, QlooEntityType> = { vinyl: "urn:entity:artist", book: "urn:entity:book", film: "urn:entity:movie", game: "urn:entity:videogame", tv: "urn:entity:tv_show" };
 
@@ -199,7 +207,10 @@ async function loop(request: string, onStep?: (s: Step) => void): Promise<Agenti
           budget = typeof input.budget_usd === "number" ? input.budget_usd : null;
           const formats = ((input.formats as string[]) ?? []).map((f) => FORMAT[f]).filter(Boolean);
           const itemIds = await mapCatalog(calls);
-          demo = { ...(typeof input.recipient_age === "string" ? { age: input.recipient_age as Demo["age"] } : {}), ...(typeof input.recipient_gender === "string" ? { gender: input.recipient_gender as Demo["gender"] } : {}) };
+          // Only the values Qloo accepts; anything else the model invents is dropped instead of failing the call.
+          const age = AGES.find((a) => a === input.recipient_age);
+          const gender = GENDERS.find((g) => g === input.recipient_gender);
+          demo = { ...(age ? { age } : {}), ...(gender ? { gender } : {}) };
           const scored = await scoreCatalog(ids, itemIds, calls, CATALOG, demo);
           scores = scored.scores;
           ranked = rank({ arm: "qloo", items: CATALOG, signalNames: named.map((n) => n.name), scores, baseline, taste: "pct+fmt", formats, exclude: new Set(ids) });
@@ -229,12 +240,13 @@ async function loop(request: string, onStep?: (s: Step) => void): Promise<Agenti
   // The model stopped early (or ran out of turns) without recommending. If tastes were found but the catalog was
   // never scored, score it now so the shopper still gets an answer.
   if (!ranked && named.length && !over()) {
+    budget = budget ?? budgetFrom(request); // the model never called score_catalog, so take the budget from the message
     const scored = await scoreCatalog(named.map((n) => n.id), await mapCatalog(calls), calls, CATALOG, demo);
     scores = scored.scores;
     ranked = rank({ arm: "qloo", items: CATALOG, signalNames: named.map((n) => n.name), scores, baseline, taste: "pct+fmt", formats: [], exclude: new Set(named.map((n) => n.id)) });
     candidates = shortlist(ranked, budget, 12, 3);
     light = tasteLight(CATALOG, scores);
-    emit({ kind: "score", label: `Scored all ${CATALOG.length} titles with Qloo affinity`, detail: `${candidates.length} candidates`, status: "ok", light });
+    emit({ kind: "score", label: `Scored all ${CATALOG.length} titles with Qloo affinity`, detail: `${candidates.length} candidates${budget ? ` within budget ($${budget})` : ""}`, status: "ok", light });
   }
   // Out of turns without a final answer: fall back to the deterministic shortlist we already have.
   const picks: Pick[] = candidates.slice(0, 5).map((r) => ({ item: r.item, affinity: r.affinity, lift: r.lift, chain: [], why: groundedWhy("", r), direct: r.direct, basis: basis(r) }));

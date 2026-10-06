@@ -29,6 +29,7 @@ const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 // recorded data, so the demo still works when judges arrive. Read from every response, so it holds on every instance.
 const RESERVE = Number(process.env.QLOO_MONTH_RESERVE ?? 1500);
 let monthRemaining: number | null = null;
+let monthResetAt = 0; // ms timestamp when Qloo says the monthly quota resets; after it the reserve no longer applies
 export const QUOTA_MESSAGE = "Live Qloo calls are paused to keep this month's quota for the judging period. The examples, the live screen replays, product pages and the owner view still work from recorded Qloo data.";
 
 const MAX_IN_FLIGHT = 3;
@@ -57,12 +58,17 @@ async function get<T>(endpoint: string, params: Record<string, string>): Promise
   const key = process.env.QLOO_API_KEY;
   if (QLOO_OFFLINE) throw new QlooUnavailable(OFFLINE_MESSAGE);
   if (!key) throw new Error("QLOO_MODE=live but QLOO_API_KEY is not set");
+  if (monthRemaining !== null && Date.now() >= monthResetAt) monthRemaining = null; // quota has reset: try live again
   if (monthRemaining !== null && monthRemaining < RESERVE) throw new QlooUnavailable(QUOTA_MESSAGE);
   const url = `${BASE}${endpoint}?${new URLSearchParams(params)}`;
   for (let attempt = 1; ; attempt++) {
     const res = await slot(() => fetch(url, { headers: { "X-Api-Key": key }, signal: AbortSignal.timeout(15000) }));
     const left = Number(res.headers.get("x-month-ratelimit-remaining"));
-    if (Number.isFinite(left) && res.headers.has("x-month-ratelimit-remaining")) monthRemaining = left;
+    if (Number.isFinite(left) && res.headers.has("x-month-ratelimit-remaining")) {
+      monthRemaining = left;
+      const resetIn = Number(res.headers.get("x-month-ratelimit-reset")); // seconds until the monthly reset
+      monthResetAt = Date.now() + (Number.isFinite(resetIn) && resetIn > 0 ? resetIn * 1000 : 6 * 3600 * 1000);
+    }
     if (res.status === 429 && attempt < MAX_TRIES) {
       const retryAfter = Number(res.headers.get("retry-after"));
       await sleep(retryAfter > 0 ? retryAfter * 1000 : 500 * 2 ** (attempt - 1));
