@@ -28,7 +28,8 @@ const GENRES = ["western", "horror", "sci-fi", "science fiction", "thriller", "r
 const supported = (reason: string, it: { title: string; category: string; tags?: string[]; blurb?: string; creators: string[] }, asked: string) => {
   const own = [it.title, it.category, ...(it.tags ?? []), it.blurb ?? "", ...it.creators].join(" ").toLowerCase();
   const shopper = asked.toLowerCase(); // a genre the shopper named may be quoted back ("for a fan of westerns")
-  return GENRES.every((g) => !new RegExp(`\\b${g}\\b`, "i").test(reason) || own.includes(g.replace(/s$/, "")) || (shopper.includes(g) && new RegExp(`fans? of[^.,;]*\\b${g}`, "i").test(reason)));
+  const word = (g: string) => new RegExp(`\\b${g}s?\\b`, "i"); // whole words only: "war" is not in "Edward"
+  return GENRES.every((g) => !word(g).test(reason) || word(g).test(own) || (word(g).test(shopper) && new RegExp(`fans? of[^.,;]*\\b${g}`, "i").test(reason)));
 };
 const AGES = ["35_and_younger", "36_to_55", "55_and_older"] as const;
 const GENDERS = ["male", "female"] as const;
@@ -84,7 +85,7 @@ export async function runAgentic(request: string, onStep?: (s: Step) => void): P
 }
 
 async function loop(request: string, onStep?: (s: Step) => void): Promise<AgenticResult> {
-  const client = new Anthropic();
+  const client = new Anthropic({ timeout: 20000, maxRetries: 1 });
   const calls: QlooCall[] = [];
   const steps: Step[] = [];
   const emit = (s: Step) => { steps.push(s); onStep?.(s); }; // every step is also streamed to the live screen
@@ -102,6 +103,12 @@ async function loop(request: string, onStep?: (s: Step) => void): Promise<Agenti
   let tags: string[] = []; // Qloo taste analysis (urn:tag) for the named tastes
   let demo: Demo = {}; // recipient age band and gender as Qloo demographic signals, when the message gives them
   let light: Record<string, number> = {};
+  // Only entity ids find_tastes actually resolved; an id the model made up would make Qloo answer 400.
+  const knownIds = (raw: unknown) => {
+    const ok = new Set(named.map((n) => n.id));
+    const ids = (Array.isArray(raw) ? raw : []).filter((x): x is string => typeof x === "string" && ok.has(x));
+    return ids.length ? ids : named.map((n) => n.id);
+  };
   // The named taste that contributes most to a title's Qloo score (explainability), or null.
   const lead = (id: string) => named.find((n) => n.id === [...(scores?.get(id)?.chain ?? [])].sort((a, b) => b.score - a.score)[0]?.entity_id)?.name ?? null;
   // A one-line Qloo fact for a pick, from data only: where it ranks among titles of its kind for this taste.
@@ -147,6 +154,10 @@ async function loop(request: string, onStep?: (s: Step) => void): Promise<Agenti
 
       if (u.name === "recommend" || u.name === "ask_shopper") {
         const base = { request, extraction: { recipient: "", budget_usd: budget, signals: named.map((n) => ({ name: n.name, kind: n.type })) }, steps, calls, modes: { qloo: QLOO_MODE, llm: "agent" }, usd, gap, audience: aud, turns: turn, route } as unknown as AgenticResult;
+        if (u.name === "recommend" && !candidates.length && named.length) {
+          reply({ error: "Nothing scored yet. Call score_catalog first, then recommend from its candidates." }, true);
+          continue;
+        }
         if (u.name === "ask_shopper" && named.length && candidates.length) {
           // Tastes were found and the catalog is scored: answer instead of asking (a question here only loses the shopper).
           reply({ error: "You already have tastes and scored candidates. Call recommend with 5 of them." }, true);
@@ -197,14 +208,14 @@ async function loop(request: string, onStep?: (s: Step) => void): Promise<Agenti
         if (found.length) emit({ kind: "lookup", label: before ? `Looked up ${found.length} more taste(s) in Qloo` : `Looked up ${found.length} taste(s) in Qloo`, detail: named.slice(before).map((n) => n.name).join(", ") || "none found", status: named.length ? "ok" : "dropped" });
         // Taste analysis: how Qloo reads these tastes as tags. Once, after the first successful lookup.
         if (!tags.length && named.length && !over()) {
-          tags = await tasteTags(named.map((n) => n.id), calls);
+          tags = await tasteTags(named.map((n) => n.id), calls, 8, named.map((n) => n.type));
           if (tags.length) emit({ kind: "lookup", label: "Qloo reads this taste as", detail: tags.join(", "), status: "ok", tags });
         }
         reply({ found, qloo_taste_tags: tags });
       } else if (u.name === "score_catalog") {
         if (!ranked) {
-          const ids = ((input.entity_ids as string[]) ?? []).filter(Boolean);
-          budget = typeof input.budget_usd === "number" ? input.budget_usd : null;
+          const ids = knownIds(input.entity_ids);
+          budget = typeof input.budget_usd === "number" ? input.budget_usd : budgetFrom(request); // the message's own budget if the model left it out
           const formats = ((input.formats as string[]) ?? []).map((f) => FORMAT[f]).filter(Boolean);
           const itemIds = await mapCatalog(calls);
           // Only the values Qloo accepts; anything else the model invents is dropped instead of failing the call.
@@ -222,12 +233,12 @@ async function loop(request: string, onStep?: (s: Step) => void): Promise<Agenti
       } else if (u.name === "check_store") {
         if (!gap) {
           const formats = ((input.formats as string[]) ?? []).map((f) => FORMAT[f]).filter(Boolean);
-          gap = await demandGap(((input.entity_ids as string[]) ?? []).filter(Boolean), formats, calls, demo);
+          gap = await demandGap(knownIds(input.entity_ids), formats, calls, demo);
           if (gap) emit({ kind: "score", label: `Store check: we carry ${gap.wanted.filter((w) => w.owned).length} of the ${gap.wanted.length} titles this taste loves most`, detail: `Missing ones go to the owner: ${gap.wanted.filter((w) => !w.owned).slice(0, 3).map((w) => w.name).join(", ")}`, status: "ok" });
         }
         reply(gap ? { carried: gap.wanted.filter((w) => w.owned).map((w) => w.name), missing: gap.wanted.filter((w) => !w.owned).map((w) => w.name) } : { error: "no data" }, !gap);
       } else if (u.name === "audience") {
-        const a = await audience(((input.entity_ids as string[]) ?? []).filter(Boolean), calls);
+        const a = await audience(knownIds(input.entity_ids), calls);
         aud = a?.summary ?? null;
         if (a) emit({ kind: "lookup", label: `Who these fans are: ${a.summary}`, status: "ok" });
         reply(a ?? { error: "no demographic data" }, !a);

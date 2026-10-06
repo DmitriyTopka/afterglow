@@ -672,3 +672,9 @@ a.lb-tab { text-decoration: none; display: inline-block; }
 .qloo-trace code { font: 600 12px var(--mono); color: #b2391a; }
 .qloo-trace li span { color: #6b5547; font: 12px var(--mono); }
 .qloo-trace li b { margin-left: auto; font: 600 12px var(--mono); }
+
+/* Phones: every control a thumb can hit (44px, Apple HIG). */
+@media (max-width: 640px) {
+  .stock-btn, .toggle a, .toggle span, .band-link { min-height: 44px; display: inline-flex; align-items: center; }
+  .stock-btn { padding: 10px 14px; }
+}

@@ -53,9 +53,22 @@ export async function runOwnerAgent(mine: DemandRow[], addedIds: string[]): Prom
   const tastesFor = (id: string) => [...new Set(rows.filter((r) => r.wanted.some((w) => w.entity_id === id)).flatMap((r) => r.signals ?? []))].slice(0, 4);
   let usd = 0;
   const live40 = () => calls.filter((c) => c.cache === "miss").length >= 40;
-  if (!process.env.ANTHROPIC_API_KEY || !canSpend()) throw new Error("The owner agent needs the live model");
+  // No model or no Qloo: the owner still gets a plan, the top 3 titles by coverage gain from data alone.
+  const fallback = (why: string): OwnerPlan => {
+    const picks = sugg.slice(0, 3).map((s) => ({ entity_id: s.entity_id, name: s.name, type: s.type, image: s.image, askedBy: s.askedBy, reason: `Wanted by ${s.askedBy} shopper${s.askedBy > 1 ? "s" : ""}; one of the biggest coverage gains.`, placement: placements.get(s.entity_id) ?? PRE[s.entity_id] ?? null, audience: audiences.get(s.entity_id) ?? null, tastes: tastesFor(s.entity_id) }));
+    steps.push({ kind: "rank", label: why, status: "warn" });
+    return { steps, picks, summary: "", before, after: coverage(rows, new Set([...added, ...picks.map((p) => p.entity_id)])), usd, qlooCalls: calls.length, turns: 0 };
+  };
+  if (!process.env.ANTHROPIC_API_KEY || !canSpend()) return fallback("The restock agent is resting today; showing the top 3 titles by coverage gain");
+  try {
+    return await plan();
+  } catch (err) {
+    console.error("owner agent failed, deterministic plan", err);
+    return fallback("The restock agent could not finish; showing the top 3 titles by coverage gain");
+  }
 
-  const client = new Anthropic();
+  async function plan(): Promise<OwnerPlan> {
+  const client = new Anthropic({ timeout: 20000, maxRetries: 1 });
   const messages: Anthropic.MessageParam[] = [{ role: "user", content: `Make this week's restock plan. ${rows.length} shopper requests so far (${mine.length} from this visitor).` }];
   for (let turn = 1; turn <= 6; turn++) {
     const res = await client.messages.create({ model: MODEL, max_tokens: 1500, system: SYSTEM, tools: TOOLS, messages });
@@ -113,7 +126,6 @@ export async function runOwnerAgent(mine: DemandRow[], addedIds: string[]): Prom
     messages.push({ role: "user", content: results });
   }
   // No plan in time: take the top 3 by coverage gain.
-  const picks = sugg.slice(0, 3).map((s) => ({ entity_id: s.entity_id, name: s.name, type: s.type, image: s.image, askedBy: s.askedBy, reason: `Wanted by ${s.askedBy} shopper(s).`, placement: PRE[s.entity_id] ?? null }));
-  steps.push({ kind: "rank", label: "Agent ran out of steps; showing the top 3 by coverage gain", status: "warn" });
-  return { steps, picks, summary: "", before, after: coverage(rows, new Set([...added, ...picks.map((p) => p.entity_id)])), usd, qlooCalls: calls.length, turns: 6 };
+  return fallback("Agent ran out of steps; showing the top 3 by coverage gain");
+  }
 }

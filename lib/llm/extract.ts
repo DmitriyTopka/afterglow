@@ -47,8 +47,10 @@ export async function extract(message: string): Promise<ExtractResult> {
   if (!process.env.ANTHROPIC_API_KEY) return { extraction: mockExtract(message), mode: "mock-nokey", usd: 0 };
   if (!canSpend()) return { extraction: mockExtract(message), mode: "mock-capped", usd: 0 };
 
-  const client = new Anthropic();
-  const res = await client.messages.parse({
+  const client = new Anthropic({ timeout: 20000, maxRetries: 1 });
+  let res;
+  try {
+    res = await client.messages.parse({
     model: MODEL,
     max_tokens: 2000,
     system: SYSTEM,
@@ -56,7 +58,12 @@ export async function extract(message: string): Promise<ExtractResult> {
     output_config: SUPPORTS_EFFORT
       ? { effort: "low", format: zodOutputFormat(Extraction) }
       : { format: zodOutputFormat(Extraction) },
-  });
+    });
+  } catch (err) {
+    // Key revoked, credit used up, timeout: fall back to the rule-based extractor instead of failing the request.
+    console.error("extract: Claude unavailable, using rules", err);
+    return { extraction: mockExtract(message), mode: "mock", usd: 0 };
+  }
   const usd = record(MODEL, res.usage.input_tokens, res.usage.output_tokens);
   if (res.stop_reason === "refusal" || !res.parsed_output) {
     return { extraction: mockExtract(message), mode: "mock", usd };

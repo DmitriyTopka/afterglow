@@ -1,10 +1,24 @@
-# Afterglow: your shop sees what sold. Afterglow sees what walked out.
+# Devpost form, field by field (Qloo Agentic Hackathon)
 
-Tagline (Devpost, max 200 chars): For independent record and book shops: Claude agents on Qloo find gifts on your shelves and turn every title a shopper couldn't find into your next order.
+**Project name:** Afterglow
 
-Live demo: https://taste-layer-alpha.vercel.app (start with "Watch both sides at once")
-Video (65 s): https://youtu.be/tgxQNG9GPx4
-Code: https://github.com/DmitriyTopka/afterglow (MIT)
+**Elevator pitch / tagline (200 chars):** For independent record and book shops: Claude agents on Qloo find gifts on your shelves and turn every title a shopper couldn't find into your next order.
+
+**Built with (tags):** qloo, claude, anthropic, next.js, typescript, vercel, react
+
+**Try it out links:**
+- https://taste-layer-alpha.vercel.app
+- https://taste-layer-alpha.vercel.app/real
+- https://github.com/DmitriyTopka/afterglow
+
+**Video demo link:** https://youtu.be/tgxQNG9GPx4
+
+**Image gallery (upload in this order, docs/screenshots/):** 0-real-shelf.jpg, 1-home.jpg, 2-live.jpg, 3-lit-map.jpg, 4-picks.jpg, 5-owner-agent.jpg, 8-check-your-shop.jpg, 9-real-shoppers.jpg, 6-product.jpg, 7-bag.jpg
+
+**Repository URL:** https://github.com/DmitriyTopka/afterglow (MIT, license visible in About)
+**Demo URL:** https://taste-layer-alpha.vercel.app
+
+**About the project (markdown):**
 
 ## Who it's for, and what it costs them
 
@@ -102,3 +116,4 @@ Qloo Taste AI API, Claude Haiku 4.5 (Anthropic API, tool use), Next.js, TypeScri
 ## Honest limits
 
 The store, prices and demo shoppers are made up; demo demand comes from 38 test shoppers plus your own requests, stored in your browser. One-click examples replay recorded runs of the live agent; typed requests run live. The Waterloo page measures coverage only: we have no blind labels for that catalog, so recommendation quality there is not measured. The Waterloo numbers come from one read of the shop's public catalog feed; only artist names, counts and prices are kept. Cover art thumbnails are in the repository only to illustrate the demo store; they belong to their rights holders.
+

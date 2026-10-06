@@ -3668,6 +3668,174 @@
    ],
    "x": 0.4658,
    "y": 0.05940000000000001
+  },
+  "9FCB92D1-9B48-4ADF-A6DC-350DAA7E91AF": {
+   "cluster": 2,
+   "clusterName": "Rock and Roll Icons",
+   "similarity": 0.5942217806605027,
+   "neighbours": [
+    {
+     "id": "c054",
+     "similarity": 0.8866694252862395
+    },
+    {
+     "id": "c071",
+     "similarity": 0.8345839225282515
+    },
+    {
+     "id": "c021",
+     "similarity": 0.8182313334230462
+    }
+   ],
+   "x": 0.1187,
+   "y": 0.1689
+  },
+  "B078BEF5-3988-4CC2-BEFF-598263AA96D0": {
+   "cluster": 2,
+   "clusterName": "Rock and Roll Icons",
+   "similarity": 0.3297737526827975,
+   "neighbours": [
+    {
+     "id": "c091",
+     "similarity": 0.726370038309056
+    },
+    {
+     "id": "c054",
+     "similarity": 0.679426856702274
+    },
+    {
+     "id": "c001",
+     "similarity": 0.6205343914584313
+    }
+   ],
+   "x": 0.1187,
+   "y": 0.1089
+  },
+  "A37B17AE-15C7-48A3-AADD-6CE50BE3FF74": {
+   "cluster": 6,
+   "clusterName": "Pop Romance Anthems",
+   "similarity": 0.8382377809527046,
+   "neighbours": [
+    {
+     "id": "c058",
+     "similarity": 0.8923580461153892
+    },
+    {
+     "id": "c081",
+     "similarity": 0.8894986905525198
+    },
+    {
+     "id": "c079",
+     "similarity": 0.8620729401090576
+    }
+   ],
+   "x": 0.4597,
+   "y": 0.7927
+  },
+  "EB24591A-F905-4328-8186-50B2001120F6": {
+   "cluster": 7,
+   "clusterName": "Contemporary Hip Hop Culture",
+   "similarity": 0.5410842865137927,
+   "neighbours": [
+    {
+     "id": "c079",
+     "similarity": 0.845565855664757
+    },
+    {
+     "id": "c356",
+     "similarity": 0.7790404538470106
+    },
+    {
+     "id": "c043",
+     "similarity": 0.7605972852673408
+    }
+   ],
+   "x": 0.8056,
+   "y": 0.8559
+  },
+  "C82327A0-304C-4E89-A38C-99A39D2CFF5A": {
+   "cluster": 2,
+   "clusterName": "Rock and Roll Icons",
+   "similarity": 0.49665889232736415,
+   "neighbours": [
+    {
+     "id": "c091",
+     "similarity": 0.8442860011017361
+    },
+    {
+     "id": "c001",
+     "similarity": 0.7648085338751424
+    },
+    {
+     "id": "c054",
+     "similarity": 0.7347386980307307
+    }
+   ],
+   "x": 0.1187,
+   "y": 0.1089
+  },
+  "2AC3D59B-857B-430F-80E0-7E40B9C239D0": {
+   "cluster": 5,
+   "clusterName": "Artful Indie Contemplation",
+   "similarity": 0.496649562504369,
+   "neighbours": [
+    {
+     "id": "c353",
+     "similarity": 0.8592601243982695
+    },
+    {
+     "id": "c015",
+     "similarity": 0.8333207851821184
+    },
+    {
+     "id": "c084",
+     "similarity": 0.8192836523364191
+    }
+   ],
+   "x": 0.1188,
+   "y": 0.4844
+  },
+  "92CB2EFE-3137-468F-892F-2EE109F4818D": {
+   "cluster": 6,
+   "clusterName": "Pop Romance Anthems",
+   "similarity": 0.8559579035034808,
+   "neighbours": [
+    {
+     "id": "c058",
+     "similarity": 0.9685848693277881
+    },
+    {
+     "id": "c076",
+     "similarity": 0.9416254783728738
+    },
+    {
+     "id": "c092",
+     "similarity": 0.9315127671904307
+    }
+   ],
+   "x": 0.4597,
+   "y": 0.7927
+  },
+  "2AC15D3A-D513-487B-845B-3B37BD902F8B": {
+   "cluster": 6,
+   "clusterName": "Pop Romance Anthems",
+   "similarity": 0.8771494731732139,
+   "neighbours": [
+    {
+     "id": "c058",
+     "similarity": 0.9599348516430013
+    },
+    {
+     "id": "c081",
+     "similarity": 0.9296287092811875
+    },
+    {
+     "id": "c351",
+     "similarity": 0.9233311788552012
+    }
+   ],
+   "x": 0.4597,
+   "y": 0.7927
   }
  }
 }

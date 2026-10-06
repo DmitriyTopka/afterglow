@@ -11,10 +11,13 @@ import { readFileSync, writeFileSync } from "node:fs";
   const prods = [1, 2].flatMap((p) => JSON.parse(readFileSync(`data/catalog_build/wb${p}.json`, "utf8")).products);
   const records = prods.filter((p: any) => /vinyl|cd|cassette/i.test(p.product_type ?? ""));
   const byArtist = new Map<string, { items: number; prices: number[] }>();
+  const spelling = new Map<string, string>(); // "Charli Xcx" and "Charli XCX" are one artist: group case-insensitively, keep the first spelling
   for (const p of records) {
     const t = String(p.title).replace(/^Pre-Order:\s*/i, "");
     if (!t.includes(" - ")) continue;
-    const a = t.split(" - ")[0].trim();
+    const raw = t.split(" - ")[0].trim();
+    const a = spelling.get(raw.toLowerCase()) ?? raw;
+    spelling.set(raw.toLowerCase(), a);
     if (/^(various|soundtrack|waterloo)/i.test(a)) continue;
     const e = byArtist.get(a) ?? { items: 0, prices: [] };
     e.items++; e.prices.push(Number(p.variants?.[0]?.price ?? 0));
@@ -42,7 +45,7 @@ import { readFileSync, writeFileSync } from "node:fs";
   for (const r of rows) for (const w of r.wanted) if (!w.on_shelf) missing.set(w.entity_id, { name: w.name, askedBy: (missing.get(w.entity_id)?.askedBy ?? 0) + 1 });
   const prices = [...byArtist.values()].flatMap((e) => e.prices).filter((x) => x > 0).sort((a, b) => a - b);
   const out = {
-    source: "Waterloo Records, Austin TX: public Shopify catalog feed, collection 'waterloo-best-sellers', first 500 items, fetched 2026-10-07. No affiliation.",
+    source: "Waterloo Records, Austin TX: public Shopify catalog feed, collection 'waterloo-best-sellers', first 500 items, fetched 2026-10-06. No affiliation.",
     items: prods.length, records: records.length, artists: shelf.length, recognised: ids.size,
     median_price: prices[Math.floor(prices.length / 2)],
     shelf,

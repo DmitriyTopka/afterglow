@@ -14,7 +14,7 @@ export async function POST(req: Request) {
   const body = (await req.json().catch(() => ({}))) as { message?: unknown; live?: unknown };
   const message = typeof body.message === "string" ? body.message.trim().slice(0, 600) : "";
   if (!message) return Response.json({ error: "message is required" }, { status: 400 });
-  const recorded = body.live === true ? undefined : SAVED[message]; // live: true runs an example for real
+  const recorded = body.live === true || !Object.hasOwn(SAVED, message) ? undefined : SAVED[message]; // live: true runs an example for real
   if (!recorded) {
     const gate = allow(req, "live");
     if (!gate.ok) return Response.json({ error: gate.reason }, { status: 429 });

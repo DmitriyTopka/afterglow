@@ -8,7 +8,7 @@ import { writeFileSync } from "node:fs";
   for (const ex of EXAMPLES) {
     const r = await runAgentic(ex.text);
     if (r.modes.llm !== "agent" || r.modes.qloo !== "live") throw new Error(`not live for "${ex.label}": ${JSON.stringify(r.modes)}`);
-    saved[ex.text] = { ...r, calls: r.calls.map(({ endpoint, cache, ms }) => ({ endpoint, cache, ms })), savedAt: new Date().toISOString() };
+    saved[ex.text] = { ...r, calls: r.calls.map(({ endpoint, params, cache, ms }) => ({ endpoint, params, cache, ms })), savedAt: new Date().toISOString() };
     console.log(`${ex.label}: ${r.extraction.signals.map((s) => s.name).join(", ")} -> ${r.picks.map((p) => p.item.title.slice(0, 28)).join(" | ")}  ($${r.usd.toFixed(4)})`);
   }
   writeFileSync("data/saved_answers.json", JSON.stringify(saved, null, 1));

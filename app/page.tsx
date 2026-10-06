@@ -70,7 +70,7 @@ export default function Page() {
         <dl className="hero-stats">
           <div><dt>{fmtPct(lost)}</dt><dd>of what these shoppers&apos; tastes love is not on the shelves</dd></div>
           <div><dt>{rows.length}</dt><dd>shopper requests so far{mine.length ? `, ${mine.length} of them yours` : ""}</dd></div>
-          <div><dt>{missingTitles}</dt><dd>titles shoppers asked for and left without</dd></div>
+          <div><dt>{missingTitles}</dt><dd>titles shoppers' tastes love that the shelves don't carry</dd></div>
         </dl>
         <form className="lb-ask" style={{ marginTop: 16 }} onSubmit={(e) => { e.preventDefault(); run(text.trim() || PLACEHOLDER); }}>
           <label htmlFor="ask" className="sr-only">What are they into?</label>
@@ -93,7 +93,7 @@ export default function Page() {
         <div><b>$1.04B</b><span>US vinyl sales in 2025, up 9.3% (RIAA)</span></div>
         <div><b>$1.73T</b><span>a year retail loses to out-of-stock and overstock (IHL Group, 2025)</span></div>
         <div><b>0.52 vs 0.37</b><span>our agent vs Claude alone, on 20 untuned blind requests (P@3)</span></div>
-        <div><b>192 of 218</b><span>artists of a real Austin record shop&apos;s best-sellers Qloo knows. <Link href="/real">See the shelf →</Link></span></div>
+        <div><b>192 of 217</b><span>artists of a real Austin record shop&apos;s best-sellers Qloo knows. <Link href="/real">See the shelf →</Link></span></div>
       </section>
 
       {result && (

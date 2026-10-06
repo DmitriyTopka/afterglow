@@ -98,7 +98,7 @@ export function OwnerView() {
               <p className="eyebrow">Restock agent</p>
               <p className="ap-lede">The agent reads what your shoppers asked for and could not find, checks who loves each candidate with Qloo, and picks three titles to stock.</p>
             </div>
-            <button type="button" className="go" disabled={planning} onClick={askAgent}>{planning ? "Thinking it through…" : "Plan this week's restock"}</button>
+            <button type="button" className="go" disabled={planning} onClick={askAgent}>{planning ? "Thinking it through…" : "Plan the next restock"}</button>
           </div>
           {plan && (
             <div className="ap-body">
@@ -127,7 +127,7 @@ export function OwnerView() {
           {error && <p className="error">{error}</p>}
         </div>
       <details className="gaps" open>
-        <summary>What your shoppers could not find, ranked by coverage gain ({sugg.length})</summary>
+        <summary>What your shoppers could not find, the top {sugg.length}, ranked by coverage gain</summary>
         <ol>
           {sugg.map((s) => (
             <li key={s.entity_id}>
@@ -145,7 +145,7 @@ export function OwnerView() {
       </div>
       </section>
 
-      <ImportShelf rows={rows} demoCoverage={base} />
+      <ImportShelf rows={rows} demoCoverage={cov} />
 
       <section className="blk blk-ink owner-map">
       <div className="blk-head"><h2>Your shelves, by who loves them</h2><p>Pick a section to see who shops it and what its audience loves that you don&apos;t carry.</p></div>

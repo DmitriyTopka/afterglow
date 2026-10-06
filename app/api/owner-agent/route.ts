@@ -7,7 +7,7 @@ export const maxDuration = 60;
 
 // The owner's restock agent. The browser sends only its own requests and added titles; demo demand is server-side.
 export async function POST(req: Request) {
-  const gate = allow(req, "owner-agent", 10, 100);
+  const gate = allow(req, "owner-agent", 5, 30);
   if (!gate.ok) return Response.json({ error: gate.reason }, { status: 429 });
   const body = (await req.json().catch(() => ({}))) as { mine?: DemandRow[]; added?: string[] };
   // The browser's rows are untrusted: keep only well-formed Qloo ids, short names and https images.

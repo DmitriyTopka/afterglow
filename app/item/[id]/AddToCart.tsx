@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { addToCart, readCart } from "@/lib/cart";
 
 export function AddToCart({ id }: { id: string }) {
-  const [wrap, setWrap] = useState(true);
+  const [wrap, setWrap] = useState(false);
   const [inCart, setInCart] = useState(false);
   useEffect(() => setInCart(readCart().some((l) => l.id === id)), [id]);
   if (inCart) return <p className="in-cart">In your bag. <Link href="/cart">Go to checkout</Link></p>;

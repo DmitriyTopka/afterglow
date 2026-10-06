@@ -70,6 +70,7 @@ export default function Live() {
       const reader = res.body.getReader();
       const dec = new TextDecoder();
       let buf = "";
+      let finished = false;
       for (;;) {
         const { value, done } = await reader.read();
         if (done) break;
@@ -81,14 +82,17 @@ export default function Live() {
           const ev = JSON.parse(line);
           if (ev.type === "mode") { setReplay(ev.replay); setSavedAt(ev.savedAt ?? null); }
           if (ev.type === "step") { const { light: l, ...step } = ev.step as Step; if (l) setLight(l); setSteps((s) => [...s, step]); }
-          if (ev.type === "error") setError(ev.error);
+          if (ev.type === "error") { setError(ev.error); finished = true; }
           if (ev.type === "result") {
+            finished = true;
             const r = ev.result as Result;
             setResult(r);
             if (r.gap) { recordDemand({ message, signals: (r.extraction?.signals ?? []).map((x) => x.name), wanted: r.gap.wanted }); setMine(myDemand()); }
           }
         }
       }
+      // The function hit its time limit or the connection dropped: say so instead of leaving half a run on screen.
+      if (!finished) setError("The agent stopped before it finished. Try again, or pick one of the examples.");
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
     } finally {
