@@ -37,7 +37,7 @@ export default async function ItemPage({ params }: { params: Promise<{ id: strin
   if (!it) notFound();
   const pos = (map.items as Record<string, { cluster: number }>)[id];
   const section = pos ? SECTION.get(pos.cluster) : undefined;
-  const pairs = similar(id, 4).map((s) => BY_ID.get(s.id)).filter(Boolean) as Item[];
+  const pairs = similar(id, 4, new Set(), 2).map((s) => BY_ID.get(s.id)).filter(Boolean) as Item[];
   return (
     <main className="shop">
       <Header side="shopper" />
@@ -67,7 +67,7 @@ export default async function ItemPage({ params }: { params: Promise<{ id: strin
       </article>
       </section>
       <section className="blk blk-amber">
-        <div className="blk-head"><h2>Fans of this also love</h2><p>Closest titles by taste: who loves them, per Qloo, across 36 reference tastes. Any format.</p></div>
+        <div className="blk-head"><h2>Fans of this also love</h2><p>Closest titles by taste: who loves them, per Qloo, across 36 reference tastes, at most two per format.</p></div>
         <div className="lb-pick-row four">
           {pairs.map((p) => (
             <Link key={p.id} href={`/item/${p.id}`} className="lb-pick">

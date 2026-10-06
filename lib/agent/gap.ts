@@ -7,6 +7,9 @@ import { CATALOG } from "./score";
 
 export const SELLABLE: QlooEntityType[] = ["urn:entity:artist", "urn:entity:book", "urn:entity:movie", "urn:entity:videogame", "urn:entity:tv_show"];
 const OWNED = new Set(CATALOG.map((i) => i.qloo.entity_id).filter(Boolean) as string[]);
+// "Tom Petty and the Heartbreakers" and "Tom Petty" are one act for a record shop: compare artists by core name.
+const core = (n: string) => n.toLowerCase().replace(/^the\s+/, "").replace(/\s+(and|&)\s+(the|his|her)\s+.*$/, "").replace(/[^a-z0-9]+/g, " ").trim();
+const OWNED_ACTS = new Set(CATALOG.filter((i) => i.qloo.type === "urn:entity:artist").flatMap((i) => [i.qloo.name, ...i.creators]).map(core));
 
 export interface Wanted { entity_id: string; name: string; type: string; image: string | null; affinity: number | null; owned: boolean }
 export interface Gap { formats: string[]; wanted: Wanted[]; coverage: number }
@@ -21,7 +24,7 @@ export async function demandGap(signalIds: string[], formats: string[], calls: Q
       for (const e of res.results.entities ?? []) {
         if (signalIds.includes(e.entity_id)) continue;
         const url = (e.properties as { image?: { url?: string } } | undefined)?.image?.url ?? "";
-        top.push({ entity_id: e.entity_id, name: e.name, type: t, image: url.startsWith("http") ? url : null, affinity: e.query?.affinity ?? null, owned: OWNED.has(e.entity_id) });
+        top.push({ entity_id: e.entity_id, name: e.name, type: t, image: url.startsWith("http") ? url : null, affinity: e.query?.affinity ?? null, owned: OWNED.has(e.entity_id) || (t === "urn:entity:artist" && OWNED_ACTS.has(core(e.name))) });
       }
     } catch {
       // some entities are not valid insight signals for a type; the check simply covers fewer formats

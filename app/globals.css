@@ -617,3 +617,26 @@ a.lb-tab { text-decoration: none; display: inline-block; }
   .lb-hero::after { width: 200px; height: 200px; right: -120px; top: -110px; opacity: .3; }
   .lb-hero::before { display: none; }
 }
+.lb-pick .basis { display: block; margin-top: 8px; padding-top: 8px; border-top: 1px dashed rgba(42, 29, 22, .3); font: 600 11px/1.4 var(--mono); font-style: normal; color: #b2391a; letter-spacing: .02em; }
+.ap-facts { list-style: none; margin: 6px 0 0; padding: 0; display: grid; gap: 2px; }
+.ap-facts li { font: 500 12px/1.4 var(--mono); color: var(--amber); }
+.ap-facts li::before { content: "› "; }
+.lb-note.placing { color: var(--amber); opacity: 1; animation: pulse 1.2s ease-in-out infinite; }
+.hero-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 0 0 18px; max-width: 760px; }
+.hero-stats div { background: var(--ink); color: var(--paper); border-radius: 12px; padding: 12px 14px; }
+.hero-stats dt { font-family: var(--display); font-weight: 800; font-size: 44px; line-height: .9; color: var(--amber); }
+.hero-stats dd { margin: 6px 0 0; font-size: 13px; line-height: 1.35; opacity: .85; }
+@media (max-width: 720px) { .hero-stats { grid-template-columns: 1fr 1fr 1fr; gap: 8px; } .hero-stats dt { font-size: 28px; } .hero-stats dd { font-size: 11px; } .hero-stats div { padding: 10px; } }
+.home-band h1 { font-size: clamp(40px, 4.6vw, 72px); }
+.home-band { padding-top: 30px; }
+.imp-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 22px; align-items: start; }
+.import-shelf textarea { width: 100%; min-height: 170px; border: 2px solid var(--ink); border-radius: 12px; padding: 12px 14px; background: #fff6ea; color: var(--paper-ink); font: 15px/1.5 var(--body); margin-bottom: 10px; resize: vertical; }
+.imp-result { background: var(--ink); color: var(--paper); border-radius: 14px; padding: 18px; box-shadow: 8px 8px 0 var(--coral); }
+.imp-big { font-size: 18px; margin: 0 0 10px; }
+.imp-big b { display: block; font-family: var(--display); font-weight: 800; font-size: 64px; line-height: .9; color: var(--amber); }
+.imp-big span { color: var(--muted); font-size: 14px; }
+.imp-result h3 { font: 600 12px var(--mono); text-transform: uppercase; letter-spacing: .12em; color: var(--amber); margin: 14px 0 6px; }
+.imp-result ol { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
+.imp-result li span { color: var(--muted); font-size: 13px; }
+@media (max-width: 900px) { .imp-grid { grid-template-columns: 1fr; } }
+.imp-result .muted-in { color: var(--muted); font-size: 13px; }

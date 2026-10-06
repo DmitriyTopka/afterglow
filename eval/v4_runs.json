@@ -1,0 +1,1003 @@
+{
+ "v01": {
+  "ids": [
+   "c071",
+   "c037",
+   "c054",
+   "c250",
+   "c212"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 11,
+  "llm": "agent",
+  "why": [
+   "Arcade Fire's The Suburbs shares Radiohead's emotional depth and experimental approach with neo-psychedelia, accordion and piano layering",
+   "The Smashing Pumpkins' Adore captures the same intense, alienated 90s spirit that defines OK Computer",
+   "Pixies' Doolittle is an innovative rock landmark with psychology and energetic dynamics that influenced alternative music deeply",
+   "Being John Malkovich has the Kafkaesque identity themes and surreal atmosphere that OK Computer explores sonically",
+   "Donnie Darko's original story and emotional depth resonate with the existential themes fans of OK Computer love"
+  ]
+ },
+ "v02": {
+  "ids": [
+   "c222",
+   "c324",
+   "c375",
+   "c343",
+   "c102"
+  ],
+  "question": null,
+  "turns": 3,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "recommend"
+  ],
+  "qloo": 0,
+  "llm": "agent",
+  "why": [
+   "Loved by fans of Dune: Part Two, by Qloo's count.",
+   "Snowpiercer explores political themes and meticulous production design similar to Dune: Part Two, with a complex social hierarchy that creates tension across a contained but epic setting.",
+   "Mad Max: Fury Road delivers the sweeping cinematic action and world-building you loved in both films, with post-apocalyptic world design that rivals the alien vistas of your favorites.",
+   "Loved by fans of Interstellar, by Qloo's count.",
+   "Flowers for Algernon offers the philosophical and psychological depth that underlies both Dune and Interstellar, exploring profound human questions through speculative fiction."
+  ]
+ },
+ "v03": {
+  "ids": [
+   "c129",
+   "c189",
+   "c225",
+   "c255",
+   "c364"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 0,
+  "llm": "agent",
+  "why": [
+   "Cassandra Clare's City of Bones launches The Mortal Instruments, a urban fantasy series with supernatural creatures and romance that fans of post-apocalyptic action love.",
+   "Clockwork Princess completes the Infernal Devices arc with historical fantasy, steampunk elements, and the intricate worldbuilding that makes Hunger Games so addictive.",
+   "Avatar on Blu-ray offers the same expansive world-building, high-stakes survival, and immersive storytelling that made The Hunger Games so gripping.",
+   "The Divergent Series: Insurgent brings dystopian tension, survival themes, and a strong female lead navigating corruption and rebellion, much like Katniss.",
+   "The complete Hunger Games trilogy if she doesn't have it yet - the original trilogy that started it all, with all the action and post-apocalyptic intensity she's hooked on."
+  ]
+ },
+ "v04": {
+  "ids": [
+   "c084",
+   "c032",
+   "c066",
+   "c197",
+   "c248"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 0,
+  "llm": "agent",
+  "why": [
+   "Thelonious Monk's Post Bop piano work reflects the harmonic innovation that Coltrane loved. Straight, No Chaser from 1967 shows Monk's Modern Jazz at its most compelling.",
+   "Herbie Hancock's 1976 Secrets is a pioneering Soul Jazz album with innovative Keyboards work that bridges the Post Bop tradition Davis and Coltrane defined.",
+   "Duke Ellington's Such Sweet Thunder from 1957 is a Versatile and Elegant Jazz foundation, with the Swing Revival sensibility that influenced the modal jazz movement Coltrane later explored.",
+   "Loved by fans of Miles Davis, by Qloo's count.",
+   "Loved by fans of Miles Davis, by Qloo's count."
+  ]
+ },
+ "v05": {
+  "ids": [
+   "c384",
+   "c304",
+   "c172",
+   "c191",
+   "c310"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 2,
+  "llm": "agent",
+  "why": [
+   "Dark Souls on Nintendo Switch - Same developer (From Software), challenging and rewarding gameplay with gothic dark fantasy aesthetic.",
+   "The Legend of Zelda: Tears of the Kingdom on Nintendo Switch - 3D exploration with high replayability and freedom to explore, similar open-world appeal.",
+   "Read by fans of Elden Ring, by Qloo's count.",
+   "Joker on 4K UHD Blu-ray - Cynical, dark storytelling that resonates with fans of Elden Ring's grim tone and themes.",
+   "Death Stranding on PlayStation 5 - Unique gameplay and cinematic narrative-driven experience with the same artistic, unconventional approach."
+  ]
+ },
+ "v06": {
+  "ids": [
+   "c235",
+   "c001",
+   "c254",
+   "c057",
+   "c040"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 1,
+  "llm": "agent",
+  "why": [
+   "Alejandro G. Iñárritu's 2014 psychological drama about art versus commerce, with the theatrical intensity Wes Anderson fans love.",
+   "Tom Waits' 1985 album Rain Dogs: intimate, experimental cabaret that shares the introspective darkness of The Grand Budapest Hotel.",
+   "Richard Linklater's 2014 meditation on memory and coming of age, with the same patient attention to character that defines Anderson's work.",
+   "Johnny Cash's 2002 farewell American IV brings the same melancholic, emotionally authentic atmosphere as the film.",
+   "The Doors' self-titled 1967 debut: psychedelic and gothic rock with charismatic intensity and theatrical presence."
+  ]
+ },
+ "v07": {
+  "ids": [],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 0,
+  "llm": "agent",
+  "why": []
+ },
+ "v08": {
+  "ids": [
+   "c340",
+   "c349",
+   "c330",
+   "c302",
+   "c266"
+  ],
+  "question": null,
+  "turns": 3,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 0,
+  "llm": "agent",
+  "why": [
+   "Direct spinoff of Breaking Bad that dives deeper into Jimmy McGill's journey with the same meticulous storytelling, dark humor, and moral complexity.",
+   "Same gritty crime intensity as Breaking Bad with a nonlinear narrative style that will appeal to fans of psychological depth and character-driven drama.",
+   "Epic ensemble cast and exploration of survival, family bonds, and moral choices under extreme pressure like the core themes that made Breaking Bad compelling.",
+   "Features the same complex characters, mature narrative with social commentary, and realistic moral gray zones you loved in Breaking Bad, but in interactive game form.",
+   "Explores themes of ordinary people caught in criminal activity and intimate personal struggles that echo Walter White's descent and the loneliness at the show's heart."
+  ]
+ },
+ "v09": {
+  "ids": [
+   "c262",
+   "c304",
+   "c223",
+   "c170",
+   "c270"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 0,
+  "llm": "agent",
+  "why": [
+   "Howl's Moving Castle by Hayao Miyazaki - another Studio Ghibli masterpiece with anime animation, compassionate storytelling and themes of friendship and journey",
+   "The Legend of Zelda: Tears of the Kingdom - cel-shaded, stylized adventure with player creativity and freedom to explore, similar whimsical appeal",
+   "Spider-Man: Into the Spider-Verse - surreal animation with stylized visuals and heroic storytelling that shares Spirited Away's imaginative world-building",
+   "Neil Gaiman: Coraline - fantasy adventure with middle grade appeal, rich imagination and the same sense of wonder as Studio Ghibli",
+   "Coco (4K UHD Blu-ray) - vibrant animated film with themes of journey and coming to terms, capturing the emotional depth Ghibli fans cherish"
+  ]
+ },
+ "v10": {
+  "ids": [
+   "c025",
+   "c058",
+   "c007",
+   "c173",
+   "c153"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 0,
+  "llm": "agent",
+  "why": [
+   "Katy Perry's PRISM shares Taylor's pop sensibility with dance-pop, electropop and fun energy that loyal fans adore.",
+   "Carly Rae Jepsen's E•MO•TION is catchy synth-pop and bubblegum pop with melodic piano work that resonates with Taylor fans.",
+   "Beyoncé's Dangerously in Love has the polished pop-soul foundation that bridges to the energetic funk and pop that Taylor fans appreciate.",
+   "The Panama Papers appeals to Taylor fans' interest in journalism and true crime storytelling that goes beyond music.",
+   "Misty Bernall's She Said speaks to the social justice and women's empowerment themes important to many Taylor Swift fans."
+  ]
+ },
+ "v11": {
+  "ids": [
+   "c348",
+   "c278",
+   "c264",
+   "c143",
+   "c163"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 2,
+  "llm": "agent",
+  "why": [
+   "Loved by fans of Stranger Things, by Qloo's count.",
+   "Until Dawn is a cinematic choice-driven game with a campy teen slasher vibe that matches Stranger Things' young cast in danger",
+   "Hereditary delivers supernatural horror with mature themes and tragic events that appeal to fans of the show's darker moments",
+   "Solitaire is a young adult contemporary romance that explores mental health and LGBT themes through a teen protagonist's journey",
+   "Dead Poets Society is a coming-of-age novel set in a school with young characters facing emotional and mysterious circumstances"
+  ]
+ },
+ "v12": {
+  "ids": [
+   "c042",
+   "c071",
+   "c002",
+   "c234",
+   "c104"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 0,
+  "llm": "agent",
+  "why": [
+   "Kings of Leon: Only By the Night (2008) has the energetic, raw emotional rock and anthemic quality you love in Arctic Monkeys, at $27.",
+   "Arcade Fire: The Suburbs (2010) delivers the introspective, emotional depth of indie rock with neo-psychedelia and sophisticated arrangements for $28.",
+   "Coldplay: Parachutes (2000) bridges post-Britpop and alternative rock with the introspection and electronic touches that appeal to Arctic Monkeys fans, $30.",
+   "Loved by fans of Arctic Monkeys, by Qloo's count.",
+   "Peter Ames Carlin's Paul McCartney biography connects the lineage of British rock innovation that shaped Arctic Monkeys and Kasabian, $27."
+  ]
+ },
+ "v13": {
+  "ids": [
+   "c282",
+   "c277",
+   "c279",
+   "c225",
+   "c256"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 2,
+  "llm": "agent",
+  "why": [
+   "The Elder Scrolls V: Skyrim on PS5 shares Tolkien's high-fidelity fantasy world with deep lore, player freedom, and high replayability.",
+   "The Witcher for PC is a story-driven dark fantasy game built for Tolkien fans seeking immersive, complex worldbuilding and single-player exploration.",
+   "Kingdom Come: Deliverance on PS4 delivers immersive worldbuilding with deep role-playing and historical realism in a challenge-driven medieval setting.",
+   "Loved by fans of The Lord of the Rings, by Qloo's count.",
+   "The Dark Knight Rises as the trilogy finale offers the epic conclusion and high-definition storytelling Tolkien readers appreciate in sprawling narratives."
+  ]
+ },
+ "v14": {
+  "ids": [
+   "c315",
+   "c278",
+   "c003",
+   "c146",
+   "c102"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 2,
+  "llm": "agent",
+  "why": [
+   "The Last of Us Remastered - the exact game he loves, praised for narrative-driven and emotional depth storytelling at $42.",
+   "Until Dawn matches his taste with cinematic presentation and choice-driven gameplay similar to The Last of Us at $22.",
+   "Nirvana's self-titled LP speaks to the same emotional and rebellious alternative rock sensibility at $34.",
+   "The Perks of Being a Wallflower explores mental health and coming of age themes with emotional realism like The Last of Us at $19.",
+   "Flowers for Algernon is a powerful psychology-focused novel about the human condition, matching the character depth he loves at $19."
+  ]
+ },
+ "v15": {
+  "ids": [
+   "c095",
+   "c356",
+   "c327",
+   "c210",
+   "c154"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 1,
+  "llm": "agent",
+  "why": [
+   "Olivia Rodrigo shares Mitski's indie pop rock sensibility and youthful anthems; powerful guitar-driven songwriting.",
+   "Billie Eilish's indie pop and emotional depth align with both artists' introspective style; passionate and loyal fanbase crossover.",
+   "High Fidelity centers on the heartbroken heroine and heartbreak through a music lens; perfect for fans of emotionally raw storytelling.",
+   "Lady Bird by Greta Gerwig captures the same intimate, character-driven sensibility Phoebe Bridgers' fanbase loves; lyrical and precise.",
+   "Ashley C. Ford's memoir offers the personal, introspective narrative voice that resonates with fans of both artists' vulnerability."
+  ]
+ },
+ "v16": {
+  "ids": [
+   "c099",
+   "c082",
+   "c070"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 0,
+  "llm": "agent",
+  "why": [
+   "Tom Petty: Wildflowers shares Bruce's heartland roots, classic rock sensibility, and passionate singer-songwriter style.",
+   "Rod Stewart's Every Picture Tells a Story is a blues rock essential with that raspy tenor and versatile rock craft that resonates with Springsteen fans.",
+   "Creedence Clearwater Revival's 1968 debut is gritty roots rock with the nature themes and blues rock foundation that defines the Springsteen era."
+  ]
+ },
+ "v17": {
+  "ids": [
+   "c348",
+   "c199",
+   "c300",
+   "c381",
+   "c171"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 0,
+  "llm": "agent",
+  "why": [
+   "Loved by fans of Blade Runner, by Qloo's count.",
+   "Loved by fans of Alien, by Qloo's count.",
+   "Loved by fans of Alien, by Qloo's count.",
+   "Loved by fans of Alien, by Qloo's count.",
+   "Philip K. Dick's The Man in the High Castle offers the dystopian science fiction and alternate history sensibility that defines Blade Runner"
+  ]
+ },
+ "v18": {
+  "ids": [
+   "c020",
+   "c071",
+   "c042",
+   "c193",
+   "c105"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 1,
+  "llm": "agent",
+  "why": [
+   "Arctic Monkeys share The Strokes' indie rock wit and innovation; this 2013 album is witty, alternative rock with youth appeal.",
+   "Loved by fans of The Strokes, by Qloo's count.",
+   "Loved by fans of The Strokes, by Qloo's count.",
+   "Sofia Coppola's reflective, postmodern 2003 film has the sophisticated aesthetic Strokes fans love; thoughtful pacing and Tokyo setting.",
+   "Paul Du Noyer's 2015 conversations with Paul McCartney explore songwriting craft; perfect for a musician who appreciates The Strokes' precision."
+  ]
+ },
+ "v19": {
+  "ids": [],
+  "question": "Besides books, would your 10-year-old enjoy any audiobooks, graphic novels, or fantasy-themed films or games related to their Harry Potter love?",
+  "turns": 6,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "find_tastes",
+   "score_catalog",
+   "ask_shopper"
+  ],
+  "qloo": 4,
+  "llm": "agent",
+  "why": []
+ },
+ "v20": {
+  "ids": [
+   "c183",
+   "c168",
+   "c188",
+   "c213",
+   "c210"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 1,
+  "llm": "agent",
+  "why": [
+   "Adam Silvera's contemporary romance about queer connection, celebrated by Sally Rooney fans for emotional depth and character-driven storytelling.",
+   "Madeline Miller's historical fiction and queer coming-of-age, with the literary precision and intimate relationship focus Sally Rooney readers crave.",
+   "Alice Oseman's asexual romance about young adults navigating identity and belonging, balancing humor with genuine emotional stakes Rooney readers appreciate.",
+   "Loved by fans of Sally Rooney, by Qloo's count.",
+   "Greta Gerwig's character study of coming-of-age and family tension with the quiet emotional complexity Sally Rooney fans respond to."
+  ]
+ },
+ "v21": {
+  "ids": [
+   "c380",
+   "c320",
+   "c293",
+   "c006",
+   "c101"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 1,
+  "llm": "agent",
+  "why": [
+   "Loved by fans of 2001: A Space Odyssey, by Qloo's count.",
+   "Time-loop puzzle game with echoes of 2001's exploratory wonder and beautiful soundtrack. Thought-provoking, stylized, perfect for a Kubrick fan who appreciates meticulous craft.",
+   "Story-rich game with modern brutalist design and atmospheric tension. Control's innovative combat and surreal environments match the unsettling precision you loved in The Shining.",
+   "David Bowie's Ziggy Stardust sits at the intersection of Kubrick's visual extravagance and experimental ambition. Glam rock spectacle with expressive versatility across seven remastered tracks.",
+   "Orwell's 1984 shares 2001's science fiction DNA and concerns about institutional control. Politics, dystopia, and unflinching psychological intensity align with Kubrick's thematic obsessions."
+  ]
+ },
+ "v22": {
+  "ids": [
+   "c386",
+   "c170",
+   "c219",
+   "c190",
+   "c231"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 0,
+  "llm": "agent",
+  "why": [
+   "Stardew Valley shares Hollow Knight's addictive deep progression and pixel art style, offering hundreds of hours of engaging gameplay in a cozy 2D world.",
+   "Neil Gaiman's Coraline captures the dark fantasy atmosphere and supernatural intrigue that Hollow Knight excels at, with imaginative world-building.",
+   "Moonrise Kingdom is a candy cinema gem with postmodern storytelling and detailed world-building that appeals to players who love immersive, atmospheric experiences.",
+   "Read by fans of Hollow Knight, by Qloo's count.",
+   "Magnolia delivers intricate narrative and redemption themes with the same kind of emotional depth that drives engagement in complex games like Hollow Knight."
+  ]
+ },
+ "v23": {
+  "ids": [
+   "c055",
+   "c091",
+   "c196",
+   "c193",
+   "c348"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 1,
+  "llm": "agent",
+  "why": [
+   "The Cure's Disintegration shares Joy Division's Alternative Rock and New Wave roots with moody, keyboard-driven atmospheres",
+   "Loved by fans of Joy Division, by Qloo's count.",
+   "Eternal Sunshine of the Spotless Mind has the reflective, melancholic mood and philosophical depth that resonates with Joy Division fans",
+   "Lost in Translation offers the same reflective, unhappy aesthetic and introspective tone that defines Joy Division's emotional landscape",
+   "Loved by fans of Joy Division, by Qloo's count."
+  ]
+ },
+ "v24": {
+  "ids": [
+   "c387",
+   "c334",
+   "c333",
+   "c266",
+   "c247"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 0,
+  "llm": "agent",
+  "why": [
+   "Breaking Bad is the spiritual successor to The Sopranos - a dark, character-driven drama about a protagonist's moral descent, built on complex relationships and psychological tension.",
+   "The Knick shares The Sopranos' sophisticated ensemble drama structure with morally complex characters navigating power, ambition, and personal demons in a richly detailed period setting.",
+   "Yellowstone delivers the same blend of family loyalty, internal conflict, and high stakes that defines The Sopranos, with intricate power dynamics between strong-willed characters.",
+   "The Mule explores themes of loneliness and moral compromise similar to Tony Soprano's journey, with intimate character work and exploration of a protagonist's complicated life choices.",
+   "Den of Thieves features the intense character-focused conflict and family strain that echo The Sopranos, with morally gray figures caught between personal loyalty and opposing forces."
+  ]
+ },
+ "v25": {
+  "ids": [],
+  "question": "Does she prefer the literary novels themselves, or films and TV adaptations of Austen's work?",
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "ask_shopper"
+  ],
+  "qloo": 0,
+  "llm": "agent",
+  "why": []
+ },
+ "v26": {
+  "ids": [
+   "c383",
+   "c386",
+   "c132",
+   "c217",
+   "c051"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 2,
+  "llm": "agent",
+  "why": [
+   "Animal Crossing: New Horizons on Nintendo Switch offers charming characters and customization like Pokémon, with community-driven gameplay that's perfect for younger fans.",
+   "Stardew Valley combines cozy, addictive gameplay with deep progression similar to what makes Pokémon rewarding to play repeatedly.",
+   "Lore is a young adult fantasy retelling that appeals to Pokémon fans who enjoy imaginative storytelling and characters.",
+   "Star Wars: Episode VII - The Force Awakens on 4K UHD Blu-ray is an epic adventure with a hero's journey that resonates with Pokémon fans.",
+   "Red Velvet's Perfect Velvet album on vinyl offers vibrant, energetic K-Pop music with polished choreography that appeals to fans of colorful, engaging entertainment."
+  ]
+ },
+ "v27": {
+  "ids": [
+   "c048",
+   "c352",
+   "c358",
+   "c327",
+   "c291"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 0,
+  "llm": "agent",
+  "why": [
+   "Tyler, the Creator's CHROMAKOPIA shares Frank Ocean's theatrical production style and alternative hip hop sensibility, released in 2024",
+   "Kendrick Lamar's good kid, m.A.A.d city (Deluxe) has the same thoughtful, passionate approach to storytelling that defines Blonde",
+   "Loved by fans of Frank Ocean, by Qloo's count.",
+   "High Fidelity's soundtrack and themes of heartbreak and music will resonate with Blonde's introspective, emotionally complex spirit",
+   "The Legend of Zelda: Breath of the Wild features a beautiful soundtrack and stylized artistry that shares Blonde's attention to sonic and artistic detail"
+  ]
+ },
+ "v28": {
+  "ids": [
+   "c222",
+   "c293",
+   "c241",
+   "c008",
+   "c327"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 2,
+  "llm": "agent",
+  "why": [
+   "Everything Everywhere All at Once shares Succession's complex narrative structure and absurdist sensibility with intricate character dynamics",
+   "Control is a story-rich, atmospheric game that echoes the psychological intensity and modern aesthetic fans of Succession crave",
+   "Poor Things has the ornate grotesque visual design and darkly intricate storytelling that resonates with Succession's baroque sensibility",
+   "Lana Del Rey's Born To Die offers the melancholic, intimate mood that complements the show's dramatic tension",
+   "High Fidelity box set delivers character-driven heartbreak and romantic complexity similar to the interpersonal dynamics of Succession"
+  ]
+ },
+ "v29": {
+  "ids": [
+   "c047",
+   "c014",
+   "c053",
+   "c252",
+   "c185"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 3,
+  "llm": "agent",
+  "why": [
+   "Electric Light Orchestra's Out of the Blue - Melodic Pop Rock with Keyboards from 1977, loved by Bee Gees fans",
+   "Elton John's Goodbye Yellow Brick Road Vinyl - Piano Rock and expressive singer-songwriter style that appeals to ABBA and Bee Gees devotees",
+   "Elvis Presley EPiC: In Concert Vinyl - Expressive, engaging performance with gospel-influenced pop echoes that resonate with her taste in classic artists",
+   "Loved by fans of Bee Gees, by Qloo's count.",
+   "Peter Jackson's The Beatles: Get Back book - Music and pop culture history about another British rock legend she'll appreciate"
+  ]
+ },
+ "v30": {
+  "ids": [
+   "c059",
+   "c071",
+   "c036",
+   "c193",
+   "c219"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 1,
+  "llm": "agent",
+  "why": [
+   "The xx shares Bon Iver's intimate, artistic approach to indie rock and introspection with minimal, delicate production.",
+   "Arcade Fire's The Suburbs echoes Fleet Foxes' emotional depth and use of baroque pop arrangements with accordion and piano.",
+   "Bob Dylan's Blood On the Tracks is a classic of the singer-songwriter tradition that both Bon Iver and Fleet Foxes draw from.",
+   "Lost in Translation captures the same reflective, melancholic mood as your favorite artists with its postmodern sensibility.",
+   "Moonrise Kingdom is a Wes Anderson film steeped in nostalgia and understated emotion, resonating with the careful beauty your taste loves."
+  ]
+ },
+ "v31": {
+  "ids": [
+   "c288",
+   "c269",
+   "c212",
+   "c054",
+   "c348"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 1,
+  "llm": "agent",
+  "why": [
+   "Silent Hill 2 for PS5 - a masterclass in psychological horror and the best in the series, with a creepy atmosphere and strong narrative that matches your taste exactly.",
+   "Mulholland Drive on Blu-ray - David Lynch's atmospheric murder story captures the same dense, surreal sensibility as Twin Peaks with hallucination and mystery throughout.",
+   "Donnie Darko on Blu-ray - an original story with psychological depth and the same kind of narrative complexity that appeals to Radiohead fans.",
+   "Pixies: Doolittle on vinyl - an innovative rock album with psychology and energetic songwriting that influenced the alternative sound you love.",
+   "Loved by fans of Radiohead, by Qloo's count."
+  ]
+ },
+ "v32": {
+  "ids": [
+   "c223",
+   "c155",
+   "c135",
+   "c242",
+   "c289"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 1,
+  "llm": "agent",
+  "why": [
+   "Spider-Man: Into the Spider-Verse direct match - the exact movie he loves in 4K UHD format for $19.",
+   "Rick Riordan: Percy Jackson and the Last Olympian - his favourite book series at $23, perfect for a fan of the entire franchise.",
+   "Rick Riordan: The Tower of Nero - another Percy Jackson adventure with fantasy and young adult storytelling, at just $13.",
+   "Spider-Man: Far from Home in 4K UHD Blu-ray - continues the Spider-Verse universe with the same creators and cast at $18.",
+   "Goat Simulator for Nintendo Switch - cartoony physics-driven game with casual fun and bug-exploiting humour that matches the playful creativity of Minecraft at $25."
+  ]
+ },
+ "v33": {
+  "ids": [
+   "c030",
+   "c210",
+   "c248",
+   "c213",
+   "c327"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 0,
+  "llm": "agent",
+  "why": [
+   "Adele's melancholic, passionate vocals echo Lana Del Rey's emotional depth and cinematic sensibility.",
+   "Loved by fans of La La Land, by Qloo's count.",
+   "Loved by fans of La La Land, by Qloo's count.",
+   "Loved by fans of La La Land, by Qloo's count.",
+   "Loved by fans of La La Land, by Qloo's count."
+  ]
+ },
+ "v34": {
+  "ids": [
+   "c240",
+   "c237",
+   "c275",
+   "c074",
+   "c004"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 11,
+  "llm": "agent",
+  "why": [
+   "Quentin Tarantino's masterpiece with vulgarity, unpredictable storytelling, and an ensemble cast.",
+   "Tarantino's epic war film with spies and original screenplay that connects your taste for bold filmmaking.",
+   "Grand Theft Auto V for PlayStation 5 with photorealistic cinematic open-world gameplay and heist missions.",
+   "Alice Cooper's theatrical hard rock album from 1975 that echoes the shock and intensity of Black Sabbath.",
+   "Iron Maiden's complex melodic rock album with explicit Black Sabbath influence and social themes."
+  ]
+ },
+ "v35": {
+  "ids": [
+   "c012",
+   "c307",
+   "c279",
+   "c040",
+   "c003"
+  ],
+  "question": null,
+  "turns": 3,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 1,
+  "llm": "agent",
+  "why": [
+   "Pink Floyd: The Wall appeals to his love of Led Zeppelin with its classic rock roots and progressive, atmospheric sound from 1979.",
+   "Bloodborne matches his Witcher 3 taste with dark fantasy worldbuilding, realistic 3D gameplay, and deep lore in a challenging gothic setting.",
+   "Kingdom Come: Deliverance shares Game of Thrones' immersive historical worldbuilding with realistic combat, deep role-playing, and challenging difficulty on PlayStation 4.",
+   "The Doors: The Doors captures the psychedelic rock and charismatic gothic atmosphere that complements his Led Zeppelin appreciation.",
+   "Nirvana's self-titled LP offers alternative rock with emotional depth and melodic craft that echoes Led Zeppelin's influence on modern rock."
+  ]
+ },
+ "v36": {
+  "ids": [
+   "c123",
+   "c143",
+   "c034",
+   "c051",
+   "c335"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 1,
+  "llm": "agent",
+  "why": [
+   "Read by fans of Heartstopper, by Qloo's count.",
+   "Alice Oseman's Solitaire, young adult romance with mental health themes and LGBT characters perfect for Heartstopper fans",
+   "TWICE K-Pop vinyl - energetic synthpop with the same polished, catchy sound as BTS",
+   "Red Velvet's Perfect Velvet album on vinyl, dance pop with choreographed performances and the loyalty appeal of K-Pop fandom",
+   "Crash Landing on You complete series, Korean romantic comedy with adventure and protection themes that bridges her love of Squid Game and character-driven storytelling"
+  ]
+ },
+ "v37": {
+  "ids": [
+   "c293",
+   "c320",
+   "c021",
+   "c088",
+   "c380"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 0,
+  "llm": "agent",
+  "why": [
+   "Loved by fans of Severance, by Qloo's count.",
+   "Outer Wilds is a time-loop puzzle game that's thought-provoking and philosophically profound, matching the cerebral unease of Severance and the existential dread in Kafka's work.",
+   "Radiohead's OK Computer (1997) is an experimental art rock album exploring technology, alienation and anxiety - the sonic equivalent of Black Mirror's critique of modern society.",
+   "Portishead's Dummy (1994) creates a cinematic, minimalist atmosphere that's psychologically unsettling. Its trip hop sound mirrors the tension and dread of Severance's soundscape.",
+   "Loved by fans of Black Mirror, by Qloo's count."
+  ]
+ },
+ "v38": {
+  "ids": [
+   "c039",
+   "c074",
+   "c384",
+   "c298",
+   "c171"
+  ],
+  "question": null,
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 0,
+  "llm": "agent",
+  "why": [
+   "Scorpions: Blackout, LP. Heavy Metal, Hard Rock with engaging vocals and melodic riffs that align with your Metallica taste. 1982 vinyl pressing at $24.",
+   "Alice Cooper: Welcome to My Nightmare, LP. Hard Rock and Shock Rock with theatrical presentation. 1975 vinyl at $30, matching the heavy edge you seek.",
+   "Dark Souls (Nintendo Switch). Challenging dark fantasy game with gothic, realistic aesthetics. Shares the intense, rewarding gameplay spirit of Doom at $22.",
+   "The Witcher 3: Wild Hunt (PlayStation 5). Rich narrative with branching choices and immersive worldbuilding. Captures the complex, expansive feel of Mad Max's universe at $20.",
+   "Philip K. Dick: The Man in the High Castle. Dystopian alternate history science fiction. Philip K. Dick's worldbuilding resonates with Mad Max's post-apocalyptic sensibility at $27."
+  ]
+ },
+ "v39": {
+  "ids": [
+   "c170",
+   "c264",
+   "c095",
+   "c339",
+   "c278"
+  ],
+  "question": null,
+  "turns": 3,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 0,
+  "llm": "agent",
+  "why": [
+   "The original Coraline book by Neil Gaiman - a classic fantasy horror that she already loves in film",
+   "Hereditary: supernatural horror from Ari Aster with mature themes and tragic atmosphere she'll connect with",
+   "Olivia Rodrigo vinyl: indie pop rock with youthful anthems similar to Billie Eilish's expressive songwriting",
+   "The Midnight Club box set: horror drama with haunted, contemplative tone that matches her Wednesday love",
+   "Until Dawn game: cinematic choice-driven experience with teen horror atmosphere and campy slasher vibe"
+  ]
+ },
+ "v40": {
+  "ids": [
+   "c373",
+   "c386",
+   "c290",
+   "c008",
+   "c026"
+  ],
+  "question": null,
+  "turns": 3,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "qloo": 1,
+  "llm": "agent",
+  "why": [
+   "Spirited Away by Hayao Miyazaki and Studio Ghibli, with Joe Hisaishi's score. The foundational Studio Ghibli film you'll treasure. 2001 Blu-ray.",
+   "Stardew Valley for Nintendo Switch. Pixel art, cozy, addictive gameplay with deep progression - matches the meditative storytelling you love across your tastes.",
+   "Genshin Impact for PlayStation 5. Cel-shaded anime-style open world with beautiful art direction similar to Studio Ghibli's visual language.",
+   "Lana Del Rey: Born To Die, LP. Melancholic dream pop with intimacy and alternative rock undertones that complement Hozier's emotional depth.",
+   "Florence + the Machine: How Big, How Blue, How Beautiful Deluxe, LP. Indie rock with poetic, dynamic spirituality - shared sensibilities with Hozier's folk and emotional intensity."
+  ]
+ }
+}

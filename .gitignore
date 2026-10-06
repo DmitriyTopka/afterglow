@@ -12,3 +12,8 @@ eval/results/*.json
 !eval/results/.gitkeep
 .DS_Store
 data/coverage/
+docs/video/raw/
+docs/video/frames/
+docs/compare/
+.playwright-mcp/
+docs/outreach/

@@ -3,7 +3,7 @@ import { QlooUnavailable } from "@/lib/qloo/client";
 import { coldStart } from "@/lib/agent/coldstart";
 import type { QlooCall } from "@/lib/qloo/client";
 import type { QlooEntityType } from "@/lib/qloo/types";
-import { allow } from "@/lib/limits";
+import { allow, isEntityId } from "@/lib/limits";
 
 export const maxDuration = 60;
 
@@ -13,15 +13,15 @@ const PRE = cycle.placements as Record<string, unknown>;
 const TYPES = new Set(["urn:entity:artist", "urn:entity:book", "urn:entity:movie", "urn:entity:videogame", "urn:entity:tv_show"]);
 let day = "";
 let used = 0;
-const DAILY_LIVE = 25;
+const DAILY_LIVE = 10;
 
 export async function POST(req: Request) {
   const body = (await req.json().catch(() => ({}))) as { entity_id?: string; type?: string };
-  const id = typeof body.entity_id === "string" ? body.entity_id.slice(0, 64) : "";
+  const id = isEntityId(body.entity_id) ? body.entity_id : "";
   const type = typeof body.type === "string" && TYPES.has(body.type) ? (body.type as QlooEntityType) : null;
   if (!id || !type) return Response.json({ error: "entity_id and a sellable type are required" }, { status: 400 });
   if (PRE[id]) return Response.json({ placement: PRE[id], calls: 0, precomputed: true });
-  const gate = allow(req, 5, 25);
+  const gate = allow(req, "place", 5, 10);
   if (!gate.ok) return Response.json({ error: gate.reason }, { status: 429 });
   const today = new Date().toISOString().slice(0, 10);
   if (today !== day) { day = today; used = 0; }

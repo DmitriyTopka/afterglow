@@ -16,7 +16,7 @@ export async function POST(req: Request) {
   if (!message) return Response.json({ error: "message is required" }, { status: 400 });
   const recorded = body.live === true ? undefined : SAVED[message]; // live: true runs an example for real
   if (!recorded) {
-    const gate = allow(req);
+    const gate = allow(req, "live");
     if (!gate.ok) return Response.json({ error: gate.reason }, { status: 429 });
   }
   const enc = new TextEncoder();

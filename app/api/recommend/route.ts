@@ -13,7 +13,7 @@ export async function POST(req: Request) {
   const message = typeof body.message === "string" ? body.message.trim().slice(0, 600) : "";
   if (!message) return Response.json({ error: "message is required" }, { status: 400 });
   if (SAVED[message]) return Response.json({ ...(SAVED[message] as object), saved: true });
-  const gate = allow(req);
+  const gate = allow(req, "recommend");
   if (!gate.ok) return Response.json({ error: gate.reason }, { status: 429 });
   try {
     return Response.json(await runAgentic(message));

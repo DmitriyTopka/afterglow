@@ -8,7 +8,7 @@ import { LightMap } from "@/app/components/LightMap";
 import { HowItWorks } from "@/app/components/HowItWorks";
 import { ShopByTaste } from "@/app/components/ShopByTaste";
 import Link from "next/link";
-import { recordDemand } from "@/lib/cycle";
+import { addedTitles, coverage, fmtPct, myDemand, recordDemand, seedDemand, suggestions, type DemandRow } from "@/lib/cycle";
 
 // An empty box still works: Find picks runs the example in the placeholder.
 const PLACEHOLDER = "My cousin quotes Tarantino and plays The Last of Us. Under $60.";
@@ -28,6 +28,13 @@ export default function Page() {
   const [result, setResult] = useState<AgentResult | null>(null);
   const [error, setError] = useState<string | null>(null);
   const shelf = useRef<HTMLElement>(null);
+  // The owner's numbers for the hero: the demo demand plus this visitor's own requests.
+  const [mine, setMine] = useState<DemandRow[]>([]);
+  const [added, setAdded] = useState<Set<string>>(new Set());
+  useEffect(() => { setMine(myDemand()); setAdded(new Set(addedTitles().map((a) => a.entity_id))); }, [result]);
+  const rows = [...seedDemand, ...mine];
+  const lost = 1 - coverage(rows, added);
+  const missingTitles = suggestions(rows, added).length;
   // The answer lands below the fold: bring it into view so "Find picks" visibly did something.
   useEffect(() => { if (result) shelf.current?.scrollIntoView({ behavior: "smooth", block: "start" }); }, [result]);
 
@@ -55,23 +62,29 @@ export default function Page() {
     <main className="shop">
       <Header side="shopper" />
 
-      <section className="band has-photo">
+      <section className="band has-photo home-band">
         <img className="band-photo" src="/brand/hero-a.jpg" alt="" />
-        <h1>Say what they&apos;re into. We&apos;ll pull it from the crates.</h1>
-        <p className="lb-lede">Tell us who the gift is for and what they love. Five picks from the whole store, and the shop learns what it&apos;s missing.</p>
-        <div className="lb-tabs scroll-x">
-          <span>Watch it work:</span>
-          {EXAMPLES.slice(0, 3).map((ex, i) => <Link key={ex.label} href={`/live?ex=${i}`} className="lb-tab">{ex.label}</Link>)}
-        </div>
+        <p className="lb-kicker">A record, book and film shop run by two Claude agents on Qloo</p>
+        <h1>Your shop sees what sold. Afterglow sees what walked out.</h1>
+        <p className="lb-lede">Tell the shop assistant who the gift is for. It picks five titles from the shelves, and every title it could not find goes on the owner&apos;s restock list.</p>
+        <dl className="hero-stats">
+          <div><dt>{fmtPct(lost)}</dt><dd>of what these shoppers&apos; tastes love is not on the shelves</dd></div>
+          <div><dt>{rows.length}</dt><dd>shopper requests so far{mine.length ? `, ${mine.length} of them yours` : ""}</dd></div>
+          <div><dt>{missingTitles}</dt><dd>titles shoppers asked for and left without</dd></div>
+        </dl>
         <form className="lb-ask" style={{ marginTop: 16 }} onSubmit={(e) => { e.preventDefault(); run(text.trim() || PLACEHOLDER); }}>
           <label htmlFor="ask" className="sr-only">What are they into?</label>
-          <textarea id="ask" value={text} onChange={(e) => setText(e.target.value)} placeholder={PLACEHOLDER} />
-          <button className="lb-go" disabled={busy}>{busy ? "Digging…" : "Find picks"}</button>
+          <textarea id="ask" value={text} onChange={(e) => setText(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); e.currentTarget.form?.requestSubmit(); } }} placeholder={PLACEHOLDER} />
+          <button className="lb-go" disabled={busy}>{busy ? "Digging…" : "Find the gift"}</button>
         </form>
         {error && <p className="error">{error}</p>}
+        <div className="lb-tabs scroll-x" style={{ marginTop: 14 }}>
+          <span>Or watch one:</span>
+          {EXAMPLES.slice(0, 3).map((ex, i) => <Link key={ex.label} href={`/live?ex=${i}`} className="lb-tab">{ex.label}</Link>)}
+        </div>
         <p className="band-links">
-          <Link href="/live" className="pill">Watch the shopper and the owner side by side →</Link>
-          <Link href="/owner" className="band-link">Run a shop? See the owner&apos;s view →</Link>
+          <Link href="/owner" className="pill">Open the owner&apos;s restock plan →</Link>
+          <Link href="/live" className="band-link">Watch both sides at once →</Link>
         </p>
       </section>
 
@@ -94,6 +107,7 @@ export default function Page() {
                 <small>{p.item.category}</small>
                 <h3>{p.item.title}</h3>
                 <p>{p.why || reason(p)}</p>
+                {p.basis && <em className="basis">{p.basis}</em>}
               </Link>
             ))}
           </div>

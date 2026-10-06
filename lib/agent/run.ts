@@ -24,6 +24,7 @@ export interface Pick {
   chain: Array<{ signal: string; contribution: number }>;
   why: string;
   direct: string[]; // signals this item is made by or belongs to (shop metadata, not Qloo)
+  basis?: string; // the Qloo fact behind the pick, built from data (never from the model's words)
 }
 
 export interface AgentResult {

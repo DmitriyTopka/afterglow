@@ -633,7 +633,8 @@
     "why": "Direct match: Murakami's masterpiece about memory and loss.",
     "direct": [
      "Haruki Murakami"
-    ]
+    ],
+    "basis": "By Haruki Murakami, named in the request."
    },
    {
     "item": {
@@ -677,7 +678,8 @@
      }
     ],
     "why": "The Cure shares Joy Division's post-punk melancholy sensibility.",
-    "direct": []
+    "direct": [],
+    "basis": "Qloo: #1 of 113 records here for fans of Joy Division."
    },
    {
     "item": {
@@ -726,7 +728,8 @@
      }
     ],
     "why": "Eternal Sunshine echoes Murakami's meditative exploration of memory.",
-    "direct": []
+    "direct": [],
+    "basis": "Qloo: #2 of 90 films here for fans of Joy Division."
    },
    {
     "item": {
@@ -771,7 +774,8 @@
      }
     ],
     "why": "Shadow of the Colossus offers haunting, atmospheric storytelling like both tastes.",
-    "direct": []
+    "direct": [],
+    "basis": "Qloo: #1 of 49 games here for fans of Joy Division."
    },
    {
     "item": {
@@ -820,7 +824,8 @@
      }
     ],
     "why": "Black Mirror's dark psychological themes resonate with his introspective nature.",
-    "direct": []
+    "direct": [],
+    "basis": "Qloo: #1 of 34 TV shows here for fans of Joy Division."
    }
   ],
   "savedAt": "2026-10-06T12:26:13.192Z"
@@ -1458,7 +1463,8 @@
     "why": "Spirited Away Blu-ray: direct Studio Ghibli masterpiece, magical and visually stunning.",
     "direct": [
      "Studio Ghibli"
-    ]
+    ],
+    "basis": "By Studio Ghibli, named in the request."
    },
    {
     "item": {
@@ -1502,7 +1508,8 @@
      }
     ],
     "why": "Florence + the Machine deluxe vinyl: ethereal indie pop echoing Lana Del Rey's aesthetic.",
-    "direct": []
+    "direct": [],
+    "basis": "Qloo: #1 of 112 records here for fans of Lana Del Rey."
    },
    {
     "item": {
@@ -1551,7 +1558,8 @@
      }
     ],
     "why": "Stardew Valley: cozy farming game with Studio Ghibli's gentle charm and whimsy.",
-    "direct": []
+    "direct": [],
+    "basis": "Qloo: #2 of 49 games here for fans of Studio Ghibli."
    },
    {
     "item": {
@@ -1595,7 +1603,8 @@
      }
     ],
     "why": "Ellie Goulding LP: atmospheric pop aligned with Lana Del Rey's dreamy sonic palette.",
-    "direct": []
+    "direct": [],
+    "basis": "Qloo: #2 of 112 records here for fans of Lana Del Rey."
    },
    {
     "item": {
@@ -1643,7 +1652,8 @@
      }
     ],
     "why": "Cassandra Clare's Chain of Gold: romantic fantasy with melancholic beauty Lana fans love.",
-    "direct": []
+    "direct": [],
+    "basis": "Qloo: #1 of 97 books here for fans of Lana Del Rey."
    }
   ],
   "savedAt": "2026-10-06T12:26:22.694Z"
@@ -2306,7 +2316,8 @@
     "why": "Moonrise Kingdom captures the whimsy and precision that defines Wes Anderson's vision",
     "direct": [
      "Wes Anderson"
-    ]
+    ],
+    "basis": "By Wes Anderson, named in the request."
    },
    {
     "item": {
@@ -2363,7 +2374,8 @@
     "why": "Lost in Translation is Sofia Coppola's meditative masterpiece about solitude and connection",
     "direct": [
      "Sofia Coppola"
-    ]
+    ],
+    "basis": "By Sofia Coppola, named in the request."
    },
    {
     "item": {
@@ -2415,7 +2427,8 @@
      }
     ],
     "why": "Thelonious Monk echoes the contemplative late-night mood of Miles Davis records",
-    "direct": []
+    "direct": [],
+    "basis": "Qloo: #2 of 112 records here for fans of Miles Davis."
    },
    {
     "item": {
@@ -2468,7 +2481,8 @@
      }
     ],
     "why": "Outer Wilds offers Wes Anderson-like precision in an explorer's dreamlike universe",
-    "direct": []
+    "direct": [],
+    "basis": "Qloo: #1 of 49 games here for fans of Wes Anderson."
    },
    {
     "item": {
@@ -2516,7 +2530,8 @@
      }
     ],
     "why": "Catcher in the Rye resonates with the introspective sensibility Miles Davis fans cherish",
-    "direct": []
+    "direct": [],
+    "basis": "Qloo: #2 of 97 books here for fans of Miles Davis."
    }
   ],
   "savedAt": "2026-10-06T12:26:28.258Z"
@@ -3079,7 +3094,7 @@
     },
     {
      "entity_id": "F6754C46-B3E7-457F-8B7E-06C613597320",
-     "name": "Beyoncé",
+     "name": "Beyonc\u00e9",
      "type": "urn:entity:artist",
      "image": null,
      "affinity": 0.9479962308205723,
@@ -3157,7 +3172,8 @@
      }
     ],
     "why": "Katy Perry's Deluxe PRISM vinyl pairs Taylor Swift energy with pop perfection you'll love.",
-    "direct": []
+    "direct": [],
+    "basis": "Qloo: #2 of 112 records here for fans of Taylor Swift."
    },
    {
     "item": {
@@ -3204,7 +3220,8 @@
      }
     ],
     "why": "The Fault in Our Stars has the emotional depth and cozy intimacy of The House in the Cerulean Sea.",
-    "direct": []
+    "direct": [],
+    "basis": "Qloo: #2 of 90 films here for fans of Taylor Swift."
    },
    {
     "item": {
@@ -3254,7 +3271,8 @@
      }
     ],
     "why": "Nashville series blends music and character-driven storytelling perfect for both your tastes.",
-    "direct": []
+    "direct": [],
+    "basis": "Qloo: #1 of 34 TV shows here for fans of Taylor Swift."
    },
    {
     "item": {
@@ -3263,7 +3281,7 @@
      "price_usd": 25,
      "qloo": {
       "type": "urn:entity:artist",
-      "name": "Beyoncé",
+      "name": "Beyonc\u00e9",
       "entity_id": "F6754C46-B3E7-457F-8B7E-06C613597320"
      },
      "tags": [
@@ -3279,15 +3297,15 @@
      "popularity": 0.999882036057645,
      "image": "https://is1-ssl.mzstatic.com/image/thumb/Music/03/c5/d4/mzi.ldvrmhxt.jpg/600x600bb.jpg",
      "image_source": "itunes",
-     "title": "Beyoncé: Dangerously in Love, LP",
+     "title": "Beyonc\u00e9: Dangerously in Love, LP",
      "creators": [
-      "Beyoncé"
+      "Beyonc\u00e9"
      ],
      "works": [
       "Dangerously in Love"
      ],
      "year": "2003",
-     "blurb": "Beyoncé Giselle Knowles-Carter is an American singer, songwriter, actress and businesswoman who rose to fame as lead singer of Destiny's Child before establishing a massively successful solo career no"
+     "blurb": "Beyonc\u00e9 Giselle Knowles-Carter is an American singer, songwriter, actress and businesswoman who rose to fame as lead singer of Destiny's Child before establishing a massively successful solo career no"
     },
     "affinity": 0.9479962308205723,
     "lift": 1.394533202572255,
@@ -3297,8 +3315,9 @@
       "contribution": 1
      }
     ],
-    "why": "Beyoncé's Dangerously in Love vinyl: classic pop excellence aligned with Taylor Swift's era.",
-    "direct": []
+    "why": "Beyonc\u00e9's Dangerously in Love vinyl: classic pop excellence aligned with Taylor Swift's era.",
+    "direct": [],
+    "basis": "Qloo: #3 of 112 records here for fans of Taylor Swift."
    },
    {
     "item": {
@@ -3348,7 +3367,8 @@
      }
     ],
     "why": "Beauty and the Beast film delivers the magical, comforting fantasy vibes you crave.",
-    "direct": []
+    "direct": [],
+    "basis": "Qloo: #3 of 90 films here for fans of Taylor Swift."
    }
   ],
   "note": "We carry several titles Taylor Swift fans adore. For more cozy fantasy reads like House in the Cerulean Sea, ask us about special orders.",

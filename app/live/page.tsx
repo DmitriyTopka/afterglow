@@ -13,7 +13,7 @@ import { addTitle, addedTitles, coverage, fmtPct, myDemand, recordDemand, seedDe
 type Step = { kind?: string; label: string; detail?: string; status: string; light?: Record<string, number> };
 // One plain word per kind of step, shown on the step's badge.
 const STEP_WORD: Record<string, string> = { lookup: "Find", score: "Score", rank: "Pick", read: "Read", filter: "Filter" };
-type Result = { picks: Array<{ item: { id: string; title: string; category: string; price_usd: number }; why: string }>; gap?: { wanted: WantedTitle[] } | null; question?: string; extraction?: { signals: Array<{ name: string }> } };
+type Result = { picks: Array<{ item: { id: string; title: string; category: string; price_usd: number }; why: string; basis?: string }>; gap?: { wanted: WantedTitle[] } | null; question?: string; extraction?: { signals: Array<{ name: string }> } };
 const KIND: Record<string, string> = { "urn:entity:artist": "Vinyl", "urn:entity:movie": "Film", "urn:entity:book": "Book", "urn:entity:videogame": "Game", "urn:entity:tv_show": "TV" };
 const pct = fmtPct;
 
@@ -102,7 +102,7 @@ export default function Live() {
     }
   }
 
-  const owned = result?.gap?.wanted.filter((w) => w.owned).length ?? 0;
+  const owned = result?.gap?.wanted.filter((w) => w.owned || addedIds.has(w.entity_id)).length ?? 0; // stocked titles count as carried
   const wantedN = result?.gap?.wanted.length ?? 0;
   return (
     <main className="shop live-b">
@@ -121,7 +121,7 @@ export default function Live() {
         <section className="lb-shopper">
           <p className="lb-label"><span>1</span> The shopper</p>
           <form className="lb-ask" onSubmit={(e) => { e.preventDefault(); if (text.trim()) run(text); }}>
-            <textarea value={text} onChange={(e) => setText(e.target.value)} aria-label="What are they into?" placeholder="Who is it for, and what are they into?" />
+            <textarea value={text} onChange={(e) => setText(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); e.currentTarget.form?.requestSubmit(); } }} aria-label="What are they into?" placeholder="Who is it for, and what are they into?" />
             <button className="lb-go" disabled={running || !text.trim()}>{running ? "Working…" : "Ask the assistant"}</button>
           </form>
           <ol className="lb-steps" ref={feed} aria-live="polite">
@@ -156,7 +156,7 @@ export default function Live() {
                   </button>
                 ))}
               </div>
-              {missing.length > 0 && <p className="lb-note">Tap one to stock it: Qloo places it on the store map and coverage goes up.</p>}
+              {placing ? <p className="lb-note placing">Placing it on the store map with Qloo (36 reference tastes)…</p> : missing.length > 0 && <p className="lb-note">Tap one to stock it: Qloo places it on the store map and coverage goes up.</p>}
             </div>
           ) : (
             <p className="lb-wait">Waiting for a request. When the assistant checks the shelves, the titles we don&apos;t carry land here.</p>
@@ -176,6 +176,7 @@ export default function Live() {
                 <small>{p.item.category}</small>
                 <h3>{p.item.title}</h3>
                 {p.why && <p>{p.why}</p>}
+                {p.basis && <em className="basis">{p.basis}</em>}
               </Link>
             ))}
           </div>

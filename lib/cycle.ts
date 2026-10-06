@@ -29,8 +29,9 @@ export function resetLoop() { write(KD, []); write(KA, []); }
 export const fmtPct = (x: number) => `${(x * 100).toFixed(1)}%`;
 
 export function coverage(rows: DemandRow[], added: Set<string>): number {
-  if (!rows.length) return 0;
-  return rows.reduce((s, r) => s + r.wanted.filter((w) => w.owned || added.has(w.entity_id)).length / r.wanted.length, 0) / rows.length;
+  const real = rows.filter((r) => r.wanted.length > 0); // an empty row would divide by zero
+  if (!real.length) return 0;
+  return real.reduce((s, r) => s + r.wanted.filter((w) => w.owned || added.has(w.entity_id)).length / r.wanted.length, 0) / real.length;
 }
 
 /** Missing titles ranked by how much coverage the store gains by stocking them (the agent's suggestion). */

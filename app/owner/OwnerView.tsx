@@ -6,6 +6,7 @@ import catalog from "@/data/catalog.json";
 import owner from "@/data/owner.json";
 import { CrateList, TasteMap, type Pin } from "@/app/components/TasteMap";
 import { Cover } from "@/app/components/Cover";
+import { ImportShelf } from "./ImportShelf";
 import { addTitle, addedTitles, coverage, myDemand, fmtPct, resetLoop, seedDemand, suggestions, type Added, type DemandRow } from "@/lib/cycle";
 
 type Section = (typeof owner.sections)[number];
@@ -20,7 +21,7 @@ export function OwnerView() {
   const [busy, setBusy] = useState<string | null>(null);
   const [log, setLog] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [plan, setPlan] = useState<null | { steps: Array<{ label: string }>; picks: Array<{ entity_id: string; name: string; type: string; image: string | null; askedBy: number; reason: string }>; summary: string; before: number; after: number }>(null);
+  const [plan, setPlan] = useState<null | { steps: Array<{ label: string }>; picks: Array<{ entity_id: string; name: string; type: string; image: string | null; askedBy: number; reason: string; audience?: string | null; tastes?: string[]; placement?: { clusterName: string } | null }>; summary: string; before: number; after: number }>(null);
   const [planning, setPlanning] = useState(false);
 
   async function askAgent() {
@@ -109,7 +110,12 @@ export function OwnerView() {
                   return (
                     <div key={p.entity_id} className="ap-pick">
                       <Cover src={p.image} name={p.name} type={p.type} className="noimg" />
-                      <div><strong>{p.name}</strong><span>{KIND[p.type]} · wanted by {p.askedBy}</span><p>{p.reason}</p></div>
+                      <div><strong>{p.name}</strong><span>{KIND[p.type]} · wanted by {p.askedBy}</span><p>{p.reason}</p>
+                        <ul className="ap-facts">
+                          {p.tastes && p.tastes.length > 0 && <li>Asked for by fans of {p.tastes.join(", ")}</li>}
+                          {p.placement && <li>Would shelve in {p.placement.clusterName} (Qloo taste map)</li>}
+                          {p.audience && <li>Fans: {p.audience.toLowerCase()} (Qloo demographics)</li>}
+                        </ul></div>
                       <button type="button" className="stock-btn" disabled={done || busy !== null || !s} onClick={() => s && stock(s)}>{done ? "On the shelf" : busy === p.entity_id ? "Placing…" : "Add to shelf"}</button>
                     </div>
                   );
@@ -138,6 +144,8 @@ export function OwnerView() {
         </div>
       </div>
       </section>
+
+      <ImportShelf rows={rows} demoCoverage={base} />
 
       <section className="blk blk-ink owner-map">
       <div className="blk-head"><h2>Your shelves, by who loves them</h2><p>Pick a section to see who shops it and what its audience loves that you don&apos;t carry.</p></div>
