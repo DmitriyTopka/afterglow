@@ -1,0 +1,439 @@
+[
+ {
+  "id": "v01",
+  "group": "in_store",
+  "hit": true,
+  "bestAff": 0.9446462042957365,
+  "section": 5,
+  "signals": [
+   "Radiohead",
+   "OK Computer"
+  ]
+ },
+ {
+  "id": "v02",
+  "group": "in_store",
+  "hit": true,
+  "bestAff": 0.932730814814857,
+  "section": 5,
+  "signals": [
+   "Dune: Part Two",
+   "Interstellar"
+  ]
+ },
+ {
+  "id": "v03",
+  "group": "in_store",
+  "hit": false,
+  "bestAff": 0.9164533851787042,
+  "section": 6,
+  "signals": [
+   "The Hunger Games"
+  ]
+ },
+ {
+  "id": "v04",
+  "group": "in_store",
+  "hit": true,
+  "bestAff": 0.9800843421179822,
+  "section": 0,
+  "signals": [
+   "Miles Davis",
+   "John Coltrane"
+  ]
+ },
+ {
+  "id": "v05",
+  "group": "in_store",
+  "hit": true,
+  "bestAff": 0.8935379277167274,
+  "section": 8,
+  "signals": [
+   "Elden Ring"
+  ]
+ },
+ {
+  "id": "v06",
+  "group": "in_store",
+  "hit": false,
+  "bestAff": 0.9385736059644564,
+  "section": 5,
+  "signals": [
+   "The Grand Budapest Hotel"
+  ]
+ },
+ {
+  "id": "v07",
+  "group": "in_store",
+  "hit": true,
+  "bestAff": 0.945533072717682,
+  "section": 5,
+  "signals": [
+   "Fleetwood Mac",
+   "Rumours",
+   "Eagles"
+  ]
+ },
+ {
+  "id": "v08",
+  "group": "in_store",
+  "hit": true,
+  "bestAff": 0.9517860579963254,
+  "section": 2,
+  "signals": [
+   "Breaking Bad"
+  ]
+ },
+ {
+  "id": "v09",
+  "group": "in_store",
+  "hit": true,
+  "bestAff": 0.9532033685567515,
+  "section": 5,
+  "signals": [
+   "Studio Ghibli",
+   "Spirited Away"
+  ]
+ },
+ {
+  "id": "v10",
+  "group": "in_store",
+  "hit": true,
+  "bestAff": 0.9666379041407961,
+  "section": 6,
+  "signals": [
+   "Taylor Swift"
+  ]
+ },
+ {
+  "id": "v11",
+  "group": "in_store",
+  "hit": true,
+  "bestAff": 0.9350034312819925,
+  "section": 4,
+  "signals": [
+   "Stranger Things"
+  ]
+ },
+ {
+  "id": "v12",
+  "group": "in_store",
+  "hit": true,
+  "bestAff": 0.9662593696453299,
+  "section": 5,
+  "signals": [
+   "Arctic Monkeys",
+   "Kasabian"
+  ]
+ },
+ {
+  "id": "v13",
+  "group": "in_store",
+  "hit": false,
+  "bestAff": 0.9720501997999018,
+  "section": 2,
+  "signals": [
+   "J.R.R. Tolkien",
+   "The Hobbit",
+   "The Lord of the Rings"
+  ]
+ },
+ {
+  "id": "v14",
+  "group": "in_store",
+  "hit": true,
+  "bestAff": 0.9636725432849986,
+  "section": 0,
+  "signals": [
+   "The Last of Us"
+  ]
+ },
+ {
+  "id": "v15",
+  "group": "not_in_store",
+  "hit": true,
+  "bestAff": 0.9393837531088316,
+  "section": 7,
+  "signals": [
+   "Mitski",
+   "Phoebe Bridgers"
+  ]
+ },
+ {
+  "id": "v16",
+  "group": "not_in_store",
+  "hit": true,
+  "bestAff": 0.9517085546813007,
+  "section": 2,
+  "signals": [
+   "Bruce Springsteen"
+  ]
+ },
+ {
+  "id": "v17",
+  "group": "not_in_store",
+  "hit": true,
+  "bestAff": 0.9531221923047829,
+  "section": 0,
+  "signals": [
+   "Ridley Scott",
+   "Alien",
+   "Blade Runner"
+  ]
+ },
+ {
+  "id": "v18",
+  "group": "not_in_store",
+  "hit": true,
+  "bestAff": 0.9662948164425934,
+  "section": 5,
+  "signals": [
+   "The Strokes"
+  ]
+ },
+ {
+  "id": "v19",
+  "group": "not_in_store",
+  "hit": false,
+  "bestAff": 0,
+  "signals": [
+   "Harry Potter"
+  ]
+ },
+ {
+  "id": "v20",
+  "group": "not_in_store",
+  "hit": false,
+  "bestAff": 0.92455961085987,
+  "section": 4,
+  "signals": [
+   "Sally Rooney"
+  ]
+ },
+ {
+  "id": "v21",
+  "group": "not_in_store",
+  "hit": true,
+  "bestAff": 0.9368172799395974,
+  "section": 0,
+  "signals": [
+   "Stanley Kubrick",
+   "The Shining",
+   "2001: A Space Odyssey"
+  ]
+ },
+ {
+  "id": "v22",
+  "group": "not_in_store",
+  "hit": false,
+  "bestAff": 0.8860245543890092,
+  "section": 0,
+  "signals": [
+   "Hollow Knight"
+  ]
+ },
+ {
+  "id": "v23",
+  "group": "not_in_store",
+  "hit": true,
+  "bestAff": 0.9620811347337891,
+  "section": 0,
+  "signals": [
+   "Joy Division"
+  ]
+ },
+ {
+  "id": "v24",
+  "group": "not_in_store",
+  "hit": true,
+  "bestAff": 0.9600589050621146,
+  "section": 5,
+  "signals": [
+   "The Sopranos"
+  ]
+ },
+ {
+  "id": "v25",
+  "group": "not_in_store",
+  "hit": false,
+  "bestAff": 0.8924387585757673,
+  "section": 8,
+  "signals": [
+   "Pride and Prejudice",
+   "Jane Austen"
+  ]
+ },
+ {
+  "id": "v26",
+  "group": "not_in_store",
+  "hit": true,
+  "bestAff": 0.824854190579968,
+  "section": 4,
+  "signals": [
+   "Pokémon"
+  ]
+ },
+ {
+  "id": "v27",
+  "group": "not_in_store",
+  "hit": true,
+  "bestAff": 0.9612466889851558,
+  "section": 5,
+  "signals": [
+   "Frank Ocean",
+   "Blonde"
+  ]
+ },
+ {
+  "id": "v28",
+  "group": "not_in_store",
+  "hit": false,
+  "bestAff": 0.9112501532219747,
+  "section": 5,
+  "signals": [
+   "Succession"
+  ]
+ },
+ {
+  "id": "v29",
+  "group": "not_in_store",
+  "hit": true,
+  "bestAff": 0.9435451245655577,
+  "section": 0,
+  "signals": [
+   "ABBA",
+   "Bee Gees"
+  ]
+ },
+ {
+  "id": "v30",
+  "group": "not_in_store",
+  "hit": true,
+  "bestAff": 0.9242499357582703,
+  "section": 0,
+  "signals": [
+   "Bon Iver",
+   "Fleet Foxes"
+  ]
+ },
+ {
+  "id": "v31",
+  "group": "multi",
+  "hit": true,
+  "bestAff": 0.9728608027648499,
+  "section": 0,
+  "signals": [
+   "Twin Peaks",
+   "Radiohead",
+   "Silent Hill"
+  ]
+ },
+ {
+  "id": "v32",
+  "group": "multi",
+  "hit": true,
+  "bestAff": 0.9636484569077114,
+  "section": 8,
+  "signals": [
+   "Minecraft",
+   "Percy Jackson",
+   "Spider-Verse"
+  ]
+ },
+ {
+  "id": "v33",
+  "group": "multi",
+  "hit": true,
+  "bestAff": 0.9267601588327001,
+  "section": 5,
+  "signals": [
+   "La La Land",
+   "Lana Del Rey",
+   "The Great Gatsby"
+  ]
+ },
+ {
+  "id": "v34",
+  "group": "multi",
+  "hit": true,
+  "bestAff": 0.963475386975734,
+  "section": 0,
+  "signals": [
+   "Tarantino",
+   "Black Sabbath",
+   "Grand Theft Auto"
+  ]
+ },
+ {
+  "id": "v35",
+  "group": "multi",
+  "hit": false,
+  "bestAff": 0.9206630422111415,
+  "section": 2,
+  "signals": [
+   "Game of Thrones",
+   "Led Zeppelin",
+   "The Witcher 3"
+  ]
+ },
+ {
+  "id": "v36",
+  "group": "multi",
+  "hit": true,
+  "bestAff": 0.9745484052983905,
+  "section": 4,
+  "signals": [
+   "BTS",
+   "Heartstopper",
+   "Squid Game"
+  ]
+ },
+ {
+  "id": "v37",
+  "group": "multi",
+  "hit": false,
+  "bestAff": 0.9551504310038167,
+  "section": 2,
+  "signals": [
+   "Severance",
+   "Black Mirror",
+   "Franz Kafka"
+  ]
+ },
+ {
+  "id": "v38",
+  "group": "multi",
+  "hit": false,
+  "bestAff": 0.9417792713738404,
+  "section": 0,
+  "signals": [
+   "Metallica",
+   "Doom",
+   "Mad Max"
+  ]
+ },
+ {
+  "id": "v39",
+  "group": "multi",
+  "hit": true,
+  "bestAff": 0.9522971303449238,
+  "section": 4,
+  "signals": [
+   "Billie Eilish",
+   "Coraline",
+   "Wednesday"
+  ]
+ },
+ {
+  "id": "v40",
+  "group": "multi",
+  "hit": true,
+  "bestAff": 0.9046581984573973,
+  "section": 0,
+  "signals": [
+   "Studio Ghibli",
+   "Zelda",
+   "Hozier"
+  ]
+ }
+]

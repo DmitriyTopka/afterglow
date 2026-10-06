@@ -1,0 +1,594 @@
+{
+ "v01": {
+  "recipient": "boyfriend",
+  "budget_usd": 35,
+  "signals": [
+   {
+    "name": "Radiohead",
+    "kind": "artist"
+   },
+   {
+    "name": "OK Computer",
+    "kind": "artist"
+   }
+  ],
+  "mode": "live"
+ },
+ "v02": {
+  "recipient": "self",
+  "budget_usd": null,
+  "signals": [
+   {
+    "name": "Dune: Part Two",
+    "kind": "movie"
+   },
+   {
+    "name": "Interstellar",
+    "kind": "movie"
+   }
+  ],
+  "mode": "live"
+ },
+ "v03": {
+  "recipient": "daughter",
+  "budget_usd": 25,
+  "signals": [
+   {
+    "name": "The Hunger Games",
+    "kind": "book"
+   }
+  ],
+  "mode": "live"
+ },
+ "v04": {
+  "recipient": "self",
+  "budget_usd": null,
+  "signals": [
+   {
+    "name": "Miles Davis",
+    "kind": "artist"
+   },
+   {
+    "name": "John Coltrane",
+    "kind": "artist"
+   }
+  ],
+  "mode": "live"
+ },
+ "v05": {
+  "recipient": "son",
+  "budget_usd": 40,
+  "signals": [
+   {
+    "name": "Elden Ring",
+    "kind": "video_game"
+   }
+  ],
+  "mode": "live"
+ },
+ "v06": {
+  "recipient": "self",
+  "budget_usd": null,
+  "signals": [
+   {
+    "name": "The Grand Budapest Hotel",
+    "kind": "movie"
+   }
+  ],
+  "mode": "live"
+ },
+ "v07": {
+  "recipient": "mom",
+  "budget_usd": 35,
+  "signals": [
+   {
+    "name": "Fleetwood Mac",
+    "kind": "artist"
+   },
+   {
+    "name": "Rumours",
+    "kind": "book"
+   },
+   {
+    "name": "Eagles",
+    "kind": "artist"
+   }
+  ],
+  "mode": "live"
+ },
+ "v08": {
+  "recipient": "self",
+  "budget_usd": null,
+  "signals": [
+   {
+    "name": "Breaking Bad",
+    "kind": "tv_show"
+   }
+  ],
+  "mode": "live"
+ },
+ "v09": {
+  "recipient": "not specified",
+  "budget_usd": 30,
+  "signals": [
+   {
+    "name": "Studio Ghibli",
+    "kind": "brand"
+   },
+   {
+    "name": "Spirited Away",
+    "kind": "movie"
+   }
+  ],
+  "mode": "live"
+ },
+ "v10": {
+  "recipient": "wife",
+  "budget_usd": null,
+  "signals": [
+   {
+    "name": "Taylor Swift",
+    "kind": "artist"
+   }
+  ],
+  "mode": "live"
+ },
+ "v11": {
+  "recipient": "14 year old",
+  "budget_usd": 60,
+  "signals": [
+   {
+    "name": "Stranger Things",
+    "kind": "tv_show"
+   }
+  ],
+  "mode": "live"
+ },
+ "v12": {
+  "recipient": "self",
+  "budget_usd": 30,
+  "signals": [
+   {
+    "name": "Arctic Monkeys",
+    "kind": "artist"
+   },
+   {
+    "name": "Kasabian",
+    "kind": "artist"
+   }
+  ],
+  "mode": "live"
+ },
+ "v13": {
+  "recipient": "self",
+  "budget_usd": null,
+  "signals": [
+   {
+    "name": "J.R.R. Tolkien",
+    "kind": "person"
+   },
+   {
+    "name": "The Hobbit",
+    "kind": "book"
+   },
+   {
+    "name": "The Lord of the Rings",
+    "kind": "book"
+   }
+  ],
+  "mode": "live"
+ },
+ "v14": {
+  "recipient": "brother",
+  "budget_usd": 45,
+  "signals": [
+   {
+    "name": "The Last of Us",
+    "kind": "video_game"
+   }
+  ],
+  "mode": "live"
+ },
+ "v15": {
+  "recipient": "self",
+  "budget_usd": null,
+  "signals": [
+   {
+    "name": "Mitski",
+    "kind": "artist"
+   },
+   {
+    "name": "Phoebe Bridgers",
+    "kind": "artist"
+   }
+  ],
+  "mode": "live"
+ },
+ "v16": {
+  "recipient": "dad",
+  "budget_usd": 35,
+  "signals": [
+   {
+    "name": "Bruce Springsteen",
+    "kind": "artist"
+   }
+  ],
+  "mode": "live"
+ },
+ "v17": {
+  "recipient": "self",
+  "budget_usd": null,
+  "signals": [
+   {
+    "name": "Ridley Scott",
+    "kind": "person"
+   },
+   {
+    "name": "Alien",
+    "kind": "movie"
+   },
+   {
+    "name": "Blade Runner",
+    "kind": "movie"
+   }
+  ],
+  "mode": "live"
+ },
+ "v18": {
+  "recipient": "self",
+  "budget_usd": 30,
+  "signals": [
+   {
+    "name": "The Strokes",
+    "kind": "artist"
+   }
+  ],
+  "mode": "live"
+ },
+ "v19": {
+  "recipient": "kid",
+  "budget_usd": null,
+  "signals": [
+   {
+    "name": "Harry Potter",
+    "kind": "book"
+   }
+  ],
+  "mode": "live"
+ },
+ "v20": {
+  "recipient": "partner",
+  "budget_usd": 25,
+  "signals": [
+   {
+    "name": "Sally Rooney",
+    "kind": "person"
+   }
+  ],
+  "mode": "live"
+ },
+ "v21": {
+  "recipient": "self",
+  "budget_usd": null,
+  "signals": [
+   {
+    "name": "Stanley Kubrick",
+    "kind": "person"
+   },
+   {
+    "name": "The Shining",
+    "kind": "movie"
+   },
+   {
+    "name": "2001: A Space Odyssey",
+    "kind": "movie"
+   }
+  ],
+  "mode": "live"
+ },
+ "v22": {
+  "recipient": "husband",
+  "budget_usd": 40,
+  "signals": [
+   {
+    "name": "Hollow Knight",
+    "kind": "video_game"
+   }
+  ],
+  "mode": "live"
+ },
+ "v23": {
+  "recipient": "self",
+  "budget_usd": null,
+  "signals": [
+   {
+    "name": "Joy Division",
+    "kind": "artist"
+   }
+  ],
+  "mode": "live"
+ },
+ "v24": {
+  "recipient": "self",
+  "budget_usd": 50,
+  "signals": [
+   {
+    "name": "The Sopranos",
+    "kind": "tv_show"
+   }
+  ],
+  "mode": "live"
+ },
+ "v25": {
+  "recipient": "girlfriend",
+  "budget_usd": null,
+  "signals": [
+   {
+    "name": "Pride and Prejudice",
+    "kind": "book"
+   },
+   {
+    "name": "Jane Austen",
+    "kind": "person"
+   }
+  ],
+  "mode": "live"
+ },
+ "v26": {
+  "recipient": "nephew",
+  "budget_usd": 40,
+  "signals": [
+   {
+    "name": "Pokémon",
+    "kind": "video_game"
+   }
+  ],
+  "mode": "live"
+ },
+ "v27": {
+  "recipient": "self",
+  "budget_usd": null,
+  "signals": [
+   {
+    "name": "Frank Ocean",
+    "kind": "artist"
+   },
+   {
+    "name": "Blonde",
+    "kind": "book"
+   }
+  ],
+  "mode": "live"
+ },
+ "v28": {
+  "recipient": "colleague",
+  "budget_usd": 70,
+  "signals": [
+   {
+    "name": "Succession",
+    "kind": "tv_show"
+   }
+  ],
+  "mode": "live"
+ },
+ "v29": {
+  "recipient": "mum",
+  "budget_usd": 40,
+  "signals": [
+   {
+    "name": "ABBA",
+    "kind": "artist"
+   },
+   {
+    "name": "Bee Gees",
+    "kind": "artist"
+   }
+  ],
+  "mode": "live"
+ },
+ "v30": {
+  "recipient": "self",
+  "budget_usd": null,
+  "signals": [
+   {
+    "name": "Bon Iver",
+    "kind": "artist"
+   },
+   {
+    "name": "Fleet Foxes",
+    "kind": "artist"
+   }
+  ],
+  "mode": "live"
+ },
+ "v31": {
+  "recipient": "self",
+  "budget_usd": null,
+  "signals": [
+   {
+    "name": "Twin Peaks",
+    "kind": "tv_show"
+   },
+   {
+    "name": "Radiohead",
+    "kind": "artist"
+   },
+   {
+    "name": "Silent Hill",
+    "kind": "video_game"
+   }
+  ],
+  "mode": "live"
+ },
+ "v32": {
+  "recipient": "son",
+  "budget_usd": 25,
+  "signals": [
+   {
+    "name": "Minecraft",
+    "kind": "video_game"
+   },
+   {
+    "name": "Percy Jackson",
+    "kind": "book"
+   },
+   {
+    "name": "Spider-Verse",
+    "kind": "movie"
+   }
+  ],
+  "mode": "live"
+ },
+ "v33": {
+  "recipient": "partner",
+  "budget_usd": null,
+  "signals": [
+   {
+    "name": "La La Land",
+    "kind": "movie"
+   },
+   {
+    "name": "Lana Del Rey",
+    "kind": "artist"
+   },
+   {
+    "name": "The Great Gatsby",
+    "kind": "book"
+   }
+  ],
+  "mode": "live"
+ },
+ "v34": {
+  "recipient": "self",
+  "budget_usd": 35,
+  "signals": [
+   {
+    "name": "Tarantino",
+    "kind": "person"
+   },
+   {
+    "name": "Black Sabbath",
+    "kind": "artist"
+   },
+   {
+    "name": "Grand Theft Auto",
+    "kind": "video_game"
+   }
+  ],
+  "mode": "live"
+ },
+ "v35": {
+  "recipient": "dad",
+  "budget_usd": null,
+  "signals": [
+   {
+    "name": "Game of Thrones",
+    "kind": "tv_show"
+   },
+   {
+    "name": "Led Zeppelin",
+    "kind": "artist"
+   },
+   {
+    "name": "The Witcher 3",
+    "kind": "video_game"
+   }
+  ],
+  "mode": "live"
+ },
+ "v36": {
+  "recipient": "daughter",
+  "budget_usd": 40,
+  "signals": [
+   {
+    "name": "BTS",
+    "kind": "artist"
+   },
+   {
+    "name": "Heartstopper",
+    "kind": "tv_show"
+   },
+   {
+    "name": "Squid Game",
+    "kind": "tv_show"
+   }
+  ],
+  "mode": "live"
+ },
+ "v37": {
+  "recipient": "self",
+  "budget_usd": null,
+  "signals": [
+   {
+    "name": "Severance",
+    "kind": "tv_show"
+   },
+   {
+    "name": "Black Mirror",
+    "kind": "tv_show"
+   },
+   {
+    "name": "Franz Kafka",
+    "kind": "person"
+   }
+  ],
+  "mode": "live"
+ },
+ "v38": {
+  "recipient": "self",
+  "budget_usd": 30,
+  "signals": [
+   {
+    "name": "Metallica",
+    "kind": "artist"
+   },
+   {
+    "name": "Doom",
+    "kind": "video_game"
+   },
+   {
+    "name": "Mad Max",
+    "kind": "movie"
+   }
+  ],
+  "mode": "live"
+ },
+ "v39": {
+  "recipient": "girlfriend",
+  "budget_usd": null,
+  "signals": [
+   {
+    "name": "Billie Eilish",
+    "kind": "artist"
+   },
+   {
+    "name": "Coraline",
+    "kind": "movie"
+   },
+   {
+    "name": "Wednesday",
+    "kind": "tv_show"
+   }
+  ],
+  "mode": "live"
+ },
+ "v40": {
+  "recipient": "self",
+  "budget_usd": 40,
+  "signals": [
+   {
+    "name": "Studio Ghibli",
+    "kind": "artist"
+   },
+   {
+    "name": "Zelda",
+    "kind": "video_game"
+   },
+   {
+    "name": "Hozier",
+    "kind": "artist"
+   }
+  ],
+  "mode": "live"
+ }
+}

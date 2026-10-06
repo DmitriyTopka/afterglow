@@ -1,0 +1,8 @@
+{
+  "note": "Starter set. Target is 30-50 scenarios written BEFORE looking at system output. 'good' = catalog ids a human merchandiser would accept.",
+  "scenarios": [
+    { "id": "s01", "message": "Gift for my brother, he's obsessed with Christopher Nolan films and Hans Zimmer scores. Budget $100.", "good": ["p01", "p08", "p20", "p21", "p17", "p13"] },
+    { "id": "s02", "message": "My girlfriend loves Studio Ghibli and Haruki Murakami novels. Something cozy under $60.", "good": ["p06", "p10", "p22", "p18", "p38", "p37"] },
+    { "id": "s03", "message": "Dad listens to Miles Davis all day and rereads Agatha Christie. Around $80.", "good": ["p03", "p11", "p10", "p34"] }
+  ]
+}

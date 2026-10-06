@@ -1,0 +1,10 @@
+.env
+.env.*
+.cache
+node_modules
+.next
+data/catalog_build
+data/coverage
+eval/results
+HANDOFF_ranking.md
+_diag.mts

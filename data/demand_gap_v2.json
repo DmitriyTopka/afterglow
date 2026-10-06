@@ -1,0 +1,3659 @@
+{
+ "rows": [
+  {
+   "id": "v01",
+   "signals": [
+    "Radiohead",
+    "OK Computer"
+   ],
+   "coverage": 0.3,
+   "missing": [
+    "Thom Yorke",
+    "Beck",
+    "The Strokes",
+    "Interpol",
+    "Death Cab for Cutie",
+    "Weezer",
+    "Gorillaz"
+   ]
+  },
+  {
+   "id": "v02",
+   "signals": [
+    "Dune: Part Two",
+    "Interstellar"
+   ],
+   "coverage": 0.4,
+   "missing": [
+    "Dune",
+    "Avatar: The Way of Water",
+    "Oppenheimer",
+    "The Creator",
+    "Guardians of the Galaxy Vol. 3",
+    "Eternals"
+   ]
+  },
+  {
+   "id": "v03",
+   "signals": [
+    "The Hunger Games"
+   ],
+   "coverage": 0.2,
+   "missing": [
+    "City of Glass (The Mortal Instruments, #3)",
+    "The Mortal Instruments (The Mortal Instruments, #1-4)",
+    "City of Ashes (The Mortal Instruments, #2)",
+    "City of Fallen Angels (The Mortal Instruments, #4)",
+    "City of Lost Souls (The Mortal Instruments, #5)",
+    "Clockwork Angel (The Infernal Devices, #1)",
+    "City of Heavenly Fire (The Mortal Instruments, #6)",
+    "Clockwork Prince (The Infernal Devices, #2)"
+   ]
+  },
+  {
+   "id": "v04",
+   "signals": [
+    "Miles Davis",
+    "John Coltrane"
+   ],
+   "coverage": 0.2,
+   "missing": [
+    "Charles Mingus",
+    "Charlie Parker",
+    "Art Blakey & The Jazz Messengers",
+    "Art Blakey",
+    "Miles Davis Quintet",
+    "The Dave Brubeck Quartet",
+    "Wayne Shorter",
+    "Wes Montgomery"
+   ]
+  },
+  {
+   "id": "v05",
+   "signals": [
+    "Elden Ring"
+   ],
+   "coverage": 0.1,
+   "missing": [
+    "Baldur's Gate 3",
+    "God of War: Ragnarok",
+    "Tales of Arise",
+    "Demon's Souls",
+    "Monster Hunter Rise",
+    "Mortal Shell",
+    "Dark Souls III",
+    "Tails of Iron",
+    "Kena: Bridge of Spirits"
+   ]
+  },
+  {
+   "id": "v06",
+   "signals": [
+    "The Grand Budapest Hotel"
+   ],
+   "coverage": 0.2,
+   "missing": [
+    "Whiplash",
+    "The Wolf of Wall Street",
+    "Gone Girl",
+    "Her",
+    "The Imitation Game",
+    "Amélie",
+    "Forrest Gump",
+    "The Big Lebowski"
+   ]
+  },
+  {
+   "id": "v07",
+   "signals": [
+    "Fleetwood Mac",
+    "Rumours",
+    "Eagles"
+   ],
+   "coverage": 0.2,
+   "missing": [
+    "Stevie Nicks",
+    "Pat Benatar",
+    "Steve Winwood",
+    "Don Henley",
+    "Neil Diamond",
+    "Gerry Rafferty",
+    "10cc",
+    "Queen"
+   ]
+  },
+  {
+   "id": "v08",
+   "signals": [
+    "Breaking Bad"
+   ],
+   "coverage": 0.2,
+   "missing": [
+    "Dexter",
+    "Prison Break",
+    "The Sopranos",
+    "The Wire",
+    "Death Note",
+    "Banshee",
+    "Fargo",
+    "Oz"
+   ]
+  },
+  {
+   "id": "v09",
+   "signals": [
+    "Studio Ghibli",
+    "Spirited Away"
+   ],
+   "coverage": 0.1,
+   "missing": [
+    "Princess Mononoke",
+    "Castle in the Sky",
+    "Kiki's Delivery Service",
+    "The Girl Who Leapt Through Time",
+    "Your Name.",
+    "My Neighbor Totoro",
+    "Wolf Children",
+    "When Marnie Was There",
+    "To the Forest of Firefly Lights"
+   ]
+  },
+  {
+   "id": "v10",
+   "signals": [
+    "Taylor Swift"
+   ],
+   "coverage": 0.4,
+   "missing": [
+    "Demi Lovato",
+    "One Direction",
+    "Selena Gomez & the Scene",
+    "Bruno Mars",
+    "Jonas Brothers",
+    "P!nk"
+   ]
+  },
+  {
+   "id": "v11",
+   "signals": [
+    "Stranger Things"
+   ],
+   "coverage": 0.1,
+   "missing": [
+    "13 Reasons Why",
+    "A Series of Unfortunate Events",
+    "The OA",
+    "Riverdale",
+    "Glitch",
+    "Dead of Summer",
+    "The Haunting of Hill House",
+    "Freakish",
+    "Dark"
+   ]
+  },
+  {
+   "id": "v12",
+   "signals": [
+    "Arctic Monkeys",
+    "Kasabian"
+   ],
+   "coverage": 0.1,
+   "missing": [
+    "The Last Shadow Puppets",
+    "The Kooks",
+    "Kaiser Chiefs",
+    "Franz Ferdinand",
+    "Editors",
+    "Blur",
+    "The Libertines",
+    "The Strokes",
+    "White Lies"
+   ]
+  },
+  {
+   "id": "v14",
+   "signals": [
+    "The Last of Us"
+   ],
+   "coverage": 0.2,
+   "missing": [
+    "The Last of Us: Left Behind",
+    "Uncharted: Drake's Fortune",
+    "Uncharted 2: Among Thieves",
+    "Uncharted 3: Drake's Deception",
+    "Uncharted 4: A Thief's End",
+    "Uncharted: The Lost Legacy",
+    "Beyond: Two Souls",
+    "Heavy Rain"
+   ]
+  },
+  {
+   "id": "v15",
+   "signals": [
+    "Mitski",
+    "Phoebe Bridgers"
+   ],
+   "coverage": 0,
+   "missing": [
+    "Lucy Dacus",
+    "Japanese Breakfast",
+    "Big Thief",
+    "beabadoobee",
+    "Snail Mail",
+    "Soccer Mommy",
+    "Faye Webster",
+    "Samia",
+    "Haley Heynderickx",
+    "Better Oblivion Community Center"
+   ]
+  },
+  {
+   "id": "v16",
+   "signals": [
+    "Bruce Springsteen"
+   ],
+   "coverage": 0.3,
+   "missing": [
+    "Tom Petty and the Heartbreakers",
+    "Van Morrison",
+    "Paul Simon",
+    "Dire Straits",
+    "Simon & Garfunkel",
+    "The Proclaimers",
+    "Neil Diamond"
+   ]
+  },
+  {
+   "id": "v17",
+   "signals": [
+    "Ridley Scott",
+    "Alien",
+    "Blade Runner"
+   ],
+   "coverage": 0.2,
+   "missing": [
+    "Aliens",
+    "2001: A Space Odyssey",
+    "The Thing",
+    "The Terminator",
+    "Blade Runner 2049",
+    "Star Wars: Episode V - The Empire Strikes Back",
+    "Apocalypse Now",
+    "Alien³"
+   ]
+  },
+  {
+   "id": "v18",
+   "signals": [
+    "The Strokes"
+   ],
+   "coverage": 0.2,
+   "missing": [
+    "MGMT",
+    "Franz Ferdinand",
+    "The Libertines",
+    "Interpol",
+    "Julian Casablancas",
+    "Bloc Party",
+    "Vampire Weekend",
+    "Blur"
+   ]
+  },
+  {
+   "id": "v20",
+   "signals": [
+    "Sally Rooney"
+   ],
+   "coverage": 0.1,
+   "missing": [
+    "Maisie Peters",
+    "Orla Gartland",
+    "Gracie Abrams",
+    "Conan Gray",
+    "Griff",
+    "Baby Queen",
+    "Pale Waves",
+    "Nina Nesbitt",
+    "King Princess"
+   ]
+  },
+  {
+   "id": "v21",
+   "signals": [
+    "Stanley Kubrick",
+    "The Shining",
+    "2001: A Space Odyssey"
+   ],
+   "coverage": 0,
+   "missing": [
+    "A Clockwork Orange",
+    "Apocalypse Now",
+    "Full Metal Jacket",
+    "Alien",
+    "One Flew Over the Cuckoo's Nest",
+    "Blade Runner",
+    "Taxi Driver",
+    "Psycho",
+    "The Good, the Bad and the Ugly",
+    "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb"
+   ]
+  },
+  {
+   "id": "v22",
+   "signals": [
+    "Hollow Knight"
+   ],
+   "coverage": 0,
+   "missing": [
+    "Dead Cells",
+    "The Messenger",
+    "Carrion",
+    "Blasphemous",
+    "Hollow Knight: Voidheart Edition",
+    "SteamWorld Dig 2",
+    "Wonder Boy: The Dragon's Trap",
+    "Katana ZERO",
+    "Owlboy",
+    "Axiom Verge"
+   ]
+  },
+  {
+   "id": "v23",
+   "signals": [
+    "Joy Division"
+   ],
+   "coverage": 0.1,
+   "missing": [
+    "The Smiths",
+    "Gang of Four",
+    "Echo & the Bunnymen",
+    "New Order",
+    "The Jesus and Mary Chain",
+    "Siouxsie and the Banshees",
+    "Sonic Youth",
+    "The Chameleons",
+    "Public Image Ltd."
+   ]
+  },
+  {
+   "id": "v24",
+   "signals": [
+    "The Sopranos"
+   ],
+   "coverage": 0.1,
+   "missing": [
+    "Oz",
+    "The Wire",
+    "The Shield",
+    "Deadwood",
+    "Ray Donovan",
+    "The Black Donnellys",
+    "Sons of Anarchy",
+    "Banshee",
+    "Justified"
+   ]
+  },
+  {
+   "id": "v25",
+   "signals": [
+    "Pride and Prejudice",
+    "Jane Austen"
+   ],
+   "coverage": 0.2,
+   "missing": [
+    "Triss (Redwall, #15)",
+    "Eulalia! (Redwall, #19)",
+    "The Legend of Luke (Redwall, #12)",
+    "Marlfox (Redwall, #11)",
+    "Loamhedge (Redwall, #16)",
+    "High Rhulain (Redwall, #18)",
+    "Taggerung (Redwall, #14)",
+    "The Rogue Crew (Redwall, #22)"
+   ]
+  },
+  {
+   "id": "v26",
+   "signals": [
+    "Pokémon"
+   ],
+   "coverage": 0,
+   "missing": [
+    "Tomodachi Life",
+    "Animal Crossing: Wild World",
+    "Animal Crossing: New Leaf",
+    "The Sims 4",
+    "Candy Crush Saga",
+    "Miitopia",
+    "Animal Crossing: Pocket Camp",
+    "The Sims Medieval",
+    "Wii Play",
+    "The Sims 3"
+   ]
+  },
+  {
+   "id": "v27",
+   "signals": [
+    "Frank Ocean",
+    "Blonde"
+   ],
+   "coverage": 0.5,
+   "missing": [
+    "The Internet",
+    "Miguel",
+    "Jhené Aiko",
+    "Solange",
+    "PARTYNEXTDOOR"
+   ]
+  },
+  {
+   "id": "v28",
+   "signals": [
+    "Succession"
+   ],
+   "coverage": 0,
+   "missing": [
+    "The Bear",
+    "The White Lotus",
+    "Beef",
+    "Fleishman Is in Trouble",
+    "The Offer",
+    "Ted Lasso",
+    "Dopesick",
+    "The Dropout",
+    "I Know This Much Is True",
+    "Hacks"
+   ]
+  },
+  {
+   "id": "v29",
+   "signals": [
+    "ABBA",
+    "Bee Gees"
+   ],
+   "coverage": 0,
+   "missing": [
+    "Gloria Gaynor",
+    "Bonnie Tyler",
+    "Barry Manilow",
+    "Tom Jones",
+    "Hot Chocolate",
+    "Boney M.",
+    "Village People",
+    "The Mamas & the Papas",
+    "Eric Carmen",
+    "10cc"
+   ]
+  },
+  {
+   "id": "v30",
+   "signals": [
+    "Bon Iver",
+    "Fleet Foxes"
+   ],
+   "coverage": 0,
+   "missing": [
+    "Volcano Choir",
+    "Andrew Bird",
+    "Sufjan Stevens",
+    "Iron & Wine",
+    "Grizzly Bear",
+    "Bowerbirds",
+    "Justin Vernon",
+    "José González",
+    "Laura Marling",
+    "Local Natives"
+   ]
+  },
+  {
+   "id": "v31",
+   "signals": [
+    "Twin Peaks",
+    "Radiohead",
+    "Silent Hill"
+   ],
+   "coverage": 0.5,
+   "missing": [
+    "Twin Peaks",
+    "The Outer Limits",
+    "Sonic Youth",
+    "The X-Files",
+    "American Gothic"
+   ]
+  },
+  {
+   "id": "v32",
+   "signals": [
+    "Minecraft",
+    "Percy Jackson",
+    "Spider-Verse"
+   ],
+   "coverage": 0.3,
+   "missing": [
+    "Shazam!",
+    "Captain Marvel",
+    "Venom",
+    "X-Men: Dark Phoenix",
+    "Bumblebee",
+    "Pokémon: Detective Pikachu",
+    "Ant-Man and the Wasp"
+   ]
+  },
+  {
+   "id": "v33",
+   "signals": [
+    "La La Land",
+    "Lana Del Rey",
+    "The Great Gatsby"
+   ],
+   "coverage": 0.3,
+   "missing": [
+    "Lorde",
+    "Hozier",
+    "Sam Smith",
+    "The 1975",
+    "The Neighbourhood",
+    "HAIM",
+    "Sing Street"
+   ]
+  },
+  {
+   "id": "v34",
+   "signals": [
+    "Tarantino",
+    "Black Sabbath",
+    "Grand Theft Auto"
+   ],
+   "coverage": 0.4,
+   "missing": [
+    "Ozzy Osbourne",
+    "Guns N' Roses",
+    "Motörhead",
+    "Grand Theft Auto III",
+    "Black Label Society",
+    "Disturbed"
+   ]
+  },
+  {
+   "id": "v35",
+   "signals": [
+    "Game of Thrones",
+    "Led Zeppelin",
+    "The Witcher 3"
+   ],
+   "coverage": 0,
+   "missing": [
+    "Vikings",
+    "Outlander",
+    "The Last Kingdom",
+    "The Musketeers",
+    "House of the Dragon",
+    "The Witcher",
+    "Into the Badlands",
+    "The Shannara Chronicles",
+    "Vikings: Valhalla",
+    "The Lord of the Rings: The Rings of Power"
+   ]
+  },
+  {
+   "id": "v36",
+   "signals": [
+    "BTS",
+    "Heartstopper",
+    "Squid Game"
+   ],
+   "coverage": 0.4,
+   "missing": [
+    "Jennie",
+    "TOMORROW X TOGETHER",
+    "Itaewon Class",
+    "Stray Kids",
+    "CHUNG HA",
+    "BAEKHYUN"
+   ]
+  },
+  {
+   "id": "v37",
+   "signals": [
+    "Severance",
+    "Black Mirror",
+    "Franz Kafka"
+   ],
+   "coverage": 0,
+   "missing": [
+    "Devs",
+    "Silo",
+    "Electric Dreams",
+    "The Peripheral",
+    "Tales from the Loop",
+    "The Devil's Hour",
+    "3 Body Problem",
+    "A Murder at the End of the World",
+    "Humans",
+    "Homecoming"
+   ]
+  },
+  {
+   "id": "v38",
+   "signals": [
+    "Metallica",
+    "Doom",
+    "Mad Max"
+   ],
+   "coverage": 0.4,
+   "missing": [
+    "Motörhead",
+    "Judas Priest",
+    "Ozzy Osbourne",
+    "Dio",
+    "Pantera",
+    "Black Label Society"
+   ]
+  },
+  {
+   "id": "v39",
+   "signals": [
+    "Billie Eilish",
+    "Coraline",
+    "Wednesday"
+   ],
+   "coverage": 0.2,
+   "missing": [
+    "Harlan Coben's Shelter",
+    "Lockwood & Co.",
+    "In/Spectre",
+    "Sweet Home",
+    "Toilet-bound Hanako-kun",
+    "Goosebumps",
+    "Hotel Del Luna",
+    "Requiem"
+   ]
+  },
+  {
+   "id": "v40",
+   "signals": [
+    "Studio Ghibli",
+    "Zelda",
+    "Hozier"
+   ],
+   "coverage": 0.1,
+   "missing": [
+    "Of Monsters and Men",
+    "Birdy with Mumford & Sons",
+    "Secret Someones",
+    "Mikky Ekko",
+    "Jayme Dee",
+    "Monsalve",
+    "Thee Acquainted",
+    "Phillip Phillips",
+    "American Authors"
+   ]
+  }
+ ],
+ "wanted": [
+  {
+   "entity_id": "C8DB6D4F-FE7B-465B-92CA-A472E1184E66",
+   "name": "Thom Yorke",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/1956e04f0737e4b4ff927c6c796a9834.jpg",
+   "by": [
+    "Radiohead + OK Computer"
+   ]
+  },
+  {
+   "entity_id": "8431339C-7299-4A35-9AB3-DFE9DBEB7DED",
+   "name": "Beck",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/073547bf84564c3bb233ff68d434d6f3.jpg",
+   "by": [
+    "Radiohead + OK Computer"
+   ]
+  },
+  {
+   "entity_id": "1A44C04F-7251-4809-809B-6C885FFD68EB",
+   "name": "The Strokes",
+   "type": "urn:entity:artist",
+   "n": 2,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/2a96cbd8b46e442.jpg",
+   "by": [
+    "Radiohead + OK Computer",
+    "Arctic Monkeys + Kasabian"
+   ]
+  },
+  {
+   "entity_id": "D55AA58B-0DB2-43EF-B3B9-E2D40B215E7E",
+   "name": "Interpol",
+   "type": "urn:entity:artist",
+   "n": 2,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/a31622daa9f46e6b449c46690dc9bc3a.jpg",
+   "by": [
+    "Radiohead + OK Computer",
+    "The Strokes"
+   ]
+  },
+  {
+   "entity_id": "354C8BBA-A058-4B4E-B0CA-6619A3F348CD",
+   "name": "Death Cab for Cutie",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/d845a978fecb4b3f9d84037588241e6a.jpg",
+   "by": [
+    "Radiohead + OK Computer"
+   ]
+  },
+  {
+   "entity_id": "FC4F7908-E4F0-41DD-8D5E-92928AE42457",
+   "name": "Weezer",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/02eac5fac2a44e3fb88aca9e252ba12a.jpg",
+   "by": [
+    "Radiohead + OK Computer"
+   ]
+  },
+  {
+   "entity_id": "80CB1FC4-9741-427A-A0DA-AB2293D2FED6",
+   "name": "Gorillaz",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/b51126b92d06d711b9c6641fff9fef92.jpg",
+   "by": [
+    "Radiohead + OK Computer"
+   ]
+  },
+  {
+   "entity_id": "3037F0E8-C912-4DC0-BDE3-1F94631F9DA6",
+   "name": "Dune",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BNWIyNmU5MGYtZDZmNi00ZjAwLWJlYjgtZTc0ZGIxMDE4ZGYwXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Dune: Part Two + Interstellar"
+   ]
+  },
+  {
+   "entity_id": "40BB14A3-59B1-4A66-B610-625ED1DCCEEC",
+   "name": "Avatar: The Way of Water",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BNWI0Y2NkOWEtMmM2OC00MjQ3LWI1YzItZGQxYzQ3NzI4NWZmXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Dune: Part Two + Interstellar"
+   ]
+  },
+  {
+   "entity_id": "470553FA-42AD-435D-94BE-1078AFD6A2FD",
+   "name": "Oppenheimer",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BN2JkMDc5MGQtZjg3YS00NmFiLWIyZmQtZTJmNTM5MjVmYTQ4XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Dune: Part Two + Interstellar"
+   ]
+  },
+  {
+   "entity_id": "DECBC460-5A69-4AA3-BE9C-64905AF4AB2F",
+   "name": "The Creator",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMDkxMTUxOTQtYzM4Yi00YzA2LTgzOTYtNDg2NTliODE0ZTRjXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Dune: Part Two + Interstellar"
+   ]
+  },
+  {
+   "entity_id": "EAFFF5D0-A3C6-43E3-BA33-6CF867037F9B",
+   "name": "Guardians of the Galaxy Vol. 3",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BOTJhOTMxMmItZmE0Ny00MDc3LWEzOGEtOGFkMzY4MWYyZDQ0XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Dune: Part Two + Interstellar"
+   ]
+  },
+  {
+   "entity_id": "F7E6578D-9CAE-41FD-A7BA-06D0986700D2",
+   "name": "Eternals",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BZTBiZjI2M2UtZTNiNy00NmU4LWJiMjYtZjk4MDIzMzhlMjFlXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Dune: Part Two + Interstellar"
+   ]
+  },
+  {
+   "entity_id": "0A3F0A82-B76E-4121-9D54-47BAD4F1EA8E",
+   "name": "City of Glass (The Mortal Instruments, #3)",
+   "type": "urn:entity:book",
+   "n": 1,
+   "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1369452339i/3777732.jpg",
+   "by": [
+    "The Hunger Games"
+   ]
+  },
+  {
+   "entity_id": "59DC8058-2A4C-42F4-BC99-D9FF5D0A4E98",
+   "name": "The Mortal Instruments (The Mortal Instruments, #1-4)",
+   "type": "urn:entity:book",
+   "n": 1,
+   "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1313073526i/11106458.jpg",
+   "by": [
+    "The Hunger Games"
+   ]
+  },
+  {
+   "entity_id": "394B5AC6-DA19-489E-9D76-845B71553105",
+   "name": "City of Ashes (The Mortal Instruments, #2)",
+   "type": "urn:entity:book",
+   "n": 1,
+   "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1432730356i/1582996.jpg",
+   "by": [
+    "The Hunger Games"
+   ]
+  },
+  {
+   "entity_id": "9525EC80-0A15-4D8F-8CF0-7E920A11F85E",
+   "name": "City of Fallen Angels (The Mortal Instruments, #4)",
+   "type": "urn:entity:book",
+   "n": 1,
+   "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1369452302i/6752378.jpg",
+   "by": [
+    "The Hunger Games"
+   ]
+  },
+  {
+   "entity_id": "05D8AD7A-1147-4E42-BE4E-9C4E5BFD5491",
+   "name": "City of Lost Souls (The Mortal Instruments, #5)",
+   "type": "urn:entity:book",
+   "n": 1,
+   "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1460477703i/8755776.jpg",
+   "by": [
+    "The Hunger Games"
+   ]
+  },
+  {
+   "entity_id": "B4569C8A-A45C-4491-94E6-0A4C966B904D",
+   "name": "Clockwork Angel (The Infernal Devices, #1)",
+   "type": "urn:entity:book",
+   "n": 1,
+   "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1693490271i/7171637.jpg",
+   "by": [
+    "The Hunger Games"
+   ]
+  },
+  {
+   "entity_id": "78C2C469-46CB-42A7-85B4-475F1F60DEE1",
+   "name": "City of Heavenly Fire (The Mortal Instruments, #6)",
+   "type": "urn:entity:book",
+   "n": 1,
+   "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1460477794i/8755785.jpg",
+   "by": [
+    "The Hunger Games"
+   ]
+  },
+  {
+   "entity_id": "F180259B-1857-4ACB-B1E3-E2AB27D5BE8F",
+   "name": "Clockwork Prince (The Infernal Devices, #2)",
+   "type": "urn:entity:book",
+   "n": 1,
+   "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1460477747i/10025305.jpg",
+   "by": [
+    "The Hunger Games"
+   ]
+  },
+  {
+   "entity_id": "C4B05C64-F991-4E9B-BAA7-9F5BB64A54BC",
+   "name": "Charles Mingus",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/13b2cb65bf284ed9bb1ec75cd0de96e0.jpg",
+   "by": [
+    "Miles Davis + John Coltrane"
+   ]
+  },
+  {
+   "entity_id": "DEC0A711-9B11-4035-9394-E2859247E827",
+   "name": "Charlie Parker",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/b4ba20dfd2de4a6fb9152a06c9b138ca.jpg",
+   "by": [
+    "Miles Davis + John Coltrane"
+   ]
+  },
+  {
+   "entity_id": "2DA0C244-9CBB-400C-8ADB-BCF0B66B7477",
+   "name": "Art Blakey & The Jazz Messengers",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/1c8f9cc62203f43dad71e47be151c0bc.jpg",
+   "by": [
+    "Miles Davis + John Coltrane"
+   ]
+  },
+  {
+   "entity_id": "456299D2-CA05-4840-92D2-79D21F46CFB9",
+   "name": "Art Blakey",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/c7909912dd51f3543c647b8031dc6049.jpg",
+   "by": [
+    "Miles Davis + John Coltrane"
+   ]
+  },
+  {
+   "entity_id": "49847748-D853-4A57-B1B0-3C5D79E6C8EF",
+   "name": "Miles Davis Quintet",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/03ff0b59a8af445a8caa242955934939.jpg",
+   "by": [
+    "Miles Davis + John Coltrane"
+   ]
+  },
+  {
+   "entity_id": "C446E719-2C68-479C-A136-624A49199834",
+   "name": "The Dave Brubeck Quartet",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/36f221357c384cda94e4e7a97d14fc66.jpg",
+   "by": [
+    "Miles Davis + John Coltrane"
+   ]
+  },
+  {
+   "entity_id": "226C9359-2D8C-47B9-8714-5175801B1328",
+   "name": "Wayne Shorter",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/9ac48668dab94c96b1ae864029972cfe.jpg",
+   "by": [
+    "Miles Davis + John Coltrane"
+   ]
+  },
+  {
+   "entity_id": "708EB9C9-6E58-49C4-B543-4CA6D8DDBEFC",
+   "name": "Wes Montgomery",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/1dc6a90354b146dbc60e1005ed9f9014.jpg",
+   "by": [
+    "Miles Davis + John Coltrane"
+   ]
+  },
+  {
+   "entity_id": "87DEB0A5-16F8-4245-97C8-6521C34EBFFA",
+   "name": "Baldur's Gate 3",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": "https://www.metacritic.com/a/img/catalog/provider/6/12/6-1-715253-52.jpg?auto=webp&fit=crop&height=675&width=1200",
+   "by": [
+    "Elden Ring"
+   ]
+  },
+  {
+   "entity_id": "C7603E33-AB15-4872-A8EB-F6CEB39E6D20",
+   "name": "God of War: Ragnarok",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": "https://www.metacritic.com/a/img/catalog/provider/6/12/6-1-879324-52.jpg?auto=webp&fit=crop&height=675&width=1200",
+   "by": [
+    "Elden Ring"
+   ]
+  },
+  {
+   "entity_id": "3B8D9AA5-0243-4014-9915-30DE99CE888D",
+   "name": "Tales of Arise",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": "https://www.metacritic.com/a/img/catalog/provider/6/12/6-1-796451-52.jpg?auto=webp&fit=crop&height=675&width=1200",
+   "by": [
+    "Elden Ring"
+   ]
+  },
+  {
+   "entity_id": "06FC1877-4512-4237-B527-428C47429F0F",
+   "name": "Demon's Souls",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "Elden Ring"
+   ]
+  },
+  {
+   "entity_id": "7296523F-E203-4F2E-AF93-C7AA35BFA09D",
+   "name": "Monster Hunter Rise",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": "https://www.metacritic.com/a/img/catalog/provider/6/12/6-1-768231-52.jpg?auto=webp&fit=crop&height=675&width=1200",
+   "by": [
+    "Elden Ring"
+   ]
+  },
+  {
+   "entity_id": "E35EE1C7-D1A2-41B1-A17A-83583ECB8D36",
+   "name": "Mortal Shell",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "Elden Ring"
+   ]
+  },
+  {
+   "entity_id": "CC75C37E-7CD0-47E0-8707-ABEFF5CE9891",
+   "name": "Dark Souls III",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "Elden Ring"
+   ]
+  },
+  {
+   "entity_id": "98B00129-B85F-4D98-96A0-653AC8B47FAA",
+   "name": "Tails of Iron",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "Elden Ring"
+   ]
+  },
+  {
+   "entity_id": "E1A28630-F29C-4EA6-8482-F8B0D007D20D",
+   "name": "Kena: Bridge of Spirits",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "Elden Ring"
+   ]
+  },
+  {
+   "entity_id": "65745A20-2FE5-44EC-8349-BDA0C8522CEB",
+   "name": "Whiplash",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMDFjOWFkYzktYzhhMC00NmYyLTkwY2EtYjViMDhmNzg0OGFkXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "The Grand Budapest Hotel"
+   ]
+  },
+  {
+   "entity_id": "5CBB070C-71A4-4DC9-A799-A00DBCD31CF5",
+   "name": "The Wolf of Wall Street",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_.jpg",
+   "by": [
+    "The Grand Budapest Hotel"
+   ]
+  },
+  {
+   "entity_id": "77047AC4-04B8-4C32-BD6D-13E3AA29B015",
+   "name": "Gone Girl",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMTk0MDQ3MzAzOV5BMl5BanBnXkFtZTgwNzU1NzE3MjE@._V1_.jpg",
+   "by": [
+    "The Grand Budapest Hotel"
+   ]
+  },
+  {
+   "entity_id": "4F8EBD51-46DB-4527-BC61-75B56472A50E",
+   "name": "Her",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMjA1Nzk0OTM2OF5BMl5BanBnXkFtZTgwNjU2NjEwMDE@._V1_.jpg",
+   "by": [
+    "The Grand Budapest Hotel"
+   ]
+  },
+  {
+   "entity_id": "8B41843D-89DF-48D9-AD91-4F61C2B5C37B",
+   "name": "The Imitation Game",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BNjI3NjY1Mjg3MV5BMl5BanBnXkFtZTgwMzk5MDQ3MjE@._V1_.jpg",
+   "by": [
+    "The Grand Budapest Hotel"
+   ]
+  },
+  {
+   "entity_id": "B7A0731F-EC92-496A-9C40-47D9770489B6",
+   "name": "Amélie",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BOTNmYzY0MWQtZGZmNy00Y2Y4LWFmMDQtMTZjYTdiYzEwZGQ2XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "The Grand Budapest Hotel"
+   ]
+  },
+  {
+   "entity_id": "D92ECBE1-5E9A-4E2B-B3E2-ED495C563E0D",
+   "name": "Forrest Gump",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BNDYwNzVjMTItZmU5YS00YjQ5LTljYjgtMjY2NDVmYWMyNWFmXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "The Grand Budapest Hotel"
+   ]
+  },
+  {
+   "entity_id": "BEFD77F0-4AC7-40C0-AF42-BEE51C3E8071",
+   "name": "The Big Lebowski",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BY2E3OWQ5OWYtYTRkMC00NjVjLWIzZDQtNmRmM2ZiYTIyYmYxXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "The Grand Budapest Hotel"
+   ]
+  },
+  {
+   "entity_id": "1C595E6F-D008-48F2-8EAB-4EFA935B29EE",
+   "name": "Stevie Nicks",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/5712149850ae47b0bfd631e3523196e1.jpg",
+   "by": [
+    "Fleetwood Mac + Rumours + Eagles"
+   ]
+  },
+  {
+   "entity_id": "F0F7E71E-92AF-492F-A5D2-0E340DEA5DB5",
+   "name": "Pat Benatar",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/657f4165a3fb463b818faa8c25853360.jpg",
+   "by": [
+    "Fleetwood Mac + Rumours + Eagles"
+   ]
+  },
+  {
+   "entity_id": "1CD6996B-6E12-491B-AC8E-3275C8C3D523",
+   "name": "Steve Winwood",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/43d9eb3b7463400ab7b8b8639b30c0b3.jpg",
+   "by": [
+    "Fleetwood Mac + Rumours + Eagles"
+   ]
+  },
+  {
+   "entity_id": "EAC6C145-CD9C-4330-B40E-FFF25F315E3C",
+   "name": "Don Henley",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/4deea8f3f9944454a4600ff62eb19b55.jpg",
+   "by": [
+    "Fleetwood Mac + Rumours + Eagles"
+   ]
+  },
+  {
+   "entity_id": "51584316-495F-49C4-B281-908C920B32A9",
+   "name": "Neil Diamond",
+   "type": "urn:entity:artist",
+   "n": 2,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/1173bef8e79c43baa2844e53a3448e44.jpg",
+   "by": [
+    "Fleetwood Mac + Rumours + Eagles",
+    "Bruce Springsteen"
+   ]
+  },
+  {
+   "entity_id": "317E5601-4887-4978-8E5F-E96A4642EF5E",
+   "name": "Gerry Rafferty",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/10c8b9a464934224c2e701f4729c7848.jpg",
+   "by": [
+    "Fleetwood Mac + Rumours + Eagles"
+   ]
+  },
+  {
+   "entity_id": "E6B22580-A99F-4356-9741-D01FF807AD6E",
+   "name": "10cc",
+   "type": "urn:entity:artist",
+   "n": 2,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/2a96cbd8b46e442fc41c2b86b821562f.jpg",
+   "by": [
+    "Fleetwood Mac + Rumours + Eagles",
+    "ABBA + Bee Gees"
+   ]
+  },
+  {
+   "entity_id": "1BBCDDBC-EC0D-440F-A5E9-7AE289585178",
+   "name": "Queen",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/58e8e895e8e788397d461f5a73187a03.jpg",
+   "by": [
+    "Fleetwood Mac + Rumours + Eagles"
+   ]
+  },
+  {
+   "entity_id": "7C27C0C9-1425-4A1D-A380-4D38FC319838",
+   "name": "Dexter",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BNTE5ZGI2N2UtYmFiMi00ZGIxLWI1ZTMtYWJkZDYxNDZiOTQwXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Breaking Bad"
+   ]
+  },
+  {
+   "entity_id": "876C7705-6B95-4709-AFAD-FCAE8634CBEE",
+   "name": "Prison Break",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMjE0ODQxNjI2MV5BMl5BanBnXkFtZTYwNTgzMzg3._V1_.jpg",
+   "by": [
+    "Breaking Bad"
+   ]
+  },
+  {
+   "entity_id": "43FD619D-39A4-464E-B223-6E3B634E7E16",
+   "name": "The Sopranos",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BZjYwNWQwOTMtMzYwOS00NTcxLWFhNTYtNGQ4YjdmYTcyNDFkXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Breaking Bad"
+   ]
+  },
+  {
+   "entity_id": "5E2A0B2F-5B3F-4169-B660-CD47C6331879",
+   "name": "The Wire",
+   "type": "urn:entity:tv_show",
+   "n": 2,
+   "image": "https://m.media-amazon.com/images/M/MV5BYjIxZTMwZmUtOTUzYS00YmU2LWJhNDAtNzA2NDg0NDA0MjVkXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Breaking Bad",
+    "The Sopranos"
+   ]
+  },
+  {
+   "entity_id": "F359BBCD-7EC4-400B-B6C4-2A5E421AFD9F",
+   "name": "Death Note",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BYTgyZDhmMTEtZDFhNi00MTc4LTg3NjUtYWJlNGE5Mzk2NzMxXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Breaking Bad"
+   ]
+  },
+  {
+   "entity_id": "68C70EDA-0A94-4528-963B-C303B3F1BD00",
+   "name": "Banshee",
+   "type": "urn:entity:tv_show",
+   "n": 2,
+   "image": "https://m.media-amazon.com/images/M/MV5BMTkzNTA1MDI5M15BMl5BanBnXkFtZTcwNTY3NjAwOQ@@._V1_.jpg",
+   "by": [
+    "Breaking Bad",
+    "The Sopranos"
+   ]
+  },
+  {
+   "entity_id": "4FB650CB-2ED7-4A97-A70E-0722929E78B3",
+   "name": "Fargo",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMjMzMTIzMTUwN15BMl5BanBnXkFtZTgwNjE0NTg0MTE@._V1_.jpg",
+   "by": [
+    "Breaking Bad"
+   ]
+  },
+  {
+   "entity_id": "CA552656-A183-4916-98E1-71B35FEB7BD2",
+   "name": "Oz",
+   "type": "urn:entity:tv_show",
+   "n": 2,
+   "image": "https://m.media-amazon.com/images/M/MV5BMjI1ZGJmMGYtYWE1YS00NDAyLThmNGItZWNjZmFiODkxZDUwXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Breaking Bad",
+    "The Sopranos"
+   ]
+  },
+  {
+   "entity_id": "C2B5C855-2C57-45E4-B573-2BC939CA7FFA",
+   "name": "Princess Mononoke",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BZTcyN2Y0MDYtMGI1NC00MWQ1LWFhZGMtN2U4NTcxZGYyNjljXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Studio Ghibli + Spirited Away"
+   ]
+  },
+  {
+   "entity_id": "82FB8A30-D1A2-433B-89C4-7C1D08EA1749",
+   "name": "Castle in the Sky",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BZjcyMjg2MzktNjg4YS00MjQzLTg0YWQtMjUyZDk2Y2Y0YzZjXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Studio Ghibli + Spirited Away"
+   ]
+  },
+  {
+   "entity_id": "D712D169-BCE2-487F-8977-0CE9459125C3",
+   "name": "Kiki's Delivery Service",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BOTFhYWI1NGUtZWFhZS00MTdkLWIzZTItMDBhNWNiZDNlMjYyXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Studio Ghibli + Spirited Away"
+   ]
+  },
+  {
+   "entity_id": "8568B00A-2048-4836-AA46-CFF5449EA5C3",
+   "name": "The Girl Who Leapt Through Time",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BODE1YjEzYzYtNWVmZC00ZjU5LTgzNjgtZWRmNjhiMTVjNGU0XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Studio Ghibli + Spirited Away"
+   ]
+  },
+  {
+   "entity_id": "68CD7C41-78BE-4765-B184-1F1988036C89",
+   "name": "Your Name.",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMjI1ODZkYTgtYTY3Yy00ZTJkLWFkOTgtZDUyYWM4MzQwNjk0XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Studio Ghibli + Spirited Away"
+   ]
+  },
+  {
+   "entity_id": "E146CA3A-10FD-4C7F-ACFA-AD4E9955F08E",
+   "name": "My Neighbor Totoro",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BYWM3MDE3YjEtMzIzZC00ODE5LTgxNTItNmUyMTBkM2M2NmNiXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Studio Ghibli + Spirited Away"
+   ]
+  },
+  {
+   "entity_id": "A665E8EF-3EDB-4E44-83D1-E912B8787BB7",
+   "name": "Wolf Children",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMDc4MTk0ZTEtMWNiMC00MTM3LWFmOTQtMDAwMjQ2MjhiNTcxXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Studio Ghibli + Spirited Away"
+   ]
+  },
+  {
+   "entity_id": "34BFB747-1F4D-4DF4-8503-D2DB0DF0E539",
+   "name": "When Marnie Was There",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMjc4MDI2ZGUtOGZkNS00ZDFiLTllYTYtNGRmZDgxN2FiMjUzXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Studio Ghibli + Spirited Away"
+   ]
+  },
+  {
+   "entity_id": "AF18BD93-D907-4E09-B14A-0B323BAF6EFB",
+   "name": "To the Forest of Firefly Lights",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BNTQyOTlhMzEtYWYyYi00YmQ5LWExYmYtNGY2MGYwOTg1YjM0XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Studio Ghibli + Spirited Away"
+   ]
+  },
+  {
+   "entity_id": "92CB2EFE-3137-468F-892F-2EE109F4818D",
+   "name": "Demi Lovato",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/c5a896c2a75a8a66ad75c0d058aef92c.jpg",
+   "by": [
+    "Taylor Swift"
+   ]
+  },
+  {
+   "entity_id": "2AC15D3A-D513-487B-845B-3B37BD902F8B",
+   "name": "One Direction",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/2a96cbd8b46e442.jpg",
+   "by": [
+    "Taylor Swift"
+   ]
+  },
+  {
+   "entity_id": "705FCAEF-5937-446C-BEC0-EDDDBBE35A04",
+   "name": "Selena Gomez & the Scene",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/2a96cbd8b46e442.jpg",
+   "by": [
+    "Taylor Swift"
+   ]
+  },
+  {
+   "entity_id": "A8A71B45-1FF5-475F-8559-581CECF97563",
+   "name": "Bruno Mars",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/27fb627d292997e8ebd582554f161392.jpg",
+   "by": [
+    "Taylor Swift"
+   ]
+  },
+  {
+   "entity_id": "FF0F07D1-47B1-403A-975C-04BF98EAD8F9",
+   "name": "Jonas Brothers",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/266406fe11b2bf7a761e0374ff3fcac6.jpg",
+   "by": [
+    "Taylor Swift"
+   ]
+  },
+  {
+   "entity_id": "809B75F5-6747-459D-8A98-EA31A5CF7C80",
+   "name": "P!nk",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/65ded6ef9498d16a0358bbc2e483d2bc.jpg",
+   "by": [
+    "Taylor Swift"
+   ]
+  },
+  {
+   "entity_id": "529E30CD-1B11-45C4-BEDA-88228E969A0E",
+   "name": "13 Reasons Why",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BNThjYzQ3ZjYtM2I0ZC00OGNjLTlmNGItYjE3ZWI5MWIyMWYyXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Stranger Things"
+   ]
+  },
+  {
+   "entity_id": "02C6707D-BB0B-4B99-B677-886274B7F591",
+   "name": "A Series of Unfortunate Events",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMTUxMjIzODI0NV5BMl5BanBnXkFtZTgwMDk3OTI2MDI@._V1_.jpg",
+   "by": [
+    "Stranger Things"
+   ]
+  },
+  {
+   "entity_id": "06520C22-07E8-47C1-AC4E-B643557BE79F",
+   "name": "The OA",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMTY5OTkwNDkzOF5BMl5BanBnXkFtZTgwMDEyNzI1NzM@._V1_.jpg",
+   "by": [
+    "Stranger Things"
+   ]
+  },
+  {
+   "entity_id": "2588E9B0-08F1-4CE1-A13E-BC39686A8C93",
+   "name": "Riverdale",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMjA0NjA5NzY3M15BMl5BanBnXkFtZTgwMjQwMDQzMzI@._V1_.jpg",
+   "by": [
+    "Stranger Things"
+   ]
+  },
+  {
+   "entity_id": "FA7383B5-F529-429A-A08D-A3CE67A61333",
+   "name": "Glitch",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BZWRjOTYyM2UtZWViZS00YjYzLWE2N2UtMWM0NjNkMzAxMTFjXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Stranger Things"
+   ]
+  },
+  {
+   "entity_id": "52688551-5656-4C39-B97B-A6F10B23D666",
+   "name": "Dead of Summer",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BOTI4NmRhODAtNDM4NC00YmVhLWJhNTYtZjdjZTYyMWRiZmE5XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Stranger Things"
+   ]
+  },
+  {
+   "entity_id": "7C2BA19F-2228-495F-B277-DF5BC5ABC372",
+   "name": "The Haunting of Hill House",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMTU4NzA4MDEwNF5BMl5BanBnXkFtZTgwMTQxODYzNjM@._V1_.jpg",
+   "by": [
+    "Stranger Things"
+   ]
+  },
+  {
+   "entity_id": "E56E4FE2-7861-40AF-9561-9A4028E68051",
+   "name": "Freakish",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BNjY3ZjJlNzMtNDAyNS00ZGZhLWFkM2UtNjdiMWE3MWUzZGE0XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Stranger Things"
+   ]
+  },
+  {
+   "entity_id": "16532236-EF51-4DE8-A94F-658E7EF614C3",
+   "name": "Dark",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMTUzNjQ2MTY5NV5BMl5BanBnXkFtZTgwOTAzNTQxNDM@._V1_.jpg",
+   "by": [
+    "Stranger Things"
+   ]
+  },
+  {
+   "entity_id": "D5B0809B-45E8-458B-B49E-41399502B026",
+   "name": "The Last Shadow Puppets",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/2a96cbd8b46e442.jpg",
+   "by": [
+    "Arctic Monkeys + Kasabian"
+   ]
+  },
+  {
+   "entity_id": "9D71AF63-8413-4B3C-B6B7-5115D4CB94E1",
+   "name": "The Kooks",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/c076bf4e11114a5ca717c419b64de0fb.jpg",
+   "by": [
+    "Arctic Monkeys + Kasabian"
+   ]
+  },
+  {
+   "entity_id": "6BBB7C58-95FC-489F-A611-42061E945DDF",
+   "name": "Kaiser Chiefs",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/4f7c851a387edc6e1c002d575650f0c9.jpg",
+   "by": [
+    "Arctic Monkeys + Kasabian"
+   ]
+  },
+  {
+   "entity_id": "F18E4CB2-3B07-4F41-AB0C-FDA4AEBAF031",
+   "name": "Franz Ferdinand",
+   "type": "urn:entity:artist",
+   "n": 2,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/83dca1b1baaa4bcaabd2e4539f093505.jpg",
+   "by": [
+    "Arctic Monkeys + Kasabian",
+    "The Strokes"
+   ]
+  },
+  {
+   "entity_id": "F2DD2934-A15D-4C81-B24B-6310EDC564D7",
+   "name": "Editors",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/611a0ac36ba7067e4ff439d0a7feacc3.jpg",
+   "by": [
+    "Arctic Monkeys + Kasabian"
+   ]
+  },
+  {
+   "entity_id": "5FE80424-BB58-456B-83BD-FBE8C9B7DC94",
+   "name": "Blur",
+   "type": "urn:entity:artist",
+   "n": 2,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/dd18c8d024a748b8bb596d304605d29c.jpg",
+   "by": [
+    "Arctic Monkeys + Kasabian",
+    "The Strokes"
+   ]
+  },
+  {
+   "entity_id": "156BF568-2F76-48FA-885C-6DFF158AC1C0",
+   "name": "The Libertines",
+   "type": "urn:entity:artist",
+   "n": 2,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/7386e4dedb5b40bc91865789fd1b77e6.jpg",
+   "by": [
+    "Arctic Monkeys + Kasabian",
+    "The Strokes"
+   ]
+  },
+  {
+   "entity_id": "BBD5C2A3-F6F5-4FFF-8C7F-E46EAB93EC4A",
+   "name": "White Lies",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/5dd18afb2b6d4356b786c8469966d6e7.jpg",
+   "by": [
+    "Arctic Monkeys + Kasabian"
+   ]
+  },
+  {
+   "entity_id": "24C32B22-D975-49E3-9A0B-071771D7A659",
+   "name": "The Last of Us: Left Behind",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": "https://www.metacritic.com/a/img/catalog/provider/6/12/6-1-556672-52.jpg?auto=webp&fit=crop&height=675&width=1200",
+   "by": [
+    "The Last of Us"
+   ]
+  },
+  {
+   "entity_id": "16E143DF-2350-471F-897F-AAAAE5850031",
+   "name": "Uncharted: Drake's Fortune",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": "https://www.metacritic.com/a/img/catalog/provider/6/12/6-1-75939-52.jpg?auto=webp&fit=crop&height=675&width=1200",
+   "by": [
+    "The Last of Us"
+   ]
+  },
+  {
+   "entity_id": "9D491BD0-92A2-4D9C-B0AE-F68410599224",
+   "name": "Uncharted 2: Among Thieves",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "The Last of Us"
+   ]
+  },
+  {
+   "entity_id": "7727E12E-6696-43BF-8503-8817A9FC06CA",
+   "name": "Uncharted 3: Drake's Deception",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "The Last of Us"
+   ]
+  },
+  {
+   "entity_id": "9E288B89-9DA7-48A1-AC89-E51F6B08672F",
+   "name": "Uncharted 4: A Thief's End",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "The Last of Us"
+   ]
+  },
+  {
+   "entity_id": "376553E0-3474-4137-AA8A-F77EFF52DAF3",
+   "name": "Uncharted: The Lost Legacy",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "The Last of Us"
+   ]
+  },
+  {
+   "entity_id": "97AE8DF6-DD46-43FD-A248-85CD0D072CFC",
+   "name": "Beyond: Two Souls",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "The Last of Us"
+   ]
+  },
+  {
+   "entity_id": "8BEACB2E-248E-40E8-99AA-F62F14DB372C",
+   "name": "Heavy Rain",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "The Last of Us"
+   ]
+  },
+  {
+   "entity_id": "99FBEE0C-2A8A-4EE2-9B20-8CEBD854CD46",
+   "name": "Lucy Dacus",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/17c02185a81f741d32c03ff4dec08f64.jpg",
+   "by": [
+    "Mitski + Phoebe Bridgers"
+   ]
+  },
+  {
+   "entity_id": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+   "name": "Japanese Breakfast",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/79581bb4c38962f28039a83813de0360.jpg",
+   "by": [
+    "Mitski + Phoebe Bridgers"
+   ]
+  },
+  {
+   "entity_id": "AD420A3F-5F09-4C1C-BB1E-A3DEB937F184",
+   "name": "Big Thief",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/5a72388fc2b03a97e121f1b5cc7c8c05.jpg",
+   "by": [
+    "Mitski + Phoebe Bridgers"
+   ]
+  },
+  {
+   "entity_id": "21E391CC-71CD-480F-B8BA-049BD36C6DA5",
+   "name": "beabadoobee",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/86bab727943a309675788989facab1b1.jpg",
+   "by": [
+    "Mitski + Phoebe Bridgers"
+   ]
+  },
+  {
+   "entity_id": "144F1259-C207-44A7-8367-D5CCC51FF5A9",
+   "name": "Snail Mail",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/59e06977b9a3e3468bc4a2da4f347e4c.jpg",
+   "by": [
+    "Mitski + Phoebe Bridgers"
+   ]
+  },
+  {
+   "entity_id": "56908E37-B4A6-4466-BF3D-C0158FB9C8C3",
+   "name": "Soccer Mommy",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/80e7716f6d097722d2fc850509097565.jpg",
+   "by": [
+    "Mitski + Phoebe Bridgers"
+   ]
+  },
+  {
+   "entity_id": "F562D40B-46B6-493A-9B33-2E8B3B2D4635",
+   "name": "Faye Webster",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/45f218f8207aa56f7d04a64df702bb27.jpg",
+   "by": [
+    "Mitski + Phoebe Bridgers"
+   ]
+  },
+  {
+   "entity_id": "09D3870C-84A8-4522-870C-981795EA7CEC",
+   "name": "Samia",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/fec0ce74214afe62f9742c58e75b2c18.jpg",
+   "by": [
+    "Mitski + Phoebe Bridgers"
+   ]
+  },
+  {
+   "entity_id": "307D43E4-6A18-4FDB-82BA-7CBD9A2A8D82",
+   "name": "Haley Heynderickx",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/0af923ec6a301f697c40df313cc9be0f.jpg",
+   "by": [
+    "Mitski + Phoebe Bridgers"
+   ]
+  },
+  {
+   "entity_id": "5FB0A7DA-C7F0-487B-80C4-CA893D1BC56B",
+   "name": "Better Oblivion Community Center",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/dbabc80914f69f10c19fa6184c177502.jpg",
+   "by": [
+    "Mitski + Phoebe Bridgers"
+   ]
+  },
+  {
+   "entity_id": "EF67ECD6-A38B-4BAB-A8F1-1366B37C8E7A",
+   "name": "Tom Petty and the Heartbreakers",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/f60d12661fd940d6f5a1b6e0d9b46b3d.jpg",
+   "by": [
+    "Bruce Springsteen"
+   ]
+  },
+  {
+   "entity_id": "5B57E9E7-48F2-431A-9D85-C6DB57D1118A",
+   "name": "Van Morrison",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/805a332e480548c3b05dfead356541e0.jpg",
+   "by": [
+    "Bruce Springsteen"
+   ]
+  },
+  {
+   "entity_id": "53A5258E-8701-4DD2-9646-6F162F170CBA",
+   "name": "Paul Simon",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/899b290b3f804c1ccc06360c9e723649.jpg",
+   "by": [
+    "Bruce Springsteen"
+   ]
+  },
+  {
+   "entity_id": "1F168C32-EBB2-4376-B967-D2C48F130B23",
+   "name": "Dire Straits",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/37ee95d038a151fe8c1a68d9a943a58c.jpg",
+   "by": [
+    "Bruce Springsteen"
+   ]
+  },
+  {
+   "entity_id": "6F04D7A4-AA26-4D57-B677-DDD3F737A4B6",
+   "name": "Simon & Garfunkel",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/087b077910ba5d5ca820d6867771261b.jpg",
+   "by": [
+    "Bruce Springsteen"
+   ]
+  },
+  {
+   "entity_id": "73E6EF12-524D-435A-9638-FFCBEA3A9997",
+   "name": "The Proclaimers",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/6a581a85112d43c590cd98b479f1acca.jpg",
+   "by": [
+    "Bruce Springsteen"
+   ]
+  },
+  {
+   "entity_id": "6B4B3E0C-634D-49F8-B605-C4BA6A9F52CE",
+   "name": "Aliens",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BN2ZiMmQ0YWItN2IwZS00Y2NhLWE0NzQtNGNiOGFjN2U4MWNmXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Ridley Scott + Alien + Blade Runner"
+   ]
+  },
+  {
+   "entity_id": "87B9350E-ABFF-4A53-8565-49641858015C",
+   "name": "2001: A Space Odyssey",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BNjU0NDFkMTQtZWY5OS00MmZhLTg3Y2QtZmJhMzMzMWYyYjc2XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Ridley Scott + Alien + Blade Runner"
+   ]
+  },
+  {
+   "entity_id": "43F5DB74-1630-498F-AD77-03F3B3D91291",
+   "name": "The Thing",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BYTA3NDU5MWEtNTk4Yy00ZDNkLThmZTQtMjU3ZGVhYzAyMzU4XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Ridley Scott + Alien + Blade Runner"
+   ]
+  },
+  {
+   "entity_id": "350D689B-976F-43C4-94A8-0CA113211E7A",
+   "name": "The Terminator",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BZmE0YzIxM2QtMGNlMi00MjRmLWE3MWMtOWQzMGVjMmU0YTFmXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Ridley Scott + Alien + Blade Runner"
+   ]
+  },
+  {
+   "entity_id": "3A02361C-987B-4F7E-9AAD-071C3853AD92",
+   "name": "Blade Runner 2049",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_.jpg",
+   "by": [
+    "Ridley Scott + Alien + Blade Runner"
+   ]
+  },
+  {
+   "entity_id": "34F365F2-ED0D-4612-A39D-AA5D98D2B7A3",
+   "name": "Star Wars: Episode V - The Empire Strikes Back",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMTkxNGFlNDktZmJkNC00MDdhLTg0MTEtZjZiYWI3MGE5NWIwXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Ridley Scott + Alien + Blade Runner"
+   ]
+  },
+  {
+   "entity_id": "018053E6-0DCA-49C9-A23D-4C7C7FF4E42B",
+   "name": "Apocalypse Now",
+   "type": "urn:entity:movie",
+   "n": 2,
+   "image": "https://m.media-amazon.com/images/M/MV5BZDhiMTljYjYtODc1Yy00MmEwLTg2OTYtYmE1YTRmNDE4MmEwXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Ridley Scott + Alien + Blade Runner",
+    "Stanley Kubrick + The Shining + 2001: A Space Odyssey"
+   ]
+  },
+  {
+   "entity_id": "18109CDB-CD7E-436B-8F33-1AF16CFE9278",
+   "name": "Alien³",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BOGZiNmVlZGEtM2VmMi00ZTFkLTliMzEtZDNhYzUzNTcxMGY3XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Ridley Scott + Alien + Blade Runner"
+   ]
+  },
+  {
+   "entity_id": "4A55F337-75B6-4016-B292-A336D360AC80",
+   "name": "MGMT",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/2a96cbd8b46e442.jpg",
+   "by": [
+    "The Strokes"
+   ]
+  },
+  {
+   "entity_id": "A51DC893-100B-49D3-9CA9-B359B460C22B",
+   "name": "Julian Casablancas",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/b6eb786d8b314370a592bea2c6241f38.jpg",
+   "by": [
+    "The Strokes"
+   ]
+  },
+  {
+   "entity_id": "4D04389E-C4D3-4B89-8F93-A5BD20E0129A",
+   "name": "Bloc Party",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/2a96cbd8b46e442.jpg",
+   "by": [
+    "The Strokes"
+   ]
+  },
+  {
+   "entity_id": "6A955457-1D79-41C2-94D2-06683841CD66",
+   "name": "Vampire Weekend",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/3252dc6f0ece5c1cf37bb4aa2bf02c7c.jpg",
+   "by": [
+    "The Strokes"
+   ]
+  },
+  {
+   "entity_id": "4341FA7E-936E-415B-9FD4-BA76D81DB730",
+   "name": "Maisie Peters",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/6a0e892975b69aed044d0e12d9c85022.jpg",
+   "by": [
+    "Sally Rooney"
+   ]
+  },
+  {
+   "entity_id": "3A113ED5-2893-4104-9A55-C323CF3B125A",
+   "name": "Orla Gartland",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/65bf6f3ef43439c7b6151700ab6c157e.jpg",
+   "by": [
+    "Sally Rooney"
+   ]
+  },
+  {
+   "entity_id": "A01C72F0-9819-4732-B5CD-A22BF9ADB98A",
+   "name": "Gracie Abrams",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/cbef4958838a319df31bd217a7a71273.jpg",
+   "by": [
+    "Sally Rooney"
+   ]
+  },
+  {
+   "entity_id": "97A06C30-99BE-47A8-BD7E-D6DDD4504137",
+   "name": "Conan Gray",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/bd8a8f463a789fc49371300c2d214a5e.jpg",
+   "by": [
+    "Sally Rooney"
+   ]
+  },
+  {
+   "entity_id": "87B5F964-1BAE-4D1E-88DE-C30CF4554481",
+   "name": "Griff",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/a72e491aa8f724bff31b57558b142aa4.jpg",
+   "by": [
+    "Sally Rooney"
+   ]
+  },
+  {
+   "entity_id": "B389FF27-9D60-4D7C-A06A-C978FFF59EB5",
+   "name": "Baby Queen",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/75e58fd42e7f3e569391f33207b57326.jpg",
+   "by": [
+    "Sally Rooney"
+   ]
+  },
+  {
+   "entity_id": "0EE7B9F5-B323-4238-B90F-E44D2AC5F3F5",
+   "name": "Pale Waves",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/9e931ebf623e89df5581643797d97227.jpg",
+   "by": [
+    "Sally Rooney"
+   ]
+  },
+  {
+   "entity_id": "A26AE162-17AC-4BA0-915F-6CC2CF42FF57",
+   "name": "Nina Nesbitt",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/190cfa7d00650d884fe5df5b2813365d.jpg",
+   "by": [
+    "Sally Rooney"
+   ]
+  },
+  {
+   "entity_id": "AD54F0F0-1D13-4CD0-90C6-F0D33570BCC4",
+   "name": "King Princess",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/63b8956f87dca11e764757bd02f61ced.jpg",
+   "by": [
+    "Sally Rooney"
+   ]
+  },
+  {
+   "entity_id": "47D44560-E042-4036-829C-BB6BA9ED4C43",
+   "name": "A Clockwork Orange",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMTY3MjM1Mzc4N15BMl5BanBnXkFtZTgwODM0NzAxMDE@._V1_.jpg",
+   "by": [
+    "Stanley Kubrick + The Shining + 2001: A Space Odyssey"
+   ]
+  },
+  {
+   "entity_id": "3D04AFE5-BA18-46E9-B634-FD3CDA91582C",
+   "name": "Full Metal Jacket",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BYWUzNzZkNzUtNDdiYy00Nzk5LTgxMmItNTk0MjRjNjdjNDA0XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Stanley Kubrick + The Shining + 2001: A Space Odyssey"
+   ]
+  },
+  {
+   "entity_id": "352AA7B7-975C-438B-B6A3-F3A42F22A96B",
+   "name": "Alien",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BN2NhMDk2MmEtZDQzOC00MmY5LThhYzAtMDdjZGFjOGZjMjdjXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Stanley Kubrick + The Shining + 2001: A Space Odyssey"
+   ]
+  },
+  {
+   "entity_id": "ED1DC7F9-463E-49DB-B698-4E03E34B0132",
+   "name": "One Flew Over the Cuckoo's Nest",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BYjBkMjgzMzYtNzRiMS00NDc3LWE4YTUtZjYxYjZhNjNhYzhhXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Stanley Kubrick + The Shining + 2001: A Space Odyssey"
+   ]
+  },
+  {
+   "entity_id": "A74A74BB-CE73-4A76-807B-8BD1714BC463",
+   "name": "Blade Runner",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BOWQ4YTBmNTQtMDYxMC00NGFjLTkwOGQtNzdhNmY1Nzc1MzUxXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Stanley Kubrick + The Shining + 2001: A Space Odyssey"
+   ]
+  },
+  {
+   "entity_id": "B991E6AD-9B7A-41A2-AEC6-F13666D783EE",
+   "name": "Taxi Driver",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BZDNhMGYwM2UtMTdlZS00MGQ1LWI2YzAtODY5YWI1MjYyNzRmXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Stanley Kubrick + The Shining + 2001: A Space Odyssey"
+   ]
+  },
+  {
+   "entity_id": "4FBB2222-0E27-4094-8A4A-4A4695620B57",
+   "name": "Psycho",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BYjZhMzFiZjItODA3ZC00MmRhLWIzMGYtMmVjOWUwYTA3MTRjXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Stanley Kubrick + The Shining + 2001: A Space Odyssey"
+   ]
+  },
+  {
+   "entity_id": "B1563D4D-8BBD-42B7-A6FA-8CA2F7EF2A72",
+   "name": "The Good, the Bad and the Ugly",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMWM5ZjQxM2YtNDlmYi00ZDNhLWI4MWUtN2VkYjBlMTY1ZTkwXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Stanley Kubrick + The Shining + 2001: A Space Odyssey"
+   ]
+  },
+  {
+   "entity_id": "EDDC54EA-2CA0-4D78-AF94-BF44CFCC948B",
+   "name": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMjFjYzBlOTktMTI2OS00ZWVhLTgxMDUtNzAwODY2NmI3YTAzXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Stanley Kubrick + The Shining + 2001: A Space Odyssey"
+   ]
+  },
+  {
+   "entity_id": "870FBF81-80F8-401A-9621-63DBF6AB6C07",
+   "name": "Dead Cells",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": "https://www.metacritic.com/a/img/catalog/provider/6/12/6-1-661532-52.jpg?auto=webp&fit=crop&height=675&width=1200",
+   "by": [
+    "Hollow Knight"
+   ]
+  },
+  {
+   "entity_id": "007E699A-5489-470B-BE1D-D5276FA94302",
+   "name": "The Messenger",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "Hollow Knight"
+   ]
+  },
+  {
+   "entity_id": "CF0BD4F2-DDFB-4D84-9E32-8FD4731F20C8",
+   "name": "Carrion",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "Hollow Knight"
+   ]
+  },
+  {
+   "entity_id": "81A38BCC-EC90-4496-95B6-190989947C04",
+   "name": "Blasphemous",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "Hollow Knight"
+   ]
+  },
+  {
+   "entity_id": "83209B8D-2285-4A33-AB88-D798EDC7BD2E",
+   "name": "Hollow Knight: Voidheart Edition",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "Hollow Knight"
+   ]
+  },
+  {
+   "entity_id": "BBF4CA8A-A996-44FD-AF8B-AB05B6A45A48",
+   "name": "SteamWorld Dig 2",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "Hollow Knight"
+   ]
+  },
+  {
+   "entity_id": "6776D720-9FED-461A-BFC6-EC413E95EDFC",
+   "name": "Wonder Boy: The Dragon's Trap",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "Hollow Knight"
+   ]
+  },
+  {
+   "entity_id": "E7275B8F-3FAF-47F0-A388-E38FC8C8319F",
+   "name": "Katana ZERO",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "Hollow Knight"
+   ]
+  },
+  {
+   "entity_id": "24A8FA99-00D1-4A48-9837-A03D7C9232DB",
+   "name": "Owlboy",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "Hollow Knight"
+   ]
+  },
+  {
+   "entity_id": "20D88089-0057-4B1B-BE87-BAEA3ADE8C82",
+   "name": "Axiom Verge",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "Hollow Knight"
+   ]
+  },
+  {
+   "entity_id": "9FCB92D1-9B48-4ADF-A6DC-350DAA7E91AF",
+   "name": "The Smiths",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/1f6b747994bdbbd09eda60f30f6b52ee.jpg",
+   "by": [
+    "Joy Division"
+   ]
+  },
+  {
+   "entity_id": "B078BEF5-3988-4CC2-BEFF-598263AA96D0",
+   "name": "Gang of Four",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/6a07024e4b0b4a45b41ef6f598a17565.jpg",
+   "by": [
+    "Joy Division"
+   ]
+  },
+  {
+   "entity_id": "0DB74BEB-8191-4E7D-A519-42941EDACA9A",
+   "name": "Echo & the Bunnymen",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/492b4c158362463fa6599106e0905a83.jpg",
+   "by": [
+    "Joy Division"
+   ]
+  },
+  {
+   "entity_id": "8683C096-88DF-4C65-AF64-D580BC36C7E9",
+   "name": "New Order",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/2a96cbd8b46e442.jpg",
+   "by": [
+    "Joy Division"
+   ]
+  },
+  {
+   "entity_id": "2E2D2E5A-8CE2-4F10-A388-320349CEEEA9",
+   "name": "The Jesus and Mary Chain",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/7a12c6fde06543e6adaa6fdb60ca95a3.jpg",
+   "by": [
+    "Joy Division"
+   ]
+  },
+  {
+   "entity_id": "62823CD4-EBF3-42B6-B7AF-D9B61F70D7DD",
+   "name": "Siouxsie and the Banshees",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/5f81190c1f9343c786c29802bb1aa13d.jpg",
+   "by": [
+    "Joy Division"
+   ]
+  },
+  {
+   "entity_id": "CE859B17-DDB5-41B4-AEDC-B8DDA2F7CC1B",
+   "name": "Sonic Youth",
+   "type": "urn:entity:artist",
+   "n": 2,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/7fc9b9e14a314de79f30d6a71abbfb5e.jpg",
+   "by": [
+    "Joy Division",
+    "Twin Peaks + Radiohead + Silent Hill"
+   ]
+  },
+  {
+   "entity_id": "CD30200C-DE23-4ADB-98C0-F98A7401BC78",
+   "name": "The Chameleons",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/473b0cba20bc47f8a32f78c35f3c08cd.jpg",
+   "by": [
+    "Joy Division"
+   ]
+  },
+  {
+   "entity_id": "31813638-503D-486B-8FA2-4DEB88ABA596",
+   "name": "Public Image Ltd.",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/442fb5c64bd578f4333b21856ed66656.jpg",
+   "by": [
+    "Joy Division"
+   ]
+  },
+  {
+   "entity_id": "0C461CA5-8185-49A2-9EF0-584A16220939",
+   "name": "The Shield",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BN2Y2NzUzZjItNjNjYy00ZjA0LTllYWEtZGE2NjY0NDg1YzRlXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "The Sopranos"
+   ]
+  },
+  {
+   "entity_id": "A3ADEF71-6DD4-4396-BBF1-BEDF2BC37972",
+   "name": "Deadwood",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BODFiMjBkNDMtN2I1NS00YWM3LTliNWEtMTg0NjVlN2I5YTNlXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "The Sopranos"
+   ]
+  },
+  {
+   "entity_id": "9665DE85-3418-4FCB-8776-B084C17802D8",
+   "name": "Ray Donovan",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BYTg0MWQ5Y2ItOGViNS00MWNhLTk1Y2ItN2Q1MjY1MDhiYTM0XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "The Sopranos"
+   ]
+  },
+  {
+   "entity_id": "F9F40FCF-58DE-4F6C-A80F-79738F3622F4",
+   "name": "The Black Donnellys",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BNWEwN2NkYTUtZGUwMC00M2MxLTg4NTAtNWNiMTZiZjFiMzBhXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "The Sopranos"
+   ]
+  },
+  {
+   "entity_id": "9C9276BC-F292-4D22-BD73-6D4B3834342A",
+   "name": "Sons of Anarchy",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BZWNiZjFiNGEtNGZmMS00YTBlLWJlNmQtZTA2NzEzZWE4ZGQyXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "The Sopranos"
+   ]
+  },
+  {
+   "entity_id": "DEB7FEE8-36F8-4F38-ACCE-805A6F183984",
+   "name": "Justified",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BZGIzNmFlMzgtYWY0MC00NjFmLWJhMGItZTM2YjVlZjY3ZjBlXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "The Sopranos"
+   ]
+  },
+  {
+   "entity_id": "AA8CC8AA-DFBE-4AAA-9612-2860EE84420C",
+   "name": "Triss (Redwall, #15)",
+   "type": "urn:entity:book",
+   "n": 1,
+   "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1388786456i/8001.jpg",
+   "by": [
+    "Pride and Prejudice + Jane Austen"
+   ]
+  },
+  {
+   "entity_id": "3438BDA1-DD6E-4F53-9264-B535EBA61EB8",
+   "name": "Eulalia! (Redwall, #19)",
+   "type": "urn:entity:book",
+   "n": 1,
+   "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1441748387i/58092.jpg",
+   "by": [
+    "Pride and Prejudice + Jane Austen"
+   ]
+  },
+  {
+   "entity_id": "C382EBFD-7688-4D56-ACD7-486CD51DFA6D",
+   "name": "The Legend of Luke (Redwall, #12)",
+   "type": "urn:entity:book",
+   "n": 1,
+   "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1442546166i/7987.jpg",
+   "by": [
+    "Pride and Prejudice + Jane Austen"
+   ]
+  },
+  {
+   "entity_id": "08EC1FCD-3CD4-4D0F-A683-A215E2FD212B",
+   "name": "Marlfox (Redwall, #11)",
+   "type": "urn:entity:book",
+   "n": 1,
+   "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1311702426i/7999.jpg",
+   "by": [
+    "Pride and Prejudice + Jane Austen"
+   ]
+  },
+  {
+   "entity_id": "E57BEF48-7FF2-4965-B937-302965A827E6",
+   "name": "Loamhedge (Redwall, #16)",
+   "type": "urn:entity:book",
+   "n": 1,
+   "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1388437560i/140138.jpg",
+   "by": [
+    "Pride and Prejudice + Jane Austen"
+   ]
+  },
+  {
+   "entity_id": "EF65D3C6-46A0-4DF4-AAD5-46AD3F10A7AB",
+   "name": "High Rhulain (Redwall, #18)",
+   "type": "urn:entity:book",
+   "n": 1,
+   "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1326081887i/130352.jpg",
+   "by": [
+    "Pride and Prejudice + Jane Austen"
+   ]
+  },
+  {
+   "entity_id": "7DE5024F-0835-4EA6-BB35-CAF3A3F288F7",
+   "name": "Taggerung (Redwall, #14)",
+   "type": "urn:entity:book",
+   "n": 1,
+   "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1429977971i/7976.jpg",
+   "by": [
+    "Pride and Prejudice + Jane Austen"
+   ]
+  },
+  {
+   "entity_id": "216B0C87-5F90-4828-AC57-B5870FFA4129",
+   "name": "The Rogue Crew (Redwall, #22)",
+   "type": "urn:entity:book",
+   "n": 1,
+   "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1327878181i/8702912.jpg",
+   "by": [
+    "Pride and Prejudice + Jane Austen"
+   ]
+  },
+  {
+   "entity_id": "0FAA0C22-CDA5-4481-8520-2C0CA35408D7",
+   "name": "Tomodachi Life",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "Pokémon"
+   ]
+  },
+  {
+   "entity_id": "33F8BDCD-176C-427F-ACA6-5A8C4131A939",
+   "name": "Animal Crossing: Wild World",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": "https://www.metacritic.com/a/img/catalog/provider/6/12/6-1-607010-52.jpg?auto=webp&fit=crop&height=675&width=1200",
+   "by": [
+    "Pokémon"
+   ]
+  },
+  {
+   "entity_id": "3699DAFA-BCC8-4A37-98C8-0B9BE5AFD40D",
+   "name": "Animal Crossing: New Leaf",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "Pokémon"
+   ]
+  },
+  {
+   "entity_id": "2225FC45-A2BE-454C-8527-6EAF3F4BF3DB",
+   "name": "The Sims 4",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": "https://www.metacritic.com/a/img/catalog/provider/6/12/6-1-918112-52.jpg?auto=webp&fit=crop&height=675&width=1200",
+   "by": [
+    "Pokémon"
+   ]
+  },
+  {
+   "entity_id": "766D99BD-60A0-4F50-AE4C-A1619A6E42B7",
+   "name": "Candy Crush Saga",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "Pokémon"
+   ]
+  },
+  {
+   "entity_id": "A25089FB-2AEF-4004-8EF1-F4B9A42FB82A",
+   "name": "Miitopia",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "Pokémon"
+   ]
+  },
+  {
+   "entity_id": "1D6C260D-9BF8-4F8B-9A73-06342EB30E5C",
+   "name": "Animal Crossing: Pocket Camp",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": "https://www.metacritic.com/a/img/catalog/provider/6/12/6-1-653438-52.jpg?auto=webp&fit=crop&height=675&width=1200",
+   "by": [
+    "Pokémon"
+   ]
+  },
+  {
+   "entity_id": "9E184634-7021-46A9-9DB1-3AE2D223811D",
+   "name": "The Sims Medieval",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "Pokémon"
+   ]
+  },
+  {
+   "entity_id": "EE8A33D9-A25F-46F5-9D1F-9DABEB062981",
+   "name": "Wii Play",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "Pokémon"
+   ]
+  },
+  {
+   "entity_id": "0CB15734-6772-42E4-90E1-9BEE2529A592",
+   "name": "The Sims 3",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "Pokémon"
+   ]
+  },
+  {
+   "entity_id": "84499FCE-927E-4300-AD46-BAF19B94D3BB",
+   "name": "The Internet",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/7f8663f9345bcd1aa0a8f6301c4417e5.jpg",
+   "by": [
+    "Frank Ocean + Blonde"
+   ]
+  },
+  {
+   "entity_id": "AC8AD881-8A8F-49E6-9A2D-1517EB9BD70D",
+   "name": "Miguel",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/0a1aef122a6ee79b4df5e5b978b0b632.jpg",
+   "by": [
+    "Frank Ocean + Blonde"
+   ]
+  },
+  {
+   "entity_id": "FB7BB117-7E04-47D4-B579-D884F17DF00A",
+   "name": "Jhené Aiko",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": null,
+   "by": [
+    "Frank Ocean + Blonde"
+   ]
+  },
+  {
+   "entity_id": "9BC770A7-3369-4BB8-A79E-E3440D308489",
+   "name": "Solange",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/d99d4928521b1eb24c56faa42f97f8a0.jpg",
+   "by": [
+    "Frank Ocean + Blonde"
+   ]
+  },
+  {
+   "entity_id": "D69276A3-F6C3-4FA0-83A9-FF1FB7935832",
+   "name": "PARTYNEXTDOOR",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/040fde79bfa145e96d25d974e239f092.jpg",
+   "by": [
+    "Frank Ocean + Blonde"
+   ]
+  },
+  {
+   "entity_id": "4C305B2F-5A46-4885-A6DA-5E22D11E86E0",
+   "name": "The Bear",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMjk2NWI5OTctODcwYy00NGRmLWFmN2YtOTZiNzFiYjVlODBkXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Succession"
+   ]
+  },
+  {
+   "entity_id": "3E6C9B5D-4798-4AC7-A8FD-C1B56F699B47",
+   "name": "The White Lotus",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BZmM1MGM0MDQtZTAzNy00ZGJkLWI4MDUtNjBmMzdhYjhlM2QwXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Succession"
+   ]
+  },
+  {
+   "entity_id": "721B8E56-41FF-4272-BE94-8C4C698D6090",
+   "name": "Beef",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMGNlNDkyYzItNTg5Yy00NGFiLWJhYTctODE5NjNkYjk4ZDUwXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Succession"
+   ]
+  },
+  {
+   "entity_id": "E30EDD6C-FEC9-4C6C-8F65-4F3711E40891",
+   "name": "Fleishman Is in Trouble",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BOTkyOWE0ZWUtNDg2OC00ZmU4LWI3MmUtZjYxYTA0NGJhOWZjXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Succession"
+   ]
+  },
+  {
+   "entity_id": "50675F72-72DE-40B0-BF85-2A4C135E89D6",
+   "name": "The Offer",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BZTM2OWE3NGYtNDIyZi00NGJiLTgwMTQtZGFiNjIwMzBkY2UwXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Succession"
+   ]
+  },
+  {
+   "entity_id": "DCA1F3CA-7A25-421C-BB4D-A864B6D53848",
+   "name": "Ted Lasso",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BM2ZlYTU0YWUtMzY4OC00N2JkLTk1ZGQtN2UxNWJhMTBkMzM4XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Succession"
+   ]
+  },
+  {
+   "entity_id": "ADDB9A06-A6D0-4174-AEB7-4D3757876E2F",
+   "name": "Dopesick",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BYmM0ZGFkZTctZjg2Ny00YmFhLThhNmItZjRjODk4ZGJhNWY3XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Succession"
+   ]
+  },
+  {
+   "entity_id": "73B19E3B-9E60-4051-8304-4859F239ED54",
+   "name": "The Dropout",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BOTc2Zjg4MDktZWQzNC00YTM1LTk3NzYtY2JiNjc4Y2MwNWNhXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Succession"
+   ]
+  },
+  {
+   "entity_id": "355F98A6-AD9E-4A49-A1E8-B2D555E2DD33",
+   "name": "I Know This Much Is True",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BZWNiY2I2MDQtNGZkMy00MjFjLTg5MWUtYjI4NjVkMmY5MzExXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Succession"
+   ]
+  },
+  {
+   "entity_id": "4E30CF19-8D68-47DB-AF34-11C40ACC1355",
+   "name": "Hacks",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMjE0MmM5YzktNGY0NS00ZmQ0LWI1YjEtZjY2NDA4ZmZiNGQ2XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Succession"
+   ]
+  },
+  {
+   "entity_id": "2F3F25E3-D71E-4805-9816-9E8E62705F20",
+   "name": "Gloria Gaynor",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/045d8a85823d5f8e572ae5c9d1280cce.jpg",
+   "by": [
+    "ABBA + Bee Gees"
+   ]
+  },
+  {
+   "entity_id": "12BD83EB-3E8A-4DB6-A9E3-00A1B645AEC9",
+   "name": "Bonnie Tyler",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/5b3bbf6af0104ae8badff3a80bcdc342.jpg",
+   "by": [
+    "ABBA + Bee Gees"
+   ]
+  },
+  {
+   "entity_id": "8BAB09FA-26C0-4CB7-965A-3F5A716604FA",
+   "name": "Barry Manilow",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/6534dc026aba45de905333e42304a2b7.jpg",
+   "by": [
+    "ABBA + Bee Gees"
+   ]
+  },
+  {
+   "entity_id": "6C5ADD79-DE04-4DDE-BFA0-943FF34E6186",
+   "name": "Tom Jones",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/2a96cbd8b46e442.jpg",
+   "by": [
+    "ABBA + Bee Gees"
+   ]
+  },
+  {
+   "entity_id": "349788B0-4D83-4368-A39A-E70935532DB8",
+   "name": "Hot Chocolate",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/eaa78dbcf4d528835a2ab17100518fce.jpg",
+   "by": [
+    "ABBA + Bee Gees"
+   ]
+  },
+  {
+   "entity_id": "2AA8EDAD-CFDD-4594-8548-CF70E0938C14",
+   "name": "Boney M.",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/d667ee82ac831fe1dda2b8af0eb85f18.jpg",
+   "by": [
+    "ABBA + Bee Gees"
+   ]
+  },
+  {
+   "entity_id": "C865362B-92CF-4EE7-82A5-537FA92F6462",
+   "name": "Village People",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/acabe38b92264062b61c422d3828d0d9.jpg",
+   "by": [
+    "ABBA + Bee Gees"
+   ]
+  },
+  {
+   "entity_id": "FF1945DF-A5DE-4C4A-83C0-422135E03BC0",
+   "name": "The Mamas & the Papas",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/660ad0341accd246871c54721229b7de.jpg",
+   "by": [
+    "ABBA + Bee Gees"
+   ]
+  },
+  {
+   "entity_id": "4FFDEEDA-A513-4B08-8750-59C59D25F335",
+   "name": "Eric Carmen",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/791d74cab3d942e8b9a882f7a5b65b6b.jpg",
+   "by": [
+    "ABBA + Bee Gees"
+   ]
+  },
+  {
+   "entity_id": "76CAC3A6-B19A-4D09-966F-3F9A053862E8",
+   "name": "Volcano Choir",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/1c753a9c8c9b48288518698ae6963d86.jpg",
+   "by": [
+    "Bon Iver + Fleet Foxes"
+   ]
+  },
+  {
+   "entity_id": "209CAB00-A83A-43A6-860A-98EC08D58A2C",
+   "name": "Andrew Bird",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/9a328abe2a66b8edc661d229f850ce75.jpg",
+   "by": [
+    "Bon Iver + Fleet Foxes"
+   ]
+  },
+  {
+   "entity_id": "92E3DAD5-93AC-4FE9-932F-2F2ABCEA2FCE",
+   "name": "Sufjan Stevens",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/5b4bcdb9545ed40048ecb79390f890d1.jpg",
+   "by": [
+    "Bon Iver + Fleet Foxes"
+   ]
+  },
+  {
+   "entity_id": "7BCCB9FC-D4B9-4DB4-93CA-80028E1F9AC9",
+   "name": "Iron & Wine",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/62baddd23dd54205bfd8897ebd20d634.jpg",
+   "by": [
+    "Bon Iver + Fleet Foxes"
+   ]
+  },
+  {
+   "entity_id": "592D00EB-2EF2-48AB-B6AC-AFD5486F21C7",
+   "name": "Grizzly Bear",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/66b6501501e64d75bed050f9bec1cf12.jpg",
+   "by": [
+    "Bon Iver + Fleet Foxes"
+   ]
+  },
+  {
+   "entity_id": "37A2F9CB-F1A4-45D1-A52E-976C6292280D",
+   "name": "Bowerbirds",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/6e177b5d588dc5df71ccf0568863af67.jpg",
+   "by": [
+    "Bon Iver + Fleet Foxes"
+   ]
+  },
+  {
+   "entity_id": "59436222-D752-4B97-9AB8-3102C62CB334",
+   "name": "Justin Vernon",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/497b166b4a364aa487c1972d443de7ff.jpg",
+   "by": [
+    "Bon Iver + Fleet Foxes"
+   ]
+  },
+  {
+   "entity_id": "8838ACFA-EF66-44F0-9436-3AE7DE69E28B",
+   "name": "José González",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": null,
+   "by": [
+    "Bon Iver + Fleet Foxes"
+   ]
+  },
+  {
+   "entity_id": "4332F867-78AF-4B9E-B930-02D8D9A30755",
+   "name": "Laura Marling",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/5ee26b4665c4726393de0f93c05eb74c.jpg",
+   "by": [
+    "Bon Iver + Fleet Foxes"
+   ]
+  },
+  {
+   "entity_id": "09A6AE07-2814-498F-A978-17B59092F9DC",
+   "name": "Local Natives",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/2a96cbd8b46e442.jpg",
+   "by": [
+    "Bon Iver + Fleet Foxes"
+   ]
+  },
+  {
+   "entity_id": "B66AA21F-768D-4366-B522-189E47CD7457",
+   "name": "Twin Peaks",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BZGU5OTQ2YzctZmE4Zi00OWI0LWJmMDQtNDcxYjJmODBjN2U1XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Twin Peaks + Radiohead + Silent Hill"
+   ]
+  },
+  {
+   "entity_id": "9586E7BD-3673-4FD0-B595-F6A7A4929D7D",
+   "name": "The Outer Limits",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMTEzMDE0ODM0OTFeQTJeQWpwZ15BbWU3MDEzNTI4ODQ@._V1_.jpg",
+   "by": [
+    "Twin Peaks + Radiohead + Silent Hill"
+   ]
+  },
+  {
+   "entity_id": "E451A0B4-0762-4E88-96E9-CDD17DD94810",
+   "name": "The X-Files",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BNzg3ODVhZWEtYmI0MC00NDQ0LWEyNGYtM2M0MTRhZTZmMjU3XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Twin Peaks + Radiohead + Silent Hill"
+   ]
+  },
+  {
+   "entity_id": "1FFF5177-A6AA-49D2-95B7-89F9B437B4B2",
+   "name": "American Gothic",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMzJkMDQyOWYtODE5Mi00ODk1LWE0NGUtNjNkZmRiNTdlMmVhXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Twin Peaks + Radiohead + Silent Hill"
+   ]
+  },
+  {
+   "entity_id": "89941E9E-C164-4E3D-A320-9336E2F95F25",
+   "name": "Shazam!",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BZWM1YjdmOGQtNGYyMC00NjMwLTk1OWUtMGYzM2NjYjliYzYyXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Minecraft + Percy Jackson + Spider-Verse"
+   ]
+  },
+  {
+   "entity_id": "A79D1D11-0686-401E-8FFF-633E6A604929",
+   "name": "Captain Marvel",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BZDI1NGU2ODAtNzBiNy00MWY5LWIyMGEtZjUxZjUwZmZiNjBlXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Minecraft + Percy Jackson + Spider-Verse"
+   ]
+  },
+  {
+   "entity_id": "3C6380C8-8356-4ED6-AC6E-9BC22AF91615",
+   "name": "Venom",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BNTYwMDg5MDItNjhmZi00NmVmLThjNWItMmNkMjVkMWRhNzI2XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Minecraft + Percy Jackson + Spider-Verse"
+   ]
+  },
+  {
+   "entity_id": "553F5D12-7E8C-4BD9-90F2-5B431CD9A353",
+   "name": "X-Men: Dark Phoenix",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BZjcwMDIyNjctMDVmNS00MzkyLTgxMDMtNTFmNTk0NDkyNzdjXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Minecraft + Percy Jackson + Spider-Verse"
+   ]
+  },
+  {
+   "entity_id": "6D9BB5DE-12D6-45F5-9F2C-0CF7326ADC13",
+   "name": "Bumblebee",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMjUwNjU5NDMyNF5BMl5BanBnXkFtZTgwNzgxNjM2NzM@._V1_.jpg",
+   "by": [
+    "Minecraft + Percy Jackson + Spider-Verse"
+   ]
+  },
+  {
+   "entity_id": "8069C6FC-5805-4E10-AF9E-693067633CAD",
+   "name": "Pokémon: Detective Pikachu",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BNDU4Mzc3NzE5NV5BMl5BanBnXkFtZTgwMzE1NzI1NzM@._V1_.jpg",
+   "by": [
+    "Minecraft + Percy Jackson + Spider-Verse"
+   ]
+  },
+  {
+   "entity_id": "4997674C-D04F-4F6B-810C-E1D341919867",
+   "name": "Ant-Man and the Wasp",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BODVkY2ZmZTAtYzFhMi00YzZlLWE2YWMtMDBiYjY2OTU4ZWM0XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Minecraft + Percy Jackson + Spider-Verse"
+   ]
+  },
+  {
+   "entity_id": "A37B17AE-15C7-48A3-AADD-6CE50BE3FF74",
+   "name": "Lorde",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/2a96cbd8b46e442.jpg",
+   "by": [
+    "La La Land + Lana Del Rey + The Great Gatsby"
+   ]
+  },
+  {
+   "entity_id": "7D903E2F-70AB-44CB-AA88-82501E6D04DD",
+   "name": "Hozier",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/de2ad03c09268e12344b94e7a49938e2.jpg",
+   "by": [
+    "La La Land + Lana Del Rey + The Great Gatsby"
+   ]
+  },
+  {
+   "entity_id": "6062A977-79F7-48F9-917E-0B57D77474AD",
+   "name": "Sam Smith",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/2757d52ef7434db899ee99400af78586.jpg",
+   "by": [
+    "La La Land + Lana Del Rey + The Great Gatsby"
+   ]
+  },
+  {
+   "entity_id": "C977220F-11A7-4F93-8714-AEDC57674191",
+   "name": "The 1975",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/0c599711d88bac53e10d258784ab7397.jpg",
+   "by": [
+    "La La Land + Lana Del Rey + The Great Gatsby"
+   ]
+  },
+  {
+   "entity_id": "EB24591A-F905-4328-8186-50B2001120F6",
+   "name": "The Neighbourhood",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/2a96cbd8b46e442.jpg",
+   "by": [
+    "La La Land + Lana Del Rey + The Great Gatsby"
+   ]
+  },
+  {
+   "entity_id": "296A9BFF-AE21-4FC0-9F9D-81EBCFB5BBE6",
+   "name": "HAIM",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/3427564e34b1fd62cae0eee75d7978cb.jpg",
+   "by": [
+    "La La Land + Lana Del Rey + The Great Gatsby"
+   ]
+  },
+  {
+   "entity_id": "4BF6B94B-B7D3-4815-9EFE-16A33697B38C",
+   "name": "Sing Street",
+   "type": "urn:entity:movie",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMjEzODA3MDcxMl5BMl5BanBnXkFtZTgwODgxNDk3NzE@._V1_.jpg",
+   "by": [
+    "La La Land + Lana Del Rey + The Great Gatsby"
+   ]
+  },
+  {
+   "entity_id": "1C60A69B-C57B-44D7-A26A-7E42985F9D5E",
+   "name": "Ozzy Osbourne",
+   "type": "urn:entity:artist",
+   "n": 2,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/46cd908e955b4d239f38a264eab26913.jpg",
+   "by": [
+    "Tarantino + Black Sabbath + Grand Theft Auto",
+    "Metallica + Doom + Mad Max"
+   ]
+  },
+  {
+   "entity_id": "CF6D89AA-9057-4D82-B88F-482FABB0A02B",
+   "name": "Guns N' Roses",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/d13e0ece6ef314be01c6e962f6044a32.jpg",
+   "by": [
+    "Tarantino + Black Sabbath + Grand Theft Auto"
+   ]
+  },
+  {
+   "entity_id": "D67CBE07-ECFF-4FC6-B31E-EB4A8341A204",
+   "name": "Motörhead",
+   "type": "urn:entity:artist",
+   "n": 2,
+   "image": null,
+   "by": [
+    "Tarantino + Black Sabbath + Grand Theft Auto",
+    "Metallica + Doom + Mad Max"
+   ]
+  },
+  {
+   "entity_id": "C0CC10B0-77E7-426C-8664-78D6A502878C",
+   "name": "Grand Theft Auto III",
+   "type": "urn:entity:videogame",
+   "n": 1,
+   "image": null,
+   "by": [
+    "Tarantino + Black Sabbath + Grand Theft Auto"
+   ]
+  },
+  {
+   "entity_id": "77AE4DB7-5340-4888-94F2-ABE1B65FD20F",
+   "name": "Black Label Society",
+   "type": "urn:entity:artist",
+   "n": 2,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/df62efd7db0077c51d19e44020f97bcc.jpg",
+   "by": [
+    "Tarantino + Black Sabbath + Grand Theft Auto",
+    "Metallica + Doom + Mad Max"
+   ]
+  },
+  {
+   "entity_id": "08A1DD23-BD01-4C30-90EF-C46FCBE443B0",
+   "name": "Disturbed",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/609fbcc56424ac8e521e400c5213d665.jpg",
+   "by": [
+    "Tarantino + Black Sabbath + Grand Theft Auto"
+   ]
+  },
+  {
+   "entity_id": "20E9FCA7-D23E-4C13-A243-57FC3715344F",
+   "name": "Vikings",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BOTFmZmExYTEtYmE0Mi00MzRmLWE4ZDYtOThiNzNlOTIyODljXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Game of Thrones + Led Zeppelin + The Witcher 3"
+   ]
+  },
+  {
+   "entity_id": "B6CC1CE7-B3C3-490D-A3A1-E0C0E6958C23",
+   "name": "Outlander",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMTc4M2JmYmEtMjJhOC00MmRlLThhZDEtMWRhZTZiNTI0ZDZhXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Game of Thrones + Led Zeppelin + The Witcher 3"
+   ]
+  },
+  {
+   "entity_id": "B99813BF-E4B3-429B-B43E-ED8F807077CC",
+   "name": "The Last Kingdom",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMjE1MzYzNjk3OF5BMl5BanBnXkFtZTgwMzk0MzYwNzE@._V1_.jpg",
+   "by": [
+    "Game of Thrones + Led Zeppelin + The Witcher 3"
+   ]
+  },
+  {
+   "entity_id": "2F6C4E15-5F80-4D63-83AB-DC4E706E3FF1",
+   "name": "The Musketeers",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BZDlhYjgwMjktZDkwMi00ODVjLWFkMWUtYTllZTJkNGE4NGIxXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Game of Thrones + Led Zeppelin + The Witcher 3"
+   ]
+  },
+  {
+   "entity_id": "193E6B41-CA39-49A3-A932-7B51B031BA68",
+   "name": "House of the Dragon",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BOWU2ZDA0M2EtNWEyYy00MWUwLWI4NjAtYzkxMDFjYzZkNGFiXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Game of Thrones + Led Zeppelin + The Witcher 3"
+   ]
+  },
+  {
+   "entity_id": "1A138008-5316-4236-8310-93FE22F6CD58",
+   "name": "The Witcher",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BOTQzMzNmMzUtODgwNS00YTdhLTg5N2MtOWU1YTc4YWY3NjRlXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Game of Thrones + Led Zeppelin + The Witcher 3"
+   ]
+  },
+  {
+   "entity_id": "2A3DA5BC-6FA5-4C53-A313-F0EE75A6B005",
+   "name": "Into the Badlands",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BOGQzMWI4OGMtNmE3ZC00ZGM0LWI0ZjEtN2I1YmUwNzhjNTdmXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Game of Thrones + Led Zeppelin + The Witcher 3"
+   ]
+  },
+  {
+   "entity_id": "452AF8C1-2EE7-4F05-B65A-EB075D13D800",
+   "name": "The Shannara Chronicles",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMTkxNjEwOTY4M15BMl5BanBnXkFtZTgwNTA2ODk0NzE@._V1_.jpg",
+   "by": [
+    "Game of Thrones + Led Zeppelin + The Witcher 3"
+   ]
+  },
+  {
+   "entity_id": "59281D1A-6AA0-4EF4-B5F4-C81BDAD3872B",
+   "name": "Vikings: Valhalla",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BYWFjYmMxMjMtMGE2ZC00YWZhLTgzNDYtYTA3ODA2MDg2NTA4XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Game of Thrones + Led Zeppelin + The Witcher 3"
+   ]
+  },
+  {
+   "entity_id": "54BB1323-D165-449B-837D-41BECF180FFF",
+   "name": "The Lord of the Rings: The Rings of Power",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMjlhYTk3ZGQtNjdlYi00NDQyLTgxZTEtMzk0OTU5OTRhNGZhXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Game of Thrones + Led Zeppelin + The Witcher 3"
+   ]
+  },
+  {
+   "entity_id": "EA6FA491-838D-47D8-AF1D-36DE2FC0E03B",
+   "name": "Jennie",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/fe3b71bd9c9856109b5b1db5e5dae57a.jpg",
+   "by": [
+    "BTS + Heartstopper + Squid Game"
+   ]
+  },
+  {
+   "entity_id": "537E7F07-2A2C-4186-8CB3-34AE55EDE55B",
+   "name": "TOMORROW X TOGETHER",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/ec5abca7ffcbdc8f9e8cade6ace03132.jpg",
+   "by": [
+    "BTS + Heartstopper + Squid Game"
+   ]
+  },
+  {
+   "entity_id": "36EBFE44-03B3-4914-885F-53FABD32C1E0",
+   "name": "Itaewon Class",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMjVjYjMzNjMtZDBjYy00NmE2LTlmMDEtZDZhY2Q5MGMzNTExXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "BTS + Heartstopper + Squid Game"
+   ]
+  },
+  {
+   "entity_id": "C47948A8-9DE8-4214-B66D-6962B54533FD",
+   "name": "Stray Kids",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/cc3fafe3e00633f09e9237299ef0a225.jpg",
+   "by": [
+    "BTS + Heartstopper + Squid Game"
+   ]
+  },
+  {
+   "entity_id": "E804E876-EA30-482C-9F49-E0E4A213A4A4",
+   "name": "CHUNG HA",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/2217cf3768c471c48ceffd08f9450133.jpg",
+   "by": [
+    "BTS + Heartstopper + Squid Game"
+   ]
+  },
+  {
+   "entity_id": "2CCC2C33-0DAD-48DD-B81E-B72DB7AF9137",
+   "name": "BAEKHYUN",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/723e88cf3070c12f47c9cde891768e6b.jpg",
+   "by": [
+    "BTS + Heartstopper + Squid Game"
+   ]
+  },
+  {
+   "entity_id": "AE3CB00A-160B-4E86-80E0-1105912F7DD4",
+   "name": "Devs",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMDBmMGFiNGYtNDRjMS00NzJlLWE5YjctOTkzNDM0ODM5YTRlXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Severance + Black Mirror + Franz Kafka"
+   ]
+  },
+  {
+   "entity_id": "5EA41178-D39F-4086-8EF5-988AD3563B5B",
+   "name": "Silo",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BN2E5ODJmOTUtYTk0NS00NmFiLTk0MTgtZDRlNzE1YmExMjk4XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Severance + Black Mirror + Franz Kafka"
+   ]
+  },
+  {
+   "entity_id": "3194D810-FE41-4AFD-81E7-12B8D46E2320",
+   "name": "Electric Dreams",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BZGZmMDUxMDgtZmVhOS00YjFlLWJlZjctOWM4MDRjMjQ0ODdhXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Severance + Black Mirror + Franz Kafka"
+   ]
+  },
+  {
+   "entity_id": "BC07DEE6-38AA-4839-931C-663400E8F563",
+   "name": "The Peripheral",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BODE1NmJiMzAtYmRmZi00ZjkzLWJhZjctNGU0YmFjZWI5NzZmXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Severance + Black Mirror + Franz Kafka"
+   ]
+  },
+  {
+   "entity_id": "064AC32D-CB0D-46D6-A266-E002D061D029",
+   "name": "Tales from the Loop",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMTlhNzI5YjAtMDllZC00MmJjLTk4MGYtYjdiNWEyOTc3Mjc1XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Severance + Black Mirror + Franz Kafka"
+   ]
+  },
+  {
+   "entity_id": "B7397419-DE9A-4624-B96F-6B264CE2C32B",
+   "name": "The Devil's Hour",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BYzA3OTA4ZjAtZWE1Zi00N2RjLWFkMDYtYWI1MzYzMDI5OWY5XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Severance + Black Mirror + Franz Kafka"
+   ]
+  },
+  {
+   "entity_id": "28D343A9-E52A-473D-9B23-1FD564F9B4DD",
+   "name": "3 Body Problem",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMDdkYWZiZWYtMzA0Yi00NzNlLThkODktY2Q3N2NjN2ExZmMwXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Severance + Black Mirror + Franz Kafka"
+   ]
+  },
+  {
+   "entity_id": "B58DE999-CA1E-42AE-B234-85DD63FAB6D7",
+   "name": "A Murder at the End of the World",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BZjA2YmUwMjgtMWJlNy00OGYzLTk2MjYtZDgwMjA4YmRkNzkyXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Severance + Black Mirror + Franz Kafka"
+   ]
+  },
+  {
+   "entity_id": "5B305BA6-94B6-4988-BDB6-6FF5E92CC4C7",
+   "name": "Humans",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMTQ3NjE2OTY4NF5BMl5BanBnXkFtZTgwMTE0NDc0ODE@._V1_.jpg",
+   "by": [
+    "Severance + Black Mirror + Franz Kafka"
+   ]
+  },
+  {
+   "entity_id": "5521C951-41EB-475A-B8BD-034A4B5F8C8A",
+   "name": "Homecoming",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMTc2NzEwMzgtNjEyNy00ZWI1LTllZTgtOTA4MjgwYTI4MzI5XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Severance + Black Mirror + Franz Kafka"
+   ]
+  },
+  {
+   "entity_id": "6B9DDE79-04A8-4478-87D5-86361C52B3B7",
+   "name": "Judas Priest",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/42be7c3132ed145c99da6a09d636ae0c.jpg",
+   "by": [
+    "Metallica + Doom + Mad Max"
+   ]
+  },
+  {
+   "entity_id": "C4068CA3-7276-41A7-BEA2-860531ED4549",
+   "name": "Dio",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/41ee4e4e3cf94b1e9b9f5b20651bedcb.jpg",
+   "by": [
+    "Metallica + Doom + Mad Max"
+   ]
+  },
+  {
+   "entity_id": "33112DDC-C7BC-478D-8B6E-025F3A30AE3F",
+   "name": "Pantera",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/4ecc75d7337d40fe884a16f21bb457ae.jpg",
+   "by": [
+    "Metallica + Doom + Mad Max"
+   ]
+  },
+  {
+   "entity_id": "04C9468C-F25C-43D8-ABAD-3308E2004AA6",
+   "name": "Harlan Coben's Shelter",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BNzA2MmUzMTgtNmJhNy00NDE4LWIwOTAtMzcwNzhiOTQ2MmNhXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Billie Eilish + Coraline + Wednesday"
+   ]
+  },
+  {
+   "entity_id": "6C533114-25F2-453F-A355-871B04B7A3D8",
+   "name": "Lockwood & Co.",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMzI1ODdjY2UtYzdkOC00Y2NjLWE2NzYtZjlmYWFkMGE1MDBmXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Billie Eilish + Coraline + Wednesday"
+   ]
+  },
+  {
+   "entity_id": "14BB6DE2-BAA6-4421-ABE9-5D97D46FA046",
+   "name": "In/Spectre",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BNjU5NjkzMWEtMDNmYS00Y2M4LWFlZDgtM2E4Zjk0ZWVmYmI3XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Billie Eilish + Coraline + Wednesday"
+   ]
+  },
+  {
+   "entity_id": "A4814B50-5333-4FD0-BA6E-D604BFF55136",
+   "name": "Sweet Home",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BZDE0MTM5YjgtMzNhOS00NWE2LTkxN2EtMzg0NWRmODBmMDA5XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Billie Eilish + Coraline + Wednesday"
+   ]
+  },
+  {
+   "entity_id": "B94E6CF3-C97F-458D-8CFE-AA635F6A9775",
+   "name": "Toilet-bound Hanako-kun",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BM2MzMGRlN2QtM2FhMS00Y2FhLWE4MTEtMGNiZTU5YTdiY2JiXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Billie Eilish + Coraline + Wednesday"
+   ]
+  },
+  {
+   "entity_id": "8305B414-D0FB-4D5A-B26D-5E45229FAACE",
+   "name": "Goosebumps",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BMmFmY2UyNDMtY2U1YS00NmU2LWJlZTUtNzYxZDc5MDhjYzUzXkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Billie Eilish + Coraline + Wednesday"
+   ]
+  },
+  {
+   "entity_id": "6D22D56A-00C9-4316-AD99-0AE058EF9833",
+   "name": "Hotel Del Luna",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BZmFmYTU0YTItZTk4ZS00ZWMzLThmOTgtOGIyOTBkY2QwZjc0XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Billie Eilish + Coraline + Wednesday"
+   ]
+  },
+  {
+   "entity_id": "025F3263-F7F7-4111-AFCA-610FA881E320",
+   "name": "Requiem",
+   "type": "urn:entity:tv_show",
+   "n": 1,
+   "image": "https://m.media-amazon.com/images/M/MV5BZmE4NjJkMTUtMWI3OC00MDNlLWI0OTgtZjVhNWY3YWJlZGE3XkEyXkFqcGc@._V1_.jpg",
+   "by": [
+    "Billie Eilish + Coraline + Wednesday"
+   ]
+  },
+  {
+   "entity_id": "EE12E65A-6630-4077-A11C-B9CA7413147C",
+   "name": "Of Monsters and Men",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/38f316ce39674b49cb741edd718fcee4.jpg",
+   "by": [
+    "Studio Ghibli + Zelda + Hozier"
+   ]
+  },
+  {
+   "entity_id": "E2891405-8EE9-4109-8B77-AD6363642AF6",
+   "name": "Birdy with Mumford & Sons",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/09fbf6ac3462464c9c4fcde40bd6033c.jpg",
+   "by": [
+    "Studio Ghibli + Zelda + Hozier"
+   ]
+  },
+  {
+   "entity_id": "9EF596CC-1A7E-4BAC-8906-659761D29733",
+   "name": "Secret Someones",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/449e7d5d3ae34ae5be4ec10876dc745c.jpg",
+   "by": [
+    "Studio Ghibli + Zelda + Hozier"
+   ]
+  },
+  {
+   "entity_id": "A7D60218-83FC-4898-917A-31581C4E18FA",
+   "name": "Mikky Ekko",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/5324a455483e4d0c3dd8f94551494c73.jpg",
+   "by": [
+    "Studio Ghibli + Zelda + Hozier"
+   ]
+  },
+  {
+   "entity_id": "451287B7-5205-4E76-8C59-57A1C3D510A8",
+   "name": "Jayme Dee",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/2d23631e6edf47fc89141efe2a16c158.jpg",
+   "by": [
+    "Studio Ghibli + Zelda + Hozier"
+   ]
+  },
+  {
+   "entity_id": "4FB8E3D6-6888-42E5-B81C-B4B57CCAFE7E",
+   "name": "Monsalve",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/02ed962cadbc4cc492a32eca0bb9d903.jpg",
+   "by": [
+    "Studio Ghibli + Zelda + Hozier"
+   ]
+  },
+  {
+   "entity_id": "408D4927-F093-4D76-A4C5-DAEE8145B1C6",
+   "name": "Thee Acquainted",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/e54b5af62021c26827b1f9fb09cc08c2.jpg",
+   "by": [
+    "Studio Ghibli + Zelda + Hozier"
+   ]
+  },
+  {
+   "entity_id": "4C5EC32C-90A0-4D5A-BF5B-15FCED1B9C28",
+   "name": "Phillip Phillips",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/7f508362bb384d5e8d983d810194dbd9.jpg",
+   "by": [
+    "Studio Ghibli + Zelda + Hozier"
+   ]
+  },
+  {
+   "entity_id": "6DD78901-F7E0-45E7-8B8A-D3B4AC1313C7",
+   "name": "American Authors",
+   "type": "urn:entity:artist",
+   "n": 1,
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/9560431b051248bea63436b5374a2b2a.jpg",
+   "by": [
+    "Studio Ghibli + Zelda + Hozier"
+   ]
+  }
+ ]
+}

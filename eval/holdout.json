@@ -1,0 +1,97 @@
+{
+ "labeler": "blind-subagent-2026-10-06",
+ "scenarios": [
+  {
+   "id": "n01",
+   "message": "My sister is a huge Wes Anderson fan and has Radiohead on repeat. Budget $50.",
+   "good": [
+    "p14",
+    "p23",
+    "p04",
+    "p48",
+    "p05"
+   ],
+   "strong": [
+    "p23",
+    "p04",
+    "p14"
+   ]
+  },
+  {
+   "id": "n02",
+   "message": "Gift for a friend who's all about Kendrick Lamar, around $130.",
+   "good": [
+    "p07",
+    "p32",
+    "p30",
+    "p24"
+   ],
+   "strong": [
+    "p07",
+    "p32"
+   ]
+  },
+  {
+   "id": "n03",
+   "message": "My husband sinks hours into Elden Ring and rereads Tolkien every winter. Up to $70.",
+   "good": [
+    "p12",
+    "p16",
+    "p09",
+    "p19"
+   ],
+   "strong": [
+    "p12",
+    "p16"
+   ]
+  },
+  {
+   "id": "n04",
+   "message": "Coworker loves Blade Runner and Daft Punk, keep it under $45.",
+   "good": [
+    "p21",
+    "p02",
+    "p13",
+    "p09"
+   ],
+   "strong": [
+    "p21",
+    "p02",
+    "p13"
+   ]
+  },
+  {
+   "id": "n05",
+   "message": "My dad practically lives in Patagonia fleeces and goes camping every month. Budget $250.",
+   "good": [
+    "p29",
+    "p47",
+    "p24",
+    "p46",
+    "p30"
+   ],
+   "strong": [
+    "p29",
+    "p24",
+    "p47"
+   ]
+  },
+  {
+   "id": "n06",
+   "message": "My son rewatches Interstellar and every Denis Villeneuve film. $40 max.",
+   "good": [
+    "p08",
+    "p21",
+    "p09",
+    "p20",
+    "p13",
+    "p17"
+   ],
+   "strong": [
+    "p08",
+    "p21",
+    "p09"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,182 @@
+[
+ {
+  "key": "Taylor Swift -> Taylor Swift",
+  "name": "Taylor Swift",
+  "entity_id": "4BBEF799-A0C4-4110-AB01-39216993C312"
+ },
+ {
+  "key": "Metallica -> Metallica",
+  "name": "Metallica",
+  "entity_id": "C445C761-CB38-4FEE-B085-D35F444A04DF"
+ },
+ {
+  "key": "Bad Bunny -> Bad Bunny",
+  "name": "Bad Bunny",
+  "entity_id": "BDA1B73F-10E7-4D09-AC51-B796CCEC5FF3"
+ },
+ {
+  "key": "Friends -> Friends",
+  "name": "Friends",
+  "entity_id": "4E62202B-3672-4B2E-A21F-C5EA4A0BA01F"
+ },
+ {
+  "key": "Stephen King -> Stephen King",
+  "name": "Stephen King",
+  "entity_id": "F9A62834-56D4-4974-A557-7B72554998EE"
+ },
+ {
+  "key": "The Notebook -> The Notebook",
+  "name": "The Notebook",
+  "entity_id": "AAC5EA69-8C23-412F-AF05-11F37955415F"
+ },
+ {
+  "key": "Fast & Furious -> Fast & Furious",
+  "name": "Fast & Furious",
+  "entity_id": "F01AC034-179A-47F3-8ADF-7A4D77559DCF"
+ },
+ {
+  "key": "Minecraft -> Minecraft",
+  "name": "Minecraft",
+  "entity_id": "CDBDE254-71F0-4640-8D04-5373BEAE5278"
+ },
+ {
+  "key": "Nike -> Nike",
+  "name": "Nike",
+  "entity_id": "C70CE2B8-0AD1-4150-BF18-5A6347F2E860"
+ },
+ {
+  "key": "Gordon Ramsay -> Gordon Ramsay",
+  "name": "Gordon Ramsay",
+  "entity_id": "952A786B-8584-489E-A08C-525DC747B497"
+ },
+ {
+  "key": "Beyoncé -> Beyoncé",
+  "name": "Beyoncé",
+  "entity_id": "F6754C46-B3E7-457F-8B7E-06C613597320"
+ },
+ {
+  "key": "Bob Dylan -> Bob Dylan",
+  "name": "Bob Dylan",
+  "entity_id": "54652BC1-43E5-4A00-AA7F-57F79D369CA3"
+ },
+ {
+  "key": "Kanye West -> Kanye West",
+  "name": "Kanye West",
+  "entity_id": "542B2183-3831-4A9A-BF23-C873814A844D"
+ },
+ {
+  "key": "Drake -> Drake",
+  "name": "Drake",
+  "entity_id": "FAA55DC8-6030-4CC8-9BA6-4668295C3FA7"
+ },
+ {
+  "key": "Lana Del Rey -> Lana Del Rey",
+  "name": "Lana Del Rey",
+  "entity_id": "63BBE4D8-D721-466F-907C-D0007E9B6665"
+ },
+ {
+  "key": "Slipknot -> Slipknot",
+  "name": "Slipknot",
+  "entity_id": "89B0E2F6-3AA8-427C-B051-EF1B45B021B3"
+ },
+ {
+  "key": "Ed Sheeran -> Ed Sheeran",
+  "name": "Ed Sheeran",
+  "entity_id": "058B79A3-49F5-4927-9AB6-DE713C706796"
+ },
+ {
+  "key": "Frank Ocean -> Frank Ocean",
+  "name": "Frank Ocean",
+  "entity_id": "2B134C93-39EB-4A08-A72D-5F8F1167FDAA"
+ },
+ {
+  "key": "Ludwig van Beethoven -> Ludwig van Beethoven",
+  "name": "Ludwig van Beethoven",
+  "entity_id": "4B5B52F3-5269-47C5-BCF1-44F79B992721"
+ },
+ {
+  "key": "Dolly Parton -> Dolly Parton",
+  "name": "Dolly Parton",
+  "entity_id": "47FA29CA-A1E6-4EA6-8219-D75190AA6BD1"
+ },
+ {
+  "key": "BLACKPINK -> BLACKPINK",
+  "name": "BLACKPINK",
+  "entity_id": "AFB6CA3D-9620-4D8B-9958-6727BA40AFA6"
+ },
+ {
+  "key": "Star Wars -> Star Wars",
+  "name": "Star Wars",
+  "entity_id": "D74C901C-ABF4-41C8-BCC6-C56264CEB510"
+ },
+ {
+  "key": "Pulp Fiction -> Pulp Fiction",
+  "name": "Pulp Fiction",
+  "entity_id": "B6DD7D76-1F1B-4171-AF2F-03FB0C66F6CB"
+ },
+ {
+  "key": "Frozen -> Frozen",
+  "name": "Frozen",
+  "entity_id": "3CE60F10-EA7D-4743-B67A-8B53D84351C5"
+ },
+ {
+  "key": "Parasite -> Parasite",
+  "name": "Parasite",
+  "entity_id": "A499EC25-7FF6-46DE-9DA5-3E78E99B9E26"
+ },
+ {
+  "key": "Twilight -> Twilight",
+  "name": "Twilight",
+  "entity_id": "C9B48F7D-1656-4B17-9ABB-AEA8F2C6343C"
+ },
+ {
+  "key": "The Office -> The Office",
+  "name": "The Office",
+  "entity_id": "E5AE1F26-04CB-4CDD-BBA4-87FB6541F848"
+ },
+ {
+  "key": "Game of Thrones -> Game of Thrones",
+  "name": "Game of Thrones",
+  "entity_id": "8FAC3960-D869-41CD-AC73-F85B67476AA4"
+ },
+ {
+  "key": "The Lord of the Rings -> The Lord of the Rings",
+  "name": "The Lord of the Rings",
+  "entity_id": "7B09466B-51A9-4EFB-81C1-13EA219CC2E9"
+ },
+ {
+  "key": "The Great Gatsby -> The Great Gatsby",
+  "name": "The Great Gatsby",
+  "entity_id": "6A4CF4C4-B833-44E1-A426-BB312130C9F3"
+ },
+ {
+  "key": "Atomic Habits -> Atomic Habits: An Easy &amp; Proven Way to Build Good Habits &amp; Break Bad Ones",
+  "name": "Atomic Habits",
+  "entity_id": "2344E76F-35FD-48C9-9B38-0D32A33AF9E1"
+ },
+ {
+  "key": "Call of Duty -> Call of Duty",
+  "name": "Call of Duty",
+  "entity_id": "A2BFD7FA-EFB3-4E78-B5FD-744DD6A7A002"
+ },
+ {
+  "key": "Animal Crossing: New Horizons -> Animal Crossing: New Horizons",
+  "name": "Animal Crossing: New Horizons",
+  "entity_id": "08663BD2-E267-4C7F-9895-86410F67867C"
+ },
+ {
+  "key": "Dark Souls -> Dark Souls",
+  "name": "Dark Souls",
+  "entity_id": "A7E89EDB-59DD-4F28-AC2B-49307548E3EF"
+ },
+ {
+  "key": "Supreme -> Supreme",
+  "name": "Supreme",
+  "entity_id": "7161ADA0-8DC8-471E-A4A8-61EE15578400"
+ },
+ {
+  "key": "Chanel -> Chanel",
+  "name": "Chanel",
+  "entity_id": "212146FD-4F22-446B-BCA2-E8597774A940"
+ }
+]

@@ -1,0 +1,55 @@
+{
+ "labeler": "blind-subagent-2026-10-06",
+ "scenarios": [
+  {
+   "id": "s01",
+   "message": "Gift for my brother, he's obsessed with Christopher Nolan films and Hans Zimmer scores. Budget $100.",
+   "good": [
+    "p01",
+    "p20",
+    "p08",
+    "p21",
+    "p09"
+   ],
+   "strong": [
+    "p01",
+    "p20",
+    "p08"
+   ]
+  },
+  {
+   "id": "s02",
+   "message": "My girlfriend loves Studio Ghibli and Haruki Murakami novels. Something cozy under $60.",
+   "good": [
+    "p22",
+    "p06",
+    "p10",
+    "p18",
+    "p28",
+    "p38",
+    "p40",
+    "p03"
+   ],
+   "strong": [
+    "p22",
+    "p06",
+    "p10"
+   ]
+  },
+  {
+   "id": "s03",
+   "message": "Dad listens to Miles Davis all day and rereads Agatha Christie. Around $80.",
+   "good": [
+    "p03",
+    "p11",
+    "p45",
+    "p37",
+    "p38"
+   ],
+   "strong": [
+    "p03",
+    "p11"
+   ]
+  }
+ ]
+}

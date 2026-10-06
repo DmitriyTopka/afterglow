@@ -1,0 +1,57 @@
+# Afterglow
+
+**A culture store that learns from what its shoppers could not find.** A shopper describes someone's taste in their own words. A Claude agent, working through Qloo, picks across the whole store (vinyl, books, films, games, TV) and checks what that taste loves most that the store does not carry. That unmet demand lands on the owner's side, where the agent ranks what to stock next and places any new title on the store's taste map from Qloo data alone.
+
+Live demo: https://taste-layer-alpha.vercel.app (shopper) and https://taste-layer-alpha.vercel.app/owner (owner).
+Built for the [Qloo Agentic Hackathon](https://qloo.devpost.com/). Work in progress, started 4 October 2026.
+
+## What the agent does
+
+The shopper's message goes to Claude (Haiku 4.5) with six tools. Claude decides the order; a typical run:
+
+| Tool | Qloo call | What it gives the agent |
+|---|---|---|
+| `find_tastes` | `GET /search` | the artists, films, books, games, people the shopper named, as Qloo entities |
+| `score_catalog` (once) | `GET /v2/insights` with `filter.results.entities` (our 384 titles) and `feature.explainability` | affinity of every store title for this taste, and which named taste drove each match |
+| `check_store` | `GET /v2/insights` without a catalog filter | the 10 titles this taste loves most anywhere; the ones we do not carry become demand for the owner |
+| `audience` | `GET /v2/insights` with `filter.type=urn:demographics` | how fans of these tastes skew by age and gender |
+| `ask_shopper` | none | one question back when the message has nothing to work with |
+| `recommend` | none | 5 titles from the scored candidates, each with a reason in plain words |
+
+Caps per request: 6 model turns and 25 live Qloo calls. Without an Anthropic key the same steps run as a fixed pipeline.
+
+## The owner side
+
+- **Taste map.** Every title is scored against 36 reference tastes (Qloo insights). Titles loved by the same people form sections across formats, for example arthouse films next to late-night jazz.
+- **Taste coverage.** Share of the titles shoppers' tastes love most that are on the shelves. Starts at 18% for the 38 demo shoppers.
+- **Stock suggestions.** Missing titles ranked by how much coverage they add.
+- **Add to shelf (cold start).** A new title with no sales and no tags is scored against the 36 reference tastes and lands next to its closest titles on the map, for example Judas Priest next to Iron Maiden and Megadeth.
+
+## How well it works (measured, not tuned on the test)
+
+- 40 shopper requests written and labelled by a blind agent that only saw the catalog (`eval/v2_scenarios.json`). Against store metadata alone (titles by or of a named taste, no Qloo, no tags), the Qloo ranking wins 10 requests and loses 2. Where the named taste is not stocked, store metadata finds nothing useful (P@3 0.02) and Qloo finds 0.15.
+- Ranking changes were chosen on the odd-numbered requests and checked once on the even ones: P@3 0.17 to 0.38.
+- Qloo recognises about 30% of 300 random Amazon listings, and about 2 in 3 for music and film. That is why the demo store sells culture goods.
+- An earlier test on a hand-tagged toy catalog went the other way (hand tags beat Qloo). Details in `eval/REPORT_2026-10-06.md` and `eval/REPORT_v2_2026-10-06.md`.
+
+Not measured yet: the tool-using agent itself against the same set, and a comparison with Claude alone without Qloo.
+
+## Honest limits
+
+- The store, its prices and the demo shoppers are made up. Demo demand comes from the 40 test shoppers; your own requests are added in your browser (localStorage).
+- Cover art is not in this repo. `scripts/make_thumbs.py` downloads thumbnails from the image URLs in `data/catalog.json` (iTunes and Qloo entity data).
+
+## Run locally
+
+```sh
+npm install
+cp .env.example .env.local   # add a Qloo hackathon key and an Anthropic key, or leave mock mode
+python3 scripts/make_thumbs.py
+npm run dev
+```
+
+Data pipeline (all cached under `.cache/`): `scripts/discover_candidates.mts` -> `build_catalog.py` -> `build_baseline.mts` -> `taste_probes.mts` -> `build_map.py` -> `name_clusters.mts` -> `build_owner.mts` -> `build_probes.mts` -> `build_cycle.mts`.
+
+## License
+
+MIT

@@ -1,0 +1,17 @@
+{
+ "note": "Reference taste profiles for the baseline affinity of every catalog item. Chosen for spread across mainstream tastes, none of them used in any eval scenario. Fixed before the first measurement; changing them is tuning.",
+ "profiles": [
+  { "name": "Taylor Swift", "type": "urn:entity:artist" },
+  { "name": "Metallica", "type": "urn:entity:artist" },
+  { "name": "Bad Bunny", "type": "urn:entity:artist" },
+  { "name": "Friends", "type": "urn:entity:tv_show" },
+  { "name": "Harry Potter and the Sorcerer's Stone", "type": "urn:entity:book" },
+  { "name": "Stephen King", "type": "urn:entity:person" },
+  { "name": "The Notebook", "type": "urn:entity:movie" },
+  { "name": "Fast & Furious", "type": "urn:entity:movie" },
+  { "name": "Minecraft", "type": "urn:entity:videogame" },
+  { "name": "FIFA 23", "type": "urn:entity:videogame" },
+  { "name": "Nike", "type": "urn:entity:brand" },
+  { "name": "Gordon Ramsay", "type": "urn:entity:person" }
+ ]
+}

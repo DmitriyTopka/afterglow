@@ -1,0 +1,1120 @@
+{
+ "note": "Built by scripts/build_owner.mts",
+ "sections": [
+  {
+   "id": 0,
+   "name": "Coming of Age Classics",
+   "line": "Timeless stories about growing up and finding your place.",
+   "size": 37,
+   "categories": {
+    "Books": 32,
+    "Film": 5
+   },
+   "who": [
+    {
+     "taste": "Pulp Fiction",
+     "weight": 0.36374
+    },
+    {
+     "taste": "Ludwig van Beethoven",
+     "weight": 0.35606
+    },
+    {
+     "taste": "Drake",
+     "weight": 0.31394
+    },
+    {
+     "taste": "The Notebook",
+     "weight": 0.30813
+    },
+    {
+     "taste": "Frozen",
+     "weight": 0.28658
+    }
+   ],
+   "signals": [
+    "c121",
+    "c161",
+    "c106",
+    "c102",
+    "c126"
+   ],
+   "stock": [
+    {
+     "entity_id": "5571AD49-A691-4326-808B-9FF7957B37AD",
+     "name": "Lord of the Flies",
+     "type": "urn:entity:book",
+     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1327869409i/7624.jpg",
+     "affinity": 0.9628482325958095,
+     "blurb": "A group of stranded schoolboys descend into chaos and savagery on a deserted island."
+    },
+    {
+     "entity_id": "F038CFAC-7515-4840-9F22-E45479E56439",
+     "name": "Brave New World",
+     "type": "urn:entity:book",
+     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1575509280i/5129.jpg",
+     "affinity": 0.9515670853418288,
+     "blurb": "In a future society, engineered citizens live under strict control, while an outsider challenges the status quo."
+    },
+    {
+     "entity_id": "7724823A-D80C-4FBA-99D2-3B024DD88E24",
+     "name": "The Standups",
+     "type": "urn:entity:tv_show",
+     "image": "https://m.media-amazon.com/images/M/MV5BYzBjMjgwMTQtZTM5MS00NTg0LTgzZDctYmE1NzYwMGQ5ZDBjXkEyXkFqcGc@._V1_.jpg",
+     "affinity": 0.9463820024296492,
+     "blurb": null
+    },
+    {
+     "entity_id": "7B1276AB-4786-4E5F-B473-1931987669E4",
+     "name": "Donald Glover: Weirdo",
+     "type": "urn:entity:tv_show",
+     "image": "https://m.media-amazon.com/images/M/MV5BMTY0Mzk0NTI5N15BMl5BanBnXkFtZTgwODY0NDAxMzE@._V1_.jpg",
+     "affinity": 0.9455788887033001,
+     "blurb": null
+    },
+    {
+     "entity_id": "FC4F7908-E4F0-41DD-8D5E-92928AE42457",
+     "name": "Weezer",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/02eac5fac2a44e3fb88aca9e252ba12a.jpg",
+     "affinity": 0.9453265957529935,
+     "blurb": null
+    },
+    {
+     "entity_id": "1A44C04F-7251-4809-809B-6C885FFD68EB",
+     "name": "The Strokes",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/2a96cbd8b46e442.jpg",
+     "affinity": 0.9341192327189538,
+     "blurb": null
+    },
+    {
+     "entity_id": "930839A3-7F0E-4FFE-9543-D487D4BF3B28",
+     "name": "Nowhere Boy",
+     "type": "urn:entity:movie",
+     "image": "https://m.media-amazon.com/images/M/MV5BMzkwNzhiOTItNTMxMS00NDc0LTk0ZjgtNTdmZmVmNWZkZTVjXkEyXkFqcGc@._V1_.jpg",
+     "affinity": 0.9113481104963412,
+     "blurb": null
+    },
+    {
+     "entity_id": "BF5BE0DC-ED17-4538-868F-68BD66168A6C",
+     "name": "Prozac Nation",
+     "type": "urn:entity:movie",
+     "image": "https://m.media-amazon.com/images/M/MV5BZmUxNTljZDEtMTRjZi00NmRhLWI0MmEtMmYzYTQ4Njk2YmY5XkEyXkFqcGc@._V1_.jpg",
+     "affinity": 0.9079476212311534,
+     "blurb": null
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "name": "Heavy Metal Thunder",
+   "line": "Intense, powerful music and stories of passion and rebellion.",
+   "size": 41,
+   "categories": {
+    "Vinyl": 14,
+    "Books": 10,
+    "Games": 10,
+    "TV box sets": 6,
+    "Film": 1
+   },
+   "who": [
+    {
+     "taste": "Slipknot",
+     "weight": 0.40116
+    },
+    {
+     "taste": "Star Wars",
+     "weight": 0.39062
+    },
+    {
+     "taste": "Metallica",
+     "weight": 0.38024
+    },
+    {
+     "taste": "Stephen King",
+     "weight": 0.24941
+    },
+    {
+     "taste": "Bob Dylan",
+     "weight": 0.22139
+    }
+   ],
+   "signals": [
+    "c004",
+    "c022",
+    "c096",
+    "c073",
+    "c090"
+   ],
+   "stock": [
+    {
+     "entity_id": "6B9DDE79-04A8-4478-87D5-86361C52B3B7",
+     "name": "Judas Priest",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/42be7c3132ed145c99da6a09d636ae0c.jpg",
+     "affinity": 0.9852070719029368,
+     "blurb": null
+    },
+    {
+     "entity_id": "C4068CA3-7276-41A7-BEA2-860531ED4549",
+     "name": "Dio",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/41ee4e4e3cf94b1e9b9f5b20651bedcb.jpg",
+     "affinity": 0.9783194304077033,
+     "blurb": null
+    },
+    {
+     "entity_id": "5C110FFF-4870-4E90-B718-99EC7C3EFF66",
+     "name": "Van Helsing",
+     "type": "urn:entity:tv_show",
+     "image": "https://m.media-amazon.com/images/M/MV5BZDc4YmUwOGQtODBmMS00MTEzLTlhMzEtZDQ3NmRhYjYxYWQ2XkEyXkFqcGc@._V1_.jpg",
+     "affinity": 0.9520208499733124,
+     "blurb": null
+    },
+    {
+     "entity_id": "2A3DA5BC-6FA5-4C53-A313-F0EE75A6B005",
+     "name": "Into the Badlands",
+     "type": "urn:entity:tv_show",
+     "image": "https://m.media-amazon.com/images/M/MV5BOGQzMWI4OGMtNmE3ZC00ZGM0LWI0ZjEtN2I1YmUwNzhjNTdmXkEyXkFqcGc@._V1_.jpg",
+     "affinity": 0.9517516601035843,
+     "blurb": null
+    },
+    {
+     "entity_id": "B038F6FE-9436-4A4A-A81A-E6CB87755A50",
+     "name": "Robert Plant: A Life",
+     "type": "urn:entity:book",
+     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1379335469i/18090133.jpg",
+     "affinity": 0.8799258792440525,
+     "blurb": "A detailed biography of Robert Plant, exploring his life and career as the lead singer of Led Zeppelin and beyond."
+    },
+    {
+     "entity_id": "F0591E96-A669-4BCD-99CC-F4C0E90E9BF1",
+     "name": "Zombieland",
+     "type": "urn:entity:movie",
+     "image": "https://m.media-amazon.com/images/M/MV5BMTU5MDg0NTQ1N15BMl5BanBnXkFtZTcwMjA4Mjg3Mg@@._V1_.jpg",
+     "affinity": 0.8796166878636467,
+     "blurb": null
+    },
+    {
+     "entity_id": "38A5E803-CF83-44BA-A76F-6AC2DF5C01AB",
+     "name": "Watchmen",
+     "type": "urn:entity:movie",
+     "image": "https://m.media-amazon.com/images/M/MV5BYmJiNTUwYWUtZDllNi00ODdjLWFmNTEtOTVlNmYxYTZhNzYzXkEyXkFqcGc@._V1_.jpg",
+     "affinity": 0.8788569519952983,
+     "blurb": null
+    },
+    {
+     "entity_id": "B47CB874-47D3-4C43-821A-26F4857F5A17",
+     "name": "Psychedelic Bubble Gum Boyce & Hart, the Monkees, and Turning Mayhem Into Miracles",
+     "type": "urn:entity:book",
+     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1432923629i/25457346.jpg",
+     "affinity": 0.8734010215908999,
+     "blurb": null
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "name": "Rock and Roll Icons",
+   "line": "Transformative rock legends who changed music and culture.",
+   "size": 53,
+   "categories": {
+    "Vinyl": 36,
+    "Film": 10,
+    "Games": 6,
+    "TV box sets": 1
+   },
+   "who": [
+    {
+     "taste": "The Lord of the Rings",
+     "weight": 0.42626
+    },
+    {
+     "taste": "Pulp Fiction",
+     "weight": 0.41852
+    },
+    {
+     "taste": "Bob Dylan",
+     "weight": 0.27846
+    },
+    {
+     "taste": "Star Wars",
+     "weight": 0.24991
+    },
+    {
+     "taste": "Metallica",
+     "weight": 0.20597
+    }
+   ],
+   "signals": [
+    "c024",
+    "c072",
+    "c038",
+    "c006",
+    "c062"
+   ],
+   "stock": [
+    {
+     "entity_id": "FCBB0FA2-C683-463B-A79C-4A81A21CD373",
+     "name": "Rectify",
+     "type": "urn:entity:tv_show",
+     "image": "https://m.media-amazon.com/images/M/MV5BMjg4NzE2YjYtY2Y4NS00ZjBkLWEzYzItMWU2YjJhY2U1Y2U4XkEyXkFqcGc@._V1_.jpg",
+     "affinity": 0.9535846253457095,
+     "blurb": null
+    },
+    {
+     "entity_id": "9A3FB057-6647-44A2-BEF1-1D5092F2A124",
+     "name": "The Police",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/9246b9e5a6fe4e28a6027259bb2940f4.jpg",
+     "affinity": 0.9532578193849096,
+     "blurb": null
+    },
+    {
+     "entity_id": "892D4014-60ED-4E06-8417-468F0F620D64",
+     "name": "Oasis",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/2a96cbd8b46e442.jpg",
+     "affinity": 0.9515707068493049,
+     "blurb": null
+    },
+    {
+     "entity_id": "90C07714-F4CF-4293-8C4D-A6C5F4A8170B",
+     "name": "The Path",
+     "type": "urn:entity:tv_show",
+     "image": "https://m.media-amazon.com/images/M/MV5BMjQ4MzMzNzUyN15BMl5BanBnXkFtZTgwODU2NTI0NDM@._V1_.jpg",
+     "affinity": 0.950292646998708,
+     "blurb": null
+    },
+    {
+     "entity_id": "AE1E52EE-BAB5-4C6E-84C3-A3F4346C26C3",
+     "name": "Garden State",
+     "type": "urn:entity:movie",
+     "image": "https://m.media-amazon.com/images/M/MV5BMjc5MDE0NjkxOF5BMl5BanBnXkFtZTcwNzA0NTkyMw@@._V1_.jpg",
+     "affinity": 0.9267986598981133,
+     "blurb": null
+    },
+    {
+     "entity_id": "BA099DA3-DD1A-42ED-BAC0-D4CB73B654DF",
+     "name": "Big Fish",
+     "type": "urn:entity:movie",
+     "image": "https://m.media-amazon.com/images/M/MV5BNTVlNjc4ZmItMDZjYy00YWZjLTg1OWEtOTNlZjJlN2FlMjEwXkEyXkFqcGc@._V1_.jpg",
+     "affinity": 0.921577981864576,
+     "blurb": null
+    },
+    {
+     "entity_id": "A28964DF-83EC-4564-8851-A0EEBB74FC3D",
+     "name": "John Lennon: The Life",
+     "type": "urn:entity:book",
+     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1399934365i/3423364.jpg",
+     "affinity": 0.8612590303275841,
+     "blurb": "A detailed biography of John Lennon, exploring his life, music, and relationships."
+    },
+    {
+     "entity_id": "59B5BB3D-32AD-447C-B1C7-1201FAC22B87",
+     "name": "Cash",
+     "type": "urn:entity:book",
+     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1422322302i/35488.jpg",
+     "affinity": 0.8604577350967049,
+     "blurb": "Johnny Cash recounts his life from Arkansas to Nashville, sharing his music career, personal struggles, and spiritual reflections."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "name": "True Crime and Sports",
+   "line": "Gripping narratives about real champions, criminals, and institutions.",
+   "size": 33,
+   "categories": {
+    "Books": 24,
+    "Games": 7,
+    "TV box sets": 2
+   },
+   "who": [
+    {
+     "taste": "Nike",
+     "weight": 0.2991
+    },
+    {
+     "taste": "Kanye West",
+     "weight": 0.28456
+    },
+    {
+     "taste": "Call of Duty",
+     "weight": 0.26289
+    },
+    {
+     "taste": "The Office",
+     "weight": 0.19756
+    },
+    {
+     "taste": "Metallica",
+     "weight": 0.19496
+    }
+   ],
+   "signals": [
+    "c157",
+    "c137",
+    "c179",
+    "c164",
+    "c119"
+   ],
+   "stock": [
+    {
+     "entity_id": "10FE7999-4C38-4665-8986-F966C8679840",
+     "name": "Levon Helm",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/37397cac5efd4e70b5cf2f51d162705b.jpg",
+     "affinity": 0.9666350956420986,
+     "blurb": null
+    },
+    {
+     "entity_id": "4779B1A4-8815-413D-A7D3-A51FD5549731",
+     "name": "Lyle Lovett",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/04d52a301b274880a73f73ac2e47484d.jpg",
+     "affinity": 0.9656133926534798,
+     "blurb": null
+    },
+    {
+     "entity_id": "B3F4594D-49AE-4177-9E71-1C798D5393FD",
+     "name": "Paul T. Goldman",
+     "type": "urn:entity:tv_show",
+     "image": "https://m.media-amazon.com/images/M/MV5BZGVlNjA1MmItOWFlNy00NDc4LTg5ODAtYWU1Y2YyMTU5YWY5XkEyXkFqcGc@._V1_.jpg",
+     "affinity": 0.9486405659522487,
+     "blurb": null
+    },
+    {
+     "entity_id": "D5039EAD-FCC4-4099-ABD7-02D65461CB48",
+     "name": "The Comey Rule",
+     "type": "urn:entity:tv_show",
+     "image": "https://m.media-amazon.com/images/M/MV5BZThiNWY0YzMtNzczZC00YWQxLTgxMjItZmU5NTkzYTYxNmViXkEyXkFqcGc@._V1_.jpg",
+     "affinity": 0.9466492454847707,
+     "blurb": null
+    },
+    {
+     "entity_id": "F9EA7C2A-A4C9-4EB0-826C-4C537327E2B8",
+     "name": "LeBron, Inc.: The Making of a Billion-Dollar Athlete",
+     "type": "urn:entity:book",
+     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1550712902i/41161346.jpg",
+     "affinity": 0.9160898968021329,
+     "blurb": "The book details LeBron James's transformation from a basketball star to a business mogul and global brand."
+    },
+    {
+     "entity_id": "4A205D32-34D8-414D-ADFC-1E71CE9D024C",
+     "name": "The Dynasty",
+     "type": "urn:entity:book",
+     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1593942311i/53358819.jpg",
+     "affinity": 0.9065226201868207,
+     "blurb": "The book details the New England Patriots' rise to a sports dynasty under Kraft, Belichick, and Brady."
+    },
+    {
+     "entity_id": "8F063F52-61A9-4CE1-B513-696AA33CE820",
+     "name": "Ice Guardians",
+     "type": "urn:entity:movie",
+     "image": "https://m.media-amazon.com/images/M/MV5BMjM5MDQyODAyNF5BMl5BanBnXkFtZTgwMDgzNjA4OTE@._V1_.jpg",
+     "affinity": 0.8949216975724884,
+     "blurb": null
+    },
+    {
+     "entity_id": "8455E5E6-47CF-49C0-8431-B04A5434C149",
+     "name": "Becoming Warren Buffett",
+     "type": "urn:entity:movie",
+     "image": "https://m.media-amazon.com/images/M/MV5BOGE2YTQ0OWItMTNiOC00NzQxLThiZGEtMmEwZjJmMjk2ZWFkXkEyXkFqcGc@._V1_.jpg",
+     "affinity": 0.8914323471928078,
+     "blurb": null
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "name": "Dark Romantic Escapism",
+   "line": "Atmospheric fantasy exploring identity, love, and the macabre.",
+   "size": 37,
+   "categories": {
+    "Books": 17,
+    "Games": 12,
+    "TV box sets": 7,
+    "Film": 1
+   },
+   "who": [
+    {
+     "taste": "Stephen King",
+     "weight": 0.4742
+    },
+    {
+     "taste": "BLACKPINK",
+     "weight": 0.46454
+    },
+    {
+     "taste": "Animal Crossing: New Horizons",
+     "weight": 0.26177
+    },
+    {
+     "taste": "Parasite",
+     "weight": 0.20864
+    },
+    {
+     "taste": "Frozen",
+     "weight": 0.19627
+    }
+   ],
+   "signals": [
+    "c152",
+    "c132",
+    "c112",
+    "c168",
+    "c188"
+   ],
+   "stock": [
+    {
+     "entity_id": "7826DA9C-F761-42A1-A948-90A700082B80",
+     "name": "mxmtoon",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/56bb14ede9e2ea20bcfc59603c52ad3b.jpg",
+     "affinity": 0.980606984768754,
+     "blurb": null
+    },
+    {
+     "entity_id": "97A06C30-99BE-47A8-BD7E-D6DDD4504137",
+     "name": "Conan Gray",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/bd8a8f463a789fc49371300c2d214a5e.jpg",
+     "affinity": 0.9709530265118365,
+     "blurb": null
+    },
+    {
+     "entity_id": "9C454538-519A-48D2-9E7E-01B1FBF8E7EE",
+     "name": "His Dark Materials",
+     "type": "urn:entity:tv_show",
+     "image": "https://m.media-amazon.com/images/M/MV5BZjM2MDIxMTYtMDUwYy00Y2VlLTgwZWQtMTE4MzgyNzNmYmRjXkEyXkFqcGc@._V1_.jpg",
+     "affinity": 0.9604034916999595,
+     "blurb": null
+    },
+    {
+     "entity_id": "9CDBDDF0-8E57-4E21-ACA1-98BF84245A53",
+     "name": "Percy Jackson and the Olympians",
+     "type": "urn:entity:tv_show",
+     "image": "https://m.media-amazon.com/images/M/MV5BMTI3YmIzNzYtOTcwNy00ZTZiLTg5NmQtMTUyNGY1ZWVmZDJiXkEyXkFqcGc@._V1_.jpg",
+     "affinity": 0.95980002699029,
+     "blurb": null
+    },
+    {
+     "entity_id": "CCD9E29D-221F-43C0-A33A-4C3F9085D0F0",
+     "name": "Midnight Sun",
+     "type": "urn:entity:movie",
+     "image": "https://m.media-amazon.com/images/M/MV5BMjg0NjU1MjgyNF5BMl5BanBnXkFtZTgwNzc5NjYyNDM@._V1_.jpg",
+     "affinity": 0.9274507778901722,
+     "blurb": null
+    },
+    {
+     "entity_id": "FA4DB8AA-6377-429B-8C5B-E5C62E42AE67",
+     "name": "Irreplaceable You",
+     "type": "urn:entity:movie",
+     "image": "https://m.media-amazon.com/images/M/MV5BMTUzMDI0MTc3OV5BMl5BanBnXkFtZTgwMjM0MzI3NDM@._V1_.jpg",
+     "affinity": 0.9263677779951581,
+     "blurb": null
+    },
+    {
+     "entity_id": "1C1487A7-7165-4E49-B94C-AB5514CF8DAA",
+     "name": "Gallant",
+     "type": "urn:entity:book",
+     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1635862579i/58064046.jpg",
+     "affinity": 0.9175377269258528,
+     "blurb": "Olivia Prior discovers secrets at Gallant, a place where shadows and reality intertwine."
+    },
+    {
+     "entity_id": "FD843194-2D8F-4FB4-B6A1-A9958C67223E",
+     "name": "Cemetery Boys (Cemetery Boys, #1)",
+     "type": "urn:entity:book",
+     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1594059624i/52339313.jpg",
+     "affinity": 0.9062460704247003,
+     "blurb": "A transgender boy accidentally summons a ghost and must help him resolve unfinished business."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "name": "Artful Indie Contemplation",
+   "line": "Thoughtful, innovative stories for reflective, sophisticated audiences.",
+   "size": 37,
+   "categories": {
+    "Film": 20,
+    "Vinyl": 9,
+    "TV box sets": 5,
+    "Games": 2,
+    "Books": 1
+   },
+   "who": [
+    {
+     "taste": "Ludwig van Beethoven",
+     "weight": 0.47585
+    },
+    {
+     "taste": "Pulp Fiction",
+     "weight": 0.36207
+    },
+    {
+     "taste": "Bob Dylan",
+     "weight": 0.26437
+    },
+    {
+     "taste": "The Notebook",
+     "weight": 0.18533
+    },
+    {
+     "taste": "Drake",
+     "weight": 0.18096
+    }
+   ],
+   "signals": [
+    "c231",
+    "c234",
+    "c196",
+    "c250",
+    "c215"
+   ],
+   "stock": [
+    {
+     "entity_id": "BF077E87-9221-451E-A4A3-61A5475C1671",
+     "name": "One Flew Over the Cuckoo's Nest",
+     "type": "urn:entity:book",
+     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1360102214i/12697427.jpg",
+     "affinity": 0.9713364757419684,
+     "blurb": "A rebellious patient challenges the oppressive rule of a tyrannical nurse in a mental hospital."
+    },
+    {
+     "entity_id": "E30EDD6C-FEC9-4C6C-8F65-4F3711E40891",
+     "name": "Fleishman Is in Trouble",
+     "type": "urn:entity:tv_show",
+     "image": "https://m.media-amazon.com/images/M/MV5BOTkyOWE0ZWUtNDg2OC00ZmU4LWI3MmUtZjYxYTA0NGJhOWZjXkEyXkFqcGc@._V1_.jpg",
+     "affinity": 0.9594878824029823,
+     "blurb": null
+    },
+    {
+     "entity_id": "4F3E0F5A-F87E-4158-8A25-FC1FFFAA9417",
+     "name": "Here and Now",
+     "type": "urn:entity:tv_show",
+     "image": "https://m.media-amazon.com/images/M/MV5BMTk2NDIwOTg4M15BMl5BanBnXkFtZTgwOTAxMzc1NDM@._V1_.jpg",
+     "affinity": 0.958048915313243,
+     "blurb": null
+    },
+    {
+     "entity_id": "8431339C-7299-4A35-9AB3-DFE9DBEB7DED",
+     "name": "Beck",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/073547bf84564c3bb233ff68d434d6f3.jpg",
+     "affinity": 0.9564375718610441,
+     "blurb": null
+    },
+    {
+     "entity_id": "CE859B17-DDB5-41B4-AEDC-B8DDA2F7CC1B",
+     "name": "Sonic Youth",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/7fc9b9e14a314de79f30d6a71abbfb5e.jpg",
+     "affinity": 0.955962513112905,
+     "blurb": null
+    },
+    {
+     "entity_id": "F038CFAC-7515-4840-9F22-E45479E56439",
+     "name": "Brave New World",
+     "type": "urn:entity:book",
+     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1575509280i/5129.jpg",
+     "affinity": 0.9497602129659174,
+     "blurb": "In a future society, engineered citizens live under strict control, while an outsider challenges the status quo."
+    },
+    {
+     "entity_id": "2E59248F-D17A-410F-9271-5E39AB7FF38C",
+     "name": "Requiem for a Dream",
+     "type": "urn:entity:movie",
+     "image": "https://m.media-amazon.com/images/M/MV5BN2ZlMjIzZjctYzA2My00ZWYyLWI4ZjctMGI2NWYyNzFiZjAwXkEyXkFqcGc@._V1_.jpg",
+     "affinity": 0.9458313107112307,
+     "blurb": null
+    },
+    {
+     "entity_id": "47D44560-E042-4036-829C-BB6BA9ED4C43",
+     "name": "A Clockwork Orange",
+     "type": "urn:entity:movie",
+     "image": "https://m.media-amazon.com/images/M/MV5BMTY3MjM1Mzc4N15BMl5BanBnXkFtZTgwODM0NzAxMDE@._V1_.jpg",
+     "affinity": 0.9298717676583378,
+     "blurb": null
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "name": "Pop Romance Anthems",
+   "line": "Polished, emotionally resonant songs and stories for dreamers.",
+   "size": 43,
+   "categories": {
+    "Vinyl": 18,
+    "Film": 8,
+    "Books": 7,
+    "Games": 6,
+    "TV box sets": 4
+   },
+   "who": [
+    {
+     "taste": "Twilight",
+     "weight": 0.34001
+    },
+    {
+     "taste": "Frozen",
+     "weight": 0.29976
+    },
+    {
+     "taste": "Taylor Swift",
+     "weight": 0.28322
+    },
+    {
+     "taste": "Lana Del Rey",
+     "weight": 0.25792
+    },
+    {
+     "taste": "The Notebook",
+     "weight": 0.23599
+    }
+   ],
+   "signals": [
+    "c081",
+    "c030",
+    "c025",
+    "c239",
+    "c063"
+   ],
+   "stock": [
+    {
+     "entity_id": "B9A14612-F366-4333-8A60-25A9CB73A286",
+     "name": "Bunheads",
+     "type": "urn:entity:tv_show",
+     "image": "https://m.media-amazon.com/images/M/MV5BNDAyZjJiOTItMTFkMi00N2JiLWJmZGYtYmRlZTJiYmI0ODU2XkEyXkFqcGc@._V1_.jpg",
+     "affinity": 0.9623495136830329,
+     "blurb": null
+    },
+    {
+     "entity_id": "E24E38A2-4965-4FDF-91E6-E3426AAB13B9",
+     "name": "Christina Perri",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/0371b9dcbc724737c7cd8f8816ce1e6a.jpg",
+     "affinity": 0.95956695799486,
+     "blurb": null
+    },
+    {
+     "entity_id": "CC4DDC13-DDE7-4536-88BF-6FAE92EDB9EB",
+     "name": "The Royals",
+     "type": "urn:entity:tv_show",
+     "image": "https://m.media-amazon.com/images/M/MV5BNTkzMjA3NDEyNl5BMl5BanBnXkFtZTgwMzE3MTIwNTM@._V1_.jpg",
+     "affinity": 0.9577552297740987,
+     "blurb": null
+    },
+    {
+     "entity_id": "4595F6D2-E849-4988-A4DE-8905D463C9B8",
+     "name": "Jessie J",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/6d6909f2f1d565ed215633c53b87eb35.jpg",
+     "affinity": 0.9563477624426712,
+     "blurb": null
+    },
+    {
+     "entity_id": "74E3107A-108B-4339-B9FD-54C4B1D5ABB4",
+     "name": "Love, Rosie",
+     "type": "urn:entity:movie",
+     "image": "https://m.media-amazon.com/images/M/MV5BMTk0Mzg1MTU1MF5BMl5BanBnXkFtZTgwMjU3ODI2MzE@._V1_.jpg",
+     "affinity": 0.9444102617858561,
+     "blurb": null
+    },
+    {
+     "entity_id": "7B07D14C-B2CA-4D87-BC57-3A677337FDAB",
+     "name": "If I Stay",
+     "type": "urn:entity:movie",
+     "image": "https://m.media-amazon.com/images/M/MV5BZWVkNWM4M2ItMzU0Ni00ODI1LThmMDktNTAwMTI3YzBmMWRjXkEyXkFqcGc@._V1_.jpg",
+     "affinity": 0.9380741058113042,
+     "blurb": null
+    },
+    {
+     "entity_id": "853CD39E-C65E-4110-B63F-AE81AF109B4F",
+     "name": "Priceless",
+     "type": "urn:entity:book",
+     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1280916217i/7969245.jpg",
+     "affinity": 0.8607698231809038,
+     "blurb": "A privileged singer's life unravels after her father's arrest, leading her to New Orleans for a fresh start."
+    },
+    {
+     "entity_id": "2A73144D-9DC4-427A-93C7-42966992FF40",
+     "name": "Angel Uncovered  (Angel Summer, #2)",
+     "type": "urn:entity:book",
+     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1320540915i/4176643.jpg",
+     "affinity": 0.8375005326556444,
+     "blurb": "Angel Summer's perfect life is threatened by her husband's past."
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "name": "Contemporary Hip Hop Culture",
+   "line": "Cutting-edge artists pushing boundaries in sound and artistry.",
+   "size": 66,
+   "categories": {
+    "Vinyl": 36,
+    "Film": 19,
+    "Games": 6,
+    "TV box sets": 4,
+    "Books": 1
+   },
+   "who": [
+    {
+     "taste": "Supreme",
+     "weight": 0.28257
+    },
+    {
+     "taste": "Frank Ocean",
+     "weight": 0.25676
+    },
+    {
+     "taste": "Bad Bunny",
+     "weight": 0.25484
+    },
+    {
+     "taste": "BLACKPINK",
+     "weight": 0.22789
+    },
+    {
+     "taste": "Minecraft",
+     "weight": 0.22065
+    }
+   ],
+   "signals": [
+    "c094",
+    "c061",
+    "c009",
+    "c356",
+    "c016"
+   ],
+   "stock": [
+    {
+     "entity_id": "6EE6E6C9-713D-4298-8013-13B1F2083B3A",
+     "name": "Cardi B",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/10e4870cbf2b3e82dbb74b0a9304d386.jpg",
+     "affinity": 0.9652785556258247,
+     "blurb": null
+    },
+    {
+     "entity_id": "6094C366-64A3-4FD9-956D-6D857FFF1B56",
+     "name": "Khalid",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/549439ce15479022331d49212368ff94.jpg",
+     "affinity": 0.964592194964718,
+     "blurb": null
+    },
+    {
+     "entity_id": "4F3E0F5A-F87E-4158-8A25-FC1FFFAA9417",
+     "name": "Here and Now",
+     "type": "urn:entity:tv_show",
+     "image": "https://m.media-amazon.com/images/M/MV5BMTk2NDIwOTg4M15BMl5BanBnXkFtZTgwOTAxMzc1NDM@._V1_.jpg",
+     "affinity": 0.9524722935637696,
+     "blurb": null
+    },
+    {
+     "entity_id": "D3CDAF26-7DA8-4BC6-9E8D-E6D821918695",
+     "name": "Insecure",
+     "type": "urn:entity:tv_show",
+     "image": "https://m.media-amazon.com/images/M/MV5BYmIyYWZkMjQtOTJhOC00NTE3LTk1MzAtNjhhYjVjYzJhOWNlXkEyXkFqcGc@._V1_.jpg",
+     "affinity": 0.9517138264691423,
+     "blurb": null
+    },
+    {
+     "entity_id": "85C499B8-4E79-49C0-90F0-19C33C1D32D8",
+     "name": "Booksmart",
+     "type": "urn:entity:movie",
+     "image": "https://m.media-amazon.com/images/M/MV5BMjEzMjcxNjA2Nl5BMl5BanBnXkFtZTgwMjAxMDM2NzM@._V1_.jpg",
+     "affinity": 0.9130252343639295,
+     "blurb": null
+    },
+    {
+     "entity_id": "24A2FD28-FC76-4CCD-AC43-A015B539DBAA",
+     "name": "Uncut Gems",
+     "type": "urn:entity:movie",
+     "image": "https://m.media-amazon.com/images/M/MV5BNmI0YjA5NjItYzExYi00NzkxLTkxNDctNGJjYTZhM2M0NDQ0XkEyXkFqcGc@._V1_.jpg",
+     "affinity": 0.9078421989058306,
+     "blurb": null
+    },
+    {
+     "entity_id": "38AE774E-F217-4C96-BE77-B3B40A6344E4",
+     "name": "Valorant",
+     "type": "urn:entity:videogame",
+     "image": "https://www.metacritic.com/a/img/catalog/provider/6/12/6-1-744432-52.jpg?auto=webp&fit=crop&height=675&width=1200",
+     "affinity": 0.8481231014161158,
+     "blurb": null
+    },
+    {
+     "entity_id": "7171D724-B5E3-4E4F-9BFC-AFE855B52F71",
+     "name": "How To Be a Stoic (Penguin Great Ideas)",
+     "type": "urn:entity:book",
+     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1601049794i/54843933.jpg",
+     "affinity": 0.8377191180021982,
+     "blurb": null
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "name": "Blockbuster Adventure Spectacle",
+   "line": "High-octane superhero action and fantasy for all ages.",
+   "size": 36,
+   "categories": {
+    "Film": 26,
+    "Books": 5,
+    "TV box sets": 5
+   },
+   "who": [
+    {
+     "taste": "Call of Duty",
+     "weight": 0.35434
+    },
+    {
+     "taste": "Minecraft",
+     "weight": 0.31339
+    },
+    {
+     "taste": "Star Wars",
+     "weight": 0.31079
+    },
+    {
+     "taste": "Dark Souls",
+     "weight": 0.27573
+    },
+    {
+     "taste": "Nike",
+     "weight": 0.25785
+    }
+   ],
+   "signals": [
+    "c249",
+    "c211",
+    "c268",
+    "c192",
+    "c261"
+   ],
+   "stock": [
+    {
+     "entity_id": "C5E7187B-E978-4DEE-9A7C-CA36437739D4",
+     "name": "Guardians of the Galaxy: Vol. 2",
+     "type": "urn:entity:movie",
+     "image": "https://m.media-amazon.com/images/M/MV5BNWE5MGI3MDctMmU5Ni00YzI2LWEzMTQtZGIyZDA5MzQzNDBhXkEyXkFqcGc@._V1_.jpg",
+     "affinity": 0.966061212541333,
+     "blurb": null
+    },
+    {
+     "entity_id": "3C6380C8-8356-4ED6-AC6E-9BC22AF91615",
+     "name": "Venom",
+     "type": "urn:entity:movie",
+     "image": "https://m.media-amazon.com/images/M/MV5BNTYwMDg5MDItNjhmZi00NmVmLThjNWItMmNkMjVkMWRhNzI2XkEyXkFqcGc@._V1_.jpg",
+     "affinity": 0.9629591902553065,
+     "blurb": null
+    },
+    {
+     "entity_id": "D9129F63-EE63-4F62-916A-9404A587C17A",
+     "name": "Cloak & Dagger",
+     "type": "urn:entity:tv_show",
+     "image": "https://m.media-amazon.com/images/M/MV5BNTU4NzU2OTc5NF5BMl5BanBnXkFtZTgwMDg3MzA0NzM@._V1_.jpg",
+     "affinity": 0.9566939160363627,
+     "blurb": null
+    },
+    {
+     "entity_id": "8251F3D2-36D4-4911-BF01-8CDEB6AD3BC4",
+     "name": "Loki",
+     "type": "urn:entity:tv_show",
+     "image": "https://m.media-amazon.com/images/M/MV5BYzA2YjM2ZWQtYTZhMS00OTI3LTlhYzQtZjBiZWZkMDdlNjA5XkEyXkFqcGc@._V1_.jpg",
+     "affinity": 0.9524898003233256,
+     "blurb": null
+    },
+    {
+     "entity_id": "0C9D24CF-61C6-4C91-B6E6-91827467A166",
+     "name": "twenty one pilots",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/8e9689c9e5de6b17c48bf85279b80d79.jpg",
+     "affinity": 0.9185556344339437,
+     "blurb": null
+    },
+    {
+     "entity_id": "A8A71B45-1FF5-475F-8559-581CECF97563",
+     "name": "Bruno Mars",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/27fb627d292997e8ebd582554f161392.jpg",
+     "affinity": 0.9112045235725049,
+     "blurb": null
+    },
+    {
+     "entity_id": "198322D9-97BD-4C56-98F6-4B58DBB7EB35",
+     "name": "Batman: The Court of Owls Saga",
+     "type": "urn:entity:book",
+     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1568997754i/39018271.jpg",
+     "affinity": 0.8893261849804655,
+     "blurb": null
+    },
+    {
+     "entity_id": "9E986A51-8EFD-4C26-B2F5-BA08E4836356",
+     "name": "Batman: Detective Comics #1000 Deluxe Edition",
+     "type": "urn:entity:book",
+     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1560849684i/43907768.jpg",
+     "affinity": 0.8665291431106826,
+     "blurb": null
+    }
+   ]
+  }
+ ],
+ "coldStart": [
+  {
+   "entity_id": "5571AD49-A691-4326-808B-9FF7957B37AD",
+   "name": "Lord of the Flies",
+   "type": "urn:entity:book",
+   "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1327869409i/7624.jpg",
+   "affinity": 0.9628482325958095,
+   "blurb": "A group of stranded schoolboys descend into chaos and savagery on a deserted island.",
+   "suggestedBy": 0,
+   "placement": {
+    "cluster": 0,
+    "clusterName": "Coming of Age Classics",
+    "similarity": 0.9666760621018842,
+    "neighbours": [
+     {
+      "id": "c161",
+      "similarity": 0.9702740518845191
+     },
+     {
+      "id": "c121",
+      "similarity": 0.9648337928479109
+     },
+     {
+      "id": "c181",
+      "similarity": 0.9615687133547296
+     }
+    ],
+    "x": 0.16490000000000002,
+    "y": 0.8062
+   }
+  },
+  {
+   "entity_id": "6B9DDE79-04A8-4478-87D5-86361C52B3B7",
+   "name": "Judas Priest",
+   "type": "urn:entity:artist",
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/42be7c3132ed145c99da6a09d636ae0c.jpg",
+   "affinity": 0.9852070719029368,
+   "blurb": null,
+   "suggestedBy": 1,
+   "placement": {
+    "cluster": 1,
+    "clusterName": "Heavy Metal Thunder",
+    "similarity": 0.883893225440054,
+    "neighbours": [
+     {
+      "id": "c004",
+      "similarity": 0.98391951481518
+     },
+     {
+      "id": "c022",
+      "similarity": 0.9821614881374935
+     },
+     {
+      "id": "c073",
+      "similarity": 0.9775868485592577
+     }
+    ],
+    "x": 0.5258,
+    "y": 0.11939999999999999
+   }
+  },
+  {
+   "entity_id": "FCBB0FA2-C683-463B-A79C-4A81A21CD373",
+   "name": "Rectify",
+   "type": "urn:entity:tv_show",
+   "image": "https://m.media-amazon.com/images/M/MV5BMjg4NzE2YjYtY2Y4NS00ZjBkLWEzYzItMWU2YjJhY2U1Y2U4XkEyXkFqcGc@._V1_.jpg",
+   "affinity": 0.9535846253457095,
+   "blurb": null,
+   "suggestedBy": 2,
+   "placement": {
+    "cluster": 5,
+    "clusterName": "Artful Indie Contemplation",
+    "similarity": 0.42456300508103795,
+    "neighbours": [
+     {
+      "id": "c334",
+      "similarity": 0.6652417258015424
+     },
+     {
+      "id": "c321",
+      "similarity": 0.5638789358040688
+     },
+     {
+      "id": "c349",
+      "similarity": 0.5619944534915541
+     }
+    ],
+    "x": 0.1088,
+    "y": 0.45439999999999997
+   }
+  },
+  {
+   "entity_id": "10FE7999-4C38-4665-8986-F966C8679840",
+   "name": "Levon Helm",
+   "type": "urn:entity:artist",
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/37397cac5efd4e70b5cf2f51d162705b.jpg",
+   "affinity": 0.9666350956420986,
+   "blurb": null,
+   "suggestedBy": 3,
+   "placement": {
+    "cluster": 2,
+    "clusterName": "Rock and Roll Icons",
+    "similarity": 0.47343319508736825,
+    "neighbours": [
+     {
+      "id": "c087",
+      "similarity": 0.878315187021854
+     },
+     {
+      "id": "c075",
+      "similarity": 0.8227683929771609
+     },
+     {
+      "id": "c064",
+      "similarity": 0.8024440778408395
+     }
+    ],
+    "x": 0.10869999999999999,
+    "y": 0.1389
+   }
+  },
+  {
+   "entity_id": "7826DA9C-F761-42A1-A948-90A700082B80",
+   "name": "mxmtoon",
+   "type": "urn:entity:artist",
+   "image": "https://lastfm.freetls.fastly.net/i/u/770x0/56bb14ede9e2ea20bcfc59603c52ad3b.jpg",
+   "affinity": 0.980606984768754,
+   "blurb": null,
+   "suggestedBy": 4,
+   "placement": {
+    "cluster": 7,
+    "clusterName": "Contemporary Hip Hop Culture",
+    "similarity": 0.7844968024359654,
+    "neighbours": [
+     {
+      "id": "c356",
+      "similarity": 0.9289791167593349
+     },
+     {
+      "id": "c095",
+      "similarity": 0.9224747559066521
+     },
+     {
+      "id": "c043",
+      "similarity": 0.870776971615653
+     }
+    ],
+    "x": 0.8356,
+    "y": 0.7659
+   }
+  }
+ ]
+}

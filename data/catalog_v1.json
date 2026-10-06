@@ -1,0 +1,980 @@
+{
+ "store": "Lumen & Loom (fictional demo store)",
+ "note": "Synthetic catalog for a hackathon demo. Brands and titles are real so Qloo can resolve them; listings, prices and the store are made up.",
+ "items": [
+  {
+   "id": "p01",
+   "title": "Hans Zimmer: Interstellar OST, 2LP vinyl",
+   "category": "Vinyl",
+   "price_usd": 42,
+   "qloo": {
+    "type": "urn:entity:artist",
+    "name": "Hans Zimmer"
+   },
+   "mock_tags": [
+    "orchestral",
+    "cinema",
+    "scifi",
+    "space"
+   ],
+   "creators": [
+    "Hans Zimmer"
+   ],
+   "works": [
+    "Interstellar"
+   ]
+  },
+  {
+   "id": "p02",
+   "title": "Daft Punk: Random Access Memories, 2LP",
+   "category": "Vinyl",
+   "price_usd": 38,
+   "qloo": {
+    "type": "urn:entity:artist",
+    "name": "Daft Punk"
+   },
+   "mock_tags": [
+    "electronic",
+    "retro",
+    "dance"
+   ],
+   "creators": [
+    "Daft Punk"
+   ],
+   "works": [
+    "Random Access Memories"
+   ]
+  },
+  {
+   "id": "p03",
+   "title": "Miles Davis: Kind of Blue, 180g LP",
+   "category": "Vinyl",
+   "price_usd": 29,
+   "qloo": {
+    "type": "urn:entity:artist",
+    "name": "Miles Davis"
+   },
+   "mock_tags": [
+    "jazz",
+    "vintage",
+    "audiophile"
+   ],
+   "creators": [
+    "Miles Davis"
+   ],
+   "works": [
+    "Kind of Blue"
+   ]
+  },
+  {
+   "id": "p04",
+   "title": "Radiohead: OK Computer, 2LP",
+   "category": "Vinyl",
+   "price_usd": 34,
+   "qloo": {
+    "type": "urn:entity:artist",
+    "name": "Radiohead"
+   },
+   "mock_tags": [
+    "indie",
+    "alt",
+    "melancholy"
+   ],
+   "creators": [
+    "Radiohead"
+   ],
+   "works": [
+    "OK Computer"
+   ]
+  },
+  {
+   "id": "p05",
+   "title": "Bon Iver: For Emma, LP",
+   "category": "Vinyl",
+   "price_usd": 27,
+   "qloo": {
+    "type": "urn:entity:artist",
+    "name": "Bon Iver"
+   },
+   "mock_tags": [
+    "indie",
+    "folk",
+    "cozy"
+   ],
+   "creators": [
+    "Bon Iver"
+   ],
+   "works": [
+    "For Emma, Forever Ago"
+   ]
+  },
+  {
+   "id": "p06",
+   "title": "Joe Hisaishi: Ghibli Piano Collection, LP",
+   "category": "Vinyl",
+   "price_usd": 36,
+   "qloo": {
+    "type": "urn:entity:artist",
+    "name": "Joe Hisaishi"
+   },
+   "mock_tags": [
+    "orchestral",
+    "anime",
+    "cozy"
+   ],
+   "creators": [
+    "Joe Hisaishi",
+    "Studio Ghibli",
+    "Hayao Miyazaki"
+   ],
+   "works": [
+    "Studio Ghibli"
+   ]
+  },
+  {
+   "id": "p07",
+   "title": "Kendrick Lamar: DAMN., LP",
+   "category": "Vinyl",
+   "price_usd": 31,
+   "qloo": {
+    "type": "urn:entity:artist",
+    "name": "Kendrick Lamar"
+   },
+   "mock_tags": [
+    "hiphop",
+    "streetwear"
+   ],
+   "creators": [
+    "Kendrick Lamar"
+   ],
+   "works": [
+    "DAMN."
+   ]
+  },
+  {
+   "id": "p08",
+   "title": "Kip Thorne: The Science of Interstellar (hardcover)",
+   "category": "Books",
+   "price_usd": 28,
+   "qloo": {
+    "type": "urn:entity:book",
+    "name": "The Science of Interstellar"
+   },
+   "mock_tags": [
+    "scifi",
+    "space",
+    "science",
+    "cinema"
+   ],
+   "creators": [
+    "Kip Thorne"
+   ],
+   "works": [
+    "Interstellar"
+   ]
+  },
+  {
+   "id": "p09",
+   "title": "Frank Herbert: Dune, deluxe edition",
+   "category": "Books",
+   "price_usd": 35,
+   "qloo": {
+    "type": "urn:entity:book",
+    "name": "Dune"
+   },
+   "mock_tags": [
+    "scifi",
+    "epic",
+    "space"
+   ],
+   "creators": [
+    "Frank Herbert"
+   ],
+   "works": [
+    "Dune"
+   ]
+  },
+  {
+   "id": "p10",
+   "title": "Haruki Murakami: Kafka on the Shore",
+   "category": "Books",
+   "price_usd": 18,
+   "qloo": {
+    "type": "urn:entity:book",
+    "name": "Kafka on the Shore"
+   },
+   "mock_tags": [
+    "literary",
+    "surreal",
+    "cozy",
+    "jazz"
+   ],
+   "creators": [
+    "Haruki Murakami"
+   ],
+   "works": [
+    "Kafka on the Shore"
+   ]
+  },
+  {
+   "id": "p11",
+   "title": "Agatha Christie: Murder on the Orient Express, clothbound",
+   "category": "Books",
+   "price_usd": 22,
+   "qloo": {
+    "type": "urn:entity:book",
+    "name": "Murder on the Orient Express"
+   },
+   "mock_tags": [
+    "mystery",
+    "vintage",
+    "cozy"
+   ],
+   "creators": [
+    "Agatha Christie"
+   ],
+   "works": [
+    "Murder on the Orient Express",
+    "Hercule Poirot"
+   ]
+  },
+  {
+   "id": "p12",
+   "title": "J.R.R. Tolkien: The Hobbit, illustrated",
+   "category": "Books",
+   "price_usd": 30,
+   "qloo": {
+    "type": "urn:entity:book",
+    "name": "The Hobbit"
+   },
+   "mock_tags": [
+    "fantasy",
+    "epic",
+    "cozy"
+   ],
+   "creators": [
+    "J.R.R. Tolkien"
+   ],
+   "works": [
+    "The Hobbit",
+    "Middle-earth"
+   ]
+  },
+  {
+   "id": "p13",
+   "title": "Philip K. Dick: Do Androids Dream of Electric Sheep?",
+   "category": "Books",
+   "price_usd": 16,
+   "qloo": {
+    "type": "urn:entity:book",
+    "name": "Do Androids Dream of Electric Sheep?"
+   },
+   "mock_tags": [
+    "scifi",
+    "noir",
+    "cinema"
+   ],
+   "creators": [
+    "Philip K. Dick"
+   ],
+   "works": [
+    "Do Androids Dream of Electric Sheep?",
+    "Blade Runner"
+   ]
+  },
+  {
+   "id": "p14",
+   "title": "The Wes Anderson Collection (art book)",
+   "category": "Books",
+   "price_usd": 45,
+   "qloo": {
+    "type": "urn:entity:book",
+    "name": "The Wes Anderson Collection"
+   },
+   "mock_tags": [
+    "design",
+    "cinema",
+    "whimsical"
+   ],
+   "creators": [
+    "Matt Zoller Seitz",
+    "Wes Anderson"
+   ],
+   "works": [
+    "The Wes Anderson Collection"
+   ]
+  },
+  {
+   "id": "p15",
+   "title": "Elden Ring (PS5)",
+   "category": "Games",
+   "price_usd": 59,
+   "qloo": {
+    "type": "urn:entity:videogame",
+    "name": "Elden Ring"
+   },
+   "mock_tags": [
+    "gaming",
+    "fantasy",
+    "hardcore"
+   ],
+   "creators": [
+    "FromSoftware",
+    "George R. R. Martin"
+   ],
+   "works": [
+    "Elden Ring"
+   ]
+  },
+  {
+   "id": "p16",
+   "title": "The Legend of Zelda: Tears of the Kingdom (Switch)",
+   "category": "Games",
+   "price_usd": 69,
+   "qloo": {
+    "type": "urn:entity:videogame",
+    "name": "The Legend of Zelda: Tears of the Kingdom"
+   },
+   "mock_tags": [
+    "gaming",
+    "fantasy",
+    "adventure"
+   ],
+   "creators": [
+    "Nintendo"
+   ],
+   "works": [
+    "The Legend of Zelda"
+   ]
+  },
+  {
+   "id": "p17",
+   "title": "Outer Wilds (PC/console)",
+   "category": "Games",
+   "price_usd": 25,
+   "qloo": {
+    "type": "urn:entity:videogame",
+    "name": "Outer Wilds"
+   },
+   "mock_tags": [
+    "gaming",
+    "space",
+    "scifi",
+    "indie"
+   ],
+   "creators": [
+    "Mobius Digital"
+   ],
+   "works": [
+    "Outer Wilds"
+   ]
+  },
+  {
+   "id": "p18",
+   "title": "Stardew Valley (Switch)",
+   "category": "Games",
+   "price_usd": 15,
+   "qloo": {
+    "type": "urn:entity:videogame",
+    "name": "Stardew Valley"
+   },
+   "mock_tags": [
+    "gaming",
+    "cozy",
+    "indie"
+   ],
+   "creators": [
+    "ConcernedApe"
+   ],
+   "works": [
+    "Stardew Valley"
+   ]
+  },
+  {
+   "id": "p19",
+   "title": "Disco Elysium: Final Cut",
+   "category": "Games",
+   "price_usd": 40,
+   "qloo": {
+    "type": "urn:entity:videogame",
+    "name": "Disco Elysium"
+   },
+   "mock_tags": [
+    "gaming",
+    "literary",
+    "noir"
+   ],
+   "creators": [
+    "ZA/UM"
+   ],
+   "works": [
+    "Disco Elysium"
+   ]
+  },
+  {
+   "id": "p20",
+   "title": "Inception (4K UHD Blu-ray)",
+   "category": "Movies",
+   "price_usd": 25,
+   "qloo": {
+    "type": "urn:entity:movie",
+    "name": "Inception"
+   },
+   "mock_tags": [
+    "cinema",
+    "scifi",
+    "heist"
+   ],
+   "creators": [
+    "Christopher Nolan",
+    "Hans Zimmer"
+   ],
+   "works": [
+    "Inception"
+   ]
+  },
+  {
+   "id": "p21",
+   "title": "Blade Runner 2049 (4K UHD)",
+   "category": "Movies",
+   "price_usd": 24,
+   "qloo": {
+    "type": "urn:entity:movie",
+    "name": "Blade Runner 2049"
+   },
+   "mock_tags": [
+    "cinema",
+    "scifi",
+    "noir"
+   ],
+   "creators": [
+    "Denis Villeneuve",
+    "Hans Zimmer"
+   ],
+   "works": [
+    "Blade Runner"
+   ]
+  },
+  {
+   "id": "p22",
+   "title": "Spirited Away (Blu-ray)",
+   "category": "Movies",
+   "price_usd": 20,
+   "qloo": {
+    "type": "urn:entity:movie",
+    "name": "Spirited Away"
+   },
+   "mock_tags": [
+    "anime",
+    "cozy",
+    "fantasy"
+   ],
+   "creators": [
+    "Hayao Miyazaki",
+    "Studio Ghibli",
+    "Joe Hisaishi"
+   ],
+   "works": [
+    "Spirited Away"
+   ]
+  },
+  {
+   "id": "p23",
+   "title": "The Grand Budapest Hotel (Blu-ray)",
+   "category": "Movies",
+   "price_usd": 18,
+   "qloo": {
+    "type": "urn:entity:movie",
+    "name": "The Grand Budapest Hotel"
+   },
+   "mock_tags": [
+    "cinema",
+    "whimsical",
+    "design"
+   ],
+   "creators": [
+    "Wes Anderson"
+   ],
+   "works": [
+    "The Grand Budapest Hotel"
+   ]
+  },
+  {
+   "id": "p24",
+   "title": "Casio G-Shock analog-digital watch",
+   "category": "Accessories",
+   "price_usd": 99,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "Casio"
+   },
+   "mock_tags": [
+    "retro",
+    "outdoor",
+    "durable"
+   ],
+   "creators": [
+    "Casio"
+   ],
+   "works": []
+  },
+  {
+   "id": "p25",
+   "title": "Bellroy slim leather wallet",
+   "category": "Accessories",
+   "price_usd": 79,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "Bellroy"
+   },
+   "mock_tags": [
+    "minimal",
+    "design",
+    "everyday"
+   ],
+   "creators": [
+    "Bellroy"
+   ],
+   "works": []
+  },
+  {
+   "id": "p26",
+   "title": "Moleskine classic notebook set",
+   "category": "Stationery",
+   "price_usd": 32,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "Moleskine"
+   },
+   "mock_tags": [
+    "literary",
+    "design",
+    "creative"
+   ],
+   "creators": [
+    "Moleskine"
+   ],
+   "works": []
+  },
+  {
+   "id": "p27",
+   "title": "LEGO Icons NASA Space Shuttle Discovery",
+   "category": "Toys & Models",
+   "price_usd": 199,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "LEGO"
+   },
+   "mock_tags": [
+    "space",
+    "building",
+    "scifi"
+   ],
+   "creators": [
+    "LEGO"
+   ],
+   "works": [
+    "NASA"
+   ]
+  },
+  {
+   "id": "p28",
+   "title": "LEGO Ideas Botanical bonsai",
+   "category": "Toys & Models",
+   "price_usd": 49,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "LEGO"
+   },
+   "mock_tags": [
+    "design",
+    "cozy",
+    "building"
+   ],
+   "creators": [
+    "LEGO"
+   ],
+   "works": []
+  },
+  {
+   "id": "p29",
+   "title": "Patagonia Better Sweater fleece",
+   "category": "Apparel",
+   "price_usd": 139,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "Patagonia"
+   },
+   "mock_tags": [
+    "outdoor",
+    "everyday"
+   ],
+   "creators": [
+    "Patagonia"
+   ],
+   "works": []
+  },
+  {
+   "id": "p30",
+   "title": "Carhartt WIP beanie",
+   "category": "Apparel",
+   "price_usd": 29,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "Carhartt WIP"
+   },
+   "mock_tags": [
+    "streetwear",
+    "everyday"
+   ],
+   "creators": [
+    "Carhartt"
+   ],
+   "works": []
+  },
+  {
+   "id": "p31",
+   "title": "Uniqlo UT graphic tee (film collab)",
+   "category": "Apparel",
+   "price_usd": 20,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "Uniqlo"
+   },
+   "mock_tags": [
+    "minimal",
+    "cinema",
+    "everyday"
+   ],
+   "creators": [
+    "Uniqlo"
+   ],
+   "works": []
+  },
+  {
+   "id": "p32",
+   "title": "Stussy logo hoodie",
+   "category": "Apparel",
+   "price_usd": 120,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "Stussy"
+   },
+   "mock_tags": [
+    "streetwear",
+    "hiphop"
+   ],
+   "creators": [
+    "Stussy"
+   ],
+   "works": []
+  },
+  {
+   "id": "p33",
+   "title": "Sony WH-1000XM5 headphones",
+   "category": "Audio",
+   "price_usd": 399,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "Sony"
+   },
+   "mock_tags": [
+    "audiophile",
+    "tech",
+    "travel"
+   ],
+   "creators": [
+    "Sony"
+   ],
+   "works": []
+  },
+  {
+   "id": "p34",
+   "title": "Audio-Technica AT-LP60X turntable",
+   "category": "Audio",
+   "price_usd": 149,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "Audio-Technica"
+   },
+   "mock_tags": [
+    "audiophile",
+    "vintage",
+    "vinyl"
+   ],
+   "creators": [
+    "Audio-Technica"
+   ],
+   "works": []
+  },
+  {
+   "id": "p35",
+   "title": "Marshall Emberton portable speaker",
+   "category": "Audio",
+   "price_usd": 169,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "Marshall Headphones"
+   },
+   "mock_tags": [
+    "retro",
+    "audiophile",
+    "travel"
+   ],
+   "creators": [
+    "Marshall"
+   ],
+   "works": []
+  },
+  {
+   "id": "p36",
+   "title": "Fujifilm Instax Mini 12",
+   "category": "Cameras",
+   "price_usd": 79,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "Fujifilm"
+   },
+   "mock_tags": [
+    "retro",
+    "creative",
+    "social"
+   ],
+   "creators": [
+    "Fujifilm"
+   ],
+   "works": [
+    "Instax"
+   ]
+  },
+  {
+   "id": "p37",
+   "title": "Bodum Chambeo French press",
+   "category": "Home & Kitchen",
+   "price_usd": 39,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "Bodum"
+   },
+   "mock_tags": [
+    "coffee",
+    "cozy",
+    "design"
+   ],
+   "creators": [
+    "Bodum"
+   ],
+   "works": []
+  },
+  {
+   "id": "p38",
+   "title": "Le Creuset stoneware mug",
+   "category": "Home & Kitchen",
+   "price_usd": 35,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "Le Creuset"
+   },
+   "mock_tags": [
+    "cozy",
+    "design",
+    "kitchen"
+   ],
+   "creators": [
+    "Le Creuset"
+   ],
+   "works": []
+  },
+  {
+   "id": "p39",
+   "title": "Diptyque Baies candle",
+   "category": "Home & Kitchen",
+   "price_usd": 76,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "Diptyque"
+   },
+   "mock_tags": [
+    "cozy",
+    "luxury",
+    "design"
+   ],
+   "creators": [
+    "Diptyque"
+   ],
+   "works": []
+  },
+  {
+   "id": "p40",
+   "title": "Muji aroma diffuser",
+   "category": "Home & Kitchen",
+   "price_usd": 55,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "Muji"
+   },
+   "mock_tags": [
+    "minimal",
+    "cozy",
+    "design"
+   ],
+   "creators": [
+    "Muji"
+   ],
+   "works": []
+  },
+  {
+   "id": "p41",
+   "title": "Nintendo Switch Pro Controller",
+   "category": "Gaming gear",
+   "price_usd": 69,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "Nintendo"
+   },
+   "mock_tags": [
+    "gaming",
+    "cozy"
+   ],
+   "creators": [
+    "Nintendo"
+   ],
+   "works": []
+  },
+  {
+   "id": "p42",
+   "title": "Razer BlackShark headset",
+   "category": "Gaming gear",
+   "price_usd": 99,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "Razer"
+   },
+   "mock_tags": [
+    "gaming",
+    "hardcore",
+    "tech"
+   ],
+   "creators": [
+    "Razer"
+   ],
+   "works": []
+  },
+  {
+   "id": "p43",
+   "title": "Polaroid Now+ camera",
+   "category": "Cameras",
+   "price_usd": 149,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "Polaroid"
+   },
+   "mock_tags": [
+    "retro",
+    "creative",
+    "design"
+   ],
+   "creators": [
+    "Polaroid"
+   ],
+   "works": []
+  },
+  {
+   "id": "p44",
+   "title": "Kindle Paperwhite",
+   "category": "Tech",
+   "price_usd": 149,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "Amazon Kindle"
+   },
+   "mock_tags": [
+    "literary",
+    "travel",
+    "tech"
+   ],
+   "creators": [
+    "Amazon"
+   ],
+   "works": [
+    "Kindle"
+   ]
+  },
+  {
+   "id": "p45",
+   "title": "Blue Bottle Coffee subscription, 3 months",
+   "category": "Food & Drink",
+   "price_usd": 66,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "Blue Bottle Coffee"
+   },
+   "mock_tags": [
+    "coffee",
+    "minimal",
+    "design"
+   ],
+   "creators": [
+    "Blue Bottle Coffee"
+   ],
+   "works": []
+  },
+  {
+   "id": "p46",
+   "title": "Celestron StarSense 102AZ telescope",
+   "category": "Outdoor",
+   "price_usd": 229,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "Celestron"
+   },
+   "mock_tags": [
+    "space",
+    "science",
+    "outdoor"
+   ],
+   "creators": [
+    "Celestron"
+   ],
+   "works": []
+  },
+  {
+   "id": "p47",
+   "title": "Peak Design Everyday Sling",
+   "category": "Accessories",
+   "price_usd": 89,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "Peak Design"
+   },
+   "mock_tags": [
+    "travel",
+    "creative",
+    "design"
+   ],
+   "creators": [
+    "Peak Design"
+   ],
+   "works": []
+  },
+  {
+   "id": "p48",
+   "title": "Criterion Collection gift card",
+   "category": "Movies",
+   "price_usd": 50,
+   "qloo": {
+    "type": "urn:entity:brand",
+    "name": "The Criterion Collection"
+   },
+   "mock_tags": [
+    "cinema",
+    "arthouse",
+    "literary"
+   ],
+   "creators": [
+    "The Criterion Collection"
+   ],
+   "works": []
+  }
+ ]
+}

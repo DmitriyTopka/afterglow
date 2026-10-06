@@ -1,0 +1,46 @@
+{
+ "labeler": "blind-subagent-2026-10-06",
+ "scenarios": [
+  {
+   "id": "x01",
+   "message": "My aunt adores Agatha Christie and Wes Anderson movies. Budget $40.",
+   "good": [
+    "p11",
+    "p23",
+    "p38"
+   ],
+   "strong": [
+    "p11",
+    "p23"
+   ]
+  },
+  {
+   "id": "x02",
+   "message": "Looking for something for my niece, she loves Zelda and Hayao Miyazaki. $30.",
+   "good": [
+    "p22",
+    "p18",
+    "p17"
+   ],
+   "strong": [
+    "p22",
+    "p18"
+   ]
+  },
+  {
+   "id": "x03",
+   "message": "My boyfriend is into Daft Punk and Miles Davis. Budget $200.",
+   "good": [
+    "p02",
+    "p03",
+    "p34",
+    "p35"
+   ],
+   "strong": [
+    "p34",
+    "p02",
+    "p03"
+   ]
+  }
+ ]
+}
