@@ -11,7 +11,7 @@
 - https://taste-layer-alpha.vercel.app/real
 - https://github.com/DmitriyTopka/afterglow
 
-**Video demo link:** https://youtu.be/tgxQNG9GPx4
+**Video demo link:** https://youtu.be/18Ok8CbCea8
 
 **Image gallery (upload in this order, docs/screenshots/):** 0-real-shelf.jpg, 1-home.jpg, 2-live.jpg, 3-lit-map.jpg, 4-picks.jpg, 5-owner-agent.jpg, 8-check-your-shop.jpg, 9-real-shoppers.jpg, 6-product.jpg, 7-bag.jpg
 

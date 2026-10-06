@@ -3,7 +3,7 @@
 Tagline (Devpost, max 200 chars): For independent record and book shops: Claude agents on Qloo find gifts on your shelves and turn every title a shopper couldn't find into your next order.
 
 Live demo: https://taste-layer-alpha.vercel.app (start with "Watch both sides at once")
-Video (65 s): https://youtu.be/tgxQNG9GPx4
+Video (63 s): https://youtu.be/18Ok8CbCea8
 Code: https://github.com/DmitriyTopka/afterglow (MIT)
 
 ## Who it's for, and what it costs them
