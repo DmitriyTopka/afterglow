@@ -1,25 +1,27 @@
-// "How it works": what each part of the stack does, in the shop's words, plus the numbers behind the map.
+// "How it works": the agent's real chain, in order. Claude Haiku decides which Qloo tool to call next; each step is
+// one of its six tools, and the last one hands the owner what the shop didn't have.
 const PARTS = [
-  { k: "Qloo search", t: "Finds every title in the store and every taste a shopper names (an artist, a film, a game) as a Qloo entity." },
-  { k: "Qloo insights", t: "Scores the whole catalog against a shopper's tastes and says which taste drove each match (explainability)." },
-  { k: "Taste map", t: "Each title is scored against 36 reference tastes. Titles loved by the same people end up in the same section, across formats." },
-  { k: "Claude Haiku", t: "Reads the shopper's own words and pulls out the tastes. About a tenth of a cent per request." },
+  { k: "Find the tastes", t: "Claude turns the shopper's words into names Qloo knows (Qloo search). A genre or a mood becomes two or three works that stand for it." },
+  { k: "Score the shelves", t: "One Qloo insights call scores all 384 titles for that taste, with the recipient's age and gender as signals, and says which taste drove each match." },
+  { k: "Check the store", t: "Qloo lists the ten titles this taste loves most anywhere. The agent counts what the shop carries. Claude alone cannot know this." },
+  { k: "Pick five", t: "Claude picks five across formats, within budget and age. Each pick carries a Qloo fact; a reason Qloo's tags don't support is rewritten from data." },
+  { k: "Tell the owner", t: "Every title the shop didn't have joins the owner's restock list, with a record to order and a shelf on the store map." },
 ];
 
 export function HowItWorks() {
   return (
     <section className="blk blk-ink how" aria-labelledby="how-title">
       <h2 id="how-title">How it works</h2>
-      <div className="how-grid">
+      <ol className="how-grid how-steps">
         {PARTS.map((p) => (
-          <div key={p.k} className="how-card"><h3>{p.k}</h3><p>{p.t}</p></div>
+          <li key={p.k} className="how-card"><h3>{p.k}</h3><p>{p.t}</p></li>
         ))}
-      </div>
+      </ol>
       <dl className="facts">
         <div><dt>384</dt><dd>titles in the demo store, all resolved in Qloo</dd></div>
         <div><dt>36</dt><dd>reference tastes behind the map</dd></div>
         <div><dt>0</dt><dd>hand-written tags or customer records</dd></div>
-        <div><dt>~30%</dt><dd>of 300 random Amazon listings Qloo recognises; culture goods far more (2 in 3 for music and film)</dd></div>
+        <div><dt>6</dt><dd>tools the agent chooses between (four call Qloo), at most 6 turns and 25 live Qloo calls a request</dd></div>
       </dl>
     </section>
   );

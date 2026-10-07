@@ -8,9 +8,9 @@ Code: https://github.com/DmitriyTopka/afterglow (MIT)
 
 ## In 30 seconds
 
-A chain sees every click. An independent record or book shop sees what sold and never learns what a customer came in for and left without. Afterglow gives it that list.
+**Claude doesn't know what's missing from your shelf. Qloo does.** A chain sees every click. An independent record or book shop sees what sold and never learns what a customer came in for and left without. Afterglow gives it that list.
 
-- **41 of the 50 artists Austin loves most** (Qloo location data) don't make the 500 best-sellers of a real Austin record shop: not on the shelf, or not reaching the people who love them.
+- **41 of the 50 artists Austin loves most** (Qloo location data) are not among the 500 best-sellers of a real Austin record shop: demand its sales list never shows.
 - **0 vs 15:** across 70 blind gift requests, our agent never put an over-budget title in its top three; Claude alone did 15 times.
 - **Two Claude agents on Qloo:** a shop assistant that picks five titles with a Qloo fact behind each, and a restock agent that turns every title it could not find into the owner's next order.
 
@@ -41,10 +41,6 @@ Ask Claude what a fan of Joy Division would like, and it will answer well. Ask i
 1. **The store check.** For every request the agent asks Qloo for the ten titles that taste loves most anywhere, and counts what the shop carries. Joy Division and Murakami: 3 of 10 in stock. The Smiths, Gang of Four and Echo & the Bunnymen go on the owner's list.
 2. **The demand ledger.** Across 38 demo shoppers, 81.6% of what their tastes love is not on these shelves, spread over 295 titles their tastes love that the shop doesn't carry. The owner's agent turns that into three titles to order.
 3. **The cold start.** A title with no sales and no tags gets scored against 36 reference tastes and lands next to its closest titles on the store map. Judas Priest lands beside Iron Maiden and Megadeth.
-
-## Inspiration
-
-Independent record shops and bookstores lose to big platforms on data. A chain sees every click. A small shop sees what sold and never learns what someone came in for. We wanted a shop assistant that remembers that part, and an owner's view that turns it into the next order.
 
 ## What it does
 
@@ -106,6 +102,10 @@ Claude alone only works because 384 titles fit in a prompt. A real shop with 50,
 - Typed search mapped "Studio Ghibli" to a photo app. Exact-name resolution first fixed it.
 - The model wrote confident nonsense ("The Mule, a modern western"). Reasons now have to match the title's own Qloo tags, and the owner's plan shows facts from tool data instead of the model's summary.
 - Qloo recognised about 30% of 300 random Amazon listings, and two in three for music and film. That decided the vertical: a culture store.
+
+## Who pays
+
+The shop, per location, per month: a restock list it can't get from its sales data. The running cost is small enough for an independent store: about $0.015 of Claude Haiku per shopper request (measured on the live agent) plus Qloo calls. The market is wide: the American Booksellers Association counted 3,783 member bookstore locations in 2025, with 605 new independent bookstores opened that year ([Shelf Awareness, May 2026](https://shelf-awareness.com/theshelf/2026-05-29/the_aba_annual_meeting_community_forum:_celebrating_a_challenging_banner_year.html)), and the record shops sell into a $1.04B US vinyl market (RIAA).
 
 ## What's next
 

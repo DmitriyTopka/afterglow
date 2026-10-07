@@ -738,3 +738,19 @@ a.lb-tab { text-decoration: none; display: inline-block; }
 .ap-order b { color: var(--amber); }
 .sg-album { font-style: normal; font-weight: 400; opacity: .8; }
 @media (max-width: 720px) { .vs-claude { margin: 0 -16px; padding: 26px 16px 30px; } }
+.how-steps { list-style: none; padding: 0; margin: 0; counter-reset: step; }
+.how-steps li { counter-increment: step; }
+.how-steps h3::before { content: counter(step) ". "; color: var(--coral); }
+
+/* Owner: this morning's restock note */
+.morning-note { margin: 0 -24px; padding: 26px 24px 28px; background: var(--ink); color: var(--paper); }
+.morning-note h2 { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: clamp(30px, 3.6vw, 48px); line-height: .95; margin: 0 0 14px; color: var(--amber); }
+.morning-note ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; max-width: 1100px; }
+.morning-note li { display: flex; gap: 12px; align-items: center; background: #2a1d1f; border-radius: 12px; padding: 12px; }
+.morning-note li img { width: 64px; height: 64px; object-fit: cover; border-radius: 6px; flex: none; }
+.morning-note li b { display: block; font-size: 17px; }
+.morning-note li span { display: block; color: var(--amber); font-size: 14px; }
+.morning-note li small { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; }
+.morning-foot { margin: 14px 0 0; color: var(--muted); font-size: 14px; }
+.morning-foot a { color: var(--amber); }
+@media (max-width: 720px) { .morning-note { margin: 0 -16px; padding: 22px 16px; } .morning-note ol { grid-template-columns: 1fr; } }

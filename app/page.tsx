@@ -69,10 +69,10 @@ export default function Page() {
       <section className="band has-photo home-band">
         <p className="lb-kicker">A culture shop (records, books, films, games, shows) run by two Claude agents on Qloo</p>
         <h1>Your shop sees what sold. Afterglow sees what walked out.</h1>
-        <p className="lb-lede">A shopper says who the gift is for, and the assistant picks five titles from the shelves. Every title it could not find goes on the owner&apos;s restock list, so the shop finally learns what walked out. We ran it on two real record stores first.</p>
+        <p className="lb-lede"><b>Claude doesn&apos;t know what&apos;s missing from your shelf. Qloo does.</b> A shopper says who the gift is for, and the assistant picks five titles from the shelves. Every title it could not find goes on the owner&apos;s restock list, so the shop finally learns what walked out. We ran it on two real record stores first.</p>
         <dl className="hero-stats">
-          <div><dt>{real.local.top.length - real.local.on_shelf} of {real.local.top.length}</dt><dd>artists Austin loves most (Qloo location data) don&apos;t make the 500 best-sellers of Waterloo Records, a real Austin shop: not on the shelf, or not reaching the people who love them. <Link href="/real">See the gap →</Link></dd></div>
-          <div><dt>0 vs 15</dt><dd>gift picks over the shopper&apos;s budget across 70 blind requests: our agent vs Claude alone. <a href="https://github.com/DmitriyTopka/afterglow#how-well-it-works-measured-not-tuned-on-the-test">How we counted →</a></dd></div>
+          <div><dt>{real.local.top.length - real.local.on_shelf} of {real.local.top.length}</dt><dd>artists Austin loves most (Qloo location data) are not among the 500 best-sellers of Waterloo Records, a real Austin shop: demand its sales list never shows. <Link href="/real">See the shelf →</Link></dd></div>
+          <div><dt>24 vs 10</dt><dd>blind requests our agent won vs lost against Claude alone (50 never tuned on); 19 vs 15 with a second blind judge. <a href="https://github.com/DmitriyTopka/afterglow#how-well-it-works-measured-not-tuned-on-the-test">How we counted →</a></dd></div>
           <div><dt>{real.recognised} of {real.names}</dt><dd>artists on that shop&apos;s best-seller list that Qloo, the taste-data API we build on, recognises</dd></div>
         </dl>
         <form className="lb-ask" style={{ marginTop: 16 }} onSubmit={(e) => { e.preventDefault(); run(text.trim() || PLACEHOLDER); }}>
@@ -96,7 +96,7 @@ export default function Page() {
         <div><b>$1.04B</b><span>US vinyl sales in 2025, up 9.3% (RIAA). Indie shops sell a share of it, blind to who walked out.</span></div>
         <div><b>{fmtPct(lost)}</b><span>simulated: of what our demo shoppers&apos; tastes love, this share is not on the demo store&apos;s shelves ({missingTitles} titles)</span></div>
         <div><b>{rows.length}</b><span>shopper requests so far: simulated demand from 38 test shoppers written blind{mine.length ? `, plus ${mine.length} of yours` : ", plus yours once you ask"}</span></div>
-        <div><b>24 vs 10</b><span>blind requests our agent won vs lost against Claude alone, out of 50 we never tuned on. <a href="https://github.com/DmitriyTopka/afterglow#how-well-it-works-measured-not-tuned-on-the-test">Details and caveats →</a></span></div>
+        <div><b>0 vs 15</b><span>gift picks over the shopper&apos;s budget across 70 blind requests: our agent vs Claude alone</span></div>
       </section>
 
       {result && (

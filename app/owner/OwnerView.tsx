@@ -48,7 +48,8 @@ export function OwnerView() {
   const cov = coverage(rows, addedIds);
   const base = coverage(rows, new Set());
   // Up to three titles from this viewer's own requests first (so a judge sees their demand), then the biggest gains.
-  const allSugg = suggestions(rows, addedIds);
+  // A later volume of a series ("City of Glass (The Mortal Instruments, #3)") is not what a shop orders first.
+  const allSugg = suggestions(rows, addedIds).filter((s) => !/#\s*(?:[2-9]|\d{2})\b/.test(s.name));
   const yours = allSugg.filter((s) => s.yours).slice(0, 3);
   // Then the biggest gains, taken round-robin across formats so the owner sees films, books and games too.
   const rest = allSugg.filter((s) => !s.yours).sort((a, b) => b.gain - a.gain);
@@ -56,7 +57,9 @@ export function OwnerView() {
   for (const s of rest) byFormat.set(s.type, [...(byFormat.get(s.type) ?? []), s]);
   const mixed: typeof rest = [];
   while (mixed.length < 8 && [...byFormat.values()].some((l) => l.length)) for (const l of byFormat.values()) { const x = l.shift(); if (x && mixed.length < 8) mixed.push(x); }
-  const sugg = [...yours, ...mixed].slice(0, 8);
+  const sugg = [...yours, ...mixed.sort((a, b) => b.gain - a.gain)].slice(0, 8); // mixed across formats, shown by gain
+  // This morning's note: the three records to order first, from the same demand (artists with a known album).
+  const morning = allSugg.filter((s) => s.type === "urn:entity:artist" && ALBUM[s.entity_id]).sort((a, b) => b.gain - a.gain).slice(0, 3);
   const last = added[added.length - 1];
   const section: Section | undefined = owner.sections.find((s) => s.id === active);
   const pins: Pin[] = added.map((a) => ({ id: a.entity_id, x: a.placement.x, y: a.placement.y, image: a.image ?? "", label: a.name }));
@@ -81,6 +84,21 @@ export function OwnerView() {
 
   return (
     <>
+      {morning.length > 0 && (
+        <section className="morning-note" aria-label="This morning's restock note">
+          <p className="chain-kicker">This morning&apos;s restock note</p>
+          <h2>Three records to order</h2>
+          <ol>
+            {morning.map((m) => (
+              <li key={m.entity_id}>
+                <Cover src={m.image} name={m.name} type={m.type} className="noimg" />
+                <div><b>{ALBUM[m.entity_id].album}</b><span>{m.name}{ALBUM[m.entity_id].year ? ` · ${ALBUM[m.entity_id].year}` : ""}</span><small>wanted by {m.askedBy} shopper{m.askedBy > 1 ? "s" : ""} whose taste loves it, not on your shelves</small></div>
+              </li>
+            ))}
+          </ol>
+          <p className="morning-foot">From the shopper requests below (simulated demand plus yours). The same check on a real shop&apos;s catalog: <a href="/real">two real record shops →</a></p>
+        </section>
+      )}
       <section className="blk blk-cream owner-top">
       <div className="loop">
         <div className="gauge">
