@@ -72,7 +72,7 @@ export default function Page() {
         <p className="lb-lede"><b>Claude doesn&apos;t know what&apos;s missing from your shelf. Qloo does.</b> A shopper says who the gift is for, and the assistant picks five titles from the shelves. Every title it could not find goes on the owner&apos;s restock list, so the shop finally learns what walked out. We ran it on two real record stores first.</p>
         <dl className="hero-stats">
           <div><dt>{real.local.top.length - real.local.on_shelf} of {real.local.top.length}</dt><dd>artists Austin loves most (Qloo location data) are not among the 500 best-sellers of Waterloo Records, a real Austin shop: demand its sales list never shows. <Link href="/real">See the shelf →</Link></dd></div>
-          <div><dt>24 vs 10</dt><dd>blind requests our agent won vs lost against Claude alone (50 never tuned on); 19 vs 15 with a second blind judge. <a href="https://github.com/DmitriyTopka/afterglow#how-well-it-works-measured-not-tuned-on-the-test">How we counted →</a></dd></div>
+          <div><dt>25 vs 9</dt><dd>blind requests our agent won vs lost against Claude alone (50 never tuned on); 21 vs 12 with a second blind judge. <a href="https://github.com/DmitriyTopka/afterglow#how-well-it-works-measured-not-tuned-on-the-test">How we counted →</a></dd></div>
           <div><dt>{real.recognised} of {real.names}</dt><dd>artists on that shop&apos;s best-seller list that Qloo, the taste-data API we build on, recognises</dd></div>
         </dl>
         <form className="lb-ask" style={{ marginTop: 16 }} onSubmit={(e) => { e.preventDefault(); run(text.trim() || PLACEHOLDER); }}>

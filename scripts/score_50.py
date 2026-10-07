@@ -9,12 +9,14 @@ from math import comb
 v2 = {s['id']: s for s in json.load(open('eval/v2_scenarios.json'))['scenarios']}
 w = {s['id']: s for s in json.load(open('eval/v3_scenarios.json'))['scenarios']}
 S = {**{k: v for k, v in v2.items() if int(k[1:]) % 2 == 0}, **w}
-v7, v3, w30 = json.load(open('eval/v7_runs.json')), json.load(open('eval/v3_runs.json')), json.load(open('eval/w30_runs.json'))
+import sys
+AGENT40, W30 = (sys.argv[1], sys.argv[2]) if len(sys.argv) > 2 else ('eval/v7_runs.json', 'eval/w30_runs.json')  # a later agent: its own runs files
+v7, v3, w30 = json.load(open(AGENT40)), json.load(open('eval/v3_runs.json')), json.load(open(W30))
 agent = {k: (v7[k]['ids'] if k in v7 else w30[k]['agent']['ids']) for k in S}
 claude = {k: (v3[k]['claude']['ids'] if k in v3 else w30[k]['claude']['ids']) for k in S}
 pool = {}
 for f in ['eval/pool_verdicts.json', 'eval/pool_v2_verdicts.json', 'eval/pool_v3_verdicts.json', 'eval/pool_v4_verdicts.json',
-          'eval/pool_v5_verdicts.json', 'eval/pool_v6_verdicts.json', 'eval/pool_v7_verdicts.json', 'eval/pool_w50_verdicts.json']:
+          'eval/pool_v5_verdicts.json', 'eval/pool_v6_verdicts.json', 'eval/pool_v7_verdicts.json', 'eval/pool_w50_verdicts.json', 'eval/pool_v8_verdicts.json']:
     try:
         for sid, v in json.load(open(f)).items():
             if isinstance(v, dict): pool.setdefault(sid, {}).update(v)
@@ -29,7 +31,7 @@ for arm in (agent, claude):
     for sid, ids in arm.items():
         for i in ids[:3]:
             if i not in S[sid]['good'] and i not in pool.get(sid, {}) and i not in unseen.get(sid, []): unseen.setdefault(sid, []).append(i)
-json.dump(unseen, open('eval/w50_unjudged.json', 'w'), indent=1)
+json.dump(unseen, open(sys.argv[3] if len(sys.argv) > 3 else 'eval/w50_unjudged.json', 'w'), indent=1)
 
 random.seed(7)
 ids = sorted(S)

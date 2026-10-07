@@ -13,8 +13,9 @@ export async function tasteTags(signalIds: string[], calls: QlooCall[], take = 8
   if (!signalIds.length) return [];
   try {
     const res = await insights({ "filter.type": "urn:tag", "signal.interests.entities": signalIds.join(","), take: "50" }, calls);
-    const want = new Set(formats.flatMap((f) => READ_AS[f] ?? [f]).filter(Boolean));
     const MEDIA = /^urn:entity:(artist|movie|book|tv_show|videogame|podcast)$/;
+    // Only media formats can filter tags; a brand (Studio Ghibli as a brand) or an unknown kind means "no filter".
+    const want = new Set(formats.flatMap((f) => READ_AS[f] ?? [f]).filter((f) => MEDIA.test(f)));
     // Audience-identity tags describe people, not the work; showing them to a shopper reads as a label on the recipient.
     const IDENTITY = /\b(gay|lesbian|lgbt\w*|queer|bisexual|transgender)\b/i; // narrow on purpose: "Black metal" or "Asian cinema" are genres
     const seen = new Set<string>();

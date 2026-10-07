@@ -88,10 +88,10 @@ Against Claude reading the whole catalog as text (same model, no Qloo), on the 5
 
 | | P@3, blind labels | P@3, labels + blind judge | wins / losses |
 |---|---|---|---|
-| Afterglow agent | 0.43 | 0.52 | 24 / 10 on labels, 19 / 15 with the judge |
+| Afterglow agent | 0.43 | 0.57 | 25 / 9 on labels, 21 / 12 with the judge |
 | Claude alone | 0.32 | 0.48 | |
 
-On the blind labels the agent leads (difference +0.11, 95% bootstrap interval -0.01 to +0.23; sign test p = 0.02). With the second judge's verdicts added the two are close (+0.04, interval -0.08 to +0.16): we read that as "at least as good, often better", not as a decisive win. The clearest difference is the budget: across all 70 requests Claude alone put 15 over-budget titles in its top three; the agent put none. Runs of the same agent move by a hit or two, and we publish the latest run, not the best one. An earlier test on a small hand-tagged catalog went the other way (hand tags beat Qloo), and that result is in the repo too.
+On the blind labels the agent leads (difference +0.11, 95% bootstrap interval 0.00 to +0.23; sign test p = 0.009). With the second judge's verdicts added the lead is smaller (+0.09, interval -0.02 to +0.21, p = 0.16): we read that as "at least as good, often better", not as a decisive win. The clearest difference is the budget: across all 70 requests Claude alone put 15 over-budget titles in its top three; the agent put none. Runs of the same agent move by a hit or two, and we publish the latest run, not the best one. An earlier test on a small hand-tagged catalog went the other way (hand tags beat Qloo), and that result is in the repo too.
 
 Claude alone only works because 384 titles fit in a prompt. A real shop with 50,000 titles doesn't, and Qloo scoring doesn't care how big the catalog is.
 

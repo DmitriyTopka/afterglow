@@ -45,9 +45,12 @@ const FORMAT: Record<string, QlooEntityType> = { vinyl: "urn:entity:artist", boo
 const FORMAT_WORDS: Array<[QlooEntityType, RegExp]> = [
   ["urn:entity:book", /\b(books?|novels?|reads?|reading|to read|paperback)\b/i],
   ["urn:entity:artist", /\b(vinyl|records?|lps?|albums?)\b/i],
-  ["urn:entity:movie", /\b(films?|movies?|blu-?ray|watch(?:es|ing)?)\b/i],
-  ["urn:entity:videogame", /\b(video ?games?|to play|playstation|switch|xbox)\b/i],
-  ["urn:entity:tv_show", /\b(tv|series|box ?sets?)\b/i],
+  // "watch" is not here: it means a film or a show, so it decides nothing.
+  ["urn:entity:movie", /\b(films?|movies?|blu-?ray)\b/i],
+  // "switch" alone is a verb ("switch things up"); only the console counts.
+  ["urn:entity:videogame", /\b(video ?games?|to play|playstation|ps[45]|nintendo switch|on (?:the )?switch|xbox)\b/i],
+  // "series" alone is often a book series ("the Percy Jackson series").
+  ["urn:entity:tv_show", /\b(tv|television|tv series|box ?sets?|sitcoms?)\b/i],
 ];
 export const formatsAsked = (text: string): { types: QlooEntityType[]; strict: boolean } => {
   const types = FORMAT_WORDS.filter(([, re]) => re.test(text)).map(([t]) => t);
@@ -59,8 +62,9 @@ export const yearsFrom = (text: string): number | null => {
   const m = text.match(/\b(\d{1,2})\s*(?:yo\b|y\/o|-?\s?years?(?:\s|-)?old|\s?yrs?\b)/i) ?? text.match(/\b(?:turns?|turning|aged?)\s+(\d{1,2})\b/i);
   if (m) return Number(m[1]);
   if (/\b(toddler|preschool(?:er)?)\b/i.test(text)) return 4;
-  if (/\b(kid|kids|child|children|little (?:boy|girl))\b/i.test(text)) return 8;
-  if (/\b(teen|teenager|teenage)\b/i.test(text)) return 14;
+  // Only when the words describe the recipient: not "my kid brother, he's 25", not "a Teen Titans fan".
+  if (/\b(?:my|a|our|for)\s+(?:little\s+)?(?:kid|kids|child|children|little (?:boy|girl))\b(?!\s+(?:brother|sister))/i.test(text)) return 8;
+  if (/\b(?:teenager|teenage\s+\w+|(?:my|a|our)\s+teen(?:s)?\b(?!\s+titans))/i.test(text)) return 14;
   return null;
 };
 
@@ -149,6 +153,7 @@ async function loop(request: string, onStep?: (s: Step) => void): Promise<Agenti
   let demo: Demo = {}; // recipient age band and gender as Qloo demographic signals, when the message gives them
   let light: Record<string, number> = {};
   let askedOnce = false;
+  let strictMissed = false;
   // Only entity ids find_tastes actually resolved; an id the model made up would make Qloo answer 400.
   // The candidate pool: only titles that suit the recipient's age, the asked formats guaranteed (two each), or only
   // those formats when the shopper asked for nothing else. Budget and the 3-per-format spread come from shortlist.
@@ -165,7 +170,11 @@ async function loop(request: string, onStep?: (s: Step) => void): Promise<Agenti
   const pool = (r: Ranked[]): Ranked[] => {
     const fits = r.filter((x) => years === null || (x.item.age_min ?? 0) <= years);
     const inAsked = (x: Ranked) => asked.types.includes(x.item.qloo.type as QlooEntityType);
-    if (asked.strict) return shortlist(fits.filter(inAsked), budget, 12, 12);
+    if (asked.strict) {
+      const only = shortlist(fits.filter(inAsked), budget, 12, 12);
+      if (only.length) return only;
+      strictMissed = true; // nothing of that format fits the budget or age: fall back to the mixed pool, and say so
+    }
     const out = shortlist(fits, budget, 12, 3);
     for (const t of asked.types) {
       // The two titles of an asked format that the named taste of that format pulls hardest are always in the pool.
@@ -232,7 +241,7 @@ async function loop(request: string, onStep?: (s: Step) => void): Promise<Agenti
 
       if (u.name === "recommend" || u.name === "ask_shopper") {
         const base = { request, extraction: { recipient: "", budget_usd: budget, signals: named.map((n) => ({ name: n.name, kind: n.type })) }, steps, calls, modes: { qloo: QLOO_MODE, llm: "agent" }, usd, gap, audience: aud, turns: turn, route } as unknown as AgenticResult;
-        if (u.name === "recommend" && !candidates.length && named.length) {
+        if (u.name === "recommend" && !ranked && named.length) {
           reply({ error: "Nothing scored yet. Call score_catalog first, then recommend from its candidates." }, true);
           continue;
         }
@@ -285,7 +294,10 @@ async function loop(request: string, onStep?: (s: Step) => void): Promise<Agenti
           if (!r || i < 0) continue;
           picks.splice(picks.length - 1 - i, 1, { item: r.item, affinity: r.affinity, lift: r.lift, chain: [], why: groundedWhy("", r), direct: r.direct, basis: basis(r) });
         }
-        const note = typeof input.note === "string" ? input.note.replace(/\s*[\u2014\u2013]\s*/g, ", ").slice(0, 300) : undefined;
+        // Nothing on the shelves fits (a budget below every title, say): popular titles that do fit, never an empty shelf.
+        if (!picks.length) picks.push(...staffPicks(budget, years, asked));
+        const missedNote = strictMissed ? `Nothing in that format fits${budget ? ` under $${budget}` : ""} here, so these are the closest matches in other formats.` : undefined;
+        const note = [missedNote, typeof input.note === "string" ? input.note.replace(/\s*[\u2014\u2013]\s*/g, ", ").slice(0, 300) : undefined].filter(Boolean).join(" ") || undefined;
         emit({ kind: "rank", label: `Chose ${picks.length} pick(s) from ${candidates.length} candidates`, detail: note, status: picks.length ? "ok" : "warn" });
         return { ...base, picks: picks.slice(0, 5), note };
       }
@@ -357,7 +369,8 @@ async function loop(request: string, onStep?: (s: Step) => void): Promise<Agenti
     emit({ kind: "score", label: `Scored all ${CATALOG.length} titles with Qloo affinity`, detail: `${candidates.length} candidates${budget ? ` within budget ($${budget})` : ""}`, status: "ok", light });
   }
   // Out of turns without a final answer: fall back to the deterministic shortlist we already have.
-  const picks: Pick[] = candidates.slice(0, 5).map((r) => ({ item: r.item, affinity: r.affinity, lift: r.lift, chain: [], why: groundedWhy("", r), direct: r.direct, basis: basis(r) }));
+  const scoredPicks: Pick[] = candidates.slice(0, 5).map((r) => ({ item: r.item, affinity: r.affinity, lift: r.lift, chain: [], why: groundedWhy("", r), direct: r.direct, basis: basis(r) }));
+  const picks: Pick[] = scoredPicks.length ? scoredPicks : staffPicks(budget ?? budgetFrom(request), years, asked);
   emit({ kind: "rank", label: "Agent ran out of steps; showing the top scored titles", status: "warn" });
   return { request, extraction: { recipient: "", budget_usd: budget, signals: named.map((n) => ({ name: n.name, kind: n.type })) } as never, steps, picks, calls, modes: { qloo: QLOO_MODE, llm: "agent" }, usd, gap, audience: aud, turns: MAX_TURNS, route };
 }
