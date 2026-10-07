@@ -737,3 +737,4 @@ a.lb-tab { text-decoration: none; display: inline-block; }
 .band-more a { color: var(--ink); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; display: inline-block; padding: 6px 0; }
 .ap-order b { color: var(--amber); }
 .sg-album { font-style: normal; font-weight: 400; opacity: .8; }
+@media (max-width: 720px) { .vs-claude { margin: 0 -16px; padding: 26px 16px 30px; } }

@@ -10,7 +10,7 @@ Code: https://github.com/DmitriyTopka/afterglow (MIT)
 
 A chain sees every click. An independent record or book shop sees what sold and never learns what a customer came in for and left without. Afterglow gives it that list.
 
-- **41 of the 50 artists Austin loves most** (Qloo location data) are missing from the 500 best-sellers of a real Austin record shop.
+- **41 of the 50 artists Austin loves most** (Qloo location data) don't make the 500 best-sellers of a real Austin record shop: not on the shelf, or not reaching the people who love them.
 - **0 vs 15:** across 70 blind gift requests, our agent never put an over-budget title in its top three; Claude alone did 15 times.
 - **Two Claude agents on Qloo:** a shop assistant that picks five titles with a Qloo fact behind each, and a restock agent that turns every title it could not find into the owner's next order.
 
@@ -108,6 +108,9 @@ Claude alone only works because 384 titles fit in a prompt. A real shop with 50,
 - Qloo recognised about 30% of 300 random Amazon listings, and two in three for music and film. That decided the vertical: a culture store.
 
 ## What's next
+
+Day one needs no shopper traffic: a shop pastes its catalog (or we read its public feed, as on /real) and sees which of its city's favourites it doesn't carry or doesn't sell. Shopper requests then add the gifts people came in for, from the in-store tablet or the shop's website chat.
+
 
 Keep demand per store on a server instead of per browser, send a weekly restock note, and import a full catalog file. The same engine fits a venue: which artists does your audience love that you never book.
 

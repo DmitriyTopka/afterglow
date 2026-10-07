@@ -19,7 +19,7 @@ function Shop({ data }: { data: typeof waterloo }) {
   return (
     <>
       <section className="blk blk-cream" id={data.key}>
-        <div className="blk-head"><h2>{town(data.city)}: does the shelf fit the city?</h2><p><b>{data.shop}.</b> Qloo&apos;s location signal returns the artists {town(data.city)} loves more than elsewhere. Here are the first 24 of the {data.local.top.length}; marked are the ones in the shop&apos;s {data.label}. This is a slice of the catalog, not the whole store, so a missing name means it is not in that slice, not that it isn&apos;t stocked.</p></div>
+        <div className="blk-head"><h2>{town(data.city)}: does the shelf fit the city?</h2><p><b>{data.shop}.</b> Qloo&apos;s location signal returns the artists {town(data.city)} loves more than elsewhere. Here are the first 24 of the {data.local.top.length}; marked are the ones in the shop&apos;s {data.label}. This is a slice of the catalog, not the whole store: a name outside it is either not stocked or not selling to the people who love it, and either way it is demand the shop&apos;s sales don&apos;t show.</p></div>
         <ol className="real-list">
           {oneRow(data.local.top).slice(0, 24).map((a, i) => (
             <li key={a.entity_id} className={a.on_shelf ? "on" : ""}><span>{i + 1}</span>{a.name}{a.on_shelf && <em>on the shelf</em>}</li>
