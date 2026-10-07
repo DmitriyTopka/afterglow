@@ -20,7 +20,7 @@ export default function RealShelf() {
         <h1>A real shop, run through Afterglow.</h1>
         <p className="lb-lede">We took the 500 best-selling items from a real independent record store&apos;s public catalog and asked Qloo two questions: does this shelf fit its city, and does it fit the shoppers who walk in?</p>
         <dl className="hero-stats">
-          <div><dt>{data.recognised} of {data.artists}</dt><dd>artists on this shelf Qloo knows ({pct(data.recognised, data.artists)}; about 30% for random Amazon listings)</dd></div>
+          <div><dt>{data.recognised} of {data.artists}</dt><dd>artists on this shelf Qloo knows ({pct(data.recognised, data.artists)})</dd></div>
           <div><dt>{data.austin.on_shelf} of {data.austin.top.length}</dt><dd>artists Austin&apos;s taste over-indexes on (per Qloo) are in this best-seller list</dd></div>
           <div><dt>{leftEmpty} of {s.rows}</dt><dd>of our music shoppers would find nothing their taste loves most here</dd></div>
         </dl>

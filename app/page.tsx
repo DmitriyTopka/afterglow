@@ -9,6 +9,7 @@ import { LightMap } from "@/app/components/LightMap";
 import { HowItWorks } from "@/app/components/HowItWorks";
 import { ShopByTaste } from "@/app/components/ShopByTaste";
 import Link from "next/link";
+import real from "@/data/real/waterloo.json";
 import { addedTitles, coverage, fmtPct, myDemand, recordDemand, seedDemand, suggestions, type DemandRow } from "@/lib/cycle";
 
 // An empty box still works: Find picks runs the example in the placeholder.
@@ -68,11 +69,11 @@ export default function Page() {
         <img className="band-photo" src="/brand/hero-a.jpg" alt="" />
         <p className="lb-kicker">A record, book and film shop run by two Claude agents on Qloo</p>
         <h1>Your shop sees what sold. Afterglow sees what walked out.</h1>
-        <p className="lb-lede">Tell the shop assistant who the gift is for. It picks five titles from the shelves, and every title it could not find goes on the owner&apos;s restock list.</p>
+        <p className="lb-lede">A shopper says who the gift is for, and the assistant picks five titles from the shelves. Every title it could not find goes on the owner&apos;s restock list, so the shop finally learns what walked out. We ran it on a real record store first.</p>
         <dl className="hero-stats">
-          <div><dt>{fmtPct(lost)}</dt><dd>of what these shoppers&apos; tastes love is not on the shelves</dd></div>
-          <div><dt>{rows.length}</dt><dd>shopper requests so far{mine.length ? `, ${mine.length} of them yours` : ""}</dd></div>
-          <div><dt>{missingTitles}</dt><dd>titles shoppers' tastes love that the shelves don't carry</dd></div>
+          <div><dt>{real.austin.top.length - real.austin.on_shelf} of {real.austin.top.length}</dt><dd>artists Austin loves most (Qloo location data) are missing from the 500 best-sellers of Waterloo Records, a real Austin shop. <Link href="/real">See the gap →</Link></dd></div>
+          <div><dt>0 vs 12</dt><dd>gift picks over the shopper&apos;s budget across 40 blind requests: our agent vs Claude alone. <a href="https://github.com/DmitriyTopka/afterglow#how-well-it-works-measured-not-tuned-on-the-test">How we counted →</a></dd></div>
+          <div><dt>{real.recognised} of {real.artists}</dt><dd>artists on that shop&apos;s best-seller list that Qloo, the taste-data API we build on, recognises</dd></div>
         </dl>
         <form className="lb-ask" style={{ marginTop: 16 }} onSubmit={(e) => { e.preventDefault(); run(text.trim() || PLACEHOLDER); }}>
           <label htmlFor="ask" className="sr-only">What are they into?</label>
@@ -93,10 +94,10 @@ export default function Page() {
       </section>
 
       <section className="proof-strip" aria-label="Why it matters">
-        <div><b>$1.04B</b><span>US vinyl sales in 2025, up 9.3% (RIAA)</span></div>
-        <div><b>$1.73T</b><span>a year retail loses to out-of-stock and overstock (IHL Group, 2025)</span></div>
-        <div><b>10 wins, 4 losses</b><span>our agent against Claude alone on 20 blind requests we never tuned on (top-3 hits 0.50 vs 0.37)</span></div>
-        <div><b>192 of 217</b><span>artists of a real Austin record shop&apos;s best-sellers Qloo knows. <Link href="/real">See the shelf →</Link></span></div>
+        <div><b>$1.04B</b><span>US vinyl sales in 2025, up 9.3% (RIAA). Indie shops sell a share of it, blind to who walked out.</span></div>
+        <div><b>{fmtPct(lost)}</b><span>simulated: of what our demo shoppers&apos; tastes love, this share is not on the demo store&apos;s shelves ({missingTitles} titles)</span></div>
+        <div><b>{rows.length}</b><span>shopper requests so far: simulated demand from 38 test shoppers written blind{mine.length ? `, plus ${mine.length} of yours` : ", plus yours once you ask"}</span></div>
+        <div><b>10 vs 4</b><span>blind requests our agent won vs lost against Claude alone, 6 ties, 20 we never tuned on. A small sample, not yet significant.</span></div>
       </section>
 
       {result && (
