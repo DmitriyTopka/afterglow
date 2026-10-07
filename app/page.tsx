@@ -8,6 +8,7 @@ import { Header } from "@/app/components/Header";
 import { LightMap } from "@/app/components/LightMap";
 import { HowItWorks } from "@/app/components/HowItWorks";
 import { ShopByTaste } from "@/app/components/ShopByTaste";
+import { ChainCard } from "@/app/components/ChainCard";
 import Link from "next/link";
 import real from "@/data/real/waterloo.json";
 import { addedTitles, coverage, fmtPct, myDemand, recordDemand, seedDemand, suggestions, type DemandRow } from "@/lib/cycle";
@@ -66,7 +67,6 @@ export default function Page() {
       <Header side="shopper" />
 
       <section className="band has-photo home-band">
-        <img className="band-photo" src="/brand/hero-a.jpg" alt="" />
         <p className="lb-kicker">A record, book and film shop run by two Claude agents on Qloo</p>
         <h1>Your shop sees what sold. Afterglow sees what walked out.</h1>
         <p className="lb-lede">A shopper says who the gift is for, and the assistant picks five titles from the shelves. Every title it could not find goes on the owner&apos;s restock list, so the shop finally learns what walked out. We ran it on a real record store first.</p>
@@ -91,6 +91,7 @@ export default function Page() {
           <Link href="/real" className="pill light">See it on a real shop →</Link>
           <Link href="/live" className="band-link">Watch both sides at once →</Link>
         </p>
+        <ChainCard />
       </section>
 
       <section className="proof-strip" aria-label="Why it matters">

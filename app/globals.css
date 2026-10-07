@@ -678,3 +678,27 @@ a.lb-tab { text-decoration: none; display: inline-block; }
   .stock-btn, .toggle a, .toggle span, .band-link { min-height: 44px; display: inline-flex; align-items: center; }
   .stock-btn { padding: 10px 14px; }
 }
+
+/* Home: the chain card in place of the hero photo. One real recorded run, shopper to owner. */
+.band.has-photo > .chain-card { position: absolute; z-index: 2; right: 24px; top: 28px; width: min(36vw, 520px); max-width: none; margin: 0;
+  background: var(--ink); color: var(--paper); border-radius: 14px; padding: 22px 24px 20px; box-shadow: 12px 12px 0 var(--paper-ink); transform: rotate(1deg); }
+.chain-kicker { font: 500 12px var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--amber); margin: 0 0 12px; }
+.chain-card ol { list-style: none; counter-reset: step; margin: 0; padding: 0; display: grid; gap: 14px; }
+.chain-card li { counter-increment: step; position: relative; padding-left: 40px; display: grid; gap: 4px; font-size: 15px; line-height: 1.4; }
+.chain-card li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 26px; height: 26px; border-radius: 50%; background: var(--coral); color: var(--ink);
+  font: 800 15px/26px var(--display); text-align: center; }
+.chain-card li:not(:last-child)::after { content: ""; position: absolute; left: 12px; top: 30px; bottom: -12px; width: 2px; background: #3b2a2c; }
+.chain-card b { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 17px; letter-spacing: .02em; color: var(--paper); }
+.chain-card q { font-style: italic; color: var(--amber); }
+.chain-card small { color: var(--muted); font-size: 13px; }
+.chain-covers { display: flex; gap: 6px; }
+.chain-covers img { width: 52px; height: 52px; object-fit: cover; border-radius: 4px; }
+.chain-owner { background: #2a1d1f; border-radius: 10px; padding: 10px 12px 10px 40px; margin-left: -12px; }
+.chain-owner::before { left: 8px !important; top: 10px !important; background: var(--amber) !important; }
+.chain-restock { display: flex; gap: 10px; align-items: center; }
+.chain-restock img { width: 56px; height: 56px; object-fit: cover; border-radius: 50%; flex: none; }
+.chain-restock strong { color: var(--amber); }
+.chain-link { display: inline-block; margin-top: 14px; color: var(--amber); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 900px) {
+  .band.has-photo > .chain-card { position: static; width: auto; transform: none; margin: 22px 0 6px; box-shadow: 8px 8px 0 var(--paper-ink); }
+}
