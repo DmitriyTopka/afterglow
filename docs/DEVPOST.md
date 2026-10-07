@@ -3,8 +3,20 @@
 Tagline (Devpost, max 200 chars): For independent record and book shops: Claude agents on Qloo find gifts on your shelves and turn every title a shopper couldn't find into your next order.
 
 Live demo: https://taste-layer-alpha.vercel.app (start with "Watch both sides at once")
-Video (63 s): https://youtu.be/18Ok8CbCea8
+Video (71 s): https://youtu.be/NIgRNgB7bh8
 Code: https://github.com/DmitriyTopka/afterglow (MIT)
+
+## In 30 seconds
+
+A chain sees every click. An independent record or book shop sees what sold and never learns what a customer came in for and left without. Afterglow gives it that list.
+
+- **41 of the 50 artists Austin loves most** (Qloo location data) are missing from the 500 best-sellers of a real Austin record shop.
+- **0 vs 12:** across 40 blind gift requests, our agent never put an over-budget title in its top three; Claude alone did 12 times.
+- **Two Claude agents on Qloo:** a shop assistant that picks five titles with a Qloo fact behind each, and a restock agent that turns every title it could not find into the owner's next order.
+
+![The live screen: the shopper on the left, the owner's demand on the right, then the same request answered by Claude alone](https://taste-layer-alpha.vercel.app/brand/live-demo.gif)
+
+Try it: https://taste-layer-alpha.vercel.app (one-click examples replay recorded live runs).
 
 ## Who it's for, and what it costs them
 

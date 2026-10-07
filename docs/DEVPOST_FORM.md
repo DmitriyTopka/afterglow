@@ -11,7 +11,7 @@
 - https://taste-layer-alpha.vercel.app/real
 - https://github.com/DmitriyTopka/afterglow
 
-**Video demo link:** https://youtu.be/18Ok8CbCea8
+**Video demo link:** https://youtu.be/NIgRNgB7bh8
 
 **Image gallery (upload in this order, docs/screenshots/):** 0-real-shelf.jpg, 1-home.jpg, 2-live.jpg, 3-lit-map.jpg, 4-picks.jpg, 5-owner-agent.jpg, 8-check-your-shop.jpg, 9-real-shoppers.jpg, 6-product.jpg, 7-bag.jpg
 
@@ -19,6 +19,18 @@
 **Demo URL:** https://taste-layer-alpha.vercel.app
 
 **About the project (markdown):**
+
+## In 30 seconds
+
+A chain sees every click. An independent record or book shop sees what sold and never learns what a customer came in for and left without. Afterglow gives it that list.
+
+- **41 of the 50 artists Austin loves most** (Qloo location data) are missing from the 500 best-sellers of a real Austin record shop.
+- **0 vs 12:** across 40 blind gift requests, our agent never put an over-budget title in its top three; Claude alone did 12 times.
+- **Two Claude agents on Qloo:** a shop assistant that picks five titles with a Qloo fact behind each, and a restock agent that turns every title it could not find into the owner's next order.
+
+![The live screen: the shopper on the left, the owner's demand on the right, then the same request answered by Claude alone](https://taste-layer-alpha.vercel.app/brand/live-demo.gif)
+
+Try it: https://taste-layer-alpha.vercel.app (one-click examples replay recorded live runs).
 
 ## Who it's for, and what it costs them
 
