@@ -438,7 +438,6 @@
    {
     "kind": "rank",
     "label": "Chose 5 pick(s) from 12 candidates",
-    "detail": "Qloo notes he's missing The Smiths, Gang of Four, Echo & the Bunnymen, New Order, The Jesus and Mary Chain, Siouxsie and the Banshees, and Sonic Youth - all touchstones for Joy Division fans we should stock.",
     "status": "ok"
    }
   ],
@@ -471,19 +470,7 @@
      "take": "50"
     },
     "cache": "hit",
-    "ms": 0
-   },
-   {
-    "endpoint": "/v2/insights",
-    "params": {
-     "filter.type": "urn:entity:book",
-     "signal.interests.entities": "B8FE4F27-5AC7-46C8-81BC-28313D225FDA,62A8F44C-CD8F-4BDB-878E-4634F2D97074",
-     "filter.results.entities": "B776A6C0-4BD5-4773-A5FC-266FF59932FB,8F4E1999-1AF2-4ACB-9F7A-8D1C1DF9615B,5611CE38-C5D5-4DAA-ADFA-E7DDB64F85E6,D3436CAD-ACE1-4C5A-B0B8-50B6E1B62ACE,C600F8B6-4242-4DF0-A33D-4CDBC3BB854A,98D0A802-7025-46B1-9595-24AFF7F3DE67,31331372-2F0F-4DBC-9D83-3C2227AB9CF1,7BBFBF2F-0FE8-4A3E-AEC8-C77F583CF2BB,D1D152C7-5861-40C6-9D94-FD5541FA3621,881D224A-C331-4B87-975B-8FA0546391D3,B248BC9F-15C3-424F-AC89-DDBC1D94915A,3BBE0F4F-9E58-4AD4-8806-B23EE2C42173,BFC47DEE-6F08-4300-AAE4-821EFFDFEEAE,26BCEA28-C54E-4530-A2B9-E7005557916E,3EDDFB8D-404C-4C0E-9FC5-21E65A5A28A7,D50E875E-5CBA-4826-85C1-8D9F8BA7DBE5,F0968753-84AF-4334-A6AB-B2E28C9A9732,1515B842-8C81-4135-9863-DA3D312CD852,67D89DD0-D9EA-45E2-9B1C-D92E351BEAE8,2668A26D-A9B3-491D-855D-EF0993D5FC65,EC15A914-CF5F-4323-A461-74CD8E8D9920,61BF2BD8-CD90-418D-B155-0971B00C6702,A1E8B46A-3EC4-418B-8D3B-612DA3B8FBE6,E7AAA37B-4F61-4828-AFB7-E63C5577E50C,8F50D2B6-0911-4CAF-8D77-B1082A7277C6,37BE06E0-7E0C-47B6-835C-F2E1EAC1C734,14F57B25-9708-4C31-858D-EB3EC1A96BDD,78AB3971-BC53-4429-A9ED-C369F7BCFFEA,ADEBB124-9C05-4917-8524-2578D796619B,B00ABB53-EFEA-4EB3-AC00-60B9AB1A6650,381E6D64-B3C7-44C3-BA80-1AB5DEE12557,A33C478F-CE18-4EDA-AE8D-EC52210876D7,E2AB24C4-7E43-47DA-A37F-FF6D10BB0987,B0C67BAF-9E09-4061-B9E4-3E8A0BE7A177,16BFF0E3-16EA-427B-B721-B260D9D9475F,FE05498E-7A50-45A2-A6E2-19FBB7A28B8A,2BC3C2E1-8B79-4B27-94ED-937FDE93DB7A,C059D5D0-D019-4A30-A21A-BC5B3EEA4C73,A61910F0-F719-48C0-B6EF-D0ADEE29846B,5CEC42B9-64DE-43EB-A3CA-7FEF51236709,A2DEF825-7285-40C8-A39F-1E9BC86E6F6E,3E3165A0-7490-469D-81B5-FCA028C2576D,AADD9C74-246C-4F7A-8E7C-D3F78B98A654,F90792F8-6EAC-4962-85C7-0D49923532FD,193D088A-5911-4CF5-AEC5-4D43E204EF0E,6E74F33A-44C5-4657-B402-13766B49B4B4,57140B9D-6BD6-43E3-8A6A-5B76E0BD8EB6,56CFAE10-0A63-4B6D-A524-3D43E7E3A651,5615650A-B746-420E-A510-8878C7796103,D0D38BA1-7AEE-411C-B0E0-D606B1FCE353",
-     "feature.explainability": "true",
-     "take": "50"
-    },
-    "cache": "hit",
-    "ms": 9
+    "ms": 1
    },
    {
     "endpoint": "/v2/insights",
@@ -495,7 +482,19 @@
      "take": "49"
     },
     "cache": "hit",
-    "ms": 13
+    "ms": 4
+   },
+   {
+    "endpoint": "/v2/insights",
+    "params": {
+     "filter.type": "urn:entity:book",
+     "signal.interests.entities": "B8FE4F27-5AC7-46C8-81BC-28313D225FDA,62A8F44C-CD8F-4BDB-878E-4634F2D97074",
+     "filter.results.entities": "B776A6C0-4BD5-4773-A5FC-266FF59932FB,8F4E1999-1AF2-4ACB-9F7A-8D1C1DF9615B,5611CE38-C5D5-4DAA-ADFA-E7DDB64F85E6,D3436CAD-ACE1-4C5A-B0B8-50B6E1B62ACE,C600F8B6-4242-4DF0-A33D-4CDBC3BB854A,98D0A802-7025-46B1-9595-24AFF7F3DE67,31331372-2F0F-4DBC-9D83-3C2227AB9CF1,7BBFBF2F-0FE8-4A3E-AEC8-C77F583CF2BB,D1D152C7-5861-40C6-9D94-FD5541FA3621,881D224A-C331-4B87-975B-8FA0546391D3,B248BC9F-15C3-424F-AC89-DDBC1D94915A,3BBE0F4F-9E58-4AD4-8806-B23EE2C42173,BFC47DEE-6F08-4300-AAE4-821EFFDFEEAE,26BCEA28-C54E-4530-A2B9-E7005557916E,3EDDFB8D-404C-4C0E-9FC5-21E65A5A28A7,D50E875E-5CBA-4826-85C1-8D9F8BA7DBE5,F0968753-84AF-4334-A6AB-B2E28C9A9732,1515B842-8C81-4135-9863-DA3D312CD852,67D89DD0-D9EA-45E2-9B1C-D92E351BEAE8,2668A26D-A9B3-491D-855D-EF0993D5FC65,EC15A914-CF5F-4323-A461-74CD8E8D9920,61BF2BD8-CD90-418D-B155-0971B00C6702,A1E8B46A-3EC4-418B-8D3B-612DA3B8FBE6,E7AAA37B-4F61-4828-AFB7-E63C5577E50C,8F50D2B6-0911-4CAF-8D77-B1082A7277C6,37BE06E0-7E0C-47B6-835C-F2E1EAC1C734,14F57B25-9708-4C31-858D-EB3EC1A96BDD,78AB3971-BC53-4429-A9ED-C369F7BCFFEA,ADEBB124-9C05-4917-8524-2578D796619B,B00ABB53-EFEA-4EB3-AC00-60B9AB1A6650,381E6D64-B3C7-44C3-BA80-1AB5DEE12557,A33C478F-CE18-4EDA-AE8D-EC52210876D7,E2AB24C4-7E43-47DA-A37F-FF6D10BB0987,B0C67BAF-9E09-4061-B9E4-3E8A0BE7A177,16BFF0E3-16EA-427B-B721-B260D9D9475F,FE05498E-7A50-45A2-A6E2-19FBB7A28B8A,2BC3C2E1-8B79-4B27-94ED-937FDE93DB7A,C059D5D0-D019-4A30-A21A-BC5B3EEA4C73,A61910F0-F719-48C0-B6EF-D0ADEE29846B,5CEC42B9-64DE-43EB-A3CA-7FEF51236709,A2DEF825-7285-40C8-A39F-1E9BC86E6F6E,3E3165A0-7490-469D-81B5-FCA028C2576D,AADD9C74-246C-4F7A-8E7C-D3F78B98A654,F90792F8-6EAC-4962-85C7-0D49923532FD,193D088A-5911-4CF5-AEC5-4D43E204EF0E,6E74F33A-44C5-4657-B402-13766B49B4B4,57140B9D-6BD6-43E3-8A6A-5B76E0BD8EB6,56CFAE10-0A63-4B6D-A524-3D43E7E3A651,5615650A-B746-420E-A510-8878C7796103,D0D38BA1-7AEE-411C-B0E0-D606B1FCE353",
+     "feature.explainability": "true",
+     "take": "50"
+    },
+    "cache": "hit",
+    "ms": 6
    },
    {
     "endpoint": "/v2/insights",
@@ -507,7 +506,7 @@
      "take": "50"
     },
     "cache": "hit",
-    "ms": 19
+    "ms": 11
    },
    {
     "endpoint": "/v2/insights",
@@ -519,7 +518,7 @@
      "take": "34"
     },
     "cache": "hit",
-    "ms": 22
+    "ms": 14
    },
    {
     "endpoint": "/v2/insights",
@@ -531,7 +530,7 @@
      "take": "48"
     },
     "cache": "hit",
-    "ms": 15
+    "ms": 10
    },
    {
     "endpoint": "/v2/insights",
@@ -543,7 +542,7 @@
      "take": "50"
     },
     "cache": "hit",
-    "ms": 38
+    "ms": 25
    },
    {
     "endpoint": "/v2/insights",
@@ -555,7 +554,7 @@
      "take": "50"
     },
     "cache": "hit",
-    "ms": 24
+    "ms": 19
    },
    {
     "endpoint": "/v2/insights",
@@ -567,7 +566,7 @@
      "take": "13"
     },
     "cache": "hit",
-    "ms": 3
+    "ms": 7
    },
    {
     "endpoint": "/v2/insights",
@@ -579,7 +578,7 @@
      "take": "40"
     },
     "cache": "hit",
-    "ms": 13
+    "ms": 19
    },
    {
     "endpoint": "/v2/insights",
@@ -589,7 +588,7 @@
      "take": "10"
     },
     "cache": "hit",
-    "ms": 1
+    "ms": 2
    },
    {
     "endpoint": "/v2/insights",
@@ -606,7 +605,7 @@
    "qloo": "live",
    "llm": "agent"
   },
-  "usd": 0.013998,
+  "usd": 0.014795,
   "gap": {
    "formats": [
     "urn:entity:artist",
@@ -736,7 +735,8 @@
       "Kafka on the Shore"
      ],
      "year": "2002",
-     "blurb": "A teenage boy and an elderly man embark on surreal journeys to escape fate and uncover their destinies."
+     "blurb": "A teenage boy and an elderly man embark on surreal journeys to escape fate and uncover their destinies.",
+     "age_min": 16
     },
     "affinity": 0.7586777413055036,
     "lift": 3.8371025233125646,
@@ -746,7 +746,7 @@
       "contribution": 1
      }
     ],
-    "why": "Kafka on the Shore is Murakami at his most Murakami - magical realism, literary depth, and the introspective mood he'll be rereading all winter.",
+    "why": "Kafka on the Shore is Murakami at his best: literary fiction soaked in magical realism and Japanese sensibility, a winter reread choice.",
     "direct": [
      "Haruki Murakami"
     ],
@@ -783,7 +783,8 @@
       "Disintegration (2010 Remaster)"
      ],
      "year": "1989",
-     "blurb": "The Cure are an English rock band formed in Crawley, West Sussex in 1976, led by singer-guitarist Robert Smith. They evolved from terse post-punk beginnings into a band known for atmospheric, melancholic songs and occasional brighter pop singles."
+     "blurb": "The Cure are an English rock band formed in Crawley, West Sussex in 1976, led by singer-guitarist Robert Smith. They evolved from terse post-punk beginnings into a band known for atmospheric, melancholic songs and occasional brighter pop singles.",
+     "age_min": 0
     },
     "affinity": 0.9620811347337891,
     "lift": 4.112728284845013,
@@ -793,57 +794,9 @@
       "contribution": 1
      }
     ],
-    "why": "The Cure's Disintegration shares the brooding, experimental post-punk DNA of Joy Division, with keyboards and a reflective depression that will resonate.",
+    "why": "The Cure's Disintegration is post-punk melancholy as masterpiece, alternative rock with the brooding keyboards that echo Joy Division's DNA.",
     "direct": [],
     "basis": "Qloo: #1 of 113 records here for fans of Joy Division."
-   },
-   {
-    "item": {
-     "id": "c193",
-     "category": "Film",
-     "price_usd": 18,
-     "qloo": {
-      "type": "urn:entity:movie",
-      "name": "Lost in Translation",
-      "entity_id": "603C7E42-C952-45CB-8B6F-3B803FEFB2F7"
-     },
-     "tags": [
-      "Age disparate romance",
-      "Postmodern",
-      "Cigarette smoking",
-      "Reflective",
-      "Unhappiness",
-      "Tokyo japan",
-      "Fish out of water",
-      "Photographer"
-     ],
-     "popularity": 0.9970841702844554,
-     "image": "https://m.media-amazon.com/images/M/MV5BMTUxMzk0NDg1MV5BMl5BanBnXkFtZTgwNDg0NjkxMDI@._V1_.jpg",
-     "image_source": "qloo",
-     "title": "Lost in Translation (Blu-ray)",
-     "creators": [
-      "Sofia Coppola",
-      "Bill Murray",
-      "Scarlett Johansson",
-      "Giovanni Ribisi"
-     ],
-     "works": [
-      "Lost in Translation"
-     ],
-     "year": "2003",
-     "blurb": "Lost in Translation (2003), directed by Sofia Coppola and starring Bill Murray, Scarlett Johansson and Giovanni Ribisi, is an indie-leaning comedy-drama that follows the fragile, quietly charged relationship between a fading movie star and a young woman in Tokyo."
-    },
-    "affinity": 0.9490122914464038,
-    "lift": 3.546443346684996,
-    "chain": [
-     {
-      "signal": "Joy Division",
-      "contribution": 1
-     }
-    ],
-    "why": "Lost in Translation channels the same reflective, melancholic mood - postmodern, introspective, and tinged with unhappiness in the best way.",
-    "direct": [],
-    "basis": "Qloo: #1 of 90 films here for fans of Joy Division."
    },
    {
     "item": {
@@ -881,7 +834,8 @@
       "Eternal Sunshine of the Spotless Mind"
      ],
      "year": "2004",
-     "blurb": "Eternal Sunshine of the Spotless Mind (2004), directed by Michel Gondry and written by Charlie Kaufman, is a drama-romance with speculative science fiction elements starring Jim Carrey and Kate Winslet, with Tom Wilkinson and Mark Ruffalo in supporting roles."
+     "blurb": "Eternal Sunshine of the Spotless Mind (2004), directed by Michel Gondry and written by Charlie Kaufman, is a drama-romance with speculative science fiction elements starring Jim Carrey and Kate Winslet, with Tom Wilkinson and Mark Ruffalo in supporting roles.",
+     "age_min": 13
     },
     "affinity": 0.9411011696423581,
     "lift": 3.1273473546950017,
@@ -891,7 +845,7 @@
       "contribution": 1
      }
     ],
-    "why": "Eternal Sunshine of the Spotless Mind matches the philosophical introspection and Murakami-adjacent existentialism, with minimalist storytelling.",
+    "why": "Eternal Sunshine of the Spotless Mind mirrors Murakami's reflective mood and magical realism through its philosophy and forgiveness themes, with the intimate melancholy that suits his taste.",
     "direct": [],
     "basis": "Qloo: #2 of 90 films here for fans of Joy Division."
    },
@@ -926,7 +880,8 @@
       "Loaded (Remastered)"
      ],
      "year": "1970",
-     "blurb": "The Velvet Underground were an American rock band formed in New York City in 1964, renowned for combining literary, transgressive lyrics with avant-garde, experimental sonics."
+     "blurb": "The Velvet Underground were an American rock band formed in New York City in 1964, renowned for combining literary, transgressive lyrics with avant-garde, experimental sonics.",
+     "age_min": 17
     },
     "affinity": 0.9363052764403714,
     "lift": 5.274053389820745,
@@ -936,13 +891,99 @@
       "contribution": 1
      }
     ],
-    "why": "The Velvet Underground's Loaded is proto-punk experimental art that connects to both Joy Division's lineage and the artistic sensibility Murakami fans favor.",
+    "why": "The Velvet Underground's Loaded is proto-punk artistic innovation that laid the groundwork for Joy Division's sound, capturing the experimental edge he loves.",
     "direct": [],
     "basis": "Qloo: #2 of 113 records here for fans of Joy Division."
+   },
+   {
+    "item": {
+     "id": "c348",
+     "category": "TV box sets",
+     "price_usd": 43,
+     "qloo": {
+      "type": "urn:entity:tv_show",
+      "name": "Black Mirror",
+      "entity_id": "B36C968C-63BF-49C2-A031-3974337D9ABB"
+     },
+     "tags": [
+      "Mystery",
+      "Uk non horror host",
+      "Election",
+      "Dehumanization",
+      "Dystopian sci fi",
+      "The future",
+      "Morally ambiguous",
+      "Speculative fiction"
+     ],
+     "popularity": 0.9994681204707134,
+     "image": "https://m.media-amazon.com/images/M/MV5BODcxMWI2NDMtYTc3NC00OTZjLWFmNmUtM2NmY2I1ODkxYzczXkEyXkFqcGc@._V1_.jpg",
+     "image_source": "qloo",
+     "title": "Black Mirror (complete series box set)",
+     "creators": [
+      "Charlie Brooker",
+      "Anjana Vasan",
+      "Cristin Milioti",
+      "Jimmi Simpson",
+      "Bryce Dallas Howard",
+      "Alice Eve"
+     ],
+     "works": [
+      "Black Mirror"
+     ],
+     "year": "2011",
+     "blurb": "Black Mirror, created by Charlie Brooker and first released in 2011, is a British anthology television series that presents standalone near-future dramas exploring the societal and personal costs of technology.",
+     "age_min": 15
+    },
+    "affinity": 0.976029253185755,
+    "lift": 6.34146265928775,
+    "chain": [
+     {
+      "signal": "Joy Division",
+      "contribution": 1
+     }
+    ],
+    "why": "Loved by fans of Joy Division, by Qloo's count.",
+    "direct": [],
+    "basis": "Qloo: #1 of 34 TV shows here for fans of Joy Division."
    }
   ],
-  "note": "Qloo notes he's missing The Smiths, Gang of Four, Echo & the Bunnymen, New Order, The Jesus and Mary Chain, Siouxsie and the Banshees, and Sonic Youth - all touchstones for Joy Division fans we should stock.",
-  "savedAt": "2026-10-06T20:48:44.464Z"
+  "savedAt": "2026-10-07T10:29:39.606Z",
+  "claudeAlone": {
+   "items": [
+    {
+     "id": "c071",
+     "title": "Arcade Fire: The Suburbs, LP",
+     "category": "Vinyl",
+     "price_usd": 28
+    },
+    {
+     "id": "c037",
+     "title": "The Smashing Pumpkins: Adore (Remastered), LP",
+     "category": "Vinyl",
+     "price_usd": 28
+    },
+    {
+     "id": "c084",
+     "title": "Thelonious Monk: Straight, No Chaser, LP",
+     "category": "Vinyl",
+     "price_usd": 28
+    },
+    {
+     "id": "c368",
+     "title": "Haruki Murakami: Kafka on the Shore",
+     "category": "Books",
+     "price_usd": 27
+    },
+    {
+     "id": "c186",
+     "title": "John Green: Looking for Alaska",
+     "category": "Books",
+     "price_usd": 28
+    }
+   ],
+   "model": "claude-haiku-4-5",
+   "note": "Same model, the whole catalog as text, no Qloo."
+  }
  },
  "My sister loves Studio Ghibli and Lana Del Rey. Something under $45.": {
   "request": "My sister loves Studio Ghibli and Lana Del Rey. Something under $45.",
@@ -1377,7 +1418,7 @@
    {
     "kind": "rank",
     "label": "Chose 5 pick(s) from 12 candidates",
-    "detail": "We carry Florence + the Machine, but Lana Del Rey fans also love Lorde, The Neighbourhood, Marina & the Diamonds, HAIM, Tove Lo, Foster the People, Zella Day, The 1975, and Banks - artists we don't currently stock.",
+    "detail": "We're missing artists Studio Ghibli and Lana Del Rey fans love: Lorde, The Neighbourhood, Marina & the Diamonds, HAIM, Tove Lo, Foster the People, Zella Day, The 1975, and Banks. Worth stocking for this taste.",
     "status": "ok"
    }
   ],
@@ -1390,7 +1431,7 @@
      "types": "urn:entity:artist"
     },
     "cache": "hit",
-    "ms": 2
+    "ms": 1
    },
    {
     "endpoint": "/search",
@@ -1415,6 +1456,18 @@
    {
     "endpoint": "/v2/insights",
     "params": {
+     "filter.type": "urn:entity:videogame",
+     "signal.interests.entities": "D1222FA1-A6FD-45DE-8993-D89E2BB4777A,63BBE4D8-D721-466F-907C-D0007E9B6665",
+     "filter.results.entities": "2853706C-02E2-444F-8024-2CC2678E2D76,3A68608A-7D24-4D65-AEAD-87F683D703E0,B2344587-2AF4-4A4A-A018-5CCDE6E3B1A0,2FAEFC6E-6B36-4CC3-9196-62CF32A15EA4,FEFD4E0D-D8F2-4BF9-86C9-06949DE82BCD,04E0CDD8-10F4-49DD-BAA3-359387EC720E,BBEDB99D-2B10-438D-B511-DBFD1FA5381B,524A59A0-4C58-44EB-B16D-9FEEE56AE3DE,FFF75371-964C-4393-8AF1-A7F731E91B39,F0116890-2AB6-4CF0-ABD7-AE42C9C886E5,B8518AFD-A777-4545-B606-9A768FD27E04,2575A4C0-5459-42E9-B119-FE7CFC8D558B,514DCDCF-4E91-4D0D-ACED-74C96E3E7037,4EC28234-4589-4673-89B1-B61A27A2DC6C,B335BB51-7158-4C34-89D1-4F1DB7CB5C01,E0E44B3E-1C12-4739-B799-2E2187349B8F,E69D9995-A5EF-47B6-A071-7770F6760A72,DE584C3E-25B7-4B25-9BD8-30A12D4B686F,7E606158-8878-49D6-82AB-4C83A83F9974,39CE4DC5-E089-4371-AC74-7A9D3FEFC973,108570A5-B892-46B4-87B8-B67A0E5C9C09,0B062689-A1BE-4384-955B-7B52AB02534B,EEF98CA8-3C1E-4A6E-AAAE-5493BEED1ED8,9D1912AD-7B5B-4C5B-9D43-C8E2D5AD6734,95B89A17-A31B-4FB6-AA7E-DA3E3847D434,33B4926B-F0D2-445B-B6F2-33B17DBBF8EC,3C16E021-A5ED-4CFD-9849-45A133F32840,DB003E13-0C9F-4011-B928-43ADC2A59F26,AD900E41-9F2D-4C4A-AF8E-D49B1E5B8B30,18C0FF0D-4582-41E7-93D6-221A6D6301D6,D69C3F76-27B5-4CAA-AB06-B1D5B75AF5BE,57C9DF6D-90F8-4CDC-BCD8-2730EBBA1976,9B672F6C-FF11-4E1E-A00F-96B9EA0BC82D,79B67D5C-3566-460D-9B3A-C11A28D98F64,43B2316E-1192-42BF-AAF7-78E06BADD771,B061B95F-B940-4871-B80A-C12365E7A2A1,A037A3D7-652E-4009-9F11-42135FA99CE0,4169C88E-0CE8-4C99-B309-08D106530DA9,3EDDC009-424F-42C9-B904-7898B56D6716,C0C351A2-5D67-4EC0-A095-2F472A923C24,41376753-6D7F-41A0-AC01-7C2B61870A21,A86F9A72-1396-4D30-BF90-42D853738534,91C2266A-3118-4241-A709-D4621244D965,EA0D6B19-199B-439B-809D-B60B4412E405,CDBDE254-71F0-4640-8D04-5373BEAE5278,08663BD2-E267-4C7F-9895-86410F67867C,A7E89EDB-59DD-4F28-AC2B-49307548E3EF,46CBADC5-F4A6-4E97-93B2-959066C9F608,875DB771-9C4C-4DD0-9249-D2ABD95711F1",
+     "feature.explainability": "true",
+     "take": "49"
+    },
+    "cache": "hit",
+    "ms": 6
+   },
+   {
+    "endpoint": "/v2/insights",
+    "params": {
      "filter.type": "urn:entity:book",
      "signal.interests.entities": "D1222FA1-A6FD-45DE-8993-D89E2BB4777A,63BBE4D8-D721-466F-907C-D0007E9B6665",
      "filter.results.entities": "B776A6C0-4BD5-4773-A5FC-266FF59932FB,8F4E1999-1AF2-4ACB-9F7A-8D1C1DF9615B,5611CE38-C5D5-4DAA-ADFA-E7DDB64F85E6,D3436CAD-ACE1-4C5A-B0B8-50B6E1B62ACE,C600F8B6-4242-4DF0-A33D-4CDBC3BB854A,98D0A802-7025-46B1-9595-24AFF7F3DE67,31331372-2F0F-4DBC-9D83-3C2227AB9CF1,7BBFBF2F-0FE8-4A3E-AEC8-C77F583CF2BB,D1D152C7-5861-40C6-9D94-FD5541FA3621,881D224A-C331-4B87-975B-8FA0546391D3,B248BC9F-15C3-424F-AC89-DDBC1D94915A,3BBE0F4F-9E58-4AD4-8806-B23EE2C42173,BFC47DEE-6F08-4300-AAE4-821EFFDFEEAE,26BCEA28-C54E-4530-A2B9-E7005557916E,3EDDFB8D-404C-4C0E-9FC5-21E65A5A28A7,D50E875E-5CBA-4826-85C1-8D9F8BA7DBE5,F0968753-84AF-4334-A6AB-B2E28C9A9732,1515B842-8C81-4135-9863-DA3D312CD852,67D89DD0-D9EA-45E2-9B1C-D92E351BEAE8,2668A26D-A9B3-491D-855D-EF0993D5FC65,EC15A914-CF5F-4323-A461-74CD8E8D9920,61BF2BD8-CD90-418D-B155-0971B00C6702,A1E8B46A-3EC4-418B-8D3B-612DA3B8FBE6,E7AAA37B-4F61-4828-AFB7-E63C5577E50C,8F50D2B6-0911-4CAF-8D77-B1082A7277C6,37BE06E0-7E0C-47B6-835C-F2E1EAC1C734,14F57B25-9708-4C31-858D-EB3EC1A96BDD,78AB3971-BC53-4429-A9ED-C369F7BCFFEA,ADEBB124-9C05-4917-8524-2578D796619B,B00ABB53-EFEA-4EB3-AC00-60B9AB1A6650,381E6D64-B3C7-44C3-BA80-1AB5DEE12557,A33C478F-CE18-4EDA-AE8D-EC52210876D7,E2AB24C4-7E43-47DA-A37F-FF6D10BB0987,B0C67BAF-9E09-4061-B9E4-3E8A0BE7A177,16BFF0E3-16EA-427B-B721-B260D9D9475F,FE05498E-7A50-45A2-A6E2-19FBB7A28B8A,2BC3C2E1-8B79-4B27-94ED-937FDE93DB7A,C059D5D0-D019-4A30-A21A-BC5B3EEA4C73,A61910F0-F719-48C0-B6EF-D0ADEE29846B,5CEC42B9-64DE-43EB-A3CA-7FEF51236709,A2DEF825-7285-40C8-A39F-1E9BC86E6F6E,3E3165A0-7490-469D-81B5-FCA028C2576D,AADD9C74-246C-4F7A-8E7C-D3F78B98A654,F90792F8-6EAC-4962-85C7-0D49923532FD,193D088A-5911-4CF5-AEC5-4D43E204EF0E,6E74F33A-44C5-4657-B402-13766B49B4B4,57140B9D-6BD6-43E3-8A6A-5B76E0BD8EB6,56CFAE10-0A63-4B6D-A524-3D43E7E3A651,5615650A-B746-420E-A510-8878C7796103,D0D38BA1-7AEE-411C-B0E0-D606B1FCE353",
@@ -1427,18 +1480,6 @@
    {
     "endpoint": "/v2/insights",
     "params": {
-     "filter.type": "urn:entity:videogame",
-     "signal.interests.entities": "D1222FA1-A6FD-45DE-8993-D89E2BB4777A,63BBE4D8-D721-466F-907C-D0007E9B6665",
-     "filter.results.entities": "2853706C-02E2-444F-8024-2CC2678E2D76,3A68608A-7D24-4D65-AEAD-87F683D703E0,B2344587-2AF4-4A4A-A018-5CCDE6E3B1A0,2FAEFC6E-6B36-4CC3-9196-62CF32A15EA4,FEFD4E0D-D8F2-4BF9-86C9-06949DE82BCD,04E0CDD8-10F4-49DD-BAA3-359387EC720E,BBEDB99D-2B10-438D-B511-DBFD1FA5381B,524A59A0-4C58-44EB-B16D-9FEEE56AE3DE,FFF75371-964C-4393-8AF1-A7F731E91B39,F0116890-2AB6-4CF0-ABD7-AE42C9C886E5,B8518AFD-A777-4545-B606-9A768FD27E04,2575A4C0-5459-42E9-B119-FE7CFC8D558B,514DCDCF-4E91-4D0D-ACED-74C96E3E7037,4EC28234-4589-4673-89B1-B61A27A2DC6C,B335BB51-7158-4C34-89D1-4F1DB7CB5C01,E0E44B3E-1C12-4739-B799-2E2187349B8F,E69D9995-A5EF-47B6-A071-7770F6760A72,DE584C3E-25B7-4B25-9BD8-30A12D4B686F,7E606158-8878-49D6-82AB-4C83A83F9974,39CE4DC5-E089-4371-AC74-7A9D3FEFC973,108570A5-B892-46B4-87B8-B67A0E5C9C09,0B062689-A1BE-4384-955B-7B52AB02534B,EEF98CA8-3C1E-4A6E-AAAE-5493BEED1ED8,9D1912AD-7B5B-4C5B-9D43-C8E2D5AD6734,95B89A17-A31B-4FB6-AA7E-DA3E3847D434,33B4926B-F0D2-445B-B6F2-33B17DBBF8EC,3C16E021-A5ED-4CFD-9849-45A133F32840,DB003E13-0C9F-4011-B928-43ADC2A59F26,AD900E41-9F2D-4C4A-AF8E-D49B1E5B8B30,18C0FF0D-4582-41E7-93D6-221A6D6301D6,D69C3F76-27B5-4CAA-AB06-B1D5B75AF5BE,57C9DF6D-90F8-4CDC-BCD8-2730EBBA1976,9B672F6C-FF11-4E1E-A00F-96B9EA0BC82D,79B67D5C-3566-460D-9B3A-C11A28D98F64,43B2316E-1192-42BF-AAF7-78E06BADD771,B061B95F-B940-4871-B80A-C12365E7A2A1,A037A3D7-652E-4009-9F11-42135FA99CE0,4169C88E-0CE8-4C99-B309-08D106530DA9,3EDDC009-424F-42C9-B904-7898B56D6716,C0C351A2-5D67-4EC0-A095-2F472A923C24,41376753-6D7F-41A0-AC01-7C2B61870A21,A86F9A72-1396-4D30-BF90-42D853738534,91C2266A-3118-4241-A709-D4621244D965,EA0D6B19-199B-439B-809D-B60B4412E405,CDBDE254-71F0-4640-8D04-5373BEAE5278,08663BD2-E267-4C7F-9895-86410F67867C,A7E89EDB-59DD-4F28-AC2B-49307548E3EF,46CBADC5-F4A6-4E97-93B2-959066C9F608,875DB771-9C4C-4DD0-9249-D2ABD95711F1",
-     "feature.explainability": "true",
-     "take": "49"
-    },
-    "cache": "hit",
-    "ms": 11
-   },
-   {
-    "endpoint": "/v2/insights",
-    "params": {
      "filter.type": "urn:entity:artist",
      "signal.interests.entities": "D1222FA1-A6FD-45DE-8993-D89E2BB4777A,63BBE4D8-D721-466F-907C-D0007E9B6665",
      "filter.results.entities": "8D778858-C8B9-4F96-B72D-F367E4F3E396,B6FA456F-B729-4700-B01F-E82AD3AC8ADA,6700295B-3DBB-4F55-A5B0-80C155EA1186,BD2CDC36-5306-4213-A817-E7677E029CA6,C445C761-CB38-4FEE-B085-D35F444A04DF,310CF871-2A1F-4CBE-8D30-40B95BAEC054,F6754C46-B3E7-457F-8B7E-06C613597320,63BBE4D8-D721-466F-907C-D0007E9B6665,A9C3CE3F-9A0C-47B3-8AF8-E75B252F86D8,1D792A35-7D72-4D57-88D0-C3A4F3E73EF6,ABB725B5-B689-431B-A90F-A06FF9313F0F,62947437-2EC8-4C46-BE25-677E266DEB78,676A76B8-926C-4BA1-A6EF-0F32A5EA4225,4395AE84-43E1-45BC-9606-344226C6ADEC,02CD4C7F-C5A3-4AD2-B005-D0CBC07E1609,ADB51D79-491A-49E7-9A99-E1F739382E9F,AFB6CA3D-9620-4D8B-9958-6727BA40AFA6,8BE95420-BCDA-4B00-871F-247A55D35594,3A78E120-14F8-4DA2-93EE-1ED35F5FFEC7,E3CF515E-C3EA-46DF-92DD-64A0DC360C90,70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C,0D782363-86DC-4E61-8E83-364010035104,96322775-86D0-4778-AD77-0EA0971969CF,996272B0-CB79-48D3-8B83-8ED34F2DE9AF,BE94A541-4FEC-49CE-8865-C54834FD8484,233F9195-E25B-4B33-B25C-A211C21EF583,B4A3F0F0-354D-4CAD-9F96-11A20709CB9C,834A0FDB-BC66-44EA-9A53-61EC161275B4,B2B2A210-0E86-44B8-8989-B8BFF6E22B66,24012F7D-C125-4EB7-A661-6AF65523E43C,7570CB15-9143-4901-BA9D-1C7AC6CC57B0,3500B5F2-AA30-4596-A6A1-9D18DD42697F,F4388A16-1831-44E0-A4DC-036AD4634E32,E404DC51-323B-4DB4-ABD3-0A9F02C0429E,681CC85A-EBAD-40AB-A854-E4A9D6B4686B,54652BC1-43E5-4A00-AA7F-57F79D369CA3,4E2076A6-D484-45D5-A700-65F57E83A626,2F4F4C52-74FD-47F2-814C-9B724750A728,356F3DBE-3A10-4130-9714-581B6306C620,9E997B13-E911-48FB-BC97-AAED66250674,EEE15A04-1AB1-43EA-945E-B93EA6DD920A,2F509ED0-1E91-4B0B-B8D4-254F3F3AAF9E,5D28EDAC-F84F-42EB-8DB3-28EC65330287,2FED3EA5-8652-47B2-BD81-500D81790498,155A5A06-6814-42D2-9633-962CD8385208,13087295-1C74-4EA7-8D1B-9C3A87A6A1E4,F9F76124-FBCA-4994-BF9F-326BFD69025D,375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C,4D1E08A9-6683-491C-91D3-27E726C30903,A00E1383-6981-405B-A176-A835A183C1ED",
@@ -1446,7 +1487,7 @@
      "take": "50"
     },
     "cache": "hit",
-    "ms": 18
+    "ms": 15
    },
    {
     "endpoint": "/v2/insights",
@@ -1458,7 +1499,7 @@
      "take": "34"
     },
     "cache": "hit",
-    "ms": 21
+    "ms": 22
    },
    {
     "endpoint": "/v2/insights",
@@ -1470,7 +1511,7 @@
      "take": "48"
     },
     "cache": "hit",
-    "ms": 19
+    "ms": 17
    },
    {
     "endpoint": "/v2/insights",
@@ -1482,7 +1523,7 @@
      "take": "50"
     },
     "cache": "hit",
-    "ms": 37
+    "ms": 35
    },
    {
     "endpoint": "/v2/insights",
@@ -1494,7 +1535,7 @@
      "take": "50"
     },
     "cache": "hit",
-    "ms": 22
+    "ms": 27
    },
    {
     "endpoint": "/v2/insights",
@@ -1506,7 +1547,7 @@
      "take": "13"
     },
     "cache": "hit",
-    "ms": 8
+    "ms": 2
    },
    {
     "endpoint": "/v2/insights",
@@ -1518,7 +1559,7 @@
      "take": "40"
     },
     "cache": "hit",
-    "ms": 20
+    "ms": 16
    },
    {
     "endpoint": "/v2/insights",
@@ -1545,7 +1586,7 @@
    "qloo": "live",
    "llm": "agent"
   },
-  "usd": 0.014194,
+  "usd": 0.014835999999999998,
   "gap": {
    "formats": [
     "urn:entity:artist",
@@ -1677,7 +1718,8 @@
       "Spirited Away"
      ],
      "year": "2001",
-     "blurb": "Spirited Away (2001), directed by Hayao Miyazaki and produced by Studio Ghibli, is an animated fantasy adventure featuring voices including Daveigh Chase, Miyu Irino and Suzanne Pleshette in its Engli"
+     "blurb": "Spirited Away (2001), directed by Hayao Miyazaki and produced by Studio Ghibli, is an animated fantasy adventure featuring voices including Daveigh Chase, Miyu Irino and Suzanne Pleshette in its Engli",
+     "age_min": 0
     },
     "affinity": 0.8700139130241121,
     "lift": 2.891048592943531,
@@ -1691,7 +1733,7 @@
       "contribution": 0.4585763496666938
      }
     ],
-    "why": "Spirited Away is Studio Ghibli's masterpiece, featuring Hayao Miyazaki's painterly art style and emotionally engaged storytelling.",
+    "why": "A direct match: the Studio Ghibli masterpiece with painterly animation and emotionally engaged storytelling she loves.",
     "direct": [
      "Studio Ghibli"
     ],
@@ -1729,7 +1771,8 @@
       "Genshin Impact"
      ],
      "year": "",
-     "blurb": "Genshin Impact is a free-to-play action RPG set in the open fantasy world of Teyvat."
+     "blurb": "Genshin Impact is a free-to-play action RPG set in the open fantasy world of Teyvat.",
+     "age_min": 13
     },
     "affinity": 0.8603579145795531,
     "lift": 1.9313863164862977,
@@ -1743,54 +1786,9 @@
       "contribution": 0.36204050167212465
      }
     ],
-    "why": "Genshin Impact offers cel-shaded, anime-style visuals with beautiful art that echoes Studio Ghibli's aesthetic on PlayStation 5.",
+    "why": "Cel-shaded anime-style game with beautiful art and character collection that mirrors Studio Ghibli's artistic sensibility.",
     "direct": [],
     "basis": "Qloo: #1 of 49 games here for fans of Studio Ghibli."
-   },
-   {
-    "item": {
-     "id": "c026",
-     "category": "Vinyl",
-     "price_usd": 38,
-     "qloo": {
-      "type": "urn:entity:artist",
-      "name": "Florence + the Machine",
-      "entity_id": "233F9195-E25B-4B33-B25C-A211C21EF583"
-     },
-     "tags": [
-      "Indie Rock",
-      "Bjork",
-      "Folk Rock",
-      "Poetic",
-      "Spirituality",
-      "Dynamic",
-      "Artistic",
-      "Drums"
-     ],
-     "popularity": 0.999695259815583,
-     "image": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/9f/a6/0c/9fa60c63-a582-9ce9-0401-fefb48648c99/00602547252395.rgb.jpg/600x600bb.jpg",
-     "image_source": "itunes",
-     "title": "Florence + the Machine: How Big, How Blue, How Beautiful (Deluxe), LP",
-     "creators": [
-      "Florence + the Machine"
-     ],
-     "works": [
-      "How Big, How Blue, How Beautiful (Deluxe)"
-     ],
-     "year": "2015",
-     "blurb": "Florence + The Machine are an English indie-rock/art-pop band fronted by singer Florence Welch. Formed in London in the late 2000s, the group is known for lush, harp- and piano-inflected arrangements, Welch's powerful, theatrical vocals, and music that blends baroque-pop, soul and festival-ready indie rock."
-    },
-    "affinity": 0.939745226504217,
-    "lift": 1.9796580556188743,
-    "chain": [
-     {
-      "signal": "Lana Del Rey",
-      "contribution": 1
-     }
-    ],
-    "why": "Florence + the Machine's Deluxe LP shares Lana Del Rey's poetic sensibility, with dynamic indie rock and spiritual themes she'll connect with.",
-    "direct": [],
-    "basis": "Qloo: #1 of 112 records here for fans of Lana Del Rey."
    },
    {
     "item": {
@@ -1823,7 +1821,8 @@
       "xx (Deluxe)"
      ],
      "year": "2009",
-     "blurb": "The xx is an English indie pop band formed in London in 2005, consisting of Romy Madley Croft, Oliver Sim, and Jamie Smith (also known as Jamie xx). They are renowned for their minimalist sound characterized by sparse arrangements, soft vocals, and a blend of indie pop, dream pop, and electropop influences."
+     "blurb": "The xx is an English indie pop band formed in London in 2005, consisting of Romy Madley Croft, Oliver Sim, and Jamie Smith (also known as Jamie xx). They are renowned for their minimalist sound characterized by sparse arrangements, soft vocals, and a blend of indie pop, dream pop, and electropop influences.",
+     "age_min": 0
     },
     "affinity": 0.9226307325748401,
     "lift": 2.95755889169914,
@@ -1833,9 +1832,55 @@
       "contribution": 1
      }
     ],
-    "why": "The xx's self-titled LP captures the intimate, artistic introspection Lana Del Rey embodies, with electropop and enigmatic production.",
+    "why": "The xx's artistic indie rock with intimate introspection, matching Lana Del Rey's melancholic and enigmatic appeal.",
     "direct": [],
     "basis": "Qloo: #3 of 112 records here for fans of Lana Del Rey."
+   },
+   {
+    "item": {
+     "id": "c026",
+     "category": "Vinyl",
+     "price_usd": 38,
+     "qloo": {
+      "type": "urn:entity:artist",
+      "name": "Florence + the Machine",
+      "entity_id": "233F9195-E25B-4B33-B25C-A211C21EF583"
+     },
+     "tags": [
+      "Indie Rock",
+      "Bjork",
+      "Folk Rock",
+      "Poetic",
+      "Spirituality",
+      "Dynamic",
+      "Artistic",
+      "Drums"
+     ],
+     "popularity": 0.999695259815583,
+     "image": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/9f/a6/0c/9fa60c63-a582-9ce9-0401-fefb48648c99/00602547252395.rgb.jpg/600x600bb.jpg",
+     "image_source": "itunes",
+     "title": "Florence + the Machine: How Big, How Blue, How Beautiful (Deluxe), LP",
+     "creators": [
+      "Florence + the Machine"
+     ],
+     "works": [
+      "How Big, How Blue, How Beautiful (Deluxe)"
+     ],
+     "year": "2015",
+     "blurb": "Florence + The Machine are an English indie-rock/art-pop band fronted by singer Florence Welch. Formed in London in the late 2000s, the group is known for lush, harp- and piano-inflected arrangements, Welch's powerful, theatrical vocals, and music that blends baroque-pop, soul and festival-ready indie rock.",
+     "age_min": 0
+    },
+    "affinity": 0.939745226504217,
+    "lift": 1.9796580556188743,
+    "chain": [
+     {
+      "signal": "Lana Del Rey",
+      "contribution": 1
+     }
+    ],
+    "why": "Florence + the Machine's poetic folk rock with dynamic spirituality, resonating with the melancholic artistic taste.",
+    "direct": [],
+    "basis": "Qloo: #1 of 112 records here for fans of Lana Del Rey."
    },
    {
     "item": {
@@ -1869,7 +1914,8 @@
       "Stardew Valley"
      ],
      "year": "2016",
-     "blurb": "You inherit a run-down farm and rebuild it while forming relationships, exploring caves, farming, and shaping your life in a small town."
+     "blurb": "You inherit a run-down farm and rebuild it while forming relationships, exploring caves, farming, and shaping your life in a small town.",
+     "age_min": 0
     },
     "affinity": 0.8307408083586995,
     "lift": 1.7805361782210702,
@@ -1883,13 +1929,49 @@
       "contribution": 0.40005873538229264
      }
     ],
-    "why": "Stardew Valley combines cozy 2D pixel art and retro charm that appeals to Studio Ghibli fans seeking beautiful, contemplative gameplay.",
+    "why": "Cozy pixel art game with retro charm and addictive progression, evoking the gentle artistic world Studio Ghibli fans appreciate.",
     "direct": [],
     "basis": "Qloo: #2 of 49 games here for fans of Studio Ghibli."
    }
   ],
-  "note": "We carry Florence + the Machine, but Lana Del Rey fans also love Lorde, The Neighbourhood, Marina & the Diamonds, HAIM, Tove Lo, Foster the People, Zella Day, The 1975, and Banks - artists we don't currently stock.",
-  "savedAt": "2026-10-06T20:48:54.031Z"
+  "note": "We're missing artists Studio Ghibli and Lana Del Rey fans love: Lorde, The Neighbourhood, Marina & the Diamonds, HAIM, Tove Lo, Foster the People, Zella Day, The 1975, and Banks. Worth stocking for this taste.",
+  "savedAt": "2026-10-07T10:29:48.833Z",
+  "claudeAlone": {
+   "items": [
+    {
+     "id": "c048",
+     "title": "Tyler, the Creator: CHROMAKOPIA, LP",
+     "category": "Vinyl",
+     "price_usd": 35
+    },
+    {
+     "id": "c008",
+     "title": "Lana Del Rey: Born To Die, LP",
+     "category": "Vinyl",
+     "price_usd": 35
+    },
+    {
+     "id": "c373",
+     "title": "Spirited Away (Blu-ray)",
+     "category": "Film",
+     "price_usd": 27
+    },
+    {
+     "id": "c362",
+     "title": "Hans Zimmer: Interstellar (Original Motion Picture Soundtrack) [Expanded Edition], LP",
+     "category": "Vinyl",
+     "price_usd": 38
+    },
+    {
+     "id": "c361",
+     "title": "Joe Hisaishi: Spirited Away (Original Soundtrack), LP",
+     "category": "Vinyl",
+     "price_usd": 27
+    }
+   ],
+   "model": "claude-haiku-4-5",
+   "note": "Same model, the whole catalog as text, no Qloo."
+  }
  },
  "I love Wes Anderson and Sofia Coppola films, and I put on Miles Davis late at night.": {
   "request": "I love Wes Anderson and Sofia Coppola films, and I put on Miles Davis late at night.",
@@ -2333,7 +2415,7 @@
    {
     "kind": "rank",
     "label": "Chose 5 pick(s) from 12 candidates",
-    "detail": "We're missing several key artists your tastes love: Television, Captain Beefheart, Sun Ra, John Cale, Ornette Coleman, David Byrne, Scott Walker, Talking Heads, and The Modern Lovers. I'm reporting these to our owner for restocking.",
+    "detail": "Qloo notes that fans of your tastes also love Television, Captain Beefheart & His Magic Band, Sun Ra, Ornette Coleman, David Byrne, Scott Walker, and Talking Heads - all artists we don't currently stock. Owner should consider adding these for your profile.",
     "status": "ok"
    }
   ],
@@ -2346,7 +2428,7 @@
      "types": "urn:entity:person"
     },
     "cache": "hit",
-    "ms": 2
+    "ms": 1
    },
    {
     "endpoint": "/search",
@@ -2388,7 +2470,7 @@
      "take": "50"
     },
     "cache": "hit",
-    "ms": 7
+    "ms": 8
    },
    {
     "endpoint": "/v2/insights",
@@ -2400,19 +2482,7 @@
      "take": "49"
     },
     "cache": "hit",
-    "ms": 16
-   },
-   {
-    "endpoint": "/v2/insights",
-    "params": {
-     "filter.type": "urn:entity:artist",
-     "signal.interests.entities": "C71B6CCE-3F05-4A57-AA84-9D2C2B4D67C5,886433CC-F22F-49BB-AD5A-8FD3E7B99983,578CFC26-B696-449A-9655-3FB270DDA725",
-     "filter.results.entities": "8D778858-C8B9-4F96-B72D-F367E4F3E396,B6FA456F-B729-4700-B01F-E82AD3AC8ADA,6700295B-3DBB-4F55-A5B0-80C155EA1186,BD2CDC36-5306-4213-A817-E7677E029CA6,C445C761-CB38-4FEE-B085-D35F444A04DF,310CF871-2A1F-4CBE-8D30-40B95BAEC054,F6754C46-B3E7-457F-8B7E-06C613597320,63BBE4D8-D721-466F-907C-D0007E9B6665,A9C3CE3F-9A0C-47B3-8AF8-E75B252F86D8,1D792A35-7D72-4D57-88D0-C3A4F3E73EF6,ABB725B5-B689-431B-A90F-A06FF9313F0F,62947437-2EC8-4C46-BE25-677E266DEB78,676A76B8-926C-4BA1-A6EF-0F32A5EA4225,4395AE84-43E1-45BC-9606-344226C6ADEC,02CD4C7F-C5A3-4AD2-B005-D0CBC07E1609,ADB51D79-491A-49E7-9A99-E1F739382E9F,AFB6CA3D-9620-4D8B-9958-6727BA40AFA6,8BE95420-BCDA-4B00-871F-247A55D35594,3A78E120-14F8-4DA2-93EE-1ED35F5FFEC7,E3CF515E-C3EA-46DF-92DD-64A0DC360C90,70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C,0D782363-86DC-4E61-8E83-364010035104,96322775-86D0-4778-AD77-0EA0971969CF,996272B0-CB79-48D3-8B83-8ED34F2DE9AF,BE94A541-4FEC-49CE-8865-C54834FD8484,233F9195-E25B-4B33-B25C-A211C21EF583,B4A3F0F0-354D-4CAD-9F96-11A20709CB9C,834A0FDB-BC66-44EA-9A53-61EC161275B4,B2B2A210-0E86-44B8-8989-B8BFF6E22B66,24012F7D-C125-4EB7-A661-6AF65523E43C,7570CB15-9143-4901-BA9D-1C7AC6CC57B0,3500B5F2-AA30-4596-A6A1-9D18DD42697F,F4388A16-1831-44E0-A4DC-036AD4634E32,E404DC51-323B-4DB4-ABD3-0A9F02C0429E,681CC85A-EBAD-40AB-A854-E4A9D6B4686B,54652BC1-43E5-4A00-AA7F-57F79D369CA3,4E2076A6-D484-45D5-A700-65F57E83A626,2F4F4C52-74FD-47F2-814C-9B724750A728,356F3DBE-3A10-4130-9714-581B6306C620,9E997B13-E911-48FB-BC97-AAED66250674,EEE15A04-1AB1-43EA-945E-B93EA6DD920A,2F509ED0-1E91-4B0B-B8D4-254F3F3AAF9E,5D28EDAC-F84F-42EB-8DB3-28EC65330287,2FED3EA5-8652-47B2-BD81-500D81790498,155A5A06-6814-42D2-9633-962CD8385208,13087295-1C74-4EA7-8D1B-9C3A87A6A1E4,F9F76124-FBCA-4994-BF9F-326BFD69025D,375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C,4D1E08A9-6683-491C-91D3-27E726C30903,A00E1383-6981-405B-A176-A835A183C1ED",
-     "feature.explainability": "true",
-     "take": "50"
-    },
-    "cache": "hit",
-    "ms": 25
+    "ms": 10
    },
    {
     "endpoint": "/v2/insights",
@@ -2424,7 +2494,19 @@
      "take": "34"
     },
     "cache": "hit",
-    "ms": 31
+    "ms": 18
+   },
+   {
+    "endpoint": "/v2/insights",
+    "params": {
+     "filter.type": "urn:entity:artist",
+     "signal.interests.entities": "C71B6CCE-3F05-4A57-AA84-9D2C2B4D67C5,886433CC-F22F-49BB-AD5A-8FD3E7B99983,578CFC26-B696-449A-9655-3FB270DDA725",
+     "filter.results.entities": "8D778858-C8B9-4F96-B72D-F367E4F3E396,B6FA456F-B729-4700-B01F-E82AD3AC8ADA,6700295B-3DBB-4F55-A5B0-80C155EA1186,BD2CDC36-5306-4213-A817-E7677E029CA6,C445C761-CB38-4FEE-B085-D35F444A04DF,310CF871-2A1F-4CBE-8D30-40B95BAEC054,F6754C46-B3E7-457F-8B7E-06C613597320,63BBE4D8-D721-466F-907C-D0007E9B6665,A9C3CE3F-9A0C-47B3-8AF8-E75B252F86D8,1D792A35-7D72-4D57-88D0-C3A4F3E73EF6,ABB725B5-B689-431B-A90F-A06FF9313F0F,62947437-2EC8-4C46-BE25-677E266DEB78,676A76B8-926C-4BA1-A6EF-0F32A5EA4225,4395AE84-43E1-45BC-9606-344226C6ADEC,02CD4C7F-C5A3-4AD2-B005-D0CBC07E1609,ADB51D79-491A-49E7-9A99-E1F739382E9F,AFB6CA3D-9620-4D8B-9958-6727BA40AFA6,8BE95420-BCDA-4B00-871F-247A55D35594,3A78E120-14F8-4DA2-93EE-1ED35F5FFEC7,E3CF515E-C3EA-46DF-92DD-64A0DC360C90,70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C,0D782363-86DC-4E61-8E83-364010035104,96322775-86D0-4778-AD77-0EA0971969CF,996272B0-CB79-48D3-8B83-8ED34F2DE9AF,BE94A541-4FEC-49CE-8865-C54834FD8484,233F9195-E25B-4B33-B25C-A211C21EF583,B4A3F0F0-354D-4CAD-9F96-11A20709CB9C,834A0FDB-BC66-44EA-9A53-61EC161275B4,B2B2A210-0E86-44B8-8989-B8BFF6E22B66,24012F7D-C125-4EB7-A661-6AF65523E43C,7570CB15-9143-4901-BA9D-1C7AC6CC57B0,3500B5F2-AA30-4596-A6A1-9D18DD42697F,F4388A16-1831-44E0-A4DC-036AD4634E32,E404DC51-323B-4DB4-ABD3-0A9F02C0429E,681CC85A-EBAD-40AB-A854-E4A9D6B4686B,54652BC1-43E5-4A00-AA7F-57F79D369CA3,4E2076A6-D484-45D5-A700-65F57E83A626,2F4F4C52-74FD-47F2-814C-9B724750A728,356F3DBE-3A10-4130-9714-581B6306C620,9E997B13-E911-48FB-BC97-AAED66250674,EEE15A04-1AB1-43EA-945E-B93EA6DD920A,2F509ED0-1E91-4B0B-B8D4-254F3F3AAF9E,5D28EDAC-F84F-42EB-8DB3-28EC65330287,2FED3EA5-8652-47B2-BD81-500D81790498,155A5A06-6814-42D2-9633-962CD8385208,13087295-1C74-4EA7-8D1B-9C3A87A6A1E4,F9F76124-FBCA-4994-BF9F-326BFD69025D,375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C,4D1E08A9-6683-491C-91D3-27E726C30903,A00E1383-6981-405B-A176-A835A183C1ED",
+     "feature.explainability": "true",
+     "take": "50"
+    },
+    "cache": "hit",
+    "ms": 23
    },
    {
     "endpoint": "/v2/insights",
@@ -2436,7 +2518,7 @@
      "take": "48"
     },
     "cache": "hit",
-    "ms": 30
+    "ms": 17
    },
    {
     "endpoint": "/v2/insights",
@@ -2448,7 +2530,7 @@
      "take": "50"
     },
     "cache": "hit",
-    "ms": 47
+    "ms": 34
    },
    {
     "endpoint": "/v2/insights",
@@ -2460,7 +2542,7 @@
      "take": "50"
     },
     "cache": "hit",
-    "ms": 28
+    "ms": 18
    },
    {
     "endpoint": "/v2/insights",
@@ -2484,7 +2566,7 @@
      "take": "40"
     },
     "cache": "hit",
-    "ms": 18
+    "ms": 15
    },
    {
     "endpoint": "/v2/insights",
@@ -2494,7 +2576,7 @@
      "take": "10"
     },
     "cache": "hit",
-    "ms": 3
+    "ms": 2
    },
    {
     "endpoint": "/v2/insights",
@@ -2504,14 +2586,14 @@
      "take": "10"
     },
     "cache": "hit",
-    "ms": 3
+    "ms": 5
    }
   ],
   "modes": {
    "qloo": "live",
    "llm": "agent"
   },
-  "usd": 0.014811,
+  "usd": 0.015958,
   "gap": {
    "formats": [
     "urn:entity:artist",
@@ -2649,7 +2731,8 @@
       "Moonrise Kingdom"
      ],
      "year": "2012",
-     "blurb": "Moonrise Kingdom (2012), directed by Wes Anderson and starring Jared Gilman, Kara Hayward and Bruce Willis, is an offbeat coming-of-age romantic adventure set on a New England island in the 1960s."
+     "blurb": "Moonrise Kingdom (2012), directed by Wes Anderson and starring Jared Gilman, Kara Hayward and Bruce Willis, is an offbeat coming-of-age romantic adventure set on a New England island in the 1960s.",
+     "age_min": 13
     },
     "affinity": 0.8565525928605905,
     "lift": 2.0155867067749638,
@@ -2667,7 +2750,7 @@
       "contribution": 0.23149547732383358
      }
     ],
-    "why": "Wes Anderson's Moonrise Kingdom shares the meticulously crafted, pastel-hued world of your favorite directors, with whimsical storytelling and deep melancholy beneath the surface.",
+    "why": "Loved by fans of Wes Anderson, by Qloo's count.",
     "direct": [
      "Wes Anderson"
     ],
@@ -2707,7 +2790,8 @@
       "Lost in Translation"
      ],
      "year": "2003",
-     "blurb": "Lost in Translation (2003), directed by Sofia Coppola and starring Bill Murray, Scarlett Johansson and Giovanni Ribisi, is an indie-leaning comedy-drama that follows the fragile, quietly charged relationship between a fading movie star and a young woman in Tokyo."
+     "blurb": "Lost in Translation (2003), directed by Sofia Coppola and starring Bill Murray, Scarlett Johansson and Giovanni Ribisi, is an indie-leaning comedy-drama that follows the fragile, quietly charged relationship between a fading movie star and a young woman in Tokyo.",
+     "age_min": 17
     },
     "affinity": 0.8629856273254113,
     "lift": 2.0733840295447137,
@@ -2725,7 +2809,7 @@
       "contribution": 0.2431192714100843
      }
     ],
-    "why": "Sofia Coppola's Lost in Translation captures the reflective, cigarette-smoking atmosphere you appreciate, with postmodern sensibility and subtle emotional complexity.",
+    "why": "Sofia Coppola's breakthrough, a reflective meditation on age and loneliness in Tokyo that shares the introspective melancholy and cigarette-smoking solitude of your late-night Miles Davis sessions.",
     "direct": [
      "Sofia Coppola"
     ],
@@ -2762,7 +2846,8 @@
       "Giant Steps (2020 Remaster)"
      ],
      "year": "1960",
-     "blurb": "John Coltrane (1926–1967) was a groundbreaking American jazz saxophonist and composer whose work reshaped modern jazz. Beginning in bebop and hard bop, he helped pioneer modal jazz and later pushed into free and spiritual jazz."
+     "blurb": "John Coltrane (1926–1967) was a groundbreaking American jazz saxophonist and composer whose work reshaped modern jazz. Beginning in bebop and hard bop, he helped pioneer modal jazz and later pushed into free and spiritual jazz.",
+     "age_min": 0
     },
     "affinity": 0.9105919718685291,
     "lift": 8.094598593426456,
@@ -2780,7 +2865,7 @@
       "contribution": 0.2749619783730282
      }
     ],
-    "why": "John Coltrane's Giant Steps offers the saxophone-driven jazz exploration that pairs perfectly with your Miles Davis nights, with innovative post-bop arrangements for late-night listening.",
+    "why": "John Coltrane's saxophone-driven Giant Steps, the avant-garde companion to your Miles Davis nights - innovative post-bop jazz that rewards nocturnal listening.",
     "direct": [],
     "basis": "Qloo: #3 of 112 records here for fans of Miles Davis."
    },
@@ -2815,7 +2900,8 @@
       "Straight, No Chaser"
      ],
      "year": "1967",
-     "blurb": "Thelonious Monk was a pioneering American jazz pianist and composer, renowned for his distinctive improvisational style and contributions to the bebop genre. His music is characterized by dissonant harmonies, angular melodic twists, and a percussive approach to the piano."
+     "blurb": "Thelonious Monk was a pioneering American jazz pianist and composer, renowned for his distinctive improvisational style and contributions to the bebop genre. His music is characterized by dissonant harmonies, angular melodic twists, and a percussive approach to the piano.",
+     "age_min": 0
     },
     "affinity": 0.9144106420042494,
     "lift": 9.080532100212467,
@@ -2833,7 +2919,7 @@
       "contribution": 0.28954617927516474
      }
     ],
-    "why": "Thelonious Monk's Straight, No Chaser is piano-driven free jazz that echoes the groundbreaking sensibility of both Anderson and Coppola's work, with melancholic atmosphere ideal for evening play.",
+    "why": "Thelonious Monk's piano-led Jazz masterpiece, a groundbreaking modern jazz album that captures the same meditative, meticulously crafted atmosphere as Anderson and Coppola.",
     "direct": [],
     "basis": "Qloo: #2 of 112 records here for fans of Miles Davis."
    },
@@ -2869,7 +2955,8 @@
       "Outer Wilds"
      ],
      "year": "",
-     "blurb": "Outer Wilds is an open-world exploration mystery in which the player explores a small solar system trapped in a repeating time loop, investigating extinct civilizations, planetary hazards, and hidden secrets to uncover why the loop exists."
+     "blurb": "Outer Wilds is an open-world exploration mystery in which the player explores a small solar system trapped in a repeating time loop, investigating extinct civilizations, planetary hazards, and hidden secrets to uncover why the loop exists.",
+     "age_min": 13
     },
     "affinity": 0.8621747003863415,
     "lift": 2.612354011320052,
@@ -2887,13 +2974,49 @@
       "contribution": 0.28542610608166197
      }
     ],
-    "why": "Outer Wilds is a stylized, thought-provoking game with a beautiful soundtrack that matches the meticulously crafted and angst-ridden sensibility you love in film and music.",
+    "why": "Outer Wilds, a stylized time-loop game with a beautiful soundtrack and thought-provoking storytelling that shares the groundbreaking craftsmanship and melancholic atmosphere of your favorite filmmaker",
     "direct": [],
     "basis": "Qloo: #1 of 49 games here for fans of Wes Anderson."
    }
   ],
-  "note": "We're missing several key artists your tastes love: Television, Captain Beefheart, Sun Ra, John Cale, Ornette Coleman, David Byrne, Scott Walker, Talking Heads, and The Modern Lovers. I'm reporting these to our owner for restocking.",
-  "savedAt": "2026-10-06T20:49:04.261Z"
+  "note": "Qloo notes that fans of your tastes also love Television, Captain Beefheart & His Magic Band, Sun Ra, Ornette Coleman, David Byrne, Scott Walker, and Talking Heads - all artists we don't currently stock. Owner should consider adding these for your profile.",
+  "savedAt": "2026-10-07T10:29:59.445Z",
+  "claudeAlone": {
+   "items": [
+    {
+     "id": "c216",
+     "title": "The Grand Budapest Hotel (4K UHD Blu-ray)",
+     "category": "Film",
+     "price_usd": 21
+    },
+    {
+     "id": "c219",
+     "title": "Moonrise Kingdom (4K UHD Blu-ray)",
+     "category": "Film",
+     "price_usd": 20
+    },
+    {
+     "id": "c257",
+     "title": "The Royal Tenenbaums (Blu-ray)",
+     "category": "Film",
+     "price_usd": 16
+    },
+    {
+     "id": "c353",
+     "title": "Miles Davis: Bitches Brew, LP",
+     "category": "Vinyl",
+     "price_usd": 25
+    },
+    {
+     "id": "c373",
+     "title": "Spirited Away (Blu-ray)",
+     "category": "Film",
+     "price_usd": 27
+    }
+   ],
+   "model": "claude-haiku-4-5",
+   "note": "Same model, the whole catalog as text, no Qloo."
+  }
  },
  "I'm all Taylor Swift and cozy fantasy books like The House in the Cerulean Sea.": {
   "request": "I'm all Taylor Swift and cozy fantasy books like The House in the Cerulean Sea.",
@@ -2937,7 +3060,7 @@
    {
     "kind": "score",
     "label": "Scored all 384 titles with Qloo affinity",
-    "detail": "12 candidates within budget",
+    "detail": "14 candidates within budget",
     "status": "ok",
     "light": {
      "c084": 0.01,
@@ -3325,14 +3448,13 @@
    },
    {
     "kind": "score",
-    "label": "Store check: we carry 5 of the 10 titles this taste loves most",
+    "label": "Store check: we carry 4 of the 10 titles this taste loves most",
     "detail": "Missing ones go to the owner: Demi Lovato, One Direction, Selena Gomez & the Scene",
     "status": "ok"
    },
    {
     "kind": "rank",
-    "label": "Chose 5 pick(s) from 12 candidates",
-    "detail": "We're missing several artists your tastes love most: Demi Lovato, One Direction, Selena Gomez & the Scene, Bruno Mars, and Jonas Brothers. I'll note this for the owner to restock.",
+    "label": "Chose 5 pick(s) from 14 candidates",
     "status": "ok"
    }
   ],
@@ -3345,7 +3467,7 @@
      "types": "urn:entity:artist"
     },
     "cache": "hit",
-    "ms": 2
+    "ms": 9
    },
    {
     "endpoint": "/search",
@@ -3355,7 +3477,7 @@
      "types": "urn:entity:book"
     },
     "cache": "hit",
-    "ms": 0
+    "ms": 2
    },
    {
     "endpoint": "/search",
@@ -3364,7 +3486,7 @@
      "take": "3"
     },
     "cache": "hit",
-    "ms": 1
+    "ms": 7
    },
    {
     "endpoint": "/v2/insights",
@@ -3386,7 +3508,7 @@
      "take": "50"
     },
     "cache": "hit",
-    "ms": 8
+    "ms": 7
    },
    {
     "endpoint": "/v2/insights",
@@ -3398,7 +3520,7 @@
      "take": "49"
     },
     "cache": "hit",
-    "ms": 11
+    "ms": 9
    },
    {
     "endpoint": "/v2/insights",
@@ -3410,7 +3532,7 @@
      "take": "50"
     },
     "cache": "hit",
-    "ms": 18
+    "ms": 15
    },
    {
     "endpoint": "/v2/insights",
@@ -3422,7 +3544,7 @@
      "take": "34"
     },
     "cache": "hit",
-    "ms": 22
+    "ms": 19
    },
    {
     "endpoint": "/v2/insights",
@@ -3434,7 +3556,7 @@
      "take": "48"
     },
     "cache": "hit",
-    "ms": 18
+    "ms": 16
    },
    {
     "endpoint": "/v2/insights",
@@ -3446,7 +3568,7 @@
      "take": "50"
     },
     "cache": "hit",
-    "ms": 37
+    "ms": 36
    },
    {
     "endpoint": "/v2/insights",
@@ -3458,7 +3580,7 @@
      "take": "50"
     },
     "cache": "hit",
-    "ms": 21
+    "ms": 27
    },
    {
     "endpoint": "/v2/insights",
@@ -3470,7 +3592,7 @@
      "take": "13"
     },
     "cache": "hit",
-    "ms": 2
+    "ms": 3
    },
    {
     "endpoint": "/v2/insights",
@@ -3482,7 +3604,17 @@
      "take": "40"
     },
     "cache": "hit",
-    "ms": 16
+    "ms": 23
+   },
+   {
+    "endpoint": "/v2/insights",
+    "params": {
+     "filter.type": "urn:entity:book",
+     "signal.interests.entities": "4BBEF799-A0C4-4110-AB01-39216993C312,CA6A1C69-7632-4F83-98E1-9CCB4CAA4400",
+     "take": "10"
+    },
+    "cache": "hit",
+    "ms": 1
    },
    {
     "endpoint": "/v2/insights",
@@ -3493,27 +3625,17 @@
     },
     "cache": "hit",
     "ms": 1
-   },
-   {
-    "endpoint": "/v2/insights",
-    "params": {
-     "filter.type": "urn:entity:movie",
-     "signal.interests.entities": "4BBEF799-A0C4-4110-AB01-39216993C312,CA6A1C69-7632-4F83-98E1-9CCB4CAA4400",
-     "take": "10"
-    },
-    "cache": "hit",
-    "ms": 2
    }
   ],
   "modes": {
    "qloo": "live",
    "llm": "agent"
   },
-  "usd": 0.013856,
+  "usd": 0.015431000000000002,
   "gap": {
    "formats": [
-    "urn:entity:artist",
-    "urn:entity:movie"
+    "urn:entity:book",
+    "urn:entity:artist"
    ],
    "wanted": [
     {
@@ -3539,14 +3661,6 @@
      "image": "https://lastfm.freetls.fastly.net/i/u/770x0/2a96cbd8b46e442.jpg",
      "affinity": 0.9597487932706177,
      "owned": false
-    },
-    {
-     "entity_id": "8E2814F5-4FAA-435B-A426-5A892452CC9E",
-     "name": "Me Before You",
-     "type": "urn:entity:movie",
-     "image": "https://m.media-amazon.com/images/M/MV5BMTQ2NjE4NDE2NV5BMl5BanBnXkFtZTgwOTcwNDE5NzE@._V1_.jpg",
-     "affinity": 0.954619618502563,
-     "owned": true
     },
     {
      "entity_id": "705FCAEF-5937-446C-BEC0-EDDDBBE35A04",
@@ -3595,9 +3709,17 @@
      "image": "https://lastfm.freetls.fastly.net/i/u/770x0/193c3e86be0a828e2090f5b75be4b3c0.jpg",
      "affinity": 0.9441549642043129,
      "owned": true
+    },
+    {
+     "entity_id": "809B75F5-6747-459D-8A98-EA31A5CF7C80",
+     "name": "P!nk",
+     "type": "urn:entity:artist",
+     "image": "https://lastfm.freetls.fastly.net/i/u/770x0/65ded6ef9498d16a0358bbc2e483d2bc.jpg",
+     "affinity": 0.9440690026869211,
+     "owned": false
     }
    ],
-   "coverage": 0.5
+   "coverage": 0.4
   },
   "audience": null,
   "turns": 4,
@@ -3610,48 +3732,53 @@
   "picks": [
    {
     "item": {
-     "id": "c058",
-     "category": "Vinyl",
-     "price_usd": 42,
+     "id": "c112",
+     "category": "Books",
+     "price_usd": 28,
      "qloo": {
-      "type": "urn:entity:artist",
-      "name": "Carly Rae Jepsen",
-      "entity_id": "A3A7CEAC-FE66-49E4-AC58-D619BC48C840"
+      "type": "urn:entity:book",
+      "name": "Under the Whispering Door",
+      "entity_id": "3BBE0F4F-9E58-4AD4-8806-B23EE2C42173"
      },
      "tags": [
-      "Catchy",
-      "Bubblegum Pop",
-      "Synth-Pop",
-      "Loyal",
-      "Piano",
-      "Melodic",
-      "Love",
-      "Youth"
+      "Contemporary",
+      "Fiction",
+      "Audiobook",
+      "Paranormal",
+      "Fantasy",
+      "LGBT",
+      "Queer",
+      "Romance"
      ],
-     "popularity": 0.9982764157311471,
-     "image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8e/b9/9b/8eb99b2a-f730-0df5-3c2c-4175d57cd84d/15UMGIM31527.rgb.jpg/600x600bb.jpg",
-     "image_source": "itunes",
-     "title": "Carly Rae Jepsen: E•MO•TION, LP",
+     "popularity": 0.9988439935263638,
+     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1652374208i/53205888.jpg",
+     "image_source": "qloo",
+     "title": "TJ Klune: Under the Whispering Door",
      "creators": [
-      "Carly Rae Jepsen"
+      "TJ Klune"
      ],
      "works": [
-      "E•MO•TION"
+      "Under the Whispering Door"
      ],
-     "year": "2015",
-     "blurb": "Carly Rae Jepsen is a Canadian singer-songwriter who rose to fame after placing on Canadian Idol and then achieving international success with the 2011 viral hit \"Call Me Maybe.\" Her catalog spans bright mainstream pop, synth-driven indie pop and earlier folk/acoustic work."
+     "year": "2021",
+     "blurb": "A man discovers he is dead and has one week to live a lifetime before crossing over.",
+     "age_min": 16
     },
-    "affinity": 0.9666379041407961,
-    "lift": 1.7358249879663317,
+    "affinity": 0.7124871489687165,
+    "lift": 1.719167255324811,
     "chain": [
      {
+      "signal": "The House in the Cerulean Sea",
+      "contribution": 0.6924714940053213
+     },
+     {
       "signal": "Taylor Swift",
-      "contribution": 1
+      "contribution": 0.3075285059946787
      }
     ],
-    "why": "Catchy synth-pop vinyl from an artist who shares Taylor's melodic pop sensibility and loyal fanbase.",
+    "why": "TJ Klune's paranormal fantasy with contemporary warmth, just like Cerulean Sea but with a ghost house and found family charm.",
     "direct": [],
-    "basis": "Qloo: #1 of 112 records here for fans of Taylor Swift."
+    "basis": "Qloo: #7 of 96 books here for fans of The House in the Cerulean Sea."
    },
    {
     "item": {
@@ -3684,7 +3811,8 @@
       "PRISM (Deluxe Version)"
      ],
      "year": "2013",
-     "blurb": "Katy Perry is an American singer, songwriter, and television judge who rose to fame with her 2008 hit single 'I Kissed a Girl.' Known for her wide vocal range and colorful, playful image, she has become one of the best-selling music artists worldwide."
+     "blurb": "Katy Perry is an American singer, songwriter, and television judge who rose to fame with her 2008 hit single 'I Kissed a Girl.' Known for her wide vocal range and colorful, playful image, she has become one of the best-selling music artists worldwide.",
+     "age_min": 0
     },
     "affinity": 0.9486837411584252,
     "lift": 1.2433162062370788,
@@ -3694,57 +3822,105 @@
       "contribution": 1
      }
     ],
-    "why": "Katy Perry's Electropop and Dance Pop album appeals to fans of energetic, story-driven pop music like Taylor's catalog.",
+    "why": "Katy Perry's Electropop and Dance Pop energy resonates with Taylor Swift fans; PRISM delivers the same upbeat, confessional storytelling.",
     "direct": [],
     "basis": "Qloo: #2 of 112 records here for fans of Taylor Swift."
    },
    {
     "item": {
-     "id": "c239",
-     "category": "Film",
-     "price_usd": 26,
+     "id": "c152",
+     "category": "Books",
+     "price_usd": 28,
      "qloo": {
-      "type": "urn:entity:movie",
-      "name": "The Fault in Our Stars",
-      "entity_id": "CD5D743A-44D5-4FBF-A8C2-7BDFF3DE6628"
+      "type": "urn:entity:book",
+      "name": "The Book Eaters",
+      "entity_id": "ADDCCEED-5FF3-445F-8CBB-5EF4341E50AF"
      },
      "tags": [
-      "Coming of age",
-      "Teenage girl as protagonist",
-      "Grief",
-      "Voice over narration",
-      "Based on novel",
-      "Depression",
-      "Literary minded",
-      "Friendship"
+      "Fiction",
+      "Horror",
+      "Gothic",
+      "Adult",
+      "Books About Books",
+      "LGBT",
+      "Audiobook",
+      "Fantasy"
      ],
-     "popularity": 0.9945247197563662,
-     "image": "https://m.media-amazon.com/images/M/MV5BYTA4ODg5YWUtYmZiYy00Y2M4LWE0NjEtODE5MzhkYmJmZGEwXkEyXkFqcGc@._V1_.jpg",
+     "popularity": 0.9887833371866882,
+     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1634139994i/58724745.jpg",
      "image_source": "qloo",
-     "title": "The Fault in Our Stars (4K UHD Blu-ray)",
+     "title": "Sunyi Dean: The Book Eaters",
      "creators": [
-      "Josh Boone",
-      "Shailene Woodley",
-      "Ansel Elgort",
-      "Nat Wolff"
+      "Sunyi Dean"
      ],
      "works": [
-      "The Fault in Our Stars"
+      "The Book Eaters"
      ],
-     "year": "2014",
-     "blurb": "The Fault in Our Stars (2014), directed by Josh Boone and starring Shailene Woodley, Ansel Elgort and Nat Wolff, is a romantic drama adapted from a bestselling young adult novel."
+     "year": "2022",
+     "blurb": "Devon, a book eater, faces challenges when her son hungers for human minds.",
+     "age_min": 16
     },
-    "affinity": 0.9346906671829065,
-    "lift": 1.743168789603758,
+    "affinity": 0.5870566127904214,
+    "lift": 0.9268335798361627,
+    "chain": [
+     {
+      "signal": "The House in the Cerulean Sea",
+      "contribution": 0.6836259452857151
+     },
+     {
+      "signal": "Taylor Swift",
+      "contribution": 0.3163740547142848
+     }
+    ],
+    "why": "Gothic fiction that loves books as much as you do; a paranormal fantasy about a family of book eaters with the intimate character-driven vibes of Cerulean Sea.",
+    "direct": [],
+    "basis": "Qloo: #43 of 96 books here for fans of The House in the Cerulean Sea."
+   },
+   {
+    "item": {
+     "id": "c058",
+     "category": "Vinyl",
+     "price_usd": 42,
+     "qloo": {
+      "type": "urn:entity:artist",
+      "name": "Carly Rae Jepsen",
+      "entity_id": "A3A7CEAC-FE66-49E4-AC58-D619BC48C840"
+     },
+     "tags": [
+      "Catchy",
+      "Bubblegum Pop",
+      "Synth-Pop",
+      "Loyal",
+      "Piano",
+      "Melodic",
+      "Love",
+      "Youth"
+     ],
+     "popularity": 0.9982764157311471,
+     "image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8e/b9/9b/8eb99b2a-f730-0df5-3c2c-4175d57cd84d/15UMGIM31527.rgb.jpg/600x600bb.jpg",
+     "image_source": "itunes",
+     "title": "Carly Rae Jepsen: E•MO•TION, LP",
+     "creators": [
+      "Carly Rae Jepsen"
+     ],
+     "works": [
+      "E•MO•TION"
+     ],
+     "year": "2015",
+     "blurb": "Carly Rae Jepsen is a Canadian singer-songwriter who rose to fame after placing on Canadian Idol and then achieving international success with the 2011 viral hit \"Call Me Maybe.\" Her catalog spans bright mainstream pop, synth-driven indie pop and earlier folk/acoustic work.",
+     "age_min": 0
+    },
+    "affinity": 0.9666379041407961,
+    "lift": 1.7358249879663317,
     "chain": [
      {
       "signal": "Taylor Swift",
       "contribution": 1
      }
     ],
-    "why": "Loved by fans of Taylor Swift, by Qloo's count.",
+    "why": "Carly Rae Jepsen's Synth-Pop and Catchy hooks appeal to Taylor Swift fans; E•MO•TION has the melodic warmth and loyal fanbase energy.",
     "direct": [],
-    "basis": "Qloo: #2 of 90 films here for fans of Taylor Swift."
+    "basis": "Qloo: #1 of 112 records here for fans of Taylor Swift."
    },
    {
     "item": {
@@ -3783,7 +3959,8 @@
       "Beauty and the Beast"
      ],
      "year": "2017",
-     "blurb": "Beauty and the Beast (2017), directed by Bill Condon and starring Emma Watson, Dan Stevens, and Luke Evans, is a live-action musical adaptation of the classic fairy tale."
+     "blurb": "Beauty and the Beast (2017), directed by Bill Condon and starring Emma Watson, Dan Stevens, and Luke Evans, is a live-action musical adaptation of the classic fairy tale.",
+     "age_min": 7
     },
     "affinity": 0.927544086400721,
     "lift": 1.6690871268856877,
@@ -3796,60 +3973,44 @@
     "why": "Loved by fans of Taylor Swift, by Qloo's count.",
     "direct": [],
     "basis": "Qloo: #3 of 90 films here for fans of Taylor Swift."
-   },
-   {
-    "item": {
-     "id": "c326",
-     "category": "TV box sets",
-     "price_usd": 79,
-     "qloo": {
-      "type": "urn:entity:tv_show",
-      "name": "Nashville",
-      "entity_id": "04E89A27-F0C6-417A-A449-FE6F3B2090BC"
-     },
-     "tags": [
-      "Music venues",
-      "Music",
-      "Mature",
-      "Gay",
-      "Vulnerable",
-      "Romantic relationships",
-      "Cinematic",
-      "Backstage intimacy"
-     ],
-     "popularity": 0.9324512997805997,
-     "image": "https://m.media-amazon.com/images/M/MV5BMTEzNDE2Mjg0MTdeQTJeQWpwZ15BbWU4MDUxNTczNzAy._V1_.jpg",
-     "image_source": "qloo",
-     "title": "Nashville (complete series box set)",
-     "creators": [
-      "Hayden Panettiere",
-      "Clare Bowen",
-      "Charles Esten",
-      "Connie Britton",
-      "Powers Boothe",
-      "Oliver Hudson",
-      "Callie Khouri"
-     ],
-     "works": [
-      "Nashville"
-     ],
-     "year": "2012",
-     "blurb": "Nashville (2012) is an American musical drama television series that follows the intertwined lives of country music artists in Nashville, Tennessee."
-    },
-    "affinity": 0.9768441360997838,
-    "lift": 2.508734418776239,
-    "chain": [
-     {
-      "signal": "Taylor Swift",
-      "contribution": 1
-     }
-    ],
-    "why": "Music-driven TV series exploring vulnerable relationships and romantic storylines in a world tied to live performance and songwriting.",
-    "direct": [],
-    "basis": "Qloo: #1 of 34 TV shows here for fans of Taylor Swift."
    }
   ],
-  "note": "We're missing several artists your tastes love most: Demi Lovato, One Direction, Selena Gomez & the Scene, Bruno Mars, and Jonas Brothers. I'll note this for the owner to restock.",
-  "savedAt": "2026-10-06T20:49:13.252Z"
+  "savedAt": "2026-10-07T10:30:09.322Z",
+  "claudeAlone": {
+   "items": [
+    {
+     "id": "c351",
+     "title": "Taylor Swift: Taylor Swift (Bonus Track Version), LP",
+     "category": "Vinyl",
+     "price_usd": 37
+    },
+    {
+     "id": "c370",
+     "title": "T. J. Klune: The House in the Cerulean Sea",
+     "category": "Books",
+     "price_usd": 13
+    },
+    {
+     "id": "c368",
+     "title": "Haruki Murakami: Kafka on the Shore",
+     "category": "Books",
+     "price_usd": 27
+    },
+    {
+     "id": "c186",
+     "title": "John Green: Looking for Alaska",
+     "category": "Books",
+     "price_usd": 28
+    },
+    {
+     "id": "c127",
+     "title": "Cassandra Clare: Lady Midnight",
+     "category": "Books",
+     "price_usd": 28
+    }
+   ],
+   "model": "claude-haiku-4-5",
+   "note": "Same model, the whole catalog as text, no Qloo."
+  }
  }
 }

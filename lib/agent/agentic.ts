@@ -154,15 +154,23 @@ async function loop(request: string, onStep?: (s: Step) => void): Promise<Agenti
   // those formats when the shopper asked for nothing else. Budget and the 3-per-format spread come from shortlist.
   const asked = formatsAsked(request);
   let years = yearsFrom(request);
+  // How much a title owes to the tastes the shopper named in its own format (Qloo explainability): for "cozy
+  // fantasy books like The House in the Cerulean Sea", the books that fans of that book love, not the books
+  // that happen to rank high on the request as a whole.
+  const sameFormatPull = (x: Ranked) => {
+    const own = named.filter((n) => n.type === x.item.qloo.type).map((n) => n.id);
+    if (!own.length) return 0;
+    return Math.max(0, ...(scores?.get(x.item.id)?.chain ?? []).filter((c) => own.includes(c.entity_id)).map((c) => c.score));
+  };
   const pool = (r: Ranked[]): Ranked[] => {
     const fits = r.filter((x) => years === null || (x.item.age_min ?? 0) <= years);
     const inAsked = (x: Ranked) => asked.types.includes(x.item.qloo.type as QlooEntityType);
     if (asked.strict) return shortlist(fits.filter(inAsked), budget, 12, 12);
     const out = shortlist(fits, budget, 12, 3);
     for (const t of asked.types) {
-      const have = out.filter((x) => x.item.qloo.type === t).length;
-      const extra = fits.filter((x) => x.item.qloo.type === t && !out.includes(x) && (!budget || x.item.price_usd <= budget)).slice(0, Math.max(0, 2 - have));
-      out.push(...extra);
+      // The two titles of an asked format that the named taste of that format pulls hardest are always in the pool.
+      const best = fits.filter((x) => x.item.qloo.type === t && (!budget || x.item.price_usd <= budget)).sort((a, b) => sameFormatPull(b) - sameFormatPull(a)).slice(0, 2);
+      for (const x of best) if (!out.includes(x)) out.push(x);
     }
     return out;
   };
@@ -272,7 +280,7 @@ async function loop(request: string, onStep?: (s: Step) => void): Promise<Agenti
         // A format the shopper asked for must be in the answer: swap the last pick of another format for the best one.
         for (const t of asked.types) {
           if (picks.some((x) => x.item.qloo.type === t)) continue;
-          const r = candidates.find((c) => c.item.qloo.type === t && !picks.some((x) => x.item.id === c.item.id));
+          const r = candidates.filter((c) => c.item.qloo.type === t && !picks.some((x) => x.item.id === c.item.id)).sort((a, b) => sameFormatPull(b) - sameFormatPull(a))[0];
           const i = [...picks].reverse().findIndex((x) => !asked.types.includes(x.item.qloo.type as QlooEntityType));
           if (!r || i < 0) continue;
           picks.splice(picks.length - 1 - i, 1, { item: r.item, affinity: r.affinity, lift: r.lift, chain: [], why: groundedWhy("", r), direct: r.direct, basis: basis(r) });

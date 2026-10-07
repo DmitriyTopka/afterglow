@@ -1,5 +1,6 @@
 "use client";
 import { passHeaders } from "@/app/components/pass";
+import { VersusClaude } from "@/app/components/VersusClaude";
 // Split screen: the shopper's request on the left, the agent's steps arriving live; the shop owner's view on the
 // right, where the unmet demand from that request shows up, and the restock agent puts a new title on the shelf.
 import Link from "next/link";
@@ -14,7 +15,7 @@ import { addTitle, addedTitles, coverage, fmtPct, myDemand, recordDemand, seedDe
 type Step = { kind?: string; label: string; detail?: string; status: string; light?: Record<string, number>; tags?: string[] };
 // One plain word per kind of step, shown on the step's badge.
 const STEP_WORD: Record<string, string> = { lookup: "Find", score: "Score", rank: "Pick", read: "Read", filter: "Filter" };
-type Result = { calls?: Array<{ endpoint: string; params?: Record<string, string>; cache?: string }>; picks: Array<{ item: { id: string; title: string; category: string; price_usd: number }; why: string; basis?: string }>; gap?: { wanted: WantedTitle[] } | null; question?: string; extraction?: { signals: Array<{ name: string }> } };
+type Result = { calls?: Array<{ endpoint: string; params?: Record<string, string>; cache?: string }>; picks: Array<{ item: { id: string; title: string; category: string; price_usd: number }; why: string; basis?: string }>; gap?: { wanted: WantedTitle[] } | null; question?: string; extraction?: { signals: Array<{ name: string }> }; claudeAlone?: { items: Array<{ id: string; title: string; category: string; price_usd: number }> } };
 const KIND: Record<string, string> = { "urn:entity:artist": "Vinyl", "urn:entity:movie": "Film", "urn:entity:book": "Book", "urn:entity:videogame": "Game", "urn:entity:tv_show": "TV" };
 const pct = fmtPct;
 
@@ -209,6 +210,9 @@ export default function Live() {
             ))}
           </div>
         </section>
+      )}
+      {result?.claudeAlone && result.picks.length > 0 && (
+        <VersusClaude request={text} agent={result.picks.map((p) => p.item)} claude={result.claudeAlone.items} named={(result.extraction?.signals ?? []).map((x) => x.name)} missing={result.gap ? result.gap.wanted.filter((w) => !w.owned).length : null} />
       )}
 
       <section className="lb-store">

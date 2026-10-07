@@ -719,3 +719,19 @@ a.lb-tab { text-decoration: none; display: inline-block; }
 .real-quotes figcaption a { color: inherit; }
 .real-quotes p { grid-column: 1 / -1; margin: 4px 0 0; color: var(--coral-ink); font-size: 16px; }
 @media (max-width: 700px) { .real-quotes { grid-template-columns: 1fr; } }
+
+/* Same request, Claude alone */
+.vs-claude { margin: 0 -24px; padding: 30px 24px 34px; background: var(--paper); color: var(--paper-ink); }
+.vs-claude h2 { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: clamp(28px, 3.4vw, 44px); line-height: .95; margin: 0 0 6px; }
+.vs-claude > p { margin: 0 0 16px; max-width: 760px; color: #6b5547; }
+.vs-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; max-width: 1100px; }
+.vs-side { border: 2px solid var(--paper-ink); border-radius: 12px; padding: 14px 16px; background: #fff6ea; }
+.vs-side.ours { background: var(--ink); color: var(--paper); border-color: var(--ink); box-shadow: 6px 6px 0 var(--coral); }
+.vs-side h3 { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 22px; margin: 0; }
+.vs-side small { color: inherit; opacity: .7; }
+.vs-covers { display: flex; gap: 6px; margin: 10px 0; }
+.vs-covers img { width: 54px; height: 54px; object-fit: cover; border-radius: 4px; }
+.vs-side ul { margin: 0; padding-left: 18px; display: grid; gap: 3px; font-size: 15px; }
+@media (max-width: 700px) { .vs-grid { grid-template-columns: 1fr; } .vs-covers img { width: 48px; height: 48px; } }
+.band-more { margin: 14px 0 0; font-size: 15px; color: var(--coral-ink); }
+.band-more a { color: var(--ink); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; display: inline-block; padding: 6px 0; }

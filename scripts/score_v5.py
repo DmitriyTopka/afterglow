@@ -4,7 +4,7 @@ import json, glob
 S = {s['id']: s for s in json.load(open('eval/v2_scenarios.json'))['scenarios']}
 v3 = json.load(open('eval/v3_runs.json')); v4 = json.load(open(__import__("sys").argv[1] if len(__import__("sys").argv) > 1 else "eval/v5_runs.json"))
 pool = {}
-for f in ['eval/pool_verdicts.json', 'eval/pool_v2_verdicts.json', 'eval/pool_v3_verdicts.json', 'eval/pool_v4_verdicts.json', 'eval/pool_v5_verdicts.json', 'eval/pool_v6_verdicts.json']:
+for f in ['eval/pool_verdicts.json', 'eval/pool_v2_verdicts.json', 'eval/pool_v3_verdicts.json', 'eval/pool_v4_verdicts.json', 'eval/pool_v5_verdicts.json', 'eval/pool_v6_verdicts.json', 'eval/pool_v7_verdicts.json']:
     try:
         for sid, v in json.load(open(f)).items():
             if isinstance(v, dict): pool.setdefault(sid, {}).update(v)

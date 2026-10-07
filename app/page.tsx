@@ -69,7 +69,7 @@ export default function Page() {
       <section className="band has-photo home-band">
         <p className="lb-kicker">A record, book and film shop run by two Claude agents on Qloo</p>
         <h1>Your shop sees what sold. Afterglow sees what walked out.</h1>
-        <p className="lb-lede">A shopper says who the gift is for, and the assistant picks five titles from the shelves. Every title it could not find goes on the owner&apos;s restock list, so the shop finally learns what walked out. We ran it on a real record store first.</p>
+        <p className="lb-lede">A shopper says who the gift is for, and the assistant picks five titles from the shelves. Every title it could not find goes on the owner&apos;s restock list, so the shop finally learns what walked out. We ran it on two real record stores first.</p>
         <dl className="hero-stats">
           <div><dt>{real.local.top.length - real.local.on_shelf} of {real.local.top.length}</dt><dd>artists Austin loves most (Qloo location data) are missing from the 500 best-sellers of Waterloo Records, a real Austin shop. <Link href="/real">See the gap →</Link></dd></div>
           <div><dt>0 vs 12</dt><dd>gift picks over the shopper&apos;s budget across 40 blind requests: our agent vs Claude alone. <a href="https://github.com/DmitriyTopka/afterglow#how-well-it-works-measured-not-tuned-on-the-test">How we counted →</a></dd></div>
@@ -86,10 +86,8 @@ export default function Page() {
           <span>Or watch one:</span>
           {EXAMPLES.slice(0, 3).map((ex, i) => <Link key={ex.label} href={`/live?ex=${i}`} className="lb-tab">{ex.label}</Link>)}
         </div>
-        <p className="band-links">
-          <Link href="/owner" className="pill">Open the owner&apos;s restock plan →</Link>
-          <Link href="/real" className="pill light">See it on a real shop →</Link>
-          <Link href="/live" className="band-link">Watch both sides at once →</Link>
+        <p className="band-more">
+          Also: <Link href="/owner">the owner&apos;s restock plan</Link> · <Link href="/real">two real shops</Link> · <Link href="/live">both sides at once</Link>
         </p>
         <ChainCard />
       </section>
@@ -98,7 +96,7 @@ export default function Page() {
         <div><b>$1.04B</b><span>US vinyl sales in 2025, up 9.3% (RIAA). Indie shops sell a share of it, blind to who walked out.</span></div>
         <div><b>{fmtPct(lost)}</b><span>simulated: of what our demo shoppers&apos; tastes love, this share is not on the demo store&apos;s shelves ({missingTitles} titles)</span></div>
         <div><b>{rows.length}</b><span>shopper requests so far: simulated demand from 38 test shoppers written blind{mine.length ? `, plus ${mine.length} of yours` : ", plus yours once you ask"}</span></div>
-        <div><b>10 vs 4</b><span>blind requests our agent won vs lost against Claude alone, 6 ties, 20 we never tuned on. A small sample, not yet significant.</span></div>
+        <div><b>10 vs 5</b><span>blind requests our agent won vs lost against Claude alone, 5 ties, 20 we never tuned on. A small sample, not yet significant.</span></div>
       </section>
 
       {result && (
