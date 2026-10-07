@@ -25,7 +25,7 @@
 A chain sees every click. An independent record or book shop sees what sold and never learns what a customer came in for and left without. Afterglow gives it that list.
 
 - **41 of the 50 artists Austin loves most** (Qloo location data) are missing from the 500 best-sellers of a real Austin record shop.
-- **0 vs 12:** across 40 blind gift requests, our agent never put an over-budget title in its top three; Claude alone did 12 times.
+- **0 vs 15:** across 70 blind gift requests, our agent never put an over-budget title in its top three; Claude alone did 15 times.
 - **Two Claude agents on Qloo:** a shop assistant that picks five titles with a Qloo fact behind each, and a restock agent that turns every title it could not find into the owner's next order.
 
 ![The live screen: the shopper on the left, the owner's demand on the right, then the same request answered by Claude alone](https://taste-layer-alpha.vercel.app/brand/live-demo.gif)
@@ -100,16 +100,16 @@ The map uses each title's affinity for the 36 reference tastes, centred per form
 
 ## How we measured it
 
-A separate blind agent, which saw only the catalog, wrote and labelled 40 shopper requests before we tuned anything. A second blind agent judged every pick the labels did not cover. We tuned on the odd-numbered requests and never on the even ones.
+A separate blind agent, which saw only the catalog, wrote and labelled 40 shopper requests before we tuned anything; we tuned on the odd-numbered ones only. After all tuning, a fresh blind agent wrote and labelled 30 more. A second blind agent judged every top-three pick the labels did not cover, for both sides, without knowing which side made it.
 
-Against Claude reading the whole catalog as text (same model, no Qloo), on the 20 requests we never tuned on:
+Against Claude reading the whole catalog as text (same model, no Qloo), on the 50 requests we never tuned on (20 old, 30 new):
 
-| | P@3, blind labels | P@3, labels + blind judge | wins / losses (labels) |
+| | P@3, blind labels | P@3, labels + blind judge | wins / losses |
 |---|---|---|---|
-| Afterglow agent | 0.48 | 0.58 | 10 / 5 |
-| Claude alone | 0.37 | 0.55 | |
+| Afterglow agent | 0.43 | 0.52 | 24 / 10 on labels, 19 / 15 with the judge |
+| Claude alone | 0.32 | 0.48 | |
 
-That is 10 requests where the agent did better and 5 where Claude did: a lead on a small sample, not proof, and the same agent moves by a hit or two between runs (0.50 and 0.48 on two runs of this version). Claude alone also put 12 over-budget titles in its top three across the 40 requests; the agent put none. Our first version only tied Claude on that half; grounding the reasons in Qloo data and letting the agent choose its own route is what moved it. An earlier test on a small hand-tagged catalog went the other way (hand tags beat Qloo), and that result is in the repo too.
+On the blind labels the agent leads (difference +0.11, 95% bootstrap interval -0.01 to +0.23; sign test p = 0.02). With the second judge's verdicts added the two are close (+0.04, interval -0.08 to +0.16): we read that as "at least as good, often better", not as a decisive win. The clearest difference is the budget: across all 70 requests Claude alone put 15 over-budget titles in its top three; the agent put none. Runs of the same agent move by a hit or two, and we publish the latest run, not the best one. An earlier test on a small hand-tagged catalog went the other way (hand tags beat Qloo), and that result is in the repo too.
 
 Claude alone only works because 384 titles fit in a prompt. A real shop with 50,000 titles doesn't, and Qloo scoring doesn't care how big the catalog is.
 

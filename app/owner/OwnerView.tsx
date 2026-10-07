@@ -5,9 +5,12 @@ import { passHeaders } from "@/app/components/pass";
 import { useEffect, useMemo, useState } from "react";
 import catalog from "@/data/catalog.json";
 import owner from "@/data/owner.json";
+import albums from "@/data/restock_albums.json";
 import { CrateList, TasteMap, type Pin } from "@/app/components/TasteMap";
 import { Cover } from "@/app/components/Cover";
 import { ImportShelf } from "./ImportShelf";
+// Qloo names the artist; the shop orders a record. The artist's top album, from the iTunes Search API.
+const ALBUM = albums as Record<string, { album: string; year: string | null }>;
 import { addTitle, addedTitles, coverage, myDemand, fmtPct, resetLoop, seedDemand, suggestions, type Added, type DemandRow } from "@/lib/cycle";
 
 type Section = (typeof owner.sections)[number];
@@ -113,6 +116,7 @@ export function OwnerView() {
                       <Cover src={p.image} name={p.name} type={p.type} className="noimg" />
                       <div><strong>{p.name}</strong><span>{KIND[p.type]} · wanted by {p.askedBy}</span><p>{p.reason}</p>
                         <ul className="ap-facts">
+                          {ALBUM[p.entity_id] && <li className="ap-order">Order: <b>{ALBUM[p.entity_id].album}</b>{ALBUM[p.entity_id].year ? ` (${ALBUM[p.entity_id].year})` : ""}, the artist&apos;s top album on iTunes</li>}
                           {p.tastes && p.tastes.length > 0 && <li>Asked for by fans of {p.tastes.join(", ")}</li>}
                           {p.placement && <li>Would shelve in {p.placement.clusterName} (Qloo taste map)</li>}
                           {p.audience && <li>Fans: {p.audience.toLowerCase()} (Qloo demographics)</li>}
@@ -134,7 +138,7 @@ export function OwnerView() {
             <li key={s.entity_id}>
               <Cover src={s.image} name={s.name} type={s.type} className="noimg" lazy />
               <div className="sg-text">
-                <strong>{s.name}</strong>
+                <strong>{s.name}{ALBUM[s.entity_id] ? <em className="sg-album">: {ALBUM[s.entity_id].album}</em> : null}</strong>
                 <span>{KIND[s.type]} · wanted by {s.askedBy} shopper{s.askedBy > 1 ? "s" : ""}{s.yours ? " (incl. you)" : ""} · +{(s.gain * 100).toFixed(1)} pts</span>
               </div>
               <button type="button" className="stock-btn" disabled={busy !== null} onClick={() => stock(s)}>{busy === s.entity_id ? "Placing…" : "Add to shelf"}</button>

@@ -1,0 +1,338 @@
+{
+ "labeler": "blind-subagent-2026-10-07-v3",
+ "catalog": "v2 (384 items)",
+ "scenarios": [
+  {
+   "id": "w01",
+   "group": "in_store",
+   "message": "I've basically worn out my copy of Nirvana's Nevermind. Got any other 90s alt or grunge on vinyl? $35 max.",
+   "good": [
+    "c062",
+    "c054",
+    "c037"
+   ]
+  },
+  {
+   "id": "w02",
+   "group": "in_store",
+   "message": "Daft Punk's Discovery is on repeat in my flat. What else have you got that grooves like that?",
+   "good": [
+    "c009",
+    "c044",
+    "c010",
+    "c058"
+   ]
+  },
+  {
+   "id": "w03",
+   "group": "in_store",
+   "message": "Everything Everywhere All at Once was the best thing I've seen in years. More weird, inventive films please, under $25.",
+   "good": [
+    "c241",
+    "c235",
+    "c223",
+    "c260",
+    "c212"
+   ]
+  },
+  {
+   "id": "w04",
+   "group": "in_store",
+   "message": "I've read Kafka on the Shore twice now. What else would a Murakami person like in here?",
+   "good": [
+    "c130",
+    "c269",
+    "c196",
+    "c193",
+    "c049",
+    "c084"
+   ]
+  },
+  {
+   "id": "w05",
+   "group": "in_store",
+   "message": "My 8 year old has watched Frozen and Coco about a hundred times. Something new for her, under $30?",
+   "good": [
+    "c224",
+    "c205",
+    "c243",
+    "c251",
+    "c201",
+    "c308"
+   ]
+  },
+  {
+   "id": "w06",
+   "group": "in_store",
+   "message": "Hereditary messed me up in the best possible way. What other horror films do you have?",
+   "good": [
+    "c207",
+    "c233",
+    "c214"
+   ]
+  },
+  {
+   "id": "w07",
+   "group": "in_store",
+   "message": "My 15 year old lives in Skyrim. What other games would he sink into? $40 max.",
+   "good": [
+    "c298",
+    "c316",
+    "c385",
+    "c304",
+    "c384"
+   ]
+  },
+  {
+   "id": "w08",
+   "group": "in_store",
+   "message": "I'm a Bob Dylan and Neil Young guy. Looking for more singer-songwriter records, under $30.",
+   "good": [
+    "c099",
+    "c082",
+    "c001"
+   ]
+  },
+  {
+   "id": "w09",
+   "group": "in_store",
+   "message": "My girlfriend tore through City of Bones in two days. What should I get her next?",
+   "good": [
+    "c147",
+    "c189",
+    "c127",
+    "c107",
+    "c167"
+   ]
+  },
+  {
+   "id": "w10",
+   "group": "in_store",
+   "message": "Big Nolan fan here, The Dark Knight and Inception are my two favourites. Any films or soundtracks you'd point me to?",
+   "good": [
+    "c380",
+    "c256",
+    "c362"
+   ]
+  },
+  {
+   "id": "w11",
+   "group": "not_in_store",
+   "message": "My husband says The Wire is the best TV ever made. What box set would he get into? Under $80.",
+   "good": [
+    "c321",
+    "c349",
+    "c340",
+    "c387"
+   ]
+  },
+  {
+   "id": "w12",
+   "group": "not_in_store",
+   "message": "I mostly listen to Sufjan Stevens and Big Thief. Any records in here for me?",
+   "good": [
+    "c087",
+    "c071",
+    "c036"
+   ]
+  },
+  {
+   "id": "w13",
+   "group": "not_in_store",
+   "message": "My 6 year old loves the Paddington films. Anything here she'd enjoy?",
+   "good": [
+    "c224",
+    "c205",
+    "c270",
+    "c243",
+    "c377"
+   ]
+  },
+  {
+   "id": "w14",
+   "group": "not_in_store",
+   "message": "I love Rocky and the Creed movies, basically any good sports story. Got any books under $25?",
+   "good": [
+    "c138",
+    "c137",
+    "c117",
+    "c178",
+    "c157"
+   ]
+  },
+  {
+   "id": "w15",
+   "group": "not_in_store",
+   "message": "My mum is 70 and adores Downton Abbey. What could I get her?",
+   "good": [
+    "c245",
+    "c344",
+    "c325",
+    "c369"
+   ]
+  },
+  {
+   "id": "w16",
+   "group": "not_in_store",
+   "message": "I mainly play Halo and Call of Duty. Any shooters here under $40?",
+   "good": [
+    "c273",
+    "c287",
+    "c314"
+   ]
+  },
+  {
+   "id": "w17",
+   "group": "not_in_store",
+   "message": "My 13 year old is obsessed with Sabrina Carpenter and Gracie Abrams. Vinyl for her, $40 max?",
+   "good": [
+    "c095",
+    "c351",
+    "c041",
+    "c356"
+   ]
+  },
+  {
+   "id": "w18",
+   "group": "not_in_store",
+   "message": "Anything for a Nick Cave fan?",
+   "good": [
+    "c001",
+    "c057",
+    "c055"
+   ]
+  },
+  {
+   "id": "w19",
+   "group": "not_in_store",
+   "message": "My partner just finished Schitt's Creek and needs another feel-good comedy box set.",
+   "good": [
+    "c388",
+    "c390",
+    "c328"
+   ]
+  },
+  {
+   "id": "w20",
+   "group": "not_in_store",
+   "message": "I'm a big Sofia Coppola fan, The Virgin Suicides especially. What would you pull for me, under $30?",
+   "good": [
+    "c193",
+    "c210",
+    "c122",
+    "c146"
+   ]
+  },
+  {
+   "id": "w21",
+   "group": "multi",
+   "message": "My grandad is 75, loves Steely Dan, Columbo and old Clint Eastwood films. Something under $35?",
+   "good": [
+    "c355",
+    "c031",
+    "c099",
+    "c369",
+    "c266"
+   ]
+  },
+  {
+   "id": "w22",
+   "group": "multi",
+   "message": "I'm hooked on true crime podcasts like Serial, loved Killers of the Flower Moon and The Social Network. Any books for me?",
+   "good": [
+    "c113",
+    "c133",
+    "c173",
+    "c153"
+   ]
+  },
+  {
+   "id": "w23",
+   "group": "multi",
+   "message": "I'm into Fallout, Blade Runner 2049 and Daft Punk. What would you hand me? $40 max.",
+   "good": [
+    "c283",
+    "c375",
+    "c310",
+    "c009"
+   ]
+  },
+  {
+   "id": "w24",
+   "group": "multi",
+   "message": "Pulp's Different Class, Trainspotting and Irvine Welsh books are my whole personality. Any music for me?",
+   "good": [
+    "c020",
+    "c093",
+    "c077"
+   ]
+  },
+  {
+   "id": "w25",
+   "group": "multi",
+   "message": "My sister knows every word of Hamilton and loves Encanto. What would make her happy?",
+   "good": [
+    "c197",
+    "c270",
+    "c251",
+    "c201"
+   ]
+  },
+  {
+   "id": "w26",
+   "group": "multi",
+   "message": "I love the game Hades, Madeline Miller's Circe and Florence + the Machine. What else?",
+   "good": [
+    "c168",
+    "c155",
+    "c130"
+   ]
+  },
+  {
+   "id": "w27",
+   "group": "multi",
+   "message": "I'm into Parks and Rec, The Office and Wet Leg. What would you recommend?",
+   "good": [
+    "c390",
+    "c327",
+    "c160",
+    "c150"
+   ]
+  },
+  {
+   "id": "w28",
+   "group": "multi",
+   "message": "My boyfriend loves Kendrick, Childish Gambino's Atlanta and Get Out. What would he like?",
+   "good": [
+    "c233",
+    "c065",
+    "c048",
+    "c100",
+    "c248",
+    "c322"
+   ]
+  },
+  {
+   "id": "w29",
+   "group": "multi",
+   "message": "Tim Burton films, The Cure and Edgar Allan Poe, that's me. What have you got?",
+   "good": [
+    "c170",
+    "c190",
+    "c118",
+    "c037"
+   ]
+  },
+  {
+   "id": "w30",
+   "group": "multi",
+   "message": "I loved The Expanse, The Hitchhiker's Guide to the Galaxy and Outer Wilds. What else would I like?",
+   "good": [
+    "c300",
+    "c380",
+    "c150",
+    "c244"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,722 @@
+{
+ "w01": {
+  "agent": {
+   "ids": [
+    "c037",
+    "c011",
+    "c038",
+    "c005",
+    "c074"
+   ],
+   "question": null,
+   "turns": 4,
+   "qloo": 12,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c003",
+    "c011",
+    "c020",
+    "c045",
+    "c037"
+   ]
+  }
+ },
+ "w02": {
+  "agent": {
+   "ids": [
+    "c044",
+    "c088",
+    "c357",
+    "c380",
+    "c348"
+   ],
+   "question": null,
+   "turns": 4,
+   "qloo": 11,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c363",
+    "c353",
+    "c047",
+    "c032",
+    "c078"
+   ]
+  }
+ },
+ "w03": {
+  "agent": {
+   "ids": [
+    "c241",
+    "c260",
+    "c203",
+    "c278",
+    "c385"
+   ],
+   "question": null,
+   "turns": 4,
+   "qloo": 12,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c222",
+    "c196",
+    "c212",
+    "c193",
+    "c235"
+   ]
+  }
+ },
+ "w04": {
+  "agent": {
+   "ids": [
+    "c193",
+    "c002",
+    "c001",
+    "c102",
+    "c101"
+   ],
+   "question": null,
+   "turns": 4,
+   "qloo": 10,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c368",
+    "c365",
+    "c170",
+    "c371",
+    "c161"
+   ]
+  }
+ },
+ "w05": {
+  "agent": {
+   "ids": [
+    "c251",
+    "c197",
+    "c110",
+    "c308",
+    "c312"
+   ],
+   "question": null,
+   "turns": 4,
+   "qloo": 12,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c377",
+    "c270",
+    "c243",
+    "c251",
+    "c224"
+   ]
+  }
+ },
+ "w06": {
+  "agent": {
+   "ids": [
+    "c233",
+    "c207",
+    "c278",
+    "c339",
+    "c195"
+   ],
+   "question": null,
+   "turns": 4,
+   "qloo": 12,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c207",
+    "c288",
+    "c214",
+    "c233",
+    "c195"
+   ]
+  }
+ },
+ "w07": {
+  "agent": {
+   "ids": [
+    "c386",
+    "c312",
+    "c382",
+    "c003",
+    "c110"
+   ],
+   "question": null,
+   "turns": 4,
+   "qloo": 12,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c291",
+    "c301",
+    "c298",
+    "c282",
+    "c279"
+   ]
+  }
+ },
+ "w08": {
+  "agent": {
+   "ids": [
+    "c099",
+    "c002",
+    "c019",
+    "c001",
+    "c145"
+   ],
+   "question": null,
+   "turns": 3,
+   "qloo": 12,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c036",
+    "c087",
+    "c082",
+    "c062",
+    "c044"
+   ]
+  }
+ },
+ "w09": {
+  "agent": {
+   "ids": [
+    "c129",
+    "c152",
+    "c150",
+    "c245",
+    "c222"
+   ],
+   "question": null,
+   "turns": 5,
+   "qloo": 12,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c129",
+    "c127",
+    "c147",
+    "c189",
+    "c107"
+   ]
+  }
+ },
+ "w10": {
+  "agent": {
+   "ids": [
+    "c256",
+    "c222",
+    "c259",
+    "c021",
+    "c237"
+   ],
+   "question": null,
+   "turns": 4,
+   "qloo": 13,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c362",
+    "c202",
+    "c204",
+    "c221",
+    "c196"
+   ]
+  }
+ },
+ "w11": {
+  "agent": {
+   "ids": [
+    "c321",
+    "c349",
+    "c340",
+    "c302",
+    "c318"
+   ],
+   "question": null,
+   "turns": 4,
+   "qloo": 11,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c321",
+    "c324",
+    "c349",
+    "c340",
+    "c337"
+   ]
+  }
+ },
+ "w12": {
+  "agent": {
+   "ids": [
+    "c071",
+    "c021",
+    "c002",
+    "c095",
+    "c063"
+   ],
+   "question": null,
+   "turns": 4,
+   "qloo": 11,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c071",
+    "c021",
+    "c072",
+    "c020",
+    "c045"
+   ]
+  }
+ },
+ "w13": {
+  "agent": {
+   "ids": [
+    "c377",
+    "c243",
+    "c270",
+    "c383",
+    "c386"
+   ],
+   "question": null,
+   "turns": 4,
+   "qloo": 13,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c383",
+    "c289",
+    "c291",
+    "c308",
+    "c373"
+   ]
+  }
+ },
+ "w14": {
+  "agent": {
+   "ids": [
+    "c157",
+    "c253",
+    "c119",
+    "c199",
+    "c298"
+   ],
+   "question": null,
+   "turns": 5,
+   "qloo": 13,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c117",
+    "c137",
+    "c157",
+    "c177",
+    "c184"
+   ]
+  }
+ },
+ "w15": {
+  "agent": {
+   "ids": [
+    "c245",
+    "c267",
+    "c347",
+    "c014",
+    "c184"
+   ],
+   "question": null,
+   "turns": 4,
+   "qloo": 13,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c180",
+    "c104",
+    "c120",
+    "c124",
+    "c185"
+   ]
+  }
+ },
+ "w16": {
+  "agent": {
+   "ids": [
+    "c273",
+    "c314",
+    "c342",
+    "c274",
+    "c067"
+   ],
+   "question": null,
+   "turns": 4,
+   "qloo": 13,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c287",
+    "c273",
+    "c290",
+    "c310",
+    "c297"
+   ]
+  }
+ },
+ "w17": {
+  "agent": {
+   "ids": [
+    "c095",
+    "c356",
+    "c043",
+    "c029",
+    "c012"
+   ],
+   "question": null,
+   "turns": 4,
+   "qloo": 11,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c356",
+    "c079",
+    "c007",
+    "c048",
+    "c352"
+   ]
+  }
+ },
+ "w18": {
+  "agent": {
+   "ids": [
+    "c001",
+    "c054",
+    "c038",
+    "c250",
+    "c344"
+   ],
+   "question": null,
+   "turns": 3,
+   "qloo": 13,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c001",
+    "c055",
+    "c012",
+    "c071",
+    "c088"
+   ]
+  }
+ },
+ "w19": {
+  "agent": {
+   "ids": [
+    "c328",
+    "c336",
+    "c347",
+    "c119",
+    "c245"
+   ],
+   "question": null,
+   "turns": 3,
+   "qloo": 12,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c388",
+    "c327",
+    "c387",
+    "c322",
+    "c347"
+   ]
+  }
+ },
+ "w20": {
+  "agent": {
+   "ids": [
+    "c193",
+    "c122",
+    "c146",
+    "c071",
+    "c238"
+   ],
+   "question": null,
+   "turns": 4,
+   "qloo": 13,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c193",
+    "c196",
+    "c212",
+    "c219",
+    "c232"
+   ]
+  }
+ },
+ "w21": {
+  "agent": {
+   "ids": [
+    "c266",
+    "c231",
+    "c355",
+    "c064",
+    "c075"
+   ],
+   "question": null,
+   "turns": 4,
+   "qloo": 15,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c021",
+    "c029",
+    "c072",
+    "c202",
+    "c253"
+   ]
+  }
+ },
+ "w22": {
+  "agent": {
+   "ids": [
+    "c179",
+    "c159",
+    "c119",
+    "c241",
+    "c320"
+   ],
+   "question": null,
+   "turns": 5,
+   "qloo": 13,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c113",
+    "c133",
+    "c173",
+    "c104",
+    "c184"
+   ]
+  }
+ },
+ "w23": {
+  "agent": {
+   "ids": [
+    "c021",
+    "c088",
+    "c250",
+    "c316",
+    "c232"
+   ],
+   "question": null,
+   "turns": 4,
+   "qloo": 13,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c363",
+    "c048",
+    "c380",
+    "c297",
+    "c352"
+   ]
+  }
+ },
+ "w24": {
+  "agent": {
+   "ids": [
+    "c054",
+    "c055",
+    "c038",
+    "c141",
+    "c250"
+   ],
+   "question": null,
+   "turns": 3,
+   "qloo": 16,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c001",
+    "c003",
+    "c011",
+    "c005",
+    "c004"
+   ]
+  }
+ },
+ "w25": {
+  "agent": {
+   "ids": [
+    "c123",
+    "c188",
+    "c374",
+    "c245",
+    "c222"
+   ],
+   "question": null,
+   "turns": 4,
+   "qloo": 14,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c075",
+    "c243",
+    "c374",
+    "c377",
+    "c378"
+   ]
+  }
+ },
+ "w26": {
+  "agent": {
+   "ids": [
+    "c168",
+    "c320",
+    "c132",
+    "c356",
+    "c128"
+   ],
+   "question": null,
+   "turns": 4,
+   "qloo": 15,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c026",
+    "c048",
+    "c075",
+    "c078",
+    "c352"
+   ]
+  }
+ },
+ "w27": {
+  "agent": {
+   "ids": [
+    "c020",
+    "c054",
+    "c257",
+    "c336",
+    "c210"
+   ],
+   "question": null,
+   "turns": 4,
+   "qloo": 13,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c388",
+    "c021",
+    "c071",
+    "c037",
+    "c020"
+   ]
+  }
+ },
+ "w28": {
+  "agent": {
+   "ids": [
+    "c048",
+    "c083",
+    "c100",
+    "c248",
+    "c341"
+   ],
+   "question": null,
+   "turns": 3,
+   "qloo": 14,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c352",
+    "c048",
+    "c067",
+    "c083",
+    "c033"
+   ]
+  }
+ },
+ "w29": {
+  "agent": {
+   "ids": [
+    "c006",
+    "c037",
+    "c003",
+    "c122",
+    "c226"
+   ],
+   "question": null,
+   "turns": 3,
+   "qloo": 14,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c055",
+    "c196",
+    "c207",
+    "c122",
+    "c111"
+   ]
+  }
+ },
+ "w30": {
+  "agent": {
+   "ids": [
+    "c380",
+    "c150",
+    "c071",
+    "c293",
+    "c324"
+   ],
+   "question": null,
+   "turns": 4,
+   "qloo": 15,
+   "llm": "agent"
+  },
+  "claude": {
+   "ids": [
+    "c320",
+    "c291",
+    "c186",
+    "c371",
+    "c365"
+   ]
+  }
+ }
+}

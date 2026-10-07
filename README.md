@@ -36,8 +36,8 @@ A second agent (Claude Haiku) plans the restock. Its tools: `coverage_report` (u
 ## How well it works (measured, not tuned on the test)
 
 - 40 shopper requests written and labelled by a blind agent that only saw the catalog (`eval/v2_scenarios.json`). Ranking changes were chosen on the odd-numbered requests; the even ones were never used for tuning.
-- Against Claude alone reading the whole catalog as text (same model, no Qloo), on the 20 untuned requests: labels P@3 0.48 vs 0.37, pooled 0.58 vs 0.55, 10 wins and 5 losses on labels (`eval/REPORT_v7_2026-10-07.md`; runs of the same agent move by a hit or two: 0.50 / 0.65 the run before, 0.52 / 0.63 for v5). The first agent version only tied on that half (`eval/REPORT_v3_2026-10-06.md`).
-- Claude alone put 12 over-budget titles in its top three across the 40 requests; the agent none.
+- Against Claude alone reading the whole catalog as text (same model, no Qloo), on the 50 requests never used for tuning (20 of the first set plus 30 written after tuning, `eval/v3_scenarios.json`): labels P@3 0.43 vs 0.32 (24 wins, 10 losses, sign test p = 0.02, bootstrap 95% interval for the difference -0.01 to +0.23); with a second blind judge 0.52 vs 0.48 (19 / 15), too close to call. `python3 scripts/score_50.py`, report `eval/REPORT_w50_2026-10-07.md`.
+- Claude alone put 15 over-budget titles in its top three across the 70 requests; the agent none.
 - Qloo recognises about 30% of 300 random Amazon listings, and about 2 in 3 for music and film. That is why the demo store sells culture goods.
 - An earlier test on a hand-tagged toy catalog went the other way (hand tags beat Qloo). Details in `eval/REPORT_2026-10-06.md` and `eval/REPORT_v2_2026-10-06.md`.
 

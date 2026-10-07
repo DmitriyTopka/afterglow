@@ -5,11 +5,13 @@ import Link from "next/link";
 import saved from "@/data/saved_answers.json";
 import cycle from "@/data/cycle.json";
 import catalog from "@/data/catalog.json";
+import albums from "@/data/restock_albums.json";
 
 type Run = { picks: Array<{ item: { id: string; title: string } }>; gap: { wanted: Array<{ entity_id: string; name: string; owned: boolean; image?: string | null }> } };
 const REQUEST = "He's into Joy Division and rereads Murakami every winter.";
 const run = (saved as unknown as Record<string, Run>)[REQUEST];
 const TITLE = new Map((catalog.items as Array<{ id: string; title: string }>).map((i) => [i.id, i.title]));
+const ALBUM = albums as Record<string, { album: string; year: string | null }>;
 const PLACED = cycle.placements as Record<string, { clusterName: string; neighbours: Array<{ id: string }> }>;
 // "The Cure: Disintegration (2010 Remaster), LP" -> "Disintegration"; artist() keeps the part before the colon.
 const short = (t: string) => t.replace(/,\s*LP$/, "").replace(/\s*\((?:[^)]*)\)\s*$/, "").split(": ").slice(-1)[0];
@@ -44,7 +46,7 @@ export function ChainCard() {
             <b>The owner&apos;s restock list</b>
             <span className="chain-restock">
               {lead.image && <img src={lead.image} alt="" />}
-              <span><strong>{lead.name}</strong>{place ? <> goes to the shelf in &ldquo;{place.clusterName}&rdquo;{near.length ? <>, next to {near.join(" and ")}</> : null}. Placed by Qloo with no sales history.</> : " goes on the restock list."}</span>
+              <span><strong>{lead.name}</strong>{ALBUM[lead.entity_id] ? <>: order <em>{ALBUM[lead.entity_id].album}</em>.</> : null}{place ? <> It goes to the shelf in &ldquo;{place.clusterName}&rdquo;{near.length ? <>, next to {near.join(" and ")}</> : null}. Placed by Qloo with no sales history.</> : " goes on the restock list."}</span>
             </span>
           </li>
         )}

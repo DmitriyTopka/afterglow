@@ -13,8 +13,10 @@ import { existsSync, readFileSync, writeFileSync } from "node:fs";
   const { runAgent } = await import("../lib/agent/run.ts");
   const { record } = await import("../lib/llm/budget.ts");
   const items = JSON.parse(readFileSync("data/catalog.json", "utf8")).items;
-  const { scenarios } = JSON.parse(readFileSync("eval/v2_scenarios.json", "utf8"));
-  const OUT = "eval/v3_runs.json";
+  // Args: [scenarios file] [output file] [nopipe]; defaults reproduce eval v3 on the frozen 40.
+  const { scenarios } = JSON.parse(readFileSync(process.argv[2] ?? "eval/v2_scenarios.json", "utf8"));
+  const OUT = process.argv[3] ?? "eval/v3_runs.json";
+  const withPipeline = process.argv[4] !== "nopipe";
   const runs: Record<string, any> = existsSync(OUT) ? JSON.parse(readFileSync(OUT, "utf8")) : {};
   const client = new Anthropic();
   const catalogText = items.map((i: any) => `${i.id} | ${i.title} | ${i.category} | $${i.price_usd}`).join("\n");
@@ -38,9 +40,9 @@ import { existsSync, readFileSync, writeFileSync } from "node:fs";
       usd += record("claude-haiku-4-5", res.usage.input_tokens, res.usage.output_tokens);
       r.claude = { ids: (res.parsed_output?.ids ?? []).filter((id) => items.some((i: any) => i.id === id)) };
     }
-    if (!r.pipeline) { const p = await runAgent(s.message); usd += p.usd; r.pipeline = { ids: p.picks.map((x: any) => x.item.id) }; }
+    if (withPipeline && !r.pipeline) { const p = await runAgent(s.message); usd += p.usd; r.pipeline = { ids: p.picks.map((x: any) => x.item.id) }; }
     writeFileSync(OUT, JSON.stringify(runs, null, 1));
-    console.log(`${s.id} agent ${r.agent.ids.slice(0, 3).join(",") || "Q:" + r.agent.question?.slice(0, 30)} | claude ${r.claude.ids.slice(0, 3).join(",")} | pipeline ${r.pipeline.ids.slice(0, 3).join(",")}`);
+    console.log(`${s.id} agent ${r.agent.ids.slice(0, 3).join(",") || "Q:" + r.agent.question?.slice(0, 30)} | claude ${r.claude.ids.slice(0, 3).join(",")} | pipeline ${r.pipeline?.ids.slice(0, 3).join(",") ?? "-"}`);
   }
   console.log(`spent this run: $${usd.toFixed(3)}`);
 })();

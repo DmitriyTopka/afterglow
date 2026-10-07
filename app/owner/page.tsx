@@ -13,7 +13,7 @@ export default function OwnerPage() {
         <p className="lb-kicker">For the shop owner</p>
         <h1>Your store, mapped by taste.</h1>
         <p className="lb-lede">See what your shoppers came in for and could not find, let the restock agent plan the next order, and place a brand-new title on your shelves before anyone has bought it.</p>
-        <p className="band-links"><a href="/real" className="pill">See it on a real record shop in Austin →</a></p>
+        <p className="band-links"><a href="/real" className="pill">See it on two real record shops →</a></p>
       </section>
       <OwnerView />
       <HowItWorks />

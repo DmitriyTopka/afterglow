@@ -735,3 +735,5 @@ a.lb-tab { text-decoration: none; display: inline-block; }
 @media (max-width: 700px) { .vs-grid { grid-template-columns: 1fr; } .vs-covers img { width: 48px; height: 48px; } }
 .band-more { margin: 14px 0 0; font-size: 15px; color: var(--coral-ink); }
 .band-more a { color: var(--ink); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; display: inline-block; padding: 6px 0; }
+.ap-order b { color: var(--amber); }
+.sg-album { font-style: normal; font-weight: 400; opacity: .8; }
