@@ -2,12 +2,14 @@ import { runOwnerAgent } from "@/lib/agent/ownerAgent";
 import { QlooUnavailable } from "@/lib/qloo/client";
 import type { DemandRow } from "@/lib/cycle";
 import { allow, isEntityId } from "@/lib/limits";
+import { lane, liveFor } from "@/lib/access";
 
 export const maxDuration = 60;
 
 // The owner's restock agent. The browser sends only its own requests and added titles; demo demand is server-side.
 export async function POST(req: Request) {
-  const gate = allow(req, "owner-agent", 5, 30);
+  const access = liveFor(req);
+  const gate = access.judge ? allow(req, "owner-agent-judge", 30, 200) : allow(req, "owner-agent", 5, 30);
   if (!gate.ok) return Response.json({ error: gate.reason }, { status: 429 });
   const body = (await req.json().catch(() => ({}))) as { mine?: DemandRow[]; added?: string[] };
   // The browser's rows are untrusted: keep only well-formed Qloo ids, short names and https images.
@@ -21,7 +23,7 @@ export async function POST(req: Request) {
     .filter((r) => r.wanted.length > 0) as DemandRow[];
   const added = Array.isArray(body.added) ? body.added.filter(isEntityId).slice(0, 50) : [];
   try {
-    return Response.json(await runOwnerAgent(mine, added));
+    return Response.json(await lane.run({ judge: access.judge }, () => runOwnerAgent(mine, added, { paused: !access.live })));
   } catch (err) {
     if (err instanceof QlooUnavailable) return Response.json({ error: err.message, offline: true }, { status: 503 });
     console.error(err);

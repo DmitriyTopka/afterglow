@@ -40,6 +40,7 @@ export interface Item {
   blurb?: string;
   year?: string;
   popularity?: number | null;
+  age_min?: number; // youngest recipient it suits, from its official rating (scripts/age_ratings.mts)
 }
 
 export const CATALOG: Item[] = catalog.items as Item[];

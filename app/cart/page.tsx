@@ -1,4 +1,5 @@
 "use client";
+import { passHeaders } from "@/app/components/pass";
 // Bag and checkout on one screen (demo: nothing is charged). The "who is it for" note is a taste signal:
 // on checkout the agent reads it, checks the store, and the gaps reach the owner's side.
 import Link from "next/link";
@@ -34,10 +35,10 @@ export default function CartPage() {
     let error: string | undefined;
     if (note.trim()) {
       try {
-        const res = await fetch("/api/recommend", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ message: note.trim() }) });
+        const res = await fetch("/api/recommend", { method: "POST", headers: passHeaders(), body: JSON.stringify({ message: note.trim() }) });
         const data = await res.json();
         if (!res.ok) throw new Error(data.error ?? "The agent could not read the note");
-        if (data.gap) {
+        if (data.gap && !data.paused) {
           recordDemand({ message: note.trim(), signals: (data.extraction?.signals ?? []).map((x: { name: string }) => x.name), wanted: data.gap.wanted });
           learned = { carried: data.gap.wanted.filter((w: { owned: boolean }) => w.owned).length, total: data.gap.wanted.length, missing: data.gap.wanted.filter((w: { owned: boolean }) => !w.owned).slice(0, 3).map((w: { name: string }) => w.name) };
         }

@@ -1,4 +1,5 @@
 "use client";
+import { passHeaders } from "@/app/components/pass";
 // Owner side: the loop. Coverage of what shoppers' tastes want, the agent's stock suggestions ranked by how much
 // coverage they add, one-click "add to shelf" (cold start on the taste map), and what Qloo did at each step.
 import { useEffect, useMemo, useState } from "react";
@@ -27,7 +28,7 @@ export function OwnerView() {
   async function askAgent() {
     setPlanning(true); setError(null); setPlan(null);
     try {
-      const res = await fetch("/api/owner-agent", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ mine, added: added.map((a) => a.entity_id) }) });
+      const res = await fetch("/api/owner-agent", { method: "POST", headers: passHeaders(), body: JSON.stringify({ mine, added: added.map((a) => a.entity_id) }) });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? "The agent could not run");
       setPlan(data);
@@ -60,7 +61,7 @@ export function OwnerView() {
   async function stock(s: (typeof sugg)[number]) {
     setBusy(s.entity_id); setError(null);
     try {
-      const res = await fetch("/api/place", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ entity_id: s.entity_id, type: s.type }) });
+      const res = await fetch("/api/place", { method: "POST", headers: passHeaders(), body: JSON.stringify({ entity_id: s.entity_id, type: s.type }) });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? "Placing failed");
       const a: Added = { entity_id: s.entity_id, name: s.name, type: s.type, image: s.image, placement: data.placement };

@@ -1,4 +1,5 @@
 "use client";
+import { passHeaders } from "@/app/components/pass";
 
 import { useEffect, useRef, useState } from "react";
 import { EXAMPLES } from "@/data/examples";
@@ -43,11 +44,11 @@ export default function Page() {
     setBusy(true);
     setError(null);
     try {
-      const res = await fetch("/api/recommend", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ message }) });
+      const res = await fetch("/api/recommend", { method: "POST", headers: passHeaders(), body: JSON.stringify({ message }) });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? "Request failed");
       setResult(data);
-      if (data.gap) recordDemand({ message, signals: data.extraction.signals.map((x: { name: string }) => x.name), wanted: data.gap.wanted });
+      if (data.gap && !data.paused) recordDemand({ message, signals: data.extraction.signals.map((x: { name: string }) => x.name), wanted: data.gap.wanted });
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
     } finally {
@@ -55,6 +56,7 @@ export default function Page() {
     }
   }
 
+  const pausedInfo = (result as { paused?: { note: string; request: string } } | null)?.paused; // live mode closed: a recorded run stands in
   const picked = new Set(result?.picks.map((p) => p.item.id) ?? []);
   const light = result?.steps.find((s) => s.light)?.light ?? null;
 
@@ -78,6 +80,7 @@ export default function Page() {
           <button className="lb-go" disabled={busy}>{busy ? "Digging…" : "Find the gift"}</button>
         </form>
         {error && <p className="error">{error}</p>}
+        {pausedInfo && <p className="lb-note">{pausedInfo.note} Recorded request: “{pausedInfo.request}”</p>}
         <div className="lb-tabs scroll-x" style={{ marginTop: 14 }}>
           <span>Or watch one:</span>
           {EXAMPLES.slice(0, 3).map((ex, i) => <Link key={ex.label} href={`/live?ex=${i}`} className="lb-tab">{ex.label}</Link>)}
@@ -92,7 +95,7 @@ export default function Page() {
       <section className="proof-strip" aria-label="Why it matters">
         <div><b>$1.04B</b><span>US vinyl sales in 2025, up 9.3% (RIAA)</span></div>
         <div><b>$1.73T</b><span>a year retail loses to out-of-stock and overstock (IHL Group, 2025)</span></div>
-        <div><b>0.52 vs 0.37</b><span>our agent vs Claude alone, on 20 untuned blind requests (P@3)</span></div>
+        <div><b>10 wins, 4 losses</b><span>our agent against Claude alone on 20 blind requests we never tuned on (top-3 hits 0.50 vs 0.37)</span></div>
         <div><b>192 of 217</b><span>artists of a real Austin record shop&apos;s best-sellers Qloo knows. <Link href="/real">See the shelf →</Link></span></div>
       </section>
 

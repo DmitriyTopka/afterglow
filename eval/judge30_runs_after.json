@@ -1,0 +1,1412 @@
+{
+ "j01": {
+  "message": "My dad turns 65 next month. He grew up on Springsteen and Creedence and still watches old westerns every Sunday afternoon. Ideas?",
+  "expect": "Classic rock vinyl from the 60s-80s plus at least one western film.",
+  "secs": 11,
+  "llm": "agent",
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "question": null,
+  "tastes": [
+   "Bruce Springsteen (urn:entity:artist)",
+   "Creedence Clearwater Revival (urn:entity:artist)",
+   "True Grit (urn:entity:movie)"
+  ],
+  "picks": [
+   {
+    "title": "Neil Young: Harvest, LP",
+    "category": "Vinyl",
+    "price": 27,
+    "why": "Neil Young's 1972 masterpiece Harvest on vinyl: harmonica and blues rock that speaks to fans of Creedence's roots-based sound.",
+    "basis": "Qloo: #1 of 112 records here for fans of True Grit."
+   },
+   {
+    "title": "The Mule (4K UHD Blu-ray)",
+    "category": "Film",
+    "price": 27,
+    "why": "The Mule (2018): Clint Eastwood's road narrative about loneliness and age, hitting the same themes Springsteen's storytelling explores.",
+    "basis": "Qloo: #2 of 90 films here for fans of Bruce Springsteen."
+   },
+   {
+    "title": "The Beach Boys: Pet Sounds, LP",
+    "category": "Vinyl",
+    "price": 35,
+    "why": "The Beach Boys' Pet Sounds on vinyl: the melodic soft rock craftsmanship that resonates with classic rock enthusiasts of his era.",
+    "basis": "Qloo: #2 of 112 records here for fans of Creedence Clearwater Revival."
+   },
+   {
+    "title": "Boardwalk Empire (complete series box set)",
+    "category": "TV box sets",
+    "price": 79,
+    "why": "Boardwalk Empire complete series: complex, atmospheric storytelling set in a meticulously crafted period world.",
+    "basis": "Qloo: #1 of 34 TV shows here for fans of Bruce Springsteen."
+   },
+   {
+    "title": "Electric Light Orchestra: Out of the Blue, LP",
+    "category": "Vinyl",
+    "price": 37,
+    "why": "Electric Light Orchestra's Out of the Blue on vinyl from 1977: melodic pop rock with keyboards that echoes the production sophistication he loves.",
+    "basis": "Qloo: #3 of 112 records here for fans of Creedence Clearwater Revival."
+   }
+  ]
+ },
+ "j02": {
+  "message": "something for my dad",
+  "expect": "A short clarifying question or a safe mid-priced mix across formats, with a reason for each pick.",
+  "secs": 1,
+  "llm": "agent",
+  "turns": 1,
+  "route": [],
+  "question": "I'd like to help you find something perfect for your dad! Could you tell me a bit about what he's into - like his favorite music, films, books, games, TV shows, or any artists and creators he loves?",
+  "tastes": [],
+  "picks": []
+ },
+ "j03": {
+  "message": "gift for my 14yo nephew, hes obsessed with minecraft and anime, budget like $40",
+  "expect": "Age-appropriate games and anime-adjacent picks, nothing mature-rated, every item under $40.",
+  "secs": 17,
+  "llm": "agent",
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "question": null,
+  "tastes": [
+   "Minecraft (urn:entity:videogame)",
+   "anime (urn:entity:tv_show)"
+  ],
+  "picks": [
+   {
+    "title": "Goat Simulator (Nintendo Switch)",
+    "category": "Games",
+    "price": 25,
+    "why": "Goat Simulator is a casual, physics-driven game with cartoony meme-friendly fun that mirrors Minecraft's creative sandbox appeal.",
+    "basis": "Qloo: #1 of 48 games here for fans of Minecraft."
+   },
+   {
+    "title": "The Mandalorian (complete series box set)",
+    "category": "TV box sets",
+    "price": 35,
+    "why": "Loved by fans of Minecraft, by Qloo's count.",
+    "basis": "Qloo: #1 of 34 TV shows here for fans of Minecraft."
+   },
+   {
+    "title": "Rick Riordan: The Tower of Nero",
+    "category": "Books",
+    "price": 13,
+    "why": "Rick Riordan's Tower of Nero is a young adult fantasy with LGBT representation and middle grade adventure, perfect for his age.",
+    "basis": "Qloo: #2 of 97 books here for fans of Minecraft."
+   },
+   {
+    "title": "Spider-Man: Far from Home (4K UHD Blu-ray)",
+    "category": "Film",
+    "price": 18,
+    "why": "Loved by fans of Minecraft, by Qloo's count.",
+    "basis": "Qloo: #1 of 90 films here for fans of Minecraft."
+   },
+   {
+    "title": "Aquaman (4K UHD Blu-ray)",
+    "category": "Film",
+    "price": 15,
+    "why": "Loved by fans of Minecraft, by Qloo's count.",
+    "basis": "Qloo: #3 of 90 films here for fans of Minecraft."
+   }
+  ]
+ },
+ "j04": {
+  "message": "I just finished Severance and can't stop thinking about it. What should I watch or read next?",
+  "expect": "Psychological sci-fi or workplace mystery across TV and books, not the same show again.",
+  "secs": 10,
+  "llm": "agent",
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "check_store",
+   "score_catalog",
+   "recommend"
+  ],
+  "question": null,
+  "tastes": [
+   "Severance (urn:entity:tv_show)"
+  ],
+  "picks": [
+   {
+    "title": "Tim Harford: How to Make the World Add Up: Ten Rules for Thinking Differently About Numbers",
+    "category": "Books",
+    "price": 21,
+    "why": "Read by fans of Severance, by Qloo's count.",
+    "basis": "Qloo: #1 of 97 books here for fans of Severance."
+   },
+   {
+    "title": "The Divergent Series: Insurgent (4K UHD Blu-ray)",
+    "category": "Film",
+    "price": 18,
+    "why": "Loved by fans of Severance, by Qloo's count.",
+    "basis": "Qloo: #1 of 90 films here for fans of Severance."
+   },
+   {
+    "title": "Squid Game (complete series box set)",
+    "category": "TV box sets",
+    "price": 60,
+    "why": "Loved by fans of Severance, by Qloo's count.",
+    "basis": "Qloo: #1 of 34 TV shows here for fans of Severance."
+   },
+   {
+    "title": "Isaac Asimov: Forward: Notes on the Future of Our Democracy",
+    "category": "Books",
+    "price": 16,
+    "why": "Read by fans of Severance, by Qloo's count.",
+    "basis": "Qloo: #2 of 97 books here for fans of Severance."
+   },
+   {
+    "title": "Gravity (4K UHD Blu-ray)",
+    "category": "Film",
+    "price": 18,
+    "why": "Loved by fans of Severance, by Qloo's count.",
+    "basis": "Qloo: #2 of 90 films here for fans of Severance."
+   }
+  ]
+ },
+ "j05": {
+  "message": "cozy fantasy",
+  "expect": "Warm, low-stakes fantasy, mostly books, maybe a gentle game or animated film; no grimdark.",
+  "secs": 15,
+  "llm": "agent",
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "question": null,
+  "tastes": [
+   "Sorcery of Thorns (urn:entity:book)",
+   "The House in the Cerulean Sea (urn:entity:book)",
+   "Howl's Moving Castle (urn:entity:book)"
+  ],
+  "picks": [
+   {
+    "title": "TJ Klune: Under the Whispering Door",
+    "category": "Books",
+    "price": 28,
+    "why": "TJ Klune's cozy paranormal fantasy about a man discovering the afterlife - matches The House in the Cerulean Sea perfectly",
+    "basis": "Qloo: #1 of 96 books here for fans of The House in the Cerulean Sea."
+   },
+   {
+    "title": "Lore",
+    "category": "Books",
+    "price": 22,
+    "why": "Mythology retelling with romance and young adult fantasy vibes, echoing Sorcery of Thorns",
+    "basis": "Qloo: #3 of 96 books here for fans of Sorcery of Thorns."
+   },
+   {
+    "title": "Madeline Miller: The Song of Achilles",
+    "category": "Books",
+    "price": 20,
+    "why": "Madeline Miller's intimate historical fantasy blending mythology, LGBT themes, and the lyrical enchantment of Howl's Moving Castle",
+    "basis": "Qloo: #2 of 96 books here for fans of Howl's Moving Castle."
+   },
+   {
+    "title": "Stardew Valley (Nintendo Switch)",
+    "category": "Games",
+    "price": 35,
+    "why": "Loved by fans of Sorcery of Thorns, by Qloo's count.",
+    "basis": "Qloo: #1 of 49 games here for fans of Sorcery of Thorns."
+   },
+   {
+    "title": "Spirited Away (Blu-ray)",
+    "category": "Film",
+    "price": 27,
+    "why": "Spirited Away captures the enchanting, painterly magic and supernatural wonder central to cozy fantasy storytelling",
+    "basis": "Qloo: #1 of 89 films here for fans of Howl's Moving Castle."
+   }
+  ]
+ },
+ "j06": {
+  "message": "My wife loves Joni Mitchell, Sally Rooney novels and anything Greta Gerwig directs. Our anniversary is Saturday.",
+  "expect": "Introspective singer-songwriter vinyl, literary fiction and indie films; at least two formats.",
+  "secs": 18,
+  "llm": "agent",
+  "turns": 3,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "question": null,
+  "tastes": [
+   "Joni Mitchell (urn:entity:artist)",
+   "Sally Rooney (urn:entity:person)",
+   "Greta Gerwig (urn:entity:person)"
+  ],
+  "picks": [
+   {
+    "title": "Little Women (4K UHD Blu-ray)",
+    "category": "Film",
+    "price": 28,
+    "why": "Greta Gerwig's 2019 film with Saoirse Ronan and Emma Watson, featuring war, romance, and flashback structure that echoes Rooney's multilayered narratives.",
+    "basis": "By Greta Gerwig, named in the request."
+   },
+   {
+    "title": "Barbie (4K UHD Blu-ray)",
+    "category": "Film",
+    "price": 28,
+    "why": "Gerwig's 2023 Barbie, bringing her philosophical storytelling and gender-focused themes to a meditation on existentialism and identity.",
+    "basis": "By Greta Gerwig, named in the request."
+   },
+   {
+    "title": "Lady Bird (4K UHD Blu-ray)",
+    "category": "Film",
+    "price": 23,
+    "why": "Gerwig's 2017 Lady Bird with Saoirse Ronan, a naturalistic coming-of-age film capturing complex family relationships and personal growth.",
+    "basis": "By Greta Gerwig, named in the request."
+   },
+   {
+    "title": "Somebody Somewhere (complete series box set)",
+    "category": "TV box sets",
+    "price": 71,
+    "why": "Somebody Somewhere box set with female-centered storytelling about grief and friendship, reflecting the emotional depth of both Rooney and Mitchell's work.",
+    "basis": "Qloo: #1 of 34 TV shows here for fans of Joni Mitchell."
+   },
+   {
+    "title": "Peter Jackson: The Beatles: Get Back",
+    "category": "Books",
+    "price": 21,
+    "why": "Read by fans of Joni Mitchell, by Qloo's count.",
+    "basis": "Qloo: #1 of 97 books here for fans of Joni Mitchell."
+   }
+  ]
+ },
+ "j07": {
+  "message": "Got any good 90s hip hop on vinyl? East coast preferred",
+  "expect": "Only vinyl, 90s hip hop, mostly East Coast.",
+  "secs": 19,
+  "llm": "agent",
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "question": null,
+  "tastes": [
+   "Nas (urn:entity:artist)",
+   "The Notorious B.I.G. (urn:entity:artist)",
+   "Wu-Tang Clan (urn:entity:artist)"
+  ],
+  "picks": [
+   {
+    "title": "Tyler, the Creator: CHROMAKOPIA, LP",
+    "category": "Vinyl",
+    "price": 35,
+    "why": "Tyler, the Creator's CHROMAKOPIA pairs underground hip hop sensibility with MF DOOM's theatrical approach, giving you that lyrical depth.",
+    "basis": "Qloo: #5 of 113 records here for fans of The Notorious B.I.G.."
+   },
+   {
+    "title": "Mac Miller: Watching Movies with the Sound Off, LP",
+    "category": "Vinyl",
+    "price": 31,
+    "why": "Mac Miller's Watching Movies with the Sound Off channels the introspective, jazz rap vibes of classic East Coast boom-bap.",
+    "basis": "Qloo: #4 of 113 records here for fans of The Notorious B.I.G.."
+   },
+   {
+    "title": "Childish Gambino: Kauai, LP",
+    "category": "Vinyl",
+    "price": 25,
+    "why": "Childish Gambino's Kauai combines soulful production and guitar samples in the vein of A Tribe Called Quest and Andre 3000.",
+    "basis": "Qloo: #7 of 113 records here for fans of The Notorious B.I.G.."
+   },
+   {
+    "title": "Kendrick Lamar: good kid, m.A.A.d city (Deluxe Version), LP",
+    "category": "Vinyl",
+    "price": 42,
+    "why": "Loved by fans of The Notorious B.I.G., by Qloo's count.",
+    "basis": "Qloo: #2 of 113 records here for fans of The Notorious B.I.G.."
+   },
+   {
+    "title": "XXXTENTACION: Skins, LP",
+    "category": "Vinyl",
+    "price": 28,
+    "why": "XXXTENTACION's Skins shows influence from Tupac's emotional rap, bridging 90s sensibility with contemporary underground rap.",
+    "basis": "Qloo: #12 of 113 records here for fans of The Notorious B.I.G.."
+   }
+  ]
+ },
+ "j08": {
+  "message": "Secret Santa, hard cap $50 total. Coworker is into true crime podcasts.",
+  "expect": "True crime books, docs or series that fit the $50 cap, with the total or per-item price stated.",
+  "secs": 10,
+  "llm": "agent",
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "question": null,
+  "tastes": [
+   "true crime podcasts (urn:entity:podcast)"
+  ],
+  "picks": [
+   {
+    "title": "Misty Bernall: She Said: Breaking the Sexual Harassment Story That Helped Ignite a Movement",
+    "category": "Books",
+    "price": 18,
+    "why": "Misty Bernall investigates a major movement-starting sexual harassment story with journalism rigor - exactly the kind of in-depth crime narrative true crime fans crave.",
+    "basis": "Qloo: #1 of 97 books here for fans of true crime podcasts."
+   },
+   {
+    "title": "Roxane Gay: Hunger: A Memoir of (My) Body",
+    "category": "Books",
+    "price": 23,
+    "why": "Read by fans of true crime podcasts, by Qloo's count.",
+    "basis": "Qloo: #3 of 97 books here for fans of true crime podcasts."
+   },
+   {
+    "title": "Mikki Kendall: Hood Feminism: Notes from the Women That a Movement Forgot",
+    "category": "Books",
+    "price": 15,
+    "why": "Read by fans of true crime podcasts, by Qloo's count.",
+    "basis": "Qloo: #2 of 97 books here for fans of true crime podcasts."
+   },
+   {
+    "title": "Everything Everywhere All at Once (4K UHD Blu-ray)",
+    "category": "Film",
+    "price": 18,
+    "why": "Loved by fans of true crime podcasts, by Qloo's count.",
+    "basis": "Qloo: #2 of 90 films here for fans of true crime podcasts."
+   },
+   {
+    "title": "Barbie (4K UHD Blu-ray)",
+    "category": "Film",
+    "price": 28,
+    "why": "Loved by fans of true crime podcasts, by Qloo's count.",
+    "basis": "Qloo: #1 of 90 films here for fans of true crime podcasts."
+   }
+  ]
+ },
+ "j09": {
+  "message": "pls help my gf is into like dark academia vibes?? idk what that even means tbh",
+  "expect": "A one-line explanation of the aesthetic plus moody campus or literary mystery books, classical-leaning music and fitting films.",
+  "secs": 19,
+  "llm": "agent",
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "question": null,
+  "tastes": [
+   "The Secret History (urn:entity:book)",
+   "Midnight in Paris (urn:entity:movie)",
+   "Wednesday (urn:entity:tv_show)"
+  ],
+  "picks": [
+   {
+    "title": "Sylvia Plath: The Bell Jar",
+    "category": "Books",
+    "price": 17,
+    "why": "Sylvia Plath's The Bell Jar is a dark academia classic exploring mental illness and isolation in literary fiction.",
+    "basis": "Qloo: #1 of 97 books here for fans of The Secret History."
+   },
+   {
+    "title": "N. H. Kleinbaum: Dead Poets Society",
+    "category": "Books",
+    "price": 18,
+    "why": "Dead Poets Society captures the dark academia feel with poetry, school, and a haunting coming-of-age story.",
+    "basis": "Qloo: #2 of 97 books here for fans of The Secret History."
+   },
+   {
+    "title": "Stephen Chbosky: The Perks of Being a Wallflower",
+    "category": "Books",
+    "price": 19,
+    "why": "The Perks of Being a Wallflower is a realistic novel about mental health and romance in an introspective, moody setting.",
+    "basis": "Qloo: #3 of 97 books here for fans of The Secret History."
+   },
+   {
+    "title": "Lost in Translation (Blu-ray)",
+    "category": "Film",
+    "price": 18,
+    "why": "Lost in Translation has that postmodern, reflective melancholy and atmospheric isolation she's after.",
+    "basis": "Qloo: #3 of 90 films here for fans of Midnight in Paris."
+   },
+   {
+    "title": "Billie Eilish: HIT ME HARD AND SOFT, LP",
+    "category": "Vinyl",
+    "price": 31,
+    "why": "Billie Eilish's dark, moody indie pop on vinyl matches the shadowy, introspective tone of dark academia.",
+    "basis": "Qloo: #1 of 113 records here for fans of Wednesday."
+   }
+  ]
+ },
+ "j10": {
+  "message": "a gift for someone who loves cooking",
+  "expect": "Admits there is no cookware, then pivots to food-centered books, films or shows without inventing products.",
+  "secs": 2,
+  "llm": "agent",
+  "turns": 1,
+  "route": [],
+  "question": "I'd like to help you find the perfect gift! To narrow down what would work best, could you tell me a bit more - does this person have a favorite cuisine, chef, or cooking show they're really into?\n\nAlternatively, I can suggest titles based on popular food films and cooking shows if you'd like me to ",
+  "tastes": [],
+  "picks": []
+ },
+ "j11": {
+  "message": "Huge Hollow Knight and Celeste fan. Also listen to a lot of Bon Iver.",
+  "expect": "At least one indie game with a melancholy or challenging feel and at least one atmospheric folk or indie album.",
+  "secs": 8,
+  "llm": "agent",
+  "turns": 3,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "question": null,
+  "tastes": [
+   "Hollow Knight (urn:entity:videogame)",
+   "Celeste (urn:entity:videogame)",
+   "Bon Iver (urn:entity:artist)"
+  ],
+  "picks": [
+   {
+    "title": "Outer Wilds (PlayStation 5)",
+    "category": "Games",
+    "price": 57,
+    "why": "Outer Wilds pairs meditative, thought-provoking gameplay with a beautiful soundtrack similar to what draws you to Bon Iver's expressive sound.",
+    "basis": "Qloo: #2 of 49 games here for fans of Hollow Knight."
+   },
+   {
+    "title": "Stardew Valley (Nintendo Switch)",
+    "category": "Games",
+    "price": 35,
+    "why": "Stardew Valley shares Hollow Knight and Celeste's pixel art charm and deep progression with that same relaxed yet addictive quality.",
+    "basis": "Qloo: #1 of 49 games here for fans of Hollow Knight."
+   },
+   {
+    "title": "Moonrise Kingdom (4K UHD Blu-ray)",
+    "category": "Film",
+    "price": 20,
+    "why": "Moonrise Kingdom's candy cinema aesthetic and letter-driven narrative align with Bon Iver's expressive, introspective mood.",
+    "basis": "Qloo: #1 of 90 films here for fans of Bon Iver."
+   },
+   {
+    "title": "Tyler, the Creator: CHROMAKOPIA, LP",
+    "category": "Vinyl",
+    "price": 35,
+    "why": "Loved by fans of Hollow Knight, by Qloo's count.",
+    "basis": "Qloo: #2 of 113 records here for fans of Hollow Knight."
+   },
+   {
+    "title": "TJ Klune: Under the Whispering Door",
+    "category": "Books",
+    "price": 28,
+    "why": "Under the Whispering Door has the contemporary fantasy and paranormal exploration that resonates with the emotional depth in Hollow Knight and Bon Iver.",
+    "basis": "Qloo: #3 of 97 books here for fans of Hollow Knight."
+   }
+  ]
+ },
+ "j12": {
+  "message": "my mom is 70, reads mysteries, but hates anything violent or gory",
+  "expect": "Cozy or classic detective books and gentle mystery series or films; nothing graphic.",
+  "secs": 25,
+  "llm": "agent",
+  "turns": 5,
+  "route": [
+   "find_tastes",
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "question": null,
+  "tastes": [
+   "Agatha Christie (urn:entity:person)",
+   "Louise Penny (urn:entity:person)",
+   "Miss Marple (urn:entity:person)",
+   "Conan Doyle (urn:entity:person)",
+   "Dorothy Sayers (urn:entity:person)"
+  ],
+  "picks": [
+   {
+    "title": "Agatha Christie: Murder on the Orient Express",
+    "category": "Books",
+    "price": 14,
+    "why": "Agatha Christie's classic puzzle-mystery with no gore, a masterpiece of detective plotting your mom likely hasn't read recently.",
+    "basis": "By Agatha Christie, named in the request."
+   },
+   {
+    "title": "TJ Klune: Under the Whispering Door",
+    "category": "Books",
+    "price": 28,
+    "why": "Read by fans of Dorothy Sayers, by Qloo's count.",
+    "basis": "Qloo: #1 of 97 books here for fans of Dorothy Sayers."
+   },
+   {
+    "title": "Ashley C. Ford: Somebody's Daughter",
+    "category": "Books",
+    "price": 12,
+    "why": "Read by fans of Dorothy Sayers, by Qloo's count.",
+    "basis": "Qloo: #2 of 97 books here for fans of Dorothy Sayers."
+   },
+   {
+    "title": "Gifted (4K UHD Blu-ray)",
+    "category": "Film",
+    "price": 27,
+    "why": "Loved by fans of Dorothy Sayers, by Qloo's count.",
+    "basis": "Qloo: #2 of 90 films here for fans of Dorothy Sayers."
+   },
+   {
+    "title": "Johnny Cash: American IV: The Man Comes Around, LP",
+    "category": "Vinyl",
+    "price": 32,
+    "why": "Johnny Cash's American IV, a melancholic and emotionally authentic album for someone who appreciates narrative depth in art.",
+    "basis": "Qloo: #3 of 113 records here for fans of Dorothy Sayers."
+   }
+  ]
+ },
+ "j13": {
+  "message": "Something weird. Surprise me.",
+  "expect": "Offbeat cult picks across several formats, each with a short reason; no bestseller defaults.",
+  "secs": 23,
+  "llm": "agent",
+  "turns": 5,
+  "route": [
+   "ask_shopper",
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "question": null,
+  "tastes": [
+   "Twin Peaks (urn:entity:tv_show)",
+   "Eraserhead (urn:entity:movie)",
+   "Radiohead (urn:entity:artist)"
+  ],
+  "picks": [
+   {
+    "title": "Mulholland Drive (Blu-ray)",
+    "category": "Film",
+    "price": 24,
+    "why": "Loved by fans of Eraserhead, by Qloo's count.",
+    "basis": "Qloo: #1 of 90 films here for fans of Eraserhead."
+   },
+   {
+    "title": "Silent Hill 2 (PlayStation 5)",
+    "category": "Games",
+    "price": 34,
+    "why": "Silent Hill 2 (PlayStation 5) - Masterclass in psychological horror with a creepy atmosphere and strong narrative, a cult pick for surreal dread.",
+    "basis": "Qloo: #1 of 49 games here for fans of Eraserhead."
+   },
+   {
+    "title": "Being John Malkovich (Blu-ray)",
+    "category": "Film",
+    "price": 30,
+    "why": "Being John Malkovich (Spike Jonze, Blu-ray, 1999) - Kafkaesque identity play with a Hidden Door premise, Experimental and Supernatural Fantasy.",
+    "basis": "Qloo: #2 of 90 films here for fans of Radiohead."
+   },
+   {
+    "title": "Black Mirror (complete series box set)",
+    "category": "TV box sets",
+    "price": 43,
+    "why": "Loved by fans of Radiohead, by Qloo's count.",
+    "basis": "Qloo: #1 of 34 TV shows here for fans of Radiohead."
+   },
+   {
+    "title": "The Cure: Disintegration (2010 Remaster), LP",
+    "category": "Vinyl",
+    "price": 41,
+    "why": "The Cure: Disintegration (LP Remaster, 1989) - Psychedelic Rock and New Wave with haunting Keyboards and Depression, Alternative Rock at its most immersive.",
+    "basis": "Qloo: #3 of 112 records here for fans of Twin Peaks."
+   }
+  ]
+ },
+ "j14": {
+  "message": "I loved Tarkovsky's Stalker and Roadside Picnic. What else is out there?",
+  "expect": "Slow, philosophical sci-fi films and books, maybe ambient music; arthouse rather than blockbuster.",
+  "secs": 9,
+  "llm": "agent",
+  "turns": 3,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "question": null,
+  "tastes": [
+   "Stalker (urn:entity:movie)",
+   "Roadside Picnic (urn:entity:book)"
+  ],
+  "picks": [
+   {
+    "title": "Mulholland Drive (Blu-ray)",
+    "category": "Film",
+    "price": 24,
+    "why": "David Lynch's Mulholland Drive shares Stalker's atmospheric intensity and the metaphysical disorientation of Roadside Picnic - a probe into the unknowable mind.",
+    "basis": "Qloo: #2 of 90 films here for fans of Stalker."
+   },
+   {
+    "title": "Being John Malkovich (Blu-ray)",
+    "category": "Film",
+    "price": 30,
+    "why": "Spike Jonze's Being John Malkovich takes the unsettling philosophical premise of Roadside Picnic into absurdist territory, rendering the inexplicable tangible and Kafkaesque.",
+    "basis": "Qloo: #3 of 90 films here for fans of Roadside Picnic."
+   },
+   {
+    "title": "Control (PlayStation 4)",
+    "category": "Games",
+    "price": 39,
+    "why": "Control is a story-rich, atmospheric game set in a modern brutalist architecture that channels the clinical alienation of Stalker into an innovative interactive experience.",
+    "basis": "Qloo: #1 of 49 games here for fans of Stalker."
+   },
+   {
+    "title": "Philip K. Dick: The Man in the High Castle",
+    "category": "Books",
+    "price": 27,
+    "why": "Philip K. Dick's The Man in the High Castle explores alternate history and dystopia in the science fiction tradition of Roadside Picnic, probing the nature of reality.",
+    "basis": "Qloo: #1 of 97 books here for fans of Roadside Picnic."
+   },
+   {
+    "title": "Mass Effect (PlayStation 3)",
+    "category": "Games",
+    "price": 50,
+    "why": "Mass Effect is a cinematic, choice-driven science-fiction game with story-rich depth that extends the psychologically complex space exploration you loved in Stalker.",
+    "basis": "Qloo: #2 of 49 games here for fans of Roadside Picnic."
+   }
+  ]
+ },
+ "j15": {
+  "message": "brother in law is a die hard Cowboys fan and grills every weekend",
+  "expect": "Sports films, docs, books or games, and an honest note that the store has no team merch or grill gear.",
+  "secs": 20,
+  "llm": "agent",
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "question": null,
+  "tastes": [
+   "Dallas Cowboys (urn:entity:brand)",
+   "The League (urn:entity:tv_show)",
+   "Anthony Bourdain: Parts Unknown (urn:entity:tv_show)"
+  ],
+  "picks": [
+   {
+    "title": "The Office (complete series box set)",
+    "category": "TV box sets",
+    "price": 52,
+    "why": "The Office captures the competitive office banter and team dynamics that football fans thrive on, with humor and camaraderie.",
+    "basis": "Qloo: #1 of 34 TV shows here for fans of The League."
+   },
+   {
+    "title": "The Mule (4K UHD Blu-ray)",
+    "category": "Film",
+    "price": 27,
+    "why": "Clint Eastwood's The Mule features a solitary, no-nonsense protagonist navigating a road journey, themes of grit and independence that resonate with football culture.",
+    "basis": "Qloo: #3 of 90 films here for fans of Dallas Cowboys."
+   },
+   {
+    "title": "Boyhood (4K UHD Blu-ray)",
+    "category": "Film",
+    "price": 30,
+    "why": "Boyhood includes football as a recurring element and explores the journey of growing up with authentic storytelling and memory.",
+    "basis": "Qloo: #2 of 90 films here for fans of Anthony Bourdain: Parts Unknown."
+   },
+   {
+    "title": "The Velvet Underground: Loaded (Remastered), LP",
+    "category": "Vinyl",
+    "price": 42,
+    "why": "The Velvet Underground's Loaded is a rock classic that brings the raw, unfiltered energy fans of American culture and football appreciate on vinyl.",
+    "basis": "Qloo: #1 of 113 records here for fans of Anthony Bourdain: Parts Unknown."
+   },
+   {
+    "title": "Nick Bilton: American Kingpin: The Epic Hunt for the Criminal Mastermind Behind the Silk Road",
+    "category": "Books",
+    "price": 20,
+    "why": "American Kingpin is a true crime page-turner about obsession and competition, the cat-and-mouse hunt appeals to the same strategic mind that enjoys football.",
+    "basis": "Qloo: #2 of 97 books here for fans of The League."
+   }
+  ]
+ },
+ "j16": {
+  "message": "Kraftwerk, Aphex Twin, and I just read Neuromancer for the first time",
+  "expect": "Electronic vinyl plus cyberpunk books, films or games; at least two formats.",
+  "secs": 10,
+  "llm": "agent",
+  "turns": 3,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "question": null,
+  "tastes": [
+   "Kraftwerk (urn:entity:artist)",
+   "Aphex Twin (urn:entity:artist)",
+   "Neuromancer (urn:entity:book)"
+  ],
+  "picks": [
+   {
+    "title": "Daft Punk: Discovery, LP",
+    "category": "Vinyl",
+    "price": 39,
+    "why": "Daft Punk's Discovery moves electronic music from Kraftwerk's minimalism into dance without sacrificing the experimental edge that drew you to Aphex Twin.",
+    "basis": "Qloo: #2 of 113 records here for fans of Aphex Twin."
+   },
+   {
+    "title": "Portishead: Dummy, LP",
+    "category": "Vinyl",
+    "price": 40,
+    "why": "Loved by fans of Neuromancer, by Qloo's count.",
+    "basis": "Qloo: #1 of 113 records here for fans of Neuromancer."
+   },
+   {
+    "title": "Black Mirror (complete series box set)",
+    "category": "TV box sets",
+    "price": 43,
+    "why": "Black Mirror captures Neuromancer's vision of technology reshaping identity and power, explored across episodes with the same conceptual precision you love in experimental music.",
+    "basis": "Qloo: #1 of 34 TV shows here for fans of Aphex Twin."
+   },
+   {
+    "title": "Mulholland Drive (Blu-ray)",
+    "category": "Film",
+    "price": 24,
+    "why": "Mulholland Drive shares the atmospheric density and buried narrative logic of Neuromancer, with Lynch's hallucinations creating a world where reality fractures under pressure.",
+    "basis": "Qloo: #3 of 90 films here for fans of Aphex Twin."
+   },
+   {
+    "title": "John Kennedy Toole: A Confederacy of Dunces",
+    "category": "Books",
+    "price": 25,
+    "why": "Read by fans of Aphex Twin, by Qloo's count.",
+    "basis": "Qloo: #1 of 97 books here for fans of Aphex Twin."
+   }
+  ]
+ },
+ "j17": {
+  "message": "need a present for a 6 year old girl who loves horses and dinosaurs",
+  "expect": "Only kid-friendly, all-ages picks; nothing rated PG-13 or above.",
+  "secs": 31,
+  "llm": "agent",
+  "turns": 5,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "question": null,
+  "tastes": [
+   "My Friend Flicka (urn:entity:movie)",
+   "Black Beauty (urn:entity:tv_show)",
+   "Jurassic Park (urn:entity:movie)",
+   "Spirit: Stallion of the Cimarron (urn:entity:movie)",
+   "The Land Before Time (urn:entity:movie)",
+   "Dinosaur (urn:entity:movie)"
+  ],
+  "picks": [
+   {
+    "title": "The Lion King (Blu-ray)",
+    "category": "Film",
+    "price": 28,
+    "why": "The Lion King features animal adventure with an engaging story about loyalty and nature, similar to what dinosaur and horse lovers enjoy.",
+    "basis": "Qloo: #11 of 90 films here for fans of Jurassic Park."
+   },
+   {
+    "title": "Stardew Valley (Nintendo Switch)",
+    "category": "Games",
+    "price": 35,
+    "why": "Stardew Valley is a cozy, creative game with pixel art that appeals to children who love nature and animals.",
+    "basis": "Qloo: #2 of 49 games here for fans of Jurassic Park."
+   },
+   {
+    "title": "Minecraft (Xbox One)",
+    "category": "Games",
+    "price": 24,
+    "why": "Minecraft on Xbox One lets her build and explore creative worlds with animals and dinosaurs, perfect for imaginative play.",
+    "basis": "Qloo: #5 of 49 games here for fans of Jurassic Park."
+   },
+   {
+    "title": "Frozen (4K UHD Blu-ray)",
+    "category": "Film",
+    "price": 30,
+    "why": "Frozen is a visually spectacular animated film with adventure and emotion that resonates with children who love epic animal stories.",
+    "basis": "Qloo: #12 of 90 films here for fans of Jurassic Park."
+   },
+   {
+    "title": "Coco (4K UHD Blu-ray)",
+    "category": "Film",
+    "price": 15,
+    "why": "Coco is a beautifully animated film with adventure and heart that appeals to children with interests in imaginative storytelling.",
+    "basis": "Qloo: #17 of 90 films here for fans of Jurassic Park."
+   }
+  ]
+ },
+ "j18": {
+  "message": "3 gifts for my book club, under $25 each",
+  "expect": "Mostly books that spark discussion, every item under $25.",
+  "secs": 1,
+  "llm": "agent",
+  "turns": 1,
+  "route": [],
+  "question": "I'd love to help find three books for your book club! To make the best picks, could you tell me what kinds of books your group enjoys? For example, are there any favorite authors, genres, or recent reads you've all loved?",
+  "tastes": [],
+  "picks": []
+ },
+ "j19": {
+  "message": "The Office meets Taskmaster kind of humor. I just want to laugh",
+  "expect": "Comedy series, films or humorous books with a deadpan, British-leaning tone; no heavy drama.",
+  "secs": 17,
+  "llm": "agent",
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "question": null,
+  "tastes": [
+   "The Office (urn:entity:tv_show)",
+   "Taskmaster (urn:entity:tv_show)"
+  ],
+  "picks": [
+   {
+    "title": "Crashing (complete series box set)",
+    "category": "TV box sets",
+    "price": 62,
+    "why": "Phoebe Waller-Bridge's Crashing captures the same awkward, character-driven humor as The Office with pranks and chaotic relationships that match Taskmaster's irreverent energy",
+    "basis": "Qloo: #1 of 33 TV shows here for fans of Taskmaster."
+   },
+   {
+    "title": "The Royal Tenenbaums (Blu-ray)",
+    "category": "Film",
+    "price": 16,
+    "why": "The Royal Tenenbaums is a darkly comedic ensemble with quirky characters, absurdist situations and satirical observations that echo both shows' humor styles",
+    "basis": "Qloo: #3 of 90 films here for fans of The Office."
+   },
+   {
+    "title": "Little Miss Sunshine (Blu-ray)",
+    "category": "Film",
+    "price": 17,
+    "why": "Little Miss Sunshine delivers character-driven comedy through a dysfunctional family road trip, loaded with awkward moments and satirical takes on modern life",
+    "basis": "Qloo: #2 of 90 films here for fans of The Office."
+   },
+   {
+    "title": "500 Days of Summer (Blu-ray)",
+    "category": "Film",
+    "price": 26,
+    "why": "500 Days of Summer offers offbeat comedic moments and a mysterious tone with self-aware humor that plays with narrative conventions",
+    "basis": "Qloo: #1 of 90 films here for fans of The Office."
+   },
+   {
+    "title": "Goat Simulator (Nintendo Switch)",
+    "category": "Games",
+    "price": 25,
+    "why": "Loved by fans of The Office, by Qloo's count.",
+    "basis": "Qloo: #2 of 49 games here for fans of The Office."
+   }
+  ]
+ },
+ "j20": {
+  "message": "My teenage son only plays FIFA and listens to Drake. I want to get him into something new without it being cringe.",
+  "expect": "Picks that bridge from sports games and modern hip hop to adjacent artists, games or films; age-appropriate.",
+  "secs": 12,
+  "llm": "agent",
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "question": null,
+  "tastes": [
+   "FIFA (urn:entity:videogame)",
+   "Drake (urn:entity:artist)"
+  ],
+  "picks": [
+   {
+    "title": "Kendrick Lamar: good kid, m.A.A.d city (Deluxe Version), LP",
+    "category": "Vinyl",
+    "price": 42,
+    "why": "Kendrick Lamar's classic West Coast rap album, same tier as Drake but a different perspective. Thoughtful and loyal, not a stepdown.",
+    "basis": "Qloo: #1 of 112 records here for fans of Drake."
+   },
+   {
+    "title": "Apex Legends (PlayStation 5)",
+    "category": "Games",
+    "price": 36,
+    "why": "Apex Legends rewards the kind of competitive teamplay he gets from FIFA but in a high-skill esports scene. Real skill ceiling.",
+    "basis": "Qloo: #3 of 49 games here for fans of Drake."
+   },
+   {
+    "title": "Empire (complete series box set)",
+    "category": "TV box sets",
+    "price": 53,
+    "why": "Empire is about scheming, loyalty and the throne, all themes Drake raps about, but in a show format. Full complete series box set.",
+    "basis": "Qloo: #1 of 34 TV shows here for fans of Drake."
+   },
+   {
+    "title": "Kanye West: 808s & Heartbreak, LP",
+    "category": "Vinyl",
+    "price": 26,
+    "why": "Loved by fans of Drake, by Qloo's count.",
+    "basis": "Qloo: #5 of 112 records here for fans of Drake."
+   },
+   {
+    "title": "21 Savage: i am > i was, LP",
+    "category": "Vinyl",
+    "price": 36,
+    "why": "Loved by fans of Drake, by Qloo's count.",
+    "basis": "Qloo: #3 of 112 records here for fans of Drake."
+   }
+  ]
+ },
+ "j21": {
+  "message": "Recommend me some Ennio Morricone and stuff that sounds like it",
+  "expect": "Film score vinyl and spaghetti western or cinematic picks; at least one vinyl.",
+  "secs": 12,
+  "llm": "agent",
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "question": null,
+  "tastes": [
+   "Ennio Morricone (urn:entity:artist)"
+  ],
+  "picks": [
+   {
+    "title": "Hans Zimmer: Interstellar (Original Motion Picture Soundtrack) [Expanded Edition], LP",
+    "category": "Vinyl",
+    "price": 38,
+    "why": "Hans Zimmer's Interstellar soundtrack shares Morricone's mastery of orchestral composition with Classical and Instrumental arrangements that build emotional depth.",
+    "basis": "Qloo: #1 of 113 records here for fans of Ennio Morricone."
+   },
+   {
+    "title": "Joe Hisaishi: Spirited Away (Original Soundtrack), LP",
+    "category": "Vinyl",
+    "price": 27,
+    "why": "Joe Hisaishi's Spirited Away soundtrack matches Morricone's Instrumental, Piano-based approach with an Anime Soundtrack that creates evocative atmospheres.",
+    "basis": "Qloo: #2 of 113 records here for fans of Ennio Morricone."
+   },
+   {
+    "title": "Boardwalk Empire (complete series box set)",
+    "category": "TV box sets",
+    "price": 79,
+    "why": "Boardwalk Empire features the Complex storytelling and Dark Humor that aligns with Morricone's evocative sensibility, set in a richly detailed period world.",
+    "basis": "Qloo: #1 of 34 TV shows here for fans of Ennio Morricone."
+   },
+   {
+    "title": "Mass Effect (PlayStation 3)",
+    "category": "Games",
+    "price": 50,
+    "why": "Mass Effect offers a Cinematic, story-rich experience with an Instrumental soundtrack aesthetic similar to Morricone's approach to scoring emotional narratives.",
+    "basis": "Qloo: #2 of 49 games here for fans of Ennio Morricone."
+   },
+   {
+    "title": "Baby Driver (4K UHD Blu-ray)",
+    "category": "Film",
+    "price": 21,
+    "why": "Loved by fans of Ennio Morricone, by Qloo's count.",
+    "basis": "Qloo: #1 of 90 films here for fans of Ennio Morricone."
+   }
+  ]
+ },
+ "j22": {
+  "message": "What would you get someone who's into Sufjan Stevens, Wes Anderson and Studio Ghibli?",
+  "expect": "Whimsical, handcrafted-feeling picks across music, film and animation; several formats.",
+  "secs": 9,
+  "llm": "agent",
+  "turns": 3,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "question": null,
+  "tastes": [
+   "Sufjan Stevens (urn:entity:artist)",
+   "Wes Anderson (urn:entity:person)",
+   "Studio Ghibli (urn:entity:brand)"
+  ],
+  "picks": [
+   {
+    "title": "Moonrise Kingdom (4K UHD Blu-ray)",
+    "category": "Film",
+    "price": 20,
+    "why": "Wes Anderson's most whimsical film, meticulously composed with a postmodern sensibility and nostalgic atmosphere that matches the layered, crafted world of your other favorites.",
+    "basis": "By Wes Anderson, named in the request."
+   },
+   {
+    "title": "Arcade Fire: The Suburbs, LP",
+    "category": "Vinyl",
+    "price": 28,
+    "why": "Loved by fans of Sufjan Stevens, by Qloo's count.",
+    "basis": "Qloo: #2 of 113 records here for fans of Sufjan Stevens."
+   },
+   {
+    "title": "The Legend of Zelda: Breath of the Wild (Nintendo Switch)",
+    "category": "Games",
+    "price": 47,
+    "why": "Zelda: Breath of the Wild features Studio Ghibli's cel-shaded, stylized aesthetic with beautiful soundtrack design and emergent gameplay that rewards the kind of thoughtful discovery you find in Wes A",
+    "basis": "Qloo: #2 of 49 games here for fans of Studio Ghibli."
+   },
+   {
+    "title": "Outer Wilds (PlayStation 5)",
+    "category": "Games",
+    "price": 57,
+    "why": "Outer Wilds matches the meditative, thought-provoking quality of Sufjan Stevens' work, wrapped in a stylized low-poly world with a haunting soundtrack and meticulously crafted atmosphere.",
+    "basis": "Qloo: #1 of 49 games here for fans of Sufjan Stevens."
+   },
+   {
+    "title": "J.D. Salinger: The Catcher in the Rye",
+    "category": "Books",
+    "price": 21,
+    "why": "Salinger's protagonist embodies the whimsy and alienation at the heart of Wes Anderson's characters, with classic literary craftsmanship that echoes the layered storytelling in all three of your taste",
+    "basis": "Qloo: #2 of 97 books here for fans of Wes Anderson."
+   }
+  ]
+ },
+ "j23": {
+  "message": "hi",
+  "expect": "A friendly prompt to share who the gift is for or what they like, optionally a few popular picks.",
+  "secs": 1,
+  "llm": "agent",
+  "turns": 1,
+  "route": [
+   "ask_shopper"
+  ],
+  "question": "Who are you shopping for, and what do they love?",
+  "tastes": [],
+  "picks": []
+ },
+ "j24": {
+  "message": "Housewarming gift for a couple in their 30s. She's into jazz, he's into board games and sci-fi.",
+  "expect": "Jazz vinyl plus sci-fi books, films or games, with something clearly for each person.",
+  "secs": 22,
+  "llm": "agent",
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "question": null,
+  "tastes": [
+   "Jazz (urn:entity:artist)",
+   "Dune (urn:entity:movie)",
+   "Ticket to Ride (urn:entity:videogame)"
+  ],
+  "picks": [
+   {
+    "title": "Hans Zimmer: Interstellar (Original Motion Picture Soundtrack) [Expanded Edition], LP",
+    "category": "Vinyl",
+    "price": 38,
+    "why": "Loved by fans of Dune, by Qloo's count.",
+    "basis": "Qloo: #3 of 113 records here for fans of Dune."
+   },
+   {
+    "title": "Tom Waits: Rain Dogs (2023 Remaster), LP",
+    "category": "Vinyl",
+    "price": 30,
+    "why": "Tom Waits: Rain Dogs vinyl for her - intimate, experimental cabaret style that shares jazz sensibilities of mood and improvisation",
+    "basis": "Qloo: #2 of 113 records here for fans of Dune."
+   },
+   {
+    "title": "Control (PlayStation 4)",
+    "category": "Games",
+    "price": 39,
+    "why": "Loved by fans of Dune, by Qloo's count.",
+    "basis": "Qloo: #1 of 49 games here for fans of Dune."
+   },
+   {
+    "title": "Everything Everywhere All at Once (4K UHD Blu-ray)",
+    "category": "Film",
+    "price": 18,
+    "why": "Loved by fans of Dune, by Qloo's count.",
+    "basis": "Qloo: #1 of 90 films here for fans of Dune."
+   },
+   {
+    "title": "Terry Pratchett: Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch",
+    "category": "Books",
+    "price": 14,
+    "why": "Terry Pratchett and Neil Gaiman's Good Omens book - comedic science fiction fantasy with humor that pairs well with the couple's eclectic tastes for shared reading time",
+    "basis": "Qloo: #2 of 97 books here for fans of these tastes."
+   }
+  ]
+ },
+ "j25": {
+  "message": "Just show me what everyone's buying right now.",
+  "expect": "Mainstream, widely known picks across formats; nothing obscure.",
+  "secs": 2,
+  "llm": "agent",
+  "turns": 1,
+  "route": [],
+  "question": "I'd love to help! But to make great recommendations from our shelves, I need to know a bit about who we're shopping for.\n\nLet me ask: **Who is this gift or purchase for, and what do they love?** (For example: \"my sister who's into indie rock,\" \"my dad, 60, who watches old Westerns,\" or just their na",
+  "tastes": [],
+  "picks": []
+ },
+ "j26": {
+  "message": "My grandpa served in Vietnam. Is there something meaningful but not depressing?",
+  "expect": "60s-70s era music and respectful, not trauma-heavy books or films; careful tone.",
+  "secs": 30,
+  "llm": "agent",
+  "turns": 4,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "question": null,
+  "tastes": [
+   "Creedence Clearwater Revival (urn:entity:artist)",
+   "Apocalypse Now (urn:entity:movie)",
+   "Good Morning, Vietnam (urn:entity:movie)"
+  ],
+  "picks": [
+   {
+    "title": "Bob Dylan: Blood On the Tracks, LP",
+    "category": "Vinyl",
+    "price": 29,
+    "why": "Bob Dylan: Blood On the Tracks is electric blues and protest folk from a songwriter who defined the conscience of the 1960s and 70s.",
+    "basis": "Qloo: #3 of 112 records here for fans of Good Morning, Vietnam."
+   },
+   {
+    "title": "The Beach Boys: Pet Sounds, LP",
+    "category": "Vinyl",
+    "price": 35,
+    "why": "The Beach Boys: Pet Sounds is the uplifting, diverse soft rock and pop that soundtracked peacetime in the era, catchy and loyal to melody.",
+    "basis": "Qloo: #2 of 112 records here for fans of Good Morning, Vietnam."
+   },
+   {
+    "title": "The Rolling Stones: 12 X 5, LP",
+    "category": "Vinyl",
+    "price": 30,
+    "why": "The Rolling Stones: 12 X 5 is hard blues rock and freedom music, hard-edged but rootsy, capturing the energetic spirit of that time.",
+    "basis": "Qloo: #1 of 112 records here for fans of Good Morning, Vietnam."
+   },
+   {
+    "title": "Yellowstone (complete series box set)",
+    "category": "TV box sets",
+    "price": 38,
+    "why": "Yellowstone captures Americana, family relationships and the ex-military experience with a modern lens, without dwelling on trauma.",
+    "basis": "Qloo: #1 of 34 TV shows here for fans of Creedence Clearwater Revival."
+   },
+   {
+    "title": "The Grand Budapest Hotel (4K UHD Blu-ray)",
+    "category": "Film",
+    "price": 21,
+    "why": "The Grand Budapest Hotel is a beautifully crafted film with an 84-year-old protagonist and the friendship that anchors his story, made with precise, deliberate cinema.",
+    "basis": "Qloo: #2 of 90 films here for fans of Creedence Clearwater Revival."
+   }
+  ]
+ },
+ "j27": {
+  "message": "i want somthing like breaking bad but its a book",
+  "expect": "Crime novels about moral descent, mostly books, understood despite the typo.",
+  "secs": 10,
+  "llm": "agent",
+  "turns": 5,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "question": null,
+  "tastes": [
+   "Breaking Bad (urn:entity:tv_show)"
+  ],
+  "picks": [
+   {
+    "title": "John Lennon: The John Lennon Letters",
+    "category": "Books",
+    "price": 22,
+    "why": "John Lennon: The John Lennon Letters - Breaking Bad taste match with memoir and biography elements",
+    "basis": "Qloo: #1 of 97 books here for fans of Breaking Bad."
+   },
+   {
+    "title": "Peter Ames Carlin: Paul McCartney: The Life",
+    "category": "Books",
+    "price": 27,
+    "why": "Peter Ames Carlin: Paul McCartney: The Life - Breaking Bad taste match with biography and art history",
+    "basis": "Qloo: #4 of 97 books here for fans of Breaking Bad."
+   },
+   {
+    "title": "Carl Weber: Man on the Run: Paul McCartney in the 1970s",
+    "category": "Books",
+    "price": 17,
+    "why": "Carl Weber: Man on the Run: Paul McCartney in the 1970s - Breaking Bad taste match with biography and music history",
+    "basis": "Qloo: #7 of 97 books here for fans of Breaking Bad."
+   },
+   {
+    "title": "Paul McCartney: Paul McCartney: Many Years from Now",
+    "category": "Books",
+    "price": 24,
+    "why": "Paul McCartney: Paul McCartney: Many Years from Now - Breaking Bad taste match with autobiography and biography memoir",
+    "basis": "Qloo: #8 of 97 books here for fans of Breaking Bad."
+   },
+   {
+    "title": "Peter Jackson: The Beatles: Get Back",
+    "category": "Books",
+    "price": 21,
+    "why": "Peter Jackson: The Beatles: Get Back - Breaking Bad taste match with music and pop culture collections",
+    "basis": "Qloo: #12 of 97 books here for fans of Breaking Bad."
+   }
+  ]
+ },
+ "j28": {
+  "message": "Can I just get a PS5 controller or a gift card?",
+  "expect": "Says neither is stocked and offers games or other items instead; no invented products.",
+  "secs": 2,
+  "llm": "agent",
+  "turns": 1,
+  "route": [],
+  "question": "I appreciate the question! Unfortunately, Afterglow specializes in vinyl records, books, films, games, and TV box sets — we don't stock PS5 controllers or gift cards.\n\nHowever, if you're shopping for a gamer, I'd be happy to help you find amazing games for their collection, or other formats we carry",
+  "tastes": [],
+  "picks": []
+ },
+ "j29": {
+  "message": "Japanese city pop, Haruki Murakami, Lost in Translation. Max $30 per item.",
+  "expect": "City pop vinyl, Murakami-adjacent books and Tokyo-set films; every item $30 or less.",
+  "secs": 8,
+  "llm": "agent",
+  "turns": 3,
+  "route": [
+   "find_tastes",
+   "score_catalog",
+   "check_store",
+   "recommend"
+  ],
+  "question": null,
+  "tastes": [
+   "Japanese city pop (urn:entity:artist)",
+   "Haruki Murakami (urn:entity:person)",
+   "Lost in Translation (urn:entity:movie)"
+  ],
+  "picks": [
+   {
+    "title": "Haruki Murakami: Kafka on the Shore",
+    "category": "Books",
+    "price": 27,
+    "why": "By Haruki Murakami, magical realism literary fiction that shares the contemplative tone and Japanese perspective of your tastes.",
+    "basis": "By Haruki Murakami, named in the request."
+   },
+   {
+    "title": "The xx: xx (Deluxe), LP",
+    "category": "Vinyl",
+    "price": 26,
+    "why": "The xx's intimate electropop indie rock pairs with the atmospheric minimalism of Japanese city pop.",
+    "basis": "Qloo: #1 of 113 records here for fans of Japanese city pop."
+   },
+   {
+    "title": "Moonrise Kingdom (4K UHD Blu-ray)",
+    "category": "Film",
+    "price": 20,
+    "why": "Wes Anderson's Moonrise Kingdom echoes Lost in Translation in its aesthetic, postmodern sensibility and introspective emotional landscape.",
+    "basis": "Qloo: #1 of 89 films here for fans of Lost in Translation."
+   },
+   {
+    "title": "Pixies: Doolittle, LP",
+    "category": "Vinyl",
+    "price": 25,
+    "why": "Pixies' Doolittle is an innovative alternative rock touchstone with the psychological depth and artistic precision you seek.",
+    "basis": "Qloo: #4 of 113 records here for fans of Lost in Translation."
+   },
+   {
+    "title": "F. Scott Fitzgerald: The Great Gatsby",
+    "category": "Books",
+    "price": 20,
+    "why": "F. Scott Fitzgerald's The Great Gatsby is a literary classic with the romance and reflective atmosphere of Lost in Translation.",
+    "basis": "Qloo: #2 of 97 books here for fans of Lost in Translation."
+   }
+  ]
+ },
+ "j30": {
+  "message": "What's your single best pick for someone who has everything?",
+  "expect": "One clear lead pick with a sharp reason, plus supporting picks that feel special or collectible.",
+  "secs": 23,
+  "llm": "agent",
+  "turns": 5,
+  "route": [
+   "ask_shopper",
+   "find_tastes",
+   "score_catalog",
+   "recommend"
+  ],
+  "question": null,
+  "tastes": [
+   "Wes Anderson (urn:entity:person)",
+   "Criterion Collection (urn:entity:brand)",
+   "David Bowie (urn:entity:artist)"
+  ],
+  "picks": [
+   {
+    "title": "The Grand Budapest Hotel (4K UHD Blu-ray)",
+    "category": "Film",
+    "price": 21,
+    "why": "Wes Anderson's most lavish film in 4K, a visual masterpiece for collectors of fine cinema.",
+    "basis": "By Wes Anderson, named in the request."
+   },
+   {
+    "title": "Outer Wilds (PlayStation 5)",
+    "category": "Games",
+    "price": 57,
+    "why": "Loved by fans of Criterion Collection, by Qloo's count.",
+    "basis": "Qloo: #1 of 49 games here for fans of Criterion Collection."
+   },
+   {
+    "title": "The Velvet Underground: Loaded (Remastered), LP",
+    "category": "Vinyl",
+    "price": 42,
+    "why": "The Velvet Underground's proto-punk classic on remastered vinyl, a landmark for experimental rock lovers.",
+    "basis": "Qloo: #1 of 112 records here for fans of David Bowie."
+   },
+   {
+    "title": "Black Mirror (complete series box set)",
+    "category": "TV box sets",
+    "price": 43,
+    "why": "Loved by fans of David Bowie, by Qloo's count.",
+    "basis": "Qloo: #1 of 34 TV shows here for fans of David Bowie."
+   },
+   {
+    "title": "Pixies: Doolittle, LP",
+    "category": "Vinyl",
+    "price": 25,
+    "why": "Pixies' Doolittle, an innovative rock album that influenced David Bowie and modern alternative music.",
+    "basis": "Qloo: #2 of 112 records here for fans of David Bowie."
+   }
+  ]
+ }
+}

@@ -1,5 +1,6 @@
 import { search, QlooUnavailable, type QlooCall } from "@/lib/qloo/client";
 import { allow } from "@/lib/limits";
+import { lane, liveFor } from "@/lib/access";
 
 export const maxDuration = 60;
 
@@ -16,14 +17,16 @@ export async function POST(req: Request) {
     .filter(Boolean);
   const unique = [...new Set(lines.map((l) => l.toLowerCase()))].slice(0, MAX_LINES).map((l) => lines.find((x) => x.toLowerCase() === l)!);
   if (!unique.length) return Response.json({ error: "Paste at least one title, one per line." }, { status: 400 });
-  const gate = allow(req, "import", 3, 10);
+  const access = liveFor(req);
+  if (!access.live) return Response.json({ error: "Checking a pasted shelf runs live Qloo searches, which are paused right now. The rest of the owner view works." }, { status: 503 });
+  const gate = access.judge ? allow(req, "import-judge", 20, 60) : allow(req, "import", 3, 10);
   if (!gate.ok) return Response.json({ error: gate.reason }, { status: 429 });
   const calls: QlooCall[] = [];
   try {
     const matched: Array<{ line: string; entity_id: string; name: string; type: string }> = [];
     const unknown: string[] = [];
     for (const line of unique) {
-      const hit = ((await search(line, undefined, calls)).results ?? []).find((e) => SELLABLE.has(String(e.types?.[0] ?? e.type ?? "")) || (e.types ?? []).some((t: string) => SELLABLE.has(t)));
+      const hit = ((await lane.run({ judge: access.judge }, () => search(line, undefined, calls))).results ?? []).find((e) => SELLABLE.has(String(e.types?.[0] ?? e.type ?? "")) || (e.types ?? []).some((t: string) => SELLABLE.has(t)));
       if (hit) matched.push({ line, entity_id: hit.entity_id, name: hit.name, type: (hit.types ?? []).find((t: string) => SELLABLE.has(t)) ?? String(hit.type ?? "") });
       else unknown.push(line);
     }

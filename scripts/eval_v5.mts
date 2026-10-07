@@ -6,7 +6,7 @@ import { existsSync, readFileSync, writeFileSync } from "node:fs";
 (async () => {
   const { runAgentic } = await import("../lib/agent/agentic.ts");
   const { scenarios } = JSON.parse(readFileSync("eval/v2_scenarios.json", "utf8"));
-  const OUT = "eval/v5_runs.json";
+  const OUT = process.argv[2] ?? "eval/v5_runs.json"; // a later agent version writes its own file (eval/v6_runs.json)
   const runs: Record<string, any> = existsSync(OUT) ? JSON.parse(readFileSync(OUT, "utf8")) : {};
   let usd = 0, live = 0;
   for (const s of scenarios) {

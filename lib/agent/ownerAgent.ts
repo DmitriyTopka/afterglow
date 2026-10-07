@@ -39,7 +39,7 @@ const TOOLS: Anthropic.Tool[] = [
 export interface PlanPick { entity_id: string; name: string; type: string; image: string | null; askedBy: number; reason: string; placement: Placement | null; audience?: string | null; tastes?: string[] }
 export interface OwnerPlan { steps: Step[]; picks: PlanPick[]; summary: string; before: number; after: number; usd: number; qlooCalls: number; turns: number }
 
-export async function runOwnerAgent(mine: DemandRow[], addedIds: string[]): Promise<OwnerPlan> {
+export async function runOwnerAgent(mine: DemandRow[], addedIds: string[], opts: { paused?: boolean } = {}): Promise<OwnerPlan> {
   const rows = [...seedDemand, ...mine];
   const added = new Set(addedIds);
   const sugg = suggestions(rows, added).slice(0, 15);
@@ -59,6 +59,7 @@ export async function runOwnerAgent(mine: DemandRow[], addedIds: string[]): Prom
     steps.push({ kind: "rank", label: why, status: "warn" });
     return { steps, picks, summary: "", before, after: coverage(rows, new Set([...added, ...picks.map((p) => p.entity_id)])), usd, qlooCalls: calls.length, turns: 0 };
   };
+  if (opts.paused) return fallback("The restock agent is paused right now; showing the top 3 titles by coverage gain");
   if (!process.env.ANTHROPIC_API_KEY || !canSpend()) return fallback("The restock agent is resting today; showing the top 3 titles by coverage gain");
   try {
     return await plan();

@@ -1,4 +1,5 @@
 "use client";
+import { passHeaders } from "@/app/components/pass";
 // Split screen: the shopper's request on the left, the agent's steps arriving live; the shop owner's view on the
 // right, where the unmet demand from that request shows up, and the restock agent puts a new title on the shelf.
 import Link from "next/link";
@@ -37,6 +38,7 @@ export default function Live() {
   const [running, setRunning] = useState(false);
   const [replay, setReplay] = useState<boolean | null>(null);
   const [savedAt, setSavedAt] = useState<string | null>(null);
+  const [paused, setPaused] = useState<{ note: string; request: string } | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [mine, setMine] = useState<DemandRow[]>([]);
   const [added, setAdded] = useState<Added[]>([]);
@@ -63,14 +65,15 @@ export default function Live() {
   const pins: Pin[] = added.map((a) => ({ id: a.entity_id, x: a.placement.x, y: a.placement.y, image: a.image ?? "", label: a.name }));
 
   async function run(message: string, live = false) {
-    setText(message); setSteps([]); setResult(null); setLight(null); setError(null); setLanded(null); setRunning(true); setReplay(null);
+    setText(message); setSteps([]); setResult(null); setLight(null); setError(null); setLanded(null); setRunning(true); setReplay(null); setPaused(null);
     try {
-      const res = await fetch("/api/live", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ message, live }) });
+      const res = await fetch("/api/live", { method: "POST", headers: passHeaders(), body: JSON.stringify({ message, live }) });
       if (!res.ok || !res.body) { const d = await res.json().catch(() => ({})); throw new Error(d.error ?? "Request failed"); }
       const reader = res.body.getReader();
       const dec = new TextDecoder();
       let buf = "";
       let finished = false;
+      let pausedRun = false;
       for (;;) {
         const { value, done } = await reader.read();
         if (done) break;
@@ -80,14 +83,14 @@ export default function Live() {
           const line = buf.slice(0, nl); buf = buf.slice(nl + 1);
           if (!line.trim()) continue;
           const ev = JSON.parse(line);
-          if (ev.type === "mode") { setReplay(ev.replay); setSavedAt(ev.savedAt ?? null); }
+          if (ev.type === "mode") { setReplay(ev.replay); setSavedAt(ev.savedAt ?? null); if (ev.paused) { pausedRun = true; setPaused(ev.paused); setText(ev.paused.request); } }
           if (ev.type === "step") { const { light: l, ...step } = ev.step as Step; if (l) setLight(l); setSteps((s) => [...s, step]); }
           if (ev.type === "error") { setError(ev.error); finished = true; }
           if (ev.type === "result") {
             finished = true;
             const r = ev.result as Result;
             setResult(r);
-            if (r.gap) { recordDemand({ message, signals: (r.extraction?.signals ?? []).map((x) => x.name), wanted: r.gap.wanted }); setMine(myDemand()); }
+            if (r.gap && !pausedRun) { recordDemand({ message, signals: (r.extraction?.signals ?? []).map((x) => x.name), wanted: r.gap.wanted }); setMine(myDemand()); }
           }
         }
       }
@@ -103,7 +106,7 @@ export default function Live() {
   async function restock(w: WantedTitle) {
     setPlacing(true); setError(null);
     try {
-      const res = await fetch("/api/place", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ entity_id: w.entity_id, type: w.type }) });
+      const res = await fetch("/api/place", { method: "POST", headers: passHeaders(), body: JSON.stringify({ entity_id: w.entity_id, type: w.type }) });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? "Placing failed");
       const before = coverage(rows, addedIds);
@@ -152,7 +155,8 @@ export default function Live() {
             {running && <li className="pending"><em>…</em><div><b>The agent is working through Qloo</b></div></li>}
             {!steps.length && !running && <li className="idle"><em>Start</em><div><b>Pick a shopper above, or write your own request.</b><span>Every step the agent takes shows up here as it happens.</span></div></li>}
           </ol>
-          {replay && !running && <p className="lb-note">Played back from a real agent run{savedAt ? ` on ${new Date(savedAt).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}` : ""}: same Qloo calls, same picks. <button type="button" className="linklike" onClick={() => run(text, true)}>Run it live now</button></p>}
+          {paused && <p className="lb-note">{paused.note} Recorded request: “{paused.request}”</p>}
+          {replay && !running && !paused && <p className="lb-note">Played back from a real agent run{savedAt ? ` on ${new Date(savedAt).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}` : ""}: same Qloo calls, same picks. <button type="button" className="linklike" onClick={() => run(text, true)}>Run it live now</button></p>}
           {result?.question && <p className="ask-back"><b>The assistant asks:</b> {result.question}</p>}
           {result?.calls && result.calls.length > 0 && (
             <details className="qloo-trace">

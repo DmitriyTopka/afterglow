@@ -1,5 +1,6 @@
 // The only module that talks to Qloo. QLOO_MODE=mock|live switches the transport; callers never know.
 import { cached } from "@/lib/cache";
+import { lane } from "@/lib/access";
 import { mockInsights, mockSearch } from "./mock";
 import type { InsightsParams, QlooInsightsResponse, QlooSearchResponse } from "./types";
 
@@ -25,9 +26,13 @@ export interface QlooCall {
 // Start at most one call every MIN_GAP_MS, keep MAX_IN_FLIGHT open, and retry 429s with backoff.
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-// Monthly quota reserve: once Qloo reports fewer than RESERVE calls left this month, stop live calls and serve
+// Monthly quota reserve: once Qloo reports fewer calls left this month than the reserve, stop live calls and serve
 // recorded data, so the demo still works when judges arrive. Read from every response, so it holds on every instance.
-const RESERVE = Number(process.env.QLOO_MONTH_RESERVE ?? 1500);
+// Anonymous traffic stops early (3500 left); a request with the judges' pass may go down to 1000. A bot can then burn
+// at most the anonymous share, and judges keep about 2500 calls (some 160 live requests) until the monthly reset.
+const RESERVE = Number(process.env.QLOO_MONTH_RESERVE ?? 1000);
+const PUBLIC_RESERVE = Number(process.env.QLOO_PUBLIC_RESERVE ?? 3500);
+const reserve = () => (lane.getStore()?.judge ? RESERVE : Math.max(RESERVE, PUBLIC_RESERVE));
 let monthRemaining: number | null = null;
 let monthResetAt = 0; // ms timestamp when Qloo says the monthly quota resets; after it the reserve no longer applies
 export const QUOTA_MESSAGE = "Live Qloo calls are paused to keep this month's quota for the judging period. The examples, the live screen replays, product pages and the owner view still work from recorded Qloo data.";
@@ -59,7 +64,7 @@ async function get<T>(endpoint: string, params: Record<string, string>): Promise
   if (QLOO_OFFLINE) throw new QlooUnavailable(OFFLINE_MESSAGE);
   if (!key) throw new Error("QLOO_MODE=live but QLOO_API_KEY is not set");
   if (monthRemaining !== null && Date.now() >= monthResetAt) monthRemaining = null; // quota has reset: try live again
-  if (monthRemaining !== null && monthRemaining < RESERVE) throw new QlooUnavailable(QUOTA_MESSAGE);
+  if (monthRemaining !== null && monthRemaining < reserve()) throw new QlooUnavailable(QUOTA_MESSAGE);
   const url = `${BASE}${endpoint}?${new URLSearchParams(params)}`;
   for (let attempt = 1; ; attempt++) {
     const res = await slot(() => fetch(url, { headers: { "X-Api-Key": key }, signal: AbortSignal.timeout(15000) }));

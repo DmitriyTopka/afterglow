@@ -1,3 +1,5 @@
+import { lane } from "@/lib/access";
+
 // Per-instance daily spend ceiling for Claude calls. Not shared across serverless instances,
 // so the real ceiling is cap x instances; the cache keeps repeat traffic off the model anyway.
 const PRICE_PER_MTOK: Record<string, { in: number; out: number }> = {
@@ -19,8 +21,10 @@ function roll() {
 
 export function capUsd(): number {
   const cap = Number(process.env.LLM_DAILY_USD_CAP);
-  return cap > 0 ? cap : 1; // an empty or broken value must not switch the live agent off
-
+  const base = cap > 0 ? cap : 1; // an empty or broken value must not switch the live agent off
+  // Requests with the judges' pass may keep going past the public ceiling, up to their own.
+  const judgeCap = Number(process.env.LLM_JUDGE_DAILY_USD_CAP);
+  return lane.getStore()?.judge ? Math.max(base, judgeCap > 0 ? judgeCap : 10) : base;
 }
 
 export function canSpend(): boolean {

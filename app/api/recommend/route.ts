@@ -2,6 +2,7 @@ import saved from "@/data/saved_answers.json";
 import { QlooUnavailable } from "@/lib/qloo/client";
 import { runAgentic } from "@/lib/agent/agentic";
 import { allow } from "@/lib/limits";
+import { lane, liveFor, nearestSaved, PAUSED_NOTE } from "@/lib/access";
 
 // One-click examples answer from data/saved_answers.json (instant, and still works if Qloo or Claude is down).
 const SAVED = saved as Record<string, unknown>;
@@ -13,10 +14,15 @@ export async function POST(req: Request) {
   const message = typeof body.message === "string" ? body.message.trim().slice(0, 600) : "";
   if (!message) return Response.json({ error: "message is required" }, { status: 400 });
   if (Object.hasOwn(SAVED, message)) return Response.json({ ...(SAVED[message] as object), saved: true });
-  const gate = allow(req, "recommend");
+  const access = liveFor(req);
+  if (!access.live) {
+    const near = nearestSaved(message);
+    return Response.json({ ...(SAVED[near] as object), saved: true, paused: { note: PAUSED_NOTE, request: near } });
+  }
+  const gate = access.judge ? allow(req, "recommend-judge", 100, 1000) : allow(req, "recommend");
   if (!gate.ok) return Response.json({ error: gate.reason }, { status: 429 });
   try {
-    return Response.json(await runAgentic(message));
+    return Response.json(await lane.run({ judge: access.judge }, () => runAgentic(message)));
   } catch (err) {
     if (err instanceof QlooUnavailable) return Response.json({ error: err.message, offline: true }, { status: 503 });
     console.error(err);

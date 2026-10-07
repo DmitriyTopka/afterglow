@@ -1,4 +1,5 @@
 "use client";
+import { passHeaders } from "@/app/components/pass";
 // "Check your own shop": paste what you stock, Qloo resolves each line, and the demo shoppers' demand is
 // re-measured against your shelf instead of ours. Nothing is stored; the list lives in this page only.
 import { useState } from "react";
@@ -16,7 +17,7 @@ export function ImportShelf({ rows, demoCoverage }: { rows: DemandRow[]; demoCov
     setBusy(true); setError(null); setRes(null);
     try {
       const lines = (text.trim() || SAMPLE).split("\n");
-      const r = await fetch("/api/import", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ lines }) });
+      const r = await fetch("/api/import", { method: "POST", headers: passHeaders(), body: JSON.stringify({ lines }) });
       const d = await r.json();
       if (!r.ok) throw new Error(d.error ?? "Import failed");
       setRes(d);
