@@ -24,13 +24,17 @@
 
 Independent record shops and bookstores. US vinyl sales reached $1.04B in 2025, up 9.3% (RIAA), and retail as a whole loses about $1.73 trillion a year to items that are out of stock or overstocked (IHL Group, 2025). A chain sees every click. A small shop sees what sold and never learns what someone came in for and left without.
 
-## A real shop, run through Afterglow
+Shops already restock from what customers ask for out loud. "If we don't have what customers want, we'll order it, plus an extra copy," a record shop manager told [Patch](https://patch.com/new-jersey/scotchplains/slinging-vinyl-in-a-digital-age) in 2010. Afterglow records what shoppers never get to ask.
 
-We took the 500 best-selling items from the public catalog of Waterloo Records, an independent record store in Austin, Texas (no affiliation), and asked Qloo two questions. Page: https://taste-layer-alpha.vercel.app/real
+## Real shops, run through Afterglow
+
+We took the public catalogs of two independent record stores (no affiliation): the 500 best-selling items of Waterloo Records in Austin, Texas, and the first 500 items of the vinyl LP collection of Josey Records in Dallas. We asked Qloo two questions. Page: https://taste-layer-alpha.vercel.app/real
 
 - **Does the shelf know its city?** Qloo's location signal returns the 50 artists Austin over-indexes on. 9 of them are in this best-seller list.
 - **Does it fit the shoppers?** For our 20 demo shoppers with music tastes, 36 of the 181 records their tastes love most are on this shelf; 7 of 20 would find nothing. At this list's median price of $27.99, that's roughly $196 walking out per 20 such requests (a rough estimate: one record each).
 - Qloo recognised 192 of the 217 artists on the shelf by exact name (88%; a name Qloo spells differently counts as unknown), against about 30% for random Amazon listings. That gap is why we built for a culture shop.
+- **Josey Records, Dallas:** Qloo knows 227 of its 246 artists (92%); 8 of the 50 artists Dallas loves most are in that slice (Leon Bridges, Erykah Badu, Solange among them); 16 of our 20 music shoppers would find something.
+- We tried two more shops and left them out: one feed opened with exclusive variants instead of regular stock, and a bookshop's 29 best-seller titles matched Qloo by exact name only 6 times.
 
 ## What Claude alone can't do here
 

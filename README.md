@@ -4,7 +4,7 @@
 
 Video (63 s): https://youtu.be/18Ok8CbCea8
 Live demo: https://taste-layer-alpha.vercel.app (shopper), [/live](https://taste-layer-alpha.vercel.app/live) (both sides at once) and [/owner](https://taste-layer-alpha.vercel.app/owner) (owner).
-Real shop: [/real](https://taste-layer-alpha.vercel.app/real) runs the public best-seller catalog of Waterloo Records (Austin, TX; no affiliation) through Qloo (`scripts/real_shelf.mts`, `data/real/waterloo.json`).
+Real shops: [/real](https://taste-layer-alpha.vercel.app/real) runs the public catalogs of Waterloo Records (Austin, TX) and Josey Records (Dallas, TX), no affiliation, through Qloo (`scripts/real_shelf.mts <shop>`, `data/real/*.json`).
 Project write-up: [docs/DEVPOST.md](docs/DEVPOST.md).
 Built for the [Qloo Agentic Hackathon](https://qloo.devpost.com/). Built 4-30 October 2026.
 

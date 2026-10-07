@@ -702,3 +702,20 @@ a.lb-tab { text-decoration: none; display: inline-block; }
 @media (max-width: 900px) {
   .band.has-photo > .chain-card { position: static; width: auto; transform: none; margin: 22px 0 6px; box-shadow: 8px 8px 0 var(--paper-ink); }
 }
+
+/* Real shelves: shops side by side */
+.real-table-wrap { overflow-x: auto; margin-top: 18px; max-width: 980px; }
+.real-table { border-collapse: collapse; width: 100%; background: var(--ink); color: var(--paper); border-radius: 12px; overflow: hidden; font-size: 15px; }
+.real-table th { text-align: left; font: 500 12px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--amber); padding: 12px 14px; border-bottom: 1px solid #3b2a2c; }
+.real-table td { padding: 12px 14px; border-bottom: 1px solid #2a1d1f; vertical-align: top; }
+.real-table td b { font-family: var(--display); font-weight: 800; font-size: 22px; color: var(--amber); }
+.real-table td a { color: var(--paper); text-decoration: none; }
+.real-table td a b { color: var(--paper); font-size: 20px; }
+.real-table small { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; }
+.real-quotes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 18px; max-width: 980px; }
+.real-quotes figure { margin: 0; background: var(--paper); color: var(--paper-ink); border-radius: 12px; padding: 16px 18px; box-shadow: 6px 6px 0 var(--ink); }
+.real-quotes blockquote { margin: 0 0 8px; font: 600 19px/1.35 var(--body); }
+.real-quotes figcaption { font-size: 13px; color: #6b5547; }
+.real-quotes figcaption a { color: inherit; }
+.real-quotes p { grid-column: 1 / -1; margin: 4px 0 0; color: var(--coral-ink); font-size: 16px; }
+@media (max-width: 700px) { .real-quotes { grid-template-columns: 1fr; } }

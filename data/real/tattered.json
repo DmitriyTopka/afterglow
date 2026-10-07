@@ -1,0 +1,516 @@
+{
+ "key": "tattered",
+ "shop": "Tattered Cover",
+ "city": "Denver, CO",
+ "kind": "books",
+ "url": "https://tatteredcover.com",
+ "source": "Tattered Cover, Denver, CO: public Shopify catalog feed, collection 'tc_bestsellers', 30 current best-sellers, fetched 2026-10-07. No affiliation.",
+ "label": "30 current best-sellers",
+ "items": 30,
+ "goods": 30,
+ "names": 29,
+ "recognised": 6,
+ "median_price": 20,
+ "shelf": [
+  {
+   "name": "Yesteryear",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Theo of Golden",
+   "items": 1,
+   "entity_id": "1B494950-2894-4A74-9B36-9F13D4448EE7",
+   "qloo_name": "Theo of Golden"
+  },
+  {
+   "name": "The Calamity Club",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Dungeon Crawler Carl",
+   "items": 2,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Murdoku: 80 Murder Mystery Logic Puzzles",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Project Hail Mary",
+   "items": 1,
+   "entity_id": "7B75291D-103B-476A-91B5-81E7687D6A59",
+   "qloo_name": "Project Hail Mary"
+  },
+  {
+   "name": "KPop Demon Hunters: The Movie in Comics: The Official Retelling in Comic Form",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "A Forsaken Prophecy",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Carl's Doomsday Scenario",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Red Rising",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "The Dungeon Anarchist's Cookbook",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Whistler",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Union Station in Denver",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Kitchen Confidential: Adventures in the Culinary Underbelly",
+   "items": 1,
+   "entity_id": "35E706AE-3CAD-44AE-B68A-0B9CF67C47E2",
+   "qloo_name": "Kitchen Confidential: Adventures in the Culinary Underbelly"
+  },
+  {
+   "name": "The Buffalo Hunter Hunter",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Cute 'n' Cozy Sticker Therapy: Coffee Shops: Over 500 Reusable Stickers!",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Disappointing Affirmations",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "A Fugitive's History of the Known Universe",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "James (2024 B&N Book of the Year) (Pulitzer Prize Winner)",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Brave New World",
+   "items": 1,
+   "entity_id": "F038CFAC-7515-4840-9F22-E45479E56439",
+   "qloo_name": "Brave New World"
+  },
+  {
+   "name": "Rosalina's Storybook",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "The Odyssey: A Graphic Novel:",
+   "items": 1,
+   "entity_id": "1D5533F6-7931-474F-A0E0-AF234784F11D",
+   "qloo_name": "The Odyssey: A Graphic Novel"
+  },
+  {
+   "name": "Indestructibles (The Original): Baby Loves Fall",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "We Are Mighty: 12 Ordinary Americans Who Did the Next Needed Thing",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "For the Fans! (KPop Demon Hunters): Official Storybook",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Bluey: Sleepytime",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Just One Night",
+   "items": 1,
+   "entity_id": "20B25968-4967-45D9-ACC7-41DC21D827F1",
+   "qloo_name": "Just One Night"
+  },
+  {
+   "name": "Grandma Joy and Me: A Journey of Healing, One National Park at a Time",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "The Gate of the Feral Gods",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  }
+ ],
+ "local": {
+  "query": "Denver, CO",
+  "top": [
+   {
+    "entity_id": "BB769745-220B-48BF-BB1B-5E63D56B5546",
+    "name": "Superheroes Are Everywhere",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "EFF3A5AB-F4CF-4017-947C-08C1DBECDF5E",
+    "name": "Peanut Goes for the Gold",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "CA648BE9-1421-49E0-AFFB-3D2B7D6D3191",
+    "name": "Change Sings: a Children's Anthem",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "72AC8BA3-1A7C-47CC-A90B-6EF66CB3CC69",
+    "name": "Promises to Keep: On Life and Politics",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "56C645BC-5545-43C7-9275-8EF34B0BBC7D",
+    "name": "Promise Me, Dad: A Year of Hope, Hardship, and Purpose",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "5B443ACB-7F95-40C2-9FAA-370A2F0989C7",
+    "name": "Me and White Supremacy: Combat Racism, Change the World, and Become a Good Ancestor",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "C7549F4B-C36D-483D-B962-01CB0C88D68D",
+    "name": "Love Warrior",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "C4DCFABC-8A7F-4A0C-A0E3-FDAFA56E807A",
+    "name": "I'm Still Here: Black Dignity in a World Made for Whiteness",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "3230588F-5387-4E2D-8246-B0495FF687E7",
+    "name": "Carry On, Warrior: Thoughts on Life Unarmed",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "E2620E51-1F0F-4763-9B0D-28FBBE7A484C",
+    "name": "Atlas of the Heart: Mapping Meaningful Connection and the Language of Human Experience",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "7BE915E0-3AD8-461A-9E6C-CFFD69D34007",
+    "name": "Not That Kind of Girl: A Young Woman Tells You What She's \"Learned\"",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "FC3E3D0D-9948-4FFC-A95F-55950F2F5AF7",
+    "name": "Untamed",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "B5E436AB-8224-484B-8D3C-0A6121CFB603",
+    "name": "Love, Loss, and What We Ate: A Memoir",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "B1BBB745-BA06-498B-AE30-27A6B913152A",
+    "name": "Born a Crime: Stories From a South African Childhood",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "CCA23370-E957-44AD-9F44-A0B89C0707CC",
+    "name": "The Donald J. Trump Presidential Twitter Library",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "E876AC8A-5A98-4776-B14E-B9C24FCD683C",
+    "name": "Tomatoes for Neela",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "B69178A1-5747-40B7-89DC-E6DB74E07701",
+    "name": "Our Revolution: A Future to Believe In",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "7F50437F-17A1-4FCE-98DA-EF985A0C0A89",
+    "name": "Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "4ECEE338-59E3-4EE1-A780-24ACD169E126",
+    "name": "Unlimited Power: The New Science Of Personal Achievement",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "7C099634-126F-4026-97D5-E76817E205AD",
+    "name": "Outsider in the White House",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "9CC78DC9-FDB8-4A73-80DB-B6A18F4EC357",
+    "name": "The Gifts of Imperfection",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "1336012F-1BA5-41C0-8B99-35D292E1BF47",
+    "name": "The Speech: A Historic Filibuster on Corporate Greed and the Decline of Our Middle Class",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "FABD829C-B026-436E-A31C-12CBC858CB98",
+    "name": "It's OK to Be Angry About Capitalism",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "DC1440C6-4909-486A-BFED-746CD5C2B8A5",
+    "name": "Bernie Sanders Guide to Political Revolution",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "4556A1B6-3CDB-44B2-9D6E-F8C57E99D01B",
+    "name": "The New American Revolution: The Making of a Populist Movement",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "FE690FF9-1AAB-4CEB-88A3-121F688015C2",
+    "name": "Unshakeable: Your Financial Freedom Playbook",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "4DB3B3B7-9674-4C4F-AE16-B651E38C818D",
+    "name": "Dare to Lead",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "30206228-D714-4594-A4D6-07F37307F2A7",
+    "name": "Braving the Wilderness",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "B0D607A8-5896-4D1A-B2D8-121A6ABB8068",
+    "name": "More Than Enough: Claiming Space for Who You Are (No Matter What They Say)",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "70E9EE9C-2C1C-4138-905F-F9AB9610E41A",
+    "name": "The 10X Rule: The Only Difference Between Success and Failure",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "EE95509B-B030-48A0-B60C-965730A93292",
+    "name": "The 4-Hour Body: An Uncommon Guide to Rapid Fat-Loss, Incredible Sex, and Becoming Superhuman",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "2C21D2F2-9DA0-4063-B8F0-3B94DFF1FE11",
+    "name": "The 4-Hour Workweek",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "B8CD6AF4-3A93-417F-A845-731245D559AD",
+    "name": "L.A. Candy (L.A. Candy, #1)",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "E9AEEF8C-C10B-4EA4-A5D4-7C5A98860706",
+    "name": "Sugar and Spice (L.A. Candy, #3)",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "E41CB8BA-BA64-4953-880D-76B1AD6872B0",
+    "name": "The Healing of America",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "F0BC30F5-6FBA-4B1C-ACF3-1594E037DC85",
+    "name": "Infamous (Fame Game, #3)",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "7B79EAC6-1D4F-4C85-A8A3-905A744284D5",
+    "name": "Sweet Little Lies (L.A. Candy, #2)",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "D66516DD-686A-4FBC-BA53-E3126D712AA2",
+    "name": "The Fame Game (Fame Game, #1)",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "6E3BAA5C-5EDE-481A-817A-B55159D9AD0C",
+    "name": "Barack Obama in His Own Words",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "B290851E-A489-4A8B-AFBF-0221D87997FA",
+    "name": "Going There",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "BAACFAF7-340D-4715-9BB6-D8754A97525D",
+    "name": "Lauren Conrad Beauty",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "8EF2AB17-D9D8-4597-81BA-EDF80B71B59E",
+    "name": "Dreams from My Father: A Story of Race and Inheritance",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "CCE9F4A3-70B4-4650-BC2D-EB92ABBB72CA",
+    "name": "Lauren Conrad Style",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "38D5CD35-2E3E-415F-94D0-6A937E4524B1",
+    "name": "The Inaugural Address 2009",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "4CB13468-08DF-41EE-9217-39296D706A03",
+    "name": "Why We Want You To Be Rich: Two Men, One Message",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "E875FDD8-DEDE-4AD3-AA55-BA2EBB40709E",
+    "name": "Yes, We Can!: A Salute to Children from President Obama's Victory Speech",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "5A37636E-17EB-431A-ABEF-EEF6004F24A5",
+    "name": "Renegades: Born in the USA",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "0A5B433E-757E-4193-8D50-DDA2F4380609",
+    "name": "The Audacity of Hope: Thoughts on Reclaiming the American Dream",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "163EFC92-E4EC-404E-AED1-167672ABD7A7",
+    "name": "Our Enduring Spirit: President Barack Obama's First Words to America",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "47451482-6096-41FD-8D22-AF524EAB6D9C",
+    "name": "milk and honey",
+    "on_shelf": false
+   }
+  ],
+  "on_shelf": 0
+ },
+ "shoppers": {
+  "rows": 2,
+  "wanted": 20,
+  "carried": 0,
+  "served": 0,
+  "missing": [
+   {
+    "name": "City of Glass (The Mortal Instruments, #3)",
+    "askedBy": 1
+   },
+   {
+    "name": "The Mortal Instruments (The Mortal Instruments, #1-4)",
+    "askedBy": 1
+   },
+   {
+    "name": "City of Ashes (The Mortal Instruments, #2)",
+    "askedBy": 1
+   },
+   {
+    "name": "City of Fallen Angels (The Mortal Instruments, #4)",
+    "askedBy": 1
+   },
+   {
+    "name": "City of Lost Souls (The Mortal Instruments, #5)",
+    "askedBy": 1
+   },
+   {
+    "name": "City of Bones (The Mortal Instruments, #1)",
+    "askedBy": 1
+   },
+   {
+    "name": "Clockwork Angel (The Infernal Devices, #1)",
+    "askedBy": 1
+   },
+   {
+    "name": "City of Heavenly Fire (The Mortal Instruments, #6)",
+    "askedBy": 1
+   },
+   {
+    "name": "Clockwork Prince (The Infernal Devices, #2)",
+    "askedBy": 1
+   },
+   {
+    "name": "Clockwork Princess (The Infernal Devices, #3)",
+    "askedBy": 1
+   },
+   {
+    "name": "Pearls of Lutra (Redwall, #9)",
+    "askedBy": 1
+   },
+   {
+    "name": "Triss (Redwall, #15)",
+    "askedBy": 1
+   },
+   {
+    "name": "The Bellmaker (Redwall, #7)",
+    "askedBy": 1
+   },
+   {
+    "name": "Eulalia! (Redwall, #19)",
+    "askedBy": 1
+   },
+   {
+    "name": "The Legend of Luke (Redwall, #12)",
+    "askedBy": 1
+   }
+  ]
+ },
+ "qloo_calls": 30,
+ "live_calls": 30
+}

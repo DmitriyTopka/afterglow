@@ -1,0 +1,2190 @@
+{
+ "key": "newbury",
+ "shop": "Newbury Comics",
+ "city": "Boston, MA",
+ "kind": "records",
+ "url": "https://www.newburycomics.com",
+ "source": "Newbury Comics, Boston, MA: public Shopify catalog feed, collection 'vinyl', first 500 items of its vinyl collection, fetched 2026-10-07. No affiliation.",
+ "label": "first 500 items of its vinyl collection",
+ "items": 500,
+ "goods": 500,
+ "names": 308,
+ "recognised": 281,
+ "median_price": 31.99,
+ "shelf": [
+  {
+   "name": "Pierce The Veil",
+   "items": 2,
+   "entity_id": "653BD725-93BF-4488-88F5-26881AFBE1BA",
+   "qloo_name": "Pierce The Veil"
+  },
+  {
+   "name": "Ashe",
+   "items": 1,
+   "entity_id": "CF2A25DA-1742-4AD3-A751-6333DF34435C",
+   "qloo_name": "Ashe"
+  },
+  {
+   "name": "Black Country, New Road",
+   "items": 2,
+   "entity_id": "E8C2584D-9755-474F-A9A6-0E22279A1EFE",
+   "qloo_name": "Black Country, New Road"
+  },
+  {
+   "name": "Lemon Demon",
+   "items": 6,
+   "entity_id": "B8730EBF-EF66-46D5-A09B-6095F733F7B6",
+   "qloo_name": "Lemon Demon"
+  },
+  {
+   "name": "Tally Hall",
+   "items": 4,
+   "entity_id": "3C7CF084-0E61-44D2-801F-042BCCBC3AD0",
+   "qloo_name": "Tally Hall"
+  },
+  {
+   "name": "Mayday Parade",
+   "items": 3,
+   "entity_id": "65E42B4D-0D96-4CB8-96CA-7C2D6843DBEB",
+   "qloo_name": "Mayday Parade"
+  },
+  {
+   "name": "Jeff Goldblum & The Mildred Snitzer Orchestra",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Niall Horan",
+   "items": 1,
+   "entity_id": "746E086E-5132-42EB-A54D-79FFF7AD8737",
+   "qloo_name": "Niall Horan"
+  },
+  {
+   "name": "Jeff Buckley",
+   "items": 1,
+   "entity_id": "E00E6460-45CD-4E52-B367-A569293AC63A",
+   "qloo_name": "Jeff Buckley"
+  },
+  {
+   "name": "Laufey",
+   "items": 1,
+   "entity_id": "6C2BE7A7-4154-4F0B-BE10-E751AC9061CF",
+   "qloo_name": "Laufey"
+  },
+  {
+   "name": "The Rolling Stones",
+   "items": 1,
+   "entity_id": "3A78E120-14F8-4DA2-93EE-1ED35F5FFEC7",
+   "qloo_name": "The Rolling Stones"
+  },
+  {
+   "name": "KPop Demon Hunters",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Taylor Swift",
+   "items": 1,
+   "entity_id": "4BBEF799-A0C4-4110-AB01-39216993C312",
+   "qloo_name": "Taylor Swift"
+  },
+  {
+   "name": "Machine Girl",
+   "items": 1,
+   "entity_id": "78C0D2BB-FF85-4CD9-BD3D-22FC40E70A92",
+   "qloo_name": "Machine Girl"
+  },
+  {
+   "name": "Slint",
+   "items": 1,
+   "entity_id": "F2467AED-0D95-4E69-BFE6-A118ECFA5877",
+   "qloo_name": "Slint"
+  },
+  {
+   "name": "Gorillaz",
+   "items": 1,
+   "entity_id": "80CB1FC4-9741-427A-A0DA-AB2293D2FED6",
+   "qloo_name": "Gorillaz"
+  },
+  {
+   "name": "The Format",
+   "items": 3,
+   "entity_id": "EB8F1D47-CB2E-417C-8888-5B7054EB1BF0",
+   "qloo_name": "The Format"
+  },
+  {
+   "name": "Lights",
+   "items": 1,
+   "entity_id": "CC97919B-255D-4A31-852F-6511D7AA4F2F",
+   "qloo_name": "Lights"
+  },
+  {
+   "name": "The Beths",
+   "items": 1,
+   "entity_id": "0AA36A70-AE58-4DE3-9A25-A0EF973D69C1",
+   "qloo_name": "The Beths"
+  },
+  {
+   "name": "Letters To Cleo",
+   "items": 1,
+   "entity_id": "A75FE2CD-C832-48BB-A4BC-59C6E0CC46D6",
+   "qloo_name": "Letters to Cleo"
+  },
+  {
+   "name": "Poppy",
+   "items": 1,
+   "entity_id": "1C85FFF1-6E96-4CFB-A2EE-499B2881962C",
+   "qloo_name": "Poppy"
+  },
+  {
+   "name": "The Mighty Mighty Bosstones",
+   "items": 1,
+   "entity_id": "6323D61C-5068-4A3F-A4D9-5FF503E739F9",
+   "qloo_name": "The Mighty Mighty Bosstones"
+  },
+  {
+   "name": "American Football",
+   "items": 3,
+   "entity_id": "BEC905DE-1A27-4911-88A6-9BB7B4B72C02",
+   "qloo_name": "American Football"
+  },
+  {
+   "name": "Superdrag",
+   "items": 1,
+   "entity_id": "5BEE585E-57DB-4B56-9589-90C0BD7585C9",
+   "qloo_name": "Superdrag"
+  },
+  {
+   "name": "Anamanaguchi",
+   "items": 1,
+   "entity_id": "09B09D15-9A93-456C-B7C0-5315F4825D8D",
+   "qloo_name": "Anamanaguchi"
+  },
+  {
+   "name": "Robin Carolan",
+   "items": 1,
+   "entity_id": "F30D9CD9-2741-4E73-9AED-585DB49958CA",
+   "qloo_name": "Robin Carolan"
+  },
+  {
+   "name": "Ghost",
+   "items": 2,
+   "entity_id": "A27C85DE-A8AF-4037-BAC3-709C16A4C7CF",
+   "qloo_name": "Ghost"
+  },
+  {
+   "name": "The Front Bottoms",
+   "items": 3,
+   "entity_id": "C94F5CA3-8D23-4286-9DFF-7D1470939895",
+   "qloo_name": "The Front Bottoms"
+  },
+  {
+   "name": "Sage Francis",
+   "items": 2,
+   "entity_id": "C56E6B31-F19E-4293-A552-266181BEC494",
+   "qloo_name": "Sage Francis"
+  },
+  {
+   "name": "Ryan Holladay/Hays Holladay/Zach Cregger",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Alex G",
+   "items": 1,
+   "entity_id": "1876D090-D6E6-423A-A3CC-F801B81E2A2A",
+   "qloo_name": "Alex G"
+  },
+  {
+   "name": "Mom Jeans.",
+   "items": 1,
+   "entity_id": "B05BE5C5-59C4-4978-B3A0-AD3F7527C9F7",
+   "qloo_name": "Mom Jeans."
+  },
+  {
+   "name": "Born of Osiris",
+   "items": 2,
+   "entity_id": "59BF9045-6833-4755-A05F-2258979E1DFC",
+   "qloo_name": "Born of Osiris"
+  },
+  {
+   "name": "Dance Gavin Dance",
+   "items": 9,
+   "entity_id": "A88A9A5B-6AE6-4DE0-A04E-AFAFEA448FC8",
+   "qloo_name": "Dance Gavin Dance"
+  },
+  {
+   "name": "Superheaven",
+   "items": 1,
+   "entity_id": "A0E6E19F-AE13-40AA-8AAC-972C102D2EAA",
+   "qloo_name": "Superheaven"
+  },
+  {
+   "name": "King Gizzard And The Lizard Wizard",
+   "items": 6,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Ben Folds",
+   "items": 1,
+   "entity_id": "799472DC-A9AD-4CFA-8B49-D6877EF6AE71",
+   "qloo_name": "Ben Folds"
+  },
+  {
+   "name": "Bill Burr",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Gwen Stefani",
+   "items": 1,
+   "entity_id": "90B59CB0-712C-4376-A687-B09486D6DB23",
+   "qloo_name": "Gwen Stefani"
+  },
+  {
+   "name": "Bane",
+   "items": 1,
+   "entity_id": "ED963A59-E700-40C4-A68F-6869F089A010",
+   "qloo_name": "Bane"
+  },
+  {
+   "name": "Declan McKenna",
+   "items": 1,
+   "entity_id": "5B8B5452-0AD3-4E3E-ACC9-CC9B940B653C",
+   "qloo_name": "Declan Mckenna"
+  },
+  {
+   "name": "Piebald",
+   "items": 1,
+   "entity_id": "58E31BE2-9210-47FD-AE1F-6F27F5845FD6",
+   "qloo_name": "Piebald"
+  },
+  {
+   "name": "MF Doom",
+   "items": 1,
+   "entity_id": "2526A0E0-BCB7-4DE5-AE85-5FBAB14CC246",
+   "qloo_name": "MF DOOM"
+  },
+  {
+   "name": "Lil Peep",
+   "items": 1,
+   "entity_id": "463D993F-5A78-44C6-87D8-643AA015C9AC",
+   "qloo_name": "LIL PEEP"
+  },
+  {
+   "name": "Loyle Carner",
+   "items": 1,
+   "entity_id": "3926CEE3-F412-4D72-99B1-B5190BC78C77",
+   "qloo_name": "Loyle Carner"
+  },
+  {
+   "name": "State Champs",
+   "items": 4,
+   "entity_id": "4E403F80-361C-474E-B15B-B8462BE06F20",
+   "qloo_name": "State Champs"
+  },
+  {
+   "name": "Jordan Rudess",
+   "items": 1,
+   "entity_id": "07BAC1D5-C409-457B-B7BC-EB603C05B22E",
+   "qloo_name": "Jordan Rudess"
+  },
+  {
+   "name": "All Time Low",
+   "items": 2,
+   "entity_id": "9E815D7C-91F0-44F8-B10B-9A4B6382C74F",
+   "qloo_name": "All Time Low"
+  },
+  {
+   "name": "Chat Pile",
+   "items": 3,
+   "entity_id": "F9D6FDA4-A335-4A6E-8ECF-6991D76734E7",
+   "qloo_name": "chat pile"
+  },
+  {
+   "name": "Hot Mulligan",
+   "items": 1,
+   "entity_id": "B78D28C1-710A-48B6-A11D-F62B64934D29",
+   "qloo_name": "Hot Mulligan"
+  },
+  {
+   "name": "Brittany Howard",
+   "items": 1,
+   "entity_id": "58EF0268-C035-4AE8-933E-AC0733C2FFF5",
+   "qloo_name": "Brittany Howard"
+  },
+  {
+   "name": "Blue Oyster Cult",
+   "items": 2,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Mushroomhead",
+   "items": 1,
+   "entity_id": "FBCB2479-715E-4122-9787-CEFA7DB26E40",
+   "qloo_name": "Mushroomhead"
+  },
+  {
+   "name": "Myles Kennedy",
+   "items": 1,
+   "entity_id": "872CA9D2-9A6A-4199-BEA1-DA15B6BAF444",
+   "qloo_name": "Myles Kennedy"
+  },
+  {
+   "name": "mxmtoon",
+   "items": 1,
+   "entity_id": "7826DA9C-F761-42A1-A948-90A700082B80",
+   "qloo_name": "mxmtoon"
+  },
+  {
+   "name": "SSD",
+   "items": 1,
+   "entity_id": "464457B8-4B63-4FD8-BCE9-A1F1E4DC6699",
+   "qloo_name": "SSD"
+  },
+  {
+   "name": "Jerry Garcia Acoustic Band",
+   "items": 1,
+   "entity_id": "11CFEF83-E3A8-440C-BC16-20DA7EFCE2CE",
+   "qloo_name": "Jerry Garcia Acoustic Band"
+  },
+  {
+   "name": "Richard Thompson",
+   "items": 1,
+   "entity_id": "32300CD9-B965-4B69-A80C-78234CC844D1",
+   "qloo_name": "Richard Thompson"
+  },
+  {
+   "name": "Bad Brains",
+   "items": 1,
+   "entity_id": "599031CD-B15A-47FC-8354-740B875F0B65",
+   "qloo_name": "Bad Brains"
+  },
+  {
+   "name": "Have A Nice Life",
+   "items": 4,
+   "entity_id": "DFCB203B-B492-4E98-83AA-BACDFAAE8F48",
+   "qloo_name": "Have a Nice Life"
+  },
+  {
+   "name": "Ice Nine Kills",
+   "items": 1,
+   "entity_id": "D3216323-62CE-472A-8539-C05F8E8AC0EC",
+   "qloo_name": "Ice Nine Kills"
+  },
+  {
+   "name": "Eidola",
+   "items": 2,
+   "entity_id": "AB8CCA6D-0683-4760-9D28-782D76331BB9",
+   "qloo_name": "Eidola"
+  },
+  {
+   "name": "Jerry Garcia",
+   "items": 3,
+   "entity_id": "E2D7B64F-C8D0-4308-B834-E411480B3DFC",
+   "qloo_name": "Jerry Garcia"
+  },
+  {
+   "name": "Albert Hammond",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Justin Townes Earle",
+   "items": 3,
+   "entity_id": "2F193CE8-88A2-42E4-BDBD-511F6AAC0EAD",
+   "qloo_name": "Justin Townes Earle"
+  },
+  {
+   "name": "Deltron 3030",
+   "items": 2,
+   "entity_id": "D416101F-7D21-49EF-B890-A000AA0FEEE4",
+   "qloo_name": "Deltron 3030"
+  },
+  {
+   "name": "Jack Johnson",
+   "items": 1,
+   "entity_id": "DDAC730A-830D-477A-A702-567C6D857284",
+   "qloo_name": "Jack Johnson"
+  },
+  {
+   "name": "Michael Andrews",
+   "items": 2,
+   "entity_id": "5D9BFB26-29A7-403D-BE28-1C0F36909778",
+   "qloo_name": "Michael Andrews"
+  },
+  {
+   "name": "Freddie Gibbs / Madlib",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Czarface",
+   "items": 3,
+   "entity_id": "372DE786-C6AC-480E-A5FD-39160E2B8E66",
+   "qloo_name": "Czarface"
+  },
+  {
+   "name": "Dead Kennedys",
+   "items": 1,
+   "entity_id": "375D6B0F-5458-4E77-A5C5-A2B63B6BDA9C",
+   "qloo_name": "Dead Kennedys"
+  },
+  {
+   "name": "Bartees Strange",
+   "items": 2,
+   "entity_id": "BF8F403F-BD83-428E-AA8A-98EFDA403E40",
+   "qloo_name": "Bartees Strange"
+  },
+  {
+   "name": "Alvvays",
+   "items": 5,
+   "entity_id": "A854F678-4242-4C4B-A21C-38EE521C885B",
+   "qloo_name": "Alvvays"
+  },
+  {
+   "name": "Saves The Day",
+   "items": 1,
+   "entity_id": "22D16B08-4F69-4880-8F3A-D2654D284759",
+   "qloo_name": "Saves the Day"
+  },
+  {
+   "name": "Conan O'Brien With Sona Movsesian And Matt Gourley",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Elliott Smith",
+   "items": 7,
+   "entity_id": "B40B8EF6-9A69-4C76-A1C5-31ABC6BBA9B7",
+   "qloo_name": "Elliott Smith"
+  },
+  {
+   "name": "Modern Baseball",
+   "items": 5,
+   "entity_id": "B3E07E81-63C5-4441-BE09-B42C299A0B58",
+   "qloo_name": "Modern Baseball"
+  },
+  {
+   "name": "Green Day",
+   "items": 1,
+   "entity_id": "76922890-5BBA-42BB-B3F9-1AF72114CF44",
+   "qloo_name": "Green Day"
+  },
+  {
+   "name": "The Devil Wears Prada",
+   "items": 1,
+   "entity_id": "D88ADB80-8655-4395-A9AD-C61CA9C2D70E",
+   "qloo_name": "The Devil Wears Prada"
+  },
+  {
+   "name": "Dhani Harrison",
+   "items": 1,
+   "entity_id": "B41CCB13-138B-4575-933D-9A67FCD9E2E5",
+   "qloo_name": "Dhani Harrison"
+  },
+  {
+   "name": "Ace Frehley",
+   "items": 3,
+   "entity_id": "7DB17689-536E-40E4-B2B6-BA3F0F19DBDB",
+   "qloo_name": "Ace Frehley"
+  },
+  {
+   "name": "The Offspring",
+   "items": 2,
+   "entity_id": "E8B40967-26BF-4298-875E-C17F2CAFA499",
+   "qloo_name": "The Offspring"
+  },
+  {
+   "name": "Knocked Loose",
+   "items": 5,
+   "entity_id": "243D9775-B9F7-4598-876E-C2188CBD90D5",
+   "qloo_name": "Knocked Loose"
+  },
+  {
+   "name": "K.Flay",
+   "items": 1,
+   "entity_id": "37C9B8D8-2C43-4490-BE1B-2EC16C8EBEE0",
+   "qloo_name": "K.Flay"
+  },
+  {
+   "name": "The Acacia Strain",
+   "items": 4,
+   "entity_id": "ED66B43A-C3A7-41EB-86CF-A2AC64AA6B10",
+   "qloo_name": "The Acacia Strain"
+  },
+  {
+   "name": "Cro-Mags",
+   "items": 2,
+   "entity_id": "01AA5726-D446-4ABE-96D0-3BBDD61712BF",
+   "qloo_name": "Cro-Mags"
+  },
+  {
+   "name": "As Tall As Lions",
+   "items": 1,
+   "entity_id": "C50512D9-B218-4DC6-B399-14005227DCB0",
+   "qloo_name": "As Tall As Lions"
+  },
+  {
+   "name": "Beirut",
+   "items": 1,
+   "entity_id": "EB392562-4186-4A53-8E6D-42CEED3ADD0A",
+   "qloo_name": "Beirut"
+  },
+  {
+   "name": "Avenged Sevenfold",
+   "items": 3,
+   "entity_id": "834A0FDB-BC66-44EA-9A53-61EC161275B4",
+   "qloo_name": "Avenged Sevenfold"
+  },
+  {
+   "name": "Peeping Tom",
+   "items": 1,
+   "entity_id": "E5DA33B4-7417-417A-93AF-C5E083EA9118",
+   "qloo_name": "Peeping Tom"
+  },
+  {
+   "name": "HIM",
+   "items": 3,
+   "entity_id": "A0A0C492-8CBE-459D-97C7-B67EBD4C258D",
+   "qloo_name": "Him"
+  },
+  {
+   "name": "Sun June",
+   "items": 2,
+   "entity_id": "68FF1EBB-DE0E-43E9-B5D1-BF7FAA501D4E",
+   "qloo_name": "Sun June"
+  },
+  {
+   "name": "Motley Crue",
+   "items": 5,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Drop Nineteens",
+   "items": 1,
+   "entity_id": "F9EB062E-6EF8-4578-87F7-DE97264B5FD0",
+   "qloo_name": "Drop Nineteens"
+  },
+  {
+   "name": "The Meters",
+   "items": 2,
+   "entity_id": "4C70009C-2782-4DA1-8BEC-B5F6A0CA38E6",
+   "qloo_name": "The Meters"
+  },
+  {
+   "name": "Say Anything",
+   "items": 1,
+   "entity_id": "E98858DE-3677-4605-BC08-F3033AF7A21D",
+   "qloo_name": "Say Anything"
+  },
+  {
+   "name": "Sonya Belousova & Giona Ostinelli",
+   "items": 1,
+   "entity_id": "EC90B9C9-D2DE-4E02-8463-68A98764F911",
+   "qloo_name": "Sonya Belousova & Giona Ostinelli"
+  },
+  {
+   "name": "Converge",
+   "items": 4,
+   "entity_id": "F629E025-BBDD-4609-B15A-909FCE2F8BB2",
+   "qloo_name": "Converge"
+  },
+  {
+   "name": "Earth Crisis",
+   "items": 1,
+   "entity_id": "39BB7648-B925-4166-87B7-D51398EBDD0F",
+   "qloo_name": "Earth Crisis"
+  },
+  {
+   "name": "The Dear Hunter",
+   "items": 2,
+   "entity_id": "28D32BE9-4823-40B4-A5C6-ED78DB327CFC",
+   "qloo_name": "The Dear Hunter"
+  },
+  {
+   "name": "The Locust",
+   "items": 1,
+   "entity_id": "29DB3C5C-8771-447C-841A-DDA4AA1A4403",
+   "qloo_name": "The Locust"
+  },
+  {
+   "name": "Teen Suicide",
+   "items": 3,
+   "entity_id": "FE222A45-85DC-49BA-AD06-12441EEC5EBE",
+   "qloo_name": "Teen Suicide"
+  },
+  {
+   "name": "Rainbow Kitten Surprise",
+   "items": 1,
+   "entity_id": "FA86E1F8-D6AA-4295-9D8D-89891404CE5D",
+   "qloo_name": "Rainbow Kitten Surprise"
+  },
+  {
+   "name": "Silverstein",
+   "items": 2,
+   "entity_id": "680E5B6D-036C-4425-8CE0-091641478ACA",
+   "qloo_name": "Silverstein"
+  },
+  {
+   "name": "Duck Sauce",
+   "items": 1,
+   "entity_id": "A3961C1F-B49B-44A4-B34F-29E5D2E42B28",
+   "qloo_name": "Duck Sauce"
+  },
+  {
+   "name": "The World Is A Beautiful Place & I Am No Longer Afraid To Die",
+   "items": 1,
+   "entity_id": "118B716A-77E7-4EB0-8365-589F1EC99EAD",
+   "qloo_name": "The World Is a Beautiful Place & I Am No Longer Afraid to Die"
+  },
+  {
+   "name": "Space Afrika",
+   "items": 1,
+   "entity_id": "8CD86C40-25D0-4C4D-AE1E-81C04874C40E",
+   "qloo_name": "Space Afrika"
+  },
+  {
+   "name": "Tessa Violet",
+   "items": 1,
+   "entity_id": "0A3F9A21-101B-4654-AA02-025FBFD2E492",
+   "qloo_name": "Tessa Violet"
+  },
+  {
+   "name": "Mort Garson",
+   "items": 2,
+   "entity_id": "EDAF4EFB-704B-41CE-A3CF-52710B695257",
+   "qloo_name": "Mort Garson"
+  },
+  {
+   "name": "Yellowcard",
+   "items": 2,
+   "entity_id": "90388E2A-FDC4-449E-AF30-943B76CA7D94",
+   "qloo_name": "Yellowcard"
+  },
+  {
+   "name": "Pennywise",
+   "items": 2,
+   "entity_id": "2BBED895-6EE6-41F2-958F-680CBFE6BA4C",
+   "qloo_name": "Pennywise"
+  },
+  {
+   "name": "Big Thief",
+   "items": 2,
+   "entity_id": "AD420A3F-5F09-4C1C-BB1E-A3DEB937F184",
+   "qloo_name": "Big Thief"
+  },
+  {
+   "name": "Thorr's Hammer",
+   "items": 1,
+   "entity_id": "5B26DAFF-7B0F-48C0-B11D-3DB12A5B5A0A",
+   "qloo_name": "Thorr's Hammer"
+  },
+  {
+   "name": "Chiodos",
+   "items": 2,
+   "entity_id": "40703A66-3769-4C9F-9996-9BC3296C8682",
+   "qloo_name": "Chiodos"
+  },
+  {
+   "name": "Story Of The Year",
+   "items": 1,
+   "entity_id": "06F4CA0E-0EB1-489F-9711-365C4A5D966C",
+   "qloo_name": "Story of the Year"
+  },
+  {
+   "name": "SYML",
+   "items": 1,
+   "entity_id": "73A1893F-4F55-4A31-AB10-5F9E34242504",
+   "qloo_name": "SYML"
+  },
+  {
+   "name": "Deer Tick",
+   "items": 2,
+   "entity_id": "CA481775-1A6A-40BE-B531-B509CF1C182B",
+   "qloo_name": "Deer Tick"
+  },
+  {
+   "name": "Alkaline Trio",
+   "items": 5,
+   "entity_id": "7C5DD44F-06FC-417C-AD01-2BBF1364CBA8",
+   "qloo_name": "Alkaline Trio"
+  },
+  {
+   "name": "Jets To Brazil",
+   "items": 1,
+   "entity_id": "84C0AC6D-C5A4-49EE-BB14-550E82666BFD",
+   "qloo_name": "Jets to Brazil"
+  },
+  {
+   "name": "Pvris",
+   "items": 1,
+   "entity_id": "70F85D91-5248-4320-B96A-46C1D1EB4579",
+   "qloo_name": "PVRIS"
+  },
+  {
+   "name": "Silversun Pickups",
+   "items": 2,
+   "entity_id": "298A9B41-9BD2-4F7C-813A-097596C73B98",
+   "qloo_name": "Silversun Pickups"
+  },
+  {
+   "name": "Anthrax",
+   "items": 4,
+   "entity_id": "BEFA6B25-906E-48DB-9D38-65D25BB38224",
+   "qloo_name": "Anthrax"
+  },
+  {
+   "name": "Circa Survive",
+   "items": 2,
+   "entity_id": "7C7FF525-6EDD-4D07-80F4-9EEA9718C8DE",
+   "qloo_name": "Circa Survive"
+  },
+  {
+   "name": "Masta Ace / MF Doom",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Mammoth WVH",
+   "items": 1,
+   "entity_id": "B3422BCA-717B-4F25-AF28-677313FDB9D9",
+   "qloo_name": "Mammoth WVH"
+  },
+  {
+   "name": "Fun.",
+   "items": 1,
+   "entity_id": "B58FF9A5-340B-47E0-80B7-394027A8AB41",
+   "qloo_name": "fun."
+  },
+  {
+   "name": "Knuckle Puck",
+   "items": 3,
+   "entity_id": "84134D96-4235-456F-9E0A-C3AE7A0E558B",
+   "qloo_name": "Knuckle Puck"
+  },
+  {
+   "name": "All",
+   "items": 1,
+   "entity_id": "CDEA82EA-88C5-483E-AECF-16760A36D6C0",
+   "qloo_name": "All"
+  },
+  {
+   "name": "Motion City Soundtrack",
+   "items": 3,
+   "entity_id": "A3811A1A-3982-46A1-B753-6F9E42A0FF70",
+   "qloo_name": "Motion City Soundtrack"
+  },
+  {
+   "name": "Cavetown",
+   "items": 4,
+   "entity_id": "B75E8ED4-87C2-4682-BD14-7C4C0D72BE69",
+   "qloo_name": "Cavetown"
+  },
+  {
+   "name": "Turnover",
+   "items": 3,
+   "entity_id": "27F0A451-3DB8-4A84-AA11-7E000131DEEA",
+   "qloo_name": "Turnover"
+  },
+  {
+   "name": "Quicksand",
+   "items": 1,
+   "entity_id": "C9EE143B-2A28-4757-9AD7-6E543359C21F",
+   "qloo_name": "Quicksand"
+  },
+  {
+   "name": "Waterparks",
+   "items": 1,
+   "entity_id": "00A28E97-A9F2-4C08-9AC8-D6CF94CFC7FF",
+   "qloo_name": "Waterparks"
+  },
+  {
+   "name": "Chloe Moriondo",
+   "items": 2,
+   "entity_id": "C388BFE3-B0E1-4977-B6C9-1AF85B5CB51A",
+   "qloo_name": "Chloe Moriondo"
+  },
+  {
+   "name": "Spiritbox",
+   "items": 1,
+   "entity_id": "AF053879-4522-49F8-B343-41299FD0AE13",
+   "qloo_name": "SpiritBox"
+  },
+  {
+   "name": "Sublime",
+   "items": 1,
+   "entity_id": "32191B31-A084-445A-A67C-463CD380484C",
+   "qloo_name": "Sublime"
+  },
+  {
+   "name": "The Get Up Kids",
+   "items": 4,
+   "entity_id": "D2E93D2B-17EC-42C5-839C-E04D1FF493D4",
+   "qloo_name": "The Get Up Kids"
+  },
+  {
+   "name": "Kawai Sprite",
+   "items": 2,
+   "entity_id": "918326DB-14F3-4B31-9BB6-927457F9F6B7",
+   "qloo_name": "Kawai Sprite"
+  },
+  {
+   "name": "Windows 96",
+   "items": 1,
+   "entity_id": "5B781F0A-63F3-4B5A-85C9-115730E0C513",
+   "qloo_name": "Windows 96"
+  },
+  {
+   "name": "Stray From The Path",
+   "items": 1,
+   "entity_id": "8042F72A-6845-40C6-B807-24AE1F8B7DED",
+   "qloo_name": "Stray from the Path"
+  },
+  {
+   "name": "City And Colour",
+   "items": 1,
+   "entity_id": "5B2E1065-8EAD-43B8-8684-5B17FF456247",
+   "qloo_name": "City and Colour"
+  },
+  {
+   "name": "John Williams",
+   "items": 1,
+   "entity_id": "E3B5D86E-83EA-447F-A456-2E9D347808EB",
+   "qloo_name": "John Williams"
+  },
+  {
+   "name": "Brian Jonestown Massacre",
+   "items": 1,
+   "entity_id": "851AABA1-6EA0-45BF-8718-86BB6CBE5C74",
+   "qloo_name": "The Brian Jonestown Massacre"
+  },
+  {
+   "name": "Knapsack",
+   "items": 2,
+   "entity_id": "22BBFDCD-3EFD-4CE7-88CB-928648E78FAC",
+   "qloo_name": "Knapsack"
+  },
+  {
+   "name": "Periphery",
+   "items": 1,
+   "entity_id": "8026A136-9CDE-47AB-8A60-1CB22277B616",
+   "qloo_name": "Periphery"
+  },
+  {
+   "name": "Moss Icon",
+   "items": 1,
+   "entity_id": "A77D3E76-6FA6-41CC-B7BE-045855D1B431",
+   "qloo_name": "Moss Icon"
+  },
+  {
+   "name": "Puscifer",
+   "items": 2,
+   "entity_id": "FAAC9D4D-DA92-4122-BECC-840B2A1BF824",
+   "qloo_name": "Puscifer"
+  },
+  {
+   "name": "Dave Rowntree",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Jerry Garcia Band",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Disasterpeace",
+   "items": 1,
+   "entity_id": "3FF9B1FF-88CB-4C84-86DC-040028ECF107",
+   "qloo_name": "Disasterpeace"
+  },
+  {
+   "name": "The Ghost Inside",
+   "items": 1,
+   "entity_id": "2C297F3C-362C-453B-BC74-39A7245C7B44",
+   "qloo_name": "The Ghost Inside"
+  },
+  {
+   "name": "Caroline Polachek",
+   "items": 2,
+   "entity_id": "42AF15D5-E1BD-4291-9B0F-C829A8274843",
+   "qloo_name": "Caroline Polachek"
+  },
+  {
+   "name": "This Wild Life",
+   "items": 1,
+   "entity_id": "93963840-4759-4AEA-BBB9-85667D8DF958",
+   "qloo_name": "This Wild Life"
+  },
+  {
+   "name": "Travis",
+   "items": 1,
+   "entity_id": "DEA5AFAE-D3CC-46E6-9E68-5ED460D11DF7",
+   "qloo_name": "Travis"
+  },
+  {
+   "name": "The Faint",
+   "items": 1,
+   "entity_id": "996A9B47-A14F-4756-922E-B0A570315E83",
+   "qloo_name": "The Faint"
+  },
+  {
+   "name": "Cappadonna & Stu Bangas",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Neck Deep",
+   "items": 2,
+   "entity_id": "EA95E581-8834-430D-9187-A93AD7205031",
+   "qloo_name": "Neck Deep"
+  },
+  {
+   "name": "Geinoh Yamashirogumi",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Seatbelts",
+   "items": 2,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "The Interrupters",
+   "items": 1,
+   "entity_id": "0CE6A0E7-9498-4357-81C8-8D603DCE1D2D",
+   "qloo_name": "The Interrupters"
+  },
+  {
+   "name": "Creedence Clearwater Revival",
+   "items": 1,
+   "entity_id": "CFC55D91-0F05-454B-A3A3-F282D8E3283E",
+   "qloo_name": "Creedence Clearwater Revival"
+  },
+  {
+   "name": "Neko Case",
+   "items": 1,
+   "entity_id": "762ADEB9-8D8C-4431-BE80-0AE36C4F03E9",
+   "qloo_name": "Neko Case"
+  },
+  {
+   "name": "Mavis Staples",
+   "items": 1,
+   "entity_id": "BA499A4D-3ACE-4306-AAD5-BFFC915CE315",
+   "qloo_name": "Mavis Staples"
+  },
+  {
+   "name": "Alex Melton",
+   "items": 1,
+   "entity_id": "39F751C1-9AB9-4CBD-852F-06421ED6467E",
+   "qloo_name": "Alex Melton"
+  },
+  {
+   "name": "Bad Religion",
+   "items": 4,
+   "entity_id": "1E8304FB-DA98-45F1-AE8E-5193083F0171",
+   "qloo_name": "Bad Religion"
+  },
+  {
+   "name": "Angels & Airwaves",
+   "items": 4,
+   "entity_id": "359787A6-5125-41B1-AF29-7F60E80DDE10",
+   "qloo_name": "Angels & Airwaves"
+  },
+  {
+   "name": "Four Year Strong",
+   "items": 2,
+   "entity_id": "DCE97858-7C4A-48B2-9B85-502D493A7040",
+   "qloo_name": "Four Year Strong"
+  },
+  {
+   "name": "Jawbreaker",
+   "items": 2,
+   "entity_id": "2541764F-DDF6-4939-9714-940D528E1465",
+   "qloo_name": "Jawbreaker"
+  },
+  {
+   "name": "Hop Along",
+   "items": 1,
+   "entity_id": "6ABE6ED6-87B4-4F80-9B04-461989B28E5A",
+   "qloo_name": "Hop Along"
+  },
+  {
+   "name": "Andy Shauf",
+   "items": 1,
+   "entity_id": "7CB5A4F4-73A2-4A21-BD62-8B1FC5C2311D",
+   "qloo_name": "Andy Shauf"
+  },
+  {
+   "name": "Born Without Bones",
+   "items": 1,
+   "entity_id": "C1C5F347-7114-49E0-961F-87B785B410E1",
+   "qloo_name": "Born Without Bones"
+  },
+  {
+   "name": "Foxing",
+   "items": 2,
+   "entity_id": "E7F5EC83-9912-4B98-BB1A-62D94F9098FA",
+   "qloo_name": "Foxing"
+  },
+  {
+   "name": "Meechy Darko",
+   "items": 1,
+   "entity_id": "5C269F7D-6426-42F6-A233-375884A58525",
+   "qloo_name": "Meechy Darko"
+  },
+  {
+   "name": "Veruca Salt",
+   "items": 1,
+   "entity_id": "F2EB95D8-A448-4917-AAE4-568253D7028A",
+   "qloo_name": "Veruca Salt"
+  },
+  {
+   "name": "Big Star",
+   "items": 2,
+   "entity_id": "16404D10-25AB-4B14-B690-29F1105462D3",
+   "qloo_name": "Big Star"
+  },
+  {
+   "name": "Galaxie 500",
+   "items": 1,
+   "entity_id": "B0FFB5FF-8A01-468C-8891-8CA9B5F42426",
+   "qloo_name": "Galaxie 500"
+  },
+  {
+   "name": "Taking Back Sunday",
+   "items": 1,
+   "entity_id": "17EFB871-2503-4007-A272-7C915D7E4CE6",
+   "qloo_name": "Taking Back Sunday"
+  },
+  {
+   "name": "The Dropkick Murphys",
+   "items": 3,
+   "entity_id": "2B7F0E40-5600-4023-AC4F-F6E6C5F7B50A",
+   "qloo_name": "Dropkick Murphys"
+  },
+  {
+   "name": "John Carpenter, Cody Carpenter And Daniel Davies",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Senses Fail",
+   "items": 3,
+   "entity_id": "9E033BB1-4950-4C80-803D-5126490E15AA",
+   "qloo_name": "Senses Fail"
+  },
+  {
+   "name": "Rancid",
+   "items": 2,
+   "entity_id": "BD5840B3-4EF4-4214-B7F6-4CA0D76C2A12",
+   "qloo_name": "Rancid"
+  },
+  {
+   "name": "Slaughter Beach, Dog",
+   "items": 2,
+   "entity_id": "EF10B3F0-60DF-4A03-8171-E1530399B2AA",
+   "qloo_name": "Slaughter Beach, Dog"
+  },
+  {
+   "name": "Alexi Murdoch",
+   "items": 1,
+   "entity_id": "6E1E58B4-2088-4EF0-9DC8-8E6EB4175961",
+   "qloo_name": "Alexi Murdoch"
+  },
+  {
+   "name": "Oh Sees",
+   "items": 2,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Gewgawly I And Thou",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Toro Y Moi",
+   "items": 1,
+   "entity_id": "01726594-EDBE-4EAD-AD46-3F81D6983919",
+   "qloo_name": "Toro y Moi"
+  },
+  {
+   "name": "Monster Rally",
+   "items": 6,
+   "entity_id": "2B9B8393-57FB-46CA-AE5F-38D677B792D1",
+   "qloo_name": "Monster Rally"
+  },
+  {
+   "name": "Beach House",
+   "items": 1,
+   "entity_id": "3460E83E-DCD5-4D1B-B3BF-1B6C1D6D2BB8",
+   "qloo_name": "Beach House"
+  },
+  {
+   "name": "Skylar Spence",
+   "items": 1,
+   "entity_id": "D4E83742-5B8A-4FF0-9384-B5F51620F3B8",
+   "qloo_name": "Skylar Spence"
+  },
+  {
+   "name": "Rival Schools",
+   "items": 1,
+   "entity_id": "D6A41278-A44D-4300-8A76-77B294DD0A69",
+   "qloo_name": "Rival Schools"
+  },
+  {
+   "name": "Tom Waits",
+   "items": 1,
+   "entity_id": "8D778858-C8B9-4F96-B72D-F367E4F3E396",
+   "qloo_name": "Tom Waits"
+  },
+  {
+   "name": "Mannequin Pussy",
+   "items": 1,
+   "entity_id": "B5A79373-A114-4C89-AC88-ABE785592B71",
+   "qloo_name": "Mannequin Pussy"
+  },
+  {
+   "name": "Amen Dunes",
+   "items": 1,
+   "entity_id": "71BE8F3B-2049-48DB-A86A-B8A79E9E854B",
+   "qloo_name": "Amen Dunes"
+  },
+  {
+   "name": "Thee Oh Sees",
+   "items": 4,
+   "entity_id": "B742E9EF-2639-40BC-B4E7-955DA1F062DB",
+   "qloo_name": "Thee Oh Sees"
+  },
+  {
+   "name": "Mom Jeans",
+   "items": 3,
+   "entity_id": "B05BE5C5-59C4-4978-B3A0-AD3F7527C9F7",
+   "qloo_name": "Mom Jeans."
+  },
+  {
+   "name": "Pinkshift",
+   "items": 1,
+   "entity_id": "33A0C24D-7DB0-4A2B-BE79-DBD21689870E",
+   "qloo_name": "pinkshift"
+  },
+  {
+   "name": "Great American Ghost",
+   "items": 1,
+   "entity_id": "6F68DA09-E29E-4F40-ACFE-49456A47BDCC",
+   "qloo_name": "Great American Ghost"
+  },
+  {
+   "name": "Jesse Davis",
+   "items": 1,
+   "entity_id": "28A3CFB0-76F0-49CD-8B52-DF2DCC29A294",
+   "qloo_name": "Jesse Davis"
+  },
+  {
+   "name": "END/Cult Leader",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "NOFX",
+   "items": 3,
+   "entity_id": "2169C018-6263-410C-AE09-8AA1239BF123",
+   "qloo_name": "NOFX"
+  },
+  {
+   "name": "Coil",
+   "items": 1,
+   "entity_id": "A7015A61-5F4E-4557-BBF4-0092864D7E8D",
+   "qloo_name": "Coil"
+  },
+  {
+   "name": "The Wonder Years",
+   "items": 2,
+   "entity_id": "74D00B3F-3265-4172-B85E-C7983FC25720",
+   "qloo_name": "The Wonder Years"
+  },
+  {
+   "name": "Spellling",
+   "items": 1,
+   "entity_id": "ECF249B7-4719-4192-85A4-1B0E79C52834",
+   "qloo_name": "SPELLLING"
+  },
+  {
+   "name": "Osees",
+   "items": 1,
+   "entity_id": "CF2475D8-D09B-43FC-B157-61CD88CF5755",
+   "qloo_name": "Osees"
+  },
+  {
+   "name": "Overkill",
+   "items": 1,
+   "entity_id": "E56321A9-0776-40EF-9A81-54BAA1E67FFC",
+   "qloo_name": "Overkill"
+  },
+  {
+   "name": "The Weakerthans",
+   "items": 1,
+   "entity_id": "66B8AD95-9997-4E9E-8068-39A4DDBD76BD",
+   "qloo_name": "The Weakerthans"
+  },
+  {
+   "name": "Mat Kerekes",
+   "items": 1,
+   "entity_id": "8E57B10C-9B2B-4C80-97CE-B794F22636AC",
+   "qloo_name": "Mat Kerekes"
+  },
+  {
+   "name": "Zola Jesus",
+   "items": 2,
+   "entity_id": "CC32CF40-86F6-44E6-86FF-DB117DA6918E",
+   "qloo_name": "Zola Jesus"
+  },
+  {
+   "name": "Alkaline Trio / Hot Water Music",
+   "items": 1,
+   "entity_id": "69A59E9C-1ECF-4415-AC72-9337A1FE240D",
+   "qloo_name": "Alkaline Trio -- Hot Water Music"
+  },
+  {
+   "name": "Operation Ivy",
+   "items": 1,
+   "entity_id": "F781A418-6045-40F4-86A5-6CB08CF531A3",
+   "qloo_name": "Operation Ivy"
+  },
+  {
+   "name": "Flogging Molly",
+   "items": 1,
+   "entity_id": "19AC1320-2A86-478E-98B9-11DC2A27A5AD",
+   "qloo_name": "Flogging Molly"
+  },
+  {
+   "name": "Thrice",
+   "items": 3,
+   "entity_id": "13C4D7E4-3D7B-455F-AD2F-B4B69A5E659F",
+   "qloo_name": "Thrice"
+  },
+  {
+   "name": "The Orion Experience",
+   "items": 1,
+   "entity_id": "CD4CF0C2-E4EB-4ADA-A016-BEC992404346",
+   "qloo_name": "The Orion Experience"
+  },
+  {
+   "name": "S U R F I N G",
+   "items": 1,
+   "entity_id": "EE2DD929-9C99-4870-98AF-0A14627DC67C",
+   "qloo_name": "S U R F I N G"
+  },
+  {
+   "name": "Nothing, Nowhere.",
+   "items": 6,
+   "entity_id": "58F7271D-1F34-457F-8148-B741B7C1A345",
+   "qloo_name": "nothing,nowhere."
+  },
+  {
+   "name": "Julia Jacklin",
+   "items": 1,
+   "entity_id": "4CE60D14-B414-4163-97C3-C1E51108ED90",
+   "qloo_name": "Julia Jacklin"
+  },
+  {
+   "name": "The Feelies",
+   "items": 2,
+   "entity_id": "19184918-9703-44AF-9E23-0FBEDA819A8E",
+   "qloo_name": "The Feelies"
+  },
+  {
+   "name": "Black Marble",
+   "items": 1,
+   "entity_id": "8342C2BA-3F0F-461D-8FB3-AB4D4A212C33",
+   "qloo_name": "Black Marble"
+  },
+  {
+   "name": "Action Bronson",
+   "items": 1,
+   "entity_id": "09CCD6DA-6AF1-4D20-9BEE-0BFDBEE53A4C",
+   "qloo_name": "Action Bronson"
+  },
+  {
+   "name": "John Carpenter",
+   "items": 3,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Wipers",
+   "items": 1,
+   "entity_id": "4A2D13BE-62B0-41D2-8A28-E847E582A381",
+   "qloo_name": "Wipers"
+  },
+  {
+   "name": "Basement",
+   "items": 1,
+   "entity_id": "0DDE492A-DD9E-47FF-A7C4-0A093A2D8DFB",
+   "qloo_name": "Basement"
+  },
+  {
+   "name": "The Story So Far",
+   "items": 1,
+   "entity_id": "613BAB97-3144-40F7-AC5E-620AD009F8B0",
+   "qloo_name": "The Story So Far"
+  },
+  {
+   "name": "Mark Mothersbaugh & Wataru Hokoyama",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Chad Cannon & Bill Hemstapat",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Robin Carolan & Sebastian Gainsborough",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Japandroids",
+   "items": 1,
+   "entity_id": "3535352A-7DAA-4D0B-B42B-CB2EC627F851",
+   "qloo_name": "Japandroids"
+  },
+  {
+   "name": "Stick To Your Guns",
+   "items": 1,
+   "entity_id": "B958E740-E587-4B2D-BDAA-D8C6C62F97B6",
+   "qloo_name": "Stick to Your Guns"
+  },
+  {
+   "name": "Death Lens",
+   "items": 1,
+   "entity_id": "2F079E51-8DAB-4B28-AEAF-31B09508F993",
+   "qloo_name": "Death Lens"
+  },
+  {
+   "name": "Beach Bunny",
+   "items": 1,
+   "entity_id": "B1682811-25F4-4974-A383-BC0BA46E8A11",
+   "qloo_name": "Beach Bunny"
+  },
+  {
+   "name": "Flamin' Groovies",
+   "items": 2,
+   "entity_id": "A50DEFDE-4630-4B25-BBA6-967F27D9E0FE",
+   "qloo_name": "Flamin' Groovies"
+  },
+  {
+   "name": "The West Coast Pop Art Experimental Band",
+   "items": 2,
+   "entity_id": "687D93FE-696C-4CD3-AF41-7EFD5E46A506",
+   "qloo_name": "The West Coast Pop Art Experimental Band"
+  },
+  {
+   "name": "From Autumn To Ashes",
+   "items": 2,
+   "entity_id": "F897C421-C096-4433-819A-F33B2C6B73AB",
+   "qloo_name": "From Autumn To Ashes"
+  },
+  {
+   "name": "Oso Oso",
+   "items": 1,
+   "entity_id": "3FA557AF-554E-4A1B-A30F-CD7620D4E340",
+   "qloo_name": "oso oso"
+  },
+  {
+   "name": "Cave In",
+   "items": 1,
+   "entity_id": "B99A0696-C977-43EB-B114-939D788D7EE6",
+   "qloo_name": "Cave In"
+  },
+  {
+   "name": "Millencolin",
+   "items": 1,
+   "entity_id": "2CEEA37E-A207-464E-A8BD-1E5D682AB7EB",
+   "qloo_name": "Millencolin"
+  },
+  {
+   "name": "Boston Manor",
+   "items": 1,
+   "entity_id": "0C9FF7C2-586B-4012-A2DC-0DFA59769998",
+   "qloo_name": "Boston Manor"
+  },
+  {
+   "name": "Terror",
+   "items": 1,
+   "entity_id": "092A42E4-8B9A-4E26-9993-B7951621B365",
+   "qloo_name": "Terror"
+  },
+  {
+   "name": "Prince Daddy & The Hyena",
+   "items": 1,
+   "entity_id": "44FD0563-7E8B-41E7-8A56-0D626344C253",
+   "qloo_name": "Prince Daddy & The Hyena"
+  },
+  {
+   "name": "Alexisonfire",
+   "items": 2,
+   "entity_id": "A8EE403E-B78F-4A42-A62E-A1333FD139D2",
+   "qloo_name": "Alexisonfire"
+  },
+  {
+   "name": "Stand Atlantic",
+   "items": 1,
+   "entity_id": "92645EA6-05F6-41AE-B777-C39909FAB43F",
+   "qloo_name": "Stand Atlantic"
+  },
+  {
+   "name": "Vein",
+   "items": 1,
+   "entity_id": "9C3E9034-1B0A-46A1-A51A-6A963094E765",
+   "qloo_name": "Vein"
+  },
+  {
+   "name": "Animals As Leaders",
+   "items": 1,
+   "entity_id": "9DE2DBEC-4438-4D1C-9C0B-164BF64CB1EB",
+   "qloo_name": "Animals as Leaders"
+  },
+  {
+   "name": "Peter Tosh",
+   "items": 1,
+   "entity_id": "4C632DCE-B002-4381-8E30-99F99C2B549E",
+   "qloo_name": "Peter Tosh"
+  },
+  {
+   "name": "The Lemonheads",
+   "items": 1,
+   "entity_id": "33E6A4F8-B259-415A-8764-4EAA2F0A3BE5",
+   "qloo_name": "The Lemonheads"
+  },
+  {
+   "name": "Tigers Jaw",
+   "items": 1,
+   "entity_id": "8C72081C-FAF5-42A2-A7CD-00F1AC6C0FF7",
+   "qloo_name": "Tigers Jaw"
+  },
+  {
+   "name": "Spanish Love Songs",
+   "items": 1,
+   "entity_id": "8AC737B8-0A86-40CE-92B3-7D6AC5420E77",
+   "qloo_name": "Spanish Love Songs"
+  },
+  {
+   "name": "Camp Cope",
+   "items": 1,
+   "entity_id": "DBF388A9-A089-4ADF-B730-AB7151CE3038",
+   "qloo_name": "Camp Cope"
+  },
+  {
+   "name": "Belmont",
+   "items": 1,
+   "entity_id": "3672FE59-6267-498D-BE7A-D14670371D2E",
+   "qloo_name": "Belmont"
+  },
+  {
+   "name": "PUP",
+   "items": 1,
+   "entity_id": "F2D5CEAF-41B1-4F33-91F0-311BCD79B99B",
+   "qloo_name": "PUP"
+  },
+  {
+   "name": "Lucius",
+   "items": 1,
+   "entity_id": "D07A3760-545D-4499-9E57-3EB056D43AF0",
+   "qloo_name": "Lucius"
+  },
+  {
+   "name": "Kurt Vile & Steve Gunn",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Father John Misty",
+   "items": 1,
+   "entity_id": "13CDFAD4-D5BC-4417-AB83-AC7DD856AD2C",
+   "qloo_name": "Father John Misty"
+  },
+  {
+   "name": "Deerhoof",
+   "items": 1,
+   "entity_id": "5BE8E84E-847F-4365-8F49-6C1B35C07CB8",
+   "qloo_name": "Deerhoof"
+  },
+  {
+   "name": "Dave Mason",
+   "items": 1,
+   "entity_id": "04392499-C8A4-40DC-BA5A-CDB1743BCF12",
+   "qloo_name": "Dave Mason"
+  },
+  {
+   "name": "Yard Act",
+   "items": 1,
+   "entity_id": "37A8214E-BEB6-4CA6-8666-30F863282BEB",
+   "qloo_name": "Yard Act"
+  },
+  {
+   "name": "The Mountain Goats",
+   "items": 1,
+   "entity_id": "6D23F786-3D75-4C9F-9550-B3478B8C37FB",
+   "qloo_name": "The Mountain Goats"
+  },
+  {
+   "name": "The Black Angels",
+   "items": 1,
+   "entity_id": "92B27B26-851F-45B7-82ED-59A371BFD02E",
+   "qloo_name": "The Black Angels"
+  },
+  {
+   "name": "Black Rebel Motorcycle Club",
+   "items": 3,
+   "entity_id": "2D83C553-D5F2-43F0-9922-EA94505BB690",
+   "qloo_name": "Black Rebel Motorcycle Club"
+  },
+  {
+   "name": "Com Truise",
+   "items": 2,
+   "entity_id": "78390CCD-93F2-4755-8414-1BEFAB98B694",
+   "qloo_name": "Com Truise"
+  },
+  {
+   "name": "Boris",
+   "items": 1,
+   "entity_id": "357372F3-A730-4641-B54A-F701B498AF69",
+   "qloo_name": "Boris"
+  },
+  {
+   "name": "Unearth",
+   "items": 1,
+   "entity_id": "FE2B73CD-4EC2-4F33-A1CF-C462F98D4417",
+   "qloo_name": "Unearth"
+  },
+  {
+   "name": "Arthur Lee & Love",
+   "items": 1,
+   "entity_id": "D14BF0ED-9208-4E13-923D-57FA0ABA8CA2",
+   "qloo_name": "Arthur Lee & Love"
+  },
+  {
+   "name": "The Moving Sidewalks",
+   "items": 1,
+   "entity_id": "ECF6F757-0C54-4F7D-A56C-0565BABA75B7",
+   "qloo_name": "The Moving Sidewalks"
+  },
+  {
+   "name": "Drug Church",
+   "items": 1,
+   "entity_id": "7E4F3DB1-55D3-409F-833C-808DF67F4E32",
+   "qloo_name": "Drug Church"
+  },
+  {
+   "name": "Aesop Rock",
+   "items": 2,
+   "entity_id": "2AEEC3F3-AA13-4CC2-8374-B9AC882FD935",
+   "qloo_name": "Aesop Rock"
+  },
+  {
+   "name": "Tycho",
+   "items": 1,
+   "entity_id": "D43A50C6-754B-444E-9289-57EBE9146279",
+   "qloo_name": "Tycho"
+  },
+  {
+   "name": "Les Claypool's Duo De Twang",
+   "items": 1,
+   "entity_id": "8F2D2A19-24A5-4B1A-A48F-0157008D028D",
+   "qloo_name": "Les Claypool's Duo De Twang"
+  },
+  {
+   "name": "Cold Collective",
+   "items": 1,
+   "entity_id": "94A4A6E7-9873-4FA4-AEBC-E5D5CF5F9011",
+   "qloo_name": "Cold Collective"
+  },
+  {
+   "name": "Madlib",
+   "items": 1,
+   "entity_id": "B27F9545-B884-4AA8-9906-786DDFB13306",
+   "qloo_name": "Madlib"
+  },
+  {
+   "name": "Big Red Machine",
+   "items": 1,
+   "entity_id": "C8B165BC-286E-4840-9417-AF68A8A690ED",
+   "qloo_name": "Big Red Machine"
+  },
+  {
+   "name": "The Residents",
+   "items": 3,
+   "entity_id": "D81674DF-478E-49D8-8671-D10D6C89296D",
+   "qloo_name": "The Residents"
+  },
+  {
+   "name": "Power Trip",
+   "items": 1,
+   "entity_id": "AB054BFE-2647-49A5-8CD1-8BA526E0D465",
+   "qloo_name": "Power Trip"
+  },
+  {
+   "name": "Gatecreeper",
+   "items": 1,
+   "entity_id": "B063D6C9-D266-432E-9A4D-A88C586E80E3",
+   "qloo_name": "Gatecreeper"
+  },
+  {
+   "name": "Dan Campbell",
+   "items": 1,
+   "entity_id": "55F58B7B-8AEB-49CF-821B-CDB3A4AF5381",
+   "qloo_name": "Dan Campbell"
+  },
+  {
+   "name": "Wild Nothing",
+   "items": 1,
+   "entity_id": "A1E032E8-3373-4364-8B7C-C41D33344E4E",
+   "qloo_name": "Wild Nothing"
+  },
+  {
+   "name": "Superchunk",
+   "items": 1,
+   "entity_id": "505CE8B6-D694-43A5-9F6D-D2438C52D178",
+   "qloo_name": "Superchunk"
+  },
+  {
+   "name": "Thalia Zedek",
+   "items": 2,
+   "entity_id": "C270FF10-5DA8-4B01-BB3D-7518AA09EA38",
+   "qloo_name": "Thalia Zedek"
+  },
+  {
+   "name": "Guided By Voices",
+   "items": 1,
+   "entity_id": "CA3AAC15-3682-438D-A200-17BA3ED4F4FB",
+   "qloo_name": "Guided by Voices"
+  },
+  {
+   "name": "Alabama Shakes",
+   "items": 1,
+   "entity_id": "557E7D10-7B05-4B2F-9907-958A9CC9FD17",
+   "qloo_name": "Alabama Shakes"
+  },
+  {
+   "name": "The Jesus And Mary Chain",
+   "items": 1,
+   "entity_id": "2E2D2E5A-8CE2-4F10-A388-320349CEEEA9",
+   "qloo_name": "The Jesus and Mary Chain"
+  },
+  {
+   "name": "Primus",
+   "items": 1,
+   "entity_id": "DC629C9E-9DD1-4EC7-95D4-67629581CB5E",
+   "qloo_name": "Primus"
+  },
+  {
+   "name": "Billy Cobb",
+   "items": 1,
+   "entity_id": "EB30B8E6-D034-4312-BD96-D926C275B3F2",
+   "qloo_name": "Billy Cobb"
+  },
+  {
+   "name": "Duran Duran",
+   "items": 1,
+   "entity_id": "D4703440-33E2-4723-9F79-9BE302C8276D",
+   "qloo_name": "Duran Duran"
+  },
+  {
+   "name": "Movements",
+   "items": 1,
+   "entity_id": "58B22373-CC9C-4EFC-93CA-DC660BB6DE87",
+   "qloo_name": "Movements"
+  },
+  {
+   "name": "Can't Swim",
+   "items": 1,
+   "entity_id": "4B38C01E-D8DD-49D4-A232-B2DAF62F2B97",
+   "qloo_name": "Can't Swim"
+  },
+  {
+   "name": "With Honor",
+   "items": 1,
+   "entity_id": "7A7CFEC1-3CE1-4620-B684-4B9D88D7EB5B",
+   "qloo_name": "With Honor"
+  },
+  {
+   "name": "Bleachers",
+   "items": 1,
+   "entity_id": "2790B4B7-FA68-4E8A-A6B9-6704577D43B5",
+   "qloo_name": "Bleachers"
+  },
+  {
+   "name": "The Clean",
+   "items": 1,
+   "entity_id": "6CBEA10E-F0DD-49D8-B417-786AA2743EAD",
+   "qloo_name": "The Clean"
+  },
+  {
+   "name": "Fiddlehead",
+   "items": 2,
+   "entity_id": "0E4EF5CC-DFF3-450F-A423-E4ECD1188B93",
+   "qloo_name": "Fiddlehead"
+  },
+  {
+   "name": "Suicidal Tendencies",
+   "items": 1,
+   "entity_id": "A143562A-D0C0-4081-9802-5F4EE6BFDE9B",
+   "qloo_name": "Suicidal Tendencies"
+  },
+  {
+   "name": "Buzzcocks",
+   "items": 1,
+   "entity_id": "A8944470-1AFF-48AA-B6C1-D8EA4B1BBD54",
+   "qloo_name": "Buzzcocks"
+  },
+  {
+   "name": "Unwound",
+   "items": 1,
+   "entity_id": "57A8A63A-E5FD-4E13-8FE0-29A524E0300D",
+   "qloo_name": "Unwound"
+  },
+  {
+   "name": "Bad Suns",
+   "items": 1,
+   "entity_id": "B96B3485-DB85-46D4-9E55-57D156709661",
+   "qloo_name": "Bad Suns"
+  },
+  {
+   "name": "The Menzingers",
+   "items": 1,
+   "entity_id": "522C3AA1-5FA0-49F7-9B18-1F17B437C33D",
+   "qloo_name": "The Menzingers"
+  },
+  {
+   "name": "MC5",
+   "items": 1,
+   "entity_id": "5862A6B5-1B6D-420F-A8EC-3C33BB376349",
+   "qloo_name": "MC5"
+  },
+  {
+   "name": "Slaine",
+   "items": 1,
+   "entity_id": "85B8855A-5F8C-4195-91D7-16230EFFBB10",
+   "qloo_name": "Slaine"
+  },
+  {
+   "name": "Nick Lowe",
+   "items": 1,
+   "entity_id": "98CCB686-127D-4BAE-83E9-89232BECFB38",
+   "qloo_name": "Nick Lowe"
+  },
+  {
+   "name": "ESPRIT 空想",
+   "items": 1,
+   "entity_id": "1BB47C47-86F9-41CC-997A-D0C2218C26B3",
+   "qloo_name": "ESPRIT 空想"
+  },
+  {
+   "name": "Dawes",
+   "items": 1,
+   "entity_id": "CF6C98DF-359C-4C69-8E50-D63AB716F23C",
+   "qloo_name": "Dawes"
+  },
+  {
+   "name": "Of Montreal",
+   "items": 2,
+   "entity_id": "C8077C9B-D0FB-4D6F-9F39-8149FD40FB69",
+   "qloo_name": "of Montreal"
+  },
+  {
+   "name": "Bikini Kill",
+   "items": 2,
+   "entity_id": "D0FD5BF6-548B-4C79-A7A6-F80B16ABB112",
+   "qloo_name": "Bikini Kill"
+  },
+  {
+   "name": "The Ocean",
+   "items": 1,
+   "entity_id": "4EB6389B-D771-4248-B455-6B02F5048C83",
+   "qloo_name": "The Ocean"
+  },
+  {
+   "name": "Mouse Rat",
+   "items": 1,
+   "entity_id": null,
+   "qloo_name": null
+  },
+  {
+   "name": "Dungen",
+   "items": 1,
+   "entity_id": "4F27D1F0-9C85-4FAD-9272-AFB7E988A403",
+   "qloo_name": "Dungen"
+  },
+  {
+   "name": "Death's Dynamic Shroud",
+   "items": 1,
+   "entity_id": "2C0D73EA-F13F-46F4-8D73-5AD444F43C40",
+   "qloo_name": "death’s dynamic shroud"
+  },
+  {
+   "name": "RJD2",
+   "items": 1,
+   "entity_id": "237C11B4-1A4A-4382-9991-515354A6380F",
+   "qloo_name": "RJD2"
+  },
+  {
+   "name": "We Were Sharks",
+   "items": 1,
+   "entity_id": "B6B30E34-746D-45B0-AE79-4CE5449D2530",
+   "qloo_name": "We Were Sharks"
+  }
+ ],
+ "local": {
+  "query": "Boston, MA",
+  "top": [
+   {
+    "entity_id": "2D1676A1-EC6D-482C-A778-4B2BAAD2D92E",
+    "name": "Lizzo",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "5812BB0B-A8F3-4CCF-A960-5AF89A3FB3EC",
+    "name": "John Mayer",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "4BBEF799-A0C4-4110-AB01-39216993C312",
+    "name": "Taylor Swift",
+    "on_shelf": true
+   },
+   {
+    "entity_id": "D0DFD941-A7DB-4310-9B39-1D51BD7F085F",
+    "name": "Maggie Rogers",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "9AAE0224-F8E2-447A-BD05-26D2A9E72573",
+    "name": "Kacey Musgraves",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "0B09E4C8-CC93-497B-A449-498CBE94D81D",
+    "name": "John Legend",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "F8C15F57-39B6-454A-87F3-2D227B6B42B1",
+    "name": "Britney Spears",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "0F286949-CF7B-477E-ABEB-ABB128BAD7DC",
+    "name": "Berklee College of Music",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "AFBC71A7-9439-4AB0-AB68-D14B11AAF836",
+    "name": "Phoebe Bridgers",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "F6754C46-B3E7-457F-8B7E-06C613597320",
+    "name": "Beyoncé",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "D89F0AE3-F682-47DE-89CD-18520822B864",
+    "name": "Boston Symphony Orchestra",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "284CF776-6B45-4F43-B08F-78738DA8DD92",
+    "name": "Elon “EDM” Musk",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "95FB1DDD-29B3-4C7E-A45F-38A3ADF42CE9",
+    "name": "Jessie James Decker",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "EE63A5A9-294A-4687-8801-A98FE7308A86",
+    "name": "Nicole Richie",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "24012F7D-C125-4EB7-A661-6AF65523E43C",
+    "name": "Adele",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "1B7CAA6B-9C70-4896-8979-2F952419AC6A",
+    "name": "Sonny Side Up",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "0E74ECB9-7139-498F-9A03-F55B93E89A3F",
+    "name": "Cousin Stizz",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "47FA29CA-A1E6-4EA6-8219-D75190AA6BD1",
+    "name": "Dolly Parton",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "5032D31E-1B79-4A40-901D-DCDDFA0F4493",
+    "name": "Janelle Monáe",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "A0263DB6-5A0A-48E6-A69C-79AA6AFAA4AC",
+    "name": "KATYA",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "40815128-289A-459F-A080-5DC5095025EF",
+    "name": "Ben Platt",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "A37B17AE-15C7-48A3-AADD-6CE50BE3FF74",
+    "name": "Lorde",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "296A9BFF-AE21-4FC0-9F9D-81EBCFB5BBE6",
+    "name": "HAIM",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "C2F06B1D-6C1D-4A2F-A65D-DD619FFE45CD",
+    "name": "Sara Bareilles",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "B06773DF-96FD-4689-B972-02B425BB5810",
+    "name": "Brandi Carlile",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "19091236-C8DF-4972-9332-79482DA37838",
+    "name": "Erika Jayne",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "54650445-F9FB-4FC3-A88D-51D84190F375",
+    "name": "RuPaul",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "9BC770A7-3369-4BB8-A79E-E3440D308489",
+    "name": "Solange",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "CE38C2A7-D1AC-48AD-A620-89ABA16F5F93",
+    "name": "Noah Reid",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "C98B87BE-837F-49CB-B0C3-45D406F94E2D",
+    "name": "Julianne Hough",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "7BDB8927-518C-443D-AF47-302420FF3511",
+    "name": "Trixie Mattel",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "CCCC6678-EC9C-4D7B-A9A0-4A5F0F959C35",
+    "name": "Millyz",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "5A129CA7-57FE-46D7-896E-2D4BB4F72643",
+    "name": "Lake Street Dive",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "34610AB4-32F7-4488-B8B2-AF9DB415098C",
+    "name": "Jack Antonoff",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "8647D824-3C54-4444-A4E0-B22AD2DD96ED",
+    "name": "Maren Morris",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "75D2D26C-134B-4736-BC69-F5BE5BE2EF00",
+    "name": "Rachel Bloom",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "797F0DB7-9684-40E8-91E6-5D6099AC6D84",
+    "name": "Sammy Adams",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "8794FDC6-2E1A-4BBF-9E28-D96F19D26756",
+    "name": "Nikki Glaser",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "09CCD6DA-6AF1-4D20-9BEE-0BFDBEE53A4C",
+    "name": "Action Bronson",
+    "on_shelf": true
+   },
+   {
+    "entity_id": "076A829B-87FD-4DDF-82DA-206E3A96486C",
+    "name": "Billy Porter",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "DE760AA8-B642-4CC4-9D9D-691C2BFF3461",
+    "name": "St. Vincent",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "44BBAA57-9F14-4F52-A944-CB077025730C",
+    "name": "Jessica Simpson",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "723BCD5C-AA73-4E13-AAA6-9FBE10A889E4",
+    "name": "Rihanna",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "18F50D35-2E16-4E76-85D4-4DF89B78A4E7",
+    "name": "Trey Kennedy",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "69B8915F-9331-429D-A10F-180FFB78019A",
+    "name": "Daveed Diggs",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "6367C6D5-5441-46A3-B2AA-6EEB1757F33C",
+    "name": "Daveed",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "212571A9-7455-4CC9-AC5D-743E30FB670E",
+    "name": "Bob the Drag Queen",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "780422E7-28B3-4A4A-A6FB-5A29DF4B6EE6",
+    "name": "Florence Welch",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "94CA64E8-CAD9-487C-B0CA-A69563E774CB",
+    "name": "Leslie Odom Jr.",
+    "on_shelf": false
+   },
+   {
+    "entity_id": "FBCDE8A0-9D16-49B7-88EF-DF21B0A868AE",
+    "name": "Alaska Thunderfuck",
+    "on_shelf": false
+   }
+  ],
+  "on_shelf": 2
+ },
+ "shoppers": {
+  "rows": 20,
+  "wanted": 181,
+  "carried": 5,
+  "served": 5,
+  "missing": [
+   {
+    "name": "The Smashing Pumpkins",
+    "askedBy": 2
+   },
+   {
+    "name": "The Strokes",
+    "askedBy": 2
+   },
+   {
+    "name": "Interpol",
+    "askedBy": 2
+   },
+   {
+    "name": "Pixies",
+    "askedBy": 2
+   },
+   {
+    "name": "Rod Stewart",
+    "askedBy": 2
+   },
+   {
+    "name": "Neil Diamond",
+    "askedBy": 2
+   },
+   {
+    "name": "10cc",
+    "askedBy": 2
+   },
+   {
+    "name": "Ariana Grande",
+    "askedBy": 2
+   },
+   {
+    "name": "Kings of Leon",
+    "askedBy": 2
+   },
+   {
+    "name": "Franz Ferdinand",
+    "askedBy": 2
+   },
+   {
+    "name": "Blur",
+    "askedBy": 2
+   },
+   {
+    "name": "The Libertines",
+    "askedBy": 2
+   },
+   {
+    "name": "Olivia Rodrigo",
+    "askedBy": 2
+   },
+   {
+    "name": "The Cure",
+    "askedBy": 2
+   },
+   {
+    "name": "Sonic Youth",
+    "askedBy": 2
+   }
+  ]
+ },
+ "qloo_calls": 309,
+ "live_calls": 289
+}

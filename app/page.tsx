@@ -71,9 +71,9 @@ export default function Page() {
         <h1>Your shop sees what sold. Afterglow sees what walked out.</h1>
         <p className="lb-lede">A shopper says who the gift is for, and the assistant picks five titles from the shelves. Every title it could not find goes on the owner&apos;s restock list, so the shop finally learns what walked out. We ran it on a real record store first.</p>
         <dl className="hero-stats">
-          <div><dt>{real.austin.top.length - real.austin.on_shelf} of {real.austin.top.length}</dt><dd>artists Austin loves most (Qloo location data) are missing from the 500 best-sellers of Waterloo Records, a real Austin shop. <Link href="/real">See the gap →</Link></dd></div>
+          <div><dt>{real.local.top.length - real.local.on_shelf} of {real.local.top.length}</dt><dd>artists Austin loves most (Qloo location data) are missing from the 500 best-sellers of Waterloo Records, a real Austin shop. <Link href="/real">See the gap →</Link></dd></div>
           <div><dt>0 vs 12</dt><dd>gift picks over the shopper&apos;s budget across 40 blind requests: our agent vs Claude alone. <a href="https://github.com/DmitriyTopka/afterglow#how-well-it-works-measured-not-tuned-on-the-test">How we counted →</a></dd></div>
-          <div><dt>{real.recognised} of {real.artists}</dt><dd>artists on that shop&apos;s best-seller list that Qloo, the taste-data API we build on, recognises</dd></div>
+          <div><dt>{real.recognised} of {real.names}</dt><dd>artists on that shop&apos;s best-seller list that Qloo, the taste-data API we build on, recognises</dd></div>
         </dl>
         <form className="lb-ask" style={{ marginTop: 16 }} onSubmit={(e) => { e.preventDefault(); run(text.trim() || PLACEHOLDER); }}>
           <label htmlFor="ask" className="sr-only">What are they into?</label>
